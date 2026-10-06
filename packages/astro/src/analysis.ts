@@ -39,7 +39,8 @@ export function detectYogas(planets: Positions, lagnaSign: number | null): Chart
   if ([1, 4, 7, 10].includes(houseFrom(p("Moon").signIndex, p("Jupiter").signIndex))) {
     yogas.push({
       name: "Gajakesari Yoga",
-      description: "Jupiter is in a kendra from the Moon, traditionally linked to wisdom, reputation and support from others.",
+      description:
+        "Jupiter is in a kendra from the Moon, traditionally linked to wisdom, reputation and support from others.",
     });
   }
   if (p("Sun").signIndex === p("Mercury").signIndex) {

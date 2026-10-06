@@ -9,7 +9,9 @@ export function parse<T extends z.ZodType>(schema: T, input: unknown): z.infer<T
   const fields: Record<string, string[]> = {};
   for (const issue of result.error.issues) {
     const key = issue.path.join(".") || "_";
-    (fields[key] ??= []).push(issue.message);
+    const messages = fields[key] ?? [];
+    messages.push(issue.message);
+    fields[key] = messages;
   }
   throw new AppError("VALIDATION", "Please check the highlighted fields", fields);
 }

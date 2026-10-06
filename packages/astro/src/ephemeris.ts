@@ -1,5 +1,5 @@
-import * as Astronomy from "astronomy-engine";
 import type { Planet } from "@sebt/shared";
+import * as Astronomy from "astronomy-engine";
 import { DEG, norm360 } from "./math";
 
 const BODIES: Partial<Record<Planet, Astronomy.Body>> = {

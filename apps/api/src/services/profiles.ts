@@ -1,5 +1,5 @@
-import { and, desc, eq } from "drizzle-orm";
 import type { BirthDetails, Profile } from "@sebt/shared";
+import { and, desc, eq } from "drizzle-orm";
 import type { Db } from "../db/client";
 import { profiles } from "../db/schema";
 import type { FieldCipher } from "../lib/crypto";
@@ -35,7 +35,11 @@ export class ProfileService {
   }
 
   async list(userId: string): Promise<Profile[]> {
-    const rows = await this.db.select().from(profiles).where(eq(profiles.userId, userId)).orderBy(desc(profiles.createdAt));
+    const rows = await this.db
+      .select()
+      .from(profiles)
+      .where(eq(profiles.userId, userId))
+      .orderBy(desc(profiles.createdAt));
     return rows.map((r) => this.hydrate(r).profile);
   }
 

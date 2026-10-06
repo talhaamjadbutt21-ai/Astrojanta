@@ -1,6 +1,6 @@
+import { CLIENT_HEADER, MOBILE_CLIENT, SESSION_COOKIE } from "@sebt/shared";
 import { and, eq, gt } from "drizzle-orm";
 import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
-import { CLIENT_HEADER, MOBILE_CLIENT, SESSION_COOKIE } from "@sebt/shared";
 import type { Db } from "../db/client";
 import { sessions, users } from "../db/schema";
 import type { Env } from "../env";
@@ -41,7 +41,7 @@ export function registerAuth(app: FastifyInstance, db: Db, env: Env) {
 
   app.decorateRequest("auth", null);
 
-  app.addHook("onRequest", async (request) => {
+  app.addHook("onRequest", async (request, reply) => {
     // CSRF defence: browsers always send Origin on cross-site state-changing requests.
     const origin = request.headers.origin;
     if (!SAFE_METHODS.has(request.method) && origin && !allowedOrigins.has(origin)) {
@@ -59,6 +59,7 @@ export function registerAuth(app: FastifyInstance, db: Db, env: Env) {
       .limit(1);
 
     if (row) request.auth = { ...row, via: found.via };
+    else if (found.via === "cookie") reply.clearCookie(SESSION_COOKIE, { path: "/" });
   });
 }
 

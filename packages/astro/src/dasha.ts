@@ -1,5 +1,5 @@
 import type { Chart, DashaPeriod, MahaDasha, Planet } from "@sebt/shared";
-import { DASHA_SEQUENCE, DASHA_YEARS, DASHA_YEAR_MS, NAKSHATRA_SPAN } from "./constants";
+import { DASHA_SEQUENCE, DASHA_YEAR_MS, DASHA_YEARS, NAKSHATRA_SPAN } from "./constants";
 import { norm360 } from "./math";
 
 function sequenceFrom(lord: Planet): Planet[] {

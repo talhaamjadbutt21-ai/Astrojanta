@@ -1,6 +1,6 @@
 import { createOpenAI } from "@ai-sdk/openai";
-import { isStepCount, streamText } from "ai";
 import type { Chart, ChatLanguage, TransitSnapshot } from "@sebt/shared";
+import { isStepCount, streamText } from "ai";
 import type { Env } from "../env";
 import { buildInstructions } from "./prompt";
 import { chartTools } from "./tools";

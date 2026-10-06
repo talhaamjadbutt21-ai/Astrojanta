@@ -2,11 +2,11 @@ import cookie from "@fastify/cookie";
 import cors from "@fastify/cors";
 import helmet from "@fastify/helmet";
 import rateLimit from "@fastify/rate-limit";
-import Fastify, { type FastifyError, type FastifyInstance } from "fastify";
 import type { ApiErrorBody } from "@sebt/shared";
+import Fastify, { type FastifyError, type FastifyInstance } from "fastify";
+import { type Astrologer, createAstrologer } from "./ai/agent";
 import type { Db } from "./db/client";
 import type { Env } from "./env";
-import { createAstrologer, type Astrologer } from "./ai/agent";
 import { FieldCipher } from "./lib/crypto";
 import { AppError } from "./lib/errors";
 import { registerAuth } from "./plugins/auth";
@@ -38,7 +38,10 @@ export async function buildApp({ db, env, astrologer }: BuildAppOptions): Promis
     logger:
       env.NODE_ENV === "test"
         ? false
-        : { level: env.NODE_ENV === "production" ? "info" : "debug", redact: ["req.headers.authorization", "req.headers.cookie"] },
+        : {
+            level: env.NODE_ENV === "production" ? "info" : "debug",
+            redact: ["req.headers.authorization", "req.headers.cookie"],
+          },
   });
 
   await app.register(helmet, { contentSecurityPolicy: false, crossOriginResourcePolicy: { policy: "same-site" } });
@@ -70,7 +73,9 @@ export async function buildApp({ db, env, astrologer }: BuildAppOptions): Promis
       return reply.code(status).send({ error: { code: "VALIDATION", message: error.message } } satisfies ApiErrorBody);
     }
     request.log.error({ err: error }, "unhandled error");
-    return reply.code(500).send({ error: { code: "INTERNAL", message: "Something went wrong" } } satisfies ApiErrorBody);
+    return reply
+      .code(500)
+      .send({ error: { code: "INTERNAL", message: "Something went wrong" } } satisfies ApiErrorBody);
   });
 
   app.setNotFoundHandler((_req, reply) =>

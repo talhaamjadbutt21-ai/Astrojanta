@@ -1,8 +1,8 @@
+import { computeChart, computeTransits } from "@sebt/astro";
+import { type ChatQuota, type Conversation, chatRequestSchema, type StoredChatMessage } from "@sebt/shared";
 import { and, asc, count, desc, eq, gt } from "drizzle-orm";
 import type { FastifyInstance } from "fastify";
 import { z } from "zod";
-import { computeChart, computeTransits } from "@sebt/astro";
-import { chatRequestSchema, type ChatQuota, type Conversation, type StoredChatMessage } from "@sebt/shared";
 import { CRISIS_REPLY, isCrisisMessage } from "../ai/safety";
 import type { AppContext } from "../app";
 import type { Db } from "../db/client";
@@ -58,7 +58,11 @@ export async function chatRoutes(app: FastifyInstance, { db, env, profiles, astr
       .where(and(eq(conversations.id, id), eq(conversations.userId, userId)))
       .limit(1);
     if (!conv) throw notFound("Conversation");
-    const rows = await db.select().from(messages).where(eq(messages.conversationId, id)).orderBy(asc(messages.createdAt));
+    const rows = await db
+      .select()
+      .from(messages)
+      .where(eq(messages.conversationId, id))
+      .orderBy(asc(messages.createdAt));
     const out: StoredChatMessage[] = rows.map((m) => ({
       id: m.id,
       role: m.role,
@@ -96,7 +100,11 @@ export async function chatRoutes(app: FastifyInstance, { db, env, profiles, astr
         .select({ id: conversations.id })
         .from(conversations)
         .where(
-          and(eq(conversations.id, conversationId), eq(conversations.userId, userId), eq(conversations.profileId, profile.id)),
+          and(
+            eq(conversations.id, conversationId),
+            eq(conversations.userId, userId),
+            eq(conversations.profileId, profile.id),
+          ),
         )
         .limit(1);
       if (!conv) throw notFound("Conversation");

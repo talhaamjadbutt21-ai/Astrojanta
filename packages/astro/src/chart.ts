@@ -1,12 +1,12 @@
 import {
-  NAKSHATRAS,
-  PLANETS,
-  SIGNS,
   type BirthDetails,
   type Chart,
   type Dignity,
+  NAKSHATRAS,
+  PLANETS,
   type Planet,
   type PlanetPosition,
+  SIGNS,
   type TransitSnapshot,
 } from "@sebt/shared";
 import { detectYogas, manglik } from "./analysis";
@@ -139,7 +139,13 @@ export function computeTransits(natalMoonSignIndex: number, at: Date = new Date(
 
   return {
     at: at.toISOString(),
-    planets: planets.map(({ name, sign, degree, retrograde, nakshatra }) => ({ name, sign, degree, retrograde, nakshatra })),
+    planets: planets.map(({ name, sign, degree, retrograde, nakshatra }) => ({
+      name,
+      sign,
+      degree,
+      retrograde,
+      nakshatra,
+    })),
     sadeSati: { active: phase !== null, phase },
   };
 }

@@ -1,8 +1,8 @@
+import { MOBILE_CLIENT, SESSION_COOKIE } from "@sebt/shared";
 import type { FastifyInstance } from "fastify";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
-import { MOBILE_CLIENT, SESSION_COOKIE } from "@sebt/shared";
-import { buildApp } from "../src/app";
 import { offlineAstrologer } from "../src/ai/agent";
+import { buildApp } from "../src/app";
 import { connectDatabase, type Database } from "../src/db/client";
 import { profiles } from "../src/db/schema";
 import { loadEnv } from "../src/env";
@@ -63,8 +63,16 @@ describe("auth", () => {
   });
 
   it("returns the same generic error for wrong password and unknown email", async () => {
-    const wrong = await app.inject({ method: "POST", url: "/api/auth/login", payload: { email: "web@example.com", password: "nope-nope" } });
-    const unknown = await app.inject({ method: "POST", url: "/api/auth/login", payload: { email: "ghost@example.com", password: "nope-nope" } });
+    const wrong = await app.inject({
+      method: "POST",
+      url: "/api/auth/login",
+      payload: { email: "web@example.com", password: "nope-nope" },
+    });
+    const unknown = await app.inject({
+      method: "POST",
+      url: "/api/auth/login",
+      payload: { email: "ghost@example.com", password: "nope-nope" },
+    });
     expect(wrong.statusCode).toBe(401);
     expect(unknown.statusCode).toBe(401);
     expect(wrong.json()).toEqual(unknown.json());
@@ -98,7 +106,11 @@ describe("auth", () => {
   });
 
   it("validates input with field-level errors", async () => {
-    const res = await app.inject({ method: "POST", url: "/api/auth/register", payload: { email: "bad", password: "short" } });
+    const res = await app.inject({
+      method: "POST",
+      url: "/api/auth/register",
+      payload: { email: "bad", password: "short" },
+    });
     expect(res.statusCode).toBe(422);
     expect(Object.keys(res.json().error.fields)).toEqual(expect.arrayContaining(["email", "password"]));
   });
@@ -171,7 +183,11 @@ describe("profiles, charts and chat", () => {
     const conversationId = first.headers["x-conversation-id"] as string;
     expect(conversationId).toBeTruthy();
 
-    const history = await app.inject({ method: "GET", url: `/api/conversations/${conversationId}/messages`, headers: { cookie } });
+    const history = await app.inject({
+      method: "GET",
+      url: `/api/conversations/${conversationId}/messages`,
+      headers: { cookie },
+    });
     expect(history.json().messages.map((m: { role: string }) => m.role)).toEqual(["user", "assistant"]);
 
     expect((await ask()).statusCode).toBe(200);

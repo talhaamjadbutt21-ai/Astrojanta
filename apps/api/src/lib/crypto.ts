@@ -29,7 +29,12 @@ export class FieldCipher {
     const iv = randomBytes(12);
     const cipher = createCipheriv("aes-256-gcm", this.key, iv);
     const data = Buffer.concat([cipher.update(plaintext, "utf8"), cipher.final()]);
-    return [VERSION, iv.toString("base64url"), cipher.getAuthTag().toString("base64url"), data.toString("base64url")].join(":");
+    return [
+      VERSION,
+      iv.toString("base64url"),
+      cipher.getAuthTag().toString("base64url"),
+      data.toString("base64url"),
+    ].join(":");
   }
 
   decrypt(payload: string): string {

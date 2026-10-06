@@ -1,9 +1,9 @@
+import { type PlaceResult, placeSearchQuerySchema } from "@sebt/shared";
 import type { FastifyInstance } from "fastify";
 import { z } from "zod";
-import { placeSearchQuerySchema, type Place } from "@sebt/shared";
+import type { AppContext } from "../app";
 import { AppError } from "../lib/errors";
 import { parse } from "../lib/validate";
-import type { AppContext } from "../app";
 
 const upstreamSchema = z.object({
   results: z
@@ -20,8 +20,6 @@ const upstreamSchema = z.object({
     )
     .optional(),
 });
-
-export type PlaceResult = Place & { id: string };
 
 const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
 const CACHE_MAX = 2000;

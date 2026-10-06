@@ -15,7 +15,12 @@ const envSchema = z
     CORS_ORIGINS: z
       .string()
       .default("http://localhost:3000,http://localhost:8081")
-      .transform((s) => s.split(",").map((o) => o.trim()).filter(Boolean)),
+      .transform((s) =>
+        s
+          .split(",")
+          .map((o) => o.trim())
+          .filter(Boolean),
+      ),
     SESSION_TTL_DAYS: z.coerce.number().int().min(1).max(365).default(30),
     /** 32-byte key, base64. Encrypts birth details at rest. */
     DATA_ENCRYPTION_KEY: opt(z.string()),
@@ -37,7 +42,9 @@ const envSchema = z
 export type Env = z.infer<typeof envSchema>;
 
 export function loadEnv(source: Record<string, string | undefined> = process.env): Env {
-  const parsed = envSchema.safeParse(Object.fromEntries(Object.entries(source).map(([k, v]) => [k, blankToUndefined(v)])));
+  const parsed = envSchema.safeParse(
+    Object.fromEntries(Object.entries(source).map(([k, v]) => [k, blankToUndefined(v)])),
+  );
   if (!parsed.success) {
     const details = parsed.error.issues.map((i) => `  ${i.path.join(".")}: ${i.message}`).join("\n");
     throw new Error(`Invalid environment configuration:\n${details}`);

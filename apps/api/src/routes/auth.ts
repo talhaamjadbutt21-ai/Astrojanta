@@ -1,12 +1,12 @@
+import { type AuthResponse, loginSchema, registerSchema, SESSION_COOKIE, type User } from "@sebt/shared";
 import { eq } from "drizzle-orm";
 import type { FastifyInstance } from "fastify";
-import { loginSchema, registerSchema, SESSION_COOKIE, type AuthResponse, type User } from "@sebt/shared";
+import type { AppContext } from "../app";
 import { users } from "../db/schema";
 import { AppError } from "../lib/errors";
 import { hashPassword, verifyAgainstDummy, verifyPassword } from "../lib/password";
 import { parse } from "../lib/validate";
 import { endSession, requireAuth, startSession } from "../plugins/auth";
-import type { AppContext } from "../app";
 
 const toUser = (u: { id: string; email: string; createdAt: Date }): User => ({
   id: u.id,
@@ -37,7 +37,9 @@ export async function authRoutes(app: FastifyInstance, { db, env }: AppContext) 
     const input = parse(loginSchema, request.body);
     const [user] = await db.select().from(users).where(eq(users.email, input.email)).limit(1);
 
-    const ok = user ? await verifyPassword(user.passwordHash, input.password) : await verifyAgainstDummy(input.password);
+    const ok = user
+      ? await verifyPassword(user.passwordHash, input.password)
+      : await verifyAgainstDummy(input.password);
     if (!user || !ok) throw new AppError("UNAUTHENTICATED", "Invalid email or password");
 
     const token = await startSession(db, env, request, reply, user.id);

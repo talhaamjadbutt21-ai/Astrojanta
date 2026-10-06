@@ -1,6 +1,13 @@
-import { describe, expect, it } from "vitest";
 import { birthDetailsSchema } from "@sebt/shared";
-import { computeChart, computeTransits, lahiriAyanamsa, siderealAscendant, siderealLongitude, zonedTimeToUtc } from "../src";
+import { describe, expect, it } from "vitest";
+import {
+  computeChart,
+  computeTransits,
+  lahiriAyanamsa,
+  siderealAscendant,
+  siderealLongitude,
+  zonedTimeToUtc,
+} from "../src";
 import { DASHA_YEAR_MS } from "../src/constants";
 
 const DELHI = { name: "New Delhi, India", latitude: 28.6139, longitude: 77.209, timezone: "Asia/Kolkata" };
@@ -91,7 +98,9 @@ describe("computeChart", () => {
   });
 
   it("matches the well-known Indian Independence chart (15 Aug 1947, 00:00 IST, Delhi)", () => {
-    const india = computeChart(birthDetailsSchema.parse({ name: "India", date: "1947-08-15", time: "00:00", place: DELHI }));
+    const india = computeChart(
+      birthDetailsSchema.parse({ name: "India", date: "1947-08-15", time: "00:00", place: DELHI }),
+    );
     const signOf = (name: string) => india.planets.find((p) => p.name === name)!.sign;
     expect(india.lagna!.sign).toBe("Taurus");
     expect(india.moonSign).toBe("Cancer");
@@ -103,7 +112,9 @@ describe("computeChart", () => {
   });
 
   it("omits lagna and houses when birth time is unknown", () => {
-    const noTime = computeChart(birthDetailsSchema.parse({ name: "X", date: "1995-08-15", timeUnknown: true, place: DELHI }));
+    const noTime = computeChart(
+      birthDetailsSchema.parse({ name: "X", date: "1995-08-15", timeUnknown: true, place: DELHI }),
+    );
     expect(noTime.lagna).toBeNull();
     expect(noTime.planets.every((p) => p.house === null)).toBe(true);
     expect(noTime.doshas.manglik.fromLagna).toBeNull();

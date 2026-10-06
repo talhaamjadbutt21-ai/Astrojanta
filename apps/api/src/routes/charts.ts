@@ -1,6 +1,6 @@
-import type { FastifyInstance } from "fastify";
 import { computeChart, computeTransits, InvalidTimezoneError } from "@sebt/astro";
 import { birthDetailsSchema } from "@sebt/shared";
+import type { FastifyInstance } from "fastify";
 import { AppError } from "../lib/errors";
 import { parse } from "../lib/validate";
 

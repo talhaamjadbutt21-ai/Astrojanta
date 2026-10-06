@@ -1,10 +1,10 @@
-import type { FastifyInstance } from "fastify";
 import { computeChart, computeTransits } from "@sebt/astro";
 import { createProfileSchema, profileIdParamSchema } from "@sebt/shared";
+import type { FastifyInstance } from "fastify";
+import type { AppContext } from "../app";
 import { AppError } from "../lib/errors";
 import { parse } from "../lib/validate";
 import { requireAuth } from "../plugins/auth";
-import type { AppContext } from "../app";
 
 const MAX_PROFILES_PER_USER = 25;
 

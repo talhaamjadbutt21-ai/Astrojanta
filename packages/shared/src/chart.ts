@@ -1,14 +1,4 @@
-export const PLANETS = [
-  "Sun",
-  "Moon",
-  "Mars",
-  "Mercury",
-  "Jupiter",
-  "Venus",
-  "Saturn",
-  "Rahu",
-  "Ketu",
-] as const;
+export const PLANETS = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn", "Rahu", "Ketu"] as const;
 export type Planet = (typeof PLANETS)[number];
 
 export const SIGNS = [

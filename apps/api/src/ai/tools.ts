@@ -1,6 +1,6 @@
+import { type Chart, PLANETS, type TransitSnapshot } from "@sebt/shared";
 import { tool } from "ai";
 import { z } from "zod";
-import { PLANETS, type Chart, type TransitSnapshot } from "@sebt/shared";
 
 /**
  * Read-only tools bound to one already-authorised chart.
@@ -32,19 +32,22 @@ export function chartTools(chart: Chart, transits: TransitSnapshot) {
     }),
 
     getCurrentTransits: tool({
-      description: "Current sidereal positions of all planets (Gochar) and Sade Sati status relative to the natal Moon.",
+      description:
+        "Current sidereal positions of all planets (Gochar) and Sade Sati status relative to the natal Moon.",
       inputSchema: z.object({}),
       execute: async () => transits,
     }),
 
     getNavamsa: tool({
-      description: "Navamsa (D9) signs, used for marriage, partner and dharma questions, and to judge planetary strength.",
+      description:
+        "Navamsa (D9) signs, used for marriage, partner and dharma questions, and to judge planetary strength.",
       inputSchema: z.object({}),
       execute: async () => chart.navamsa,
     }),
 
     getPlanetDetails: tool({
-      description: "Full details for one planet: longitude, nakshatra, pada, nakshatra lord, dignity, retrograde, combustion, house.",
+      description:
+        "Full details for one planet: longitude, nakshatra, pada, nakshatra lord, dignity, retrograde, combustion, house.",
       inputSchema: z.object({ planet: z.enum(PLANETS) }),
       execute: async ({ planet }) => chart.planets.find((p) => p.name === planet) ?? null,
     }),
