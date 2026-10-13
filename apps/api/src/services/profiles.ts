@@ -1,4 +1,4 @@
-import type { BirthDetails, Profile } from "@sebt/shared";
+import type { BirthDetails, Profile } from "@astronex/shared";
 import { and, desc, eq } from "drizzle-orm";
 import type { Db } from "../db/client";
 import { profiles } from "../db/schema";

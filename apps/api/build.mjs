@@ -14,7 +14,7 @@ await build({
       name: "externalize-npm-deps",
       setup(b) {
         b.onResolve({ filter: /^[^./]/ }, (args) =>
-          args.path.startsWith("@sebt/") ? undefined : { path: args.path, external: true },
+          args.path.startsWith("@astronex/") ? undefined : { path: args.path, external: true },
         );
       },
     },

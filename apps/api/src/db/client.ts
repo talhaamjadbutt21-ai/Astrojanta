@@ -11,6 +11,15 @@ export interface Database {
   close(): Promise<void>;
 }
 
+/** Supabase transaction pooler (port 6543) does not support prepared statements. */
+function usesPreparedStatements(url: string): boolean {
+  try {
+    return new URL(url).port !== "6543";
+  } catch {
+    return true;
+  }
+}
+
 /** Connects to Postgres when DATABASE_URL is set, otherwise to an embedded PGlite instance. Runs migrations. */
 export async function connectDatabase(env: Env): Promise<Database> {
   const migrationsFolder = resolve(process.cwd(), env.MIGRATIONS_DIR);
@@ -21,9 +30,23 @@ export async function connectDatabase(env: Env): Promise<Database> {
       import("drizzle-orm/postgres-js"),
       import("drizzle-orm/postgres-js/migrator"),
     ]);
-    const client = postgres(env.DATABASE_URL, { max: 10, prepare: true });
+    const migrateUrl = env.DATABASE_MIGRATE_URL ?? env.DATABASE_URL;
+
+    if (migrateUrl !== env.DATABASE_URL) {
+      const migrateClient = postgres(migrateUrl, { max: 1, prepare: true });
+      const migrateDb = drizzle({ client: migrateClient, schema });
+      await migrate(migrateDb, { migrationsFolder });
+      await migrateClient.end({ timeout: 5 });
+    }
+
+    const client = postgres(env.DATABASE_URL, {
+      max: 10,
+      prepare: usesPreparedStatements(env.DATABASE_URL),
+    });
     const db = drizzle({ client, schema });
-    await migrate(db, { migrationsFolder });
+    if (migrateUrl === env.DATABASE_URL) {
+      await migrate(db, { migrationsFolder });
+    }
     return { db: db as unknown as Db, close: () => client.end() };
   }
 

@@ -1,28 +1,17 @@
-import { computeChart, computeTransits } from "@sebt/astro";
-import { type ChatQuota, type Conversation, chatRequestSchema, type StoredChatMessage } from "@sebt/shared";
-import { and, asc, count, desc, eq, gt } from "drizzle-orm";
+import { computeChart, computeTransits } from "@astronex/astro";
+import { type Conversation, chatRequestSchema, type StoredChatMessage } from "@astronex/shared";
+import { and, asc, desc, eq } from "drizzle-orm";
 import type { FastifyInstance } from "fastify";
 import { z } from "zod";
 import { CRISIS_REPLY, isCrisisMessage } from "../ai/safety";
 import type { AppContext } from "../app";
-import type { Db } from "../db/client";
 import { conversations, messages } from "../db/schema";
-import { AppError, notFound } from "../lib/errors";
+import { notFound } from "../lib/errors";
 import { parse } from "../lib/validate";
 import { requireAuth } from "../plugins/auth";
+import { consumeFeature, readFeatureQuota } from "../services/usage";
 
 const HISTORY_LIMIT = 20;
-const DAY_MS = 86_400_000;
-
-async function quotaFor(db: Db, userId: string, limit: number): Promise<ChatQuota> {
-  const since = new Date(Date.now() - DAY_MS);
-  const [row] = await db
-    .select({ used: count() })
-    .from(messages)
-    .where(and(eq(messages.userId, userId), eq(messages.role, "user"), gt(messages.createdAt, since)));
-  const used = row?.used ?? 0;
-  return { used, limit, remaining: Math.max(0, limit - used), resetsAt: new Date(Date.now() + DAY_MS).toISOString() };
-}
 
 const toConversation = (c: typeof conversations.$inferSelect): Conversation => ({
   id: c.id,
@@ -32,9 +21,9 @@ const toConversation = (c: typeof conversations.$inferSelect): Conversation => (
 });
 
 export async function chatRoutes(app: FastifyInstance, { db, env, profiles, astrologer }: AppContext) {
-  app.get("/api/chat/quota", async (request) => {
-    const { userId } = requireAuth(request);
-    return { quota: await quotaFor(db, userId, env.FREE_DAILY_QUESTIONS) };
+  app.get("/api/chat/quota", async (request, reply) => {
+    requireAuth(request);
+    return { quota: await readFeatureQuota(db, env, request, reply, "chat") };
   });
 
   app.get("/api/conversations", async (request) => {
@@ -89,10 +78,7 @@ export async function chatRoutes(app: FastifyInstance, { db, env, profiles, astr
     const input = parse(chatRequestSchema, request.body);
     const { profile, birth } = await profiles.get(userId, input.profileId);
 
-    const quota = await quotaFor(db, userId, env.FREE_DAILY_QUESTIONS);
-    if (quota.remaining <= 0) {
-      throw new AppError("QUOTA_EXCEEDED", "You've used today's free questions. Upgrade or come back tomorrow.");
-    }
+    await consumeFeature(db, env, request, reply, "chat");
 
     let conversationId = input.conversationId;
     if (conversationId) {
@@ -129,7 +115,12 @@ export async function chatRoutes(app: FastifyInstance, { db, env, profiles, astr
     ).reverse();
 
     const abort = new AbortController();
-    request.raw.on("close", () => abort.abort());
+    // Abort only when the *client* drops the response mid-stream.
+    // Do not listen to request.raw "close" — that fires after the POST body is read and would
+    // cancel the LLM before any tokens arrive.
+    const onClientGone = () => {
+      if (!reply.raw.writableFinished) abort.abort();
+    };
 
     // Hijacking bypasses Fastify's reply pipeline, so carry over headers set by CORS/helmet hooks.
     const inherited = Object.fromEntries(
@@ -143,6 +134,10 @@ export async function chatRoutes(app: FastifyInstance, { db, env, profiles, astr
       "x-accel-buffering": "no",
       "x-conversation-id": conversationId,
     });
+    reply.raw.on("close", onClientGone);
+    // Flush a zero-width space immediately so reverse proxies start the stream
+    // before tool calls finish (otherwise a 30s idle timeout returns 500).
+    reply.raw.write("\u200b");
 
     let answer = "";
     try {
@@ -167,6 +162,11 @@ export async function chatRoutes(app: FastifyInstance, { db, env, profiles, astr
         answer += chunk;
         reply.raw.write(chunk);
       }
+      if (!answer.trim() && !abort.signal.aborted) {
+        const notice = "_I couldn't generate an answer just now. Please try again._";
+        answer = notice;
+        if (!reply.raw.writableEnded) reply.raw.write(notice);
+      }
     } catch (err) {
       if (!abort.signal.aborted) {
         request.log.error({ err }, "astrologer stream failed");
@@ -175,6 +175,7 @@ export async function chatRoutes(app: FastifyInstance, { db, env, profiles, astr
         if (!reply.raw.writableEnded) reply.raw.write(notice);
       }
     } finally {
+      reply.raw.off("close", onClientGone);
       if (answer.trim()) {
         await db
           .insert(messages)

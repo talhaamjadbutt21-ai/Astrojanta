@@ -2,7 +2,7 @@
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
   "files": {
-    "includes": ["**", "!**/drizzle", "!**/.next", "!**/dist", "!**/.expo", "!**/package-lock.json"]
+    "includes": ["**", "!**/drizzle", "!**/.next", "!**/dist", "!**/package-lock.json"]
   },
   "formatter": { "enabled": true, "indentStyle": "space", "indentWidth": 2, "lineWidth": 120 },
   "linter": {

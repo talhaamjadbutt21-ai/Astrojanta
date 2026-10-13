@@ -1,7 +1,7 @@
 "use client";
 
-import { ApiError, type BirthDetails } from "@sebt/shared";
-import { useMutation } from "@tanstack/react-query";
+import { ApiError, type BirthDetails } from "@astronex/shared";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { ArrowLeft, MessageCircleHeart } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useRouter } from "next/navigation";
@@ -10,6 +10,7 @@ import { BirthForm } from "@/components/birth-form";
 import { ChartView } from "@/components/chart-view";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { QuotaHint } from "@/components/quota-hint";
 import { api } from "@/lib/api";
 import { pendingBirth, useSession } from "@/lib/session";
 
@@ -18,7 +19,11 @@ export function KundliTool() {
   const { data: user } = useSession();
   const [birth, setBirth] = useState<BirthDetails | null>(null);
 
-  const compute = useMutation({ mutationFn: (b: BirthDetails) => api.charts.compute(b) });
+  const qc = useQueryClient();
+  const compute = useMutation({
+    mutationFn: (b: BirthDetails) => api.charts.compute(b, "kundli"),
+    onSettled: () => void qc.invalidateQueries({ queryKey: ["usage"] }),
+  });
   const save = useMutation({
     mutationFn: (b: BirthDetails) => api.profiles.create({ relation: "self", birth: b }),
     onSuccess: ({ profile }) => router.push(`/chat/${profile.id}`),
@@ -76,13 +81,14 @@ export function KundliTool() {
           <Card className="p-6 sm:p-8">
             <BirthForm
               pending={compute.isPending}
-              serverError={err && err.code !== "VALIDATION" ? err.message : null}
+              serverError={err && err.code !== "VALIDATION" && err.code !== "QUOTA_EXCEEDED" ? err.message : null}
               serverFields={err?.fields}
               onSubmit={(b) => {
                 setBirth(b);
                 compute.mutate(b);
               }}
             />
+            <QuotaHint feature="kundli" error={err?.code === "QUOTA_EXCEEDED" ? err.message : null} />
           </Card>
           <p className="mt-4 text-center text-xs text-muted">Nothing is stored unless you choose to save your chart.</p>
         </motion.div>

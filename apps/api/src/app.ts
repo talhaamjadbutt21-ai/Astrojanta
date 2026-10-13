@@ -2,26 +2,34 @@ import cookie from "@fastify/cookie";
 import cors from "@fastify/cors";
 import helmet from "@fastify/helmet";
 import rateLimit from "@fastify/rate-limit";
-import type { ApiErrorBody } from "@sebt/shared";
+import type { ApiErrorBody } from "@astronex/shared";
 import Fastify, { type FastifyError, type FastifyInstance } from "fastify";
 import { type Astrologer, createAstrologer } from "./ai/agent";
+import { createIdentityProvider, type IdentityProvider } from "./auth";
 import type { Db } from "./db/client";
-import type { Env } from "./env";
+import { llmProvider, type Env } from "./env";
 import { FieldCipher } from "./lib/crypto";
 import { AppError } from "./lib/errors";
 import { registerAuth } from "./plugins/auth";
+import { adminRoutes } from "./routes/admin";
 import { authRoutes } from "./routes/auth";
 import { chartRoutes } from "./routes/charts";
 import { chatRoutes } from "./routes/chat";
+import { matchingRoutes } from "./routes/matching";
 import { placeRoutes } from "./routes/places";
+import { usageRoutes } from "./routes/usage";
+import { proRoutes } from "./routes/pro";
 import { profileRoutes } from "./routes/profiles";
+import { createMailer, type Mailer } from "./services/mail";
 import { ProfileService } from "./services/profiles";
 
 export interface AppContext {
   db: Db;
   env: Env;
+  identity: IdentityProvider;
   profiles: ProfileService;
   astrologer: Astrologer;
+  mailer: Mailer;
 }
 
 export interface BuildAppOptions {
@@ -29,9 +37,11 @@ export interface BuildAppOptions {
   env: Env;
   /** Override the AI layer (used by tests). */
   astrologer?: Astrologer;
+  /** Override identity (tests default to in-memory email/password). */
+  identity?: IdentityProvider;
 }
 
-export async function buildApp({ db, env, astrologer }: BuildAppOptions): Promise<FastifyInstance> {
+export async function buildApp({ db, env, astrologer, identity: identityOverride }: BuildAppOptions): Promise<FastifyInstance> {
   const app = Fastify({
     trustProxy: env.TRUST_PROXY,
     bodyLimit: 64 * 1024,
@@ -86,22 +96,47 @@ export async function buildApp({ db, env, astrologer }: BuildAppOptions): Promis
   if (!env.DATA_ENCRYPTION_KEY && env.NODE_ENV === "development") {
     app.log.warn("DATA_ENCRYPTION_KEY not set: using an insecure development key");
   }
+  if (!llmProvider(env) && env.NODE_ENV !== "test") {
+    app.log.warn("GEMINI_API_KEY not set: AI chat is in offline chart-summary mode");
+  }
+
+  const identity = identityOverride ?? createIdentityProvider(env);
+  if (identity.kind === "memory" && env.NODE_ENV === "development") {
+    app.log.warn("SUPABASE_* not set: using in-memory auth (accounts reset on restart)");
+  }
+
+  const mailer = createMailer(env);
+  if (!mailer.enabled && env.NODE_ENV !== "test") {
+    app.log.warn("RESEND_API_KEY / MAIL_FROM not set: Pro request emails are not sent (mailto fallback only)");
+  }
 
   const ctx: AppContext = {
     db,
     env,
+    identity,
     profiles: new ProfileService(db, cipher),
     astrologer: astrologer ?? createAstrologer(env),
+    mailer,
   };
 
-  registerAuth(app, db, env);
+  registerAuth(app, db, env, identity);
 
-  app.get("/api/health", async () => ({ ok: true, ai: ctx.astrologer.mode }));
+  app.get("/api/health", async () => ({
+    ok: true,
+    ai: ctx.astrologer.mode,
+    auth: identity.kind,
+    payments: "manual",
+    mail: mailer.enabled,
+  }));
   await app.register(authRoutes, ctx);
-  await app.register(chartRoutes);
+  await app.register(chartRoutes, ctx);
+  await app.register(matchingRoutes, ctx);
+  await app.register(usageRoutes, ctx);
+  await app.register(proRoutes, ctx);
   await app.register(placeRoutes, ctx);
   await app.register(profileRoutes, ctx);
   await app.register(chatRoutes, ctx);
+  await app.register(adminRoutes, ctx);
 
   return app;
 }

@@ -29,10 +29,13 @@ export interface StoredChatMessage {
 }
 
 export interface ChatQuota {
+  feature?: "chat";
   used: number;
   limit: number;
   remaining: number;
   resetsAt: string;
+  plan?: "guest" | "free" | "pro";
+  pro: boolean;
 }
 
 export type ChatRequest = z.input<typeof chatRequestSchema>;

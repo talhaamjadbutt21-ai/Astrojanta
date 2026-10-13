@@ -1,12 +1,12 @@
 "use client";
 
-import { type Chart, SIGNS, SIGNS_HI, type TransitSnapshot } from "@sebt/shared";
+import { type Chart, chartDivisions, signHindi, type TransitSnapshot } from "@astronex/shared";
 import { Clock, Moon, Orbit, Sparkles, Sunrise } from "lucide-react";
 import { motion } from "motion/react";
 import { type ReactNode, useState } from "react";
 import { cn } from "@/lib/cn";
 import { formatDate, formatDegree, PLANET_HI, yearOf } from "@/lib/format";
-import { type ChartPlacement, NorthIndianChart } from "./north-indian-chart";
+import { NorthIndianChart } from "./north-indian-chart";
 import { Badge, Card } from "./ui/card";
 
 function Stat({ icon, label, value, sub }: { icon: ReactNode; label: string; value: string; sub?: string }) {
@@ -22,8 +22,6 @@ function Stat({ icon, label, value, sub }: { icon: ReactNode; label: string; val
   );
 }
 
-const signHi = (sign: string) => SIGNS_HI[SIGNS.indexOf(sign as (typeof SIGNS)[number])] ?? "";
-
 export function ChartView({ chart, transits, name }: { chart: Chart; transits: TransitSnapshot; name: string }) {
   const [division, setDivision] = useState<"D1" | "D9">("D1");
   const moon = chart.planets.find((p) => p.name === "Moon")!;
@@ -31,14 +29,7 @@ export function ChartView({ chart, transits, name }: { chart: Chart; transits: T
   const manglik = chart.doshas.manglik;
   const manglikPresent = manglik.fromLagna === true || manglik.fromMoon;
 
-  const d1Asc = chart.lagna?.signIndex ?? moon.signIndex;
-  const d1: ChartPlacement[] = [
-    ...(chart.lagna ? [{ name: "Lagna", signIndex: chart.lagna.signIndex }] : []),
-    ...chart.planets.map((p) => ({ name: p.name, signIndex: p.signIndex, retrograde: p.retrograde })),
-  ];
-  const d9Sign = (key: string) => SIGNS.indexOf(chart.navamsa[key] as (typeof SIGNS)[number]);
-  const d9Asc = chart.navamsa.Lagna ? d9Sign("Lagna") : d9Sign("Moon");
-  const d9: ChartPlacement[] = Object.keys(chart.navamsa).map((k) => ({ name: k, signIndex: d9Sign(k) }));
+  const divisions = chartDivisions(chart);
 
   const currentMaha = chart.dasha.mahadashas.find((m) => m.lord === current?.maha && m.end === current.mahaEnds);
 
@@ -49,13 +40,15 @@ export function ChartView({ chart, transits, name }: { chart: Chart; transits: T
           icon={<Sunrise className="size-5" />}
           label="Lagna"
           value={chart.lagna ? `${chart.lagna.sign}` : "Unknown"}
-          sub={chart.lagna ? `${signHi(chart.lagna.sign)} · ${formatDegree(chart.lagna.degree)}` : "Needs birth time"}
+          sub={
+            chart.lagna ? `${signHindi(chart.lagna.sign)} · ${formatDegree(chart.lagna.degree)}` : "Needs birth time"
+          }
         />
         <Stat
           icon={<Moon className="size-5" />}
           label="Moon sign (Rashi)"
           value={chart.moonSign}
-          sub={signHi(chart.moonSign)}
+          sub={signHindi(chart.moonSign)}
         />
         <Stat
           icon={<Sparkles className="size-5" />}
@@ -101,8 +94,8 @@ export function ChartView({ chart, transits, name }: { chart: Chart; transits: T
           <motion.div key={division} initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }}>
             <NorthIndianChart
               title={`${name} ${division} chart`}
-              ascendantSignIndex={division === "D1" ? d1Asc : d9Asc}
-              placements={division === "D1" ? d1 : d9}
+              ascendantSignIndex={divisions[division].ascendant}
+              placements={divisions[division].placements}
             />
           </motion.div>
           <p className="mt-3 text-center text-[11px] text-muted">Numbers are signs (1 = Aries). ℞ = retrograde.</p>

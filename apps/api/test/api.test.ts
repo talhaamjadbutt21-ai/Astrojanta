@@ -1,4 +1,4 @@
-import { MOBILE_CLIENT, SESSION_COOKIE } from "@sebt/shared";
+import { MOBILE_CLIENT, SESSION_COOKIE } from "@astronex/shared";
 import type { FastifyInstance } from "fastify";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { offlineAstrologer } from "../src/ai/agent";
@@ -8,7 +8,13 @@ import { profiles } from "../src/db/schema";
 import { loadEnv } from "../src/env";
 
 const ORIGIN = "http://localhost:3000";
-const env = loadEnv({ NODE_ENV: "test", PGLITE_DIR: "memory://", CORS_ORIGINS: ORIGIN, FREE_DAILY_QUESTIONS: "2" });
+const env = loadEnv({
+  NODE_ENV: "test",
+  PGLITE_DIR: "memory://",
+  CORS_ORIGINS: ORIGIN,
+  FREE_DAILY_QUESTIONS: "2",
+  ADMIN_EMAILS: "admin@example.com",
+});
 
 const birth = {
   name: "Asha",
@@ -49,6 +55,8 @@ describe("auth", () => {
     expect(body.token).toBeUndefined();
     expect(JSON.stringify(body)).not.toMatch(/hash/i);
     const raw = String(res.headers["set-cookie"]);
+    expect(raw).toMatch(/astronex_session=/);
+    expect(raw).toMatch(/astronex_refresh=/);
     expect(raw).toMatch(/HttpOnly/);
     expect(raw).toMatch(/SameSite=Lax/);
   });
@@ -134,6 +142,39 @@ describe("profiles, charts and chat", () => {
     const res = await app.inject({ method: "POST", url: "/api/charts", payload: birth });
     expect(res.statusCode).toBe(200);
     expect(res.json().chart.planets).toHaveLength(9);
+    expect(res.json().quota.limit).toBe(1);
+    expect(res.json().quota.remaining).toBe(0);
+  });
+
+  it("limits guests to one kundli attempt and keeps manglik as a separate daily bucket", async () => {
+    const first = await app.inject({ method: "POST", url: "/api/charts?feature=kundli", payload: birth });
+    expect(first.statusCode).toBe(200);
+    const guest = first.cookies.find((c) => c.name === "astronex_guest");
+    expect(guest?.value).toBeTruthy();
+    const guestCookie = `${guest!.name}=${guest!.value}`;
+    const blocked = await app.inject({
+      method: "POST",
+      url: "/api/charts?feature=kundli",
+      headers: { cookie: guestCookie },
+      payload: birth,
+    });
+    expect(blocked.statusCode).toBe(429);
+    expect(blocked.json().error.code).toBe("QUOTA_EXCEEDED");
+    const manglik = await app.inject({
+      method: "POST",
+      url: "/api/charts?feature=manglik",
+      headers: { cookie: guestCookie },
+      payload: birth,
+    });
+    expect(manglik.statusCode).toBe(200);
+  });
+
+  it("gives a signed-in free account two kundli attempts", async () => {
+    const ask = () =>
+      app.inject({ method: "POST", url: "/api/charts?feature=kundli", headers: { cookie, origin: ORIGIN }, payload: birth });
+    expect((await ask()).statusCode).toBe(200);
+    expect((await ask()).statusCode).toBe(200);
+    expect((await ask()).statusCode).toBe(429);
   });
 
   it("encrypts birth details at rest", async () => {
@@ -194,5 +235,144 @@ describe("profiles, charts and chat", () => {
     const blocked = await ask();
     expect(blocked.statusCode).toBe(429);
     expect(blocked.json().error.code).toBe("QUOTA_EXCEEDED");
+  });
+});
+
+describe("matching and pro inquiries", () => {
+  const girl = {
+    name: "India",
+    date: "1947-08-15",
+    time: "00:00",
+    place: { name: "New Delhi, India", latitude: 28.6139, longitude: 77.209, timezone: "Asia/Kolkata" },
+  };
+
+  it("returns an 8-koota Guna Milan score without auth", async () => {
+    const res = await app.inject({ method: "POST", url: "/api/matching", payload: { boy: birth, girl } });
+    expect(res.statusCode).toBe(200);
+    const { matching } = res.json();
+    expect(matching.kootas).toHaveLength(8);
+    expect(matching.max).toBe(36);
+    expect(matching.total).toBeGreaterThanOrEqual(0);
+    expect(matching.total).toBeLessThanOrEqual(36);
+  });
+
+  it("stores a Pro inquiry and rejects invalid plans", async () => {
+    const ok = await app.inject({
+      method: "POST",
+      url: "/api/pro/inquiries",
+      payload: { name: "Priya", email: "priya@example.com", plan: "yearly" },
+    });
+    expect(ok.statusCode).toBe(201);
+    expect(ok.json().id).toEqual(expect.any(String));
+    expect(ok.json().requestEmail).toContain("@");
+
+    const bad = await app.inject({
+      method: "POST",
+      url: "/api/pro/inquiries",
+      payload: { name: "Priya", email: "priya@example.com", plan: "lifetime" },
+    });
+    expect(bad.statusCode).toBe(422);
+  });
+});
+
+describe("admin overview", () => {
+  it("rejects unauthenticated and non-admin callers", async () => {
+    expect((await app.inject({ method: "GET", url: "/api/admin/overview" })).statusCode).toBe(401);
+
+    const login = await app.inject({
+      method: "POST",
+      url: "/api/auth/login",
+      headers: { origin: ORIGIN },
+      payload: { email: "web@example.com", password: "correct horse battery" },
+    });
+    const denied = await app.inject({
+      method: "GET",
+      url: "/api/admin/overview",
+      headers: { cookie: cookieFrom(login) },
+    });
+    expect(denied.statusCode).toBe(403);
+    expect(denied.json().error.code).toBe("FORBIDDEN");
+  });
+
+  it("returns counts for an admin email and flags the session", async () => {
+    const reg = await app.inject({
+      method: "POST",
+      url: "/api/auth/register",
+      headers: { origin: ORIGIN },
+      payload: { email: "admin@example.com", password: "admin password 1" },
+    });
+    expect(reg.statusCode).toBe(201);
+    expect(reg.json().user.admin).toBe(true);
+
+    const cookie = cookieFrom(reg);
+    const me = await app.inject({ method: "GET", url: "/api/auth/me", headers: { cookie } });
+    expect(me.json().user.admin).toBe(true);
+
+    const res = await app.inject({ method: "GET", url: "/api/admin/overview", headers: { cookie } });
+    expect(res.statusCode).toBe(200);
+    const { overview } = res.json();
+    expect(overview.users.total).toBeGreaterThanOrEqual(1);
+    expect(overview.users.last7Days).toBeGreaterThanOrEqual(1);
+    expect(overview.chat.questionsToday).toBeGreaterThanOrEqual(0);
+    expect(overview.chat.conversations).toBeGreaterThanOrEqual(0);
+    expect(overview.pro.inquiries).toBeGreaterThanOrEqual(1);
+    expect(overview.pro.subscribers).toBeGreaterThanOrEqual(0);
+  });
+});
+
+describe("pro manual grants", () => {
+  it("exposes the manual request-email config", async () => {
+    const cfg = await app.inject({ method: "GET", url: "/api/pro/config" });
+    expect(cfg.statusCode).toBe(200);
+    expect(cfg.json().mode).toBe("manual");
+    expect(cfg.json().requestEmail).toContain("@");
+    expect(cfg.json().mailEnabled).toBe(false);
+    expect(cfg.json().hasPaymentLink).toBe(false);
+    expect((await app.inject({ method: "POST", url: "/api/pro/checkout", payload: { plan: "monthly" } })).statusCode).toBe(
+      404,
+    );
+  });
+
+  it("lets an admin grant and revoke Pro by email", async () => {
+    const reg = await app.inject({
+      method: "POST",
+      url: "/api/auth/register",
+      headers: { origin: ORIGIN },
+      payload: { email: "pro@example.com", password: "pro password 1" },
+    });
+    expect(reg.json().user.pro).toBe(false);
+    const userCookie = cookieFrom(reg);
+
+    const adminLogin = await app.inject({
+      method: "POST",
+      url: "/api/auth/login",
+      headers: { origin: ORIGIN },
+      payload: { email: "admin@example.com", password: "admin password 1" },
+    });
+    const adminCookie = cookieFrom(adminLogin);
+
+    const granted = await app.inject({
+      method: "POST",
+      url: "/api/admin/pro",
+      headers: { origin: ORIGIN, cookie: adminCookie },
+      payload: { email: "pro@example.com", plan: "monthly" },
+    });
+    expect(granted.statusCode).toBe(200);
+    expect(granted.json().user.pro).toBe(true);
+
+    const me = await app.inject({ method: "GET", url: "/api/auth/me", headers: { cookie: userCookie } });
+    expect(me.json().user.pro).toBe(true);
+
+    const quota = await app.inject({ method: "GET", url: "/api/chat/quota", headers: { cookie: userCookie } });
+    expect(quota.json().quota.pro).toBe(true);
+    expect(quota.json().quota.limit).toBe(6);
+
+    const revoked = await app.inject({
+      method: "POST",
+      url: "/api/admin/pro",
+      headers: { origin: ORIGIN, cookie: adminCookie },
+      payload: { email: "pro@example.com", plan: "revoke" },
+    });
+    expect(revoked.json().user.pro).toBe(false);
   });
 });

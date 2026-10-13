@@ -1,14 +1,19 @@
+import type { AdminOverview } from "./admin";
 import { type ApiErrorBody, CLIENT_HEADER, MOBILE_CLIENT } from "./api";
 import type { AuthResponse, LoginInput, RegisterInput, User } from "./auth";
 import type { BirthDetailsInput, Place } from "./birth";
 import type { Chart, TransitSnapshot } from "./chart";
 import type { ChatQuota, ChatRequest, Conversation, StoredChatMessage } from "./chat";
+import type { GunaMilan, MatchingRequest } from "./matching";
+import type { ChartFeature, FeatureQuota, ProductFeature, UsageSnapshot } from "./usage";
+import type { AdminGrantProInput, ProConfig, ProInquiryInput } from "./pro";
 import type { CreateProfileInput, Profile } from "./profile";
 
 export type PlaceResult = Place & { id: string };
 export interface ChartResult {
   chart: Chart;
   transits: TransitSnapshot;
+  quota?: FeatureQuota;
 }
 export interface ProfileDetail extends ChartResult {
   profile: Profile;
@@ -94,7 +99,46 @@ export function createApiClient(options: ApiClientOptions) {
       search: (q: string) => json<{ results: PlaceResult[] }>("GET", `/api/places?q=${encodeURIComponent(q)}`),
     },
     charts: {
-      compute: (birth: BirthDetailsInput) => json<ChartResult>("POST", "/api/charts", birth),
+      compute: (birth: BirthDetailsInput, feature: ChartFeature = "kundli") =>
+        json<ChartResult>("POST", `/api/charts?feature=${feature}`, birth),
+    },
+    matching: {
+      compute: (input: MatchingRequest) => json<{ matching: GunaMilan; quota?: FeatureQuota }>("POST", "/api/matching", input),
+    },
+    usage: {
+      snapshot: () => json<UsageSnapshot>("GET", "/api/usage"),
+      feature: (feature: ProductFeature) => json<{ quota: FeatureQuota }>("GET", `/api/usage?feature=${feature}`),
+    },
+    pro: {
+      config: () => json<ProConfig>("GET", "/api/pro/config"),
+      inquire: (input: ProInquiryInput) =>
+        json<{ id: string; requestEmail: string; emailed: boolean }>("POST", "/api/pro/inquiries", input),
+    },
+    admin: {
+      overview: () => json<{ overview: AdminOverview }>("GET", "/api/admin/overview"),
+      proInquiries: () =>
+        json<{
+          inquiries: {
+            id: string;
+            name: string;
+            email: string;
+            phone: string | null;
+            plan: "monthly" | "yearly";
+            message: string | null;
+            createdAt: string;
+          }[];
+        }>("GET", "/api/admin/pro-inquiries"),
+      grantPro: (input: AdminGrantProInput) =>
+        json<{ user: { id: string; email: string; pro: boolean; proUntil: string | null } }>(
+          "POST",
+          "/api/admin/pro",
+          input,
+        ),
+      findUser: (email: string) =>
+        json<{ user: { id: string; email: string; pro: boolean; proUntil: string | null; createdAt: string } }>(
+          "GET",
+          `/api/admin/users?email=${encodeURIComponent(email)}`,
+        ),
     },
     profiles: {
       list: () => json<{ profiles: Profile[] }>("GET", "/api/profiles"),
@@ -119,10 +163,12 @@ export function createApiClient(options: ApiClientOptions) {
       ): Promise<{ conversationId: string; text: string }> {
         const res = await send("POST", "/api/chat", req, signal);
         const conversationId = res.headers.get("x-conversation-id") ?? req.conversationId ?? "";
-        let text = "";
+        /** API may send a leading ZWSP keepalive so proxies flush before the first model token. */
+        const visible = (raw: string) => raw.replace(/^\u200b+/, "");
+        let raw = "";
         const reader = res.body?.getReader();
         if (!reader) {
-          text = await res.text();
+          const text = visible(await res.text());
           onText(text);
           return { conversationId, text };
         }
@@ -130,10 +176,11 @@ export function createApiClient(options: ApiClientOptions) {
         for (;;) {
           const { done, value } = await reader.read();
           if (done) break;
-          text += decoder.decode(value, { stream: true });
-          onText(text);
+          raw += decoder.decode(value, { stream: true });
+          onText(visible(raw));
         }
-        text += decoder.decode();
+        raw += decoder.decode();
+        const text = visible(raw);
         onText(text);
         return { conversationId, text };
       },

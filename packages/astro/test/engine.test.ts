@@ -1,9 +1,11 @@
-import { birthDetailsSchema } from "@sebt/shared";
+import { birthDetailsSchema } from "@astronex/shared";
 import { describe, expect, it } from "vitest";
 import {
   computeChart,
   computeTransits,
+  gunaMilan,
   lahiriAyanamsa,
+  matchKundlis,
   siderealAscendant,
   siderealLongitude,
   zonedTimeToUtc,
@@ -118,6 +120,30 @@ describe("computeChart", () => {
     expect(noTime.lagna).toBeNull();
     expect(noTime.planets.every((p) => p.house === null)).toBe(true);
     expect(noTime.doshas.manglik.fromLagna).toBeNull();
+  });
+});
+
+describe("guna milan", () => {
+  it("flags nadi dosha when both Moons share a nadi, and scores at most 36", () => {
+    const same = gunaMilan({
+      boy: { name: "A", moonSignIndex: 3, nakshatraIndex: 7 },
+      girl: { name: "B", moonSignIndex: 3, nakshatraIndex: 7 },
+    });
+    expect(same.nadiDosha).toBe(true);
+    expect(same.kootas.find((k) => k.key === "nadi")?.score).toBe(0);
+    expect(same.total).toBeGreaterThanOrEqual(0);
+    expect(same.total).toBeLessThanOrEqual(36);
+  });
+
+  it("matches two real charts from birth details", () => {
+    const result = matchKundlis(
+      birthDetailsSchema.parse({ name: "Asha", date: "1995-08-15", time: "07:45", place: DELHI }),
+      birthDetailsSchema.parse({ name: "India", date: "1947-08-15", time: "00:00", place: DELHI }),
+    );
+    expect(result.boy.nakshatra).toBeTruthy();
+    expect(result.girl.nakshatra).toBe("Pushya");
+    expect(result.kootas).toHaveLength(8);
+    expect(result.max).toBe(36);
   });
 });
 

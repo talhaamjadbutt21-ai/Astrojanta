@@ -1,5 +1,5 @@
 {
-  "name": "sebt-ai",
+  "name": "astronex-ai",
   "private": true,
   "packageManager": "npm@11.17.0",
   "engines": {
@@ -11,13 +11,13 @@
   ],
   "scripts": {
     "dev": "turbo run dev",
-    "dev:api": "npm run dev -w @sebt/api",
-    "dev:web": "npm run dev -w @sebt/web",
-    "dev:mobile": "npm run start -w @sebt/mobile",
+    "dev:api": "npm run dev -w @astronex/api",
+    "dev:web": "npm run dev -w @astronex/web",
     "build": "turbo run build",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
-    "lint": "turbo run lint"
+    "lint": "biome check .",
+    "format": "biome check --write ."
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.15",

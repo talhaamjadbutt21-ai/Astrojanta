@@ -12,28 +12,26 @@ out/
 *.tsbuildinfo
 next-env.d.ts
 
-# Expo / React Native
-.expo/
-expo-env.d.ts
-web-build/
-ios/
-android/
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-*.keystore
-
 # Env & secrets (never commit)
 .env
 .env.*
+.env.local
+.env.*.local
 !.env.example
+!**/.env.example
+*.pem
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+secrets/
+.secrets/
 
 # Local data
 .data/
 *.db
 *.sqlite
+*.sqlite3
 
 # Logs
 npm-debug.log*

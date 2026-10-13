@@ -1,5 +1,5 @@
 {
-  "name": "@sebt/api",
+  "name": "@astronex/api",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -9,22 +9,25 @@
     "start": "node dist/index.js",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "db:generate": "drizzle-kit generate"
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
   },
   "dependencies": {
+    "@ai-sdk/google": "^4.0.90",
     "@ai-sdk/openai": "^4.0.84",
+    "@astronex/astro": "*",
+    "@astronex/shared": "*",
     "@electric-sql/pglite": "^0.5.8",
     "@fastify/cookie": "^11.1.2",
     "@fastify/cors": "^11.3.0",
     "@fastify/helmet": "^13.1.1",
     "@fastify/rate-limit": "^11.2.0",
-    "@node-rs/argon2": "^2.2.1",
-    "@sebt/astro": "*",
-    "@sebt/shared": "*",
+    "@supabase/supabase-js": "^2.117.2",
     "ai": "^7.0.128",
     "drizzle-orm": "^0.45.3",
     "fastify": "^5.12.5",
     "postgres": "^3.4.9",
+    "resend": "^6.32.1",
     "zod": "^4.6.5"
   },
   "devDependencies": {

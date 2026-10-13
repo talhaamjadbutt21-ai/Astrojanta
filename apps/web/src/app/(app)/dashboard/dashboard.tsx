@@ -1,6 +1,6 @@
 "use client";
 
-import { ApiError, type BirthDetails, type Profile } from "@sebt/shared";
+import { ApiError, type BirthDetails, type Profile } from "@astronex/shared";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { CalendarDays, LogOut, MapPin, MessageCircleHeart, Plus, Trash2, UserRound, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
@@ -94,7 +94,8 @@ export function Dashboard() {
         <div className="flex items-center gap-2">
           {quota.data && (
             <Badge tone={quota.data.quota.remaining > 0 ? "gold" : "warn"} className="h-9 px-4 text-sm">
-              {quota.data.quota.remaining}/{quota.data.quota.limit} free questions today
+              {quota.data.quota.remaining}/{quota.data.quota.limit}{" "}
+              {quota.data.quota.pro ? "Pro" : "free"} chat attempts today
             </Badge>
           )}
           <Button onClick={() => setAdding(true)} size="sm">

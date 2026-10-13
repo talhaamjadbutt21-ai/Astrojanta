@@ -1,9 +1,5 @@
 import { createCipheriv, createDecipheriv, createHash, randomBytes } from "node:crypto";
 
-export function newSessionToken(): string {
-  return randomBytes(32).toString("base64url");
-}
-
 export function sha256(value: string): string {
   return createHash("sha256").update(value).digest("hex");
 }
@@ -18,7 +14,7 @@ export class FieldCipher {
     if (base64Key) {
       this.key = Buffer.from(base64Key, "base64");
     } else if (allowDevKey) {
-      this.key = createHash("sha256").update("sebt-ai-insecure-development-key").digest();
+      this.key = createHash("sha256").update("astronex-ai-insecure-development-key").digest();
     } else {
       throw new Error("DATA_ENCRYPTION_KEY is required");
     }

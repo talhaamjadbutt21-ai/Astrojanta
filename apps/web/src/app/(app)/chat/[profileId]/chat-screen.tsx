@@ -1,6 +1,6 @@
 "use client";
 
-import { ApiError, type ChatLanguage, STARTER_QUESTIONS } from "@sebt/shared";
+import { ApiError, type ChatLanguage, STARTER_QUESTIONS } from "@astronex/shared";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { ArrowLeft, ArrowUp, History, MessageSquarePlus, Sparkles, Square, Trash2, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
@@ -332,9 +332,13 @@ export function ChatScreen({ profileId }: { profileId: string }) {
                         )}
                       >
                         {m.role === "assistant" && !m.content ? (
-                          <span className="flex items-center gap-2 text-sm text-muted">
-                            <Spinner className="size-4" /> Reading your chart…
-                          </span>
+                          streaming ? (
+                            <span className="flex items-center gap-2 text-sm text-muted">
+                              <Spinner className="size-4" /> Reading your chart…
+                            </span>
+                          ) : (
+                            <p className="text-sm text-muted">No reply came back. Please try again.</p>
+                          )
                         ) : m.role === "assistant" ? (
                           <RichText text={m.content} />
                         ) : (
@@ -347,8 +351,11 @@ export function ChatScreen({ profileId }: { profileId: string }) {
               )}
               {quotaHit && (
                 <Card className="mx-auto mt-6 max-w-xl border-gold-400/30 text-center">
-                  <h2 className="font-display text-xl">You’ve used today’s free questions</h2>
+                  <h2 className="font-display text-xl">You’ve used today’s 3 free questions</h2>
                   <p className="mt-2 text-sm text-muted">{quotaHit}</p>
+                  <ButtonLink href="/pricing" className="mt-5">
+                    See Pro plans
+                  </ButtonLink>
                 </Card>
               )}
             </div>

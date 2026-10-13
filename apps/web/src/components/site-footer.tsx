@@ -20,6 +20,21 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link className="hover:text-ink" href="/matching">
+                Kundli matching
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-ink" href="/manglik">
+                Manglik calculator
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-ink" href="/moon-sign">
+                Moon sign &amp; Nakshatra
+              </Link>
+            </li>
+            <li>
               <Link className="hover:text-ink" href="/register">
                 AI Astrologer chat
               </Link>
@@ -39,14 +54,36 @@ export function SiteFooter() {
                 Create account
               </Link>
             </li>
+            <li>
+              <Link className="hover:text-ink" href="/pricing">
+                Pro account
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-ink" href="/privacy">
+                Privacy
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-ink" href="/terms">
+                Terms
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
       <div className="border-t border-white/8">
         <p className="mx-auto max-w-6xl px-4 py-6 text-xs leading-relaxed text-muted/80 sm:px-6">
-          Astrology offers guidance and reflection, not certainty. SEBT AI is not a substitute for medical, legal,
-          financial or psychological advice. In distress? Call Tele-MANAS 14416 (India, 24×7, free). ©{" "}
-          {new Date().getFullYear()} SEBT AI.
+          Astrology offers guidance and reflection, not certainty. Astrojanta is not a substitute for medical, legal,
+          financial or psychological advice. In distress? Call Tele-MANAS 14416 (India, 24×7, free).{" "}
+          <Link className="text-gold-300/90 hover:text-gold-200" href="/privacy">
+            Privacy
+          </Link>
+          {" · "}
+          <Link className="text-gold-300/90 hover:text-gold-200" href="/terms">
+            Terms
+          </Link>
+          . © {new Date().getFullYear()} Astrojanta.
         </p>
       </div>
     </footer>

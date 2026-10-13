@@ -1,4 +1,4 @@
-import type { Planet } from "@sebt/shared";
+import type { Planet } from "@astronex/shared";
 
 export const ENGINE_VERSION = "astro-0.1.0";
 

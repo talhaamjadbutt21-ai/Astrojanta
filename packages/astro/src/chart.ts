@@ -8,7 +8,7 @@ import {
   type PlanetPosition,
   SIGNS,
   type TransitSnapshot,
-} from "@sebt/shared";
+} from "@astronex/shared";
 import { detectYogas, manglik } from "./analysis";
 import {
   COMBUSTION_ORB,

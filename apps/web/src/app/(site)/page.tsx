@@ -1,12 +1,15 @@
 import {
   BrainCircuit,
+  HeartHandshake,
   Languages,
   LockKeyhole,
   MessageCircleHeart,
+  MoonStar,
   ScrollText,
   Sparkles,
   Telescope,
 } from "lucide-react";
+import Link from "next/link";
 import { Reveal } from "@/components/reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -56,7 +59,7 @@ const STEPS = [
 const FAQ = [
   {
     q: "Is the Kundli really free?",
-    a: "Yes. Generating your Janam Kundli, Navamsa chart, dasha periods and dosha checks is completely free, with no sign-up required.",
+    a: "Yes, with a daily attempt limit: 1 per tool without signing in, 2 per tool with a free account, and 6 per tool on Pro.",
   },
   {
     q: "How accurate are the calculations?",
@@ -70,6 +73,10 @@ const FAQ = [
     q: "What if I don’t know my birth time?",
     a: "You can still get your Moon sign, Nakshatra, planetary signs and dasha. House-based insights and the Lagna need an accurate birth time.",
   },
+  {
+    q: "How many free AI questions do I get?",
+    a: "Each tool (Kundli, matching, Manglik, Moon sign, and AI chat) has its own daily limit: 1 attempt if you are not signed in, 2 with a free account, and 6 with Pro. Limits reset at midnight UTC.",
+  },
 ];
 
 const jsonLd = {
@@ -77,10 +84,11 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "SEBT AI",
+      name: "Astrojanta",
+      alternateName: "Astrology for Everyone",
       applicationCategory: "LifestyleApplication",
       operatingSystem: "Web, iOS, Android",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       description: "Free Vedic Kundli generator with an AI astrologer that explains your chart in Hindi and English.",
     },
     {
@@ -121,11 +129,11 @@ export default function HomePage() {
             <ButtonLink href="/kundli" size="lg" className="w-full sm:w-auto">
               Get free Kundli
             </ButtonLink>
-            <ButtonLink href="/register" variant="secondary" size="lg" className="w-full sm:w-auto">
-              Ask the AI astrologer
+            <ButtonLink href="/matching" variant="secondary" size="lg" className="w-full sm:w-auto">
+              Kundli matching
             </ButtonLink>
           </div>
-          <p className="mt-5 text-xs text-muted">No sign-up needed for your Kundli · Free questions every day</p>
+          <p className="mt-5 text-xs text-muted">No sign-up needed for your Kundli · 3 free AI questions every day</p>
         </Reveal>
         <Reveal delay={0.15} className="relative mx-auto w-full max-w-[460px]">
           <ZodiacWheel />
@@ -159,6 +167,51 @@ export default function HomePage() {
                 <h3 className="mt-5 font-display text-lg">{f.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">{f.body}</p>
               </Card>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto mt-28 max-w-6xl px-4 sm:px-6" aria-labelledby="tools-title">
+        <Reveal className="mx-auto max-w-2xl text-center">
+          <h2 id="tools-title" className="font-display text-3xl font-semibold sm:text-4xl">
+            Free tools, <span className="text-gradient-gold">no sign-up</span>
+          </h2>
+          <p className="mt-4 text-muted">
+            The same calculators people search for on Kundli sites — computed on your chart, not guessed.
+          </p>
+        </Reveal>
+        <div className="mt-12 grid gap-4 sm:grid-cols-3">
+          {[
+            {
+              href: "/matching",
+              icon: HeartHandshake,
+              title: "Kundli matching",
+              body: "Ashtakoot Guna Milan out of 36, with Nadi and Bhakoot cautions.",
+            },
+            {
+              href: "/manglik",
+              icon: Sparkles,
+              title: "Manglik calculator",
+              body: "Mars from Lagna and the Moon, plus classical cancellation yogas.",
+            },
+            {
+              href: "/moon-sign",
+              icon: MoonStar,
+              title: "Moon sign & Nakshatra",
+              body: "Your Vedic rashi, birth star and pada — sidereal Lahiri, not a sun sign.",
+            },
+          ].map((t, i) => (
+            <Reveal key={t.href} delay={i * 0.08}>
+              <Link href={t.href} className="block h-full">
+                <Card className="h-full transition-transform duration-300 hover:-translate-y-1">
+                  <div className="grid size-12 place-items-center rounded-2xl bg-gradient-gold text-night-950">
+                    <t.icon className="size-6" />
+                  </div>
+                  <h3 className="mt-5 font-display text-lg">{t.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted">{t.body}</p>
+                </Card>
+              </Link>
             </Reveal>
           ))}
         </div>

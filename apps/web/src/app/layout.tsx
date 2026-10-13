@@ -18,11 +18,11 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "SEBT AI — Free Kundli & AI Vedic Astrologer in Hindi and English",
-    template: "%s · SEBT AI",
+    default: "Astrojanta — Free Kundli & AI Vedic Astrologer in Hindi and English",
+    template: "%s · Astrojanta",
   },
   description:
-    "Generate your free Janam Kundli with accurate Lahiri calculations, then ask an AI Vedic astrologer about career, marriage and dasha — in Hindi, Hinglish or English.",
+    "Astrology for Everyone. Generate your free Janam Kundli with accurate Lahiri calculations, then ask an AI Vedic astrologer about career, marriage and dasha — in Hindi, Hinglish or English.",
   keywords: [
     "free kundli",
     "janam kundli",
@@ -31,9 +31,10 @@ export const metadata: Metadata = {
     "vedic astrology",
     "manglik dosha",
     "dasha",
+    "astrojanta",
   ],
-  applicationName: "SEBT AI",
-  openGraph: { type: "website", siteName: "SEBT AI", locale: "en_IN" },
+  applicationName: "Astrojanta",
+  openGraph: { type: "website", siteName: "Astrojanta", locale: "en_IN" },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "/" },
 };

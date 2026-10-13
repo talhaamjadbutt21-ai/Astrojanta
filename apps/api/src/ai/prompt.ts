@@ -1,4 +1,4 @@
-import type { Chart, ChatLanguage, TransitSnapshot } from "@sebt/shared";
+import type { Chart, ChatLanguage, TransitSnapshot } from "@astronex/shared";
 
 const LANGUAGE_RULE: Record<ChatLanguage, string> = {
   auto: "Reply in the same language and script the user writes in (English, Hindi in Devanagari, or Hinglish in Roman script).",
@@ -41,7 +41,7 @@ export function buildInstructions(args: {
   today: Date;
 }): string {
   const { chart, transits, personName, language, today } = args;
-  return `You are SEBT AI Astrologer, a warm, knowledgeable Vedic (Jyotish) astrologer following the Parashari tradition.
+  return `You are the Astrojanta Astrologer, a warm, knowledgeable Vedic (Jyotish) astrologer following the Parashari tradition.
 You are speaking with someone about the birth chart of "${personName}". Today is ${today.toISOString().slice(0, 10)}.
 
 ## Ground truth

@@ -12,8 +12,9 @@ import { ButtonLink } from "./ui/button";
 
 const NAV = [
   { href: "/kundli", label: "Free Kundli" },
-  { href: "/#how-it-works", label: "How it works" },
-  { href: "/#faq", label: "FAQ" },
+  { href: "/matching", label: "Matching" },
+  { href: "/manglik", label: "Manglik" },
+  { href: "/pricing", label: "Pro" },
 ];
 
 export function SiteHeader() {
@@ -33,6 +34,8 @@ export function SiteHeader() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const nav = user?.admin ? [...NAV, { href: "/admin", label: "Admin" }] : NAV;
 
   const cta = isPending ? null : user ? (
     <ButtonLink href="/dashboard" size="sm">
@@ -56,10 +59,10 @@ export function SiteHeader() {
         scrolled ? "border-b border-white/8 bg-night-950/70 backdrop-blur-xl" : "bg-transparent",
       )}
     >
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+      <div className="mx-auto flex h-[4.25rem] max-w-6xl items-center justify-between px-4 sm:px-6">
         <Logo />
         <nav className="hidden items-center gap-1 md:flex" aria-label="Main">
-          {NAV.map((item) => (
+          {nav.map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -90,7 +93,7 @@ export function SiteHeader() {
             className="overflow-hidden border-b border-white/8 bg-night-950/95 backdrop-blur-xl md:hidden"
           >
             <nav className="flex flex-col gap-1 px-4 pb-5 pt-2" aria-label="Mobile">
-              {NAV.map((item) => (
+              {nav.map((item) => (
                 <Link key={item.href} href={item.href} className="rounded-2xl px-4 py-3 text-ink hover:bg-white/5">
                   {item.label}
                 </Link>

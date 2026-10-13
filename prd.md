@@ -2,7 +2,7 @@
 
 | Field | Value |
 |---|---|
-| Product name (working) | AI Astrologer (placeholder, final brand TBD) |
+| Product name (working) | Astrojanta — Astrology for Everyone |
 | Version | v0.1 (Draft) |
 | Date | 6 Oct 2026 |
 | Owner | Talha |
@@ -123,10 +123,10 @@ Every tool page must have:
 
 #### D. Monetisation (MVP)
 - **Pay-per-question packs:** e.g. ₹49 for 10 questions, ₹149 for 50.
-- **Premium subscription:** ₹199/month or ₹999/year for unlimited chat (fair-use cap), detailed reports, and an ad-free experience.
+- **Premium subscription:** $2.99/month or $29.99/year for 6 daily attempts on every tool, detailed reports, and an ad-free experience.
 - **PDF reports:** Detailed Kundli report (₹99–₹299), Marriage/Compatibility report, Career report, Yearly forecast (Varshphal).
 - **Display ads** on free pages (AdSense first, then Ezoic/Mediavine once traffic qualifies). No ads inside the chat.
-- Payments: **Razorpay** (UPI, cards, netbanking, wallets); Stripe for international users.
+- Payments: manual — user emails a Pro request; operator sends a payment link and grants Pro in `/admin`.
 
 ### 5.2 Phase 2: Growth (Months 3–6)
 - **Programmatic SEO pages** (see §7.3), e.g. "Sun in 5th house", "Rahu in 7th house for Scorpio ascendant".
@@ -308,7 +308,7 @@ Every tool page must have:
    │           │           │
 ┌──▼─────┐ ┌───▼────────┐ ┌▼──────────────────┐
 │ Astro  │ │ LLM gateway│ │ Postgres (Supabase│
-│ engine │ │ (OpenAI /  │ │ / Neon) + Redis   │
+│ engine │ │ (Gemma /   │ │ / Neon) + Redis   │
 │ Swiss  │ │ Anthropic /│ │ cache, pgvector   │
 │ Eph. + │ │ Gemini)    │ │ for RAG           │
 │ rules  │ │ + RAG      │ └───────────────────┘
@@ -318,10 +318,10 @@ Every tool page must have:
 **Stack recommendation**
 - **Frontend:** Next.js + TypeScript + Tailwind + shadcn/ui; `next-intl` for i18n.
 - **Astro engine:** Python service using `pyswisseph` (licensing per §9), or a Node binding; a rule engine for doshas, yogas, and Guna Milan; containerised.
-- **LLM:** Provider-agnostic gateway; a cheap fast model for chat, a stronger model for reports and pSEO drafts.
+- **LLM:** Provider-agnostic gateway. Launch chat uses Google Gemma 4 (`gemma-4-26b-a4b-it`) via the Gemini API; OpenAI is an optional fallback.
 - **DB:** PostgreSQL (users, profiles, charts, chats, payments) + Redis (rate limits, cache) + pgvector (knowledge base).
 - **Auth:** Supabase Auth / Firebase Phone OTP / Auth.js.
-- **Payments:** Razorpay (India), Stripe (international).
+- **Payments:** Manual payment link by email; Pro granted in admin after payment.
 - **PDF:** Server-side HTML-to-PDF (Playwright) with embedded Devanagari fonts.
 - **Analytics:** GA4 + Google Search Console + PostHog (product funnels).
 - **CMS:** Sanity / Payload / MDX in repo for articles and pSEO base content.

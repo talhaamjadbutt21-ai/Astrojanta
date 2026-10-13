@@ -1,4 +1,4 @@
-import type { ApiErrorBody } from "@sebt/shared";
+import type { ApiErrorBody } from "@astronex/shared";
 
 type Code = ApiErrorBody["error"]["code"];
 
@@ -33,4 +33,5 @@ export class AppError extends Error {
 }
 
 export const unauthenticated = () => new AppError("UNAUTHENTICATED", "Please sign in to continue");
+export const forbidden = () => new AppError("FORBIDDEN", "You don't have access");
 export const notFound = (what = "Resource") => new AppError("NOT_FOUND", `${what} not found`);

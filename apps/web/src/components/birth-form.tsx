@@ -1,6 +1,6 @@
 "use client";
 
-import { type BirthDetails, birthDetailsSchema, type Place } from "@sebt/shared";
+import { type BirthDetails, birthDetailsSchema, type Place } from "@astronex/shared";
 import { type FormEvent, useState } from "react";
 import { PlaceAutocomplete } from "./place-autocomplete";
 import { Button } from "./ui/button";
@@ -13,6 +13,7 @@ interface Props {
   serverError?: string | null;
   serverFields?: Record<string, string[]>;
   initialName?: string;
+  title?: string;
 }
 
 export function BirthForm({
@@ -22,6 +23,7 @@ export function BirthForm({
   serverError,
   serverFields,
   initialName = "",
+  title,
 }: Props) {
   const [name, setName] = useState(initialName);
   const [date, setDate] = useState("");
@@ -56,6 +58,7 @@ export function BirthForm({
 
   return (
     <form onSubmit={submit} noValidate className="grid gap-5">
+      {title ? <p className="font-display text-lg text-gold-200">{title}</p> : null}
       <Field label="Full name" error={fieldError("name")}>
         {(p) => (
           <Input

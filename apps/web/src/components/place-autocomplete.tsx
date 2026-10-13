@@ -1,6 +1,6 @@
 "use client";
 
-import type { Place } from "@sebt/shared";
+import type { Place } from "@astronex/shared";
 import { useQuery } from "@tanstack/react-query";
 import { MapPin, X } from "lucide-react";
 import { useEffect, useId, useState } from "react";

@@ -1,6 +1,12 @@
 import { z } from "zod";
 
-export const emailSchema = z.email({ error: "Enter a valid email address" }).trim().toLowerCase().max(254);
+/** Trim/lowercase before format check — Zod v4 `z.email()` validates before `.trim()`. */
+export const emailSchema = z
+  .string({ error: "Enter a valid email address" })
+  .trim()
+  .toLowerCase()
+  .max(254)
+  .pipe(z.email({ error: "Enter a valid email address" }));
 
 export const passwordSchema = z
   .string()
@@ -21,6 +27,11 @@ export const userSchema = z.object({
   id: z.uuid(),
   email: z.email(),
   createdAt: z.iso.datetime(),
+  /** True when this email is listed in ADMIN_EMAILS. */
+  admin: z.boolean(),
+  /** True while `proUntil` is in the future. */
+  pro: z.boolean(),
+  proUntil: z.iso.datetime().nullable(),
 });
 
 export const authResponseSchema = z.object({

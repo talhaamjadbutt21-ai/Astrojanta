@@ -8,7 +8,7 @@ const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "X-Frame-Options", value: "DENY" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), payment=()" },
+  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
   { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
   ...(isProd ? [{ key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" }] : []),
 ];
@@ -16,9 +16,12 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
-  transpilePackages: ["@sebt/shared"],
+  transpilePackages: ["@astronex/shared"],
   turbopack: { root: path.resolve(process.cwd(), "../..") },
+  // Chat can take >30s (tools + model). Default rewrite proxy timeout is 30s.
+  experimental: { proxyTimeout: 180_000 },
   // The browser only ever talks to this origin; Next proxies /api/* to the API so session cookies stay first-party.
+  // `/api/chat` is handled by `app/api/chat/route.ts` (streaming) and wins over this rewrite.
   async rewrites() {
     return [{ source: "/api/:path*", destination: `${API_URL}/api/:path*` }];
   },

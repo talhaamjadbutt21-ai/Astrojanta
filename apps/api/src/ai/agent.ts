@@ -1,7 +1,8 @@
+import { createGoogleGenerativeAI } from "@ai-sdk/google";
 import { createOpenAI } from "@ai-sdk/openai";
-import type { Chart, ChatLanguage, TransitSnapshot } from "@sebt/shared";
+import type { Chart, ChatLanguage, TransitSnapshot } from "@astronex/shared";
 import { isStepCount, streamText } from "ai";
-import type { Env } from "../env";
+import { type Env, googleApiKey } from "../env";
 import { buildInstructions } from "./prompt";
 import { chartTools } from "./tools";
 
@@ -19,23 +20,60 @@ export interface Astrologer {
   stream(input: AstrologerInput): AsyncIterable<string>;
 }
 
-export function createAstrologer(env: Env): Astrologer {
-  if (!env.OPENAI_API_KEY) return offlineAstrologer;
+function openRouterModelId(model: string): string {
+  return model.includes("/") ? model : `google/${model}`;
+}
 
-  const openai = createOpenAI({ apiKey: env.OPENAI_API_KEY });
+function languageModel(env: Env) {
+  const googleKey = googleApiKey(env);
+  if (googleKey?.startsWith("sk-or-")) {
+    return createOpenAI({
+      apiKey: googleKey,
+      baseURL: "https://openrouter.ai/api/v1",
+      headers: { "HTTP-Referer": "http://localhost:3000", "X-Title": "Astrojanta" },
+    })(openRouterModelId(env.AI_MODEL));
+  }
+  if (googleKey) return createGoogleGenerativeAI({ apiKey: googleKey })(env.AI_MODEL);
+  if (env.OPENAI_API_KEY?.startsWith("sk-or-")) {
+    return createOpenAI({
+      apiKey: env.OPENAI_API_KEY,
+      baseURL: "https://openrouter.ai/api/v1",
+      headers: { "HTTP-Referer": "http://localhost:3000", "X-Title": "Astrojanta" },
+    })(openRouterModelId(env.AI_MODEL));
+  }
+  if (env.OPENAI_API_KEY) return createOpenAI({ apiKey: env.OPENAI_API_KEY })(env.AI_MODEL);
+  return null;
+}
+
+export function createAstrologer(env: Env): Astrologer {
+  const model = languageModel(env);
+  if (!model) return offlineAstrologer;
+
   return {
     mode: "llm",
-    stream(input) {
+    async *stream(input) {
       const result = streamText({
-        model: openai(env.AI_MODEL),
+        model,
         instructions: buildInstructions({ ...input, today: new Date() }),
         messages: input.history,
         tools: chartTools(input.chart, input.transits),
-        stopWhen: isStepCount(5),
-        maxOutputTokens: 1200,
+        // Keep tool loops short so the first visible token arrives before proxies time out.
+        stopWhen: isStepCount(3),
+        // Gemma spends many tokens on internal reasoning; budget enough for a full answer after tools.
+        maxOutputTokens: 4096,
         abortSignal: input.abortSignal,
+        providerOptions: {
+          google: {
+            // Only one of thinkingBudget / thinkingLevel is allowed.
+            thinkingConfig: { thinkingLevel: "minimal" },
+          },
+        },
       });
-      return result.textStream;
+      // textStream can end empty on provider errors; drain fullStream so failures throw.
+      for await (const part of result.fullStream) {
+        if (part.type === "text-delta") yield part.text;
+        else if (part.type === "error") throw part.error;
+      }
     },
   };
 }
@@ -55,7 +93,7 @@ export const offlineAstrologer: Astrologer = {
       `• **Sade Sati:** ${transits.sadeSati.active ? `active — ${transits.sadeSati.phase} phase` : "not active"}`,
       chart.yogas.length ? `• **Yogas:** ${chart.yogas.map((y) => y.name).join(", ")}` : null,
       "",
-      "Add an `OPENAI_API_KEY` to the API's `.env` to enable full conversational answers.",
+      "Add a `GEMINI_API_KEY` (Google AI Studio) to the API's `.env` to enable full conversational answers.",
     ].filter((l): l is string => l !== null);
 
     for (const line of lines) {

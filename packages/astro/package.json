@@ -1,5 +1,5 @@
 {
-  "name": "@sebt/astro",
+  "name": "@astronex/astro",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -13,7 +13,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@sebt/shared": "*",
+    "@astronex/shared": "*",
     "astronomy-engine": "^2.1.19"
   },
   "devDependencies": {

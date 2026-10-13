@@ -1,5 +1,5 @@
 {
-  "name": "@sebt/web",
+  "name": "@astronex/web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "typecheck": "next typegen && tsc --noEmit"
   },
   "dependencies": {
-    "@sebt/shared": "*",
+    "@astronex/shared": "*",
     "@tanstack/react-query": "^5.104.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.52.0",

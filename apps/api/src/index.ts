@@ -1,9 +1,14 @@
 import { existsSync } from "node:fs";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { buildApp } from "./app";
 import { connectDatabase } from "./db/client";
 import { loadEnv } from "./env";
 
-if (existsSync(".env")) process.loadEnvFile(".env");
+const apiRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+const envPath = resolve(apiRoot, ".env");
+if (existsSync(envPath)) process.loadEnvFile(envPath);
+else console.warn(`No ${envPath} found. Copy .env.example to .env and add SUPABASE_* keys.`);
 
 const env = loadEnv();
 const database = await connectDatabase(env);
