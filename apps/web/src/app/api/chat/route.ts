@@ -10,6 +10,8 @@ export async function POST(request: NextRequest) {
   const cookie = request.headers.get("cookie") ?? "";
   const origin = request.headers.get("origin") ?? "";
   const authorization = request.headers.get("authorization");
+  // Forward the real client IP so per-IP rate limits on the API don't lump every visitor together.
+  const forwardedFor = request.headers.get("x-forwarded-for");
   const body = await request.text();
 
   let upstream: Response;
@@ -22,6 +24,7 @@ export async function POST(request: NextRequest) {
         cookie,
         ...(origin ? { origin } : {}),
         ...(authorization ? { authorization } : {}),
+        ...(forwardedFor ? { "x-forwarded-for": forwardedFor } : {}),
       },
       body,
       // Keep the upstream stream open; do not buffer the whole answer.

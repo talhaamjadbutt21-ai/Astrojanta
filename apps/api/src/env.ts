@@ -102,6 +102,11 @@ const envSchema = z
         message: "Set GEMINI_API_KEY or OPENAI_API_KEY in production so chat is not offline",
       });
     }
+    for (const origin of env.CORS_ORIGINS) {
+      if (origin === "*" || !origin.startsWith("https://")) {
+        ctx.addIssue({ code: "custom", path: ["CORS_ORIGINS"], message: `Must be https:// origins in production (got ${origin})` });
+      }
+    }
     const key = env.DATA_ENCRYPTION_KEY ? Buffer.from(env.DATA_ENCRYPTION_KEY, "base64") : null;
     if (key?.length !== 32) {
       ctx.addIssue({ code: "custom", path: ["DATA_ENCRYPTION_KEY"], message: "Must be 32 bytes, base64-encoded" });
