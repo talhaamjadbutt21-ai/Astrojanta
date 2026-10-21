@@ -1,3 +1,4 @@
+# UNUSED: the project now deploys the API on Vercel (see DEPLOY.md). Kept for reference only.
 # Render Blueprint for the Astrojanta API (Fastify). Secrets are entered in the Render dashboard (sync: false).
 services:
   - type: web

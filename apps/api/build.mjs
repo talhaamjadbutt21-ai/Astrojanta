@@ -2,8 +2,8 @@ import { build } from "esbuild";
 
 // Workspace packages ship TypeScript source, so they are bundled; npm dependencies stay external.
 await build({
-  entryPoints: ["src/index.ts"],
-  outfile: "dist/index.js",
+  entryPoints: { index: "src/index.ts", vercel: "src/vercel.ts" },
+  outdir: "dist",
   bundle: true,
   platform: "node",
   format: "esm",
@@ -21,4 +21,4 @@ await build({
   ],
 });
 
-console.log("API built to dist/index.js");
+console.log("API built to dist/index.js (server) and dist/vercel.js (Vercel handler)");
