@@ -4,9 +4,19 @@
   "installCommand": "cd ../.. && npm ci",
   "buildCommand": "npm run build",
   "outputDirectory": "public",
-  "regions": ["bom1"],
+  "regions": [
+    "bom1"
+  ],
   "functions": {
-    "api/index.js": { "maxDuration": 300, "includeFiles": "dist/**" }
+    "api/index.mjs": {
+      "maxDuration": 300,
+      "includeFiles": "dist/vercel.mjs"
+    }
   },
-  "rewrites": [{ "source": "/(.*)", "destination": "/api/index" }]
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index"
+    }
+  ]
 }
