@@ -1,7 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Geist, Noto_Sans_Devanagari } from "next/font/google";
 import { CosmicBackground } from "@/components/cosmic-background";
+import { JsonLd } from "@/components/json-ld";
 import { Providers } from "@/components/providers";
+import { absoluteUrl, SITE_NAME, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"], display: "swap" });
@@ -12,8 +14,6 @@ const devanagari = Noto_Sans_Devanagari({
   weight: ["400", "500", "600"],
   display: "swap",
 });
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -34,10 +34,30 @@ export const metadata: Metadata = {
     "astrojanta",
   ],
   applicationName: "Astrojanta",
-  openGraph: { type: "website", siteName: "Astrojanta", locale: "en_IN" },
+  openGraph: { type: "website", siteName: SITE_NAME, locale: "en_IN", url: "/" },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "/" },
 };
+
+const siteJsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${SITE_URL}/#organization`,
+    name: SITE_NAME,
+    url: absoluteUrl("/"),
+    logo: absoluteUrl("/favicon.ico"),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
+    name: SITE_NAME,
+    url: absoluteUrl("/"),
+    inLanguage: "en-IN",
+    publisher: { "@id": `${SITE_URL}/#organization` },
+  },
+];
 
 export const viewport: Viewport = {
   themeColor: "#07061a",
@@ -50,6 +70,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en-IN" className={`${geist.variable} ${fraunces.variable} ${devanagari.variable} antialiased`}>
       <body className="min-h-dvh overflow-x-clip font-sans">
+        <JsonLd data={siteJsonLd} />
         <CosmicBackground />
         <Providers>{children}</Providers>
       </body>
