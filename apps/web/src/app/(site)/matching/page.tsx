@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { ToolGuideSection } from "@/components/tool-guide";
+import { matchingGuide } from "@/content/tool-guides";
+import { pageOpenGraph } from "@/lib/site";
 import { MatchingTool } from "./matching-tool";
 
 export const metadata: Metadata = {
@@ -6,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Free Vedic Kundli matching (Ashtakoot Guna Milan). Compare two Moon charts for 36-guna compatibility, Nadi dosha and Bhakoot — the same system used for Hindu marriage matching.",
   alternates: { canonical: "/matching" },
+  openGraph: pageOpenGraph("/matching"),
 };
 
 export default function MatchingPage() {
@@ -13,7 +17,7 @@ export default function MatchingPage() {
     <div className="mx-auto max-w-6xl px-4 pb-10 pt-8 sm:px-6 sm:pt-12">
       <header className="mx-auto max-w-2xl text-center">
         <h1 className="font-display text-4xl font-semibold tracking-tight sm:text-5xl">
-          Kundli <span className="text-gradient-gold">Matching</span>
+          Kundli <span className="text-gradient-gold">Matching</span> (36 Gun Milan)
         </h1>
         <p className="mt-4 text-muted">
           Ashtakoot Guna Milan out of 36 points, from both Moon signs and nakshatras.{" "}
@@ -21,6 +25,7 @@ export default function MatchingPage() {
         </p>
       </header>
       <MatchingTool />
+      <ToolGuideSection guide={matchingGuide} />
     </div>
   );
 }
