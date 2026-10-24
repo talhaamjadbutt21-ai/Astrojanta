@@ -17,6 +17,7 @@ const devanagari = Noto_Sans_Devanagari({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  verification: { google: "sktipJarFhWoRv02UHvvYSaBWepLh8CCk9_JxMKy7jc" },
   title: {
     default: "Astrojanta — Free Kundli & AI Vedic Astrologer in Hindi and English",
     template: "%s · Astrojanta",
