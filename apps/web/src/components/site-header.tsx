@@ -11,6 +11,7 @@ import { Logo } from "./logo";
 import { ButtonLink } from "./ui/button";
 
 const NAV = [
+  { href: "/ai-astrologer", label: "AI Astrologer" },
   { href: "/kundli", label: "Free Kundli" },
   { href: "/matching", label: "Matching" },
   { href: "/manglik", label: "Manglik" },

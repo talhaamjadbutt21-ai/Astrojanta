@@ -35,7 +35,7 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
-              <Link className="hover:text-ink" href="/register">
+              <Link className="hover:text-ink" href="/ai-astrologer">
                 AI Astrologer chat
               </Link>
             </li>
