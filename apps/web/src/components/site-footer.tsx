@@ -4,7 +4,7 @@ import { Logo } from "./logo";
 export function SiteFooter() {
   return (
     <footer className="mt-24 border-t border-white/8">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.5fr_1fr_1fr]">
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
         <div className="space-y-4">
           <Logo />
           <p className="max-w-sm text-sm leading-relaxed text-muted">
@@ -37,6 +37,31 @@ export function SiteFooter() {
             <li>
               <Link className="hover:text-ink" href="/ai-astrologer">
                 AI Astrologer chat
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="mb-3 text-sm font-semibold text-ink">Company</h3>
+          <ul className="space-y-2 text-sm text-muted">
+            <li>
+              <Link className="hover:text-ink" href="/blog">
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-ink" href="/about">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-ink" href="/contact">
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-ink" href="/privacy">
+                Privacy Policy
               </Link>
             </li>
           </ul>

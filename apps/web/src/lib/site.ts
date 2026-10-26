@@ -20,3 +20,6 @@ export function pageOpenGraph(path: string, title?: string, description?: string
     ...(description ? { description } : {}),
   };
 }
+
+// TODO(Talha): replace with the real inbox (or set NEXT_PUBLIC_SUPPORT_EMAIL in Vercel) before AdSense review.
+export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_SUPPORT_EMAIL ?? "contact@astrojanta.com";

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalArticle } from "@/components/legal-article";
 
-const SUPPORT = process.env.NEXT_PUBLIC_SUPPORT_EMAIL ?? "hello@astronex.ai";
+import { CONTACT_EMAIL as SUPPORT } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <LegalArticle title="Privacy Policy" updated="7 October 2026">
+    <LegalArticle title="Privacy Policy" updated="26 October 2026">
       <p>
         Astrojanta (“we”, “us”) provides Vedic astrology tools and an optional AI chat. This policy explains what we
         collect, why, and your rights under India’s Digital Personal Data Protection Act, 2023 (DPDP Act).
@@ -58,8 +58,44 @@ export default function PrivacyPage() {
       <p>
         After you sign in we set httpOnly cookies (<code>astronex_session</code> and <code>astronex_refresh</code>) so
         the browser can call our API. Signed-out visitors receive <code>astronex_guest</code> so we can apply the daily
-        tool limit. They are not used for advertising. You can sign out to clear the session cookies.
+        tool limit. These cookies are not used for advertising. You can sign out to clear the session cookies.
       </p>
+      <p>
+        We do not currently run a separate analytics or tracking service. Our hosting provider (Vercel) and API keep
+        standard technical logs. If we add privacy-friendly analytics in future, we will list it here.
+      </p>
+
+      <h2>Advertising and Google AdSense</h2>
+      <p>
+        We may show advertising served by Google AdSense. If we do, third-party vendors, including Google, use cookies
+        to serve ads based on your prior visits to this website or other websites. Google’s use of advertising cookies,
+        including the DoubleClick cookie, enables it and its partners to serve ads to you based on your visits to this
+        site and/or other sites on the Internet.
+      </p>
+      <ul>
+        <li>
+          You may opt out of personalised advertising by visiting{" "}
+          <a href="https://adssettings.google.com" rel="noopener noreferrer" target="_blank">
+            Google Ads Settings
+          </a>
+          .
+        </li>
+        <li>
+          You can also opt out of some third-party vendors’ use of cookies for personalised advertising at{" "}
+          <a href="https://www.aboutads.info/choices/" rel="noopener noreferrer" target="_blank">
+            www.aboutads.info
+          </a>
+          .
+        </li>
+        <li>
+          Learn how Google uses information from sites that use its services at{" "}
+          <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer" target="_blank">
+            policies.google.com/technologies/partner-sites
+          </a>
+          .
+        </li>
+      </ul>
+      <p>Your birth details and chat content are never shared with advertisers.</p>
 
       <h2>Who else sees data</h2>
       <ul>
@@ -72,7 +108,9 @@ export default function PrivacyPage() {
       <h2>How long we keep it</h2>
       <p>
         Account, profiles and chats stay until you delete your account. You can delete your account from the dashboard
-        (right of erasure). Encrypted birth details become unreadable if we rotate the encryption key without a
+        (right of erasure), which removes your account, saved charts and conversations. You can also delete individual
+        profiles and conversations. If you cannot sign in, email <a href={`mailto:${SUPPORT}`}>{SUPPORT}</a> from your
+        account address to request deletion. Encrypted birth details become unreadable if we rotate the encryption key without a
         migration.
       </p>
 
@@ -99,6 +137,12 @@ export default function PrivacyPage() {
       <p>
         We will update this page when our practices change. Continued use after an update means you accept the revised
         policy. See also our <Link href="/terms">Terms of Use</Link>.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy or your data? Email <a href={`mailto:${SUPPORT}`}>{SUPPORT}</a> or use our{" "}
+        <Link href="/contact">contact page</Link>.
       </p>
     </LegalArticle>
   );
