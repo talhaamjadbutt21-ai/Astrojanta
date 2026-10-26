@@ -1,6 +1,6 @@
 "use client";
 
-import { ApiError, type BirthDetails } from "@astronex/shared";
+import { ApiError, type BirthDetails } from "@astrojanta/shared";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { ArrowLeft, MessageCircleHeart } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";

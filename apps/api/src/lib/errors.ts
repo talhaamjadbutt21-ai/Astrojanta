@@ -1,4 +1,4 @@
-import type { ApiErrorBody } from "@astronex/shared";
+import type { ApiErrorBody } from "@astrojanta/shared";
 
 type Code = ApiErrorBody["error"]["code"];
 

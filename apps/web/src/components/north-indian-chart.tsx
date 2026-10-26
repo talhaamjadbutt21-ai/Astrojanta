@@ -1,4 +1,4 @@
-import { type ChartPlacement, layoutNorthIndianChart, PLANET_ABBR, SIGNS } from "@astronex/shared";
+import { type ChartPlacement, layoutNorthIndianChart, PLANET_ABBR, SIGNS } from "@astrojanta/shared";
 
 export function NorthIndianChart({
   ascendantSignIndex,

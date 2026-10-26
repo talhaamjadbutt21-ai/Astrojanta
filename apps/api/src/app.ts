@@ -2,7 +2,7 @@ import cookie from "@fastify/cookie";
 import cors from "@fastify/cors";
 import helmet from "@fastify/helmet";
 import rateLimit from "@fastify/rate-limit";
-import type { ApiErrorBody } from "@astronex/shared";
+import type { ApiErrorBody } from "@astrojanta/shared";
 import Fastify, { type FastifyError, type FastifyInstance } from "fastify";
 import { type Astrologer, createAstrologer } from "./ai/agent";
 import { createIdentityProvider, type IdentityProvider } from "./auth";

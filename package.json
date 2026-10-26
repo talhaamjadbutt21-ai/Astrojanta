@@ -1,5 +1,5 @@
 {
-  "name": "astronex-ai",
+  "name": "astrojanta",
   "private": true,
   "packageManager": "npm@11.17.0",
   "engines": {
@@ -11,8 +11,8 @@
   ],
   "scripts": {
     "dev": "turbo run dev",
-    "dev:api": "npm run dev -w @astronex/api",
-    "dev:web": "npm run dev -w @astronex/web",
+    "dev:api": "npm run dev -w @astrojanta/api",
+    "dev:web": "npm run dev -w @astrojanta/web",
     "build": "turbo run build",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",

@@ -1,4 +1,4 @@
-import { DEFAULT_PRO_REQUEST_EMAIL, type ProPlan } from "@astronex/shared";
+import { DEFAULT_PRO_REQUEST_EMAIL, type ProPlan } from "@astrojanta/shared";
 import { Resend } from "resend";
 import type { Env } from "../env";
 

@@ -1,4 +1,4 @@
-import type { Chart, DashaPeriod, MahaDasha, Planet } from "@astronex/shared";
+import type { Chart, DashaPeriod, MahaDasha, Planet } from "@astrojanta/shared";
 import { DASHA_SEQUENCE, DASHA_YEAR_MS, DASHA_YEARS, NAKSHATRA_SPAN } from "./constants";
 import { norm360 } from "./math";
 

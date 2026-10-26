@@ -1,6 +1,6 @@
 "use client";
 
-import { ApiError, type BirthDetails, type Profile } from "@astronex/shared";
+import { ApiError, type BirthDetails, type Profile } from "@astrojanta/shared";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { CalendarDays, LogOut, MapPin, MessageCircleHeart, Plus, Trash2, UserRound, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";

@@ -1,4 +1,4 @@
-import { CLIENT_HEADER, MOBILE_CLIENT, REFRESH_COOKIE, SESSION_COOKIE } from "@astronex/shared";
+import { CLIENT_HEADER, MOBILE_CLIENT, REFRESH_COOKIE, SESSION_COOKIE } from "@astrojanta/shared";
 import { eq } from "drizzle-orm";
 import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import type { AuthSession, IdentityProvider, IdentityUser } from "../auth";

@@ -14,7 +14,7 @@ Define the server: HTTP API, authentication, and database. The frontend must not
 - Runtime: Node.js + Fastify (`apps/api`)
 - Database: PostgreSQL via Supabase (PGlite in local/test when `DATABASE_URL` is unset)
 - Auth: Supabase Auth, email + password, session delivered as httpOnly cookies
-- Validation: Zod schemas from `@astronex/shared` on every write endpoint
+- Validation: Zod schemas from `@astrojanta/shared` on every write endpoint
 
 ## 3. Environment
 
@@ -38,7 +38,7 @@ Keep in `.env` (never commit):
 
 ## 4. Authentication (AUTH)
 
-The web app never uses `@supabase/supabase-js`. Register and login are `POST /api/auth/register` and `POST /api/auth/login` with email and password. The API talks to Supabase Auth, upserts a local `users` row (`id` = Supabase user id), and sets `astronex_session` (access token) plus `astronex_refresh` (refresh token) as httpOnly cookies.
+The web app never uses `@supabase/supabase-js`. Register and login are `POST /api/auth/register` and `POST /api/auth/login` with email and password. The API talks to Supabase Auth, upserts a local `users` row (`id` = Supabase user id), and sets `astrojanta_session` (access token) plus `astrojanta_refresh` (refresh token) as httpOnly cookies.
 
 ### 4.1 Behavior
 

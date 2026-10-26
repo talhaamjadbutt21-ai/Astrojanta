@@ -1,4 +1,4 @@
-import type { Planet } from "@astronex/shared";
+import type { Planet } from "@astrojanta/shared";
 import * as Astronomy from "astronomy-engine";
 import { DEG, norm360 } from "./math";
 

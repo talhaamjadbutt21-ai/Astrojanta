@@ -1,4 +1,4 @@
-import { MOBILE_CLIENT, SESSION_COOKIE } from "@astronex/shared";
+import { MOBILE_CLIENT, SESSION_COOKIE } from "@astrojanta/shared";
 import type { FastifyInstance } from "fastify";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { offlineAstrologer } from "../src/ai/agent";
@@ -55,8 +55,8 @@ describe("auth", () => {
     expect(body.token).toBeUndefined();
     expect(JSON.stringify(body)).not.toMatch(/hash/i);
     const raw = String(res.headers["set-cookie"]);
-    expect(raw).toMatch(/astronex_session=/);
-    expect(raw).toMatch(/astronex_refresh=/);
+    expect(raw).toMatch(/astrojanta_session=/);
+    expect(raw).toMatch(/astrojanta_refresh=/);
     expect(raw).toMatch(/HttpOnly/);
     expect(raw).toMatch(/SameSite=Lax/);
   });
@@ -149,7 +149,7 @@ describe("profiles, charts and chat", () => {
   it("limits guests to one kundli attempt and keeps manglik as a separate daily bucket", async () => {
     const first = await app.inject({ method: "POST", url: "/api/charts?feature=kundli", payload: birth });
     expect(first.statusCode).toBe(200);
-    const guest = first.cookies.find((c) => c.name === "astronex_guest");
+    const guest = first.cookies.find((c) => c.name === "astrojanta_guest");
     expect(guest?.value).toBeTruthy();
     const guestCookie = `${guest!.name}=${guest!.value}`;
     const blocked = await app.inject({

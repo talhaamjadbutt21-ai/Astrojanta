@@ -1,4 +1,4 @@
-import { REFRESH_COOKIE, SESSION_COOKIE } from "@astronex/shared";
+import { REFRESH_COOKIE, SESSION_COOKIE } from "@astrojanta/shared";
 import { type NextRequest, NextResponse } from "next/server";
 
 /** Optimistic check only: real authorisation happens in the API on every request. */

@@ -1,4 +1,4 @@
-import { type AuthResponse, loginSchema, registerSchema, type User } from "@astronex/shared";
+import { type AuthResponse, loginSchema, registerSchema, type User } from "@astrojanta/shared";
 import { eq } from "drizzle-orm";
 import type { FastifyInstance } from "fastify";
 import type { AppContext } from "../app";

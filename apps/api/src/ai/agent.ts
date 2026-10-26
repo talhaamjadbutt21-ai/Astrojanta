@@ -1,6 +1,6 @@
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
 import { createOpenAI } from "@ai-sdk/openai";
-import type { Chart, ChatLanguage, TransitSnapshot } from "@astronex/shared";
+import type { Chart, ChatLanguage, TransitSnapshot } from "@astrojanta/shared";
 import { isStepCount, streamText } from "ai";
 import { type Env, googleApiKey } from "../env";
 import { buildInstructions } from "./prompt";

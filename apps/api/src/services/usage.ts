@@ -5,7 +5,7 @@ import {
   type ProductFeature,
   type UsagePlan,
   type UsageSnapshot,
-} from "@astronex/shared";
+} from "@astrojanta/shared";
 import { and, count, eq, gte } from "drizzle-orm";
 import type { FastifyReply, FastifyRequest } from "fastify";
 import { z } from "zod";

@@ -22,7 +22,7 @@ function usesPreparedStatements(url: string): boolean {
 
 /** Connects to Postgres when DATABASE_URL is set, otherwise to an embedded PGlite instance. Runs migrations. */
 export interface ConnectOptions {
-  /** Run pending migrations on connect. Off on serverless: run `npm run db:migrate -w @astronex/api` manually. */
+  /** Run pending migrations on connect. Off on serverless: run `npm run db:migrate -w @astrojanta/api` manually. */
   migrate?: boolean;
   /** Max pooled connections (keep at 1 per serverless instance). */
   maxConnections?: number;

@@ -1,4 +1,4 @@
-import { type AdminOverview, adminGrantProSchema } from "@astronex/shared";
+import { type AdminOverview, adminGrantProSchema } from "@astrojanta/shared";
 import { and, count, desc, eq, gt } from "drizzle-orm";
 import type { FastifyInstance } from "fastify";
 import type { AppContext } from "../app";

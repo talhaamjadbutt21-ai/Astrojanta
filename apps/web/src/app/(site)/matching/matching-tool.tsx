@@ -1,6 +1,6 @@
 "use client";
 
-import { ApiError, type BirthDetails, type GunaMilan } from "@astronex/shared";
+import { ApiError, type BirthDetails, type GunaMilan } from "@astrojanta/shared";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { ArrowLeft } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";

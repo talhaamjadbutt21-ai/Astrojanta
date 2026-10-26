@@ -1,6 +1,6 @@
 "use client";
 
-import { ApiError, type ChatLanguage, STARTER_QUESTIONS } from "@astronex/shared";
+import { ApiError, type ChatLanguage, STARTER_QUESTIONS } from "@astrojanta/shared";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { ArrowLeft, ArrowUp, History, MessageSquarePlus, Sparkles, Square, Trash2, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
