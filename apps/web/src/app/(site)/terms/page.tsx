@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalArticle } from "@/components/legal-article";
 
-const SUPPORT = process.env.NEXT_PUBLIC_SUPPORT_EMAIL ?? "hello@astronex.ai";
+import { CONTACT_EMAIL as SUPPORT } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
