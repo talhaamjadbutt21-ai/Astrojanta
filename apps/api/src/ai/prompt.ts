@@ -1,4 +1,4 @@
-import type { Chart, ChatLanguage, TransitSnapshot } from "@astronex/shared";
+import type { Chart, ChatLanguage, TransitSnapshot } from "@astrojanta/shared";
 
 const LANGUAGE_RULE: Record<ChatLanguage, string> = {
   auto: "Reply in the same language and script the user writes in (English, Hindi in Devanagari, or Hinglish in Roman script).",

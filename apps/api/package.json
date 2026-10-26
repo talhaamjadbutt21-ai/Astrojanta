@@ -1,5 +1,5 @@
 {
-  "name": "@astronex/api",
+  "name": "@astrojanta/api",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -15,8 +15,8 @@
   "dependencies": {
     "@ai-sdk/google": "^4.0.90",
     "@ai-sdk/openai": "^4.0.84",
-    "@astronex/astro": "*",
-    "@astronex/shared": "*",
+    "@astrojanta/astro": "*",
+    "@astrojanta/shared": "*",
     "@electric-sql/pglite": "^0.5.8",
     "@fastify/cookie": "^11.1.2",
     "@fastify/cors": "^11.3.0",

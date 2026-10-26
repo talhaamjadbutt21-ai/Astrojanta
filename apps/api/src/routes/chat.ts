@@ -1,5 +1,5 @@
-import { computeChart, computeTransits } from "@astronex/astro";
-import { type Conversation, chatRequestSchema, type StoredChatMessage } from "@astronex/shared";
+import { computeChart, computeTransits } from "@astrojanta/astro";
+import { type Conversation, chatRequestSchema, type StoredChatMessage } from "@astrojanta/shared";
 import { and, asc, desc, eq } from "drizzle-orm";
 import type { FastifyInstance } from "fastify";
 import { z } from "zod";

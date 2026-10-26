@@ -1,4 +1,4 @@
-import { birthDetailsSchema } from "@astronex/shared";
+import { birthDetailsSchema } from "@astrojanta/shared";
 import { describe, expect, it } from "vitest";
 import {
   computeChart,

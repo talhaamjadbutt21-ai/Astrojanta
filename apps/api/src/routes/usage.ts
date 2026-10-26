@@ -1,4 +1,4 @@
-import { productFeatureSchema } from "@astronex/shared";
+import { productFeatureSchema } from "@astrojanta/shared";
 import type { FastifyInstance } from "fastify";
 import { z } from "zod";
 import type { AppContext } from "../app";

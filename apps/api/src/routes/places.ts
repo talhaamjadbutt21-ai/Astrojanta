@@ -1,4 +1,4 @@
-import { type PlaceResult, placeSearchQuerySchema } from "@astronex/shared";
+import { type PlaceResult, placeSearchQuerySchema } from "@astrojanta/shared";
 import type { FastifyInstance } from "fastify";
 import { z } from "zod";
 import type { AppContext } from "../app";

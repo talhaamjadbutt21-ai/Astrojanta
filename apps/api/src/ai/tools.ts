@@ -1,4 +1,4 @@
-import { type Chart, PLANETS, type TransitSnapshot } from "@astronex/shared";
+import { type Chart, PLANETS, type TransitSnapshot } from "@astrojanta/shared";
 import { tool } from "ai";
 import { z } from "zod";
 

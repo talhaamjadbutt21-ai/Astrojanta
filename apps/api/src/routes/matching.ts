@@ -1,5 +1,5 @@
-import { InvalidTimezoneError, matchKundlis } from "@astronex/astro";
-import { matchingRequestSchema } from "@astronex/shared";
+import { InvalidTimezoneError, matchKundlis } from "@astrojanta/astro";
+import { matchingRequestSchema } from "@astrojanta/shared";
 import type { FastifyInstance } from "fastify";
 import type { AppContext } from "../app";
 import { AppError } from "../lib/errors";

@@ -1,6 +1,6 @@
 "use client";
 
-import { type BirthDetails, birthDetailsSchema, type Place } from "@astronex/shared";
+import { type BirthDetails, birthDetailsSchema, type Place } from "@astrojanta/shared";
 import { type FormEvent, useState } from "react";
 import { PlaceAutocomplete } from "./place-autocomplete";
 import { Button } from "./ui/button";

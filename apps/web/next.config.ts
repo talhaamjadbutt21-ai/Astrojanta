@@ -16,7 +16,7 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
-  transpilePackages: ["@astronex/shared"],
+  transpilePackages: ["@astrojanta/shared"],
   turbopack: { root: path.resolve(process.cwd(), "../..") },
   // Chat can take >30s (tools + model). Default rewrite proxy timeout is 30s.
   experimental: { proxyTimeout: 180_000 },

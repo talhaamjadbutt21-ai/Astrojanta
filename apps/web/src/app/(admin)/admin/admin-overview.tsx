@@ -1,6 +1,6 @@
 "use client";
 
-import { ApiError, type ProPlan } from "@astronex/shared";
+import { ApiError, type ProPlan } from "@astrojanta/shared";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Inbox, MessageCircle, MessagesSquare, Users } from "lucide-react";
 import { type FormEvent, useState } from "react";

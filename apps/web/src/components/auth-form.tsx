@@ -1,6 +1,6 @@
 "use client";
 
-import { ApiError, loginSchema, registerSchema } from "@astronex/shared";
+import { ApiError, loginSchema, registerSchema } from "@astrojanta/shared";
 import { useMutation } from "@tanstack/react-query";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";

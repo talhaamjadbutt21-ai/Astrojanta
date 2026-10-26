@@ -9,7 +9,7 @@ These rules apply to every change in this repository (humans and AI agents).
 ## Code quality
 - Write high-quality, scalable, strongly-typed TypeScript. No `any` unless unavoidable and justified.
 - Shared logic lives in `packages/*`; apps never duplicate schemas or astrology math.
-- Validate every external input with the zod schemas from `@astronex/shared`.
+- Validate every external input with the zod schemas from `@astrojanta/shared`.
 - Every data screen handles loading, empty, error, and success states.
 
 ## Security
@@ -18,7 +18,7 @@ These rules apply to every change in this repository (humans and AI agents).
 - Web uses httpOnly + SameSite cookies for the access and refresh tokens.
 - Never commit secrets. Only `.env.example` files are tracked.
 - Rate-limit auth and AI endpoints. Never leak stack traces or whether an email exists.
-- The LLM never computes chart data; it may only interpret data produced by `@astronex/astro`.
+- The LLM never computes chart data; it may only interpret data produced by `@astrojanta/astro`.
 
 ## Dependencies
 - Always use the latest stable versions of packages and frameworks. Check with `npm view <pkg> version` before adding.

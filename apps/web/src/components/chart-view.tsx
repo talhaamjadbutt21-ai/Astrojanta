@@ -1,6 +1,6 @@
 "use client";
 
-import { type Chart, chartDivisions, signHindi, type TransitSnapshot } from "@astronex/shared";
+import { type Chart, chartDivisions, signHindi, type TransitSnapshot } from "@astrojanta/shared";
 import { Clock, Moon, Orbit, Sparkles, Sunrise } from "lucide-react";
 import { motion } from "motion/react";
 import { type ReactNode, useState } from "react";

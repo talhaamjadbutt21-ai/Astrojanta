@@ -1,4 +1,4 @@
-import type { Chart, PlanetPosition } from "@astronex/shared";
+import type { Chart, PlanetPosition } from "@astrojanta/shared";
 import { MANGLIK_HOUSES } from "./constants";
 import { houseFrom } from "./math";
 

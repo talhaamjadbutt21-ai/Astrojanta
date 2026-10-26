@@ -1,4 +1,4 @@
-import { type BirthDetails, type GunaMilan, type KootaScore, NAKSHATRAS, SIGNS } from "@astronex/shared";
+import { type BirthDetails, type GunaMilan, type KootaScore, NAKSHATRAS, SIGNS } from "@astrojanta/shared";
 import { computeChart } from "./chart";
 import { SIGN_LORDS } from "./constants";
 import { houseFrom } from "./math";

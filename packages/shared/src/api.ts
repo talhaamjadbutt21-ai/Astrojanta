@@ -20,6 +20,6 @@ export interface ApiErrorBody {
 export const CLIENT_HEADER = "x-client";
 export const MOBILE_CLIENT = "mobile";
 /** httpOnly cookie holding the Supabase access token (or in-memory token in tests). */
-export const SESSION_COOKIE = "astronex_session";
+export const SESSION_COOKIE = "astrojanta_session";
 /** httpOnly cookie holding the Supabase refresh token so the API can rotate expired access tokens. */
-export const REFRESH_COOKIE = "astronex_refresh";
+export const REFRESH_COOKIE = "astrojanta_refresh";

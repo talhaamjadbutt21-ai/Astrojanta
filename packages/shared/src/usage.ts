@@ -7,7 +7,7 @@ export const chartFeatureSchema = z.enum(["kundli", "manglik", "moon_sign"]);
 export type ChartFeature = z.infer<typeof chartFeatureSchema>;
 
 /** httpOnly cookie that identifies a signed-out visitor for per-tool daily limits. */
-export const GUEST_COOKIE = "astronex_guest";
+export const GUEST_COOKIE = "astrojanta_guest";
 
 export type UsagePlan = "guest" | "free" | "pro";
 

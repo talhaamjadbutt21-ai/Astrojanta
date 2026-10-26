@@ -1,6 +1,6 @@
 "use client";
 
-import { ApiError } from "@astronex/shared";
+import { ApiError } from "@astrojanta/shared";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { MotionConfig } from "motion/react";
 import { type ReactNode, useState } from "react";

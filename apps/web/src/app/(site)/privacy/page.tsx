@@ -56,8 +56,8 @@ export default function PrivacyPage() {
 
       <h2>Cookies</h2>
       <p>
-        After you sign in we set httpOnly cookies (<code>astronex_session</code> and <code>astronex_refresh</code>) so
-        the browser can call our API. Signed-out visitors receive <code>astronex_guest</code> so we can apply the daily
+        After you sign in we set httpOnly cookies (<code>astrojanta_session</code> and <code>astrojanta_refresh</code>) so
+        the browser can call our API. Signed-out visitors receive <code>astrojanta_guest</code> so we can apply the daily
         tool limit. These cookies are not used for advertising. You can sign out to clear the session cookies.
       </p>
       <p>

@@ -8,7 +8,7 @@ import {
   type PlanetPosition,
   SIGNS,
   type TransitSnapshot,
-} from "@astronex/shared";
+} from "@astrojanta/shared";
 import { detectYogas, manglik } from "./analysis";
 import {
   COMBUSTION_ORB,

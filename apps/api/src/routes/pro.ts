@@ -1,4 +1,4 @@
-import { DEFAULT_PRO_REQUEST_EMAIL, type ProConfig, proInquirySchema } from "@astronex/shared";
+import { DEFAULT_PRO_REQUEST_EMAIL, type ProConfig, proInquirySchema } from "@astrojanta/shared";
 import type { FastifyInstance } from "fastify";
 import type { AppContext } from "../app";
 import { proInquiries } from "../db/schema";

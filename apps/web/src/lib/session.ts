@@ -1,6 +1,6 @@
 "use client";
 
-import { ApiError, type User } from "@astronex/shared";
+import { ApiError, type User } from "@astrojanta/shared";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
@@ -48,7 +48,7 @@ export function safeNext(next: string | null | undefined, fallback = "/dashboard
   return next;
 }
 
-const PENDING_BIRTH_KEY = "astronex:pending-birth";
+const PENDING_BIRTH_KEY = "astrojanta:pending-birth";
 
 export const pendingBirth = {
   save(value: unknown) {

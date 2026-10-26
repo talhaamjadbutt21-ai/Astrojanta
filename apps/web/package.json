@@ -1,5 +1,5 @@
 {
-  "name": "@astronex/web",
+  "name": "@astrojanta/web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "typecheck": "next typegen && tsc --noEmit"
   },
   "dependencies": {
-    "@astronex/shared": "*",
+    "@astrojanta/shared": "*",
     "@tanstack/react-query": "^5.104.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.52.0",

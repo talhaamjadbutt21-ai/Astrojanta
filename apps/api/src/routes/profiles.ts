@@ -1,5 +1,5 @@
-import { computeChart, computeTransits } from "@astronex/astro";
-import { createProfileSchema, profileIdParamSchema } from "@astronex/shared";
+import { computeChart, computeTransits } from "@astrojanta/astro";
+import { createProfileSchema, profileIdParamSchema } from "@astrojanta/shared";
 import type { FastifyInstance } from "fastify";
 import type { AppContext } from "../app";
 import { AppError } from "../lib/errors";

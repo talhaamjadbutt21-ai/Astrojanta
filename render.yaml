@@ -6,8 +6,8 @@ services:
     runtime: node
     plan: free
     region: singapore
-    buildCommand: npm ci --include=dev && npm run build -w @astronex/api
-    startCommand: npm run start -w @astronex/api
+    buildCommand: npm ci --include=dev && npm run build -w @astrojanta/api
+    startCommand: npm run start -w @astrojanta/api
     healthCheckPath: /api/health
     autoDeploy: true
     envVars:

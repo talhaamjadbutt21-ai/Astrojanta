@@ -1,6 +1,6 @@
 "use client";
 
-import type { FeatureQuota, ProductFeature } from "@astronex/shared";
+import type { FeatureQuota, ProductFeature } from "@astrojanta/shared";
 import { useQuery } from "@tanstack/react-query";
 import Link from "next/link";
 import type { ReactNode } from "react";

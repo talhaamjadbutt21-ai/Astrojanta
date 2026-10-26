@@ -29,7 +29,7 @@ npm ci
 # apps/api/.env is gitignored; put only these two lines in it, or export them in your shell:
 #   DATABASE_URL=postgresql://postgres.<ref>:<password>@aws-0-<region>.pooler.supabase.com:6543/postgres
 #   DATABASE_MIGRATE_URL=postgresql://postgres:<password>@db.<ref>.supabase.co:5432/postgres
-npm run db:migrate -w @astronex/api
+npm run db:migrate -w @astrojanta/api
 ```
 
 ## 2. API project

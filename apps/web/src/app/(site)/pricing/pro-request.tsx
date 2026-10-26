@@ -1,6 +1,6 @@
 "use client";
 
-import { ApiError, type ProPlan, proInquirySchema } from "@astronex/shared";
+import { ApiError, type ProPlan, proInquirySchema } from "@astrojanta/shared";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { type FormEvent, useState } from "react";
 import { Button } from "@/components/ui/button";

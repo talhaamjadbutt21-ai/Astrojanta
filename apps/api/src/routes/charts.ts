@@ -1,5 +1,5 @@
-import { computeChart, computeTransits, InvalidTimezoneError } from "@astronex/astro";
-import { birthDetailsSchema, chartFeatureSchema } from "@astronex/shared";
+import { computeChart, computeTransits, InvalidTimezoneError } from "@astrojanta/astro";
+import { birthDetailsSchema, chartFeatureSchema } from "@astrojanta/shared";
 import type { FastifyInstance } from "fastify";
 import { z } from "zod";
 import type { AppContext } from "../app";
