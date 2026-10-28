@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Is the AI astrologer free?",
-    a: "Yes. Every tool on Astrojanta, including the AI astrologer chat, has a free daily limit that resets every day. A Pro plan raises the daily limit, but you never have to pay to get your Kundli or ask questions.",
+    a: "Yes. The AI astrologer chat is free with a free account (2 questions a day; Pro raises it to 6). The Kundli, matching, Manglik and Moon sign tools need no sign-up at all. You never have to pay to get your Kundli or ask questions.",
   },
   {
     q: "How accurate is AI astrology?",

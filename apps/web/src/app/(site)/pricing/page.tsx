@@ -13,8 +13,9 @@ const FREE = [
   "Janam Kundli, Navamsa and dasha",
   "Kundli matching (Guna Milan)",
   "Manglik and Moon-sign calculators",
-  "1 attempt per tool per day without an account",
-  "2 attempts per tool per day after sign-up",
+  "No sign-up needed: 3 attempts per tool per day",
+  "AI astrologer chat with a free account",
+  "2 attempts per tool per day (including chat) after sign-up",
 ];
 
 const PRO = [

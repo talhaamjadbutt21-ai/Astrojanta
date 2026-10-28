@@ -6,13 +6,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { api } from "@/lib/api";
 
-export function QuotaHint({
-  feature,
-  error,
-}: {
-  feature: ProductFeature;
-  error?: string | null;
-}) {
+export function QuotaHint({ feature, error }: { feature: ProductFeature; error?: string | null }) {
   const usage = useQuery({
     queryKey: ["usage", feature],
     queryFn: () => api.usage.feature(feature),
@@ -32,19 +26,30 @@ function label(quota: FeatureQuota): ReactNode {
   if (quota.remaining <= 0 && quota.plan === "guest") {
     return (
       <>
-        {left}. <Link href="/register" className="text-gold-200 underline">Sign in</Link> for 2 per tool, or{" "}
-        <Link href="/pricing" className="text-gold-200 underline">Pro</Link> for 6.
+        {left}.{" "}
+        <Link href="/register" className="text-gold-200 underline">
+          Create a free account
+        </Link>{" "}
+        to keep going and unlock AI chat, or{" "}
+        <Link href="/login" className="text-gold-200 underline">
+          sign in
+        </Link>
+        .
       </>
     );
   }
   if (quota.remaining <= 0 && quota.plan === "free") {
     return (
       <>
-        {left}. <Link href="/pricing" className="text-gold-200 underline">Upgrade to Pro</Link> for 6 per tool.
+        {left}.{" "}
+        <Link href="/pricing" className="text-gold-200 underline">
+          Upgrade to Pro
+        </Link>{" "}
+        for 6 per tool.
       </>
     );
   }
-  if (quota.plan === "guest") return `${left} without an account. Sign in for 2, Pro for 6.`;
+  if (quota.plan === "guest") return `${left} without an account. A free account also unlocks AI chat.`;
   if (quota.plan === "free") return `${left} on a free account. Pro gets 6 per tool.`;
   return `${left} on Pro.`;
 }

@@ -73,7 +73,7 @@ const envSchema = z
     OPENAI_API_KEY: opt(z.string()),
     AI_MODEL: z.string().default("gemma-4-26b-a4b-it"),
     /** Daily attempts per tool without an account. */
-    GUEST_DAILY_ATTEMPTS: z.coerce.number().int().min(0).default(1),
+    GUEST_DAILY_ATTEMPTS: z.coerce.number().int().min(0).default(3),
     /** Daily attempts per tool with a free account. */
     FREE_DAILY_QUESTIONS: z.coerce.number().int().min(0).default(2),
     /** Daily attempts per tool with Pro. */
@@ -104,7 +104,11 @@ const envSchema = z
     }
     for (const origin of env.CORS_ORIGINS) {
       if (origin === "*" || !origin.startsWith("https://")) {
-        ctx.addIssue({ code: "custom", path: ["CORS_ORIGINS"], message: `Must be https:// origins in production (got ${origin})` });
+        ctx.addIssue({
+          code: "custom",
+          path: ["CORS_ORIGINS"],
+          message: `Must be https:// origins in production (got ${origin})`,
+        });
       }
     }
     const key = env.DATA_ENCRYPTION_KEY ? Buffer.from(env.DATA_ENCRYPTION_KEY, "base64") : null;
@@ -129,4 +133,3 @@ export function loadEnv(source: Record<string, string | undefined> = process.env
 export function supabaseConfigured(env: Env): boolean {
   return Boolean(env.SUPABASE_URL && env.SUPABASE_ANON_KEY && env.SUPABASE_SERVICE_ROLE_KEY);
 }
-

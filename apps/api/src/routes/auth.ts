@@ -52,10 +52,11 @@ export async function authRoutes(app: FastifyInstance, { db, env, identity }: Ap
     return reply.code(204).send();
   });
 
+  /** Session check. Signed-out visitors get 200 { user: null } so the browser doesn't log a 401 on every page. */
   app.get("/api/auth/me", async (request) => {
-    const auth = requireAuth(request);
-    const [user] = await db.select().from(users).where(eq(users.id, auth.userId)).limit(1);
-    if (!user) throw new AppError("UNAUTHENTICATED", "Session is no longer valid");
+    if (!request.auth) return { user: null };
+    const [user] = await db.select().from(users).where(eq(users.id, request.auth.userId)).limit(1);
+    if (!user) return { user: null };
     return { user: toUser(user, env) };
   });
 

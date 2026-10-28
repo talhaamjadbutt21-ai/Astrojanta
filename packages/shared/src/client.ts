@@ -5,9 +5,9 @@ import type { BirthDetailsInput, Place } from "./birth";
 import type { Chart, TransitSnapshot } from "./chart";
 import type { ChatQuota, ChatRequest, Conversation, StoredChatMessage } from "./chat";
 import type { GunaMilan, MatchingRequest } from "./matching";
-import type { ChartFeature, FeatureQuota, ProductFeature, UsageSnapshot } from "./usage";
 import type { AdminGrantProInput, ProConfig, ProInquiryInput } from "./pro";
 import type { CreateProfileInput, Profile } from "./profile";
+import type { ChartFeature, FeatureQuota, ProductFeature, UsageSnapshot } from "./usage";
 
 export type PlaceResult = Place & { id: string };
 export interface ChartResult {
@@ -92,7 +92,7 @@ export function createApiClient(options: ApiClientOptions) {
       register: (input: RegisterInput) => json<AuthResponse>("POST", "/api/auth/register", input),
       login: (input: LoginInput) => json<AuthResponse>("POST", "/api/auth/login", input),
       logout: () => json<void>("POST", "/api/auth/logout"),
-      me: () => json<{ user: User }>("GET", "/api/auth/me"),
+      me: () => json<{ user: User | null }>("GET", "/api/auth/me"),
       deleteAccount: () => json<void>("DELETE", "/api/auth/me"),
     },
     places: {
@@ -103,7 +103,8 @@ export function createApiClient(options: ApiClientOptions) {
         json<ChartResult>("POST", `/api/charts?feature=${feature}`, birth),
     },
     matching: {
-      compute: (input: MatchingRequest) => json<{ matching: GunaMilan; quota?: FeatureQuota }>("POST", "/api/matching", input),
+      compute: (input: MatchingRequest) =>
+        json<{ matching: GunaMilan; quota?: FeatureQuota }>("POST", "/api/matching", input),
     },
     usage: {
       snapshot: () => json<UsageSnapshot>("GET", "/api/usage"),
