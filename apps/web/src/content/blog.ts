@@ -174,7 +174,7 @@ const mercuryRetrograde2026: Post = {
     { type: "h2", text: "Ask the AI astrologer about your own chart" },
     {
       type: "p",
-      text: "Generic Rashi predictions can only go so far. Astrojanta's [Vedic AI astrologer](/ai-astrologer) reads your actual Kundli — Lagna, Moon, houses and current dasha — and can explain how this Mercury retrograde interacts with your chart, in Hindi, Hinglish or English. Start with your free Kundli, then ask something specific, like “Which house is Mercury retrograde transiting for me, and what should I review at work?”",
+      text: "Generic Rashi predictions can only go so far. Astrojanta's [Vedic AI astrologer](/ai-astrologer) reads your actual Kundli — Lagna, Moon, houses and current dasha — and can explain how this Mercury retrograde interacts with your chart, in Hindi, Hinglish or English. Start with your free Kundli (no sign-up needed), create a free account to open the AI chat, then ask something specific, like “Which house is Mercury retrograde transiting for me, and what should I review at work?”",
     },
   ],
   faqs: [

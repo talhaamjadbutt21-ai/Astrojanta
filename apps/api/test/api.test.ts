@@ -100,7 +100,25 @@ describe("auth", () => {
     const auth = { authorization: `Bearer ${token}` };
     expect((await app.inject({ method: "GET", url: "/api/auth/me", headers: auth })).statusCode).toBe(200);
     expect((await app.inject({ method: "POST", url: "/api/auth/logout", headers: auth })).statusCode).toBe(204);
-    expect((await app.inject({ method: "GET", url: "/api/auth/me", headers: auth })).statusCode).toBe(401);
+    const after = await app.inject({ method: "GET", url: "/api/auth/me", headers: auth });
+    expect(after.statusCode).toBe(200);
+    expect(after.json()).toEqual({ user: null });
+  });
+
+  it("returns 200 { user: null } from the session check for guests, and still guards protected routes", async () => {
+    const me = await app.inject({ method: "GET", url: "/api/auth/me" });
+    expect(me.statusCode).toBe(200);
+    expect(me.json()).toEqual({ user: null });
+    expect((await app.inject({ method: "DELETE", url: "/api/auth/me" })).statusCode).toBe(401);
+    expect((await app.inject({ method: "GET", url: "/api/profiles" })).statusCode).toBe(401);
+  });
+
+  it("gives guests 3 chart attempts per tool and no chat allowance", async () => {
+    const usage = await app.inject({ method: "GET", url: "/api/usage" });
+    expect(usage.statusCode).toBe(200);
+    const body = usage.json();
+    expect(body.features.kundli.limit).toBe(3);
+    expect(body.features.chat.limit).toBe(0);
   });
 
   it("blocks state-changing requests from foreign origins (CSRF)", async () => {
@@ -142,16 +160,25 @@ describe("profiles, charts and chat", () => {
     const res = await app.inject({ method: "POST", url: "/api/charts", payload: birth });
     expect(res.statusCode).toBe(200);
     expect(res.json().chart.planets).toHaveLength(9);
-    expect(res.json().quota.limit).toBe(1);
-    expect(res.json().quota.remaining).toBe(0);
+    expect(res.json().quota.limit).toBe(3);
+    expect(res.json().quota.remaining).toBe(2);
   });
 
-  it("limits guests to one kundli attempt and keeps manglik as a separate daily bucket", async () => {
+  it("limits guests to three kundli attempts and keeps manglik as a separate daily bucket", async () => {
     const first = await app.inject({ method: "POST", url: "/api/charts?feature=kundli", payload: birth });
     expect(first.statusCode).toBe(200);
     const guest = first.cookies.find((c) => c.name === "astrojanta_guest");
     expect(guest?.value).toBeTruthy();
     const guestCookie = `${guest!.name}=${guest!.value}`;
+    for (let i = 0; i < 2; i++) {
+      const again = await app.inject({
+        method: "POST",
+        url: "/api/charts?feature=kundli",
+        headers: { cookie: guestCookie },
+        payload: birth,
+      });
+      expect(again.statusCode).toBe(200);
+    }
     const blocked = await app.inject({
       method: "POST",
       url: "/api/charts?feature=kundli",
@@ -171,7 +198,12 @@ describe("profiles, charts and chat", () => {
 
   it("gives a signed-in free account two kundli attempts", async () => {
     const ask = () =>
-      app.inject({ method: "POST", url: "/api/charts?feature=kundli", headers: { cookie, origin: ORIGIN }, payload: birth });
+      app.inject({
+        method: "POST",
+        url: "/api/charts?feature=kundli",
+        headers: { cookie, origin: ORIGIN },
+        payload: birth,
+      });
     expect((await ask()).statusCode).toBe(200);
     expect((await ask()).statusCode).toBe(200);
     expect((await ask()).statusCode).toBe(429);
@@ -328,9 +360,9 @@ describe("pro manual grants", () => {
     expect(cfg.json().requestEmail).toContain("@");
     expect(cfg.json().mailEnabled).toBe(false);
     expect(cfg.json().hasPaymentLink).toBe(false);
-    expect((await app.inject({ method: "POST", url: "/api/pro/checkout", payload: { plan: "monthly" } })).statusCode).toBe(
-      404,
-    );
+    expect(
+      (await app.inject({ method: "POST", url: "/api/pro/checkout", payload: { plan: "monthly" } })).statusCode,
+    ).toBe(404);
   });
 
   it("lets an admin grant and revoke Pro by email", async () => {

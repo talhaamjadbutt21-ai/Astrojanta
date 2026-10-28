@@ -59,7 +59,7 @@ const STEPS = [
 const FAQ = [
   {
     q: "Is the Kundli really free?",
-    a: "Yes, with a daily attempt limit: 1 per tool without signing in, 2 per tool with a free account, and 6 per tool on Pro.",
+    a: "Yes. Kundli, matching, Manglik and Moon sign need no sign-up: you get 3 attempts per tool each day without an account, 2 with a free account, and 6 on Pro.",
   },
   {
     q: "How accurate are the calculations?",
@@ -75,7 +75,7 @@ const FAQ = [
   },
   {
     q: "How many free AI questions do I get?",
-    a: "Each tool (Kundli, matching, Manglik, Moon sign, and AI chat) has its own daily limit: 1 attempt if you are not signed in, 2 with a free account, and 6 with Pro. Limits reset at midnight UTC.",
+    a: "The AI astrologer chat needs a free account. A free account gets 2 AI questions a day and Pro gets 6. The Kundli, matching, Manglik and Moon sign tools need no sign-up. Limits reset at midnight UTC.",
   },
 ];
 
@@ -133,7 +133,7 @@ export default function HomePage() {
               Kundli matching
             </ButtonLink>
           </div>
-          <p className="mt-5 text-xs text-muted">No sign-up needed for your Kundli · 3 free AI questions every day</p>
+          <p className="mt-5 text-xs text-muted">No sign-up needed for your Kundli · Free account for AI chat</p>
         </Reveal>
         <Reveal delay={0.15} className="relative mx-auto w-full max-w-[460px]">
           <ZodiacWheel />

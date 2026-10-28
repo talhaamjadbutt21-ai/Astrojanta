@@ -56,7 +56,7 @@ export const kundliGuide: ToolGuide = {
   faqs: [
     {
       q: "Is this Janam Kundli really free?",
-      a: "Yes. Generating your Kundli with Lagna, Rashi, Nakshatra, D1 and Navamsa charts, Vimshottari dasha, Manglik and Sade Sati check is free. Pro only adds more daily attempts on the tools and AI chat.",
+      a: "Yes. Generating your Kundli with Lagna, Rashi, Nakshatra, D1 and Navamsa charts, Vimshottari dasha, Manglik and Sade Sati check is free. No sign-up is needed for the chart tools; the AI chat needs a free account, and Pro only adds more daily attempts.",
     },
     {
       q: "What if I don't know my exact birth time?",

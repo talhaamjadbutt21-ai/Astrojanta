@@ -1,7 +1,7 @@
 import {
+  type FeatureQuota,
   GUEST_COOKIE,
   PRODUCT_FEATURES,
-  type FeatureQuota,
   type ProductFeature,
   type UsagePlan,
   type UsageSnapshot,
@@ -31,6 +31,12 @@ export async function planFor(db: Db, env: Env, userId: string | null) {
   return { plan: (pro ? "pro" : "free") as UsagePlan, pro, limit };
 }
 
+/** AI chat requires an account, so guests have no chat allowance. */
+async function planForFeature(db: Db, env: Env, userId: string | null, feature: ProductFeature) {
+  if (!userId && feature === "chat") return { plan: "guest" as const, pro: false, limit: 0 };
+  return planFor(db, env, userId);
+}
+
 function subjectOf(request: FastifyRequest, reply: FastifyReply, env: Env): { type: "user" | "guest"; id: string } {
   if (request.auth) return { type: "user", id: request.auth.userId };
   const existing = request.cookies[GUEST_COOKIE];
@@ -47,7 +53,7 @@ function subjectOf(request: FastifyRequest, reply: FastifyReply, env: Env): { ty
 
 export function quotaMessage(quota: Pick<FeatureQuota, "plan" | "limit">): string {
   if (quota.plan === "guest") {
-    return `You've used today's free attempt on this tool. Sign in for 2 attempts per tool each day, or Pro for 6.`;
+    return `You've used today's ${quota.limit} free attempts on this tool. Create a free account at /register for more attempts and AI chat, or come back tomorrow.`;
   }
   if (quota.plan === "free") {
     return `You've used today's ${quota.limit} attempts on this tool. Upgrade to Pro for 6 per day, or come back tomorrow.`;
@@ -63,17 +69,13 @@ export async function readFeatureQuota(
   feature: ProductFeature,
 ): Promise<FeatureQuota> {
   const subject = subjectOf(request, reply, env);
-  const { plan, pro, limit } = await planFor(db, env, subject.type === "user" ? subject.id : null);
+  const { plan, pro, limit } = await planForFeature(db, env, subject.type === "user" ? subject.id : null, feature);
   const since = utcDayStart();
   const [row] = await db
     .select({ used: count() })
     .from(featureUses)
     .where(
-      and(
-        eq(featureUses.subjectId, subject.id),
-        eq(featureUses.feature, feature),
-        gte(featureUses.createdAt, since),
-      ),
+      and(eq(featureUses.subjectId, subject.id), eq(featureUses.feature, feature), gte(featureUses.createdAt, since)),
     );
   const used = Number(row?.used ?? 0);
   return {
