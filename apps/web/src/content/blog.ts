@@ -205,7 +205,190 @@ const mercuryRetrograde2026: Post = {
   ],
 };
 
-export const POSTS: Post[] = [mercuryRetrograde2026];
+const freeAiKundli: Post = {
+  slug: "free-ai-kundli-online",
+  title: "Free AI Kundli: How to Make Your Janam Kundli Online (and Read It with AI)",
+  h1: "Free AI Kundli: How to Make Your Janam Kundli Online and Read It with AI",
+  description:
+    "Make your Janam Kundli online free in a few seconds, understand the 12 houses, and read your chart with an AI astrologer in Hindi or English. Includes a Hindi guide (kundli kaise dekhe).",
+  keyword: "ai kundli free",
+  published: "2026-10-29",
+  updated: "2026-10-29",
+  intro:
+    "A Janam Kundli is the starting point of every Vedic astrology reading, but most people get stuck after the chart appears: twelve boxes, planet abbreviations and numbers. This guide shows how to make your [free AI kundli](/kundli) online in a few seconds, what each part of the chart means, and how to ask an AI astrologer to explain it in plain English, Hindi or Hinglish.",
+  body: [
+    { type: "h2", text: "What is a Janam Kundli?" },
+    {
+      type: "p",
+      text: "A Janam Kundli (जन्म कुंडली), also called a birth chart or horoscope, is a snapshot of the sky at the exact moment and place you were born. It records which zodiac sign was rising on the eastern horizon (the Lagna), where the Moon was (your Rashi and Nakshatra), and where the other planets were placed across twelve houses.",
+    },
+    {
+      type: "p",
+      text: "Vedic astrology (Jyotish) uses the sidereal zodiac, which is aligned with the fixed stars, rather than the tropical zodiac used in Western astrology. The gap between them is called the ayanamsa. Astrojanta uses the Lahiri (Chitrapaksha) ayanamsa, the standard used by most Indian astrologers and almanacs. That is why your Vedic Rashi is often one sign behind the sun sign you read in Western horoscopes.",
+    },
+    {
+      type: "p",
+      text: "From this one chart an astrologer reads personality, strengths, career and relationship themes, and — through the dasha system — the timing of life phases. Kundli matching, Manglik checks and Sade Sati are all calculated from the same chart.",
+    },
+
+    { type: "h2", text: "What you need to make an accurate kundli" },
+    {
+      type: "ul",
+      items: [
+        "Date of birth — fixes where the planets were.",
+        "Exact time of birth — decides your Lagna and house positions. The Lagna changes roughly every two hours, so even a 10–15 minute error can shift houses. Use a birth certificate or hospital record if you can.",
+        "Place of birth — gives the latitude, longitude and the historical time zone used for the calculation.",
+      ],
+    },
+    {
+      type: "p",
+      text: "If you do not know your birth time, you can still find your Moon sign, Nakshatra and the signs of the planets. Treat anything about houses or the Lagna as uncertain until you have a reliable time.",
+    },
+
+    { type: "h2", text: "How to make your free kundli online on Astrojanta (step by step)" },
+    {
+      type: "ul",
+      items: [
+        "Open the [free AI kundli](/kundli) page. No sign-up is needed — guests can try each chart tool 3 times.",
+        "Enter your name (optional), date of birth and time of birth. Use 24-hour time carefully, or check AM/PM.",
+        "Start typing your birth place and pick the right town from the suggestions, so the correct coordinates and time zone are used.",
+        "Generate the chart. In a few seconds you get your Lagna, Rashi, Nakshatra and pada, the planetary table, the North Indian style D1 chart, the Navamsa (D9), your Vimshottari dasha timeline, and Manglik and Sade Sati status.",
+        "Check that the basics look right — for example, compare your Moon sign with the [Moon sign and Nakshatra finder](/moon-sign) or an older chart you trust.",
+        "To ask questions about the chart, create a free account. The AI astrologer chat needs an account so your chart and conversation can be saved.",
+      ],
+    },
+
+    { type: "h2", text: "The 12 houses of the kundli, explained simply" },
+    {
+      type: "p",
+      text: "Each of the twelve houses (bhavas) governs an area of life. The sign on a house, the planets sitting in it and where its lord is placed all colour that area. In the North Indian chart, the top-centre diamond is always the 1st house; the number written in it is the sign of your Lagna.",
+    },
+    {
+      type: "table",
+      head: ["House", "Main themes"],
+      rows: [
+        ["1st (Lagna)", "Self, body, temperament, overall direction of life"],
+        ["2nd", "Family, savings, speech, food habits"],
+        ["3rd", "Courage, effort, siblings, communication, short travel"],
+        ["4th", "Mother, home, property, vehicles, inner peace"],
+        ["5th", "Intelligence, education, children, creativity, romance"],
+        ["6th", "Health routines, debts, competition, service, obstacles"],
+        ["7th", "Marriage, spouse, partnerships, business deals"],
+        ["8th", "Longevity, sudden changes, inheritance, research, the hidden"],
+        ["9th", "Fortune, father, teachers, dharma, long journeys"],
+        ["10th", "Career, status, public life, karma"],
+        ["11th", "Income, gains, friends, networks, fulfilment of wishes"],
+        ["12th", "Expenses, losses, foreign lands, sleep, spirituality, moksha"],
+      ],
+    },
+    {
+      type: "p",
+      text: "A useful habit: when you have a question, first find the house that rules it, then look at that house's sign, any planets inside it, and where its lord sits. For marriage you would study the 7th house and Venus; for career the 10th house, its lord and the Sun and Saturn.",
+    },
+
+    { type: "h2", text: "Other parts of your chart worth knowing" },
+    {
+      type: "ul",
+      items: [
+        "Rashi and Nakshatra: the Moon's sign and one of 27 lunar mansions. They are used for rashifal, naming, Sade Sati and [Kundli matching](/matching).",
+        "Grahas: the nine Vedic planets — Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu and Ketu. An R next to a planet means it was retrograde at birth, which is common and not a defect.",
+        "Navamsa (D9): a divisional chart traditionally read for marriage and to judge how strong the D1 planets really are.",
+        "Vimshottari dasha: a 120-year sequence of planetary periods that starts from your Moon's Nakshatra. The current mahadasha and antardasha show which planets are 'active' now.",
+        "Manglik status: whether Mars falls in certain houses from the Lagna and Moon. Use the [Manglik calculator](/manglik) to see the check and any classical cancellations.",
+      ],
+    },
+
+    { type: "h2", text: "How to read your kundli with the AI astrologer" },
+    {
+      type: "p",
+      text: "This is what makes it an AI kundli rather than just a chart. The [AI astrologer](/ai-astrologer) reads the chart Astrojanta has calculated — it never guesses planetary positions — and answers your questions in plain language, pointing to the houses, lords and dashas behind each answer.",
+    },
+    {
+      type: "p",
+      text: "Specific questions get better answers than vague ones. Some good ones to start with:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Which planets are strongest in my chart, and what does that mean for me?",
+        "Explain my Lagna and Moon sign in simple words.",
+        "What does my current Mahadasha and Antardasha indicate for career?",
+        "Which house rules marriage in my chart, and what is placed there?",
+        "Meri shaadi kab hogi aur 7th house mein kya dikh raha hai?",
+        "Am I Manglik, and does any cancellation apply?",
+      ],
+    },
+    {
+      type: "p",
+      text: "Remember what astrology can and cannot do: it describes tendencies and favourable or challenging periods, not guaranteed events. The AI will not replace medical, legal or financial advice, and for major decisions many people also consult an experienced jyotishi.",
+    },
+
+    { type: "h2", text: "Kundli kaise dekhe? (कुंडली कैसे देखें — हिंदी में)" },
+    {
+      type: "p",
+      text: "मुफ़्त जन्म कुंडली बनाने के लिए अपनी जन्म तिथि, जन्म का सही समय और जन्म स्थान डालें। कुछ ही सेकंड में आपको लग्न, राशि, नक्षत्र, ग्रहों की स्थिति, नवांश कुंडली और विंशोत्तरी दशा मिल जाएगी।",
+    },
+    {
+      type: "ul",
+      items: [
+        "लग्न (पहला भाव): आपका स्वभाव, शरीर और जीवन की दिशा।",
+        "राशि: जन्म के समय चंद्रमा जिस राशि में था — राशिफल, साढ़े साती और गुण मिलान इसी से देखे जाते हैं।",
+        "सातवाँ भाव: विवाह और जीवनसाथी। दसवाँ भाव: करियर और मान-सम्मान।",
+        "दशा: इस समय कौन-सा ग्रह सक्रिय है, यह महादशा और अंतर्दशा से पता चलता है।",
+      ],
+    },
+    {
+      type: "p",
+      text: "कुंडली समझने में मुश्किल हो तो एआई ज्योतिषी से हिंदी या हिंग्लिश में पूछें — जैसे “मेरा करियर कैसा रहेगा?” या “मेरी शादी कब होगी?”। एआई चैट के लिए एक मुफ़्त अकाउंट बनाना होता है।",
+    },
+
+    { type: "h2", text: "Common mistakes when making a kundli online" },
+    {
+      type: "ul",
+      items: [
+        "Mixing up AM and PM, or entering a rounded time like 12:00 when the real time is unknown.",
+        "Choosing the wrong town with the same name — always check the state or country in the suggestion.",
+        "Comparing with a chart made in a different system (tropical/Western, or a different ayanamsa) and assuming one is wrong.",
+        "Reading one planet in isolation instead of the house, its lord and the current dasha together.",
+        "Panicking over a 'dosha'. Manglik and similar checks have classical cancellations and are only one factor.",
+      ],
+    },
+
+    { type: "h2", text: "Make your free AI kundli now" },
+    {
+      type: "p",
+      text: "Start with your [free AI kundli](/kundli) — no sign-up needed. Planning a marriage? Run [Kundli matching](/matching) for both partners. Then create a free account and ask the [AI astrologer](/ai-astrologer) to explain what your chart says, in the language you are comfortable with.",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is the AI kundli on Astrojanta free?",
+      a: "Yes. Making your Janam Kundli is free and needs no sign-up — guests can try each chart tool 3 times. Chatting with the AI astrologer about your chart needs a free account. An optional Pro plan raises daily limits.",
+    },
+    {
+      q: "What is an AI kundli?",
+      a: "It is a Vedic birth chart calculated from an astronomical ephemeris, combined with an AI astrologer that explains it. On Astrojanta the AI only interprets the calculated chart; it does not invent planet positions.",
+    },
+    {
+      q: "Can I get my kundli in Hindi?",
+      a: "Yes. The chart shows Hindi sign names, and you can ask the AI astrologer questions in Hindi or Hinglish and get answers in the same language.",
+    },
+    {
+      q: "How do I make a janam kundli online without birth time?",
+      a: "Enter your best estimate. Your Moon sign, Nakshatra and planetary signs will usually still be correct, but the Lagna and house positions may not be, so treat house-based readings as uncertain.",
+    },
+    {
+      q: "Kundli kaise dekhe — where should a beginner start?",
+      a: "Start with the Lagna (1st house), your Moon sign (Rashi) and the current dasha. Then look at the house that rules your question — the 7th for marriage, the 10th for career — and the planets in it.",
+    },
+    {
+      q: "Is an online kundli as accurate as one made by a pandit?",
+      a: "The calculation can be just as accurate if your birth details are correct and the same system (sidereal, Lahiri ayanamsa) is used. Interpretation is where experience matters; the AI explains the chart, and for big decisions you may also consult an experienced astrologer.",
+    },
+  ],
+};
+
+export const POSTS: Post[] = [freeAiKundli, mercuryRetrograde2026];
 
 export function getPost(slug: string): Post | undefined {
   return POSTS.find((p) => p.slug === slug);

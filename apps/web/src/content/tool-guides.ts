@@ -40,7 +40,19 @@ export const kundliGuide: ToolGuide = {
       title: "Dasha: the timing system",
       paragraphs: [
         "Vimshottari dasha is a 120-year cycle of planetary periods. Your starting dasha is set by the Nakshatra of your Moon at birth, and each mahadasha (major period) is split into antardashas (sub-periods). Astrologers read the dasha running at any time together with transits to judge when events are likely. Your Kundli lists the dasha sequence with dates so you can see which period you are in now.",
-        "Once your chart is ready you can ask the Astrojanta AI astrologer questions about it in English, Hindi or Hinglish. The AI only interprets the chart data calculated by our engine; it does not make up planetary positions.",
+      ],
+    },
+    {
+      title: "AI Kundli: read your chart with an AI astrologer",
+      paragraphs: [
+        "A chart full of degrees and houses is hard to read on your own. Astrojanta's AI Kundli adds a conversation layer: once your chart is ready, create a free account and ask the AI astrologer questions about it in English, Hindi or Hinglish — career, marriage, money, or which dasha you are running now. The AI only interprets the chart data calculated by our engine; it does not make up planetary positions, and it shows which houses and planets its answer is based on.",
+        "Guests can try each chart tool 3 times without signing up. The AI chat needs a free account.",
+      ],
+    },
+    {
+      title: "Kundli in Hindi (कुंडली हिंदी में)",
+      paragraphs: [
+        "अपनी जन्म कुंडली मुफ़्त बनाने के लिए जन्म तिथि, जन्म का सही समय और जन्म स्थान डालें। आपको लग्न, राशि, नक्षत्र, ग्रहों की स्थिति, नवांश कुंडली और विंशोत्तरी दशा तुरंत मिल जाएगी। फिर एआई ज्योतिषी से हिंदी या हिंग्लिश में पूछें — जैसे “मेरी शादी कब होगी?” या “मेरा करियर कैसा रहेगा?”",
       ],
     },
   ],
@@ -52,11 +64,21 @@ export const kundliGuide: ToolGuide = {
     },
     { href: "/manglik", label: "Manglik Dosha Calculator", text: "check Mars placement from Lagna and Moon." },
     { href: "/moon-sign", label: "Moon Sign & Nakshatra Calculator", text: "find your Rashi, Nakshatra and pada." },
+    { href: "/ai-astrologer", label: "AI Astrologer", text: "ask questions about your Kundli in Hindi or English." },
+    {
+      href: "/blog/free-ai-kundli-online",
+      label: "Guide: how to make and read your Kundli with AI",
+      text: "the 12 houses, step-by-step, and a Hindi section.",
+    },
   ],
   faqs: [
     {
       q: "Is this Janam Kundli really free?",
-      a: "Yes. Generating your Kundli with Lagna, Rashi, Nakshatra, D1 and Navamsa charts, Vimshottari dasha, Manglik and Sade Sati check is free. No sign-up is needed for the chart tools; the AI chat needs a free account, and Pro only adds more daily attempts.",
+      a: "Yes. Generating your Kundli with Lagna, Rashi, Nakshatra, D1 and Navamsa charts, Vimshottari dasha, Manglik and Sade Sati check is free. Guests can try each chart tool 3 times without signing up; the AI chat needs a free account, and Pro only adds more daily attempts.",
+    },
+    {
+      q: "What is an AI Kundli?",
+      a: "An AI Kundli is your calculated Vedic birth chart plus an AI astrologer that explains it. Astrojanta calculates the chart with an astronomical ephemeris and Lahiri ayanamsa; the AI then answers your questions about that chart in plain English, Hindi or Hinglish.",
     },
     {
       q: "What if I don't know my exact birth time?",
