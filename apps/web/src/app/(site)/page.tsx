@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { Reveal } from "@/components/reveal";
+import { ProductHuntBadge } from "@/components/product-hunt-badge";
 import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ZodiacWheel } from "@/components/zodiac-wheel";
@@ -134,6 +135,7 @@ export default function HomePage() {
             </ButtonLink>
           </div>
           <p className="mt-5 text-xs text-muted">No sign-up needed for your Kundli · Free account for AI chat</p>
+          <ProductHuntBadge className="mt-5 inline-block opacity-90 transition-opacity hover:opacity-100" />
         </Reveal>
         <Reveal delay={0.15} className="relative mx-auto w-full max-w-[460px]">
           <ZodiacWheel />
