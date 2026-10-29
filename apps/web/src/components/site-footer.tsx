@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo } from "./logo";
+import { ProductHuntBadge } from "./product-hunt-badge";
 
 export function SiteFooter() {
   return (
@@ -10,6 +11,7 @@ export function SiteFooter() {
           <p className="max-w-sm text-sm leading-relaxed text-muted">
             Accurate Vedic Kundli, explained by an AI astrologer in your own language — instant, private and affordable.
           </p>
+          <ProductHuntBadge lazy className="inline-block" />
         </div>
         <div>
           <h3 className="mb-3 text-sm font-semibold text-ink">Tools</h3>
