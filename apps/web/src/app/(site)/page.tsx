@@ -10,8 +10,8 @@ import {
   Telescope,
 } from "lucide-react";
 import Link from "next/link";
-import { Reveal } from "@/components/reveal";
 import { ProductHuntBadge } from "@/components/product-hunt-badge";
+import { Reveal } from "@/components/reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ZodiacWheel } from "@/components/zodiac-wheel";
@@ -60,7 +60,7 @@ const STEPS = [
 const FAQ = [
   {
     q: "Is the Kundli really free?",
-    a: "Yes. Kundli, matching, Manglik and Moon sign need no sign-up: you get 3 attempts per tool each day without an account, 2 with a free account, and 6 on Pro.",
+    a: "Yes. Kundli, matching, Manglik and Moon sign need no sign-up: without an account you get 1 Kundli and 3 tries on each other tool per day; a free account gets 2 per tool and Pro gets 6.",
   },
   {
     q: "How accurate are the calculations?",

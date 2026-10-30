@@ -48,11 +48,11 @@ export default function TermsPage() {
 
       <h2>Free quota and Pro</h2>
       <p>
-        Without an account you get 3 attempts per day on each chart tool (Kundli, matching, Manglik, Moon sign); AI chat
-        requires an account. A free account gets 2 attempts per tool, including chat. Pro raises that to 6 attempts per
-        tool for the paid period. Limits reset at midnight UTC. To buy Pro, request a payment link from the email on{" "}
-        <Link href="/pricing">/pricing</Link>. Prices may change for new purchases. Refunds are handled case by case
-        with the same contact email.
+        Without an account you get 1 Kundli per day and 3 attempts per day on each other chart tool (matching, Manglik,
+        Moon sign); AI chat requires an account. A free account gets 2 attempts per tool, including chat. Pro raises
+        that to 6 attempts per tool for the paid period. Limits reset at midnight UTC. To buy Pro, request a payment
+        link from the email on <Link href="/pricing">/pricing</Link>. Prices may change for new purchases. Refunds are
+        handled case by case with the same contact email.
       </p>
 
       <h2>Intellectual property</h2>

@@ -31,7 +31,7 @@ Keep in `.env` (never commit):
 - `DATA_ENCRYPTION_KEY` (32-byte base64; required in production)
 - `GEMINI_API_KEY` (Google AI Studio; Gemma 4 `gemma-4-26b-a4b-it` by default). `OPENAI_API_KEY` is an optional fallback. One of the two is required in production.
 - `TRUST_PROXY` (`true` behind HTTPS reverse proxies)
-- `GUEST_DAILY_ATTEMPTS` (default 1 per tool), `FREE_DAILY_QUESTIONS` (default 2), `PRO_DAILY_QUESTIONS` (default 6)
+- `GUEST_DAILY_ATTEMPTS` (default 3 per tool), `GUEST_KUNDLI_DAILY_ATTEMPTS` (default 1, kundli only), `FREE_DAILY_QUESTIONS` (default 2), `PRO_DAILY_QUESTIONS` (default 6)
 - `PRO_REQUEST_EMAIL` (inbox for Pro requests; default `talha.amjadbutt.21@gmail.com`)
 - `RESEND_API_KEY` + `MAIL_FROM` (send Pro request / payment / activation emails; without these, requests are stored only)
 - `PRO_PAYMENT_LINK_MONTHLY` / `PRO_PAYMENT_LINK_YEARLY` (optional URLs included in the customer email)
