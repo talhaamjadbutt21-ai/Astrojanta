@@ -74,6 +74,8 @@ const envSchema = z
     AI_MODEL: z.string().default("gemma-4-26b-a4b-it"),
     /** Daily attempts per tool without an account. */
     GUEST_DAILY_ATTEMPTS: z.coerce.number().int().min(0).default(3),
+    /** Daily Kundli attempts without an account (overrides GUEST_DAILY_ATTEMPTS for the kundli tool). */
+    GUEST_KUNDLI_DAILY_ATTEMPTS: z.coerce.number().int().min(0).default(1),
     /** Daily attempts per tool with a free account. */
     FREE_DAILY_QUESTIONS: z.coerce.number().int().min(0).default(2),
     /** Daily attempts per tool with Pro. */

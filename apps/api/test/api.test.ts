@@ -113,11 +113,14 @@ describe("auth", () => {
     expect((await app.inject({ method: "GET", url: "/api/profiles" })).statusCode).toBe(401);
   });
 
-  it("gives guests 3 chart attempts per tool and no chat allowance", async () => {
+  it("gives guests 1 kundli, 3 attempts on other chart tools and no chat allowance", async () => {
     const usage = await app.inject({ method: "GET", url: "/api/usage" });
     expect(usage.statusCode).toBe(200);
     const body = usage.json();
-    expect(body.features.kundli.limit).toBe(3);
+    expect(body.features.kundli.limit).toBe(1);
+    expect(body.features.matching.limit).toBe(3);
+    expect(body.features.manglik.limit).toBe(3);
+    expect(body.features.moon_sign.limit).toBe(3);
     expect(body.features.chat.limit).toBe(0);
   });
 
@@ -160,25 +163,16 @@ describe("profiles, charts and chat", () => {
     const res = await app.inject({ method: "POST", url: "/api/charts", payload: birth });
     expect(res.statusCode).toBe(200);
     expect(res.json().chart.planets).toHaveLength(9);
-    expect(res.json().quota.limit).toBe(3);
-    expect(res.json().quota.remaining).toBe(2);
+    expect(res.json().quota.limit).toBe(1);
+    expect(res.json().quota.remaining).toBe(0);
   });
 
-  it("limits guests to three kundli attempts and keeps manglik as a separate daily bucket", async () => {
+  it("limits guests to one kundli attempt and keeps manglik as a separate daily bucket", async () => {
     const first = await app.inject({ method: "POST", url: "/api/charts?feature=kundli", payload: birth });
     expect(first.statusCode).toBe(200);
     const guest = first.cookies.find((c) => c.name === "astrojanta_guest");
     expect(guest?.value).toBeTruthy();
     const guestCookie = `${guest!.name}=${guest!.value}`;
-    for (let i = 0; i < 2; i++) {
-      const again = await app.inject({
-        method: "POST",
-        url: "/api/charts?feature=kundli",
-        headers: { cookie: guestCookie },
-        payload: birth,
-      });
-      expect(again.statusCode).toBe(200);
-    }
     const blocked = await app.inject({
       method: "POST",
       url: "/api/charts?feature=kundli",
@@ -194,6 +188,7 @@ describe("profiles, charts and chat", () => {
       payload: birth,
     });
     expect(manglik.statusCode).toBe(200);
+    expect(manglik.json().quota.limit).toBe(3);
   });
 
   it("gives a signed-in free account two kundli attempts", async () => {

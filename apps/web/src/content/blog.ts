@@ -249,7 +249,7 @@ const freeAiKundli: Post = {
     {
       type: "ul",
       items: [
-        "Open the [free AI kundli](/kundli) page. No sign-up is needed — guests can try each chart tool 3 times.",
+        "Open the [free AI kundli](/kundli) page. No sign-up is needed — guests get 1 free Kundli per day, and a free account gives you more.",
         "Enter your name (optional), date of birth and time of birth. Use 24-hour time carefully, or check AM/PM.",
         "Start typing your birth place and pick the right town from the suggestions, so the correct coordinates and time zone are used.",
         "Generate the chart. In a few seconds you get your Lagna, Rashi, Nakshatra and pada, the planetary table, the North Indian style D1 chart, the Navamsa (D9), your Vimshottari dasha timeline, and Manglik and Sade Sati status.",
@@ -363,7 +363,7 @@ const freeAiKundli: Post = {
   faqs: [
     {
       q: "Is the AI kundli on Astrojanta free?",
-      a: "Yes. Making your Janam Kundli is free and needs no sign-up — guests can try each chart tool 3 times. Chatting with the AI astrologer about your chart needs a free account. An optional Pro plan raises daily limits.",
+      a: "Yes. Making your Janam Kundli is free and needs no sign-up — guests get 1 free Kundli per day. Chatting with the AI astrologer about your chart needs a free account. An optional Pro plan raises daily limits.",
     },
     {
       q: "What is an AI kundli?",
@@ -388,7 +388,174 @@ const freeAiKundli: Post = {
   ],
 };
 
-export const POSTS: Post[] = [freeAiKundli, mercuryRetrograde2026];
+const aiKundliReader: Post = {
+  slug: "ai-kundli-reader",
+  title: "AI Kundli Reader: Read Your Kundali Online Free (Houses, Planets & Lagna)",
+  h1: "AI Kundli Reader: How to Read Your Kundali Online Free",
+  description:
+    "Use a free AI kundli reader to understand your birth chart: the Lagna, 12 houses and 9 planets explained, how AI kundli analysis works, and why a kundli is not the same as kundalini.",
+  keyword: "kundalini reader ai",
+  published: "2026-10-30",
+  updated: "2026-10-30",
+  intro:
+    'Searching for a "kundalini reader AI" usually means one thing: you have a kundli (or want one) and you would like someone — or something — to explain it. This guide shows how to read your kundali step by step, what the Lagna, houses and planets actually mean, and how an [AI kundli reader](/kundli) turns a confusing chart into plain answers in English, Hindi or Hinglish. We will also clear up the common mix-up between kundli (a birth chart) and kundalini (a yoga term).',
+  body: [
+    { type: "h2", text: "Kundli, kundali, kundalini — which one are you looking for?" },
+    {
+      type: "p",
+      text: "Kundli and kundali are two spellings of the same word: कुंडली, the Vedic birth chart. It is also called a Janam Kundli, Janam Patri or horoscope. It maps where the Sun, Moon and planets were, and which sign was rising, at the exact time and place you were born.",
+    },
+    {
+      type: "p",
+      text: "Kundalini (कुण्डलिनी) is something different. In yoga and tantra it describes a dormant spiritual energy said to rest at the base of the spine, which practices like pranayama, meditation and kundalini yoga aim to awaken through the chakras. It is not calculated from your birth details and has nothing to do with houses or planets.",
+    },
+    {
+      type: "p",
+      text: 'Because the words sound alike, many people type "kundalini reader" when they mean a kundli reader. If you want your birth chart read — personality, career, marriage timing, dasha — you are in the right place. If you are looking for kundalini awakening practice, a qualified yoga teacher is the right guide.',
+    },
+
+    { type: "h2", text: "What a kundli actually contains" },
+    {
+      type: "p",
+      text: "Every kundli is built from three inputs: date of birth, exact time of birth and place of birth. From these, the chart records:",
+    },
+    {
+      type: "ul",
+      items: [
+        "The Lagna (ascendant) — the zodiac sign rising on the eastern horizon at birth. It becomes the 1st house and sets the order of all twelve houses.",
+        "The twelve houses (bhavas) — each one rules a part of life, from self and wealth to marriage, career and spirituality.",
+        "The nine grahas — Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu and Ketu — each placed in a sign and a house.",
+        "Your Rashi (Moon sign) and Nakshatra — the sign and lunar mansion where the Moon sat, which drive the dasha system and much of daily horoscope reading.",
+        "The Vimshottari dasha — a 120-year timeline of planetary periods that shows which planet's themes are active in each phase of life.",
+        "Divisional charts such as the Navamsa (D9), used for marriage and deeper strength of planets.",
+      ],
+    },
+    {
+      type: "p",
+      text: "If you do not have a chart yet, you can make one in seconds with the [free AI kundli](/kundli) tool. Our step-by-step [guide to making a free AI kundli online](/blog/free-ai-kundli-online) covers the inputs and what to double-check.",
+    },
+
+    { type: "h2", text: "How to read your kundli in five steps" },
+    { type: "h3", text: "1. Start with the Lagna" },
+    {
+      type: "p",
+      text: "In the North Indian chart the top-centre diamond is always the 1st house, and the number written in it is the Lagna sign (1 = Aries/Mesha, 2 = Taurus/Vrishabha, and so on). The Lagna describes your body, temperament and the lens through which you meet the world. Its ruling planet, the Lagna lord, is one of the most important planets in the whole chart: where it sits shows where your life energy naturally flows.",
+    },
+    { type: "h3", text: "2. Read the houses counter-clockwise" },
+    {
+      type: "p",
+      text: "From the 1st house, count counter-clockwise through the remaining eleven. A quick reference:",
+    },
+    {
+      type: "table",
+      head: ["House", "Main themes"],
+      rows: [
+        ["1st (Lagna)", "Self, body, personality"],
+        ["2nd", "Wealth, family, speech, food"],
+        ["3rd", "Courage, siblings, communication, short travel"],
+        ["4th", "Mother, home, property, inner peace"],
+        ["5th", "Intelligence, children, romance, past merit"],
+        ["6th", "Health issues, debts, enemies, daily work"],
+        ["7th", "Marriage, partnerships, business deals"],
+        ["8th", "Longevity, sudden change, secrets, research"],
+        ["9th", "Luck, father, dharma, higher learning"],
+        ["10th", "Career, status, public reputation"],
+        ["11th", "Income, gains, friends, wishes fulfilled"],
+        ["12th", "Expenses, foreign lands, sleep, moksha"],
+      ],
+    },
+    { type: "h3", text: "3. Place the planets" },
+    {
+      type: "p",
+      text: "Each graha brings its own nature into the house it occupies. Jupiter expands and protects, Saturn delays and disciplines, Mars energises and can cause conflict, Venus brings comfort and relationships, Mercury sharpens thinking and trade, the Sun gives authority, the Moon shapes the mind and emotions, and Rahu and Ketu create obsession and detachment along their axis. A planet's sign matters too: exalted or in its own sign it works strongly, debilitated it struggles unless other factors help.",
+    },
+    { type: "h3", text: "4. Look at the house that answers your question" },
+    {
+      type: "p",
+      text: "Do not try to read the whole chart at once. For a marriage question, look at the 7th house, its lord and Venus (or Jupiter for women in traditional readings), then check the Navamsa. For career, study the 10th house, its lord, the Sun and Saturn. For money, combine the 2nd and 11th houses. This focused method is exactly how experienced astrologers work.",
+    },
+    { type: "h3", text: "5. Add timing with the dasha" },
+    {
+      type: "p",
+      text: 'A promise in the chart shows up when the right dasha runs. If you are in Venus mahadasha and Venus rules your 7th house, relationship themes are likely to be active. Your current mahadasha and antardasha tell you which parts of the chart are "switched on" right now.',
+    },
+
+    { type: "h2", text: "What an AI kundli reader does" },
+    {
+      type: "p",
+      text: "Reading all of this by hand takes years of practice. An AI kundli reader does the cross-referencing for you. On AstroJanta the process has two separate layers:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Calculation — an astronomical ephemeris computes exact sidereal planet positions using the Lahiri ayanamsa, then builds your Lagna, houses, Nakshatra, Navamsa and Vimshottari dasha. Nothing here is guessed by AI.",
+        "Interpretation — the [AI astrologer](/ai-astrologer) reads that calculated chart and answers your questions in plain language, pointing to the houses, planets and dasha its answer is based on.",
+      ],
+    },
+    {
+      type: "p",
+      text: 'This split matters. A general chatbot asked to "read my kundli" may invent planet positions; a proper kundli analysis AI only interprets numbers that were actually calculated. You can ask follow-ups like "Why is my 10th house strong?", "When does my Saturn period end?" or "Mera shaadi ka yog kab hai?" and get answers grounded in your own chart.',
+    },
+
+    { type: "h2", text: "How to read your kundli online free with AstroJanta" },
+    {
+      type: "ul",
+      items: [
+        "Open the [free kundli](/kundli) page and enter your date, time and place of birth. Guests get 1 free Kundli per day with no sign-up.",
+        "Review the basics: Lagna, Rashi, Nakshatra, the D1 and D9 charts, the planet table, Manglik and Sade Sati status, and your dasha timeline.",
+        "Create a free account to unlock the [AI astrologer chat](/ai-astrologer) and save your chart.",
+        "Ask one clear question at a time — career, marriage, money, health tendencies, or the effect of your current dasha.",
+        "Use the answers as a guide for reflection, not as a fixed fate. For major decisions, combine them with practical advice.",
+      ],
+    },
+
+    { type: "h2", text: "Common mistakes when reading a kundli" },
+    {
+      type: "ul",
+      items: [
+        "Using a wrong birth time. The Lagna changes about every two hours, so a small error can move every planet into a different house.",
+        "Mixing Western and Vedic signs. Your Vedic Rashi is often one sign behind your Western sun sign because of the ayanamsa.",
+        'Judging a planet in isolation. A "bad" planet can be well supported by its sign, aspects and the dasha it runs in.',
+        "Fearing single yogas. Manglik dosha or Sade Sati are common and have many cancellations; read the whole picture.",
+        "Ignoring timing. Without the dasha, you know what the chart promises but not when.",
+      ],
+    },
+
+    { type: "h2", text: "Kundli reading in Hindi (kundli kaise padhe)" },
+    {
+      type: "p",
+      text: "Sabse pehle Lagna dekhiye — chart ke upar beech wale khaane mein jo number likha hai, wahi aapka Lagna hai. Phir apne sawal ke hisaab se ghar chuniye: shaadi ke liye saatvan (7th), naukri ke liye dasvan (10th), paise ke liye doosra aur gyarahvan (2nd, 11th). Us ghar mein baithe grah aur uske swami grah ko dekhiye, aur aakhir mein apni chal rahi mahadasha check kijiye. AstroJanta ka AI astrologer yahi sab Hindi ya Hinglish mein samjha deta hai.",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is a kundalini reader the same as a kundli reader?",
+      a: "No. Kundli (or kundali) is a Vedic birth chart calculated from your birth date, time and place. Kundalini is a yoga concept about spiritual energy and is not read from a chart. Most people searching for a kundalini reader AI actually want their kundli read.",
+    },
+    {
+      q: "Can AI read my kundli accurately?",
+      a: "AI can interpret a chart well if the chart itself is calculated correctly. AstroJanta computes planet positions with an astronomical ephemeris and the Lahiri ayanamsa, and the AI only explains that data, so accuracy depends mainly on your birth time being correct.",
+    },
+    {
+      q: "How can I read my kundli online for free?",
+      a: "Enter your birth details on the free kundli page to get your Lagna, houses, planets, Navamsa and dasha. Guests get 1 free Kundli per day; a free account adds the AI astrologer chat so you can ask questions about the chart.",
+    },
+    {
+      q: "Which house should I check for marriage and career?",
+      a: "The 7th house, its lord and Venus are the main factors for marriage, supported by the Navamsa (D9). The 10th house, its lord, the Sun and Saturn describe career. Always check the current dasha for timing.",
+    },
+    {
+      q: "Can the AI kundli reader answer in Hindi?",
+      a: "Yes. You can ask questions in Hindi, Hinglish or English and the AI astrologer replies in the same language, using Hindi sign names where helpful.",
+    },
+    {
+      q: "What if I don't know my exact birth time?",
+      a: "Your Moon sign, Nakshatra and planetary signs are usually still correct, but the Lagna and house placements may be off. Treat house-based readings as uncertain until you find a reliable birth time.",
+    },
+  ],
+};
+
+export const POSTS: Post[] = [aiKundliReader, freeAiKundli, mercuryRetrograde2026];
 
 export function getPost(slug: string): Post | undefined {
   return POSTS.find((p) => p.slug === slug);

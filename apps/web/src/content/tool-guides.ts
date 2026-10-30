@@ -46,7 +46,7 @@ export const kundliGuide: ToolGuide = {
       title: "AI Kundli: read your chart with an AI astrologer",
       paragraphs: [
         "A chart full of degrees and houses is hard to read on your own. Astrojanta's AI Kundli adds a conversation layer: once your chart is ready, create a free account and ask the AI astrologer questions about it in English, Hindi or Hinglish — career, marriage, money, or which dasha you are running now. The AI only interprets the chart data calculated by our engine; it does not make up planetary positions, and it shows which houses and planets its answer is based on.",
-        "Guests can try each chart tool 3 times without signing up. The AI chat needs a free account.",
+        "Guests get 1 free Kundli per day without signing up (3 tries on the other chart tools). The AI chat needs a free account.",
       ],
     },
     {
@@ -74,7 +74,7 @@ export const kundliGuide: ToolGuide = {
   faqs: [
     {
       q: "Is this Janam Kundli really free?",
-      a: "Yes. Generating your Kundli with Lagna, Rashi, Nakshatra, D1 and Navamsa charts, Vimshottari dasha, Manglik and Sade Sati check is free. Guests can try each chart tool 3 times without signing up; the AI chat needs a free account, and Pro only adds more daily attempts.",
+      a: "Yes. Generating your Kundli with Lagna, Rashi, Nakshatra, D1 and Navamsa charts, Vimshottari dasha, Manglik and Sade Sati check is free. Guests get 1 free Kundli per day (and 3 tries on the other chart tools) without signing up; the AI chat needs a free account, and Pro only adds more daily attempts.",
     },
     {
       q: "What is an AI Kundli?",

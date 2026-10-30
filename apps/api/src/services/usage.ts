@@ -34,6 +34,8 @@ export async function planFor(db: Db, env: Env, userId: string | null) {
 /** AI chat requires an account, so guests have no chat allowance. */
 async function planForFeature(db: Db, env: Env, userId: string | null, feature: ProductFeature) {
   if (!userId && feature === "chat") return { plan: "guest" as const, pro: false, limit: 0 };
+  if (!userId && feature === "kundli")
+    return { plan: "guest" as const, pro: false, limit: env.GUEST_KUNDLI_DAILY_ATTEMPTS };
   return planFor(db, env, userId);
 }
 
@@ -53,7 +55,7 @@ function subjectOf(request: FastifyRequest, reply: FastifyReply, env: Env): { ty
 
 export function quotaMessage(quota: Pick<FeatureQuota, "plan" | "limit">): string {
   if (quota.plan === "guest") {
-    return `You've used today's ${quota.limit} free attempts on this tool. Create a free account at /register for more attempts and AI chat, or come back tomorrow.`;
+    return `You've used today's ${quota.limit === 1 ? "free attempt" : `${quota.limit} free attempts`} on this tool. Create a free account at /register for more attempts and AI chat, or come back tomorrow.`;
   }
   if (quota.plan === "free") {
     return `You've used today's ${quota.limit} attempts on this tool. Upgrade to Pro for 6 per day, or come back tomorrow.`;
