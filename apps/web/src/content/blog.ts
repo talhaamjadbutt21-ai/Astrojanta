@@ -555,7 +555,154 @@ const aiKundliReader: Post = {
   ],
 };
 
-export const POSTS: Post[] = [aiKundliReader, freeAiKundli, mercuryRetrograde2026];
+const askAstrologerFree: Post = {
+  slug: "ask-astrologer-free",
+  title: "Ask an Astrologer Free: Get Your Question Answered Instantly (AI Vedic Chat)",
+  h1: "Ask an Astrologer Free – Get One Question Answered Instantly",
+  description:
+    "Ask an astrologer free online and get an instant answer based on your Vedic birth chart. How free astrology questions work, how to phrase one, sample questions on marriage, career and money, and the limits to know.",
+  keyword: "ask astrologer free",
+  published: "2026-10-31",
+  updated: "2026-10-31",
+  intro:
+    "Most people who want to ask an astrologer free have just one burning question: When will I get married? Will this job change work out? Is this a good year for money? Traditionally you would book a paid consultation or wait days for a reply. Today you can ask the question online and get an instant answer grounded in your own Vedic birth chart. This guide explains how free astrology questions actually work, how to phrase your question so the answer is genuinely useful, sample questions for common topics, and what a free answer can and cannot tell you. When you are ready, you can [ask the AI astrologer](/ai-astrologer) directly.",
+  body: [
+    { type: "h2", text: "Can you really ask an astrologer for free?" },
+    {
+      type: "p",
+      text: "Yes, but it helps to know what \"free\" usually means. Many astrology apps advertise a free first question and then switch to per-minute billing once the chat starts. Others give a generic sun-sign answer that is the same for millions of people. A useful free answer has to be based on your own chart, which means the astrologer (human or AI) needs your date, time and place of birth.",
+    },
+    {
+      type: "p",
+      text: "On AstroJanta, the reading starts from a real chart. Your [free kundli](/kundli) is calculated with an astronomical ephemeris and the Lahiri ayanamsa, and the AI astrologer explains that chart in plain language. You can ask in English, Hindi or Hinglish. The chat needs a free account, with no card and no per-minute charges, so you can ask your question and read the answer at your own pace.",
+    },
+
+    { type: "h2", text: "How an instant astrology answer works" },
+    {
+      type: "p",
+      text: "When you ask a question, a good Vedic reading always follows the same logic, whether it is done by a pandit or by software:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Build the chart: The Lagna (ascendant), the 12 houses and the positions of the 9 grahas are calculated from your birth details.",
+        "Find the relevant house: Each question maps to specific houses: the 7th for marriage, the 10th for career, the 2nd and 11th for money, the 6th for health and disputes, the 4th for property and home.",
+        "Judge the house lord and the karaka: The planet that rules the house, and the natural significator (Venus for marriage, Saturn and the Sun for career, Jupiter for children and wisdom), show how strong the promise is.",
+        "Check timing: The running Vimshottari mahadasha and antardasha, plus major transits of Saturn and Jupiter, show when a promise is likely to activate.",
+      ],
+    },
+    {
+      type: "p",
+      text: "The AI astrologer does these steps in seconds and then explains them in everyday language. That is why the answer feels instant: the calculation is automatic, and the interpretation follows established Vedic rules rather than guesswork. If you want to understand the chart yourself first, our guide on [how to read your kundli with an AI kundli reader](/blog/ai-kundli-reader) walks through the houses and planets step by step.",
+    },
+
+    { type: "h2", text: "How to phrase your question for the best answer" },
+    {
+      type: "p",
+      text: "The quality of the answer depends heavily on the question. Vague questions produce vague answers. A few simple habits make a big difference:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Be specific: \"Will I change jobs in the next 12 months?\" is far better than \"Tell me about my career.\"",
+        "Add a time frame: Astrology works through dashas and transits, so a window such as \"this year\" or \"before 2028\" lets the reading focus on timing.",
+        "Give context: Mention whether you are studying, employed, married or running a business. The same chart reads differently at 19 and at 45.",
+        "Ask one thing at a time: Combining marriage, career and health in one message spreads the answer thin. Ask, read, then follow up.",
+        "Use an accurate birth time: The Lagna changes roughly every two hours, and house-based answers depend on it. If your time is uncertain, say so.",
+      ],
+    },
+
+    { type: "h2", text: "Sample questions you can ask for free" },
+    {
+      type: "table",
+      head: ["Topic", "Example question", "What the astrologer checks"],
+      rows: [
+        ["Marriage", "When is a good period for my marriage?", "7th house and lord, Venus, Navamsa (D9), current dasha"],
+        ["Love & compatibility", "Are my partner and I a good match?", "Gun Milan score, Manglik status, Moon signs"],
+        ["Career", "Is this a good year to switch jobs?", "10th house and lord, Saturn, Sun, running antardasha"],
+        ["Money", "Will my finances improve this year?", "2nd and 11th houses, Jupiter, dhana yogas"],
+        ["Education", "Which field suits me: science, commerce or arts?", "4th, 5th and 9th houses, Mercury and Jupiter"],
+        ["Foreign travel", "Do I have chances of settling abroad?", "12th and 9th houses, Rahu, related dashas"],
+      ],
+    },
+    {
+      type: "p",
+      text: "For relationship questions, it often helps to run the numbers first. Use [kundli matching](/matching) to see the 36-point Gun Milan score and the [Manglik check](/manglik) to see whether Mangal dosha is present, then ask the AI astrologer to explain what those results mean for your situation.",
+    },
+
+    { type: "h2", text: "Free AI astrologer vs paid human astrologer" },
+    {
+      type: "p",
+      text: "Both have a place. A free AI astrologer is ideal for quick, specific questions and for understanding your own chart. It is available at any hour, never rushes you, gives consistent answers based on the same chart data, and does not push expensive remedies. An experienced human astrologer can add intuition, ask follow-up questions about your life story and handle complex family situations in a longer consultation.",
+    },
+    {
+      type: "p",
+      text: "A sensible approach is to start free. Generate your chart, ask your main question, and see whether the explanation resonates. If you then want a paid consultation, you will arrive with a clear understanding of your Lagna, dasha and key houses, which makes any paid session far more productive.",
+    },
+
+    { type: "h2", text: "What a free astrology answer cannot do" },
+    {
+      type: "p",
+      text: "Astrology describes tendencies and timing, not guaranteed outcomes. Treat any reading, free or paid, as guidance for reflection rather than a final verdict. Be cautious of anyone who predicts certain disaster, demands money for urgent remedies, or tells you to make medical, legal or financial decisions purely from a chart. For those matters, a qualified doctor, lawyer or financial adviser should always come first.",
+    },
+    {
+      type: "ul",
+      items: [
+        "It cannot replace professional medical, legal or financial advice.",
+        "It is only as accurate as your birth time. A wrong time can shift the Lagna and every house.",
+        "It cannot remove your free will. Charts show favourable and difficult periods; your choices shape the result.",
+      ],
+    },
+
+    { type: "h2", text: "Ask your question in three steps" },
+    {
+      type: "ul",
+      items: [
+        "Step 1: Make your chart: Enter your birth date, time and place on the [free kundli page](/kundli). Guests get 1 free kundli per day without signing up.",
+        "Step 2: Create a free account: The AI astrologer chat needs a free account so it can save your birth profile and your conversation.",
+        "Step 3: Ask one clear question: Open the [AI astrologer](/ai-astrologer), type your question with a time frame, and follow up as needed.",
+      ],
+    },
+    {
+      type: "p",
+      text: "The matching, Manglik and Moon sign tools give guests 3 free tries a day each, so you can explore your chart before you even sign up. And if your question is about timing right now, our guide to [Mercury retrograde 2026](/blog/mercury-retrograde-2026) explains what the current transit means for each Moon sign. For a fuller overview of what an online chart includes, read [free AI kundli online](/blog/free-ai-kundli-online).",
+    },
+
+    { type: "h2", text: "Muft mein astrologer se sawal kaise poochein" },
+    {
+      type: "p",
+      text: "Sabse pehle apni sahi janam tithi, samay aur sthan se kundli banaiye. Phir free account bana kar AI astrologer se ek saaf sawal poochiye, jaise \"Meri shaadi ka yog kab hai?\" ya \"Kya is saal naukri badalna theek rahega?\". Sawal mein samay seema jodiye, taaki jawab dasha aur gochar ke hisaab se mil sake. AstroJanta Hindi, Hinglish aur English teeno mein jawab deta hai.",
+    },
+  ],
+  faqs: [
+    {
+      q: "Can I ask an astrologer a question for free?",
+      a: "Yes. On AstroJanta you can ask the AI astrologer questions free with a free account, with no card or per-minute charges. Answers are based on your own Vedic birth chart, not just your sun sign.",
+    },
+    {
+      q: "How do I get an instant answer to my astrology question?",
+      a: "Generate your kundli with your birth date, time and place, then ask the AI astrologer one specific question with a time frame. The chart is calculated automatically, so the answer appears within seconds.",
+    },
+    {
+      q: "Do I need my exact birth time to ask a question?",
+      a: "An exact time gives the best results because the Lagna and houses depend on it. Without it, Moon sign, Nakshatra and planetary sign readings are usually still reliable, but house-based answers such as marriage or career timing are less certain.",
+    },
+    {
+      q: "Is a free AI astrologer accurate?",
+      a: "The accuracy depends on the chart calculation and your birth time. AstroJanta uses an astronomical ephemeris with the Lahiri ayanamsa and the AI explains that data using standard Vedic rules. Treat any reading as guidance rather than a guaranteed prediction.",
+    },
+    {
+      q: "Can I ask my question in Hindi or Urdu?",
+      a: "You can ask in Hindi, Hinglish or English and the AI astrologer replies in the same language. Roman Urdu questions are generally understood as well.",
+    },
+    {
+      q: "What questions can I ask an astrologer?",
+      a: "Common questions are about marriage timing, compatibility, career changes, finances, education, foreign travel and the effect of the current dasha or transits. Specific questions with a time frame get the most useful answers.",
+    },
+  ],
+};
+
+export const POSTS: Post[] = [askAstrologerFree, aiKundliReader, freeAiKundli, mercuryRetrograde2026];
 
 export function getPost(slug: string): Post | undefined {
   return POSTS.find((p) => p.slug === slug);
