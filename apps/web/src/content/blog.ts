@@ -702,7 +702,185 @@ const askAstrologerFree: Post = {
   ],
 };
 
-export const POSTS: Post[] = [askAstrologerFree, aiKundliReader, freeAiKundli, mercuryRetrograde2026];
+const kundliMilanOnlineFree: Post = {
+  slug: "kundli-milan-online-free",
+  title: "Kundli Milan Online Free: Gun Milan by Name & Date of Birth (36 Guna Guide)",
+  h1: "Kundli Milan Online Free – Complete Gun Milan Guide for Shaadi",
+  description:
+    "Free kundli milan online for marriage. Understand the Ashtakoot 36 guna table, what gun milan score is good, Nadi and Bhakoot dosha, Manglik matching and how Indian families use kundli matching before shaadi.",
+  keyword: "kundli milan online free",
+  published: "2026-11-01",
+  updated: "2026-11-01",
+  intro:
+    "In most Indian families, the first serious step after a rishta is suggested is not the meeting over chai, it is the kundli milan. Parents in Delhi, Jaipur, Lucknow, Pune, Chennai and Kolkata still send the boy's and girl's birth details to a trusted pandit and wait anxiously for one number: how many gun matched out of 36. Today you can do the same kundli matching online free in a few seconds. This guide explains how gun milan works, what each of the eight kootas means, which score is considered good for shaadi, how Nadi dosha, Bhakoot dosha and Manglik dosha are judged, and how to read the result sensibly. When you are ready, open the [free kundli matching tool](/matching) and enter both birth details.",
+  body: [
+    { type: "h2", text: "What is kundli milan (gun milan)?" },
+    {
+      type: "p",
+      text: "Kundli milan, also called gun milan, kundli matching or horoscope matching, is the Vedic method of checking compatibility between a bride and groom before marriage. The most widely used system in North and Central India is Ashtakoot milan, which compares eight aspects (koota) of the two charts. Each koota carries a fixed number of points called gun or guna, and together they add up to 36. South India often uses the Dashakoot (ten porutham) system, which looks at similar factors with different weights.",
+    },
+    {
+      type: "p",
+      text: "Ashtakoot matching is based mainly on the Moon: the Moon sign (rashi) and the birth star (nakshatra) of each person. The Moon represents the mind and emotions in Jyotish, so the matching essentially asks whether two minds, temperaments and family lives will sit comfortably together. That is why a correct date and place of birth matter most, and why an accurate birth time also helps when the Moon is near the end of a nakshatra or sign.",
+    },
+
+    { type: "h2", text: "The Ashtakoot 36 guna table" },
+    {
+      type: "p",
+      text: "Here are the eight kootas, their maximum points and what each one checks. The higher kootas carry more weight because traditional texts consider them more important for a long, healthy marriage.",
+    },
+    {
+      type: "table",
+      head: ["Koota", "Max gun", "What it checks"],
+      rows: [
+        ["Varna", "1", "Spiritual and ego compatibility, based on the Moon sign's varna (Brahmin, Kshatriya, Vaishya, Shudra)"],
+        ["Vashya", "2", "Mutual attraction and who influences whom in the relationship"],
+        ["Tara (Dina)", "3", "Health, wellbeing and fortune, counted from one nakshatra to the other"],
+        ["Yoni", "4", "Physical and intimate compatibility, using the animal symbol of each nakshatra"],
+        ["Graha Maitri", "5", "Mental wavelength and friendship between the Moon sign lords"],
+        ["Gana", "6", "Temperament: Deva (divine), Manushya (human) or Rakshasa (fierce)"],
+        ["Bhakoot (Rashi)", "7", "Love, family welfare and finances, from the relative position of the Moon signs"],
+        ["Nadi", "8", "Health, genes and progeny, from the Adi, Madhya or Antya nadi of the nakshatra"],
+        ["Total", "36", "Overall Ashtakoot compatibility score"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Notice that Nadi (8) and Bhakoot (7) together carry 15 of the 36 points. That is why a match can look average overall but still be flagged by a pandit: a zero in Nadi or Bhakoot is treated as a dosha, not just a low score.",
+    },
+
+    { type: "h2", text: "What gun milan score is good for marriage?" },
+    {
+      type: "p",
+      text: "The traditional rule of thumb used across India is simple:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Below 18 gun: Not recommended in classical practice. Most families look for strong remedies or prefer another match.",
+        "18 to 24 gun: Acceptable or average. The marriage can work well, especially if Nadi and Bhakoot are clear and the individual charts are strong.",
+        "25 to 32 gun: Very good match. This is the range most families are happy with.",
+        "33 to 36 gun: Excellent on paper, though very rare. Even here, astrologers still check the 7th house and Manglik status.",
+      ],
+    },
+    {
+      type: "p",
+      text: "So 18 out of 36 is the minimum that is generally accepted. But the number alone is never the full story. A 28-gun match with Nadi dosha can be more worrying to a pandit than a 21-gun match with all major kootas clear. Experienced astrologers always read the score together with the doshas and with each person's own [kundli](/kundli).",
+    },
+
+    { type: "h2", text: "Nadi dosha: why 0 in Nadi worries families" },
+    {
+      type: "p",
+      text: "Every nakshatra belongs to one of three nadis: Adi (Vata), Madhya (Pitta) or Antya (Kapha). If the bride and groom share the same nadi, Nadi koota scores 0 out of 8 and this is called Nadi dosha. Traditionally it is linked with health problems and difficulties with children, which is why it is taken very seriously in shaadi ke liye kundli matching.",
+    },
+    {
+      type: "p",
+      text: "Classical texts also give exceptions (parihar). Nadi dosha is commonly considered cancelled when both partners have the same rashi but different nakshatras, the same nakshatra but different rashis, or the same nakshatra but different charanas (padas). Many astrologers also consider the dosha reduced if the rashi lords are friends or the same planet. Remedies traditionally suggested include Nadi dosha nivaran puja and Maha Mrityunjaya jaap, but whether a remedy is needed should be decided after a full chart reading, not from the score alone.",
+    },
+
+    { type: "h2", text: "Bhakoot dosha: the 6-8, 9-5 and 2-12 positions" },
+    {
+      type: "p",
+      text: "Bhakoot koota compares the positions of the two Moon signs. If the signs are 6th and 8th (shadashtak), 9th and 5th (navpancham) or 2nd and 12th (dwirdwadash) from each other, Bhakoot scores 0 out of 7 and Bhakoot dosha is formed. It is traditionally associated with friction, financial strain or distance in the family.",
+    },
+    {
+      type: "p",
+      text: "Like Nadi dosha, Bhakoot dosha is often considered cancelled when the lords of both Moon signs are the same planet (for example Aries and Scorpio, both ruled by Mars) or are natural friends, or when Nadi koota scores full points. This is one of the most common reasons a pandit says the match is fine even though the online score dropped by seven points.",
+    },
+
+    { type: "h2", text: "Manglik matching (Mangal dosha)" },
+    {
+      type: "p",
+      text: "Manglik dosha, or Mangal dosha, is checked separately from the 36 gun. A person is usually called Manglik when Mars sits in the 1st, 2nd, 4th, 7th, 8th or 12th house from the Lagna (and many astrologers also check from the Moon and Venus). Mars in these houses is believed to bring heat and conflict into married life.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Manglik with Manglik: The most common solution. When both partners are Manglik, the dosha is generally considered to cancel out.",
+        "Manglik with non-Manglik: Traditionally avoided, unless the dosha is weak or cancelled in the Manglik person's chart.",
+        "Cancellation: Mars in its own sign (Aries, Scorpio) or exalted (Capricorn), aspects from Jupiter, and certain sign placements are classic cancellations. Many astrologers also consider the effect reduced after age 28.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Before you worry about Mangal dosha, check it properly. Use the free [Manglik dosha calculator](/manglik) for both partners, then compare the results with the gun milan score.",
+    },
+
+    { type: "h2", text: "How to do kundli milan online free on AstroJanta" },
+    {
+      type: "ul",
+      items: [
+        "Collect birth details: Date of birth, time of birth and place of birth (city and state) for both the ladka and the ladki. Birth certificates or hospital records are most reliable.",
+        "Open the matching tool: Go to [kundli matching](/matching) and enter both sets of details.",
+        "Read the score: You will see each koota, the total out of 36 and any Nadi or Bhakoot dosha.",
+        "Check Manglik status: Run the [Manglik check](/manglik) for both, since it is not part of the 36 gun.",
+        "Ask follow-up questions: Use the [AI astrologer](/blog/ask-astrologer-free) to ask in Hindi, Hinglish or English, for example \"Kya Nadi dosha cancel ho raha hai?\" or \"Shaadi ke baad finances kaise rahenge?\"",
+      ],
+    },
+    {
+      type: "p",
+      text: "If you want to understand each person's chart on its own (the 7th house, Venus, Navamsa and the current dasha), read our guide on [using an AI kundli reader](/blog/ai-kundli-reader). A strong individual chart can support an average match, and a weak 7th house can strain even a high score.",
+    },
+
+    { type: "h2", text: "Birth time and IST: a small detail that matters" },
+    {
+      type: "p",
+      text: "Indian birth times are recorded in Indian Standard Time (IST, UTC+5:30), and AstroJanta treats times entered for Indian cities as IST. For older births, note that India briefly used war-time adjustments in the 1940s and 1960s, and families abroad (NRIs in the US, UK, Canada or the Gulf) should enter the local time and city of birth, not the IST equivalent. The Moon moves about one nakshatra pada every six hours, so an error of a few hours can occasionally change Tara, Yoni, Gana or even Nadi.",
+    },
+
+    { type: "h2", text: "Kundli milan in Indian wedding tradition" },
+    {
+      type: "p",
+      text: "Gun milan is usually the step before the roka or sagai. Once the kundlis match, families move on to choosing a shubh muhurat for the wedding. North Indian weddings typically cluster after Dev Uthani Ekadashi and Tulsi Vivah in November, through the winter season, and again around Basant Panchami and Akshaya Tritiya. Weddings are traditionally avoided during Kharmas (roughly mid-December to mid-January), Pitru Paksha and Chaturmas. Whether you are in Mumbai, Bengaluru, Hyderabad, Ahmedabad, Patna or Varanasi, the sequence is broadly the same: kundli milan, family meeting, roka, then muhurat.",
+    },
+    {
+      type: "p",
+      text: "Love marriages are increasingly common, and many couples now run kundli matching themselves to reassure their parents. In those cases, the most useful thing an online report can do is explain the doshas and their cancellations clearly so the conversation at home is based on facts rather than fear.",
+    },
+
+    { type: "h2", text: "What kundli matching cannot tell you" },
+    {
+      type: "p",
+      text: "Gun milan is a traditional filter, not a verdict on two people. It does not measure values, communication, education, finances or how families treat each other. Many happy marriages have modest scores, and high scores do not guarantee harmony. Use the result as one input alongside meeting each other, talking openly and, if needed, consulting an experienced astrologer for the full charts.",
+    },
+  ],
+  faqs: [
+    {
+      q: "How many gun should match for marriage?",
+      a: "At least 18 out of 36 gun is the traditional minimum. 18 to 24 is average, 25 to 32 is very good and above 32 is excellent. Always also check Nadi dosha, Bhakoot dosha and Manglik status.",
+    },
+    {
+      q: "Can I do kundli milan online free by date of birth?",
+      a: "Yes. Enter the date, time and place of birth for both partners in AstroJanta's free kundli matching tool to get the 36 guna score, each koota and any doshas instantly.",
+    },
+    {
+      q: "Can kundli matching be done by name only?",
+      a: "Name-based matching uses the first syllable to guess the nakshatra, which is only a rough approximation. Matching by date, time and place of birth is far more accurate and is what pandits recommend.",
+    },
+    {
+      q: "Is Nadi dosha always bad?",
+      a: "Not always. Nadi dosha is traditionally considered cancelled if both have the same rashi but different nakshatras, the same nakshatra but different rashis, or the same nakshatra in different padas. A full chart reading decides how serious it is.",
+    },
+    {
+      q: "What if only one partner is Manglik?",
+      a: "Traditionally a Manglik is matched with another Manglik. If only one is Manglik, astrologers check whether the dosha is cancelled, for example by Mars in its own or exalted sign or Jupiter's aspect, before advising remedies.",
+    },
+    {
+      q: "Is 36 gun milan a perfect match?",
+      a: "36 out of 36 is extremely rare and looks perfect on paper, but astrologers still check the 7th house, Navamsa and Manglik dosha. The score is a guide, not a guarantee.",
+    },
+    {
+      q: "Which time zone should I use for birth time?",
+      a: "Use the local time of the birthplace. For births in India that is IST (UTC+5:30). If you were born abroad, enter the local time and city rather than converting to IST.",
+    },
+    {
+      q: "Can I ask questions about my match in Hindi?",
+      a: "Yes. The AstroJanta AI astrologer understands Hindi, Hinglish and English, so you can ask questions like \"Hamari kundli mein Bhakoot dosha hai kya?\" and get an answer based on both charts.",
+    },
+  ],
+};
+
+export const POSTS: Post[] = [kundliMilanOnlineFree, askAstrologerFree, aiKundliReader, freeAiKundli, mercuryRetrograde2026];
 
 export function getPost(slug: string): Post | undefined {
   return POSTS.find((p) => p.slug === slug);
