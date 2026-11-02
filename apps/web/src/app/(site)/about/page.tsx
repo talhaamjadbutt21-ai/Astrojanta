@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/json-ld";
 import { LegalArticle } from "@/components/legal-article";
-import { absoluteUrl, CONTACT_EMAIL, pageOpenGraph, SITE_NAME } from "@/lib/site";
+import { absoluteUrl, CONTACT_EMAIL, FOUNDER, ORGANIZATION_ID, pageOpenGraph } from "@/lib/site";
 
 const TITLE = "About Astrojanta — Vedic Astrology Tools and AI Astrologer";
 const DESCRIPTION =
@@ -25,11 +25,11 @@ export default function AboutPage() {
           "@type": "AboutPage",
           name: TITLE,
           url: absoluteUrl("/about"),
-          about: { "@type": "Organization", name: SITE_NAME, url: absoluteUrl("/"), email: CONTACT_EMAIL },
+          about: { "@id": ORGANIZATION_ID },
         }}
       />
       <p>
-        Astrojanta is an independent web app for Vedic (Jyotish) astrology. It combines accurate chart calculation with
+        Astrojanta is a web app for Vedic (Jyotish) astrology, founded and owned by {FOUNDER.name}. It combines accurate chart calculation with
         an AI astrologer that explains your chart in plain Hindi, Hinglish or English.
       </p>
       <h2>What we offer</h2>

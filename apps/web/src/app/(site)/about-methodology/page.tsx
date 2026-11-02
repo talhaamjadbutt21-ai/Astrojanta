@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/json-ld";
 import { LegalArticle } from "@/components/legal-article";
-import { absoluteUrl, CONTACT_EMAIL, pageOpenGraph, SITE_NAME } from "@/lib/site";
+import { absoluteUrl, FOUNDER, FOUNDER_ID, founderJsonLd, ORGANIZATION_ID, pageOpenGraph } from "@/lib/site";
 
 const PATH = "/about-methodology";
 const TITLE = "Methodology — How Astrojanta Calculates Your Kundli (Lahiri Ayanamsa)";
@@ -17,17 +17,6 @@ export const metadata: Metadata = {
   openGraph: pageOpenGraph(PATH, TITLE, DESCRIPTION),
 };
 
-/*
- * TODO(owner): personal details are intentionally NOT filled in. Before publishing names or credentials,
- * add them here — do not invent them:
- *   - Builder / founder name(s) and role(s)
- *   - Relevant background (e.g. years studying Jyotish, software / astronomy experience)
- *   - Location (city, country) if you want it shown
- *   - Any astrologer who reviews interpretations, with their real credentials
- * When filled in, render them in the "Who builds Astrojanta" section below and add a `Person`
- * (author / founder) entry to the JSON-LD.
- */
-
 export default function MethodologyPage() {
   return (
     <LegalArticle eyebrow="Company" title="About Astrojanta & our methodology" updated="2 November 2026">
@@ -39,8 +28,10 @@ export default function MethodologyPage() {
             name: TITLE,
             description: DESCRIPTION,
             url: absoluteUrl(PATH),
-            about: { "@type": "Organization", name: SITE_NAME, url: absoluteUrl("/"), email: CONTACT_EMAIL },
+            about: { "@id": ORGANIZATION_ID },
+            mentions: { "@id": FOUNDER_ID },
           },
+          { "@context": "https://schema.org", ...founderJsonLd },
           {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
@@ -60,13 +51,12 @@ export default function MethodologyPage() {
 
       <h2>Who builds Astrojanta</h2>
       <p>
-        Astrojanta is an independent project that builds free Vedic (Jyotish) astrology tools and an AI astrologer for
-        people who want to understand their own chart in Hindi, Hinglish or English.
+        Astrojanta is founded and owned by <strong>{FOUNDER.name}</strong>. It offers free Vedic (Jyotish) astrology
+        tools and an AI astrologer for people who want to understand their own chart in Hindi, Hinglish or English.
       </p>
-      {/* TODO(owner): add the builder's real name, role and relevant background here (see note at top of file). */}
       <p>
-        Questions about the team or a correction to our methodology? Email{" "}
-        <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> or use our <Link href="/contact">contact page</Link>.
+        Questions about Astrojanta or a correction to our methodology? Email {FOUNDER.name} at{" "}
+        <a href={`mailto:${FOUNDER.email}`}>{FOUNDER.email}</a> or use our <Link href="/contact">contact page</Link>.
       </p>
 
       <h2>How your chart is calculated</h2>
