@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalArticle } from "@/components/legal-article";
 
-import { CONTACT_EMAIL as SUPPORT } from "@/lib/site";
+import { pageOpenGraph, CONTACT_EMAIL as SUPPORT } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "How Astrojanta collects, uses and protects your birth details and account data under Indian DPDP rules.",
   alternates: { canonical: "/privacy" },
+  openGraph: pageOpenGraph("/privacy"),
 };
 
 export default function PrivacyPage() {

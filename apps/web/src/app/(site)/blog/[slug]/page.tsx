@@ -44,6 +44,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const post = getPost(slug);
   if (!post) notFound();
   const url = absoluteUrl(`/blog/${post.slug}`);
+  // Internal links to other guides (newest first) so every post links to — and is linked from — other posts.
+  const related = POSTS.filter((p) => p.slug !== post.slug)
+    .sort((a, b) => b.published.localeCompare(a.published))
+    .slice(0, 4);
   const org = { "@type": "Organization", name: SITE_NAME, url: absoluteUrl("/") };
   const jsonLd = [
     {
@@ -101,7 +105,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <article className="mt-6">
         <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-5xl">{post.h1}</h1>
         <p className="mt-3 text-sm text-muted">
-          By the {SITE_NAME} team · <time dateTime={post.published}>{fmt(post.published)}</time>
+          By the{" "}
+          <Link href="/about-methodology" className="underline underline-offset-4 hover:text-ink">
+            {SITE_NAME} team
+          </Link>{" "}
+          · <time dateTime={post.published}>{fmt(post.published)}</time>
         </p>
         <p className="mt-6 text-lg leading-relaxed text-ink/90">
           <BlogText text={post.intro} />
@@ -150,6 +158,26 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <ButtonLink href="/kundli" variant="secondary" size="lg" className="w-full sm:w-auto">Make my free Kundli</ButtonLink>
           </div>
         </section>
+
+        {related.length > 0 && (
+          <section className="mt-14" aria-labelledby="related-posts">
+            <h2 id="related-posts" className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
+              Related guides
+            </h2>
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-muted">
+              {related.map((r) => (
+                <li key={r.slug}>
+                  <Link
+                    href={`/blog/${r.slug}`}
+                    className="text-gold-200 underline underline-offset-4 hover:text-gold-400"
+                  >
+                    {r.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         <section className="mt-14">
           <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">Frequently asked questions</h2>
