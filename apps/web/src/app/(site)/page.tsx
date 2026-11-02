@@ -9,12 +9,26 @@ import {
   Sparkles,
   Telescope,
 } from "lucide-react";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ProductHuntBadge } from "@/components/product-hunt-badge";
 import { Reveal } from "@/components/reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ZodiacWheel } from "@/components/zodiac-wheel";
+import { HOME_URL, pageOpenGraph } from "@/lib/site";
+
+const HOME_TITLE = "Astrojanta — Free Kundli & AI Vedic Astrologer in Hindi and English";
+const HOME_DESCRIPTION =
+  "Astrology for Everyone. Generate your free Janam Kundli with accurate Lahiri calculations, then ask an AI Vedic astrologer about career, marriage and dasha — in Hindi, Hinglish or English.";
+
+export const metadata: Metadata = {
+  title: { absolute: HOME_TITLE },
+  description: HOME_DESCRIPTION,
+  // Same form as the sitemap <loc> and the JSON-LD `url` (see HOME_URL).
+  alternates: { canonical: HOME_URL },
+  openGraph: pageOpenGraph(HOME_URL, HOME_TITLE, HOME_DESCRIPTION),
+};
 
 const FEATURES = [
   {
@@ -117,12 +131,13 @@ export default function HomePage() {
           <span className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs text-gold-200">
             <Sparkles className="size-3.5" /> Vedic astrology, explained by AI
           </span>
-          <h1 className="mt-6 font-display text-[2.6rem] leading-[1.05] font-semibold tracking-tight sm:text-6xl lg:text-7xl">
-            Your Kundli,
-            <br />
-            <span className="text-gradient-gold italic">finally explained.</span>
+          <h1 className="mt-6 font-display text-[2.3rem] leading-[1.08] font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+            Free Kundli &amp; <span className="text-gradient-gold">AI Vedic Astrologer</span> in Hindi and English
           </h1>
-          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg lg:mx-0">
+          <p className="mt-5 font-display text-2xl italic text-ink/90 sm:text-3xl">
+            Your Kundli, <span className="text-gradient-gold">finally explained.</span>
+          </p>
+          <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-lg lg:mx-0">
             Generate an accurate Janam Kundli in seconds, then ask our AI astrologer about career, marriage and timing —
             in Hindi, Hinglish or English. <span className="font-devanagari text-ink/80">आपकी कुंडली, आपकी भाषा में।</span>
           </p>

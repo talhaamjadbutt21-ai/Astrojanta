@@ -2,7 +2,15 @@
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://astrojanta-web.vercel.app").replace(/\/+$/, "");
 export const SITE_NAME = "Astrojanta";
 
+/**
+ * Canonical home URL, in the one form used everywhere (canonical, og:url, sitemap, JSON-LD).
+ * No trailing slash: Next.js always renders the root canonical / og:url without one, so the
+ * sitemap and structured data follow suit.
+ */
+export const HOME_URL = SITE_URL;
+
 export function absoluteUrl(path = "/"): string {
+  if (path === "/" || path === "") return HOME_URL;
   return `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
 }
 
