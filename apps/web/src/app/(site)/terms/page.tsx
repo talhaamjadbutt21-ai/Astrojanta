@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalArticle } from "@/components/legal-article";
 
-import { CONTACT_EMAIL as SUPPORT } from "@/lib/site";
+import { pageOpenGraph, CONTACT_EMAIL as SUPPORT } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
   description: "Terms for using Astrojanta Kundli tools, AI chat and Pro subscriptions.",
   alternates: { canonical: "/terms" },
+  openGraph: pageOpenGraph("/terms"),
 };
 
 export default function TermsPage() {

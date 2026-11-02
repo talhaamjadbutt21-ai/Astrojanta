@@ -35,9 +35,10 @@ export const metadata: Metadata = {
     "astrojanta",
   ],
   applicationName: "Astrojanta",
-  openGraph: { type: "website", siteName: SITE_NAME, locale: "en_IN", url: "/" },
+  // No `url` or `canonical` here: they would be inherited by every page that doesn't override them
+  // (privacy, terms, 404 …) and point those pages at the home page. Each indexable page sets its own.
+  openGraph: { type: "website", siteName: SITE_NAME, locale: "en_IN" },
   twitter: { card: "summary_large_image" },
-  alternates: { canonical: "/" },
 };
 
 const siteJsonLd = [

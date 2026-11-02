@@ -12,6 +12,7 @@ const PUBLIC_PATHS = [
   "/pricing",
   "/blog",
   "/about",
+  "/about-methodology",
   "/contact",
   "/privacy",
   "/terms",
@@ -20,6 +21,7 @@ const PUBLIC_PATHS = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
   return [
+    // absoluteUrl("/") === HOME_URL, so the home <loc> matches its canonical exactly.
     ...PUBLIC_PATHS.map((path) => ({ url: absoluteUrl(path), lastModified })),
     ...POSTS.map((p) => ({ url: absoluteUrl(`/blog/${p.slug}`), lastModified: new Date(p.updated) })),
   ];

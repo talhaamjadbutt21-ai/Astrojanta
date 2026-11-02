@@ -4,11 +4,12 @@ import { JsonLd } from "@/components/json-ld";
 import { LegalArticle } from "@/components/legal-article";
 import { absoluteUrl, CONTACT_EMAIL, pageOpenGraph, SITE_NAME } from "@/lib/site";
 
-const TITLE = "Contact Astrojanta";
+const TITLE = "Contact Astrojanta — Support, Feedback & Data Requests";
 const DESCRIPTION = "Get in touch with Astrojanta for support, feedback, privacy or data deletion requests and business enquiries.";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  // Absolute: the brand is already in the title, so skip the "· Astrojanta" template suffix.
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: "/contact" },
   openGraph: pageOpenGraph("/contact", TITLE, DESCRIPTION),
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <LegalArticle title="Contact us" updated="26 October 2026">
+    <LegalArticle eyebrow="Company" title="Contact us" updated="26 October 2026">
       <JsonLd
         data={{
           "@context": "https://schema.org",
