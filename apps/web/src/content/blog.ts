@@ -880,7 +880,201 @@ const kundliMilanOnlineFree: Post = {
   ],
 };
 
-export const POSTS: Post[] = [kundliMilanOnlineFree, askAstrologerFree, aiKundliReader, freeAiKundli, mercuryRetrograde2026];
+const manglikDoshaMeaning: Post = {
+  slug: "manglik-dosha-meaning",
+  title: "Manglik Dosha Meaning: Effects, Cancellation, Age 28 Myth & Remedies (Mangal Dosh Guide)",
+  h1: "Manglik Dosha Meaning – Mangal Dosh, Its Effects, Cancellation and Remedies",
+  description:
+    "What is Manglik dosha? A clear, fear-free guide to Mangal dosh: which houses make you Manglik, effects on marriage, high vs anshik Manglik, cancellation rules, the age 28 myth, remedies like Kumbh Vivah and Mangal Bhat Puja, and how to check if you are Manglik free.",
+  keyword: "manglik dosha meaning",
+  published: "2026-11-02",
+  updated: "2026-11-02",
+  intro:
+    "\"Ladki Manglik hai\" is probably the most anxious sentence in Indian rishta conversations. In many families, the moment a pandit mentions mangal dosh, the mood changes, and a good match can be dropped without a second look. Yet Manglik dosha is one of the most misunderstood ideas in Vedic astrology. A large share of people have Mars in one of the so-called Manglik houses, and classical texts list many conditions under which the dosha is weak or fully cancelled. This guide explains the real Manglik dosha meaning, how it is calculated, what it can and cannot do, when it is cancelled, whether it really ends at 28 and which remedies are traditionally recommended, in calm language and without fear. If you simply want to know \"main Manglik hoon ya nahi\", use the free [Manglik dosha calculator](/manglik) first.",
+  body: [
+    { type: "h2", text: "What is Manglik dosha (Mangal dosh)?" },
+    {
+      type: "p",
+      text: "Manglik dosha, also called Mangal dosh, Kuja dosha (in South India) or Bhaum dosha, is a condition in the birth chart related to the planet Mars (Mangal). In Jyotish, Mars represents energy, courage, ambition, anger, property, siblings and physical drive. When Mars occupies certain houses that govern marriage, family and longevity of the partnership, traditional astrologers believe its heat can show up in married life as arguments, impatience, delays or health strain. A person with this placement is called Manglik.",
+    },
+    {
+      type: "p",
+      text: "Mangal dosh is checked separately from the 36 gun of Ashtakoot matching, which is why a couple can score 28 gun and still be told that Manglik matching needs attention. Our guide on [kundli milan online free](/blog/kundli-milan-online-free) explains the gun milan side; this article focuses only on Mars.",
+    },
+
+    { type: "h2", text: "Which houses make a person Manglik?" },
+    {
+      type: "p",
+      text: "Mars is considered to create Manglik dosha when it sits in the 1st, 2nd, 4th, 7th, 8th or 12th house. Some North Indian traditions leave out the 2nd house, and some South Indian traditions give it extra weight, so you will see small differences between pandits. Each house has its own logic:",
+    },
+    {
+      type: "table",
+      head: ["House", "Area of life", "Traditional concern with Mars here"],
+      rows: [
+        ["1st (Lagna)", "Self, temperament, body", "Short temper, dominating nature, impatience with the partner"],
+        ["2nd", "Family, speech, wealth", "Harsh speech, friction with in-laws, money disputes"],
+        ["4th", "Home, mother, peace of mind", "Lack of domestic peace, frequent shifting, property issues"],
+        ["7th", "Spouse and marriage", "Direct strain on partnership, ego clashes, delays in marriage"],
+        ["8th", "Longevity, sudden events, in-laws", "Sudden ups and downs, health worries, hidden tensions"],
+        ["12th", "Bed pleasures, expenses, foreign lands", "Expenses, emotional distance, intimacy issues"],
+      ],
+    },
+    {
+      type: "p",
+      text: "The classical method checks these houses from three points: the Lagna (ascendant), the Moon (Chandra) and Venus (Shukra). Mars counted from the Lagna is given the most weight, from the Moon a little less, and from Venus the least. If Mars falls in a Manglik house from only one of these points, the dosha is mild. If it falls in a Manglik house from two or all three, it is considered stronger. To see your own Lagna, Moon and Venus positions, generate a free [kundli](/kundli).",
+    },
+
+    { type: "h2", text: "High Manglik vs low (anshik) Manglik" },
+    {
+      type: "p",
+      text: "Not every Manglik is the same, and this is where much of the fear comes from. Astrologers usually grade the dosha roughly like this:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Anshik (partial or low) Manglik: Mars is in a Manglik house from only the Moon or only Venus, or it is in a Manglik house from the Lagna but in a friendly or strong sign, or other cancellation factors apply. Many astrologers treat anshik Manglik as minor and do not insist on a Manglik partner.",
+        "Regular Manglik: Mars is in a Manglik house from the Lagna, without major cancellation.",
+        "High (purna or double) Manglik: Mars is in a Manglik house from the Lagna and also from the Moon or Venus, especially in the 7th or 8th house, in an enemy sign or debilitated in Cancer, and without beneficial aspects.",
+      ],
+    },
+    {
+      type: "p",
+      text: "So when someone says \"woh Manglik hai\", the right follow-up question is: how strong, and from which point? A low Manglik and a high Manglik are very different situations, and treating them the same leads to many good rishtas being rejected unnecessarily.",
+    },
+
+    { type: "h2", text: "Effects of Manglik dosha on marriage" },
+    {
+      type: "p",
+      text: "Traditional texts associate a strong, uncancelled Mangal dosh with delays in marriage, frequent arguments, strong egos on both sides, impulsive decisions and, in classical language, strain on the health or wellbeing of the spouse. Modern astrologers usually read this in practical terms: Mars brings intensity. Two people with similar intensity understand each other; one very fiery partner and one very gentle partner may struggle unless both are aware of it.",
+    },
+    {
+      type: "p",
+      text: "It is important to keep perspective. Mars also gives courage, discipline, protectiveness, sporting ability and success in fields like the army, police, engineering, surgery, real estate and business. Many Manglik people are energetic, loyal and hardworking partners. The dosha describes a temperament to be managed, not a curse. No reputable astrologer should tell you that a marriage will fail or that a spouse will be harmed purely because of Manglik dosha.",
+    },
+
+    { type: "h2", text: "Manglik dosha cancellation rules (parihar)" },
+    {
+      type: "p",
+      text: "Classical works and regional traditions give many conditions under which Mangal dosh is considered cancelled (bhang) or greatly reduced. The most widely used are:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Manglik marries Manglik: If both partners are Manglik of similar strength, the dosha is considered to cancel out. This is the most common solution in Indian matchmaking.",
+        "Mars in own or exalted sign: Mars in Aries or Scorpio (own signs) or Capricorn (exaltation) is considered strong and well-behaved, so the dosha is largely cancelled.",
+        "Jupiter's influence: Mars conjunct or aspected by Jupiter (Guru), or Jupiter in the 1st or 7th house, is a classic cancellation.",
+        "Benefic aspects: Mars aspected by or conjunct with benefics such as Venus or a strong Moon reduces the harshness.",
+        "Sign-specific exceptions: Mars in the 2nd house in Gemini or Virgo, in the 4th house in Aries or Scorpio, in the 7th house in Capricorn or Cancer, in the 8th house in Sagittarius or Pisces, and in the 12th house in Taurus or Libra are commonly listed as non-dosha placements.",
+        "Lagna-based exceptions: For Aries, Cancer, Leo and Scorpio ascendants, Mars is a friendly or yogakaraka planet, and many astrologers consider the dosha mild or absent.",
+        "Partner's chart balances it: Saturn, Rahu or Ketu in the same Manglik houses in the other partner's chart is often said to balance the dosha (sometimes called saam dosh).",
+      ],
+    },
+    {
+      type: "p",
+      text: "Because of these rules, a large number of people who are called Manglik on a quick online check turn out to have a cancelled or weak dosha after a proper reading. This is why it is worth checking the full chart, and why the [kundli matching tool](/matching) should be read together with a Manglik check for both partners.",
+    },
+
+    { type: "h2", text: "Does Manglik dosha end at 28?" },
+    {
+      type: "p",
+      text: "You will often hear \"28 saal ke baad Manglik dosh khatam ho jata hai\". The idea comes from the belief that Mars matures (its age of maturity in Jyotish is around 28), so its effects calm down after that age. Many astrologers do consider the dosha's intensity to reduce after 28, and some families are more relaxed about matching after this age.",
+    },
+    {
+      type: "p",
+      text: "However, the chart itself does not change: Mars stays in the same house for life. The more accurate view is that its effects become easier to manage with maturity, not that the dosha disappears on a birthday. It is a softening factor to consider along with the cancellation rules, not a guarantee by itself.",
+    },
+
+    { type: "h2", text: "Remedies for Manglik dosha" },
+    {
+      type: "p",
+      text: "Remedies (upay) are traditionally suggested only when the dosha is strong and not cancelled. They are meant to bring peace of mind and discipline, and they should never become a source of fear or financial pressure. Common remedies include:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Kumbh Vivah: A symbolic ritual marriage of the Manglik person with a clay pot (kumbh), a peepal or banana tree, or an idol of Lord Vishnu before the real wedding. It is believed to absorb the harsh effect of Mars.",
+        "Mangal Bhat Puja in Ujjain: Ujjain's Mangalnath temple is traditionally regarded as the birthplace of Mars, and the Bhat Puja (offering cooked rice to the Shivling) performed there is one of the most popular Manglik remedies. Many families combine it with a visit to Mahakaleshwar.",
+        "Hanuman worship: Reciting the Hanuman Chalisa, visiting a Hanuman temple on Tuesdays and offering sindoor and jasmine oil are classic remedies, since Hanuman is believed to control Mars.",
+        "Mangal mantras: Chanting \"Om Kraam Kreem Kraum Sah Bhaumaya Namah\" (108 times on Tuesdays) or the Mangal Gayatri mantra.",
+        "Tuesday fasting (Mangalvar vrat): Fasting or eating simple food on Tuesdays as an act of discipline.",
+        "Daan (charity): Donating red lentils (masoor dal), jaggery, red cloth or copper on Tuesdays, or helping soldiers and siblings.",
+        "Gemstone: Red coral (moonga) is sometimes advised, but only after a careful chart reading, because strengthening Mars is not right for every chart.",
+      ],
+    },
+    {
+      type: "p",
+      text: "A balanced approach is to treat remedies as spiritual practice and self-discipline: managing anger, communicating calmly and respecting each other's space. Be careful of anyone who demands large sums of money, frightens you about a partner's life or insists that only their expensive puja can save a marriage.",
+    },
+
+    { type: "h2", text: "Myths vs facts about Manglik dosha" },
+    {
+      type: "table",
+      head: ["Myth", "Fact"],
+      rows: [
+        ["Manglik people should never marry non-Manglik partners", "Many Manglik-non-Manglik marriages work well, especially when the dosha is weak or cancelled"],
+        ["Manglik dosha harms the spouse's life", "Classical language is often over-dramatised; no reliable astrologer predicts harm from this one factor"],
+        ["Being Manglik is rare and unlucky", "Mars falls in a Manglik house in a large share of charts, so it is very common"],
+        ["The dosha ends exactly at 28", "Effects are said to soften with maturity, but the placement remains for life"],
+        ["Only an expensive puja can fix it", "Simple remedies like Hanuman worship, mantras and discipline are traditionally just as valued"],
+        ["Mars in the 1st house always means anger issues", "Sign, aspects and the rest of the chart change how Mars behaves"],
+      ],
+    },
+
+    { type: "h2", text: "How to check if you are Manglik (manglik hai ya nahi)" },
+    {
+      type: "ul",
+      items: [
+        "Get accurate birth details: Date, exact time and place of birth. In India use the IST time on your birth certificate; if you were born abroad, use the local time.",
+        "Run the free check: Use the [Manglik dosha calculator](/manglik) to see Mars's house from the Lagna, Moon and Venus, and whether any cancellation applies.",
+        "Check your partner too: If both are Manglik, the dosha usually cancels. Then compare overall compatibility with [kundli matching](/matching).",
+        "Understand the full chart: Our guide on [reading your kundli with an AI kundli reader](/blog/ai-kundli-reader) explains the 7th house, Venus and the dasha, which matter just as much for marriage.",
+        "Ask follow-up questions: You can ask the AstroJanta AI astrologer in Hindi or Hinglish, for example \"Mera Mangal dosh anshik hai ya purna?\" or \"Kya mera Manglik dosh cancel ho raha hai?\"",
+      ],
+    },
+
+    { type: "h2", text: "Manglik dosha in Indian families today" },
+    {
+      type: "p",
+      text: "From matrimonial ads in Delhi and Jaipur that specify \"Manglik preferred\" to families in Hyderabad and Chennai checking Kuja dosha, Mars still shapes many marriage decisions across India and among NRI families. At the same time, more couples, especially in love marriages, are asking for a proper explanation instead of a yes-or-no verdict. That is the healthiest way to use astrology: as a lens for understanding temperament and timing, not as a reason to fear a person. Check the facts, read the cancellations, and make decisions with both the chart and real-life compatibility in mind.",
+    },
+  ],
+  faqs: [
+    {
+      q: "What does Manglik dosha mean?",
+      a: "Manglik dosha, or Mangal dosh, means Mars is placed in the 1st, 2nd, 4th, 7th, 8th or 12th house of the birth chart, counted from the Lagna, Moon or Venus. It is traditionally linked with intensity and friction in married life.",
+    },
+    {
+      q: "How do I know if I am Manglik or not?",
+      a: "Enter your date, time and place of birth in AstroJanta's free Manglik dosha calculator. It shows where Mars is from your Lagna, Moon and Venus, and whether the dosha is cancelled.",
+    },
+    {
+      q: "Can a Manglik marry a non-Manglik?",
+      a: "Yes, especially if the dosha is weak (anshik) or cancelled by rules such as Mars in its own or exalted sign or Jupiter's aspect. A full chart reading of both partners should decide, not the label alone.",
+    },
+    {
+      q: "Does Manglik dosha end after 28?",
+      a: "Many astrologers believe its effects soften after age 28, when Mars is said to mature. The placement itself does not change, so it is a softening factor rather than an automatic end.",
+    },
+    {
+      q: "What is anshik Manglik?",
+      a: "Anshik or partial Manglik means the dosha is mild, for example when Mars is in a Manglik house only from the Moon or Venus, or when cancellation factors reduce it. It is usually not considered serious.",
+    },
+    {
+      q: "What is the best remedy for Manglik dosha?",
+      a: "Common remedies are Kumbh Vivah, Mangal Bhat Puja at Mangalnath temple in Ujjain, Hanuman Chalisa and Tuesday worship, Mangal mantras and charity. Remedies are only needed if the dosha is strong and not cancelled.",
+    },
+    {
+      q: "Is Manglik dosha cancelled if both partners are Manglik?",
+      a: "Yes. When both partners are Manglik of similar strength, the dosha is traditionally considered cancelled. This is the most common way Manglik matching is resolved.",
+    },
+    {
+      q: "Is being Manglik bad luck?",
+      a: "No. Being Manglik is very common and Mars also gives courage, energy and drive. It describes a temperament to understand, not bad luck, and many Manglik people have happy marriages.",
+    },
+  ],
+};
+
+export const POSTS: Post[] = [manglikDoshaMeaning, kundliMilanOnlineFree, askAstrologerFree, aiKundliReader, freeAiKundli, mercuryRetrograde2026];
 
 export function getPost(slug: string): Post | undefined {
   return POSTS.find((p) => p.slug === slug);
