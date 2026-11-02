@@ -9,7 +9,8 @@ const DESCRIPTION =
   "Astrojanta offers free Vedic astrology tools — Kundli, matching, Manglik and Moon sign — and an AI astrologer that explains your real chart in Hindi or English.";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  // Absolute: the brand is already in the title, so skip the "· Astrojanta" template suffix.
+  title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: "/about" },
   openGraph: pageOpenGraph("/about", TITLE, DESCRIPTION),
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <LegalArticle title="About Astrojanta" updated="26 October 2026">
+    <LegalArticle eyebrow="Company" title="About Astrojanta" updated="26 October 2026">
       <JsonLd
         data={{
           "@context": "https://schema.org",
@@ -44,7 +45,8 @@ export default function AboutPage() {
       <p>
         Charts are computed from an astronomical ephemeris using the sidereal zodiac and the Lahiri ayanamsa, with
         historical time-zone data for your birth place. The AI never invents planet positions: it interprets only what
-        was calculated, and shows the chart factors behind its answers.
+        was calculated, and shows the chart factors behind its answers. Read the full{" "}
+        <Link href="/about-methodology">methodology and calculation details</Link>.
       </p>
       <h2>What we believe</h2>
       <ul>

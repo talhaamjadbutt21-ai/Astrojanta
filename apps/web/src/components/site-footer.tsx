@@ -57,6 +57,11 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link className="hover:text-ink" href="/about-methodology">
+                Methodology
+              </Link>
+            </li>
+            <li>
               <Link className="hover:text-ink" href="/contact">
                 Contact
               </Link>
