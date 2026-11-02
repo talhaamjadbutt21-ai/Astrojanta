@@ -30,3 +30,22 @@ export function pageOpenGraph(path: string, title?: string, description?: string
 }
 
 export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_SUPPORT_EMAIL ?? "talha.amjadbutt.21@gmail.com";
+
+/** Founder and owner of Astrojanta. Only facts confirmed by the owner — no invented credentials. */
+export const FOUNDER = {
+  name: "Talha Amjad",
+  email: "talha.amjadbutt.21@gmail.com",
+} as const;
+
+export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
+export const FOUNDER_ID = `${SITE_URL}/#founder`;
+
+/** schema.org Person for the founder; referenced by `@id` from the Organization. */
+export const founderJsonLd = {
+  "@type": "Person",
+  "@id": FOUNDER_ID,
+  name: FOUNDER.name,
+  email: `mailto:${FOUNDER.email}`,
+  jobTitle: "Founder",
+  worksFor: { "@id": ORGANIZATION_ID },
+} as const;

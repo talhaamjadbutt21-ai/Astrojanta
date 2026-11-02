@@ -3,7 +3,15 @@ import { Fraunces, Geist, Noto_Sans_Devanagari } from "next/font/google";
 import { CosmicBackground } from "@/components/cosmic-background";
 import { JsonLd } from "@/components/json-ld";
 import { Providers } from "@/components/providers";
-import { absoluteUrl, SITE_NAME, SITE_URL } from "@/lib/site";
+import {
+  absoluteUrl,
+  CONTACT_EMAIL,
+  FOUNDER_ID,
+  founderJsonLd,
+  ORGANIZATION_ID,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/site";
 import "./globals.css";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"], display: "swap" });
@@ -45,11 +53,15 @@ const siteJsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": `${SITE_URL}/#organization`,
+    "@id": ORGANIZATION_ID,
     name: SITE_NAME,
     url: absoluteUrl("/"),
     logo: absoluteUrl("/favicon.ico"),
+    email: `mailto:${CONTACT_EMAIL}`,
+    founder: { "@id": FOUNDER_ID },
+    contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: CONTACT_EMAIL },
   },
+  { "@context": "https://schema.org", ...founderJsonLd },
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -57,7 +69,7 @@ const siteJsonLd = [
     name: SITE_NAME,
     url: absoluteUrl("/"),
     inLanguage: "en-IN",
-    publisher: { "@id": `${SITE_URL}/#organization` },
+    publisher: { "@id": ORGANIZATION_ID },
   },
 ];
 
