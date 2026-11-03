@@ -5,9 +5,9 @@ import { ButtonLink } from "@/components/ui/button";
 import { absoluteUrl, pageOpenGraph, SITE_NAME } from "@/lib/site";
 
 const PATH = "/ai-astrologer";
-const TITLE = "Free AI Astrologer — Vedic AI Astrology Chat Based on Your Kundli";
+const TITLE = "Free AI Astrologer & AI Jyotish Chat — AI Kundli in Hindi";
 const DESCRIPTION =
-  "Chat free with a Vedic AI astrologer that reads your real Kundli. Accurate Lahiri charts, dashas and yogas explained in Hindi, Hinglish or English — no gemstone upsells.";
+  "Free AI jyotish chat that reads your real Kundli. Make your AI Kundli free, then ask about career, shaadi and dasha in Hindi, Hinglish or English — no gemstone upsells.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -18,8 +18,12 @@ export const metadata: Metadata = {
 
 const FAQS = [
   {
-    q: "Is the AI astrologer free?",
-    a: "Yes. The AI astrologer chat is free with a free account (2 questions a day; Pro raises it to 6). The Kundli, matching, Manglik and Moon sign tools need no sign-up at all. You never have to pay to get your Kundli or ask questions.",
+    q: "Is the AI jyotish chat really free?",
+    a: "Yes. The AI astrologer chat is free with a free account (2 questions a day; Pro raises it to 6). Daily limits reset at midnight UTC, which is 5:30 AM IST. The Kundli, matching, Manglik and Moon sign tools need no sign-up at all. You never have to pay to get your Kundli or ask questions.",
+  },
+  {
+    q: "How do I get my AI Kundli free?",
+    a: "Open the free Kundli tool, enter your date, time and place of birth, and your Janam Kundli is calculated in seconds — Lagna, Rashi, Nakshatra, planets, Navamsa, Vimshottari dasha, Manglik and Sade Sati status. No sign-up is needed. Create a free account when you want the AI astrologer to explain it.",
   },
   {
     q: "How accurate is AI astrology?",
@@ -30,8 +34,12 @@ const FAQS = [
     a: "An AI Kundli is your calculated birth chart — Lagna, Rashi, Nakshatra, houses and dashas. The AI astrologer is the conversation layer on top: it reads that Kundli and answers your questions about it in plain language.",
   },
   {
-    q: "Can I ask in Hindi or Hinglish?",
-    a: "Yes. Type the way you talk, for example “meri shaadi kab hogi?”, and the AI astrologer replies in the same language. English works too.",
+    q: "Can I chat with the AI astrologer in Hindi?",
+    a: "Yes. You can write in Hindi (Devanagari), in Hinglish like “meri shaadi kab hogi?” or “career mein growth kab aayegi?”, or in English, and the AI astrologer replies in the same language and script. Jyotish terms such as lagna, rashi, nakshatra and dasha are kept recognisable.",
+  },
+  {
+    q: "Is AI jyotish accurate for Indian birth charts?",
+    a: "The chart is calculated, not guessed: Astrojanta uses the sidereal zodiac with the Lahiri (Chitrapaksha) ayanamsa, the standard in Indian astrology and panchangs, and converts your birth time with historical time-zone data — including offsets such as India's 1940s war-time time for older births. Enter your birth time as written on the birth certificate (IST for births in India). The interpretation describes tendencies, not certainties.",
   },
   {
     q: "What if I do not know my exact birth time?",
@@ -156,13 +164,13 @@ export default function AiAstrologerPage() {
 
       <article className="mx-auto mt-16 max-w-3xl text-left">
         <section>
-          <h2 className={h2}>What is an AI astrologer?</h2>
+          <h2 className={h2}>What is an AI astrologer (AI jyotish)?</h2>
           <p className={p}>
-            An AI astrologer is software that combines two things: an exact astronomical calculation of your birth chart
-            and a language model that has been guided to interpret that chart using the rules of astrology. Instead of
-            reading a generic horoscope for your sun sign, you ask a question — “When is a good period for a job
-            change?” or “What does my Venus placement say about relationships?” — and get an answer grounded in your own
-            planetary positions.
+            An AI astrologer — or AI jyotish, as many people search for it in India — is software that combines two
+            things: an exact astronomical calculation of your birth chart and a language model that has been guided to
+            interpret that chart using the rules of astrology. Instead of reading a generic horoscope for your sun sign,
+            you ask a question — “When is a good period for a job change?” or “What does my Venus placement say about
+            relationships?” — and get an answer grounded in your own planetary positions.
           </p>
           <p className={p}>
             AI astrology is only as good as the chart underneath it. Many chat apps let a language model “imagine”
@@ -172,7 +180,7 @@ export default function AiAstrologerPage() {
         </section>
 
         <section className="mt-12">
-          <h2 className={h2}>How Astrojanta’s Vedic AI astrologer works</h2>
+          <h2 className={h2}>How the free AI Kundli and AI jyotish chat work</h2>
           <p className={p}>
             Astrojanta follows Vedic (Jyotish) astrology, which uses the sidereal zodiac. That is why your Vedic Rashi
             is often one sign behind your Western sun sign. Behind every answer is a full{" "}
@@ -282,14 +290,14 @@ export default function AiAstrologerPage() {
         </section>
 
         <section className="mt-12">
-          <h2 className={h2}>How to use the free AI astrologer</h2>
+          <h2 className={h2}>How to start your free AI jyotish chat</h2>
           <p className={p}>
             Start by creating your{" "}
             <Link href="/kundli" className={a}>
               free Janam Kundli
             </Link>{" "}
-            — no sign-up needed. Check that your Lagna and Moon sign look right. Then create a free account to open the
-            AI astrologer chat for your saved profile.
+            — your AI Kundli is free with no sign-up needed. Check that your Lagna and Moon sign look right. Then create
+            a free account to open the AI astrologer chat for your saved profile.
           </p>
           <p className={p}>
             Ask specific questions for better answers. “Tell me about my future” is vague; “How does my current dasha
