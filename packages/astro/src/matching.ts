@@ -121,7 +121,13 @@ const YONI_ENEMIES: ReadonlyArray<readonly [Yoni, Yoni]> = [
   ["cow", "tiger"],
 ];
 
-const VARNA = [2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1];
+/**
+ * Varna rank by Moon sign (Aries..Pisces); higher = higher varna.
+ * Brahmin 4 (water: Cancer, Scorpio, Pisces), Kshatriya 3 (fire: Aries, Leo, Sagittarius),
+ * Vaishya 2 (earth: Taurus, Virgo, Capricorn), Shudra 1 (air: Gemini, Libra, Aquarius).
+ * Varna scores 1 when the boy's rank is >= the girl's.
+ */
+const VARNA = [3, 2, 1, 4, 3, 2, 1, 4, 3, 2, 1, 4];
 
 type Vashya = "quadruped" | "human" | "water" | "insect" | "wild";
 const VASHYA: Vashya[] = [

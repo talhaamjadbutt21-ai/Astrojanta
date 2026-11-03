@@ -149,6 +149,11 @@ export const matchingGuide: ToolGuide = {
       label: "Moon Sign & Nakshatra Calculator",
       text: "find the Rashi and Nakshatra used in matching.",
     },
+    {
+      href: "/blog/varna-koota-meaning",
+      label: "Varna Koota Meaning",
+      text: "the rashi-wise varna chart and how its 1 gun is scored.",
+    },
   ],
   faqs: [
     {

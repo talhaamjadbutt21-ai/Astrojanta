@@ -124,6 +124,18 @@ describe("computeChart", () => {
 });
 
 describe("guna milan", () => {
+  it("scores Varna 1 when the boy's varna is the same or higher, 0 when the girl's is higher", () => {
+    const varna = (boySign: number, girlSign: number) =>
+      gunaMilan({
+        boy: { name: "A", moonSignIndex: boySign, nakshatraIndex: 0 },
+        girl: { name: "B", moonSignIndex: girlSign, nakshatraIndex: 0 },
+      }).kootas.find((k) => k.key === "varna")?.score;
+    expect(varna(3, 5)).toBe(1); // Cancer (Brahmin) boy, Virgo (Vaishya) girl
+    expect(varna(4, 8)).toBe(1); // Leo, Sagittarius: both Kshatriya
+    expect(varna(9, 0)).toBe(0); // Capricorn (Vaishya) boy, Aries (Kshatriya) girl
+    expect(varna(6, 11)).toBe(0); // Libra (Shudra) boy, Pisces (Brahmin) girl
+  });
+
   it("flags nadi dosha when both Moons share a nadi, and scores at most 36", () => {
     const same = gunaMilan({
       boy: { name: "A", moonSignIndex: 3, nakshatraIndex: 7 },
