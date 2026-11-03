@@ -24,33 +24,33 @@ export type Post = {
 
 const mercuryRetrograde2026: Post = {
   slug: "mercury-retrograde-2026",
-  title: "Mercury Retrograde Oct–Nov 2026: Dates, Effects by Rashi & What to Avoid",
-  h1: "Mercury Retrograde October–November 2026: Dates, Effects by Rashi and What to Avoid",
+  title: "Budh Vakri 2026 Dates in IST: Mercury Retrograde Effects by Rashi",
+  h1: "Budh Vakri 2026 (Mercury Retrograde): Dates in IST, Effects by Rashi and What to Avoid",
   description:
-    "Mercury retrograde 2026 dates (24 Oct–13 Nov) in IST, its Vedic position in Tula, the meaning of a retrograde, effects for each Moon sign and practical do's and don'ts.",
-  keyword: "mercury retrograde 2026 dates",
+    "Budh vakri 2026: Mercury is retrograde from 24 Oct (12:41 PM IST) to 13 Nov (9:22 PM IST) in Tula rashi. Rashi-wise effects, kya karein aur kya na karein, and simple Budh upay.",
+  keyword: "budh vakri 2026",
   published: "2026-10-26",
-  updated: "2026-10-26",
+  updated: "2026-11-03",
   intro:
-    "Mercury — Budh in Vedic astrology — turned retrograde on 24 October 2026 and stays retrograde until 13 November 2026. This is the third and final Mercury retrograde of the year. Below you will find the exact dates in Indian time, where Mercury is in the sidereal (Vedic) zodiac, what a retrograde actually means, how it may play out for your Moon sign, and a practical list of what to do and what to avoid.",
+    "Mercury — Budh in Vedic astrology — turned retrograde (vakri) on 24 October 2026 and stays retrograde until 13 November 2026. This is the third and final Mercury retrograde of the year. Below you will find the exact dates in Indian time, where Mercury is in the sidereal (Vedic) zodiac, what a retrograde actually means, how it may play out for your Moon sign, and a practical list of what to do and what to avoid.",
   body: [
-    { type: "h2", text: "Mercury retrograde 2026 dates (in IST)" },
+    { type: "h2", text: "Budh vakri 2026 dates (Mercury retrograde in IST)" },
     {
       type: "p",
-      text: "Mercury has three retrograde periods in 2026. The first ran from late February to 20 March, the second from 29 June to 23 July, and the third is the one happening now:",
+      text: "Mercury has three retrograde periods in 2026. The first ran from 26 February to 21 March (in Kumbha), the second from 29 June to 24 July (Karka back into Mithuna), and the third is the one happening now:",
     },
     {
       type: "table",
       head: ["Event", "Date and time (IST, approx.)", "Mercury's position (Vedic / sidereal)"],
       rows: [
-        ["Stations retrograde", "Saturday 24 October 2026, ~12:43 PM", "about 26°46′ Tula (Libra), Vishakha nakshatra"],
-        ["Stations direct", "Friday 13 November 2026, ~9:24 PM", "about 10°49′ Tula (Libra), Swati nakshatra"],
+        ["Stations retrograde", "Saturday 24 October 2026, ~12:41 PM", "about 26°46′ Tula (Libra), Vishakha nakshatra"],
+        ["Stations direct", "Friday 13 November 2026, ~9:22 PM", "about 10°49′ Tula (Libra), Swati nakshatra"],
         ["Post-retrograde shadow ends", "around 30 November 2026", "Mercury returns to ~26°46′ Tula"],
       ],
     },
     {
       type: "p",
-      text: "Station times are approximate to within a few hours because a planet barely moves near its station — what matters is the day, not the minute. Many Western websites say this retrograde happens “in Scorpio”. That is true in the tropical zodiac. In Vedic astrology, which uses the sidereal zodiac with the Lahiri ayanamsa (roughly 24° in 2026), the whole retrograde stays inside Tula (Libra). That is why your Vedic reading of this period can differ from a Western horoscope.",
+      text: "Station times are given for New Delhi in IST and can differ by a few minutes between panchangs, because a planet barely moves near its station — what matters is the day, not the minute. Many Western websites say this retrograde happens “in Scorpio”. That is true in the tropical zodiac. In Vedic astrology, which uses the sidereal zodiac with the Lahiri ayanamsa (roughly 24° in 2026), the whole retrograde stays inside Tula (Libra). That is why your Vedic reading of this period can differ from a Western horoscope.",
     },
     {
       type: "p",
@@ -179,8 +179,8 @@ const mercuryRetrograde2026: Post = {
   ],
   faqs: [
     {
-      q: "What are the Mercury retrograde 2026 dates?",
-      a: "Mercury is retrograde three times in 2026: late February to 20 March, 29 June to 23 July, and 24 October to 13 November 2026. The current one began around 12:43 PM IST on 24 October and ends around 9:24 PM IST on 13 November.",
+      q: "What are the Budh vakri (Mercury retrograde) 2026 dates?",
+      a: "Mercury is retrograde three times in 2026 (IST): 26 February to 21 March, 29 June to 24 July, and 24 October to 13 November 2026. The current one began around 12:41 PM IST on 24 October and ends around 9:22 PM IST on 13 November.",
     },
     {
       q: "Which sign is Mercury retrograde in, in Vedic astrology?",
@@ -1074,7 +1074,177 @@ const manglikDoshaMeaning: Post = {
   ],
 };
 
-export const POSTS: Post[] = [manglikDoshaMeaning, kundliMilanOnlineFree, askAstrologerFree, aiKundliReader, freeAiKundli, mercuryRetrograde2026];
+const varnaKootaMeaning: Post = {
+  slug: "varna-koota-meaning",
+  title: "Varna Koota Meaning in Gun Milan: 1 Point, Rashi-wise Varna Chart & Scoring",
+  h1: "Varna Koota Meaning – The 1-Point Koota in Ashtakoot Gun Milan Explained",
+  description:
+    "What is Varna koota in kundli milan? Rashi-wise varna chart (Brahmin, Kshatriya, Vaishya, Shudra), how the 1 gun is scored, what a 0 means, plus all 8 kootas and lagna kundli milan vs jataka matching.",
+  keyword: "varna koota meaning",
+  published: "2026-11-03",
+  updated: "2026-11-03",
+  intro:
+    "When a pandit or an online kundli milan report gives you a score out of 36, the very first row of the table is usually Varna. It carries just 1 gun, so many families skip past it, but it often raises questions: \"Varna 0 aaya hai, kya yeh problem hai?\" or \"Varna ka caste se kya lena-dena hai?\" This guide explains the Varna koota meaning in simple language, the rashi-wise varna chart, exactly how the point is scored, how much weight it really carries, and where it sits among the eight kootas of Ashtakoot gun milan. To see your own Varna score, run a free [kundli matching](/matching) for both partners.",
+  body: [
+    { type: "h2", text: "What is Varna koota?" },
+    {
+      type: "p",
+      text: "Varna koota (वर्ण कूट) is the first of the eight kootas in Ashtakoot milan, the gun milan system used across North and Central India. It compares the varna of the bride's and groom's Moon signs (rashi) and is worth a maximum of 1 gun out of 36. Traditionally it is read as a check of spiritual temperament, ego and outlook on work and duty: whether the two people approach life with a similar inner nature, and whether the household will have a natural balance of leadership.",
+    },
+    {
+      type: "p",
+      text: "It is important to be clear about one thing: in kundli milan, varna is decided by the Moon sign in the birth chart, not by a person's caste or family background. Two people from the same community can have different varnas in their charts, and two people from very different backgrounds can have the same one. Varna koota is a symbolic grouping of the twelve rashis, not a social rule.",
+    },
+
+    { type: "h2", text: "Rashi-wise varna chart" },
+    {
+      type: "p",
+      text: "The twelve rashis are grouped into four varnas, three rashis each. The grouping follows the element (tattva) of the sign: water signs are Brahmin, fire signs Kshatriya, earth signs Vaishya and air signs Shudra.",
+    },
+    {
+      type: "table",
+      head: ["Varna", "Rashis (Moon signs)", "Element", "Traditional nature"],
+      rows: [
+        ["Brahmin (highest rank)", "Karka (Cancer), Vrishchika (Scorpio), Meena (Pisces)", "Water (jal)", "Learning, spirituality, guidance"],
+        ["Kshatriya", "Mesha (Aries), Simha (Leo), Dhanu (Sagittarius)", "Fire (agni)", "Courage, leadership, protection"],
+        ["Vaishya", "Vrishabha (Taurus), Kanya (Virgo), Makara (Capricorn)", "Earth (prithvi)", "Trade, practicality, building wealth"],
+        ["Shudra", "Mithuna (Gemini), Tula (Libra), Kumbha (Aquarius)", "Air (vayu)", "Service, skill, cooperation"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Remember that this uses your Vedic (sidereal) Moon sign, which is often different from the sun sign used in Western horoscopes. If you are not sure of your rashi, find it in seconds with the free [Moon sign and Nakshatra finder](/moon-sign) or by making a free [Janam Kundli](/kundli).",
+    },
+
+    { type: "h2", text: "How Varna koota is scored" },
+    {
+      type: "p",
+      text: "The rule is simple and is the same in most North Indian panchangs and software. The varnas are ranked in the order Brahmin, Kshatriya, Vaishya, Shudra, and the groom's varna is compared with the bride's:",
+    },
+    {
+      type: "ul",
+      items: [
+        "1 gun: the groom's varna is the same as, or higher than, the bride's varna.",
+        "0 gun: the bride's varna is higher than the groom's varna.",
+      ],
+    },
+    {
+      type: "table",
+      head: ["Groom's Moon sign", "Bride's Moon sign", "Varna score"],
+      rows: [
+        ["Simha (Kshatriya)", "Dhanu (Kshatriya)", "1 – same varna"],
+        ["Karka (Brahmin)", "Kanya (Vaishya)", "1 – groom's varna higher"],
+        ["Makara (Vaishya)", "Mesha (Kshatriya)", "0 – bride's varna higher"],
+        ["Tula (Shudra)", "Meena (Brahmin)", "0 – bride's varna higher"],
+      ],
+    },
+    {
+      type: "p",
+      text: "The logic comes from the traditional household model in classical texts, where the husband was expected to lead the family's duties. Many modern astrologers read it more neutrally: a score of 1 suggests the two outlooks sit comfortably together, while 0 suggests one partner may feel more driven by ideals or ego than the other, which simply needs mutual respect.",
+    },
+
+    { type: "h2", text: "Is Varna 0 a problem? How much does it matter?" },
+    {
+      type: "p",
+      text: "Varna is the lightest koota in the 36-gun system. Losing it reduces the total by just 1 point, and there is no Varna \"dosha\" that astrologers treat with the seriousness of Nadi dosha (8 points) or Bhakoot dosha (7 points). A match with Varna 0 but strong Graha Maitri, Gana, Bhakoot and Nadi is generally considered far better than a match with Varna 1 and Nadi dosha.",
+    },
+    {
+      type: "p",
+      text: "So if your report shows \"Varna: 0/1\", there is no need to worry on that basis alone. Look at the total score, the higher-value kootas, and each partner's individual chart: the 7th house, Venus, the running dasha and [Manglik dosha](/manglik). Our [Manglik dosha meaning](/blog/manglik-dosha-meaning) guide explains why that check is done separately from the 36 gun.",
+    },
+
+    { type: "h2", text: "All 8 kootas of Ashtakoot gun milan at a glance" },
+    {
+      type: "p",
+      text: "Varna is one of eight kootas. Together they add up to 36 gun, and the higher the number, the more weight the koota carries:",
+    },
+    {
+      type: "table",
+      head: ["Koota", "Max gun", "What it checks", "Based on"],
+      rows: [
+        ["Varna", "1", "Spiritual temperament and ego", "Moon sign"],
+        ["Vashya", "2", "Mutual attraction and influence", "Moon sign"],
+        ["Tara", "3", "Health, wellbeing and fortune (birth star compatibility)", "Nakshatra"],
+        ["Yoni", "4", "Physical and intimate compatibility", "Nakshatra"],
+        ["Graha Maitri", "5", "Mental compatibility and friendship of rashi lords", "Moon sign"],
+        ["Gana", "6", "Temperament: Deva, Manushya or Rakshasa", "Nakshatra"],
+        ["Bhakoot", "7", "Family welfare, finances and emotional bond", "Moon sign"],
+        ["Nadi", "8", "Health and progeny", "Nakshatra"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Traditionally, 18 out of 36 is the minimum generally accepted for marriage, 18 to 24 is average, 25 to 32 is very good and above 32 is excellent. For a full walkthrough of every koota, Nadi and Bhakoot dosha and how families read the score, see our [kundli milan online free](/blog/kundli-milan-online-free) guide.",
+    },
+
+    { type: "h2", text: "Lagna kundli milan vs Moon-based gun milan" },
+    {
+      type: "p",
+      text: "Ashtakoot gun milan, including Varna, is calculated only from the Moon sign and nakshatra. That is why a matching tool can give you a score even if the birth time is not known exactly. But the Moon is only one part of the chart. Many astrologers therefore also do what is often called lagna kundli milan: comparing the two Lagna (ascendant) charts, the 7th house and its lord, Venus for the groom and Jupiter for the bride, and the dashas each person will run in the early years of marriage. Lagna-based matching needs accurate birth times, because the Lagna changes roughly every two hours.",
+    },
+    {
+      type: "p",
+      text: "A practical approach is to use both: the gun milan score as a first screening, and the Lagna charts for a deeper reading. You can generate both partners' charts with the free [kundli](/kundli) tool and then ask the [AI astrologer](/ai-astrologer) to compare the 7th houses and dashas in Hindi or English.",
+    },
+
+    { type: "h2", text: "Jataka matching and South Indian porutham" },
+    {
+      type: "p",
+      text: "In Tamil Nadu, Kerala, Karnataka and Andhra Pradesh, horoscope matching is often called jataka matching or jathaka porutham, from the Sanskrit jataka (birth chart). Instead of Ashtakoot, families usually use the Dasha Porutham system of ten poruthams (matches) such as Dina, Gana, Mahendra, Stree Deergha, Yoni, Rasi, Rasi Adhipathi, Vasya, Rajju and Vedha. Most of them are based on the birth star (nakshatra), and Rajju is given special importance. Varna in the Ashtakoot sense is not one of the ten poruthams.",
+    },
+    {
+      type: "p",
+      text: "Both systems aim at the same question — will these two people live well together? — and both are best read together with the individual birth charts rather than as a single pass-or-fail number.",
+    },
+
+    { type: "h2", text: "How to check your Varna koota online" },
+    {
+      type: "ul",
+      items: [
+        "Collect both partners' date, time and place of birth. In India, use the IST time from the birth certificate; for births abroad, use the local time.",
+        "Run the free [kundli matching](/matching) tool. It shows the Varna score along with all eight kootas and the total out of 36.",
+        "Check each partner's [Manglik status](/manglik), since it is not part of the 36 gun.",
+        "For a deeper reading, open both [Kundlis](/kundli) and compare the Lagna, 7th house and dashas, or ask the AI astrologer, for example: \"Hamara Varna 0 hai, kya isse koi dikkat hogi?\"",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      q: "What is Varna koota in kundli milan?",
+      a: "Varna koota is the first of the eight kootas in Ashtakoot gun milan. It compares the varna (Brahmin, Kshatriya, Vaishya or Shudra) of the bride's and groom's Moon signs and is worth 1 gun out of 36.",
+    },
+    {
+      q: "How many points is Varna koota worth?",
+      a: "Varna koota carries a maximum of 1 gun. It is the lowest-weighted of the eight kootas, which together total 36 gun.",
+    },
+    {
+      q: "How is Varna koota scored?",
+      a: "The groom gets 1 gun when his Moon sign's varna is the same as or higher than the bride's, in the order Brahmin, Kshatriya, Vaishya, Shudra. If the bride's varna is higher, the score is 0.",
+    },
+    {
+      q: "Which rashi belongs to which varna?",
+      a: "Brahmin: Karka, Vrishchika and Meena. Kshatriya: Mesha, Simha and Dhanu. Vaishya: Vrishabha, Kanya and Makara. Shudra: Mithuna, Tula and Kumbha. The varna is taken from the Vedic Moon sign.",
+    },
+    {
+      q: "Is Varna koota related to caste?",
+      a: "No. In kundli milan, varna is a symbolic grouping of Moon signs by element. It is decided by the birth chart, not by a person's caste or family.",
+    },
+    {
+      q: "Is Varna 0 out of 1 bad for marriage?",
+      a: "Not on its own. It lowers the total by only 1 gun, and astrologers give much more weight to Bhakoot, Nadi, Gana and Graha Maitri, as well as the individual charts and Manglik status.",
+    },
+    {
+      q: "What is the difference between gun milan and lagna kundli milan?",
+      a: "Gun milan uses only the Moon sign and nakshatra to give a score out of 36. Lagna kundli milan compares the ascendant charts, 7th house, Venus, Jupiter and dashas, and needs accurate birth times.",
+    },
+    {
+      q: "What is jataka matching?",
+      a: "Jataka matching (jathaka porutham) is the South Indian name for horoscope matching. It usually uses the ten-porutham system, which is based mostly on the birth nakshatra, instead of the 36-gun Ashtakoot system.",
+    },
+  ],
+};
+
+export const POSTS: Post[] = [varnaKootaMeaning, manglikDoshaMeaning, kundliMilanOnlineFree, askAstrologerFree, aiKundliReader, freeAiKundli, mercuryRetrograde2026];
 
 export function getPost(slug: string): Post | undefined {
   return POSTS.find((p) => p.slug === slug);
