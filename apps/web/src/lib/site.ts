@@ -1,5 +1,8 @@
-/** Single source of truth for the public site origin (no trailing slash). */
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://astrojanta-web.vercel.app").replace(/\/+$/, "");
+/**
+ * Single source of truth for the public site origin (no trailing slash).
+ * NEXT_PUBLIC_SITE_URL overrides this default, so in Vercel it must be https://astrojanta.com (or unset).
+ */
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://astrojanta.com").replace(/\/+$/, "");
 export const SITE_NAME = "Astrojanta";
 
 /**
