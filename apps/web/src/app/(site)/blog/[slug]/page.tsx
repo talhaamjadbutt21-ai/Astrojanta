@@ -5,7 +5,7 @@ import { BlogText } from "@/components/blog-text";
 import { JsonLd } from "@/components/json-ld";
 import { ButtonLink } from "@/components/ui/button";
 import { getPost, POSTS } from "@/content/blog";
-import { absoluteUrl, SITE_NAME } from "@/lib/site";
+import { absoluteUrl, FOUNDER, FOUNDER_ID, ORGANIZATION_ID, SITE_NAME } from "@/lib/site";
 
 export const dynamicParams = false;
 
@@ -37,7 +37,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 const fmt = (d: string) =>
-  new Date(`${d}T00:00:00Z`).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+  new Date(`${d}T00:00:00Z`).toLocaleDateString("en-IN", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  });
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -49,6 +54,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     .sort((a, b) => b.published.localeCompare(a.published))
     .slice(0, 4);
   const org = { "@type": "Organization", name: SITE_NAME, url: absoluteUrl("/") };
+  const byFounder = post.author === "founder";
+  const author = byFounder
+    ? { "@type": "Person", "@id": FOUNDER_ID, name: FOUNDER.name, url: absoluteUrl("/about-methodology") }
+    : org;
   const jsonLd = [
     {
       "@context": "https://schema.org",
@@ -71,8 +80,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       image: absoluteUrl("/opengraph-image"),
       inLanguage: "en-IN",
       keywords: post.keyword,
-      author: org,
-      publisher: org,
+      author,
+      publisher: { ...org, "@id": ORGANIZATION_ID },
     },
     {
       "@context": "https://schema.org",
@@ -94,20 +103,24 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <nav aria-label="Breadcrumb" className="text-sm text-muted">
         <ol className="flex flex-wrap gap-2">
           <li>
-            <Link href="/" className="hover:text-ink">Home</Link>
+            <Link href="/" className="hover:text-ink">
+              Home
+            </Link>
           </li>
           <li aria-hidden="true">/</li>
           <li>
-            <Link href="/blog" className="hover:text-ink">Blog</Link>
+            <Link href="/blog" className="hover:text-ink">
+              Blog
+            </Link>
           </li>
         </ol>
       </nav>
       <article className="mt-6">
         <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-5xl">{post.h1}</h1>
         <p className="mt-3 text-sm text-muted">
-          By the{" "}
+          By{byFounder ? " " : " the "}
           <Link href="/about-methodology" className="underline underline-offset-4 hover:text-ink">
-            {SITE_NAME} team
+            {byFounder ? `${FOUNDER.name}, founder of ${SITE_NAME}` : `${SITE_NAME} team`}
           </Link>{" "}
           · <time dateTime={post.published}>{fmt(post.published)}</time>
         </p>
@@ -117,15 +130,31 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         {post.body.map((b, i) => {
           switch (b.type) {
             case "h2":
-              return <h2 key={i} className={h2}>{b.text}</h2>;
+              return (
+                <h2 key={i} className={h2}>
+                  {b.text}
+                </h2>
+              );
             case "h3":
-              return <h3 key={i} className="mt-8 font-display text-xl font-semibold">{b.text}</h3>;
+              return (
+                <h3 key={i} className="mt-8 font-display text-xl font-semibold">
+                  {b.text}
+                </h3>
+              );
             case "p":
-              return <p key={i} className={p}><BlogText text={b.text} /></p>;
+              return (
+                <p key={i} className={p}>
+                  <BlogText text={b.text} />
+                </p>
+              );
             case "ul":
               return (
                 <ul key={i} className="mt-4 list-disc space-y-2 pl-5 text-muted">
-                  {b.items.map((it) => <li key={it}><BlogText text={it} /></li>)}
+                  {b.items.map((it) => (
+                    <li key={it}>
+                      <BlogText text={it} />
+                    </li>
+                  ))}
                 </ul>
               );
             case "table":
@@ -133,12 +162,22 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 <div key={i} className="glass mt-6 overflow-x-auto rounded-2xl">
                   <table className="w-full text-left text-sm">
                     <thead>
-                      <tr>{b.head.map((h) => <th key={h} className="px-4 py-3 font-semibold text-ink">{h}</th>)}</tr>
+                      <tr>
+                        {b.head.map((h) => (
+                          <th key={h} className="px-4 py-3 font-semibold text-ink">
+                            {h}
+                          </th>
+                        ))}
+                      </tr>
                     </thead>
                     <tbody>
                       {b.rows.map((r) => (
                         <tr key={r[0]} className="border-t border-white/8">
-                          {r.map((c) => <td key={c} className="px-4 py-3 text-muted">{c}</td>)}
+                          {r.map((c) => (
+                            <td key={c} className="px-4 py-3 text-muted">
+                              {c}
+                            </td>
+                          ))}
                         </tr>
                       ))}
                     </tbody>
@@ -149,13 +188,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         })}
 
         <section className="glass mt-14 rounded-3xl px-6 py-10 text-center">
-          <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">See what this means for your chart</h2>
+          <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
+            See what this means for your chart
+          </h2>
           <p className="mx-auto mt-3 max-w-lg text-muted">
             Make your free Kundli in seconds, then ask the AI astrologer about your own houses and dasha.
           </p>
           <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <ButtonLink href="/ai-astrologer" size="lg" className="w-full sm:w-auto">Ask the AI astrologer</ButtonLink>
-            <ButtonLink href="/kundli" variant="secondary" size="lg" className="w-full sm:w-auto">Make my free Kundli</ButtonLink>
+            <ButtonLink href="/ai-astrologer" size="lg" className="w-full sm:w-auto">
+              Ask the AI astrologer
+            </ButtonLink>
+            <ButtonLink href="/kundli" variant="secondary" size="lg" className="w-full sm:w-auto">
+              Make my free Kundli
+            </ButtonLink>
           </div>
         </section>
 
