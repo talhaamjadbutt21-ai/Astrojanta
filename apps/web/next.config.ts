@@ -4,6 +4,10 @@ import type { NextConfig } from "next";
 const API_URL = process.env.API_URL ?? "http://localhost:4000";
 const isProd = process.env.NODE_ENV === "production";
 
+/** Canonical production origin. Old production hosts 301/308 here; preview deployments are left alone. */
+const CANONICAL_ORIGIN = "https://astrojanta.com";
+const LEGACY_HOSTS = ["astrojanta-web.vercel.app", "astrojanta.vercel.app", "www.astrojanta.com"];
+
 const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "X-Frame-Options", value: "DENY" },
@@ -24,6 +28,15 @@ const nextConfig: NextConfig = {
   // `/api/chat` is handled by `app/api/chat/route.ts` (streaming) and wins over this rewrite.
   async rewrites() {
     return [{ source: "/api/:path*", destination: `${API_URL}/api/:path*` }];
+  },
+  // Exact host matches only, so `*-git-*.vercel.app` / hash preview URLs and astrojanta.com itself never redirect.
+  async redirects() {
+    return LEGACY_HOSTS.map((host) => ({
+      source: "/:path*",
+      has: [{ type: "host" as const, value: host }],
+      destination: `${CANONICAL_ORIGIN}/:path*`,
+      permanent: true,
+    }));
   },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];

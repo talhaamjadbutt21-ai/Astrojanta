@@ -35,7 +35,7 @@ npm run db:migrate -w @astrojanta/api
 ## 2. API project
 1. Vercel → Add New → Project → import the repo → Root Directory `apps/api`, preset **Other**.
 2. Environment Variables (Production):
-   `NODE_ENV=production`, `TRUST_PROXY=true`, `DATABASE_URL`, `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `DATA_ENCRYPTION_KEY`, `CORS_ORIGINS` (e.g. `https://astrojanta.vercel.app`, https only), `ADMIN_EMAILS`, `GEMINI_API_KEY` (or `OPENAI_API_KEY`), `RESEND_API_KEY`, `MAIL_FROM`, `PRO_REQUEST_EMAIL`.
+   `NODE_ENV=production`, `TRUST_PROXY=true`, `DATABASE_URL`, `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `DATA_ENCRYPTION_KEY`, `CORS_ORIGINS` (e.g. `https://astrojanta.com`, https only), `ADMIN_EMAILS`, `GEMINI_API_KEY` (or `OPENAI_API_KEY`), `RESEND_API_KEY`, `MAIL_FROM`, `PRO_REQUEST_EMAIL`.
    Optional: `AI_MODEL`, `SESSION_TTL_DAYS`, `GUEST_DAILY_ATTEMPTS`, `FREE_DAILY_QUESTIONS`, `PRO_DAILY_QUESTIONS`, `PRO_PAYMENT_LINK_MONTHLY`, `PRO_PAYMENT_LINK_YEARLY`.
    Do **not** set `DATABASE_MIGRATE_URL` here.
 3. Deploy, then open `https://<api-project>.vercel.app/api/health` and you should see `{"ok":true,...}`.
@@ -43,7 +43,7 @@ npm run db:migrate -w @astrojanta/api
 
 ## 3. Web project
 1. Add New → Project → same repo → Root Directory `apps/web`, preset **Next.js**.
-2. Environment Variables: `API_URL=https://<api-project>.vercel.app`, `NEXT_PUBLIC_SITE_URL=https://<web-project>.vercel.app`, `NEXT_PUBLIC_SUPPORT_EMAIL`.
+2. Environment Variables: `API_URL=https://<api-project>.vercel.app`, `NEXT_PUBLIC_SITE_URL=https://astrojanta.com`, `NEXT_PUBLIC_SUPPORT_EMAIL`.
 3. Deploy. Put the final web URL into the API's `CORS_ORIGINS` and redeploy the API.
 
 The browser only talks to the web domain; Next.js proxies `/api/*` to `API_URL`, so session cookies stay first-party.
@@ -60,3 +60,9 @@ The browser only talks to the web domain; Next.js proxies `/api/*` to `API_URL`,
 - Hobby is for non-commercial use per Vercel's terms.
 
 `render.yaml` is no longer used.
+
+## Custom domain (astrojanta.com)
+
+- Add `astrojanta.com` (and `www.astrojanta.com`) to the web project's Domains in Vercel before deploying this config.
+- `next.config.ts` permanently redirects `astrojanta-web.vercel.app`, `astrojanta.vercel.app` and `www.astrojanta.com` to `https://astrojanta.com` (same path). Preview URLs are not redirected.
+- Set `NEXT_PUBLIC_SITE_URL=https://astrojanta.com` on the web project and include `https://astrojanta.com` in the API's `CORS_ORIGINS`, then redeploy both.
