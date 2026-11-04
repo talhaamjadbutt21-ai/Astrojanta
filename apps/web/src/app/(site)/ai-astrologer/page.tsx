@@ -300,7 +300,11 @@ export default function AiAstrologerPage() {
             a free account to open the AI astrologer chat for your saved profile.
           </p>
           <p className={p}>
-            Ask specific questions for better answers. “Tell me about my future” is vague; “How does my current dasha
+            For a longer walkthrough with Hindi and Hinglish question examples, read our guide{" "}
+            <Link href="/blog/ai-astrologer-free-hindi" className={a}>
+              AI astrologer free: chat with an AI jyotish in Hindi &amp; English
+            </Link>
+            . Ask specific questions for better answers. “Tell me about my future” is vague; “How does my current dasha
             affect my career over the next two years?” gives the AI something concrete to analyse. Good questions to
             start with:
           </p>

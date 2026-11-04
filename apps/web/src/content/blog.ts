@@ -15,6 +15,8 @@ export type Post = {
   h1: string;
   description: string;
   keyword: string;
+  /** "founder" credits Talha Amjad (byline + Article schema Person); default is the Astrojanta team. */
+  author?: "founder";
   published: string; // ISO date
   updated: string;
   intro: string;
@@ -1244,7 +1246,264 @@ const varnaKootaMeaning: Post = {
   ],
 };
 
-export const POSTS: Post[] = [varnaKootaMeaning, manglikDoshaMeaning, kundliMilanOnlineFree, askAstrologerFree, aiKundliReader, freeAiKundli, mercuryRetrograde2026];
+const aiAstrologerFreeHindi: Post = {
+  slug: "ai-astrologer-free-hindi",
+  title: "AI Astrologer Free: Chat with an AI Jyotish in Hindi & English (2026 Guide)",
+  h1: "AI Astrologer Free – Chat with an AI Jyotish in Hindi, Hinglish and English (2026 Guide)",
+  description:
+    "What an AI astrologer is, how it reads your Vedic kundli, AI vs pandit, what to ask about shaadi, career, Manglik and Sade Sati, Hindi chat examples, honest limits and how to choose a free AI astrologer in India.",
+  keyword: "ai astrologer",
+  author: "founder",
+  published: "2026-11-04",
+  updated: "2026-11-04",
+  intro:
+    "\"Meri shaadi kab hogi?\" \"Job change karun ya nahi?\" \"Kya main Manglik hoon?\" For generations these questions went to the family pandit or a trusted jyotishi. Today many people in India type them into an AI astrologer instead, often late at night, in Hindi or Hinglish, straight from their phone. But not every AI astrologer works the same way. Some read your actual Vedic birth chart; others simply generate a confident-sounding paragraph. This guide explains what an AI astrologer really is, how a good one reads your kundli, how it compares with a human pandit, what to ask, how to use [Astrojanta's free AI astrologer](/ai-astrologer) step by step, and how to judge any AI astrology app before you trust it with your questions or your money.",
+  body: [
+    { type: "h2", text: "What is an AI astrologer?" },
+    {
+      type: "p",
+      text: "An AI astrologer (also searched as AI jyotish or AI pandit) is software that answers astrology questions in plain conversation. A well-built one has two separate parts. The first is a calculation engine that computes your birth chart from your date, time and place of birth: the Lagna (ascendant), the Moon sign (rashi), the birth nakshatra, the positions of the nine grahas, the houses and the dasha periods. The second is a language model that has been instructed to interpret that chart using the rules of Jyotish and to explain it in everyday words.",
+    },
+    {
+      type: "p",
+      text: "The difference matters. A general-purpose chatbot that has not calculated your chart can only guess where your planets are, and a guessed chart produces guessed answers. A proper AI astrologer computes first and interprets second, so every answer can point back to a real placement in your [kundli](/kundli): \"your 7th lord is in the 10th house\", \"you are running Venus mahadasha\", and so on.",
+    },
+
+    { type: "h2", text: "How an AI astrologer reads your Vedic kundli" },
+    {
+      type: "p",
+      text: "Here is what happens behind the scenes on Astrojanta when you enter your birth details. Other apps may differ, which is why it is worth asking any service how it calculates.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Time conversion: your local birth time is converted to universal time using the historical time-zone database. For births in India, use the IST time written on your birth certificate; older births are handled with India's historical offsets, such as the war-time time of the 1940s.",
+        "Planet positions: the Sun, Moon, Mars, Mercury, Jupiter, Venus and Saturn are computed with an astronomical ephemeris (the open-source Astronomy Engine library). Rahu and Ketu use the mean lunar node.",
+        "Sidereal zodiac with Lahiri ayanamsa: positions are converted to the Vedic (sidereal) zodiac using the Lahiri (Chitrapaksha) ayanamsa, the standard used by most Indian panchangs. This is why your Vedic rashi is often one sign behind your Western sun sign.",
+        "Lagna and houses: the sidereal ascendant for your birth place sets the 1st house, with whole-sign houses.",
+        "Nakshatra and dasha: the Moon's nakshatra and pada start the 120-year Vimshottari dasha, which the AI uses to talk about timing.",
+        "Divisional chart and doshas: the Navamsa (D9) chart, Manglik status from Lagna and Moon with classical cancellations, and current transits for Sade Sati.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Only after all this is calculated does the AI step in. It receives the computed chart, is told to use only that data, and looks up details like dasha dates or transits through tools instead of inventing them. The full method is described on our [methodology page](/about-methodology).",
+    },
+
+    { type: "h2", text: "AI astrologer vs human pandit: which should you use?" },
+    {
+      type: "p",
+      text: "This is not an either-or choice. Both have real strengths, and many families use both.",
+    },
+    {
+      type: "table",
+      head: ["", "AI astrologer", "Experienced human pandit / jyotishi"],
+      rows: [
+        ["Availability", "Any time, instant replies, including at midnight", "Depends on appointments and schedules"],
+        ["Cost", "Often free within daily limits, or a small subscription", "Consultation fees, sometimes charged per minute on chat apps"],
+        ["Consistency", "Applies the same chart and rules every time", "Varies by tradition, experience and the day"],
+        ["Transparency", "Can show the houses, lords and dashas behind each answer", "Depends on the astrologer's style"],
+        ["Privacy", "You can ask sensitive questions without saying them aloud", "Requires sharing personal matters with a person"],
+        ["Judgement and intuition", "Limited; cannot read the person in front of it", "Strong; brings life experience and context"],
+        ["Rituals and remedies", "Can explain remedies; cannot perform a puja", "Can guide or perform rituals"],
+      ],
+    },
+    {
+      type: "p",
+      text: "A sensible approach: use an AI astrologer to understand your own chart, ask everyday questions and prepare, and consult an experienced jyotishi for major decisions such as fixing a marriage date or interpreting a complicated match. If you go to a pandit already knowing your Lagna, rashi, nakshatra and running dasha, the conversation becomes far more useful.",
+    },
+
+    { type: "h2", text: "What to ask an AI astrologer (with Hindi and Hinglish examples)" },
+    {
+      type: "p",
+      text: "Specific questions get specific answers. \"Mera future batao\" is too broad; \"Next two years mein career ke liye kaunsa dasha period accha hai?\" gives the AI something concrete to analyse. Here are good starting points by topic.",
+    },
+    { type: "h3", text: "Shaadi and relationships" },
+    {
+      type: "ul",
+      items: [
+        "\"Meri shaadi kab hogi? Mere 7th house aur Venus ke baare mein kya dikh raha hai?\"",
+        "\"Love marriage ya arranged marriage — chart kya indicate karta hai?\"",
+        "\"मेरी कुंडली में विवाह के योग कब बन रहे हैं?\"",
+        "Before asking about a specific partner, run the free [kundli matching](/matching) tool for both of you, then ask the AI to explain the gun milan result, especially Bhakoot and Nadi.",
+      ],
+    },
+    { type: "h3", text: "Career and money" },
+    {
+      type: "ul",
+      items: [
+        "\"Job change karne ke liye kaunsa time sahi rahega?\"",
+        "\"Business suit karega ya naukri? 10th house kya kehta hai?\"",
+        "\"Which planets are strongest in my chart, and what work suits them?\"",
+        "\"Paisa kab tak stable hoga? 2nd aur 11th house ka analysis karo.\"",
+      ],
+    },
+    { type: "h3", text: "Manglik dosha" },
+    {
+      type: "ul",
+      items: [
+        "\"Kya main Manglik hoon? Anshik hai ya purna?\"",
+        "\"Mera Mangal dosh cancel ho raha hai kya?\"",
+        "You can also check instantly with the free [Manglik calculator](/manglik), and read our [Manglik dosha meaning](/blog/manglik-dosha-meaning) guide for the cancellation rules.",
+      ],
+    },
+    { type: "h3", text: "Sade Sati and Shani" },
+    {
+      type: "ul",
+      items: [
+        "\"Kya meri Sade Sati chal rahi hai? Kaunsa phase hai?\"",
+        "\"Shani ka transit mere career ko kaise affect karega?\"",
+        "Sade Sati is counted from your Moon sign, so first confirm your rashi with the [Moon sign and nakshatra finder](/moon-sign).",
+      ],
+    },
+    { type: "h3", text: "Dasha and timing" },
+    {
+      type: "ul",
+      items: [
+        "\"Abhi kaunsi mahadasha aur antardasha chal rahi hai, aur iska matlab kya hai?\"",
+        "\"Agle Guru transit ka mere liye kya asar hoga?\"",
+      ],
+    },
+    {
+      type: "p",
+      text: "Write the way you speak. On Astrojanta the AI astrologer replies in the same language and script you use: English, Hindi in Devanagari, or Hinglish in Roman script.",
+    },
+
+    { type: "h2", text: "How to use Astrojanta's free AI astrologer: step by step" },
+    {
+      type: "ul",
+      items: [
+        "Step 1 – Gather birth details: date, exact time and place of birth. In India use the IST time from your birth certificate; if you were born abroad, use the local time there.",
+        "Step 2 – Make your free kundli: open the [free kundli](/kundli) tool. No sign-up is needed. Check that your Lagna and Moon sign look right.",
+        "Step 3 – Create a free account: the [AI astrologer](/ai-astrologer) chat needs a free account so your chart and conversation can be saved to your profile.",
+        "Step 4 – Ask your first question: be specific, mention the topic and time frame, and ask in Hindi, Hinglish or English.",
+        "Step 5 – Follow up: ask \"why?\" or \"which planet shows this?\" The AI keeps your chart in context and explains the factors behind its answer.",
+      ],
+    },
+    {
+      type: "p",
+      text: "A free account gets 2 AI questions a day; the daily limit resets at midnight UTC, which is 5:30 AM IST. The kundli, matching, Manglik and Moon sign tools can be used without an account. If you need more questions, the optional Pro plan raises the limit to 6 a day; it is priced in US dollars ($2.99 a month or $29.99 a year), so your bank converts it to rupees. Details are on the [pricing page](/pricing). There is no gemstone or puja selling, and no per-minute meter running while you think.",
+    },
+    {
+      type: "p",
+      text: "Ready to try? [Ask the AI astrologer free](/ai-astrologer) — it takes about a minute to go from birth details to your first answer.",
+    },
+
+    { type: "h2", text: "How accurate is an AI astrologer? An honest answer" },
+    {
+      type: "p",
+      text: "Accuracy has two layers, and it helps to separate them.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Calculation accuracy: are the planets, Lagna, houses and dashas correct? This is mathematics, not opinion. With correct birth details and a proper ephemeris plus Lahiri ayanamsa, the chart should match what a careful panchang-based astrologer would draw. Astrojanta's engine is tested against reference points such as the Lahiri ayanamsa at J2000, Makar Sankranti and the well-known chart of Indian Independence.",
+        "Interpretive accuracy: is the reading meaningful? Astrology describes tendencies and favourable or challenging periods; it does not deliver certainties. No AI, and no human, can honestly promise the exact date of a wedding or a job offer.",
+      ],
+    },
+    { type: "p", text: "Practical limits to keep in mind:" },
+    {
+      type: "ul",
+      items: [
+        "A birth time off by 10–15 minutes can change the Lagna and house placements, and with them many answers.",
+        "Without a birth time, answers rely on the Moon chart and say less about houses.",
+        "Different traditions (Parashari, KP, Lal Kitab, South Indian systems) can read the same chart differently. Astrojanta's AI follows the Parashari tradition.",
+        "A language model can still phrase something poorly or overstate it. Treat every answer as guidance for reflection, and ask follow-up questions when something seems off.",
+        "An AI astrologer is not a doctor, lawyer, financial adviser or counsellor. For health, legal, money or mental-health matters, consult a qualified professional. If you are in distress in India, call Tele-MANAS on 14416 (24×7, free).",
+      ],
+    },
+
+    { type: "h2", text: "Privacy: what happens to your birth details" },
+    {
+      type: "p",
+      text: "Your date, time and place of birth are personal data, so check how any app treats them. On Astrojanta, birth details are encrypted at rest, chart data and your question are shared with the AI model provider only to generate an answer, your password is never sent to it, and you can delete your account and data at any time. The [privacy policy](/privacy) explains this under India's Digital Personal Data Protection Act, 2023.",
+    },
+
+    { type: "h2", text: "How to choose the best AI astrologer app in India" },
+    {
+      type: "p",
+      text: "There are now many AI astrology apps and websites. Rather than trusting a ranking, test any of them, including Astrojanta, against these criteria:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Does it calculate a real Vedic chart? It should ask for exact birth time and place, show your Lagna, rashi, nakshatra and dasha, and say which ayanamsa it uses (Lahiri is the Indian standard).",
+        "Do answers cite your chart? Good answers mention specific houses, lords and dasha periods. Generic lines that could apply to anyone are a red flag.",
+        "Language: can you chat in Hindi, Hinglish or your own language, and does it reply in the same script?",
+        "Clear free tier and pricing: how many free questions, when the limit resets, and what paid plans cost, shown before you pay. Be wary of per-minute charges that are hard to track.",
+        "No fear-selling: an app that pushes expensive gemstones, pujas or \"urgent\" remedies after scaring you about a dosha is putting sales first.",
+        "Honesty about limits: it should admit uncertainty, flag when an answer depends on birth time, and avoid medical, legal or financial claims.",
+        "Privacy: a readable privacy policy, encryption, and a way to delete your data.",
+        "A real operator: a contact email and an identifiable person or company behind the service.",
+      ],
+    },
+    {
+      type: "p",
+      text: "A quick test: ask the same question twice, worded differently. A chart-based AI astrologer should give consistent reasoning that points to the same placements.",
+    },
+
+    { type: "h2", text: "Related free tools and guides" },
+    {
+      type: "ul",
+      items: [
+        "[Free kundli](/kundli) — Lagna, rashi, nakshatra, Navamsa and Vimshottari dasha in seconds.",
+        "[Kundli matching](/matching) — 36-gun Ashtakoot milan for shaadi; see also [kundli milan online free](/blog/kundli-milan-online-free) and [Varna koota meaning](/blog/varna-koota-meaning).",
+        "[Manglik calculator](/manglik) — Mars from Lagna and Moon with cancellations.",
+        "[Moon sign finder](/moon-sign) — your Vedic rashi and birth nakshatra.",
+        "[How to read your kundli with an AI kundli reader](/blog/ai-kundli-reader) and [free AI kundli online](/blog/free-ai-kundli-online).",
+        "[Ask an astrologer free](/blog/ask-astrologer-free) — tips for getting clear answers to your questions.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Astrology works best as a lens for understanding yourself and your timing, not as a source of fear. Start with your own chart, ask clear questions, and [chat with the AI astrologer free](/ai-astrologer) in the language you are most comfortable with.",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is there a free AI astrologer in India?",
+      a: "Yes. Astrojanta's AI astrologer is free with a free account: 2 questions a day, resetting at 5:30 AM IST. The kundli, kundli matching, Manglik and Moon sign tools are free without sign-up.",
+    },
+    {
+      q: "Can I chat with an AI astrologer in Hindi?",
+      a: "Yes. You can write in Hindi (Devanagari), Hinglish such as \"meri shaadi kab hogi?\", or English, and the AI astrologer replies in the same language and script.",
+    },
+    {
+      q: "How does an AI astrologer read my kundli?",
+      a: "It first calculates your Vedic chart from your birth date, time and place — sidereal positions with the Lahiri ayanamsa, Lagna, houses, nakshatra and Vimshottari dasha — and then the AI interprets only that computed data.",
+    },
+    {
+      q: "Is AI astrology accurate?",
+      a: "The chart calculation can be exact if your birth details are correct. Interpretation describes tendencies and timing, not certainties, and an incorrect birth time can change the Lagna and houses.",
+    },
+    {
+      q: "Is an AI astrologer better than a pandit?",
+      a: "It is different. An AI astrologer is instant, consistent, private and low-cost; an experienced pandit brings judgement, intuition and rituals. Many people use AI to understand their chart and a pandit for major decisions.",
+    },
+    {
+      q: "What is AI jyotish?",
+      a: "AI jyotish means using artificial intelligence to explain Vedic (Jyotish) astrology. A good AI jyotish computes your birth chart first and uses a language model only to interpret it in plain language.",
+    },
+    {
+      q: "Can an AI astrologer tell me when I will get married?",
+      a: "It can explain which dasha periods and transits are traditionally favourable for marriage in your chart, based on the 7th house, Venus and Jupiter. It cannot guarantee a date.",
+    },
+    {
+      q: "Can the AI astrologer check Manglik dosha and Sade Sati?",
+      a: "Yes. Your chart includes Manglik status from Lagna and Moon with classical cancellations, and current transits for Sade Sati, and the AI can explain both. You can also use the free Manglik calculator directly.",
+    },
+    {
+      q: "Do I need my exact birth time?",
+      a: "For Lagna and house-based answers, yes. Without it you still get your Moon sign, nakshatra, planetary signs and dasha, and the AI tells you when an answer depends on the birth time.",
+    },
+    {
+      q: "Is my birth data safe with an AI astrologer?",
+      a: "On Astrojanta, birth details are encrypted at rest, only chart data and your question are sent to the AI provider, and you can delete your data any time. Always check an app's privacy policy before sharing details.",
+    },
+  ],
+};
+
+export const POSTS: Post[] = [aiAstrologerFreeHindi, varnaKootaMeaning, manglikDoshaMeaning, kundliMilanOnlineFree, askAstrologerFree, aiKundliReader, freeAiKundli, mercuryRetrograde2026];
 
 export function getPost(slug: string): Post | undefined {
   return POSTS.find((p) => p.slug === slug);
