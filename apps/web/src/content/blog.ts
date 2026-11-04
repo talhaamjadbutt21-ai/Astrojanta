@@ -572,7 +572,7 @@ const askAstrologerFree: Post = {
     { type: "h2", text: "Can you really ask an astrologer for free?" },
     {
       type: "p",
-      text: "Yes, but it helps to know what \"free\" usually means. Many astrology apps advertise a free first question and then switch to per-minute billing once the chat starts. Others give a generic sun-sign answer that is the same for millions of people. A useful free answer has to be based on your own chart, which means the astrologer (human or AI) needs your date, time and place of birth.",
+      text: 'Yes, but it helps to know what "free" usually means. Many astrology apps advertise a free first question and then switch to per-minute billing once the chat starts. Others give a generic sun-sign answer that is the same for millions of people. A useful free answer has to be based on your own chart, which means the astrologer (human or AI) needs your date, time and place of birth.',
     },
     {
       type: "p",
@@ -606,8 +606,8 @@ const askAstrologerFree: Post = {
     {
       type: "ul",
       items: [
-        "Be specific: \"Will I change jobs in the next 12 months?\" is far better than \"Tell me about my career.\"",
-        "Add a time frame: Astrology works through dashas and transits, so a window such as \"this year\" or \"before 2028\" lets the reading focus on timing.",
+        'Be specific: "Will I change jobs in the next 12 months?" is far better than "Tell me about my career."',
+        'Add a time frame: Astrology works through dashas and transits, so a window such as "this year" or "before 2028" lets the reading focus on timing.',
         "Give context: Mention whether you are studying, employed, married or running a business. The same chart reads differently at 19 and at 45.",
         "Ask one thing at a time: Combining marriage, career and health in one message spreads the answer thin. Ask, read, then follow up.",
         "Use an accurate birth time: The Lagna changes roughly every two hours, and house-based answers depend on it. If your time is uncertain, say so.",
@@ -619,11 +619,19 @@ const askAstrologerFree: Post = {
       type: "table",
       head: ["Topic", "Example question", "What the astrologer checks"],
       rows: [
-        ["Marriage", "When is a good period for my marriage?", "7th house and lord, Venus, Navamsa (D9), current dasha"],
+        [
+          "Marriage",
+          "When is a good period for my marriage?",
+          "7th house and lord, Venus, Navamsa (D9), current dasha",
+        ],
         ["Love & compatibility", "Are my partner and I a good match?", "Gun Milan score, Manglik status, Moon signs"],
         ["Career", "Is this a good year to switch jobs?", "10th house and lord, Saturn, Sun, running antardasha"],
         ["Money", "Will my finances improve this year?", "2nd and 11th houses, Jupiter, dhana yogas"],
-        ["Education", "Which field suits me: science, commerce or arts?", "4th, 5th and 9th houses, Mercury and Jupiter"],
+        [
+          "Education",
+          "Which field suits me: science, commerce or arts?",
+          "4th, 5th and 9th houses, Mercury and Jupiter",
+        ],
         ["Foreign travel", "Do I have chances of settling abroad?", "12th and 9th houses, Rahu, related dashas"],
       ],
     },
@@ -673,7 +681,7 @@ const askAstrologerFree: Post = {
     { type: "h2", text: "Muft mein astrologer se sawal kaise poochein" },
     {
       type: "p",
-      text: "Sabse pehle apni sahi janam tithi, samay aur sthan se kundli banaiye. Phir free account bana kar AI astrologer se ek saaf sawal poochiye, jaise \"Meri shaadi ka yog kab hai?\" ya \"Kya is saal naukri badalna theek rahega?\". Sawal mein samay seema jodiye, taaki jawab dasha aur gochar ke hisaab se mil sake. AstroJanta Hindi, Hinglish aur English teeno mein jawab deta hai.",
+      text: 'Sabse pehle apni sahi janam tithi, samay aur sthan se kundli banaiye. Phir free account bana kar AI astrologer se ek saaf sawal poochiye, jaise "Meri shaadi ka yog kab hai?" ya "Kya is saal naukri badalna theek rahega?". Sawal mein samay seema jodiye, taaki jawab dasha aur gochar ke hisaab se mil sake. AstroJanta Hindi, Hinglish aur English teeno mein jawab deta hai.',
     },
   ],
   faqs: [
@@ -735,7 +743,11 @@ const kundliMilanOnlineFree: Post = {
       type: "table",
       head: ["Koota", "Max gun", "What it checks"],
       rows: [
-        ["Varna", "1", "Spiritual and ego compatibility, based on the Moon sign's varna (Brahmin, Kshatriya, Vaishya, Shudra)"],
+        [
+          "Varna",
+          "1",
+          "Spiritual and ego compatibility, based on the Moon sign's varna (Brahmin, Kshatriya, Vaishya, Shudra)",
+        ],
         ["Vashya", "2", "Mutual attraction and who influences whom in the relationship"],
         ["Tara (Dina)", "3", "Health, wellbeing and fortune, counted from one nakshatra to the other"],
         ["Yoni", "4", "Physical and intimate compatibility, using the animal symbol of each nakshatra"],
@@ -816,7 +828,7 @@ const kundliMilanOnlineFree: Post = {
         "Open the matching tool: Go to [kundli matching](/matching) and enter both sets of details.",
         "Read the score: You will see each koota, the total out of 36 and any Nadi or Bhakoot dosha.",
         "Check Manglik status: Run the [Manglik check](/manglik) for both, since it is not part of the 36 gun.",
-        "Ask follow-up questions: Use the [AI astrologer](/blog/ask-astrologer-free) to ask in Hindi, Hinglish or English, for example \"Kya Nadi dosha cancel ho raha hai?\" or \"Shaadi ke baad finances kaise rahenge?\"",
+        'Ask follow-up questions: Use the [AI astrologer](/blog/ask-astrologer-free) to ask in Hindi, Hinglish or English, for example "Kya Nadi dosha cancel ho raha hai?" or "Shaadi ke baad finances kaise rahenge?"',
       ],
     },
     {
@@ -877,7 +889,7 @@ const kundliMilanOnlineFree: Post = {
     },
     {
       q: "Can I ask questions about my match in Hindi?",
-      a: "Yes. The AstroJanta AI astrologer understands Hindi, Hinglish and English, so you can ask questions like \"Hamari kundli mein Bhakoot dosha hai kya?\" and get an answer based on both charts.",
+      a: 'Yes. The AstroJanta AI astrologer understands Hindi, Hinglish and English, so you can ask questions like "Hamari kundli mein Bhakoot dosha hai kya?" and get an answer based on both charts.',
     },
   ],
 };
@@ -892,7 +904,7 @@ const manglikDoshaMeaning: Post = {
   published: "2026-11-02",
   updated: "2026-11-02",
   intro:
-    "\"Ladki Manglik hai\" is probably the most anxious sentence in Indian rishta conversations. In many families, the moment a pandit mentions mangal dosh, the mood changes, and a good match can be dropped without a second look. Yet Manglik dosha is one of the most misunderstood ideas in Vedic astrology. A large share of people have Mars in one of the so-called Manglik houses, and classical texts list many conditions under which the dosha is weak or fully cancelled. This guide explains the real Manglik dosha meaning, how it is calculated, what it can and cannot do, when it is cancelled, whether it really ends at 28 and which remedies are traditionally recommended, in calm language and without fear. If you simply want to know \"main Manglik hoon ya nahi\", use the free [Manglik dosha calculator](/manglik) first.",
+    '"Ladki Manglik hai" is probably the most anxious sentence in Indian rishta conversations. In many families, the moment a pandit mentions mangal dosh, the mood changes, and a good match can be dropped without a second look. Yet Manglik dosha is one of the most misunderstood ideas in Vedic astrology. A large share of people have Mars in one of the so-called Manglik houses, and classical texts list many conditions under which the dosha is weak or fully cancelled. This guide explains the real Manglik dosha meaning, how it is calculated, what it can and cannot do, when it is cancelled, whether it really ends at 28 and which remedies are traditionally recommended, in calm language and without fear. If you simply want to know "main Manglik hoon ya nahi", use the free [Manglik dosha calculator](/manglik) first.',
   body: [
     { type: "h2", text: "What is Manglik dosha (Mangal dosh)?" },
     {
@@ -941,7 +953,7 @@ const manglikDoshaMeaning: Post = {
     },
     {
       type: "p",
-      text: "So when someone says \"woh Manglik hai\", the right follow-up question is: how strong, and from which point? A low Manglik and a high Manglik are very different situations, and treating them the same leads to many good rishtas being rejected unnecessarily.",
+      text: 'So when someone says "woh Manglik hai", the right follow-up question is: how strong, and from which point? A low Manglik and a high Manglik are very different situations, and treating them the same leads to many good rishtas being rejected unnecessarily.',
     },
 
     { type: "h2", text: "Effects of Manglik dosha on marriage" },
@@ -979,7 +991,7 @@ const manglikDoshaMeaning: Post = {
     { type: "h2", text: "Does Manglik dosha end at 28?" },
     {
       type: "p",
-      text: "You will often hear \"28 saal ke baad Manglik dosh khatam ho jata hai\". The idea comes from the belief that Mars matures (its age of maturity in Jyotish is around 28), so its effects calm down after that age. Many astrologers do consider the dosha's intensity to reduce after 28, and some families are more relaxed about matching after this age.",
+      text: 'You will often hear "28 saal ke baad Manglik dosh khatam ho jata hai". The idea comes from the belief that Mars matures (its age of maturity in Jyotish is around 28), so its effects calm down after that age. Many astrologers do consider the dosha\'s intensity to reduce after 28, and some families are more relaxed about matching after this age.',
     },
     {
       type: "p",
@@ -997,7 +1009,7 @@ const manglikDoshaMeaning: Post = {
         "Kumbh Vivah: A symbolic ritual marriage of the Manglik person with a clay pot (kumbh), a peepal or banana tree, or an idol of Lord Vishnu before the real wedding. It is believed to absorb the harsh effect of Mars.",
         "Mangal Bhat Puja in Ujjain: Ujjain's Mangalnath temple is traditionally regarded as the birthplace of Mars, and the Bhat Puja (offering cooked rice to the Shivling) performed there is one of the most popular Manglik remedies. Many families combine it with a visit to Mahakaleshwar.",
         "Hanuman worship: Reciting the Hanuman Chalisa, visiting a Hanuman temple on Tuesdays and offering sindoor and jasmine oil are classic remedies, since Hanuman is believed to control Mars.",
-        "Mangal mantras: Chanting \"Om Kraam Kreem Kraum Sah Bhaumaya Namah\" (108 times on Tuesdays) or the Mangal Gayatri mantra.",
+        'Mangal mantras: Chanting "Om Kraam Kreem Kraum Sah Bhaumaya Namah" (108 times on Tuesdays) or the Mangal Gayatri mantra.',
         "Tuesday fasting (Mangalvar vrat): Fasting or eating simple food on Tuesdays as an act of discipline.",
         "Daan (charity): Donating red lentils (masoor dal), jaggery, red cloth or copper on Tuesdays, or helping soldiers and siblings.",
         "Gemstone: Red coral (moonga) is sometimes advised, but only after a careful chart reading, because strengthening Mars is not right for every chart.",
@@ -1013,12 +1025,30 @@ const manglikDoshaMeaning: Post = {
       type: "table",
       head: ["Myth", "Fact"],
       rows: [
-        ["Manglik people should never marry non-Manglik partners", "Many Manglik-non-Manglik marriages work well, especially when the dosha is weak or cancelled"],
-        ["Manglik dosha harms the spouse's life", "Classical language is often over-dramatised; no reliable astrologer predicts harm from this one factor"],
-        ["Being Manglik is rare and unlucky", "Mars falls in a Manglik house in a large share of charts, so it is very common"],
-        ["The dosha ends exactly at 28", "Effects are said to soften with maturity, but the placement remains for life"],
-        ["Only an expensive puja can fix it", "Simple remedies like Hanuman worship, mantras and discipline are traditionally just as valued"],
-        ["Mars in the 1st house always means anger issues", "Sign, aspects and the rest of the chart change how Mars behaves"],
+        [
+          "Manglik people should never marry non-Manglik partners",
+          "Many Manglik-non-Manglik marriages work well, especially when the dosha is weak or cancelled",
+        ],
+        [
+          "Manglik dosha harms the spouse's life",
+          "Classical language is often over-dramatised; no reliable astrologer predicts harm from this one factor",
+        ],
+        [
+          "Being Manglik is rare and unlucky",
+          "Mars falls in a Manglik house in a large share of charts, so it is very common",
+        ],
+        [
+          "The dosha ends exactly at 28",
+          "Effects are said to soften with maturity, but the placement remains for life",
+        ],
+        [
+          "Only an expensive puja can fix it",
+          "Simple remedies like Hanuman worship, mantras and discipline are traditionally just as valued",
+        ],
+        [
+          "Mars in the 1st house always means anger issues",
+          "Sign, aspects and the rest of the chart change how Mars behaves",
+        ],
       ],
     },
 
@@ -1030,14 +1060,14 @@ const manglikDoshaMeaning: Post = {
         "Run the free check: Use the [Manglik dosha calculator](/manglik) to see Mars's house from the Lagna, Moon and Venus, and whether any cancellation applies.",
         "Check your partner too: If both are Manglik, the dosha usually cancels. Then compare overall compatibility with [kundli matching](/matching).",
         "Understand the full chart: Our guide on [reading your kundli with an AI kundli reader](/blog/ai-kundli-reader) explains the 7th house, Venus and the dasha, which matter just as much for marriage.",
-        "Ask follow-up questions: You can ask the AstroJanta AI astrologer in Hindi or Hinglish, for example \"Mera Mangal dosh anshik hai ya purna?\" or \"Kya mera Manglik dosh cancel ho raha hai?\"",
+        'Ask follow-up questions: You can ask the AstroJanta AI astrologer in Hindi or Hinglish, for example "Mera Mangal dosh anshik hai ya purna?" or "Kya mera Manglik dosh cancel ho raha hai?"',
       ],
     },
 
     { type: "h2", text: "Manglik dosha in Indian families today" },
     {
       type: "p",
-      text: "From matrimonial ads in Delhi and Jaipur that specify \"Manglik preferred\" to families in Hyderabad and Chennai checking Kuja dosha, Mars still shapes many marriage decisions across India and among NRI families. At the same time, more couples, especially in love marriages, are asking for a proper explanation instead of a yes-or-no verdict. That is the healthiest way to use astrology: as a lens for understanding temperament and timing, not as a reason to fear a person. Check the facts, read the cancellations, and make decisions with both the chart and real-life compatibility in mind.",
+      text: 'From matrimonial ads in Delhi and Jaipur that specify "Manglik preferred" to families in Hyderabad and Chennai checking Kuja dosha, Mars still shapes many marriage decisions across India and among NRI families. At the same time, more couples, especially in love marriages, are asking for a proper explanation instead of a yes-or-no verdict. That is the healthiest way to use astrology: as a lens for understanding temperament and timing, not as a reason to fear a person. Check the facts, read the cancellations, and make decisions with both the chart and real-life compatibility in mind.',
     },
   ],
   faqs: [
@@ -1086,7 +1116,7 @@ const varnaKootaMeaning: Post = {
   published: "2026-11-03",
   updated: "2026-11-03",
   intro:
-    "When a pandit or an online kundli milan report gives you a score out of 36, the very first row of the table is usually Varna. It carries just 1 gun, so many families skip past it, but it often raises questions: \"Varna 0 aaya hai, kya yeh problem hai?\" or \"Varna ka caste se kya lena-dena hai?\" This guide explains the Varna koota meaning in simple language, the rashi-wise varna chart, exactly how the point is scored, how much weight it really carries, and where it sits among the eight kootas of Ashtakoot gun milan. To see your own Varna score, run a free [kundli matching](/matching) for both partners.",
+    'When a pandit or an online kundli milan report gives you a score out of 36, the very first row of the table is usually Varna. It carries just 1 gun, so many families skip past it, but it often raises questions: "Varna 0 aaya hai, kya yeh problem hai?" or "Varna ka caste se kya lena-dena hai?" This guide explains the Varna koota meaning in simple language, the rashi-wise varna chart, exactly how the point is scored, how much weight it really carries, and where it sits among the eight kootas of Ashtakoot gun milan. To see your own Varna score, run a free [kundli matching](/matching) for both partners.',
   body: [
     { type: "h2", text: "What is Varna koota?" },
     {
@@ -1107,9 +1137,24 @@ const varnaKootaMeaning: Post = {
       type: "table",
       head: ["Varna", "Rashis (Moon signs)", "Element", "Traditional nature"],
       rows: [
-        ["Brahmin (highest rank)", "Karka (Cancer), Vrishchika (Scorpio), Meena (Pisces)", "Water (jal)", "Learning, spirituality, guidance"],
-        ["Kshatriya", "Mesha (Aries), Simha (Leo), Dhanu (Sagittarius)", "Fire (agni)", "Courage, leadership, protection"],
-        ["Vaishya", "Vrishabha (Taurus), Kanya (Virgo), Makara (Capricorn)", "Earth (prithvi)", "Trade, practicality, building wealth"],
+        [
+          "Brahmin (highest rank)",
+          "Karka (Cancer), Vrishchika (Scorpio), Meena (Pisces)",
+          "Water (jal)",
+          "Learning, spirituality, guidance",
+        ],
+        [
+          "Kshatriya",
+          "Mesha (Aries), Simha (Leo), Dhanu (Sagittarius)",
+          "Fire (agni)",
+          "Courage, leadership, protection",
+        ],
+        [
+          "Vaishya",
+          "Vrishabha (Taurus), Kanya (Virgo), Makara (Capricorn)",
+          "Earth (prithvi)",
+          "Trade, practicality, building wealth",
+        ],
         ["Shudra", "Mithuna (Gemini), Tula (Libra), Kumbha (Aquarius)", "Air (vayu)", "Service, skill, cooperation"],
       ],
     },
@@ -1148,11 +1193,11 @@ const varnaKootaMeaning: Post = {
     { type: "h2", text: "Is Varna 0 a problem? How much does it matter?" },
     {
       type: "p",
-      text: "Varna is the lightest koota in the 36-gun system. Losing it reduces the total by just 1 point, and there is no Varna \"dosha\" that astrologers treat with the seriousness of Nadi dosha (8 points) or Bhakoot dosha (7 points). A match with Varna 0 but strong Graha Maitri, Gana, Bhakoot and Nadi is generally considered far better than a match with Varna 1 and Nadi dosha.",
+      text: 'Varna is the lightest koota in the 36-gun system. Losing it reduces the total by just 1 point, and there is no Varna "dosha" that astrologers treat with the seriousness of Nadi dosha (8 points) or Bhakoot dosha (7 points). A match with Varna 0 but strong Graha Maitri, Gana, Bhakoot and Nadi is generally considered far better than a match with Varna 1 and Nadi dosha.',
     },
     {
       type: "p",
-      text: "So if your report shows \"Varna: 0/1\", there is no need to worry on that basis alone. Look at the total score, the higher-value kootas, and each partner's individual chart: the 7th house, Venus, the running dasha and [Manglik dosha](/manglik). Our [Manglik dosha meaning](/blog/manglik-dosha-meaning) guide explains why that check is done separately from the 36 gun.",
+      text: 'So if your report shows "Varna: 0/1", there is no need to worry on that basis alone. Look at the total score, the higher-value kootas, and each partner\'s individual chart: the 7th house, Venus, the running dasha and [Manglik dosha](/manglik). Our [Manglik dosha meaning](/blog/manglik-dosha-meaning) guide explains why that check is done separately from the 36 gun.',
     },
 
     { type: "h2", text: "All 8 kootas of Ashtakoot gun milan at a glance" },
@@ -1206,7 +1251,7 @@ const varnaKootaMeaning: Post = {
         "Collect both partners' date, time and place of birth. In India, use the IST time from the birth certificate; for births abroad, use the local time.",
         "Run the free [kundli matching](/matching) tool. It shows the Varna score along with all eight kootas and the total out of 36.",
         "Check each partner's [Manglik status](/manglik), since it is not part of the 36 gun.",
-        "For a deeper reading, open both [Kundlis](/kundli) and compare the Lagna, 7th house and dashas, or ask the AI astrologer, for example: \"Hamara Varna 0 hai, kya isse koi dikkat hogi?\"",
+        'For a deeper reading, open both [Kundlis](/kundli) and compare the Lagna, 7th house and dashas, or ask the AI astrologer, for example: "Hamara Varna 0 hai, kya isse koi dikkat hogi?"',
       ],
     },
   ],
@@ -1257,7 +1302,7 @@ const aiAstrologerFreeHindi: Post = {
   published: "2026-11-04",
   updated: "2026-11-04",
   intro:
-    "\"Meri shaadi kab hogi?\" \"Job change karun ya nahi?\" \"Kya main Manglik hoon?\" For generations these questions went to the family pandit or a trusted jyotishi. Today many people in India type them into an AI astrologer instead, often late at night, in Hindi or Hinglish, straight from their phone. But not every AI astrologer works the same way. Some read your actual Vedic birth chart; others simply generate a confident-sounding paragraph. This guide explains what an AI astrologer really is, how a good one reads your kundli, how it compares with a human pandit, what to ask, how to use [Astrojanta's free AI astrologer](/ai-astrologer) step by step, and how to judge any AI astrology app before you trust it with your questions or your money.",
+    '"Meri shaadi kab hogi?" "Job change karun ya nahi?" "Kya main Manglik hoon?" For generations these questions went to the family pandit or a trusted jyotishi. Today many people in India type them into an AI astrologer instead, often late at night, in Hindi or Hinglish, straight from their phone. But not every AI astrologer works the same way. Some read your actual Vedic birth chart; others simply generate a confident-sounding paragraph. This guide explains what an AI astrologer really is, how a good one reads your kundli, how it compares with a human pandit, what to ask, how to use [Astrojanta\'s free AI astrologer](/ai-astrologer) step by step, and how to judge any AI astrology app before you trust it with your questions or your money.',
   body: [
     { type: "h2", text: "What is an AI astrologer?" },
     {
@@ -1266,7 +1311,7 @@ const aiAstrologerFreeHindi: Post = {
     },
     {
       type: "p",
-      text: "The difference matters. A general-purpose chatbot that has not calculated your chart can only guess where your planets are, and a guessed chart produces guessed answers. A proper AI astrologer computes first and interprets second, so every answer can point back to a real placement in your [kundli](/kundli): \"your 7th lord is in the 10th house\", \"you are running Venus mahadasha\", and so on.",
+      text: 'The difference matters. A general-purpose chatbot that has not calculated your chart can only guess where your planets are, and a guessed chart produces guessed answers. A proper AI astrologer computes first and interprets second, so every answer can point back to a real placement in your [kundli](/kundli): "your 7th lord is in the 10th house", "you are running Venus mahadasha", and so on.',
     },
 
     { type: "h2", text: "How an AI astrologer reads your Vedic kundli" },
@@ -1300,11 +1345,27 @@ const aiAstrologerFreeHindi: Post = {
       head: ["", "AI astrologer", "Experienced human pandit / jyotishi"],
       rows: [
         ["Availability", "Any time, instant replies, including at midnight", "Depends on appointments and schedules"],
-        ["Cost", "Often free within daily limits, or a small subscription", "Consultation fees, sometimes charged per minute on chat apps"],
+        [
+          "Cost",
+          "Often free within daily limits, or a small subscription",
+          "Consultation fees, sometimes charged per minute on chat apps",
+        ],
         ["Consistency", "Applies the same chart and rules every time", "Varies by tradition, experience and the day"],
-        ["Transparency", "Can show the houses, lords and dashas behind each answer", "Depends on the astrologer's style"],
-        ["Privacy", "You can ask sensitive questions without saying them aloud", "Requires sharing personal matters with a person"],
-        ["Judgement and intuition", "Limited; cannot read the person in front of it", "Strong; brings life experience and context"],
+        [
+          "Transparency",
+          "Can show the houses, lords and dashas behind each answer",
+          "Depends on the astrologer's style",
+        ],
+        [
+          "Privacy",
+          "You can ask sensitive questions without saying them aloud",
+          "Requires sharing personal matters with a person",
+        ],
+        [
+          "Judgement and intuition",
+          "Limited; cannot read the person in front of it",
+          "Strong; brings life experience and context",
+        ],
         ["Rituals and remedies", "Can explain remedies; cannot perform a puja", "Can guide or perform rituals"],
       ],
     },
@@ -1316,15 +1377,15 @@ const aiAstrologerFreeHindi: Post = {
     { type: "h2", text: "What to ask an AI astrologer (with Hindi and Hinglish examples)" },
     {
       type: "p",
-      text: "Specific questions get specific answers. \"Mera future batao\" is too broad; \"Next two years mein career ke liye kaunsa dasha period accha hai?\" gives the AI something concrete to analyse. Here are good starting points by topic.",
+      text: 'Specific questions get specific answers. "Mera future batao" is too broad; "Next two years mein career ke liye kaunsa dasha period accha hai?" gives the AI something concrete to analyse. Here are good starting points by topic.',
     },
     { type: "h3", text: "Shaadi and relationships" },
     {
       type: "ul",
       items: [
-        "\"Meri shaadi kab hogi? Mere 7th house aur Venus ke baare mein kya dikh raha hai?\"",
-        "\"Love marriage ya arranged marriage — chart kya indicate karta hai?\"",
-        "\"मेरी कुंडली में विवाह के योग कब बन रहे हैं?\"",
+        '"Meri shaadi kab hogi? Mere 7th house aur Venus ke baare mein kya dikh raha hai?"',
+        '"Love marriage ya arranged marriage — chart kya indicate karta hai?"',
+        '"मेरी कुंडली में विवाह के योग कब बन रहे हैं?"',
         "Before asking about a specific partner, run the free [kundli matching](/matching) tool for both of you, then ask the AI to explain the gun milan result, especially Bhakoot and Nadi.",
       ],
     },
@@ -1332,18 +1393,18 @@ const aiAstrologerFreeHindi: Post = {
     {
       type: "ul",
       items: [
-        "\"Job change karne ke liye kaunsa time sahi rahega?\"",
-        "\"Business suit karega ya naukri? 10th house kya kehta hai?\"",
-        "\"Which planets are strongest in my chart, and what work suits them?\"",
-        "\"Paisa kab tak stable hoga? 2nd aur 11th house ka analysis karo.\"",
+        '"Job change karne ke liye kaunsa time sahi rahega?"',
+        '"Business suit karega ya naukri? 10th house kya kehta hai?"',
+        '"Which planets are strongest in my chart, and what work suits them?"',
+        '"Paisa kab tak stable hoga? 2nd aur 11th house ka analysis karo."',
       ],
     },
     { type: "h3", text: "Manglik dosha" },
     {
       type: "ul",
       items: [
-        "\"Kya main Manglik hoon? Anshik hai ya purna?\"",
-        "\"Mera Mangal dosh cancel ho raha hai kya?\"",
+        '"Kya main Manglik hoon? Anshik hai ya purna?"',
+        '"Mera Mangal dosh cancel ho raha hai kya?"',
         "You can also check instantly with the free [Manglik calculator](/manglik), and read our [Manglik dosha meaning](/blog/manglik-dosha-meaning) guide for the cancellation rules.",
       ],
     },
@@ -1351,8 +1412,8 @@ const aiAstrologerFreeHindi: Post = {
     {
       type: "ul",
       items: [
-        "\"Kya meri Sade Sati chal rahi hai? Kaunsa phase hai?\"",
-        "\"Shani ka transit mere career ko kaise affect karega?\"",
+        '"Kya meri Sade Sati chal rahi hai? Kaunsa phase hai?"',
+        '"Shani ka transit mere career ko kaise affect karega?"',
         "Sade Sati is counted from your Moon sign, so first confirm your rashi with the [Moon sign and nakshatra finder](/moon-sign).",
       ],
     },
@@ -1360,8 +1421,8 @@ const aiAstrologerFreeHindi: Post = {
     {
       type: "ul",
       items: [
-        "\"Abhi kaunsi mahadasha aur antardasha chal rahi hai, aur iska matlab kya hai?\"",
-        "\"Agle Guru transit ka mere liye kya asar hoga?\"",
+        '"Abhi kaunsi mahadasha aur antardasha chal rahi hai, aur iska matlab kya hai?"',
+        '"Agle Guru transit ka mere liye kya asar hoga?"',
       ],
     },
     {
@@ -1377,7 +1438,7 @@ const aiAstrologerFreeHindi: Post = {
         "Step 2 – Make your free kundli: open the [free kundli](/kundli) tool. No sign-up is needed. Check that your Lagna and Moon sign look right.",
         "Step 3 – Create a free account: the [AI astrologer](/ai-astrologer) chat needs a free account so your chart and conversation can be saved to your profile.",
         "Step 4 – Ask your first question: be specific, mention the topic and time frame, and ask in Hindi, Hinglish or English.",
-        "Step 5 – Follow up: ask \"why?\" or \"which planet shows this?\" The AI keeps your chart in context and explains the factors behind its answer.",
+        'Step 5 – Follow up: ask "why?" or "which planet shows this?" The AI keeps your chart in context and explains the factors behind its answer.',
       ],
     },
     {
@@ -1431,7 +1492,7 @@ const aiAstrologerFreeHindi: Post = {
         "Do answers cite your chart? Good answers mention specific houses, lords and dasha periods. Generic lines that could apply to anyone are a red flag.",
         "Language: can you chat in Hindi, Hinglish or your own language, and does it reply in the same script?",
         "Clear free tier and pricing: how many free questions, when the limit resets, and what paid plans cost, shown before you pay. Be wary of per-minute charges that are hard to track.",
-        "No fear-selling: an app that pushes expensive gemstones, pujas or \"urgent\" remedies after scaring you about a dosha is putting sales first.",
+        'No fear-selling: an app that pushes expensive gemstones, pujas or "urgent" remedies after scaring you about a dosha is putting sales first.',
         "Honesty about limits: it should admit uncertainty, flag when an answer depends on birth time, and avoid medical, legal or financial claims.",
         "Privacy: a readable privacy policy, encryption, and a way to delete your data.",
         "A real operator: a contact email and an identifiable person or company behind the service.",
@@ -1466,7 +1527,7 @@ const aiAstrologerFreeHindi: Post = {
     },
     {
       q: "Can I chat with an AI astrologer in Hindi?",
-      a: "Yes. You can write in Hindi (Devanagari), Hinglish such as \"meri shaadi kab hogi?\", or English, and the AI astrologer replies in the same language and script.",
+      a: 'Yes. You can write in Hindi (Devanagari), Hinglish such as "meri shaadi kab hogi?", or English, and the AI astrologer replies in the same language and script.',
     },
     {
       q: "How does an AI astrologer read my kundli?",
@@ -1503,7 +1564,252 @@ const aiAstrologerFreeHindi: Post = {
   ],
 };
 
-export const POSTS: Post[] = [aiAstrologerFreeHindi, varnaKootaMeaning, manglikDoshaMeaning, kundliMilanOnlineFree, askAstrologerFree, aiKundliReader, freeAiKundli, mercuryRetrograde2026];
+const shaniSadeSati2026: Post = {
+  slug: "shani-sade-sati-2026",
+  title: "Shani Sade Sati 2026: Kin Rashiyon Par Hai, Dates in IST, Dhaiya & Upay",
+  h1: "Shani Sade Sati 2026 – Which Rashis Are Affected, Dates in IST, Dhaiya and Remedies (Upay)",
+  description:
+    "Shani Sade Sati 2026: Saturn stays in Meena (Pisces) all year, so Kumbh, Meen and Mesh rashi are in Sade Sati and Simha, Dhanu in Dhaiya. Shani vakri 27 Jul–margi 11 Dec IST, phase-wise effects and simple upay.",
+  keyword: "shani sade sati 2026",
+  author: "founder",
+  published: "2026-11-04",
+  updated: "2026-11-04",
+  intro:
+    '"Kya meri Sade Sati chal rahi hai?" is one of the most searched astrology questions in India, and in 2026 the answer is simpler than usual. Shani (Saturn) spends the entire year in Meena rashi (Pisces), so no rashi enters or leaves Sade Sati in 2026. Kumbh (Aquarius), Meen (Pisces) and Mesh (Aries) Moon signs are under Shani Sade Sati, while Simha (Leo) and Dhanu (Sagittarius) are under Shani Dhaiya. Below you will find the exact Shani vakri and margi dates in IST, what each phase of Sade Sati means, rashi-wise effects, what really changes during the retrograde, the dates for 2027–2028, and practical, budget-friendly upay — without the fear that usually comes with the word "Shani".',
+  body: [
+    { type: "h2", text: "Shani Sade Sati 2026 at a glance (kin rashiyon par Sade Sati hai?)" },
+    {
+      type: "p",
+      text: "Sade Sati is counted from your Moon sign (Chandra rashi), not your sun sign. It runs while Saturn transits the 12th, 1st and 2nd signs from your natal Moon — three signs of about two and a half years each, so roughly seven and a half years in total (saadhe saat saal). With Saturn in Meena throughout 2026, the picture for the year is:",
+    },
+    {
+      type: "table",
+      head: ["Rashi (Moon sign)", "Status in 2026", "Saturn's house from Moon"],
+      rows: [
+        ["Kumbh (Aquarius)", "Sade Sati – last phase (utarti Sade Sati)", "2nd"],
+        ["Meen (Pisces)", "Sade Sati – peak / middle phase", "1st (over the Moon)"],
+        ["Mesh (Aries)", "Sade Sati – first phase (chadhti Sade Sati)", "12th"],
+        ["Simha (Leo)", "Shani Dhaiya – Ashtama Shani", "8th"],
+        ["Dhanu (Sagittarius)", "Shani Dhaiya – Kantaka Shani", "4th"],
+        ["Vrishabh, Mithun, Kark, Kanya, Tula, Vrishchik, Makar", "No Sade Sati or Dhaiya", "3rd, 5th–7th, 9th–11th"],
+      ],
+    },
+    {
+      type: "p",
+      text: 'Not sure of your Moon sign? Many people in India know their "naam rashi" from the first letter of their name, but that is not always the same as the Chandra rashi in your birth chart. Find your real Moon sign and nakshatra in seconds with the free [Moon sign finder](/moon-sign), or generate your full [free kundli](/kundli), which also shows your current Sade Sati status.',
+    },
+
+    { type: "h2", text: "Shani transit 2026 dates in IST (Shani vakri and margi)" },
+    {
+      type: "p",
+      text: "Saturn entered sidereal Meena on 29–30 March 2025 (the exact night differs slightly between panchangs). In 2026 it does not change sign at all. Its only two big events are the retrograde (vakri) and direct (margi) stations:",
+    },
+    {
+      type: "table",
+      head: ["Event", "Date and time (IST, approx.)", "Saturn's position (Vedic / sidereal)"],
+      rows: [
+        ["Shani vakri (turns retrograde)", "Monday 27 July 2026, ~1:10 AM", "about 20°33′ Meena (Pisces)"],
+        ["Shani margi (turns direct)", "Friday 11 December 2026, ~5:05 AM", "about 13°44′ Meena (Pisces)"],
+        ["Shani enters Mesh (first time)", "around 3 June 2027", "0° Mesh (Aries)"],
+        ["Shani slips back into Meena (vakri)", "around 20–21 October 2027", "29° Meena"],
+        ["Shani enters Mesh again, for good", "around 23–24 February 2028", "0° Mesh"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Station times vary by a few minutes between panchangs (Prokerala, Drik Panchang and others use slightly different methods and locations), because Saturn barely moves near a station. What matters is the day. Note also that Western sites put Saturn in Aries already in 2026 — that is the tropical zodiac. In Vedic astrology, with the Lahiri ayanamsa of roughly 24°, Saturn is still in Meena, which is why Indian Sade Sati lists differ from Western horoscopes. You can read more about how we calculate positions on our [methodology page](/about-methodology).",
+    },
+
+    { type: "h2", text: "What is Shani Sade Sati? (Sade Sati kya hai)" },
+    {
+      type: "p",
+      text: "Saturn takes about 29.5 years to go around the zodiac, so it spends roughly two and a half years in each sign. Every 29–30 years it passes over the sign that holds your natal Moon. Because the Moon represents the mind (man), emotions, mother and everyday peace, Jyotish treats Saturn's slow pressure on the Moon — one sign before, on top of, and one sign after — as a long period of testing, responsibility and maturity. Most people experience Sade Sati two or three times in a lifetime.",
+    },
+    {
+      type: "p",
+      text: "Saturn is the karaka of karma, discipline, delay, hard work, servants and workers, old age, and justice. It is often called a teacher rather than a punisher: it rewards patience, honesty and effort, and it is harsh mainly on shortcuts. That is why the same Sade Sati can bring a promotion to one person and a difficult year to another.",
+    },
+
+    { type: "h2", text: "The three phases of Sade Sati (chadhti, madhya aur utarti)" },
+    { type: "h3", text: "Phase 1 – Rising (Saturn in 12th from Moon): Mesh rashi in 2026" },
+    {
+      type: "p",
+      text: "The 12th house rules expenses, sleep, foreign lands, hospitals and letting go. The first phase commonly shows up as rising kharcha, disturbed sleep, travel or relocation, and a feeling that old structures are slowly loosening. For Mesh rashi this phase began when Saturn entered Meena in March 2025.",
+    },
+    { type: "h3", text: "Phase 2 – Peak (Saturn over the Moon): Meen rashi in 2026" },
+    {
+      type: "p",
+      text: "This is the phase people fear most, because Saturn sits directly on the Moon. It tends to bring heavier responsibilities, emotional pressure, health awareness and slow results — but also serious, lasting progress for those who work steadily. For Meen rashi the Sade Sati began in January 2023, when Saturn entered Kumbh, and the peak runs while Saturn is in Meena.",
+    },
+    { type: "h3", text: "Phase 3 – Setting (Saturn in 2nd from Moon): Kumbh rashi in 2026" },
+    {
+      type: "p",
+      text: "The 2nd house rules family, savings, speech and food. The last phase usually concerns money discipline, family duties and the way you speak. Kumbh rashi has been in Sade Sati since January 2020 and is now in its final stretch, which ends only when Saturn settles in Mesh in February 2028.",
+    },
+
+    { type: "h2", text: "Rashi-wise effects of Sade Sati and Dhaiya in 2026" },
+    {
+      type: "p",
+      text: "These are classical gochar (transit) tendencies based on your Moon sign alone. Your own birth chart — Saturn's natal strength, your Lagna and your running dasha — decides how strongly you feel them.",
+    },
+    { type: "h3", text: "Mesh (Aries) – Sade Sati first phase" },
+    {
+      type: "ul",
+      items: [
+        "Expenses, especially on family, health or travel, can rise — make a monthly budget and keep an emergency fund.",
+        "Sleep and stress need care; avoid late-night overwork.",
+        "Good time for long-term planning, foreign-related work and clearing old debts.",
+        "Avoid impulsive job changes; build skills now so that 2027–2028 opportunities find you ready.",
+      ],
+    },
+    { type: "h3", text: "Meen (Pisces) – Sade Sati peak" },
+    {
+      type: "ul",
+      items: [
+        "Career may feel slow, with more work and less credit — consistency pays off later.",
+        "Keep a steady daily routine (dincharya), regular health check-ups and simple food.",
+        "Relationships may feel heavy; speak calmly and avoid ego clashes at home and office.",
+        "Natives whose natal Moon lies between about 13° and 21° Meena feel the 2026 retrograde most, because Saturn crosses that degree three times.",
+      ],
+    },
+    { type: "h3", text: "Kumbh (Aquarius) – Sade Sati last phase" },
+    {
+      type: "ul",
+      items: [
+        "Focus on savings, EMIs and family finances; avoid lending large sums.",
+        "Watch your speech — harsh words can create family disputes.",
+        "Many Kumbh natives feel relief compared with 2023–2025; the lessons now consolidate.",
+        "Good time to complete pending property or family matters patiently.",
+      ],
+    },
+    { type: "h3", text: "Simha (Leo) – Ashtama Shani (Dhaiya)" },
+    {
+      type: "p",
+      text: "Saturn in the 8th from the Moon is traditionally linked with sudden changes, hidden worries, health matters and in-laws' issues. Drive carefully, avoid risky investments and keep paperwork in order. This Dhaiya ends when Saturn leaves Meena for good in February 2028.",
+    },
+    { type: "h3", text: "Dhanu (Sagittarius) – Kantaka Shani (Dhaiya)" },
+    {
+      type: "p",
+      text: "Saturn in the 4th from the Moon touches home, mother, property, vehicles and peace of mind. Expect property or house-shifting decisions to take longer; take care of your mother's health and avoid buying property in a hurry.",
+    },
+    { type: "h3", text: "Other rashis" },
+    {
+      type: "p",
+      text: "For Vrishabh, Kark and Makar Moon signs, Saturn is in the 11th, 9th and 3rd houses respectively — the 3rd and 11th are classically among the best positions for Saturn, so 2026 can reward effort. Vrishabh should note, however, that its own Sade Sati begins when Saturn enters Mesh in June 2027.",
+    },
+
+    { type: "h2", text: "Shani vakri 2026: does the retrograde make Sade Sati worse?" },
+    {
+      type: "p",
+      text: "No phase changes because of the retrograde. From 27 July to 11 December 2026 Saturn moves back from about 20° to 13° of Meena, but it never leaves the sign, so nobody enters or exits Sade Sati. What changes is the tone: a vakri Saturn is traditionally read as a time of review — pending matters return, old responsibilities need finishing, and decisions taken earlier in the year are tested. Once Shani becomes margi on 11 December 2026, delayed work usually starts moving again. For a broader view of retrogrades, see our guide to [Budh vakri 2026](/blog/mercury-retrograde-2026).",
+    },
+
+    { type: "h2", text: "Sade Sati dates 2027–2028: when will it end? (Sade Sati kab khatam hogi)" },
+    {
+      type: "ul",
+      items: [
+        "Kumbh: Sade Sati effectively ends when Saturn settles in Mesh around 23–24 February 2028. The first exit in June 2027 is temporary, because Saturn returns to Meena from October 2027 to February 2028.",
+        "Meen: the peak ends in February 2028; Meen then enters the last phase while Saturn is in Mesh (until around 2030).",
+        "Mesh: the peak begins when Saturn enters Mesh in June 2027, pauses during the October 2027–February 2028 dip, and resumes from February 2028.",
+        "Vrishabh: Sade Sati begins with Saturn's entry into Mesh in June 2027, and for good from February 2028.",
+        "Simha and Dhanu: Dhaiya ends in February 2028; Kark (Ashtama) and Makar (Kantaka) begin Dhaiya when Saturn enters Mesh.",
+      ],
+    },
+
+    { type: "h2", text: "Shani Sade Sati remedies (Shani ke upay) that are simple and free" },
+    {
+      type: "p",
+      text: "Classical texts and Indian tradition suggest many upay for Saturn. Most effective ones cost little or nothing and are really about the qualities Saturn values — discipline, humility and service. Nobody needs to spend thousands on pujas out of fear.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Recite the Hanuman Chalisa, especially on Tuesdays and Saturdays; Hanuman ji is traditionally believed to protect devotees from Shani's troubles.",
+        'Chant the Shani mantra "Om Sham Shanaishcharaya Namah" 108 times on Saturdays, or the Shani beej mantra "Om Praam Preem Praum Sah Shanaye Namah".',
+        "On Saturdays, light a sarson (mustard) oil diya under a peepal tree or at a Shani temple.",
+        "Donate black til, urad dal, mustard oil, blankets or shoes to the needy, labourers or elderly people — service to workers is Saturn's favourite remedy.",
+        "Be honest at work, respect elders and staff, and avoid alcohol, lies and shortcuts during Sade Sati.",
+        "Keep a fixed routine: wake up early, exercise, and finish pending work — Saturn rewards consistency.",
+        "Gemstones such as neelam (blue sapphire) should never be worn just because of Sade Sati; wear them only after a full chart analysis.",
+      ],
+    },
+
+    { type: "h2", text: "How to check your own Sade Sati online free" },
+    {
+      type: "p",
+      text: 'Sade Sati depends only on your natal Moon sign, but how it feels depends on your whole chart. On Astrojanta you can: (1) create your [free Vedic kundli](/kundli) with date, time and place of birth; (2) see your Moon sign, nakshatra, Saturn\'s natal position and your running Vimshottari dasha; and (3) ask the [AI astrologer](/ai-astrologer) in Hindi or English, for example "Meri Sade Sati kab khatam hogi?" or "Shani dasha aur Sade Sati ek saath chal rahi hai, kya karun?". If you are planning marriage during Sade Sati, also check [kundli milan](/matching) and your [Manglik status](/manglik) — Sade Sati alone is not a reason to delay a shaadi.',
+    },
+
+    { type: "h2", text: "Common Sade Sati myths" },
+    {
+      type: "ul",
+      items: [
+        "Myth: Sade Sati always brings bad luck. Fact: many people get promotions, marriage or property during Sade Sati; it brings responsibility, not only loss.",
+        "Myth: your naam rashi decides Sade Sati. Fact: it is your Chandra rashi from the birth chart.",
+        "Myth: you must do an expensive Shani puja. Fact: classical remedies are simple — discipline, mantra, daan and service.",
+        "Myth: Sade Sati and Shani mahadasha are the same. Fact: Sade Sati is a transit; the mahadasha is a 19-year Vimshottari period in your own chart.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Related reading: [Manglik dosha meaning](/blog/manglik-dosha-meaning), [free AI kundli online](/blog/free-ai-kundli-online) and [AI astrologer free in Hindi](/blog/ai-astrologer-free-hindi).",
+    },
+  ],
+  faqs: [
+    {
+      q: "Which rashis have Shani Sade Sati in 2026?",
+      a: "Kumbh (Aquarius) in the last phase, Meen (Pisces) in the peak phase and Mesh (Aries) in the first phase, because Saturn stays in sidereal Meena for all of 2026.",
+    },
+    {
+      q: "Which rashis have Shani Dhaiya in 2026?",
+      a: "Simha (Leo) has Ashtama Shani (Saturn in the 8th) and Dhanu (Sagittarius) has Kantaka Shani (Saturn in the 4th) from the Moon sign.",
+    },
+    {
+      q: "When is Shani vakri and margi in 2026?",
+      a: "Saturn turns retrograde on 27 July 2026 (around 1 AM IST) and turns direct on 11 December 2026 (around 5 AM IST), staying in Meena throughout.",
+    },
+    {
+      q: "Does Saturn change sign in 2026?",
+      a: "No. Saturn entered Meena in March 2025 and first enters Mesh around 3 June 2027, so no rashi starts or ends Sade Sati in 2026.",
+    },
+    {
+      q: "When will Kumbh rashi Sade Sati end?",
+      a: "It effectively ends when Saturn settles in Mesh around 23–24 February 2028. Saturn briefly enters Mesh in June 2027 but returns to Meena from October 2027.",
+    },
+    {
+      q: "When will Sade Sati start for Vrishabh (Taurus) rashi?",
+      a: "Vrishabh Sade Sati begins when Saturn enters Mesh around 3 June 2027, and continues for good from February 2028.",
+    },
+    {
+      q: "Is Sade Sati calculated from naam rashi or Moon sign?",
+      a: "From your Chandra rashi (Moon sign) in the birth chart. Your naam rashi can be different, so check your Moon sign from your date, time and place of birth.",
+    },
+    {
+      q: "What are the best remedies for Shani Sade Sati?",
+      a: "Hanuman Chalisa, the Shani mantra on Saturdays, a mustard oil diya, donating black til, urad or blankets to the needy, and honest, disciplined work. Avoid wearing neelam without a full chart analysis.",
+    },
+    {
+      q: "Can I get married during Sade Sati?",
+      a: "Yes. Sade Sati alone is not a reason to delay marriage. Look at kundli milan, the 7th house, and your running dasha rather than Sade Sati by itself.",
+    },
+    {
+      q: "Why do Western sites show Saturn in Aries in 2026?",
+      a: "They use the tropical zodiac. Vedic astrology uses the sidereal zodiac with the Lahiri ayanamsa (about 24°), so in Jyotish Saturn is still in Meena (Pisces).",
+    },
+  ],
+};
+
+export const POSTS: Post[] = [
+  shaniSadeSati2026,
+  aiAstrologerFreeHindi,
+  varnaKootaMeaning,
+  manglikDoshaMeaning,
+  kundliMilanOnlineFree,
+  askAstrologerFree,
+  aiKundliReader,
+  freeAiKundli,
+  mercuryRetrograde2026,
+];
 
 export function getPost(slug: string): Post | undefined {
   return POSTS.find((p) => p.slug === slug);
