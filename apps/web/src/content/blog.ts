@@ -1799,7 +1799,405 @@ const shaniSadeSati2026: Post = {
   ],
 };
 
+const rashifal2027: Post = {
+  slug: "rashifal-2027",
+  title: "Rashifal 2027: Varshik Rashifal for All 12 Rashis – Career, Love, Shaadi, Dhan & Upay (Hindi)",
+  h1: "Rashifal 2027 – Varshik Rashifal for All 12 Rashis: Career, Love, Shaadi, Dhan, Health and Upay",
+  description:
+    "Rashifal 2027 for all 12 rashis: Shani enters Mesh 3 Jun, Guru exalted in Kark 25 Jan–26 Jun, Rahu in Makar all year. Dates in IST, career, shaadi, dhan, Sade Sati 2027 and simple upay.",
+  keyword: "rashifal 2027",
+  author: "founder",
+  published: "2026-11-05",
+  updated: "2026-11-05",
+  intro:
+    "“Saal 2027 kaisa rahega?” — every November, millions of people in India start searching for their varshik rashifal. 2027 is a genuinely eventful year in Vedic astrology: Shani (Saturn) leaves Meena and enters Mesh for the first time in about 30 years, Guru (Jupiter) spends the first half of the year exalted in Kark, and Rahu–Ketu sit on the Makar–Kark axis for the whole year. This rashifal 2027 explains each big gochar (transit) with dates in IST, then gives a practical horoscope 2027 for all 12 rashis — career and naukri, love and shaadi, dhan, health and one simple upay each. Everything is calculated in the sidereal zodiac with the Lahiri ayanamsa, the system used by Indian panchangs, and read from your Moon sign (Chandra rashi).",
+  body: [
+    { type: "h2", text: "Rashifal 2027 overview: saal 2027 kaisa rahega?" },
+    {
+      type: "p",
+      text: "A yearly horoscope is mainly about the slow planets, because they shape the whole year: Saturn (about 2.5 years per sign), Jupiter (about 1 year per sign) and Rahu–Ketu (about 18 months per sign pair). In 2027 all of them are active:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Shani gochar 2027: Saturn moves from Meena into Mesh on 3 June 2027, turns vakri in August, slips back into Meena on 20 October and becomes margi on 24 December. In Mesh, Saturn is neecha (debilitated), so June–October is a period of discipline, restructuring and hard work for many people.",
+        "Guru gochar 2027: Jupiter starts the year in Simha, moves back (vakri) into Kark on 25 January, where it is uchcha (exalted), returns to Simha on 26 June and enters Kanya on 26 November. The first half of 2027 is classically the best time of the year for education, children, marriage talks and new beginnings.",
+        "Rahu ketu gochar 2027: Rahu stays in Makar and Ketu in Kark for the whole of 2027 (they changed sign on 5 December 2026), so ambition in career and status (Rahu) and detachment around home and emotions (Ketu) are background themes all year.",
+        "Mangal vakri 2027: Mars is retrograde from 10 January to 1 April, moving from Simha back into Kark — so avoid hasty property, vehicle and legal decisions in the first quarter.",
+        "Surya grahan 2027: the total solar eclipse of 2 August 2027 is seen in India only as a partial eclipse in the late afternoon (roughly 3:45–5:50 PM IST, depending on the city). The three Chandra grahans of 2027 are penumbral and carry no sutak.",
+      ],
+    },
+    {
+      type: "p",
+      text: "In short, 2027 rewards patience and planning. The first half (Jupiter exalted) is better for starting things — shaadi, admission, a new job — and the second half (Saturn in Mesh, then retrograde) is better for finishing, consolidating and paying off debts.",
+    },
+
+    { type: "h2", text: "Gochar 2027 dates in IST (Shani, Guru, Rahu–Ketu, Mangal)" },
+    {
+      type: "table",
+      head: ["Planet event", "Date and time (IST, approx.)", "Sign (Vedic / sidereal, Lahiri)"],
+      rows: [
+        [
+          "Rahu enters Makar, Ketu enters Kark (mean node)",
+          "Saturday 5 December 2026, ~10:30 PM",
+          "Rahu in Makar, Ketu in Kark until June 2028",
+        ],
+        ["Guru (Jupiter) turns vakri", "Sunday 13 December 2026, ~6:00 AM", "about 2°47′ Simha"],
+        ["Mangal (Mars) turns vakri", "Sunday 10 January 2027, ~6:30 PM", "about 16°11′ Simha"],
+        ["Guru re-enters Kark (vakri, exalted)", "Monday 25 January 2027, ~1:00–1:30 AM", "Kark (Cancer)"],
+        ["Mangal re-enters Kark (vakri)", "Wednesday 10 March 2027, ~12:30 AM", "Kark (Cancer)"],
+        ["Mangal turns margi", "Thursday 1 April 2027, ~7:30 PM", "about 26°41′ Kark"],
+        ["Guru turns margi", "Tuesday 13 April 2027, ~8:00 AM", "about 22°45′ Kark"],
+        ["Shani enters Mesh (first time)", "Thursday 3 June 2027, ~5:30–6:30 AM", "Mesh (Aries) — Saturn neecha"],
+        ["Guru enters Simha again", "Saturday 26 June 2027, ~5:15–5:45 AM", "Simha (Leo)"],
+        ["Surya grahan (partial in India)", "Monday 2 August 2027, ~3:45–5:50 PM", "Sun and Moon in Kark"],
+        ["Shani turns vakri", "Monday 9 August 2027, ~11:00–11:30 PM", "about 3°38′ Mesh"],
+        ["Shani slips back into Meena (vakri)", "Wednesday 20 October 2027, ~6:00–7:15 AM", "Meena (Pisces)"],
+        ["Guru enters Kanya", "Friday 26 November 2027, ~6:45–7:15 PM", "Kanya (Virgo)"],
+        ["Shani turns margi", "Friday 24 December 2027, ~8:15–9:15 AM", "about 26°46′ Meena"],
+        ["Shani enters Mesh for good", "Wednesday 23 February 2028, ~7:30 PM", "Mesh (Aries)"],
+      ],
+    },
+    {
+      type: "p",
+      text: "These dates come from Astrojanta's own calculation engine (sidereal, Lahiri ayanamsa, mean Rahu–Ketu) and match Drik Panchang and Prokerala to the day. Times differ by a few minutes between panchangs — up to about 45 minutes for Jupiter and Saturn ingresses — because each uses a slightly different Lahiri value and method, so we give ranges. Two common confusions: Western (tropical) horoscopes already put Saturn in Aries in 2026 and Jupiter in Leo or Virgo at different dates, because the tropical zodiac is about 24° ahead of the Vedic one. And some panchangs use the true node for Rahu–Ketu, which changed sign on 25 November 2026 instead of 5 December. Read more on [how we calculate](/about-methodology).",
+    },
+
+    { type: "h2", text: "Meri rashi kaise pata kare? Moon sign vs sun sign" },
+    {
+      type: "p",
+      text: "Vedic rashifal is always read from your Chandra rashi — the sign the Moon occupied when you were born. It is not your Western sun sign (the “star sign” in magazines), and it is often not your naam rashi from the first letter of your name either. A person born on 20 April, for example, is “Taurus” in Western astrology but can have any of the 12 rashis as their Moon sign. If you read the wrong rashi, the whole year's prediction will be wrong.",
+    },
+    {
+      type: "p",
+      text: "Find your real Moon sign and nakshatra in a few seconds with the free [Moon sign finder](/moon-sign), or make your full [free kundli](/kundli) to also see your Lagna and running dasha. For a personal 2027 reading, ask the [AI astrologer](/ai-astrologer) in Hindi or English — for example “2027 mein meri naukri kab lagegi?” or “Shaadi ka yog kab hai?”. Our guide to the [free AI astrologer in Hindi](/blog/ai-astrologer-free-hindi) explains how to ask good questions.",
+    },
+
+    { type: "h2", text: "Rashifal 2027 for all 12 rashis (varshik rashifal)" },
+    {
+      type: "p",
+      text: "Each reading below is based on classical gochar rules from your Moon sign: Saturn and Rahu–Ketu give their best results in the 3rd, 6th and 11th houses, and Jupiter in the 2nd, 5th, 7th, 9th and 11th. Your own dasha and birth chart decide how strongly you feel these trends, so treat this as the weather of the year, not a fixed destiny.",
+    },
+
+    { type: "h3", text: "Mesh rashifal 2027 (Aries horoscope 2027)" },
+    {
+      type: "p",
+      text: "Saturn moves from your 12th house onto your Moon sign on 3 June (peak of Sade Sati until 20 October), Jupiter moves between your 5th and 4th houses, and Rahu is in your 10th all year.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Career / naukri: Rahu in the 10th brings ambition and sudden opportunities, especially in tech, sales and politics. June–October demands extra hard work with slow recognition — do not quit a job without a new offer in hand.",
+        "Love / shaadi: January and from late June (Jupiter in the 5th) are favourable for love and for families finalising rishtas. Avoid ego clashes when Saturn is over the Moon.",
+        "Dhan: steady income, but expenses on home, vehicle or a parent's needs rise; avoid large loans in the first quarter (Mars vakri).",
+        "Health: watch sleep, joints and stress from June. A fixed routine helps more than anything else.",
+        "Upay: recite the Hanuman Chalisa on Tuesdays and Saturdays.",
+      ],
+    },
+
+    { type: "h3", text: "Vrishabh rashifal 2027 (Taurus horoscope 2027)" },
+    {
+      type: "p",
+      text: "Saturn is in your 11th house (very good) until June, then your Sade Sati begins with Saturn in the 12th from 3 June to 20 October. Jupiter is in your 3rd and 4th houses; Rahu is in your 9th.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Career / naukri: January–May is one of your best windows in years for promotions, gains and networking — act early. From June, workload and travel rise.",
+        "Love / shaadi: family support is good; marriage talks can progress in the first half. Distance or travel may test relationships after June.",
+        "Dhan: strong gains early in the year; from June expenses rise (foreign travel, hospital, house). Build savings before then.",
+        "Health: guard sleep and eyes in the second half; avoid overwork.",
+        "Upay: donate white rice or milk on Fridays and respect elders and teachers (Rahu in the 9th).",
+      ],
+    },
+
+    { type: "h3", text: "Mithun rashifal 2027 (Gemini horoscope 2027)" },
+    {
+      type: "p",
+      text: "Saturn is in your 10th house, then 11th from June to October; Jupiter is in your 3rd and, from January to June, your 2nd (good for money). Rahu is in your 8th and Ketu in your 2nd.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Career / naukri: hard, responsible work in the 10th brings respect; June–October gives gains, salary increments and help from seniors.",
+        "Love / shaadi: February–June (Jupiter in the 2nd) is good for family events and engagement. Speak softly — Ketu in the 2nd can make words sound harsh.",
+        "Dhan: savings improve in the first half; avoid speculation, crypto and risky trading (Rahu in the 8th).",
+        "Health: Rahu in the 8th calls for care while driving and for regular check-ups; do not ignore small symptoms.",
+        "Upay: feed green grass to cows on Wednesdays and chant “Om Budhaya Namah”.",
+      ],
+    },
+
+    { type: "h3", text: "Kark rashifal 2027 (Cancer horoscope 2027)" },
+    {
+      type: "p",
+      text: "Jupiter is exalted over your Moon sign from 25 January to 26 June — the headline of your year — and then in your 2nd. Saturn is in your 9th, then 10th from June to October. Ketu sits on your Moon sign and Rahu in your 7th all year.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Career / naukri: respect and wisdom grow in the first half; June–October (Saturn in the 10th) brings heavy responsibility but real career building.",
+        "Love / shaadi: Jupiter on the Moon supports shaadi, but Rahu in the 7th asks you to check the rishta carefully — do proper [kundli milan](/matching) and verify facts before committing.",
+        "Dhan: from late June (Jupiter in the 2nd) savings and family wealth improve.",
+        "Health: Ketu on the Moon can bring restlessness or a feeling of detachment; meditation and sleep routine help.",
+        "Upay: offer water to Shivling on Mondays and chant “Om Namah Shivaya”.",
+      ],
+    },
+
+    { type: "h3", text: "Singh (Simha) rashifal 2027 (Leo horoscope 2027)" },
+    {
+      type: "p",
+      text: "Saturn is in your 8th (Ashtama Shani dhaiya) except from June to October, when it is in your 9th. Jupiter is in your sign, then in your 12th from January to June, and in your 2nd from 26 November. Rahu is in your 6th (good) and Ketu in your 12th.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Career / naukri: Rahu in the 6th helps you beat competition, crack exams and win disputes. June–October brings relief and support from seniors or father.",
+        "Love / shaadi: relationships are steady but need patience; good dates for shaadi come after late June when Jupiter returns to your sign.",
+        "Dhan: expenses (travel, hospital, spiritual) are high in the first half; from late November Jupiter in the 2nd brings better savings.",
+        "Health: Ashtama Shani calls for care with chronic issues and while driving; get insurance in place.",
+        "Upay: offer water to the Sun at sunrise and recite the Aditya Hridayam on Sundays.",
+      ],
+    },
+
+    { type: "h3", text: "Kanya rashifal 2027 (Virgo horoscope 2027)" },
+    {
+      type: "p",
+      text: "Jupiter is in your 11th house (gains) from January to June, then your 12th, and on your Moon sign from 26 November. Saturn is in your 7th, and in your 8th (Ashtama Shani) from June to October. Rahu is in your 5th and Ketu in your 11th.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Career / naukri: February–June is your best phase — gains, bonuses and new contacts. Use it; June–October can bring sudden changes at work.",
+        "Love / shaadi: Saturn in the 7th means serious relationships and possible marriage, often with someone mature; avoid quarrels with your spouse from June.",
+        "Dhan: strong income in the first half (Jupiter and Ketu in the 11th). Avoid share-market gambling (Rahu in the 5th).",
+        "Health: June–October needs extra care with digestion and old ailments.",
+        "Upay: donate green moong dal on Wednesdays and help students with books.",
+      ],
+    },
+
+    { type: "h3", text: "Tula rashifal 2027 (Libra horoscope 2027)" },
+    {
+      type: "p",
+      text: "Saturn in your 6th house (one of its best positions) for most of the year, Jupiter in your 11th and 10th, Ketu in your 10th and Rahu in your 4th. Tula is one of the stronger rashis of 2027.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Career / naukri: victory over competitors, good results in government exams and job interviews. June–October (Saturn in the 7th) is good for partnerships and business.",
+        "Love / shaadi: June–October brings serious marriage proposals; choose stability over glamour.",
+        "Dhan: Jupiter in the 11th (January and July–November) brings gains; loans get repaid. Avoid buying property in a hurry (Rahu in the 4th).",
+        "Health: generally good; Saturn in the 6th helps you recover from old illness.",
+        "Upay: offer white flowers to Maa Lakshmi on Fridays and keep your home clean and uncluttered.",
+      ],
+    },
+
+    { type: "h3", text: "Vrishchik rashifal 2027 (Scorpio horoscope 2027)" },
+    {
+      type: "p",
+      text: "Jupiter in your 10th, then your 9th (exalted, luck) from January to June, and your 11th from 26 November. Saturn is in your 5th, and in your 6th (good) from June to October. Rahu is in your 3rd (good) all year.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Career / naukri: one of the luckiest years for Vrishchik — courage (Rahu in the 3rd), luck (Jupiter in the 9th) and victory over rivals. Good for job change, promotion and starting a business.",
+        "Love / shaadi: love affairs get serious with Saturn in the 5th; the first half of the year is good for marriage with family blessings.",
+        "Dhan: income rises steadily; December 2027 (Jupiter in the 11th) is a strong finish.",
+        "Health: good energy; take care of your children's health and studies.",
+        "Upay: offer red flowers to Hanuman ji on Tuesdays and donate to a temple or gurukul.",
+      ],
+    },
+
+    { type: "h3", text: "Dhanu rashifal 2027 (Sagittarius horoscope 2027)" },
+    {
+      type: "p",
+      text: "Saturn is in your 4th (Kantaka Shani dhaiya) except June–October, when it is in your 5th. Jupiter, your rashi lord, is in your 9th, then your 8th from January to June, and your 10th from 26 November. Rahu is in your 2nd and Ketu in your 8th.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Career / naukri: the first half is slow with hidden obstacles; things open up from late June and especially from December (Jupiter in the 10th).",
+        "Love / shaadi: June–October improves romance; keep peace at home and with your mother.",
+        "Dhan: Rahu in the 2nd brings money from new sources but also loose spending — keep a written budget and avoid lending.",
+        "Health: watch chest, heart and stress in the first half; avoid fried food.",
+        "Upay: apply a tilak of haldi on Thursdays and feed yellow sweets (besan laddoo) to children.",
+      ],
+    },
+
+    { type: "h3", text: "Makar rashifal 2027 (Capricorn horoscope 2027)" },
+    {
+      type: "p",
+      text: "Saturn, your rashi lord, is in your 3rd house (excellent) for most of the year and in your 4th (Kantaka dhaiya) from June to October. Jupiter is in your 7th from January to June and your 9th from November. Rahu is on your Moon sign and Ketu in your 7th.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Career / naukri: courage, initiative and self-effort pay off — good for business, media and sales. Rahu on the Moon brings big ambitions; stay ethical.",
+        "Love / shaadi: February–June is a strong shaadi yog window with Jupiter (exalted) aspecting your Moon from the 7th. Ketu in the 7th asks you to stay emotionally present with your partner.",
+        "Dhan: steady progress; avoid property deals between June and October.",
+        "Health: Rahu on the Moon can cause overthinking and anxiety; reduce screen time at night.",
+        "Upay: light a sarson oil diya under a peepal tree on Saturdays.",
+      ],
+    },
+
+    { type: "h3", text: "Kumbh rashifal 2027 (Aquarius horoscope 2027)" },
+    {
+      type: "p",
+      text: "Your Sade Sati is in its last phase (Saturn in the 2nd), with a welcome break from 3 June to 20 October when Saturn is in your 3rd. Jupiter is in your 7th, then your 6th from January to June. Rahu is in your 12th and Ketu in your 6th.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Career / naukri: June–October is your breakthrough window — confidence returns and efforts finally show results. Ketu in the 6th helps you win over competitors.",
+        "Love / shaadi: January and July–November (Jupiter in the 7th) are good for marriage and partnerships.",
+        "Dhan: expenses on foreign travel or medical needs (Rahu in the 12th); control family spending and avoid standing guarantee for loans.",
+        "Health: sleep and eyes need care; a daily walk and pranayam help.",
+        "Upay: donate black til and blankets to the needy on Saturdays.",
+      ],
+    },
+
+    { type: "h3", text: "Meen rashifal 2027 (Pisces horoscope 2027)" },
+    {
+      type: "p",
+      text: "Saturn is on your Moon sign (peak of Sade Sati) except June–October, when it is in your 2nd. Jupiter, your rashi lord, is in your 6th, then exalted in your 5th from January to June, and in your 7th from 26 November. Rahu is in your 11th (gains) all year.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Career / naukri: despite Sade Sati, Rahu in the 11th brings gains and useful contacts; the first half is excellent for students and for exams.",
+        "Love / shaadi: February–June is good for love and for having children; December (Jupiter in the 7th) supports marriage.",
+        "Dhan: income grows; June–October asks for discipline with savings and family expenses.",
+        "Health: Saturn on the Moon brings fatigue and low mood at times — keep a routine and do not skip check-ups.",
+        "Upay: offer chana dal and haldi at a Vishnu temple on Thursdays and chant “Om Gram Greem Graum Sah Gurave Namah”.",
+      ],
+    },
+
+    { type: "h2", text: "2027 lucky rashi: kis rashi ki kismat chamkegi?" },
+    {
+      type: "p",
+      text: "Judged only by the classical gochar of Saturn, Jupiter and Rahu–Ketu, the most supportive Moon signs in 2027 are:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Vrishchik (Scorpio): Jupiter in the 9th and 11th, Rahu in the 3rd and Saturn in the 6th from June — luck, courage and victory together.",
+        "Tula (Libra): Saturn in the 6th for most of the year plus Jupiter in the 11th — competition, exams and gains.",
+        "Makar (Capricorn): Saturn in the 3rd and Jupiter aspecting from the 7th — effort and marriage yog.",
+        "Vrishabh (Taurus): only January–May, when Saturn is in the 11th; plan your big moves early.",
+        "Kanya (Virgo) and Meen (Pisces): a strong first half from Jupiter, with Ketu (Kanya) or Rahu (Meen) in the 11th.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Rashis that need more patience are Mesh, Simha and Dhanu (Sade Sati peak or Shani dhaiya), and Kark and Makar need care in relationships because of the Rahu–Ketu axis. Remember that a good dasha can outweigh a hard transit and vice versa — check yours in your [free kundli](/kundli).",
+    },
+
+    { type: "h2", text: "Sade Sati 2027 and Shani dhaiya 2027: kin rashiyon par?" },
+    {
+      type: "p",
+      text: "Because Saturn changes sign twice in 2027, the Sade Sati list changes during the year:",
+    },
+    {
+      type: "table",
+      head: ["Rashi", "1 Jan – 2 Jun and 20 Oct – 31 Dec 2027 (Shani in Meena)", "3 Jun – 19 Oct 2027 (Shani in Mesh)"],
+      rows: [
+        ["Kumbh", "Sade Sati – last phase", "Break (Saturn in 3rd)"],
+        ["Meen", "Sade Sati – peak", "Sade Sati – last phase"],
+        ["Mesh", "Sade Sati – first phase", "Sade Sati – peak"],
+        ["Vrishabh", "No Sade Sati", "Sade Sati begins (first phase)"],
+        ["Simha", "Ashtama Shani dhaiya", "No dhaiya"],
+        ["Kanya", "No dhaiya", "Ashtama Shani dhaiya"],
+        ["Dhanu", "Kantaka Shani dhaiya", "No dhaiya"],
+        ["Makar", "No dhaiya", "Kantaka Shani dhaiya"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Kumbh's Sade Sati and the dhaiya of Simha and Dhanu end for good when Saturn settles in Mesh around 23 February 2028. Vrishabh's Sade Sati resumes from then. For phase-wise effects, the full Shani vakri story and free remedies, read our detailed [Shani Sade Sati guide](/blog/shani-sade-sati-2026).",
+    },
+
+    { type: "h2", text: "Shaadi and vivah yog 2027" },
+    {
+      type: "p",
+      text: "Jupiter is the main karaka for marriage, so the strongest shaadi windows of 2027 are when Jupiter is exalted (25 January – 26 June) — especially for Kark, Makar, Meen and Vrishchik Moon signs. Many families also avoid fixing wedding muhurats while Jupiter is combust (asta), which is roughly 16 August to 15 September 2027, and during Kharmas (Sun in Dhanu, mid-December to mid-January). Before any rishta is finalised, match both kundlis with the free [kundli milan tool](/matching) and read our [guide to kundli milan online](/blog/kundli-milan-online-free). If Mangal dosha comes up, check your [Manglik status](/manglik) and read what [Manglik dosha really means](/blog/manglik-dosha-meaning) — it is often cancelled.",
+    },
+
+    { type: "h2", text: "Rashi anusar upay 2027 (simple remedies)" },
+    {
+      type: "p",
+      text: "The best upay are inexpensive and build the qualities each planet values. Choose one and follow it for at least 40 days:",
+    },
+    {
+      type: "ul",
+      items: [
+        "For Shani (Mesh, Vrishabh, Kumbh, Meen, Simha, Kanya, Dhanu, Makar): Hanuman Chalisa, a sarson oil diya on Saturdays, daan of black til, urad or blankets, and honest, disciplined work.",
+        "For Guru (all rashis, especially Simha and Dhanu): respect teachers and elders, donate books or chana dal on Thursdays, and avoid giving false advice.",
+        "For Rahu (Mesh, Mithun, Kark, Makar): avoid shortcuts and intoxicants, feed street dogs, and chant “Om Raam Rahave Namah” on Saturdays.",
+        "For Ketu (Kark, Makar, Dhanu): Ganesh puja on Wednesdays, meditation, and donating a blanket to a temple.",
+        "For Mangal vakri (January–March): avoid fights and rash driving, and recite the Hanuman Chalisa on Tuesdays.",
+        "Gemstones: never wear neelam, gomed or other strong stones only because of a yearly rashifal; get a full chart reading first.",
+      ],
+    },
+
+    { type: "h2", text: "Get your personal 2027 reading free" },
+    {
+      type: "p",
+      text: "A Moon-sign rashifal is a good starting point, but your personal 2027 depends on your Lagna, your planets' natal strength and your Vimshottari dasha. On Astrojanta you can make your [free Vedic kundli](/kundli), see exactly which house Saturn and Jupiter transit for you, and then ask the [AI astrologer](/ai-astrologer) your 2027 questions in Hindi or English — “2027 mein ghar kharidne ka yog hai?”, “Career change kab karun?”, or “Mera Shani mahadasha kaisa rahega?”. Related reading: [free AI kundli online](/blog/free-ai-kundli-online) and [Budh vakri 2026](/blog/mercury-retrograde-2026).",
+    },
+  ],
+  faqs: [
+    {
+      q: "Rashifal 2027: saal 2027 kaisa rahega?",
+      a: "2027 is a year of big transits. Jupiter is exalted in Kark from 25 January to 26 June, which supports marriage, education and new starts, and Saturn enters Mesh on 3 June, which brings discipline and hard work. The first half is better for beginnings, the second half for consolidation.",
+    },
+    {
+      q: "Shani kis rashi mein jayega 2027 mein?",
+      a: "Saturn enters Mesh (Aries) on 3 June 2027, turns vakri on 9 August, returns to Meena (Pisces) on 20 October and enters Mesh for good around 23 February 2028 (sidereal, Lahiri, IST).",
+    },
+    {
+      q: "Guru gochar 2027 kab hai?",
+      a: "Jupiter moves back into Kark on 25 January 2027 (retrograde, exalted), turns direct on 13 April, enters Simha on 26 June and enters Kanya on 26 November 2027.",
+    },
+    {
+      q: "Where are Rahu and Ketu in 2027?",
+      a: "Rahu is in Makar (Capricorn) and Ketu in Kark (Cancer) for the whole of 2027. They entered these signs on 5 December 2026 (mean node) and stay until around June 2028.",
+    },
+    {
+      q: "Which rashis have Sade Sati in 2027?",
+      a: "Kumbh, Meen and Mesh all year (with a break for Kumbh from 3 June to 19 October), and Vrishabh from 3 June to 19 October, when Saturn is in Mesh.",
+    },
+    {
+      q: "Which rashis have Shani dhaiya in 2027?",
+      a: "Simha and Dhanu while Saturn is in Meena (January–2 June and from 20 October), and Kanya and Makar while Saturn is in Mesh (3 June–19 October).",
+    },
+    {
+      q: "Which is the luckiest rashi in 2027?",
+      a: "By classical gochar rules, Vrishchik (Scorpio) is the most supported, followed by Tula, Makar and, in the first half, Vrishabh, Kanya and Meen. Your own dasha can change this.",
+    },
+    {
+      q: "2027 mein shaadi ke yog kis rashi ke hain?",
+      a: "The strongest marriage windows are 25 January – 26 June 2027, when Jupiter is exalted, especially for Kark, Makar, Meen and Vrishchik Moon signs. Always confirm with kundli milan.",
+    },
+    {
+      q: "Should I read rashifal by sun sign or moon sign?",
+      a: "Vedic rashifal is read from your Moon sign (Chandra rashi) in the sidereal zodiac. Your Western sun sign is usually different, so find your Moon sign first.",
+    },
+    {
+      q: "Meri rashi kaise pata kare?",
+      a: "Enter your date, time and place of birth in a free Moon sign or kundli tool. The sign the Moon was in at your birth is your rashi; it may differ from your naam rashi.",
+    },
+    {
+      q: "Is there a grahan in India in 2027?",
+      a: "Yes. The solar eclipse of 2 August 2027 is visible as a partial eclipse across India in the late afternoon (about 3:45–5:50 PM IST, depending on the city). The 2027 lunar eclipses are penumbral, with no sutak.",
+    },
+    {
+      q: "Rashifal kitna sahi hota hai?",
+      a: "A rashifal based only on the Moon sign shows general trends shared by about one-twelfth of people. For accurate timing you need your full birth chart, Lagna and dasha.",
+    },
+  ],
+};
+
 export const POSTS: Post[] = [
+  rashifal2027,
   shaniSadeSati2026,
   aiAstrologerFreeHindi,
   varnaKootaMeaning,
