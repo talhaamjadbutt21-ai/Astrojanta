@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Regenerate Astrojanta brand favicons from the Logo SVG mark (gold circle + sparkle star)."""
+"""Regenerate Astrojanta brand favicons from the Logo SVG mark (gold circle + sparkle star).
+
+All icons live in apps/web/public so they have stable, unhashed URLs. Icon <link> tags are declared
+once in apps/web/src/app/layout.tsx (metadata.icons) and the PWA list in manifest.ts — there are no
+file-based icon conventions under src/app, so Next.js does not emit duplicate tags.
+"""
 from __future__ import annotations
 
 import io
@@ -9,7 +14,6 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[1]
-APP = ROOT / "apps" / "web" / "src" / "app"
 PUBLIC = ROOT / "apps" / "web" / "public"
 
 NIGHT = (7, 6, 26, 255)
@@ -105,14 +109,12 @@ def write_ico(path: Path, sizes: list[int]) -> None:
 
 
 def main() -> None:
-    write_png(make_icon(96), APP / "icon.png")
-    write_png(make_icon(180), APP / "apple-icon.png")
     write_png(make_icon(180), PUBLIC / "apple-touch-icon.png")
     write_png(make_icon(48), PUBLIC / "icons" / "icon-48.png")
     write_png(make_icon(192), PUBLIC / "icons" / "icon-192.png")
     write_png(make_icon(512), PUBLIC / "icons" / "icon-512.png")
     write_png(make_icon(512), PUBLIC / "logo.png")
-    write_ico(APP / "favicon.ico", [16, 32, 48])
+    write_ico(PUBLIC / "favicon.ico", [16, 32, 48])
 
 
 if __name__ == "__main__":

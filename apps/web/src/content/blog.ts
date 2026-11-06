@@ -2196,7 +2196,250 @@ const rashifal2027: Post = {
   ],
 };
 
+const kaalSarpDosh: Post = {
+  slug: "kaal-sarp-dosh",
+  title: "Kaal Sarp Dosh: Types, Effects, Check in Kundli & Upay (Hindi Guide)",
+  h1: "Kaal Sarp Dosh – Kya Hota Hai, 12 Types, Effects, How to Check in Your Kundli and Upay",
+  description:
+    "Kaal Sarp Dosh kya hai? Learn what it means, how to check it in your kundli, the 12 types (Anant to Takshak and Sheshnag), lakshan, calm upay and puja in Ujjain or Trimbakeshwar — with an honest look at its origins.",
+  keyword: "kaal sarp dosh",
+  author: "founder",
+  published: "2026-11-06",
+  updated: "2026-11-06",
+  intro:
+    '"Pandit ji ne kaha meri kundli mein Kaal Sarp Dosh hai — ab kya hoga?" Few phrases in Indian astrology cause as much worry as this one. Kaal Sarp Dosh (also called Kaal Sarp Yog) is said to form when all seven planets sit on one side of the Rahu–Ketu axis in a birth chart. In this guide we explain, in plain language, what Kaal Sarp Dosh is, why it is said to happen, how to check it in your own kundli, the 12 commonly named types including Takshak, the effects people associate with it, and practical upay and nivaran — including what the well-known pujas at Trimbakeshwar and Ujjain actually involve. We also do something many articles skip: we separate what the classical texts say from later, popular practice, so you can make calm, informed decisions instead of fearful ones.',
+  body: [
+    { type: "h2", text: "Kaal Sarp Dosh kya hota hai? (What is Kaal Sarp Dosh)" },
+    {
+      type: "p",
+      text: "In a Vedic birth chart, Rahu and Ketu — the lunar nodes — are always exactly opposite each other, 180° apart. They split the zodiac into two halves. Kaal Sarp Dosh is the popular name for a chart in which the Sun, Moon, Mars, Mercury, Jupiter, Venus and Saturn all fall within one half, between Rahu and Ketu, leaving the other half empty of planets. The image is of a serpent: Rahu as the head (mukh), Ketu as the tail (poonch), with every planet caught inside its body.",
+    },
+    {
+      type: "p",
+      text: 'The word "Kaal" means time and also death, and "Sarp" means serpent. That frightening name is a large part of why the combination gets so much attention. Read literally, it simply describes a pattern: the planets\' energy is concentrated on one side of the nodal axis, so Rahu–Ketu themes — desire, obsession, sudden change, detachment, past karma — are said to colour the whole chart. Whether that is good or bad depends on everything else in the kundli.',
+    },
+    {
+      type: "p",
+      text: 'You will see it written as Kaal Sarp Dosh, Kalsarp Dosh, Kal Sarp Yog or Kaalsarp Yoga. They all mean the same thing. "Dosh" (flaw) is the term most people use and search for in India; "yog" (combination) is the more neutral word that many traditional astrologers prefer.',
+    },
+
+    { type: "h2", text: "Is Kaal Sarp Dosh in the classical texts? An honest answer" },
+    {
+      type: "p",
+      text: "This is worth knowing before you spend money or lose sleep. The idea of Kaal Sarp Dosh as described above — all planets hemmed between Rahu and Ketu — is not named that way in the core classical works such as Brihat Parashara Hora Shastra (BPHS), Brihat Jataka or Saravali. It became widespread through later writers, regional traditions and, especially, popular astrology of the 20th century.",
+    },
+    {
+      type: "p",
+      text: "Classical texts do describe a Sarpa yoga, but it is a different thing. Among the Nabhasa yogas, Sarpa yoga forms when malefic planets occupy three kendras (angular houses 1, 4, 7 and 10) and is contrasted with Mala yoga, where benefics occupy them. It has nothing to do with all planets being between the nodes. Some texts also mention Sarpa drekkanas and nakshatra-based snake associations, but none of these is the modern Kaal Sarp Dosh.",
+    },
+    {
+      type: "p",
+      text: "So astrologers genuinely disagree. Some treat Kaal Sarp Yog as an important, time-tested observation; others regard it as a later addition that is often exaggerated. Both views exist among serious practitioners. Our approach at Astrojanta, explained on our [methodology page](/about-methodology), is to show you the combination if it is present, explain the tradition behind it, and never treat it as a verdict on your life.",
+    },
+
+    { type: "h2", text: "Kaal Sarp Dosh kyu hota hai? (Why does it form)" },
+    {
+      type: "p",
+      text: "Astronomically, there is nothing mysterious about it. Rahu and Ketu move backwards through the zodiac, completing a cycle in about 18.6 years. The slower outer planets — Jupiter and Saturn — spend a year and two and a half years respectively in each sign. When Jupiter and Saturn happen to be on the same side of the nodal axis, the faster planets often join them for weeks or months at a time. During such stretches, everyone born on those days has the pattern. That is why Kaal Sarp Yog is quite common: it appears in a noticeable share of charts, and many successful, happy people have it.",
+    },
+    {
+      type: "p",
+      text: "Traditionally, the explanation offered is karmic: Rahu and Ketu represent unfinished karma from past lives, and a chart dominated by the nodal axis is said to carry a strong karmic theme. Some families also link it to ancestral issues (pitru dosh) or to harming snakes in a past life. These are beliefs within the tradition, not facts that can be proven, and you are free to weigh them as you see fit.",
+    },
+
+    { type: "h2", text: "How to check Kaal Sarp Dosh in your kundli" },
+    {
+      type: "p",
+      text: "You need an accurate birth chart, which means your correct date, time and place of birth. Then check these steps:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Find the houses (or exact degrees) of Rahu and Ketu. They will always be opposite each other — for example Rahu in the 4th house and Ketu in the 10th.",
+        "Look at the seven planets: Sun, Moon, Mars, Mercury, Jupiter, Venus and Saturn. Uranus, Neptune and Pluto are not used in Vedic astrology.",
+        "If all seven lie within the arc going from Rahu to Ketu (or all within the arc from Ketu to Rahu), the chart has Kaal Sarp Yog.",
+        "If even one planet is outside that half, most astrologers say there is no full Kaal Sarp Dosh. Some call it a partial (aanshik) Kaal Sarp Yog, but many traditions do not count it at all.",
+        "Many astrologers also check degrees: if a planet sits in the same sign as Rahu or Ketu but at a degree outside the arc, the pattern is considered broken.",
+      ],
+    },
+    {
+      type: "p",
+      text: "The quickest way to do this is a reliable chart. Generate your [free kundli](/kundli) with Lahiri ayanamsa calculations, look at where Rahu and Ketu sit, and count the planets on each side. If you want an explanation in Hindi or Hinglish, our [AI astrologer](/ai-astrologer) can read your chart and tell you whether the pattern is present and how other factors modify it.",
+    },
+    {
+      type: "p",
+      text: 'A word on any "kaal sarp dosh calculator" online: the check itself is simple and mechanical, so any accurate chart will give the same result. What a calculator cannot do is judge severity. That depends on the Lagna, the strength of the Lagna lord, aspects from benefics like Jupiter, the running dasha, and much more. Be careful of tools or people who announce the dosh and immediately ask for an expensive puja.',
+    },
+
+    { type: "h2", text: "Types of Kaal Sarp Dosh (12 prakar)" },
+    {
+      type: "p",
+      text: "In popular tradition, Kaal Sarp Yog is divided into 12 types based on the house Rahu occupies, counted from the Lagna (ascendant). Ketu is always in the seventh house from Rahu. The names come from the great serpents (nagas) of Indian mythology. These names and the themes linked to them come from later practice, not from BPHS, so treat them as a descriptive framework rather than scripture.",
+    },
+    {
+      type: "table",
+      head: ["Type", "Rahu – Ketu houses", "Life areas commonly linked"],
+      rows: [
+        ["Anant Kaal Sarp", "1st – 7th", "Self, health, confidence, partnerships"],
+        ["Kulik Kaal Sarp", "2nd – 8th", "Family, speech, savings, sudden events"],
+        ["Vasuki Kaal Sarp", "3rd – 9th", "Siblings, courage, luck, father"],
+        ["Shankhpal Kaal Sarp", "4th – 10th", "Mother, home, property, career"],
+        ["Padma Kaal Sarp", "5th – 11th", "Children, education, gains, friends"],
+        ["Mahapadma Kaal Sarp", "6th – 12th", "Health, debts, enemies, expenses"],
+        ["Takshak Kaal Sarp", "7th – 1st", "Marriage, partnerships, business"],
+        ["Karkotak Kaal Sarp", "8th – 2nd", "Longevity themes, inheritance, family finances"],
+        ["Shankhachud Kaal Sarp", "9th – 3rd", "Fortune, dharma, father, long travel"],
+        ["Ghatak Kaal Sarp", "10th – 4th", "Career, status, domestic peace"],
+        ["Vishdhar Kaal Sarp", "11th – 5th", "Gains, elder siblings, children"],
+        ["Sheshnag Kaal Sarp", "12th – 6th", "Expenses, sleep, foreign lands, disputes"],
+      ],
+    },
+    { type: "h3", text: "Takshak Kaal Sarp Dosh" },
+    {
+      type: "p",
+      text: "Takshak Kaal Sarp Dosh is one of the most searched types. It forms when Rahu is in the 7th house and Ketu in the 1st, with all planets on one side. Because the 7th house governs marriage and partnerships, it is commonly linked with delays in shaadi, misunderstandings with a spouse or business partner, or a tendency to choose unconventional partners. In practice, a 7th-house Rahu is judged together with Venus, the 7th lord and the Navamsa (D9) chart — if those are strong, marriage can be perfectly happy. Before drawing conclusions about Takshak, it is far more useful to look at proper [kundli matching](/matching) than at the yog alone.",
+    },
+    { type: "h3", text: "Udit and Anudit (ascending and descending)" },
+    {
+      type: "p",
+      text: 'Some astrologers also distinguish by direction. If the planets lie in the arc that Rahu is moving towards (Rahu leading them, the "mouth" of the serpent swallowing the chart), it is called Udit or ascending Kaal Sarp; if they lie behind Rahu, towards Ketu, some call it Anudit or descending, and a few traditions call this second version Kaal Amrit Yog and treat it as milder or even positive. Conventions differ between schools, so do not be alarmed if two astrologers label the same chart differently.',
+    },
+
+    { type: "h2", text: "Which Kaal Sarp Dosh is most dangerous?" },
+    {
+      type: "p",
+      text: 'This is one of the most common questions, and the honest answer is that no type is dangerous by name. Popular articles often single out Takshak (marriage), Ghatak (career and home), Sheshnag and Karkotak as the "most dangerous" because the houses involved — the 7th, 10th, 8th and 12th — deal with sensitive areas of life. But a 12-row table cannot tell you how your life will go.',
+    },
+    {
+      type: "p",
+      text: 'What actually changes the impact, according to the astrologers who take the yog seriously, is: whether Rahu and Ketu are conjunct or aspected by benefics, especially Jupiter; whether the Lagna and Lagna lord are strong; whether the Moon is afflicted; and whether you are running a Rahu or Ketu mahadasha or antardasha. A chart with a strong Lagna lord and a well-placed Jupiter is generally described as handling any Kaal Sarp Yog well. So instead of asking "which type is most dangerous", ask "how strong is the rest of my chart, and what dasha am I in?"',
+    },
+
+    { type: "h2", text: "Kaal Sarp Dosh ke lakshan and effects" },
+    {
+      type: "p",
+      text: "The effects associated with Kaal Sarp Dosh in popular astrology are broad, and it is important to read them calmly. Many of these experiences are part of ordinary human life and can have many causes. Astrologers who use the yog commonly mention:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Effort that seems to take longer than expected to pay off — success often described as coming after a struggle or later in life.",
+        "Sudden ups and downs in career or money, with periods of rapid progress followed by setbacks.",
+        "Delays or friction in marriage, depending on the houses involved.",
+        "Restlessness, anxiety or a sense of being held back, especially during Rahu or Ketu dasha.",
+        "Recurring dreams of snakes, water or falling, which some people report — though dreams are not a reliable diagnostic.",
+        "On the positive side: strong drive, unusual talents, resilience, and the ability to rise dramatically. Many famous and successful people have charts with this pattern.",
+      ],
+    },
+    {
+      type: "p",
+      text: "If you are going through a hard phase, please do not assume Kaal Sarp Dosh is the cause. It is often more helpful to check your current dasha and transits — for example, whether you are in [Shani Sade Sati](/blog/shani-sade-sati-2026) — and to take practical steps in parallel. For health, money or relationship problems, a doctor, financial adviser or counsellor should always come first; astrology can at best be a supportive lens.",
+    },
+
+    { type: "h2", text: "Kaal Sarp Dosh ke upay (remedies) and nivaran" },
+    {
+      type: "p",
+      text: "Remedies for Kaal Sarp Dosh range from simple daily practices to formal pujas. You do not need to spend large sums of money. Traditional, low-cost upay include:",
+    },
+    {
+      type: "ul",
+      items: [
+        'Chanting "Om Namah Shivaya" daily, or the Maha Mrityunjaya mantra, since Lord Shiva — who wears the serpent Vasuki — is considered the protector against Rahu–Ketu afflictions.',
+        "Offering water or milk on a Shivling on Mondays, especially during Shravan month and on Nag Panchami.",
+        'Reciting the Rahu mantra "Om Raam Rahave Namah" or the Ketu mantra "Om Kem Ketave Namah", 108 times, on Saturdays or Tuesdays as your tradition suggests.',
+        "Worshipping Lord Ganesha (for Ketu) and Goddess Durga (for Rahu), or reciting the Hanuman Chalisa.",
+        "Feeding birds, dogs or the needy, and donating to people who need it — many astrologers consider sincere seva the best remedy for any graha dosh.",
+        "Keeping a disciplined routine, avoiding intoxicants and shortcuts, and staying patient — traits that help with any Rahu-dominant period.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Avoid wearing gemstones like gomed (hessonite) or lehsunia (cat's eye) simply because someone mentioned Kaal Sarp Dosh. Rahu and Ketu stones can intensify the nodes, and should only be considered after a full chart analysis — many careful astrologers advise against them for this purpose.",
+    },
+
+    { type: "h2", text: "Kaal Sarp Dosh puja: Trimbakeshwar, Ujjain and others" },
+    {
+      type: "p",
+      text: "A Kaal Sarp Dosh nivaran puja is a formal Vedic ritual, usually involving Rahu–Ketu shanti, Nag puja with silver serpent idols, and offerings to Lord Shiva. It is performed by priests at temples, and many families choose it for peace of mind. The best-known places are:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Trimbakeshwar (near Nashik, Maharashtra) — a Jyotirlinga temple at the source of the Godavari, widely associated with Kaal Sarp shanti and Narayan Nagbali rituals.",
+        "Ujjain (Madhya Pradesh) — home of the Mahakaleshwar Jyotirlinga; Kaal Sarp Dosh pujas are commonly performed in the city, including near the Kshipra river and at Siddhavat.",
+        "Srikalahasti (Andhra Pradesh) — the Srikalahasteeswara temple is especially known for Rahu–Ketu puja in South India.",
+        "Many families also perform the puja at a local Shiva temple, which tradition considers equally valid when done with sincerity.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Pujas are often scheduled on Nag Panchami, Amavasya, Mahashivratri or during Shravan, and typically take a few hours. Costs vary widely, so ask for a clear breakdown in advance and only work with recognised temple priests. A puja is a personal, devotional choice — it is not compulsory, and nobody should pressure you into it with fear. Astrojanta does not sell pujas or take any commission from them.",
+    },
+
+    { type: "h2", text: "Kaal Sarp Dosh and marriage, Manglik and other doshas" },
+    {
+      type: "p",
+      text: "Kaal Sarp Dosh is often mentioned in the same breath as Manglik Dosha during rishta discussions. They are completely separate: Manglik Dosha is about Mars in certain houses, and you can check it with our free [Manglik calculator](/manglik) or read our guide to [Manglik dosha meaning](/blog/manglik-dosha-meaning). For marriage, Kaal Sarp Dosh is not part of the traditional Ashtakoota Guna Milan, and most astrologers do not treat it as a reason to reject a match on its own. A full [kundli milan](/matching) that looks at both charts, the 7th house and the dasha periods is far more meaningful.",
+    },
+
+    { type: "h2", text: "Does Kaal Sarp Dosh last for life?" },
+    {
+      type: "p",
+      text: "The pattern in your birth chart does not change, but astrologers who use it generally agree that its influence is not constant. It is said to be felt most during Rahu or Ketu mahadasha or antardasha, and during major Rahu–Ketu transits over natal planets. Several traditions also say its effects ease after a certain age — commonly cited as around 42 to 48 — although this varies between schools. Knowing your current dasha is therefore more useful than worrying about the yog in general. Your [free kundli](/kundli) shows your full Vimshottari dasha timeline, and you can find your Chandra rashi with the [Moon sign finder](/moon-sign).",
+    },
+
+    { type: "h2", text: "The bottom line" },
+    {
+      type: "p",
+      text: "Kaal Sarp Dosh is a popular, later-tradition combination in which all planets sit on one side of the Rahu–Ketu axis. It is common, it is not named that way in BPHS, and its effects — if you follow the tradition — depend heavily on the rest of the chart and your running dasha. Check it calmly in an accurate kundli, choose simple upay that bring you peace, treat any puja as a personal devotional choice, and keep putting in honest effort. If you would like a personalised explanation, ask our [AI astrologer](/ai-astrologer) in Hindi, Hinglish or English — it reads your actual chart rather than giving a one-size-fits-all verdict.",
+    },
+  ],
+  faqs: [
+    {
+      q: "Kaal Sarp Dosh kya hota hai?",
+      a: "Kaal Sarp Dosh is the popular name for a birth chart in which all seven planets, from the Sun to Saturn, lie on one side of the Rahu–Ketu axis. It is also called Kaal Sarp Yog.",
+    },
+    {
+      q: "Is Kaal Sarp Dosh mentioned in Brihat Parashara Hora Shastra?",
+      a: "Not under that name. BPHS describes a Nabhasa Sarpa yoga, which is about malefics in three kendras. The idea of all planets hemmed between Rahu and Ketu comes from later and popular tradition.",
+    },
+    {
+      q: "How can I check Kaal Sarp Dosh in my kundli?",
+      a: "Generate an accurate chart, note the houses or degrees of Rahu and Ketu, and see whether all seven planets fall within one half between them. If even one planet is outside, there is no full Kaal Sarp Dosh.",
+    },
+    {
+      q: "How many types of Kaal Sarp Dosh are there?",
+      a: "Popular tradition names 12 types by Rahu's house from the Lagna: Anant, Kulik, Vasuki, Shankhpal, Padma, Mahapadma, Takshak, Karkotak, Shankhachud, Ghatak, Vishdhar and Sheshnag.",
+    },
+    {
+      q: "Which Kaal Sarp Dosh is most dangerous?",
+      a: "No type is dangerous by name. Takshak, Ghatak, Karkotak and Sheshnag are often called the hardest because of the houses involved, but the real impact depends on the Lagna lord, Jupiter's influence and your running dasha.",
+    },
+    {
+      q: "What is Takshak Kaal Sarp Dosh?",
+      a: "It forms when Rahu is in the 7th house and Ketu in the 1st with all planets on one side. It is commonly linked to marriage and partnership themes, judged together with Venus, the 7th lord and the Navamsa.",
+    },
+    {
+      q: "What are the simple upay for Kaal Sarp Dosh?",
+      a: "Daily Om Namah Shivaya or the Maha Mrityunjaya mantra, water or milk on a Shivling on Mondays, Rahu and Ketu mantras, Hanuman Chalisa, and regular seva and donation to the needy.",
+    },
+    {
+      q: "Where is Kaal Sarp Dosh puja done?",
+      a: "The best-known places are Trimbakeshwar near Nashik, Ujjain in Madhya Pradesh and Srikalahasti in Andhra Pradesh. Many families also perform it at a local Shiva temple. A puja is optional, not compulsory.",
+    },
+    {
+      q: "Does Kaal Sarp Dosh affect marriage?",
+      a: "It is not part of Ashtakoota Guna Milan, and most astrologers do not reject a match because of it alone. A full kundli milan that studies the 7th house and dasha periods is far more reliable.",
+    },
+    {
+      q: "Does Kaal Sarp Dosh last for the whole life?",
+      a: "The pattern stays in the birth chart, but its influence is said to be strongest during Rahu or Ketu dasha and to ease with age. It is not a permanent sentence of bad luck.",
+    },
+  ],
+};
+
 export const POSTS: Post[] = [
+  kaalSarpDosh,
   rashifal2027,
   shaniSadeSati2026,
   aiAstrologerFreeHindi,
