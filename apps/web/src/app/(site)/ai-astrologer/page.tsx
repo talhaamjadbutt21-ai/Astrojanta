@@ -5,9 +5,9 @@ import { ButtonLink } from "@/components/ui/button";
 import { absoluteUrl, pageOpenGraph, SITE_NAME } from "@/lib/site";
 
 const PATH = "/ai-astrologer";
-const TITLE = "Free AI Astrologer & AI Jyotish Chat — AI Kundli in Hindi";
+const TITLE = "Free AI Astrologer in Hindi — AI Jyotish Chat on Your Kundli";
 const DESCRIPTION =
-  "Free AI jyotish chat that reads your real Kundli. Make your AI Kundli free, then ask about career, shaadi and dasha in Hindi, Hinglish or English — no gemstone upsells.";
+  "Ask a free AI astrologer in Hindi, Hinglish or English. It reads your real Janam Kundli (Lahiri) and answers on career, shaadi and dasha — no gemstone or puja upsells.";
 
 export const metadata: Metadata = {
   title: TITLE,
