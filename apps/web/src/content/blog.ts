@@ -2438,7 +2438,423 @@ const kaalSarpDosh: Post = {
   ],
 };
 
+const nadiDosha: Post = {
+  slug: "nadi-dosha",
+  title: "Nadi Dosha in Kundli Matching: Meaning, Types, Exceptions & Cancellation (Hindi Guide)",
+  h1: "Nadi Dosha – Kya Hota Hai, Adi/Madhya/Antya Nadi, Nakshatra Table, Cancellation and What to Check Before Shaadi",
+  description: "Nadi Dosha kya hai? Learn the meaning of Nadi Dosha in kundli matching, the 3 nadis with all 27 nakshatras, cancellation rules (parihar), same nadi marriage and calm, honest guidance.",
+  keyword: "nadi dosha",
+  author: "founder",
+  published: "2026-11-07",
+  updated: "2026-11-07",
+  intro: "\"Gun to 26 mil gaye, par Nadi mein zero hai — ab kya karein?\" In shaadi season, this is one of the most common worries in Indian families. Nadi Dosha is the single biggest deduction in kundli milan, and its traditional link with health and children makes it sound frightening. In this guide we explain what Nadi Dosha actually is, the three nadis — Adi, Madhya and Antya — with a complete, checked table of all 27 nakshatras, how to check it in your own kundli matching, the classical exceptions under which it is considered cancelled, and what a sensible family should really look at before deciding. No fear, no upsell — just the rules, and how to read them.",
+  body: [
+    {
+      type: "h2",
+      text: "Nadi Dosha kya hota hai? (What is Nadi Dosha)",
+    },
+    {
+      type: "p",
+      text: "In kundli milan, the bride's and groom's Moon nakshatras are compared through eight kootas, together called Ashtakoota Guna Milan. The kootas add up to 36 gun. Nadi is the eighth and heaviest of them: it carries 8 of the 36 points on its own. Every one of the 27 nakshatras belongs to one of three nadis — Adi, Madhya or Antya. If the two Moon nakshatras fall in different nadis, Nadi koota gives the full 8 points. If they fall in the same nadi, it gives 0. That zero is what people call Nadi Dosha (also written Nadi Dosh or Ek Nadi Dosha).",
+    },
+    {
+      type: "p",
+      text: "So, at its simplest, Nadi Dosha is not a mysterious curse. It is one line in a scoring table: same nadi, 0 out of 8. Because those 8 points are such a large slice of 36, a same-nadi pair can lose almost a quarter of the total in one go, which is why the result jumps out at families and pandits. If you are new to the whole gun milan system, our [kundli milan online free guide](/blog/kundli-milan-online-free) explains all eight kootas and what score is generally considered good.",
+    },
+    {
+      type: "p",
+      text: "One quick clarification, because the word causes confusion. In Ayurveda, nadi usually means the pulse (nadi pariksha) or the channels of the body, and in yoga it refers to subtle energy channels like ida and pingala. Nadi koota in gun milan is a different idea: it is a classification of the 27 nakshatras into three groups for marriage matching. It is not a pulse reading and does not test anyone's health.",
+    },
+    {
+      type: "p",
+      text: "Also note: there are \"Nadi astrology\" palm-leaf traditions in Tamil Nadu (Nadi jothidam). Those are unrelated to Nadi koota as well. When someone says \"kundli mein Nadi Dosha hai\", they always mean the eighth koota in Ashtakoota matching.",
+    },
+    {
+      type: "h2",
+      text: "Adi, Madhya aur Antya: the 3 nadis",
+    },
+    {
+      type: "p",
+      text: "The three nadis are named for beginning, middle and end — Adi (aadi, first), Madhya (middle) and Antya (last). In popular explanations they are linked with the three Ayurvedic doshas: Adi with Vata, Madhya with Pitta and Antya with Kapha. This is the commonly repeated mapping in Indian matching books and websites. It is best understood as a traditional symbolic association, not a medical test: having Adi nadi does not mean a person has a Vata body type, and two people with the same nadi are not \"medically incompatible\".",
+    },
+    {
+      type: "ul",
+      items: [
+        "Adi nadi (popularly linked with Vata): Ashwini, Ardra, Punarvasu, Uttara Phalguni, Hasta, Jyeshtha, Mula, Shatabhisha, Purva Bhadrapada.",
+        "Madhya nadi (popularly linked with Pitta): Bharani, Mrigashira, Pushya, Purva Phalguni, Chitra, Anuradha, Purva Ashadha, Dhanishta, Uttara Bhadrapada.",
+        "Antya nadi (popularly linked with Kapha): Krittika, Rohini, Ashlesha, Magha, Swati, Vishakha, Uttara Ashadha, Shravana, Revati.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Each nadi has exactly nine nakshatras. The pattern is easy to remember once you see it: going through the nakshatras in order, the nadis run Adi, Madhya, Antya, then reverse — Antya, Madhya, Adi — and keep zig-zagging. That is why Madhya always sits in the middle of each group of three.",
+    },
+    {
+      type: "h2",
+      text: "Nakshatra se Nadi kaise jaane: all 27 nakshatras table",
+    },
+    {
+      type: "p",
+      text: "Find your Moon nakshatra (janma nakshatra) in the table below. If you do not know it, generate your free [kundli](/kundli) with date, time and place of birth — the Moon nakshatra is shown there. This mapping is exactly the one Astrojanta's [kundli matching tool](/matching) uses, and it agrees with standard published Ashtakoota tables.",
+    },
+    {
+      type: "table",
+      head: [
+        "#",
+        "Nakshatra",
+        "Nadi",
+        "Moon sign (rashi)",
+      ],
+      rows: [
+        [
+          "1",
+          "Ashwini",
+          "Adi",
+          "Aries (Mesh)",
+        ],
+        [
+          "2",
+          "Bharani",
+          "Madhya",
+          "Aries (Mesh)",
+        ],
+        [
+          "3",
+          "Krittika",
+          "Antya",
+          "Aries / Taurus",
+        ],
+        [
+          "4",
+          "Rohini",
+          "Antya",
+          "Taurus (Vrishabh)",
+        ],
+        [
+          "5",
+          "Mrigashira",
+          "Madhya",
+          "Taurus / Gemini",
+        ],
+        [
+          "6",
+          "Ardra",
+          "Adi",
+          "Gemini (Mithun)",
+        ],
+        [
+          "7",
+          "Punarvasu",
+          "Adi",
+          "Gemini / Cancer",
+        ],
+        [
+          "8",
+          "Pushya",
+          "Madhya",
+          "Cancer (Kark)",
+        ],
+        [
+          "9",
+          "Ashlesha",
+          "Antya",
+          "Cancer (Kark)",
+        ],
+        [
+          "10",
+          "Magha",
+          "Antya",
+          "Leo (Simha)",
+        ],
+        [
+          "11",
+          "Purva Phalguni",
+          "Madhya",
+          "Leo (Simha)",
+        ],
+        [
+          "12",
+          "Uttara Phalguni",
+          "Adi",
+          "Leo / Virgo",
+        ],
+        [
+          "13",
+          "Hasta",
+          "Adi",
+          "Virgo (Kanya)",
+        ],
+        [
+          "14",
+          "Chitra",
+          "Madhya",
+          "Virgo / Libra",
+        ],
+        [
+          "15",
+          "Swati",
+          "Antya",
+          "Libra (Tula)",
+        ],
+        [
+          "16",
+          "Vishakha",
+          "Antya",
+          "Libra / Scorpio",
+        ],
+        [
+          "17",
+          "Anuradha",
+          "Madhya",
+          "Scorpio (Vrishchik)",
+        ],
+        [
+          "18",
+          "Jyeshtha",
+          "Adi",
+          "Scorpio (Vrishchik)",
+        ],
+        [
+          "19",
+          "Mula",
+          "Adi",
+          "Sagittarius (Dhanu)",
+        ],
+        [
+          "20",
+          "Purva Ashadha",
+          "Madhya",
+          "Sagittarius (Dhanu)",
+        ],
+        [
+          "21",
+          "Uttara Ashadha",
+          "Antya",
+          "Sagittarius / Capricorn",
+        ],
+        [
+          "22",
+          "Shravana",
+          "Antya",
+          "Capricorn (Makar)",
+        ],
+        [
+          "23",
+          "Dhanishta",
+          "Madhya",
+          "Capricorn / Aquarius",
+        ],
+        [
+          "24",
+          "Shatabhisha",
+          "Adi",
+          "Aquarius (Kumbh)",
+        ],
+        [
+          "25",
+          "Purva Bhadrapada",
+          "Adi",
+          "Aquarius / Pisces",
+        ],
+        [
+          "26",
+          "Uttara Bhadrapada",
+          "Madhya",
+          "Pisces (Meen)",
+        ],
+        [
+          "27",
+          "Revati",
+          "Antya",
+          "Pisces (Meen)",
+        ],
+      ],
+    },
+    {
+      type: "p",
+      text: "Where a nakshatra spans two signs (for example Krittika, which begins in Aries and ends in Taurus), the rashi depends on which pada the Moon was in. That detail matters for the cancellation rules below, because some exceptions depend on whether the Moon signs are the same or different.",
+    },
+    {
+      type: "h2",
+      text: "Kundli matching mein Nadi Dosha kaise check karein",
+    },
+    {
+      type: "p",
+      text: "You only need the two Moon nakshatras. The steps are simple:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Get both birth details — date, exact time and place of birth for the boy and the girl. Birth time matters, because the Moon moves about one nakshatra a day and can change nakshatra within hours.",
+        "Open the [free kundli matching tool](/matching) and enter both sets of details. It calculates each person's Moon sign and nakshatra and scores all eight kootas.",
+        "Look at the Nadi row. 8/8 means different nadis — no Nadi Dosha. 0/8 means same nadi, and the tool will flag Nadi dosha.",
+        "If Nadi shows 0, do not stop there. Note both nakshatras, both Moon signs and, if you can, both padas, then check the exceptions in the next section.",
+      ],
+    },
+    {
+      type: "p",
+      text: "How Astrojanta's tool handles it, honestly: the tool scores Nadi in the standard raw way — same nadi gives 0, different nadis give 8 — and shows a Nadi dosha caution. It does not automatically apply the classical cancellation rules. That is a deliberate, conservative choice, because different schools apply those exceptions differently. So if your result shows Nadi dosha, read the exceptions below and look at both full charts before drawing any conclusion. Our [methodology page](/about-methodology) explains how the calculations are done.",
+    },
+    {
+      type: "h2",
+      text: "Nadi Dosha cancellation: when is it considered cancelled? (Nadi Dosha parihar)",
+    },
+    {
+      type: "p",
+      text: "This is the part most families most need to know, and the part fear-based articles often bury. Classical matching tradition — the rules are commonly associated with Muhurta texts such as Muhurta Chintamani — gives clear exceptions where the same nadi is not treated as a dosha. The three most widely cited are:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Same Moon sign (rashi), different nakshatras. Example: both Moons in Taurus, one in Krittika and one in Rohini — both Antya nadi, but the dosha is commonly considered cancelled.",
+        "Same nakshatra, different Moon signs. This is possible only for nakshatras that span two signs, such as Krittika, Mrigashira, Punarvasu, Uttara Phalguni, Chitra, Vishakha, Uttara Ashadha, Dhanishta and Purva Bhadrapada. Example: one Moon in Krittika in Aries and the other in Krittika in Taurus.",
+        "Same nakshatra, different padas (charanas). Each nakshatra has four padas. When both Moons are in the same nakshatra but in different quarters, many astrologers consider Nadi Dosha cancelled.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Beyond these three, practice varies. Some traditions also reduce or set aside Nadi Dosha when the lords of the two Moon signs are the same planet or natural friends, or when other strong agreement exists between the charts. Some lineages list particular nakshatras for which a same-nadi pairing is treated more leniently, and some regional customs say Nadi koota matters most within particular communities. Others are stricter — for example, some do not accept the same-nakshatra-different-pada exception for every nakshatra. There is no single rulebook followed by every pandit in India.",
+    },
+    {
+      type: "p",
+      text: "Practically, that means two things. First, a 0 in Nadi is a reason to look closer, not a final verdict. Second, if you consult a family priest or astrologer, ask which exception they are applying and why. A calm, specific answer is a good sign; a vague answer followed by an expensive puja is not.",
+    },
+    {
+      type: "h2",
+      text: "Nadi Dosha ke effects: what people worry about, calmly explained",
+    },
+    {
+      type: "p",
+      text: "Traditionally, Nadi koota is linked with health, constitution and progeny (santaan). That is why, when Nadi Dosha shows up, relatives often say things like \"bachchon mein dikkat hogi\", \"health issues aayenge\" or \"shaadi nahi karni chahiye\". It helps to separate what the tradition says from what it does not.",
+    },
+    {
+      type: "ul",
+      items: [
+        "The tradition treats same nadi as a caution about harmony of constitution and about children. It is a classical concern, and it is reasonable to respect it as part of matching.",
+        "It does not prove anything about fertility, genetics or the health of future children. Kundli matching is not a medical test. If you have real health or fertility questions, the right person to ask is a doctor, and the same is true for every couple, matched or not.",
+        "It is one koota out of eight. Many couples with Nadi Dosha have long, happy marriages and healthy children; many couples with 8/8 in Nadi face difficulties. Astrology at its best describes tendencies, not guarantees.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Our view at Astrojanta is simple: a match should not be rejected on Nadi alone. Equally, Nadi Dosha should not be waved away without looking at the charts. Look at the exceptions, the overall score and the individual kundlis — then decide as a family, with the couple's own wishes at the centre.",
+    },
+    {
+      type: "h2",
+      text: "Same nadi marriage: what should you actually check?",
+    },
+    {
+      type: "p",
+      text: "If your match shows same nadi and no clear exception applies, here is what an experienced astrologer will usually look at before giving an opinion. You can see many of these yourself in a free [kundli](/kundli):",
+    },
+    {
+      type: "ul",
+      items: [
+        "Overall gun score. Nadi is 8 of 36. A pair with 26–28 gun even after losing Nadi is in a very different position from one at 14. See our [gun milan guide](/blog/kundli-milan-online-free) for score ranges.",
+        "The 7th house and its lord in each chart. The 7th house describes marriage and partnership; its strength and the planets aspecting it matter far more than one koota.",
+        "Venus (Shukra) and, for the bride, Jupiter (Guru) in traditional reading. These are the natural significators of marriage and the spouse.",
+        "The Navamsa (D9) chart. Many astrologers consider the D9 essential for marriage; a strong Navamsa can outweigh a weak koota score.",
+        "The 5th house, for children. Since Nadi is linked with progeny, a careful astrologer checks the 5th house and its lord in both charts rather than relying on Nadi alone.",
+        "Running dasha (Vimshottari) at and after marriage. Timing often explains more about early married life than matching scores.",
+        "Manglik status — checked separately (more on that below).",
+      ],
+    },
+    {
+      type: "p",
+      text: "If you want to talk through a specific result in plain language, you can ask our [AI astrologer](/ai-astrologer) to explain the full matching report and both charts. Treat it as an explanation, not a verdict, and involve a trusted family astrologer for the final view if that is your family's custom.",
+    },
+    {
+      type: "h2",
+      text: "Nadi aur baaki koots: Varna, Gana, Bhakoot and Manglik",
+    },
+    {
+      type: "p",
+      text: "Nadi sits alongside seven other kootas. Varna (1 point) looks at spiritual temperament and is explained in our [Varna Koota guide](/blog/varna-koota-meaning). Gana (6 points) compares the Deva, Manushya and Rakshasa nature of the two nakshatras. Bhakoot (7 points) compares the two Moon signs; a zero there is called Bhakoot Dosha, and it also has its own traditional exceptions. Nadi and Bhakoot together carry 15 of 36 points, which is why these two are the ones pandits mention most often.",
+    },
+    {
+      type: "p",
+      text: "Interestingly, the koots are linked: many astrologers say a strong Nadi score can ease a Bhakoot problem, and a same-rashi pairing (which affects Bhakoot) is also one of the main Nadi exceptions. This is another reason not to read any single koota in isolation.",
+    },
+    {
+      type: "p",
+      text: "Manglik Dosha is separate. It is not one of the eight Ashtakoota kootas; it comes from Mars's placement in each person's own chart. A match can have no Nadi Dosha and still need a Manglik check, or vice versa. You can check it with our free [Manglik tool](/manglik), and read the calm explanation in [Manglik Dosha meaning](/blog/manglik-dosha-meaning).",
+    },
+    {
+      type: "h2",
+      text: "Nadi Dosha upay: simple, optional notes",
+    },
+    {
+      type: "p",
+      text: "Because Nadi Dosha is so feared, it is also one of the most heavily marketed \"problems\" in online astrology. You do not need to buy anything because of a 0 in Nadi. If your family wants to observe a remedy, these are the traditional and low-cost options people commonly follow:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Check the exceptions first. Many \"Nadi Dosha\" cases are already considered cancelled under the rules above, and no remedy is needed at all.",
+        "Follow your own family or community tradition. Some families ask the family priest to perform a simple Nadi dosha shanti or a Maha Mrityunjaya jaap at home or in a local temple; others do nothing. Both are legitimate choices.",
+        "Daan (charity) and seva given with sincerity — food, clothing or help to people who need it — is the remedy most traditions agree on, and it costs only what you choose to give.",
+        "Prayer that is meaningful to you, such as the Maha Mrityunjaya mantra or regular worship together as a couple.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Be cautious of anyone who says a particular paid puja, a gemstone or a costly ritual is compulsory, or who uses fear about children to push a sale. A genuine astrologer will explain the exception rules and the whole chart before talking about remedies, and will accept that the decision is yours.",
+    },
+    {
+      type: "h2",
+      text: "Bottom line",
+    },
+    {
+      type: "p",
+      text: "Nadi Dosha simply means both Moon nakshatras fall in the same nadi, so Nadi koota scores 0 out of 8 in gun milan. It is taken seriously in Indian tradition because of its link with health and progeny, but it is one koota among eight, it has well-known cancellation rules, and it says nothing medical about any couple. Find both nakshatras, check the exceptions, look at the overall score, the 7th house, Venus, the Navamsa and the dasha — and do not reject a good rishta on Nadi alone. Start by running both charts through the [free kundli matching tool](/matching).",
+    },
+  ],
+  faqs: [
+    {
+      q: "Nadi Dosha kya hota hai?",
+      a: "Nadi Dosha is when the bride's and groom's Moon nakshatras fall in the same nadi — Adi, Madhya or Antya. Nadi koota then scores 0 out of 8 in Ashtakoota gun milan instead of the full 8 points.",
+    },
+    {
+      q: "How many points is Nadi in kundli matching?",
+      a: "Nadi is worth 8 of the 36 gun — the most of any koota. Different nadis give 8 points and the same nadi gives 0; there is no in-between score.",
+    },
+    {
+      q: "Which nakshatras are Adi, Madhya and Antya nadi?",
+      a: "Adi: Ashwini, Ardra, Punarvasu, Uttara Phalguni, Hasta, Jyeshtha, Mula, Shatabhisha, Purva Bhadrapada. Madhya: Bharani, Mrigashira, Pushya, Purva Phalguni, Chitra, Anuradha, Purva Ashadha, Dhanishta, Uttara Bhadrapada. Antya: Krittika, Rohini, Ashlesha, Magha, Swati, Vishakha, Uttara Ashadha, Shravana, Revati.",
+    },
+    {
+      q: "When is Nadi Dosha cancelled?",
+      a: "The commonly cited exceptions are: same Moon sign but different nakshatras; same nakshatra but different Moon signs; and same nakshatra but different padas. Some traditions also ease it when the Moon-sign lords are the same or friends. Schools differ, so check with the full charts.",
+    },
+    {
+      q: "Can we marry with same nadi?",
+      a: "Yes, many couples with the same nadi marry and live happily. A match should not be rejected on Nadi alone; look at the exceptions, the overall gun score and both full kundlis before deciding.",
+    },
+    {
+      q: "Does Nadi Dosha cause problems with children?",
+      a: "Tradition links Nadi koota with progeny, but kundli matching is not a medical test and cannot predict fertility or a child's health. For real health questions, consult a doctor.",
+    },
+    {
+      q: "Is Nadi in gun milan the same as nadi (pulse) in Ayurveda?",
+      a: "No. Ayurvedic nadi refers to the pulse or body channels. Nadi koota is a grouping of the 27 nakshatras into three classes for marriage matching. The Vata–Pitta–Kapha link is a popular symbolic mapping.",
+    },
+    {
+      q: "Does Astrojanta's matching tool apply Nadi Dosha cancellation?",
+      a: "No. The tool scores Nadi the standard raw way — same nadi is 0, different is 8 — and flags Nadi dosha. It does not auto-apply exceptions, because schools differ. Use the cancellation rules in this guide alongside your result.",
+    },
+    {
+      q: "Is Manglik Dosha part of Nadi or gun milan?",
+      a: "No. Manglik Dosha comes from Mars's placement in each person's own chart and is checked separately from the eight Ashtakoota kootas.",
+    },
+    {
+      q: "Is a puja compulsory for Nadi Dosha?",
+      a: "No. Many cases are already cancelled by the exception rules. If your family wishes, a simple shanti or Maha Mrityunjaya jaap through your family priest, or sincere daan, is traditional; no paid ritual is required.",
+    },
+  ],
+};
+
 export const POSTS: Post[] = [
+  nadiDosha,
   kaalSarpDosh,
   rashifal2027,
   shaniSadeSati2026,
