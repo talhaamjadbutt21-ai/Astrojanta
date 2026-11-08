@@ -2853,7 +2853,245 @@ const nadiDosha: Post = {
   ],
 };
 
+const vimshottariMahadasha: Post = {
+  slug: "vimshottari-mahadasha",
+  title: "Vimshottari Mahadasha: Meaning, Periods, Effects & How to Check in Kundli (Hindi Guide)",
+  h1: "Vimshottari Mahadasha – Mahadasha, Antardasha Kya Hai, 9 Grahon ke Saal, Order and How to Check Your Current Dasha",
+  description: "Mahadasha kya hai? Learn Vimshottari dasha meaning, the 120-year order and period of each graha, antardasha, how to check your current dasha in kundli, and calm notes on Shani, Rahu, Guru and Shukra mahadasha.",
+  keyword: "mahadasha",
+  author: "founder",
+  published: "2026-11-08",
+  updated: "2026-11-08",
+  intro: "\"Meri Shani ki mahadasha chal rahi hai — kya sab kharab hoga?\" \"Rahu ki dasha kab khatam hogi?\" Questions like these come up in almost every Indian family that looks at a kundli. Mahadasha is one of the most used — and most misunderstood — ideas in Vedic astrology. In this guide we explain, in plain language, what mahadasha, antardasha and pratyantardasha mean, how the 120-year Vimshottari system works, the standard order and length of each planet's period, how to find your own current dasha from your Moon nakshatra, and how to think calmly about the periods people worry about most: Shani, Rahu, Guru and Shukra. No fear, no gemstone upsell — just how the system works and how to read it sensibly.",
+  body: [
+    { type: "h2", text: "Mahadasha kya hota hai? (What is Mahadasha)" },
+    {
+      type: "p",
+      text: "In Jyotish, a dasha is a time period ruled by one graha. The idea is simple: your birth chart shows the promise — which houses are strong, which planets are well placed, which areas of life need more effort — and the dasha system shows when different parts of that promise tend to become active. Mahadasha (maha means big) is the main, long period. During, say, Jupiter mahadasha, Jupiter's condition in your chart — its sign, house, dignity, aspects and the houses it rules — becomes the main background theme for those years.",
+    },
+    {
+      type: "p",
+      text: "This is the most important point of the whole guide: a mahadasha is a timing period, not a life sentence. It does not mean \"Saturn's 19 years will be bad\" or \"Venus's 20 years will be lucky\". The same planet's period can feel completely different for two people, because what matters is how that planet sits in each person's own kundli. Dasha tells you whose chapter it is; the chart tells you what is written in that chapter.",
+    },
+    { type: "h3", text: "Antardasha aur Pratyantardasha" },
+    {
+      type: "p",
+      text: "Each mahadasha is divided into nine sub-periods called antardasha (also called bhukti). The first antardasha always belongs to the mahadasha lord itself, and the rest follow the same fixed order as the mahadashas. So Saturn mahadasha begins with Saturn–Saturn, then Saturn–Mercury, Saturn–Ketu, and so on. Astrologers usually read the two together: the mahadasha lord sets the broad theme, and the antardasha lord colours the next one to three years. When people say \"Shani mein Budh ki antardasha chal rahi hai\", this is what they mean.",
+    },
+    {
+      type: "p",
+      text: "Antardashas are divided again into pratyantardashas — shorter windows of weeks or months — and some astrologers go further into sookshma and prana dashas. These finer levels are extremely sensitive to the exact birth time; an error of a few minutes can shift them noticeably. For most practical reading, mahadasha plus antardasha is enough, and over-reading tiny sub-periods often creates more anxiety than insight.",
+    },
+    { type: "h2", text: "Vimshottari Dasha kya hai? The 120-year system" },
+    {
+      type: "p",
+      text: "Vimshottari means \"of one hundred and twenty\". In this system, the nine grahas — Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu and Ketu — share a full cycle of 120 years, each getting a fixed number of years. Classical texts such as Brihat Parashara Hora Shastra describe many dasha systems, but Vimshottari is the one given the most importance, and it is by far the most widely used in India today. Almost every kundli you get from a pandit, a panchang software or an app shows Vimshottari dasha by default.",
+    },
+    {
+      type: "p",
+      text: "The system is tied to the 27 nakshatras. Each nakshatra has a ruling planet, and the nine lords repeat three times around the zodiac. Your starting mahadasha is decided by the nakshatra in which the Moon was placed at your birth — your janma nakshatra.",
+    },
+    { type: "h2", text: "Mahadasha order aur har graha ke saal (Periods of each planet)" },
+    {
+      type: "p",
+      text: "The order of Vimshottari mahadashas is fixed and always runs in the same cycle: Ketu → Venus (Shukra) → Sun (Surya) → Moon (Chandra) → Mars (Mangal) → Rahu → Jupiter (Guru) → Saturn (Shani) → Mercury (Budh) → and back to Ketu. The standard lengths are below; they add up to exactly 120 years. These are the same values used in Astrojanta's chart engine.",
+    },
+    {
+      type: "table",
+      head: ["Order", "Graha", "Mahadasha years", "Nakshatras ruled"],
+      rows: [
+        ["1", "Ketu", "7", "Ashwini, Magha, Mula"],
+        ["2", "Venus (Shukra)", "20", "Bharani, Purva Phalguni, Purva Ashadha"],
+        ["3", "Sun (Surya)", "6", "Krittika, Uttara Phalguni, Uttara Ashadha"],
+        ["4", "Moon (Chandra)", "10", "Rohini, Hasta, Shravana"],
+        ["5", "Mars (Mangal)", "7", "Mrigashira, Chitra, Dhanishta"],
+        ["6", "Rahu", "18", "Ardra, Swati, Shatabhisha"],
+        ["7", "Jupiter (Guru)", "16", "Punarvasu, Vishakha, Purva Bhadrapada"],
+        ["8", "Saturn (Shani)", "19", "Pushya, Anuradha, Uttara Bhadrapada"],
+        ["9", "Mercury (Budh)", "17", "Ashlesha, Jyeshtha, Revati"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Because the full cycle is 120 years, nobody lives through all nine mahadashas from the start. Most people experience five to seven of them in a lifetime, and which ones depends entirely on where the sequence started at birth.",
+    },
+    { type: "h3", text: "Antardasha ki length kaise nikalte hain" },
+    {
+      type: "p",
+      text: "Antardasha length follows one simple formula: (mahadasha years × antardasha lord's years) ÷ 120. For example, inside Saturn's 19-year mahadasha, the Saturn–Saturn antardasha lasts 19 × 19 ÷ 120 ≈ 3 years, while Saturn–Sun lasts 19 × 6 ÷ 120 ≈ 11.4 months. Inside Venus mahadasha, Venus–Venus is 20 × 20 ÷ 120 ≈ 3 years 4 months. That is why some antardashas feel long and others pass quickly.",
+    },
+    { type: "h2", text: "Dasha balance: birth ke samay kaunsi dasha chal rahi thi" },
+    {
+      type: "p",
+      text: "Your first mahadasha is the lord of your Moon nakshatra — but you do not get its full length. Each nakshatra covers 13°20′ of the zodiac. If the Moon had already travelled through part of the nakshatra at birth, that same fraction of the first mahadasha is treated as already used up before you were born. What is left is called the dasha balance (dasha shesh), and it is usually printed on traditional janam patris as something like \"Balance of Venus dasha: 12 years 4 months 9 days\".",
+    },
+    {
+      type: "p",
+      text: "Example: suppose the Moon was in Rohini, ruled by the Moon, and had covered three-quarters of the nakshatra at birth. The Moon mahadasha is 10 years, so three-quarters (7.5 years) is counted as already passed and only about 2.5 years remain after birth. After that, Mars mahadasha (7 years) begins, then Rahu (18), then Jupiter (16), and so on in order.",
+    },
+    {
+      type: "p",
+      text: "This is also why the Moon's exact position matters. The Moon moves roughly 13° a day, so a two-hour error in birth time moves it about 1° — which can shift dasha dates by several months. For Ketu or Sun periods the effect is smaller in absolute terms; for Venus it is larger. If your birth time is approximate, treat dasha start and end dates as approximate too.",
+    },
+    { type: "h2", text: "Apni current Mahadasha kaise check karein (How to check in your kundli)" },
+    {
+      type: "ul",
+      items: [
+        "Step 1: Get your birth chart with an accurate date, time and place of birth. You can make a free one on Astrojanta's [kundli page](/kundli).",
+        "Step 2: Note your janma nakshatra (the Moon's nakshatra) and its lord. This tells you which mahadasha you were born in.",
+        "Step 3: Look at the dasha balance at birth, then add the following mahadashas in the fixed order using the years in the table above.",
+        "Step 4: Find which mahadasha today's date falls in, and inside it, which antardasha.",
+        "Step 5: Now read the dasha lord in your chart — its house, sign, dignity, the houses it rules, conjunctions and aspects. That is where the actual meaning comes from.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Doing steps 3 and 4 by hand is possible but tedious, and easy to get wrong by a year. Any good kundli software does it automatically, which brings us to what our own tool shows.",
+    },
+    { type: "h2", text: "Astrojanta ki kundli mein dasha kya dikhata hai (Honest note on our tool)" },
+    {
+      type: "p",
+      text: "When you generate a chart on the [free kundli page](/kundli), Astrojanta computes Vimshottari dasha from your Moon's exact longitude. It shows your current dasha as Mahadasha–Antardasha with the date the running antardasha ends, a timeline of all nine mahadashas with their start and end years (the first one starts before your birth, reflecting the balance), and the list of antardashas inside your current mahadasha with their start months. It uses the standard years in the table above, with antardashas split by the (maha × antar) ÷ 120 formula and a year counted as 365.2425 days.",
+    },
+    {
+      type: "p",
+      text: "What it does not show: it does not calculate pratyantardasha or finer sub-periods, and it does not offer other dasha systems such as Yogini or Ashtottari. It also does not print a \"good dasha / bad dasha\" verdict — the timeline is data, not a prediction. The underlying chart uses the sidereal zodiac with the Lahiri (Chitrapaksha) ayanamsa, planetary positions from the open-source Astronomy Engine ephemeris (not Swiss Ephemeris), mean Rahu and Ketu, and whole-sign houses. Because some software uses true nodes, a different ayanamsa or a 360-day dasha year, dates can differ by days to a few months between apps. The full approach is explained on our [methodology page](/about-methodology).",
+    },
+    {
+      type: "p",
+      text: "If you want to talk through your own dasha, the [AI astrologer](/ai-astrologer) reads the same calculated chart, including your running mahadasha–antardasha and the dasha timeline. It is instructed not to recalculate or invent dates, and to explain which houses and lords it is looking at so you can follow the reasoning. Treat its answers as a thoughtful explanation, not a guaranteed forecast.",
+    },
+    { type: "h2", text: "Dasha ka phal kaise padhein: the planet's condition matters most" },
+    {
+      type: "p",
+      text: "A common mistake is reading effects from the dasha name alone — \"Rahu means confusion, Jupiter means luck\". Traditional astrologers look at several things together before saying anything about a period:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Dignity: is the dasha lord exalted, in its own sign, in a friendly sign, or debilitated? Is it combust or retrograde?",
+        "Houses: which house does it occupy, and which houses does it rule from your Lagna? A planet ruling the 9th and 10th behaves very differently from one ruling the 6th and 8th.",
+        "Connections: conjunctions and aspects with other planets, and the relationship between the mahadasha and antardasha lords.",
+        "Navamsa and yogas: how the planet holds up in the D9 chart, and whether it is part of a yoga in your chart.",
+        "Gochar (transits): what major slow planets like Saturn and Jupiter are doing at the same time.",
+        "Your real life: age, choices, effort, health and circumstances. A dasha describes tendencies; it does not override how you live.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Many astrologers also note that the start of a new mahadasha (the dasha sandhi, or junction) can feel like a shift in priorities. That is a reasonable way to see it — chapters change — but it is not a danger zone to fear.",
+    },
+    { type: "h2", text: "Shani ki Mahadasha (Saturn Mahadasha, 19 years)" },
+    {
+      type: "p",
+      text: "Shani mahadasha is probably the most feared period in Indian homes, and mostly unfairly. Saturn is the planet of time, discipline, hard work, responsibility, service and patience. In a chart where Saturn is well placed — for example in its own signs Capricorn and Aquarius, exalted in Libra, or ruling good houses for your Lagna (Saturn is often considered especially helpful for Taurus and Libra ascendants) — Saturn mahadasha can bring steady career growth, property, authority and long-lasting results that come from sustained effort. When Saturn is weak or afflicted, the same period may ask for more patience, slower progress and extra responsibility. Either way, its lessons tend to reward consistency.",
+    },
+    { type: "h3", text: "Shani Mahadasha vs Sade Sati: same nahi hai" },
+    {
+      type: "p",
+      text: "People often mix these up. Shani mahadasha is a dasha — a 19-year timing period that comes from your Moon nakshatra and dasha sequence; some people never get it in their lifetime, others get it in childhood. Sade Sati is a transit — the roughly seven-and-a-half years when Saturn moves through the sign before your Moon sign, your Moon sign and the sign after it. Everyone goes through Sade Sati about every 30 years, regardless of dasha. You can be in Sade Sati without Shani mahadasha, in Shani mahadasha without Sade Sati, or occasionally both. We explain Sade Sati phases and the 2026 picture for each rashi in our [Shani Sade Sati 2026 guide](/blog/shani-sade-sati-2026).",
+    },
+    { type: "h2", text: "Rahu ki Mahadasha (18 years)" },
+    {
+      type: "p",
+      text: "Rahu is a shadow point — the Moon's north node — not a physical planet, and it gives results largely according to the sign it sits in, the lord of that sign and the planets it is connected with. Rahu is associated with ambition, foreign lands, technology, unconventional paths, sudden change and strong desire. That is why many people see big career moves, relocation abroad, new fields or rapid rises during Rahu periods. When it is afflicted, the same energy can show as restlessness, confusion or chasing too many things at once.",
+    },
+    {
+      type: "p",
+      text: "A balanced way to approach Rahu mahadasha is to use its ambition with clear priorities: check big financial decisions twice, avoid shortcuts, and keep routines that ground you. Ketu mahadasha (7 years), Rahu's counterpart, is often described as more inward — detachment, research, spirituality, letting go of what no longer fits. Rahu and Ketu are also the axis behind [Kaal Sarp Dosh](/blog/kaal-sarp-dosh); having that yoga does not make a Rahu or Ketu dasha automatically difficult.",
+    },
+    { type: "h2", text: "Guru ki Mahadasha (Jupiter Mahadasha, 16 years)" },
+    {
+      type: "p",
+      text: "Jupiter is the planet of wisdom, teachers, dharma, children, wealth and expansion, and its mahadasha is usually expected to be positive — growth in learning, marriage or family, respect and opportunities. Often it is. But Jupiter's results also depend on its condition: debilitated in Capricorn, combust, or ruling difficult houses for your Lagna, it may bring over-expansion, overconfidence or delayed promises. So even for Guru mahadasha, it is wiser to read the chart than to assume a golden period.",
+    },
+    { type: "h2", text: "Shukra ki Mahadasha (Venus Mahadasha, 20 years)" },
+    {
+      type: "p",
+      text: "Venus has the longest mahadasha — 20 years. It relates to relationships, marriage, comforts, vehicles, art, beauty and enjoyment. A well-placed Venus period often coincides with marriage, a better lifestyle, creative work or business in luxury and design fields. Where Venus is weak or afflicted, the theme may come up as over-spending or relationship lessons. Because it lasts two decades, its antardashas vary a lot, and reading the antardasha lord is especially useful here.",
+    },
+    { type: "h2", text: "Baaki mahadashas: Surya, Chandra, Mangal, Budh, Ketu" },
+    {
+      type: "ul",
+      items: [
+        "Surya (Sun), 6 years: authority, government, father, self-confidence and career visibility.",
+        "Chandra (Moon), 10 years: mind, emotions, mother, home, public and travel; often a sensitive, relationship-focused period.",
+        "Mangal (Mars), 7 years: energy, courage, property, siblings, sports and technical work; good for initiative, with a need to manage anger and haste.",
+        "Budh (Mercury), 17 years: education, communication, trade, writing, accounts and skills; often busy and mentally active.",
+        "Ketu, 7 years: detachment, spirituality, research and sudden shifts; a good time for depth and inner work.",
+      ],
+    },
+    {
+      type: "p",
+      text: "These short notes are general significations. They are starting points for understanding, not predictions for anyone's life.",
+    },
+    { type: "h2", text: "Other dasha systems: Yogini, Ashtottari and more" },
+    {
+      type: "p",
+      text: "Vimshottari is not the only dasha system. Yogini dasha uses a 36-year cycle and is popular with some North Indian astrologers as a second check. Ashtottari dasha (108 years) is used by some traditions under specific conditions. Jaimini astrology uses sign-based dashas like Chara dasha. Classical texts describe many more. Still, most Indian kundli apps and most family pandits use Vimshottari as the main system, and that is what this guide — and Astrojanta's chart — follows.",
+    },
+    { type: "h2", text: "Upay: kya mahadasha ke liye remedies zaroori hain?" },
+    {
+      type: "p",
+      text: "No remedy is compulsory. If you wish to do something traditional, keep it simple and low-cost: chanting the graha's mantra or a prayer of your own faith, fasting on the planet's weekday if your health permits, daan to people who genuinely need it, and service — Saturn especially is associated with honest work and helping elders and workers. Be cautious of anyone who says an expensive gemstone or a costly puja is the only way to \"survive\" a dasha. Gemstones in particular can be worn wrongly; most careful astrologers say they should not be prescribed from the dasha name alone.",
+    },
+    { type: "h2", text: "Important: dasha is a timing tool, not a decision maker" },
+    {
+      type: "p",
+      text: "Please do not turn down a job, reject a rishta, delay medical treatment or make a big financial decision only because of a dasha. Dashas can help you reflect on timing and themes, but real decisions need real information — the person, the offer, your health reports, your finances and advice from qualified professionals. Astrology works best as a reflective lens alongside common sense, never as a replacement for it.",
+    },
+    { type: "h2", text: "Bottom line" },
+    {
+      type: "p",
+      text: "Vimshottari mahadasha divides life into nine planetary chapters across a 120-year cycle, starting from the lord of your Moon nakshatra with a balance that depends on the Moon's exact position. Each mahadasha has nine antardashas, and the effects come from the planet's condition in your own chart — not from its name. Shani mahadasha is not Sade Sati, Rahu is not automatically bad and Guru is not automatically lucky. Start by seeing your own timeline on the [free kundli page](/kundli), then read the dasha lords in context, or ask the [AI astrologer](/ai-astrologer) to walk you through it.",
+    },
+  ],
+  faqs: [
+    {
+      q: "Mahadasha kya hota hai?",
+      a: "Mahadasha is the main planetary time period in Vedic astrology. In the Vimshottari system, each of the nine grahas rules a fixed number of years, and during its mahadasha that planet's condition in your chart becomes the main theme for that time.",
+    },
+    {
+      q: "Mahadasha aur antardasha mein kya fark hai?",
+      a: "Mahadasha is the long main period; antardasha is a sub-period inside it. Every mahadasha has nine antardashas, starting with its own lord and following the same fixed order. Astrologers read both together.",
+    },
+    {
+      q: "How many years is each mahadasha?",
+      a: "Ketu 7, Venus 20, Sun 6, Moon 10, Mars 7, Rahu 18, Jupiter 16, Saturn 19 and Mercury 17 years — a total of 120 years, in that order.",
+    },
+    {
+      q: "How do I know my current mahadasha?",
+      a: "Your first mahadasha is the lord of your Moon nakshatra, minus the portion already used at birth (the dasha balance). The following periods run in fixed order. The easiest way is to generate your kundli with accurate birth details — Astrojanta's free kundli shows your current mahadasha–antardasha and the full timeline.",
+    },
+    {
+      q: "Is Shani mahadasha always bad?",
+      a: "No. Saturn's results depend on its sign, house, dignity and the houses it rules in your chart. For many people Shani mahadasha brings steady career growth and lasting results from hard work.",
+    },
+    {
+      q: "Is Shani mahadasha the same as Sade Sati?",
+      a: "No. Shani mahadasha is a 19-year dasha period from your nakshatra sequence. Sade Sati is Saturn's roughly 7.5-year transit around your Moon sign that everyone experiences about every 30 years. They are separate and can overlap or not.",
+    },
+    {
+      q: "Rahu ki mahadasha kaisi hoti hai?",
+      a: "Rahu mahadasha (18 years) is often linked with ambition, foreign connections, technology and sudden change. Its actual results depend on Rahu's sign, its sign lord and planets connected to it. It is not automatically bad.",
+    },
+    {
+      q: "Why do different apps show different dasha dates?",
+      a: "Small differences in ayanamsa, true vs mean Rahu-Ketu, birth time and the length used for a dasha year (365.2425 days vs 360 days) can shift dates by days to months. Astrojanta uses Lahiri ayanamsa, mean nodes and a 365.2425-day year.",
+    },
+    {
+      q: "Does Astrojanta show pratyantardasha?",
+      a: "No. Astrojanta shows Vimshottari mahadashas and the antardashas within your current mahadasha, plus the end date of your running antardasha. It does not calculate pratyantardasha or other dasha systems like Yogini.",
+    },
+    {
+      q: "Should I wear a gemstone or do a puja for a bad mahadasha?",
+      a: "No remedy is compulsory. Simple options like mantra, prayer, daan and service are traditional and low-cost. Avoid wearing gemstones based only on the dasha name, and be wary of anyone using fear to sell an expensive ritual.",
+    },
+  ],
+};
+
 export const POSTS: Post[] = [
+  vimshottariMahadasha,
   nadiDosha,
   kaalSarpDosh,
   rashifal2027,
