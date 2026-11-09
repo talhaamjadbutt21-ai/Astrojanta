@@ -215,9 +215,9 @@ const freeAiKundli: Post = {
     "Make your Janam Kundli online free in a few seconds, understand the 12 houses, and read your chart with an AI astrologer in Hindi or English. Includes a Hindi guide (kundli kaise dekhe).",
   keyword: "ai kundli free",
   published: "2026-10-29",
-  updated: "2026-10-29",
+  updated: "2026-11-09",
   intro:
-    "A Janam Kundli is the starting point of every Vedic astrology reading, but most people get stuck after the chart appears: twelve boxes, planet abbreviations and numbers. This guide shows how to make your [free AI kundli](/kundli) online in a few seconds, what each part of the chart means, and how to ask an AI astrologer to explain it in plain English, Hindi or Hinglish.",
+    "A Janam Kundli is the starting point of every Vedic astrology reading, but most people get stuck after the chart appears: twelve boxes, planet abbreviations and numbers. This guide focuses on making an accurate chart: which birth details you need, the steps to follow, the mistakes that produce a wrong kundli, and how to ask an AI astrologer to explain the result in plain English, Hindi or Hinglish. If you already have a chart and want to learn to read it, start with our [AI kundli reader guide](/blog/ai-kundli-reader) instead.",
   body: [
     { type: "h2", text: "What is a Janam Kundli?" },
     {
@@ -395,12 +395,12 @@ const aiKundliReader: Post = {
   title: "AI Kundli Reader: Read Your Kundali Online Free (Houses, Planets & Lagna)",
   h1: "AI Kundli Reader: How to Read Your Kundali Online Free",
   description:
-    "Use a free AI kundli reader to understand your birth chart: the Lagna, 12 houses and 9 planets explained, how AI kundli analysis works, and why a kundli is not the same as kundalini.",
+    "Already have your kundli? Learn to read it step by step: the Lagna, 12 houses, 9 planets and dasha, plus how an AI kundli reader explains it. Also: kundli vs kundalini.",
   keyword: "kundalini reader ai",
   published: "2026-10-30",
-  updated: "2026-10-30",
+  updated: "2026-11-09",
   intro:
-    'Searching for a "kundalini reader AI" usually means one thing: you have a kundli (or want one) and you would like someone — or something — to explain it. This guide shows how to read your kundali step by step, what the Lagna, houses and planets actually mean, and how an [AI kundli reader](/kundli) turns a confusing chart into plain answers in English, Hindi or Hinglish. We will also clear up the common mix-up between kundli (a birth chart) and kundalini (a yoga term).',
+    'Searching for a "kundalini reader AI" usually means one thing: you have a kundli (or want one) and you would like someone — or something — to explain it. This guide shows how to read your kundali step by step, what the Lagna, houses and planets actually mean, and how an [AI kundli reader](/kundli) turns a confusing chart into plain answers in English, Hindi or Hinglish. We will also clear up the common mix-up between kundli (a birth chart) and kundalini (a yoga term). Don\'t have a chart yet? Make one first with our [free AI kundli guide](/blog/free-ai-kundli-online), then come back here to read it.',
   body: [
     { type: "h2", text: "Kundli, kundali, kundalini — which one are you looking for?" },
     {
@@ -496,7 +496,7 @@ const aiKundliReader: Post = {
     },
     {
       type: "p",
-      text: 'This split matters. A general chatbot asked to "read my kundli" may invent planet positions; a proper kundli analysis AI only interprets numbers that were actually calculated. You can ask follow-ups like "Why is my 10th house strong?", "When does my Saturn period end?" or "Mera shaadi ka yog kab hai?" and get answers grounded in your own chart.',
+      text: 'This split matters. A general chatbot asked to "read my kundli" may invent planet positions; a proper kundli analysis AI only interprets numbers that were actually calculated. You can ask follow-ups like "Why is my 10th house strong?", "When does my Saturn period end?" or "Mera shaadi ka yog kab hai?" and get answers grounded in your own chart. If you have one specific question rather than a whole chart to go through, our guide to [asking an astrologer one free question](/blog/ask-astrologer-free) shows how to phrase it.',
     },
 
     { type: "h2", text: "How to read your kundli online free with AstroJanta" },
@@ -559,15 +559,15 @@ const aiKundliReader: Post = {
 
 const askAstrologerFree: Post = {
   slug: "ask-astrologer-free",
-  title: "Ask an Astrologer Free: Get Your Question Answered Instantly (AI Vedic Chat)",
+  title: "Ask an Astrologer Free: How to Phrase One Question for a Chart-Based Answer",
   h1: "Ask an Astrologer Free – Get One Question Answered Instantly",
   description:
-    "Ask an astrologer free online and get an instant answer based on your Vedic birth chart. How free astrology questions work, how to phrase one, sample questions on marriage, career and money, and the limits to know.",
+    "Have one question about marriage, career or money? How to phrase it, sample questions, how a free chart-based answer works, and the limits to know.",
   keyword: "ask astrologer free",
   published: "2026-10-31",
-  updated: "2026-10-31",
+  updated: "2026-11-09",
   intro:
-    "Most people who want to ask an astrologer free have just one burning question: When will I get married? Will this job change work out? Is this a good year for money? Traditionally you would book a paid consultation or wait days for a reply. Today you can ask the question online and get an instant answer grounded in your own Vedic birth chart. This guide explains how free astrology questions actually work, how to phrase your question so the answer is genuinely useful, sample questions for common topics, and what a free answer can and cannot tell you. When you are ready, you can [ask the AI astrologer](/ai-astrologer) directly.",
+    "Most people who want to ask an astrologer free have just one burning question: When will I get married? Will this job change work out? Is this a good year for money? Traditionally you would book a paid consultation or wait days for a reply. Today you can ask the question online and get an instant answer grounded in your own Vedic birth chart. This guide explains how free astrology questions actually work, how to phrase your question so the answer is genuinely useful, sample questions for common topics, and what a free answer can and cannot tell you. This page is about getting one good answer; for how AI astrologers work, how accurate they are and how they handle your privacy, see our [AI astrologer guide](/blog/ai-astrologer-free-hindi). When you are ready, you can [ask the AI astrologer](/ai-astrologer) directly.",
   body: [
     { type: "h2", text: "Can you really ask an astrologer for free?" },
     {
@@ -1293,14 +1293,14 @@ const varnaKootaMeaning: Post = {
 
 const aiAstrologerFreeHindi: Post = {
   slug: "ai-astrologer-free-hindi",
-  title: "AI Astrologer Free: Chat with an AI Jyotish in Hindi & English (2026 Guide)",
+  title: "AI Astrologer Free in Hindi & Hinglish: How It Works, Accuracy & Privacy",
   h1: "AI Astrologer Free – Chat with an AI Jyotish in Hindi, Hinglish and English (2026 Guide)",
   description:
-    "What an AI astrologer is, how it reads your Vedic kundli, AI vs pandit, what to ask about shaadi, career, Manglik and Sade Sati, Hindi chat examples, honest limits and how to choose a free AI astrologer in India.",
+    "How an AI astrologer reads your Vedic kundli, AI vs pandit, Hindi and Hinglish chat examples, honest accuracy limits, privacy, and how to choose a free AI astrologer in India.",
   keyword: "ai astrologer",
   author: "founder",
   published: "2026-11-04",
-  updated: "2026-11-04",
+  updated: "2026-11-09",
   intro:
     '"Meri shaadi kab hogi?" "Job change karun ya nahi?" "Kya main Manglik hoon?" For generations these questions went to the family pandit or a trusted jyotishi. Today many people in India type them into an AI astrologer instead, often late at night, in Hindi or Hinglish, straight from their phone. But not every AI astrologer works the same way. Some read your actual Vedic birth chart; others simply generate a confident-sounding paragraph. This guide explains what an AI astrologer really is, how a good one reads your kundli, how it compares with a human pandit, what to ask, how to use [Astrojanta\'s free AI astrologer](/ai-astrologer) step by step, and how to judge any AI astrology app before you trust it with your questions or your money.',
   body: [
@@ -1447,7 +1447,7 @@ const aiAstrologerFreeHindi: Post = {
     },
     {
       type: "p",
-      text: "Ready to try? [Ask the AI astrologer free](/ai-astrologer) — it takes about a minute to go from birth details to your first answer.",
+      text: "To write a better question, see how to [phrase one question for a chart-based answer](/blog/ask-astrologer-free). Ready to try? [Ask the AI astrologer free](/ai-astrologer) — it takes about a minute to go from birth details to your first answer.",
     },
 
     { type: "h2", text: "How accurate is an AI astrologer? An honest answer" },
@@ -1801,14 +1801,14 @@ const shaniSadeSati2026: Post = {
 
 const rashifal2027: Post = {
   slug: "rashifal-2027",
-  title: "Rashifal 2027: Varshik Rashifal for All 12 Rashis – Career, Love, Shaadi, Dhan & Upay (Hindi)",
+  title: "Rashifal 2027: Varshik Rashifal for 12 Rashis – Career, Shaadi, Dhan & Upay",
   h1: "Rashifal 2027 – Varshik Rashifal for All 12 Rashis: Career, Love, Shaadi, Dhan, Health and Upay",
   description:
     "Rashifal 2027 for all 12 rashis: Shani enters Mesh 3 Jun, Guru exalted in Kark 25 Jan–26 Jun, Rahu in Makar all year. Dates in IST, career, shaadi, dhan, Sade Sati 2027 and simple upay.",
   keyword: "rashifal 2027",
   author: "founder",
   published: "2026-11-05",
-  updated: "2026-11-05",
+  updated: "2026-11-09",
   intro:
     "“Saal 2027 kaisa rahega?” — every November, millions of people in India start searching for their varshik rashifal. 2027 is a genuinely eventful year in Vedic astrology: Shani (Saturn) leaves Meena and enters Mesh for the first time in about 30 years, Guru (Jupiter) spends the first half of the year exalted in Kark, and Rahu–Ketu sit on the Makar–Kark axis for the whole year. This rashifal 2027 explains each big gochar (transit) with dates in IST, then gives a practical horoscope 2027 for all 12 rashis — career and naukri, love and shaadi, dhan, health and one simple upay each. Everything is calculated in the sidereal zodiac with the Lahiri ayanamsa, the system used by Indian panchangs, and read from your Moon sign (Chandra rashi).",
   body: [
@@ -2198,17 +2198,21 @@ const rashifal2027: Post = {
 
 const kaalSarpDosh: Post = {
   slug: "kaal-sarp-dosh",
-  title: "Kaal Sarp Dosh: Types, Effects, Check in Kundli & Upay (Hindi Guide)",
+  title: "Kaal Sarp Dosh: 12 Types, How to Check in Kundli & Calm Upay",
   h1: "Kaal Sarp Dosh – Kya Hota Hai, 12 Types, Effects, How to Check in Your Kundli and Upay",
   description:
-    "Kaal Sarp Dosh kya hai? Learn what it means, how to check it in your kundli, the 12 types (Anant to Takshak and Sheshnag), lakshan, calm upay and puja in Ujjain or Trimbakeshwar — with an honest look at its origins.",
+    "Kaal Sarp Dosh kya hai? Simple English with Hinglish terms: how it forms on the Rahu–Ketu axis, how to check your kundli, the 12 types, lakshan, upay and what the Ujjain and Trimbakeshwar pujas involve.",
   keyword: "kaal sarp dosh",
   author: "founder",
   published: "2026-11-06",
-  updated: "2026-11-06",
+  updated: "2026-11-09",
   intro:
     '"Pandit ji ne kaha meri kundli mein Kaal Sarp Dosh hai — ab kya hoga?" Few phrases in Indian astrology cause as much worry as this one. Kaal Sarp Dosh (also called Kaal Sarp Yog) is said to form when all seven planets sit on one side of the Rahu–Ketu axis in a birth chart. In this guide we explain, in plain language, what Kaal Sarp Dosh is, why it is said to happen, how to check it in your own kundli, the 12 commonly named types including Takshak, the effects people associate with it, and practical upay and nivaran — including what the well-known pujas at Trimbakeshwar and Ujjain actually involve. We also do something many articles skip: we separate what the classical texts say from later, popular practice, so you can make calm, informed decisions instead of fearful ones.',
   body: [
+    {
+      type: "p",
+      text: "Written in plain English, with the Hinglish terms you'll hear from a pandit: yog, lakshan, upay, nivaran.",
+    },
     { type: "h2", text: "Kaal Sarp Dosh kya hota hai? (What is Kaal Sarp Dosh)" },
     {
       type: "p",
@@ -2440,15 +2444,20 @@ const kaalSarpDosh: Post = {
 
 const nadiDosha: Post = {
   slug: "nadi-dosha",
-  title: "Nadi Dosha in Kundli Matching: Meaning, Types, Exceptions & Cancellation (Hindi Guide)",
+  title: "Nadi Dosha in Kundli Milan: Meaning, 27 Nakshatra Table & Parihar",
   h1: "Nadi Dosha – Kya Hota Hai, Adi/Madhya/Antya Nadi, Nakshatra Table, Cancellation and What to Check Before Shaadi",
-  description: "Nadi Dosha kya hai? Learn the meaning of Nadi Dosha in kundli matching, the 3 nadis with all 27 nakshatras, cancellation rules (parihar), same nadi marriage and calm, honest guidance.",
+  description:
+    "Nadi Dosha kya hai? A simple English guide with Hinglish terms: same nadi = 0 of 8 gun, the Adi/Madhya/Antya nakshatra table, parihar and what to check before shaadi.",
   keyword: "nadi dosha",
   author: "founder",
   published: "2026-11-07",
-  updated: "2026-11-07",
+  updated: "2026-11-09",
   intro: "\"Gun to 26 mil gaye, par Nadi mein zero hai — ab kya karein?\" In shaadi season, this is one of the most common worries in Indian families. Nadi Dosha is the single biggest deduction in kundli milan, and its traditional link with health and children makes it sound frightening. In this guide we explain what Nadi Dosha actually is, the three nadis — Adi, Madhya and Antya — with a complete, checked table of all 27 nakshatras, how to check it in your own kundli matching, the classical exceptions under which it is considered cancelled, and what a sensible family should really look at before deciding. No fear, no upsell — just the rules, and how to read them.",
   body: [
+    {
+      type: "p",
+      text: "This guide is in simple English, using the Hinglish words families and pandits actually use: gun, nadi, parihar, shaadi.",
+    },
     {
       type: "h2",
       text: "Nadi Dosha kya hota hai? (What is Nadi Dosha)",
@@ -2855,15 +2864,20 @@ const nadiDosha: Post = {
 
 const vimshottariMahadasha: Post = {
   slug: "vimshottari-mahadasha",
-  title: "Vimshottari Mahadasha: Meaning, Periods, Effects & How to Check in Kundli (Hindi Guide)",
+  title: "Vimshottari Mahadasha: Order, Periods, Antardasha & How to Check",
   h1: "Vimshottari Mahadasha – Mahadasha, Antardasha Kya Hai, 9 Grahon ke Saal, Order and How to Check Your Current Dasha",
-  description: "Mahadasha kya hai? Learn Vimshottari dasha meaning, the 120-year order and period of each graha, antardasha, how to check your current dasha in kundli, and calm notes on Shani, Rahu, Guru and Shukra mahadasha.",
+  description:
+    "Mahadasha kya hai? A plain-English guide with Hinglish terms: the 120-year Vimshottari order, each graha's years, antardasha, how to find your current dasha in kundli, and calm notes on Shani, Rahu, Guru and Shukra.",
   keyword: "mahadasha",
   author: "founder",
   published: "2026-11-08",
-  updated: "2026-11-08",
+  updated: "2026-11-09",
   intro: "\"Meri Shani ki mahadasha chal rahi hai — kya sab kharab hoga?\" \"Rahu ki dasha kab khatam hogi?\" Questions like these come up in almost every Indian family that looks at a kundli. Mahadasha is one of the most used — and most misunderstood — ideas in Vedic astrology. In this guide we explain, in plain language, what mahadasha, antardasha and pratyantardasha mean, how the 120-year Vimshottari system works, the standard order and length of each planet's period, how to find your own current dasha from your Moon nakshatra, and how to think calmly about the periods people worry about most: Shani, Rahu, Guru and Shukra. No fear, no gemstone upsell — just how the system works and how to read it sensibly.",
   body: [
+    {
+      type: "p",
+      text: "This guide is in simple English, using the Hinglish words people actually use: dasha, mahadasha, antardasha, graha.",
+    },
     { type: "h2", text: "Mahadasha kya hota hai? (What is Mahadasha)" },
     {
       type: "p",
@@ -3092,15 +3106,20 @@ const vimshottariMahadasha: Post = {
 
 const bhakootDosha: Post = {
   slug: "bhakoot-dosha",
-  title: "Bhakoot Dosha in Kundli Matching: Meaning, Types, Effects & Cancellation (Hindi Guide)",
+  title: "Bhakoot Dosha in Kundli Milan: 2/12, 5/9, 6/8 Rashi Table & Parihar",
   h1: "Bhakoot Dosha – Kya Hota Hai, 2/12, 5/9 aur 6/8 Rashi, Moon Sign Table, Cancellation and What to Check Before Shaadi",
-  description: "Bhakoot Dosha kya hai? Learn how Bhakoot (Rashi koot) scores 7 of 36 gun, the 2/12, 5/9 and 6/8 Moon sign patterns with a full rashi table, cancellation rules (parihar) and calm, honest guidance.",
+  description:
+    "Bhakoot Dosha kya hai? Simple English with Hinglish terms: how Bhakoot (Rashi koot) scores 7 of 36 gun, the 2/12, 5/9 and 6/8 Moon sign table, parihar rules and calm guidance.",
   keyword: "bhakoot dosha",
   author: "founder",
   published: "2026-11-09",
   updated: "2026-11-09",
   intro: "\"Baaki sab theek hai, bas Bhakoot mein zero aa raha hai.\" After Nadi, this is the line Indian families hear most often from a pandit or a kundli milan website. Bhakoot carries 7 of the 36 gun, so a zero there pulls the total down sharply, and words like \"shadashtak\" and \"dwirdwadash\" sound far more frightening than they are. In this guide we explain what Bhakoot Dosha actually is, how it is calculated from the two Moon signs, a complete table of which rashi pairs score 0, the classical cancellation rules, what the traditional worries about health, money and children really mean, and exactly what Astrojanta's matching tool does and does not check. No fear, no upsell — just the rule, and how to read it sensibly.",
   body: [
+    {
+      type: "p",
+      text: "Written in plain English, with the Hinglish terms you'll hear in kundli milan: Bhakoot, rashi, shadashtak (6/8), dwirdwadash (2/12), parihar.",
+    },
     {
       type: "h2",
       text: "Bhakoot Dosha kya hota hai? (What is Bhakoot Dosha)",
