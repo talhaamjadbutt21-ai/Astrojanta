@@ -3090,7 +3090,460 @@ const vimshottariMahadasha: Post = {
   ],
 };
 
+const bhakootDosha: Post = {
+  slug: "bhakoot-dosha",
+  title: "Bhakoot Dosha in Kundli Matching: Meaning, Types, Effects & Cancellation (Hindi Guide)",
+  h1: "Bhakoot Dosha – Kya Hota Hai, 2/12, 5/9 aur 6/8 Rashi, Moon Sign Table, Cancellation and What to Check Before Shaadi",
+  description: "Bhakoot Dosha kya hai? Learn how Bhakoot (Rashi koot) scores 7 of 36 gun, the 2/12, 5/9 and 6/8 Moon sign patterns with a full rashi table, cancellation rules (parihar) and calm, honest guidance.",
+  keyword: "bhakoot dosha",
+  author: "founder",
+  published: "2026-11-09",
+  updated: "2026-11-09",
+  intro: "\"Baaki sab theek hai, bas Bhakoot mein zero aa raha hai.\" After Nadi, this is the line Indian families hear most often from a pandit or a kundli milan website. Bhakoot carries 7 of the 36 gun, so a zero there pulls the total down sharply, and words like \"shadashtak\" and \"dwirdwadash\" sound far more frightening than they are. In this guide we explain what Bhakoot Dosha actually is, how it is calculated from the two Moon signs, a complete table of which rashi pairs score 0, the classical cancellation rules, what the traditional worries about health, money and children really mean, and exactly what Astrojanta's matching tool does and does not check. No fear, no upsell — just the rule, and how to read it sensibly.",
+  body: [
+    {
+      type: "h2",
+      text: "Bhakoot Dosha kya hota hai? (What is Bhakoot Dosha)",
+    },
+    {
+      type: "p",
+      text: "Kundli milan in North India usually means Ashtakoota Guna Milan: eight kootas, worth 36 gun in total, calculated from the Moon sign (rashi) and Moon nakshatra of the boy and the girl. Bhakoot — also called Rashi koot or Rashikoot — is the seventh of these eight kootas and carries 7 points. Only Nadi, with 8 points, is worth more. Together the two make up 15 of the 36 gun, which is why pandits mention them first.",
+    },
+    {
+      type: "p",
+      text: "Bhakoot looks at one thing only: how far apart the two Moon signs are. Count from one person's Moon sign to the other's. If the signs are 2nd and 12th, 5th and 9th, or 6th and 8th from each other, Bhakoot scores 0. Every other distance scores the full 7. That zero is what people call Bhakoot Dosha (also written Bhakut Dosh or Bhakoot Dosh). There is no half score — it is all or nothing.",
+    },
+    {
+      type: "p",
+      text: "So Bhakoot Dosha is not a curse on a person and not something either partner \"has\" on their own. It describes the relationship between two Moon signs. The same girl can have Bhakoot Dosha with one boy and a full 7/7 with another. If you are new to gun milan, our [kundli milan online free guide](/blog/kundli-milan-online-free) explains all eight kootas and what total is generally considered good.",
+    },
+    {
+      type: "h2",
+      text: "Bhakoot ka score kaise nikalta hai: the 7 Moon sign distances",
+    },
+    {
+      type: "p",
+      text: "There are twelve rashis, so two Moon signs can stand in only seven kinds of relationship. Counting is inclusive: the sign you start from is 1. For example, from Aries (Mesh), Taurus (Vrishabh) is 2nd and Pisces (Meen) is 12th. Because the count is done both ways, each relationship is written as a pair of numbers.",
+    },
+    {
+      type: "table",
+      head: [
+        "Distance between Moon signs",
+        "Traditional name",
+        "Bhakoot score",
+        "Result",
+      ],
+      rows: [
+        [
+          "1/1 — same Moon sign",
+          "Same rashi",
+          "7",
+          "No dosha",
+        ],
+        [
+          "2/12 — next or previous sign",
+          "Dwirdwadash (dvi-dvadash)",
+          "0",
+          "Bhakoot Dosha",
+        ],
+        [
+          "3/11",
+          "Tritiya-ekadash",
+          "7",
+          "No dosha",
+        ],
+        [
+          "4/10",
+          "Chaturth-dasham",
+          "7",
+          "No dosha",
+        ],
+        [
+          "5/9",
+          "Navpancham (nav-pancham)",
+          "0",
+          "Bhakoot Dosha",
+        ],
+        [
+          "6/8",
+          "Shadashtak (shad-ashtak)",
+          "0",
+          "Bhakoot Dosha",
+        ],
+        [
+          "7/7 — opposite signs",
+          "Samsaptak",
+          "7",
+          "No dosha",
+        ],
+      ],
+    },
+    {
+      type: "p",
+      text: "This 0-or-7 rule is the standard one found in published Ashtakoota tables and on the major Indian matching websites, and it is exactly what Astrojanta's [kundli matching tool](/matching) uses. Notice two things that often surprise families. First, a 7/7 (opposite signs) pairing gets full marks — some people assume \"opposite\" must be bad, but in Bhakoot it is considered favourable. Second, the same Moon sign also gets full marks in Bhakoot, even though it can affect other kootas.",
+    },
+    {
+      type: "h3",
+      text: "Traditional meanings of the three dosha patterns",
+    },
+    {
+      type: "p",
+      text: "Each pattern has a traditional association in matching books. These are the ideas behind the rule, not predictions:",
+    },
+    {
+      type: "ul",
+      items: [
+        "2/12 (Dwirdwadash): traditionally linked with money matters and expenses in the household — the 2nd house is family wealth and the 12th is expenditure.",
+        "5/9 (Navpancham): traditionally linked with children and with differences of outlook, dharma or family values — the 5th is progeny and the 9th is fortune and belief.",
+        "6/8 (Shadashtak): traditionally treated as the most sensitive of the three, linked with disputes and health worries — the 6th is conflict and illness and the 8th is sudden change.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Different books describe these slightly differently, and some schools treat 5/9 more leniently than 6/8. What every school agrees on is the scoring: all three patterns give 0 out of 7.",
+    },
+    {
+      type: "h2",
+      text: "Rashi table: which Moon signs give Bhakoot Dosha?",
+    },
+    {
+      type: "p",
+      text: "Find your Moon sign (rashi) in the first column. The other three columns list the Moon signs that would give 0 in Bhakoot with yours. Any partner sign not listed in your row — including your own sign — gives the full 7 points. If you do not know your Moon sign, make a free [kundli](/kundli) with your date, time and place of birth; the Moon sign is shown there.",
+    },
+    {
+      type: "table",
+      head: [
+        "Your Moon sign",
+        "2/12 (Dwirdwadash)",
+        "5/9 (Navpancham)",
+        "6/8 (Shadashtak)",
+      ],
+      rows: [
+        [
+          "Aries (Mesh)",
+          "Taurus, Pisces",
+          "Leo, Sagittarius",
+          "Virgo, Scorpio",
+        ],
+        [
+          "Taurus (Vrishabh)",
+          "Gemini, Aries",
+          "Virgo, Capricorn",
+          "Libra, Sagittarius",
+        ],
+        [
+          "Gemini (Mithun)",
+          "Cancer, Taurus",
+          "Libra, Aquarius",
+          "Scorpio, Capricorn",
+        ],
+        [
+          "Cancer (Kark)",
+          "Leo, Gemini",
+          "Scorpio, Pisces",
+          "Sagittarius, Aquarius",
+        ],
+        [
+          "Leo (Simha)",
+          "Virgo, Cancer",
+          "Sagittarius, Aries",
+          "Capricorn, Pisces",
+        ],
+        [
+          "Virgo (Kanya)",
+          "Libra, Leo",
+          "Capricorn, Taurus",
+          "Aquarius, Aries",
+        ],
+        [
+          "Libra (Tula)",
+          "Scorpio, Virgo",
+          "Aquarius, Gemini",
+          "Pisces, Taurus",
+        ],
+        [
+          "Scorpio (Vrishchik)",
+          "Sagittarius, Libra",
+          "Pisces, Cancer",
+          "Aries, Gemini",
+        ],
+        [
+          "Sagittarius (Dhanu)",
+          "Capricorn, Scorpio",
+          "Aries, Leo",
+          "Taurus, Cancer",
+        ],
+        [
+          "Capricorn (Makar)",
+          "Aquarius, Sagittarius",
+          "Taurus, Virgo",
+          "Gemini, Leo",
+        ],
+        [
+          "Aquarius (Kumbh)",
+          "Pisces, Capricorn",
+          "Gemini, Libra",
+          "Cancer, Virgo",
+        ],
+        [
+          "Pisces (Meen)",
+          "Aries, Aquarius",
+          "Cancer, Scorpio",
+          "Leo, Libra",
+        ],
+      ],
+    },
+    {
+      type: "p",
+      text: "So for any Moon sign, six of the twelve possible partner signs give Bhakoot Dosha and six do not. In other words, if you picked two people at random, roughly half of all pairings would show Bhakoot Dosha before any exception is applied. That alone should tell you it is a very common result, not a rare red flag.",
+    },
+    {
+      type: "p",
+      text: "Bhakoot uses the Vedic (sidereal) Moon sign, not the Western \"sun sign\" from newspapers. Many people who say \"I am a Leo\" have a completely different Moon rashi. Always use the Moon sign from a proper kundli.",
+    },
+    {
+      type: "h2",
+      text: "Kundli matching mein Bhakoot Dosha kaise check karein",
+    },
+    {
+      type: "ul",
+      items: [
+        "Collect both sets of birth details — date, exact time and place of birth for the boy and the girl. The Moon changes sign roughly every two and a half days, so if either Moon is near the end or start of a sign, an hour's error in birth time can change the rashi and flip Bhakoot from 7 to 0 or back.",
+        "Open the [free kundli matching tool](/matching) and enter both charts. It calculates each person's Moon sign and nakshatra and scores all eight kootas.",
+        "Look at the Bhakoot row. 7/7 means no Bhakoot Dosha. 0/7 means the Moon signs are 2/12, 5/9 or 6/8 apart, and the tool shows a Bhakoot dosha caution.",
+        "If Bhakoot shows 0, note both Moon signs and their lords, then look at the Nadi row and the Graha Maitri row before reading the cancellation rules below.",
+      ],
+    },
+    {
+      type: "h2",
+      text: "Astrojanta ka matching tool Bhakoot ke liye kya karta hai (honestly)",
+    },
+    {
+      type: "p",
+      text: "Because families make real decisions with these numbers, here is exactly what our tool does, in plain words:",
+    },
+    {
+      type: "ul",
+      items: [
+        "It calculates each person's sidereal Moon sign using the open-source Astronomy Engine ephemeris with the Lahiri ayanamsa (not Swiss Ephemeris, though it follows the same Lahiri convention). Rahu and Ketu use the mean node, and charts use whole-sign houses.",
+        "It counts the distance between the two Moon signs and gives Bhakoot 0 if they are 2/12, 5/9 or 6/8 apart, and 7 for every other distance. Bhakoot depends only on the two Moon signs — not on nakshatra or pada.",
+        "When Bhakoot is 0, it shows a \"Bhakoot dosha\" note under Traditional cautions.",
+        "It does not apply any Bhakoot cancellation (parihar) rules. It does not check whether the sign lords are the same or friends to cancel the dosha, does not look at Navamsa (D9) lords, and does not add the 7 points back. The total out of 36 is always the raw total.",
+        "It does not check Manglik Dosha — that is a separate check on the [Manglik page](/manglik).",
+      ],
+    },
+    {
+      type: "p",
+      text: "This is the same conservative approach our [Nadi Dosha guide](/blog/nadi-dosha) describes: show the raw traditional score, flag the caution, and leave the exceptions to a human reading of both charts, because schools apply them differently. Our [methodology page](/about-methodology) explains how the underlying calculations are done.",
+    },
+    {
+      type: "p",
+      text: "One practical tip: the tool's Graha Maitri row compares the same two Moon-sign lords that the main Bhakoot exceptions use. If Graha Maitri shows 5/5, the two lords are either the same planet or natural friends of each other in the tool's friendship table. That is a useful hint, but still read the rules below rather than treating it as an automatic cancellation.",
+    },
+    {
+      type: "h2",
+      text: "Bhakoot Dosha cancellation: kab maana jata hai ki dosha nahi hai? (Bhakoot Dosha parihar)",
+    },
+    {
+      type: "p",
+      text: "Classical matching tradition — the rules are commonly associated with Muhurta texts such as Muhurta Chintamani — gives exceptions under which a 2/12, 5/9 or 6/8 pairing is not treated as harmful. The most widely cited are:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Same Moon-sign lord. If both Moon signs are ruled by the same planet, the dosha is commonly considered cancelled. Only three dosha pairs qualify: Aries–Scorpio (both Mars, 6/8), Taurus–Libra (both Venus, 6/8) and Capricorn–Aquarius (both Saturn, 2/12).",
+        "Friendly Moon-sign lords. If the two lords are natural friends of each other, many astrologers treat the dosha as cancelled or greatly reduced. Examples: Aries–Leo (Mars and Sun), Cancer–Leo (Moon and Sun), Leo–Sagittarius (Sun and Jupiter), Taurus–Virgo (Venus and Mercury), Libra–Aquarius (Venus and Saturn) and Pisces–Leo (Jupiter and Sun).",
+        "Friendly Navamsa lords. Some texts also allow cancellation when the lords of the two Moons' Navamsa (D9) signs are friends. This needs both D9 charts, which is why it is usually left to an astrologer.",
+        "Clean Nadi. In the classical framing, the exceptions above are applied when there is no Nadi Dosha. If Nadi is also 0 and not itself cancelled, most traditional astrologers will not set Bhakoot Dosha aside so easily.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Count these out and the picture changes quite a lot. Of the 36 Moon sign pairings that score 0 in Bhakoot, 3 share a lord and around 14 more have lords that are mutual natural friends — so roughly half of all Bhakoot Dosha cases meet one of the two main exceptions on sign lords alone. Many of the 5/9 cases in particular fall into this group.",
+    },
+    {
+      type: "p",
+      text: "Beyond these, practice varies. Some traditions also ease Bhakoot Dosha when Tara or Vashya koota is favourable, when the overall score is high, or by regional custom. Others are stricter and accept only the same-lord exception. There is no single rulebook followed by every pandit in India, so if you consult one, ask which exception they are applying and why. A cancellation also does not change the printed score: Bhakoot still shows 0/7 in the 36-gun table; what changes is how much weight that zero is given.",
+    },
+    {
+      type: "h2",
+      text: "Bhakoot Dosha ke effects: health, paisa aur santaan — calmly explained",
+    },
+    {
+      type: "p",
+      text: "Relatives often attach big warnings to Bhakoot Dosha: \"shadashtak hai, jhagde honge\", \"dwirdwadash se paisa nahi tikega\", \"navpancham se santaan mein der hogi\". It helps to separate what the tradition says from what it can and cannot tell you.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Tradition treats Bhakoot as a measure of how the two Moon signs — the two minds and emotional natures — sit together in family life. It is reasonable to respect it as one part of matching.",
+        "It is not a financial test. A 2/12 pairing cannot tell you whether a couple will earn well or save money. Habits, communication about money and honest planning tell you far more.",
+        "It is not a medical or fertility test. A 5/9 or 6/8 pairing does not predict illness or problems with children. If there are real health or fertility questions, the right person to ask is a doctor, for every couple, matched or not.",
+        "It is one koota out of eight. About half of all random pairings show Bhakoot Dosha; many of those couples have long, happy marriages, and many 7/7 couples face difficulties. Astrology at its best describes tendencies, not guarantees.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Our view at Astrojanta is simple: do not reject a rishta on Bhakoot alone. Equally, do not wave it away without a look. Check the exceptions, the overall score and both individual kundlis — then decide as a family, with the couple's own wishes at the centre.",
+    },
+    {
+      type: "h2",
+      text: "Bhakoot vs Nadi vs Manglik: kya fark hai?",
+    },
+    {
+      type: "table",
+      head: [
+        "",
+        "Bhakoot",
+        "Nadi",
+        "Manglik",
+      ],
+      rows: [
+        [
+          "Part of the 8 Ashtakoota kootas?",
+          "Yes — 7th koota",
+          "Yes — 8th koota",
+          "No — separate check",
+        ],
+        [
+          "Points",
+          "7 of 36",
+          "8 of 36",
+          "No points",
+        ],
+        [
+          "Based on",
+          "Distance between the two Moon signs",
+          "The two Moon nakshatras (Adi, Madhya, Antya)",
+          "Mars's house position in each person's own chart",
+        ],
+        [
+          "Dosha when",
+          "Signs are 2/12, 5/9 or 6/8 apart",
+          "Both nakshatras in the same nadi",
+          "Mars in houses such as 1, 2, 4, 7, 8 or 12 (schools differ)",
+        ],
+        [
+          "Common cancellation idea",
+          "Same or friendly Moon-sign lords, clean Nadi",
+          "Same rashi different nakshatra, same nakshatra different rashi or pada",
+          "Both partners Manglik, and placement-based exceptions",
+        ],
+        [
+          "Where to check on Astrojanta",
+          "Matching tool — raw 0 or 7",
+          "Matching tool — raw 0 or 8",
+          "Manglik tool (separate)",
+        ],
+      ],
+    },
+    {
+      type: "p",
+      text: "Nadi and Bhakoot are linked in two ways. Classical cancellation of Bhakoot is usually framed with a clean Nadi, and a same-rashi pairing — which gives full marks in Bhakoot — is also one of the main Nadi exceptions. So when both Nadi and Bhakoot show 0, read both guides together; our [Nadi Dosha guide](/blog/nadi-dosha) covers the Nadi side in detail.",
+    },
+    {
+      type: "p",
+      text: "Manglik Dosha is a different thing altogether. It is not one of the eight kootas and does not change the 36-gun score; it comes from where Mars sits in each person's own chart. A match can have a perfect 7/7 in Bhakoot and still need a Manglik check, or vice versa. Read the calm explanation in [Manglik Dosha meaning](/blog/manglik-dosha-meaning). And if you want to see how the smallest koota works by comparison, our [Varna Koota guide](/blog/varna-koota-meaning) explains the 1-point Varna.",
+    },
+    {
+      type: "h2",
+      text: "Bhakoot Dosha ho to kya dekhein? What to check beyond the score",
+    },
+    {
+      type: "p",
+      text: "If your match shows Bhakoot Dosha and no clear exception applies, an experienced astrologer will usually look at the following before giving any opinion. Several of these you can see yourself in a free [kundli](/kundli):",
+    },
+    {
+      type: "ul",
+      items: [
+        "The overall gun score. Losing 7 points still leaves 29 possible. A pair at 25–27 gun with Bhakoot 0 is in a very different position from one at 14. The common rule of thumb treats 18 or more as acceptable; see our [gun milan guide](/blog/kundli-milan-online-free).",
+        "The Nadi and Graha Maitri rows. A clean Nadi and friendly Moon-sign lords are exactly what the classical exceptions look for.",
+        "The 7th house and its lord in each chart — the main indicators of marriage and partnership in the individual kundli.",
+        "Venus (Shukra), and for the bride traditionally also Jupiter (Guru), as significators of marriage and the spouse.",
+        "The Navamsa (D9) chart. Many astrologers consider D9 essential for marriage, and one Bhakoot exception uses the Navamsa lords. Note that Astrojanta's matching tool does not compare D9 charts; this needs a fuller reading.",
+        "The running Vimshottari dasha of both people around and after the wedding. Timing often explains more about early married life than any matching score.",
+      ],
+    },
+    {
+      type: "p",
+      text: "If you would like a plain-language walk-through of a specific match — why Bhakoot is 0, what the sign lords are, how the rest of the score looks — you can ask our [AI astrologer](/ai-astrologer). Treat it as an explanation, not a verdict, and involve your family astrologer for the final view if that is your custom.",
+    },
+    {
+      type: "h2",
+      text: "Bhakoot Dosha upay: simple, optional notes",
+    },
+    {
+      type: "p",
+      text: "You do not need to buy anything because of a 0 in Bhakoot. First check the exceptions — many cases are already considered cancelled and need no remedy at all. If your family still wishes to observe something, these are low-cost, traditional choices:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Follow your own family or community custom. Some families ask the family priest for a simple shanti path or prayer before the wedding; others do nothing. Both are legitimate.",
+        "Worship of the two Moon-sign lords, or prayer to a family deity, done together at home or in a local temple.",
+        "Daan and seva given sincerely — food, clothing or help to people who need it. Most traditions agree on this, and it costs only what you choose to give.",
+        "Honest conversation. Since Bhakoot is traditionally about money, children and temperament, simply talking openly about finances, family plans and expectations before marriage is a sensible \"upay\" in any tradition.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Be cautious of anyone who says a costly puja, gemstone or special ritual is compulsory for Bhakoot Dosha, or who uses fear about health or children to push a sale. A genuine astrologer explains the exception rules and the whole chart first, and accepts that the decision is yours.",
+    },
+    {
+      type: "h2",
+      text: "Bottom line",
+    },
+    {
+      type: "p",
+      text: "Bhakoot Dosha simply means the two Moon signs are 2/12, 5/9 or 6/8 apart, so the 7-point Bhakoot (Rashi) koota scores 0 in gun milan. It is common — roughly half of all random pairings show it — and a large share of cases meet a classical exception through same or friendly Moon-sign lords. Astrojanta's tool shows the raw 0-or-7 score and a caution, without applying cancellations. Find both Moon signs, check the lords and Nadi, look at the overall score, the 7th house, Venus, the Navamsa and the dasha — and do not reject a good rishta on Bhakoot alone. Start by running both charts through the [free kundli matching tool](/matching).",
+    },
+  ],
+  faqs: [
+    {
+      q: "Bhakoot Dosha kya hota hai?",
+      a: "Bhakoot Dosha is when the bride's and groom's Moon signs are 2/12, 5/9 or 6/8 from each other. Bhakoot (Rashi) koota then scores 0 out of 7 in Ashtakoota gun milan instead of the full 7 points.",
+    },
+    {
+      q: "How many points is Bhakoot in kundli matching?",
+      a: "Bhakoot is worth 7 of the 36 gun, second only to Nadi's 8. It is all or nothing: 2/12, 5/9 and 6/8 Moon sign pairings get 0, and every other pairing gets 7.",
+    },
+    {
+      q: "Is same rashi (same Moon sign) bad for Bhakoot?",
+      a: "No. Same Moon sign is a 1/1 pairing and gets the full 7 points in Bhakoot. Same rashi with different nakshatras is also one of the common Nadi Dosha exceptions.",
+    },
+    {
+      q: "Which Bhakoot Dosha is the most serious — 2/12, 5/9 or 6/8?",
+      a: "Tradition usually treats 6/8 (shadashtak) as the most sensitive and 5/9 as the mildest, but all three score 0 in the table. Whether it matters depends on the exceptions and the full charts.",
+    },
+    {
+      q: "When is Bhakoot Dosha cancelled?",
+      a: "The commonly cited exceptions are: both Moon signs ruled by the same planet (Aries–Scorpio, Taurus–Libra, Capricorn–Aquarius), Moon-sign lords that are natural friends, or friendly Navamsa lords — usually with a clean Nadi. Schools differ, so check with both charts.",
+    },
+    {
+      q: "Does Astrojanta's matching tool apply Bhakoot Dosha cancellation?",
+      a: "No. The tool scores Bhakoot the standard raw way — 0 for 2/12, 5/9 or 6/8 Moon signs, 7 otherwise — and shows a Bhakoot dosha caution. It does not auto-apply exceptions or add the points back.",
+    },
+    {
+      q: "Can we marry with Bhakoot Dosha?",
+      a: "Yes, many couples do and live happily. Roughly half of all random Moon sign pairings show Bhakoot Dosha. Do not reject a match on Bhakoot alone; check the exceptions, the overall score and both kundlis.",
+    },
+    {
+      q: "Does Bhakoot Dosha cause money, health or children problems?",
+      a: "Tradition links the three patterns with finances, children and disputes or health, but kundli matching is not a financial or medical test and cannot predict these. For health or fertility questions, consult a doctor.",
+    },
+    {
+      q: "Is Bhakoot Dosha the same as Manglik Dosha?",
+      a: "No. Bhakoot is one of the eight kootas and compares the two Moon signs. Manglik Dosha comes from Mars's placement in each person's own chart and is checked separately.",
+    },
+    {
+      q: "Is a puja or gemstone compulsory for Bhakoot Dosha?",
+      a: "No. Many cases are already cancelled by the exception rules. If your family wishes, simple prayer, a shanti path through your family priest or sincere daan is traditional; no paid ritual or gemstone is required.",
+    },
+  ],
+};
+
 export const POSTS: Post[] = [
+  bhakootDosha,
   vimshottariMahadasha,
   nadiDosha,
   kaalSarpDosh,
