@@ -215,9 +215,9 @@ const freeAiKundli: Post = {
     "Make your Janam Kundli online free in a few seconds, understand the 12 houses, and read your chart with an AI astrologer in Hindi or English. Includes a Hindi guide (kundli kaise dekhe).",
   keyword: "ai kundli free",
   published: "2026-10-29",
-  updated: "2026-10-29",
+  updated: "2026-11-09",
   intro:
-    "A Janam Kundli is the starting point of every Vedic astrology reading, but most people get stuck after the chart appears: twelve boxes, planet abbreviations and numbers. This guide shows how to make your [free AI kundli](/kundli) online in a few seconds, what each part of the chart means, and how to ask an AI astrologer to explain it in plain English, Hindi or Hinglish.",
+    "A Janam Kundli is the starting point of every Vedic astrology reading, but most people get stuck after the chart appears: twelve boxes, planet abbreviations and numbers. This guide focuses on making an accurate chart: which birth details you need, the steps to follow, the mistakes that produce a wrong kundli, and how to ask an AI astrologer to explain the result in plain English, Hindi or Hinglish. If you already have a chart and want to learn to read it, start with our [AI kundli reader guide](/blog/ai-kundli-reader) instead.",
   body: [
     { type: "h2", text: "What is a Janam Kundli?" },
     {
@@ -395,12 +395,12 @@ const aiKundliReader: Post = {
   title: "AI Kundli Reader: Read Your Kundali Online Free (Houses, Planets & Lagna)",
   h1: "AI Kundli Reader: How to Read Your Kundali Online Free",
   description:
-    "Use a free AI kundli reader to understand your birth chart: the Lagna, 12 houses and 9 planets explained, how AI kundli analysis works, and why a kundli is not the same as kundalini.",
+    "Already have your kundli? Learn to read it step by step: the Lagna, 12 houses, 9 planets and dasha, plus how an AI kundli reader explains it. Also: kundli vs kundalini.",
   keyword: "kundalini reader ai",
   published: "2026-10-30",
-  updated: "2026-10-30",
+  updated: "2026-11-09",
   intro:
-    'Searching for a "kundalini reader AI" usually means one thing: you have a kundli (or want one) and you would like someone — or something — to explain it. This guide shows how to read your kundali step by step, what the Lagna, houses and planets actually mean, and how an [AI kundli reader](/kundli) turns a confusing chart into plain answers in English, Hindi or Hinglish. We will also clear up the common mix-up between kundli (a birth chart) and kundalini (a yoga term).',
+    'Searching for a "kundalini reader AI" usually means one thing: you have a kundli (or want one) and you would like someone — or something — to explain it. This guide shows how to read your kundali step by step, what the Lagna, houses and planets actually mean, and how an [AI kundli reader](/kundli) turns a confusing chart into plain answers in English, Hindi or Hinglish. We will also clear up the common mix-up between kundli (a birth chart) and kundalini (a yoga term). Don\'t have a chart yet? Make one first with our [free AI kundli guide](/blog/free-ai-kundli-online), then come back here to read it.',
   body: [
     { type: "h2", text: "Kundli, kundali, kundalini — which one are you looking for?" },
     {
@@ -496,7 +496,7 @@ const aiKundliReader: Post = {
     },
     {
       type: "p",
-      text: 'This split matters. A general chatbot asked to "read my kundli" may invent planet positions; a proper kundli analysis AI only interprets numbers that were actually calculated. You can ask follow-ups like "Why is my 10th house strong?", "When does my Saturn period end?" or "Mera shaadi ka yog kab hai?" and get answers grounded in your own chart.',
+      text: 'This split matters. A general chatbot asked to "read my kundli" may invent planet positions; a proper kundli analysis AI only interprets numbers that were actually calculated. You can ask follow-ups like "Why is my 10th house strong?", "When does my Saturn period end?" or "Mera shaadi ka yog kab hai?" and get answers grounded in your own chart. If you have one specific question rather than a whole chart to go through, our guide to [asking an astrologer one free question](/blog/ask-astrologer-free) shows how to phrase it.',
     },
 
     { type: "h2", text: "How to read your kundli online free with AstroJanta" },
@@ -559,15 +559,15 @@ const aiKundliReader: Post = {
 
 const askAstrologerFree: Post = {
   slug: "ask-astrologer-free",
-  title: "Ask an Astrologer Free: Get Your Question Answered Instantly (AI Vedic Chat)",
+  title: "Ask an Astrologer Free: How to Phrase One Question for a Chart-Based Answer",
   h1: "Ask an Astrologer Free – Get One Question Answered Instantly",
   description:
-    "Ask an astrologer free online and get an instant answer based on your Vedic birth chart. How free astrology questions work, how to phrase one, sample questions on marriage, career and money, and the limits to know.",
+    "Have one question about marriage, career or money? How to phrase it, sample questions, how a free chart-based answer works, and the limits to know.",
   keyword: "ask astrologer free",
   published: "2026-10-31",
-  updated: "2026-10-31",
+  updated: "2026-11-09",
   intro:
-    "Most people who want to ask an astrologer free have just one burning question: When will I get married? Will this job change work out? Is this a good year for money? Traditionally you would book a paid consultation or wait days for a reply. Today you can ask the question online and get an instant answer grounded in your own Vedic birth chart. This guide explains how free astrology questions actually work, how to phrase your question so the answer is genuinely useful, sample questions for common topics, and what a free answer can and cannot tell you. When you are ready, you can [ask the AI astrologer](/ai-astrologer) directly.",
+    "Most people who want to ask an astrologer free have just one burning question: When will I get married? Will this job change work out? Is this a good year for money? Traditionally you would book a paid consultation or wait days for a reply. Today you can ask the question online and get an instant answer grounded in your own Vedic birth chart. This guide explains how free astrology questions actually work, how to phrase your question so the answer is genuinely useful, sample questions for common topics, and what a free answer can and cannot tell you. This page is about getting one good answer; for how AI astrologers work, how accurate they are and how they handle your privacy, see our [AI astrologer guide](/blog/ai-astrologer-free-hindi). When you are ready, you can [ask the AI astrologer](/ai-astrologer) directly.",
   body: [
     { type: "h2", text: "Can you really ask an astrologer for free?" },
     {
@@ -1293,14 +1293,14 @@ const varnaKootaMeaning: Post = {
 
 const aiAstrologerFreeHindi: Post = {
   slug: "ai-astrologer-free-hindi",
-  title: "AI Astrologer Free: Chat with an AI Jyotish in Hindi & English (2026 Guide)",
+  title: "AI Astrologer Free in Hindi & Hinglish: How It Works, Accuracy & Privacy",
   h1: "AI Astrologer Free – Chat with an AI Jyotish in Hindi, Hinglish and English (2026 Guide)",
   description:
-    "What an AI astrologer is, how it reads your Vedic kundli, AI vs pandit, what to ask about shaadi, career, Manglik and Sade Sati, Hindi chat examples, honest limits and how to choose a free AI astrologer in India.",
+    "How an AI astrologer reads your Vedic kundli, AI vs pandit, Hindi and Hinglish chat examples, honest accuracy limits, privacy, and how to choose a free AI astrologer in India.",
   keyword: "ai astrologer",
   author: "founder",
   published: "2026-11-04",
-  updated: "2026-11-04",
+  updated: "2026-11-09",
   intro:
     '"Meri shaadi kab hogi?" "Job change karun ya nahi?" "Kya main Manglik hoon?" For generations these questions went to the family pandit or a trusted jyotishi. Today many people in India type them into an AI astrologer instead, often late at night, in Hindi or Hinglish, straight from their phone. But not every AI astrologer works the same way. Some read your actual Vedic birth chart; others simply generate a confident-sounding paragraph. This guide explains what an AI astrologer really is, how a good one reads your kundli, how it compares with a human pandit, what to ask, how to use [Astrojanta\'s free AI astrologer](/ai-astrologer) step by step, and how to judge any AI astrology app before you trust it with your questions or your money.',
   body: [
@@ -1447,7 +1447,7 @@ const aiAstrologerFreeHindi: Post = {
     },
     {
       type: "p",
-      text: "Ready to try? [Ask the AI astrologer free](/ai-astrologer) — it takes about a minute to go from birth details to your first answer.",
+      text: "To write a better question, see how to [phrase one question for a chart-based answer](/blog/ask-astrologer-free). Ready to try? [Ask the AI astrologer free](/ai-astrologer) — it takes about a minute to go from birth details to your first answer.",
     },
 
     { type: "h2", text: "How accurate is an AI astrologer? An honest answer" },
