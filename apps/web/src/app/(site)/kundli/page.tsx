@@ -4,16 +4,16 @@ import { kundliGuide } from "@/content/tool-guides";
 import { pageOpenGraph } from "@/lib/site";
 import { KundliTool } from "./kundli-tool";
 
+const PATH = "/kundli";
+const TITLE = "Free Janam Kundli Online by Date of Birth";
+const DESCRIPTION =
+  "Enter your date, time and place of birth for a free Janam Kundli: Lagna, Rashi, Nakshatra, Navamsa, dasha, Manglik and Sade Sati, with Hindi names. No sign-up.";
+
 export const metadata: Metadata = {
-  title: "Free Kundli Online — AI Kundli & Janam Kundli in Hindi",
-  description:
-    "Make your free Janam Kundli online in seconds — Lagna, Rashi, Nakshatra, D1 & Navamsa, Vimshottari dasha, Manglik and Sade Sati — then read it with an AI astrologer in Hindi or English.",
-  alternates: { canonical: "/kundli" },
-  openGraph: pageOpenGraph(
-    "/kundli",
-    "Free Kundli Online — AI Kundli & Janam Kundli in Hindi",
-    "Free Janam Kundli with Lagna, Nakshatra, dasha and Manglik check, explained by an AI astrologer in Hindi or English.",
-  ),
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: PATH },
+  openGraph: pageOpenGraph(PATH, TITLE, DESCRIPTION),
 };
 
 export default function KundliPage() {
