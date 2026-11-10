@@ -3561,7 +3561,431 @@ const bhakootDosha: Post = {
   ],
 };
 
+const ganaDosha: Post = {
+  slug: "gana-dosha",
+  title: "Gana Dosha in Kundli Milan: Dev, Manushya, Rakshasa Gana & 6 Gun",
+  h1: "Gana Dosha – Gan Kya Hota Hai, Dev/Manushya/Rakshasa Gana, 27 Nakshatra Table, Scoring and What to Check Before Shaadi",
+  description:
+    "Gana dosha kya hai? Plain English with Hinglish terms: Dev, Manushya and Rakshasa gana, all 27 nakshatras, how Gana koota scores 6 of 36 gun, where tables differ, parihar and calm guidance.",
+  keyword: "gana dosha",
+  author: "founder",
+  published: "2026-11-10",
+  updated: "2026-11-10",
+  intro:
+    "\"Ladka Rakshasa gana hai aur ladki Dev gana — ab rishta nahi ho sakta?\" Gana is the koota that puts the most frightening-sounding words into a kundli milan report, and families often read them as a character certificate. They are not. Gana koota is worth 6 of the 36 gun, it is read only from the Moon's nakshatra, and Dev, Manushya and Rakshasa are names for three classes of birth stars, not for people. This guide explains what gana means, which nakshatra belongs to which gana (all 27, checked against the classical lists), exactly how the 6 points are scored, where published tables genuinely disagree, when the tradition itself sets Gana Dosha aside, and what Astrojanta's matching tool does and does not do with it. No fear, no upsell — just the rule, and how to read it.",
+  body: [
+    {
+      type: "p",
+      text: "Written in plain English, with the Hinglish words you will actually hear during kundli milan: gan, gun, dosha, parihar, rishta, shaadi.",
+    },
+    {
+      type: "h2",
+      text: "Gana kya hota hai? (What gana means)",
+    },
+    {
+      type: "p",
+      text: "In Ashtakoota Guna Milan — the 36-gun kundli milan used across North and Central India — eight kootas are compared, and every one of them is calculated from the Moon sign (rashi) and Moon nakshatra of the boy and the girl. Gana is the sixth koota and carries 6 points. That makes it the third-heaviest after Nadi (8 points) and Bhakoot (7).",
+    },
+    {
+      type: "p",
+      text: "Gana means a group or class. The classical texts sort all 27 nakshatras into three ganas — Dev (deva, divine), Manushya (human) and Rakshasa (fierce) — with exactly nine nakshatras in each. Your gana comes from the nakshatra the Moon occupied at your birth, the same janma nakshatra that decides Nadi, Yoni and Tara. Gana koota compares the boy's gana with the girl's and awards points according to how well the tradition says those two temperaments sit together.",
+    },
+    {
+      type: "p",
+      text: 'One clarification before anything else, because it matters more than any number in this article. "Rakshasa" is usually translated as demon, and that translation does more damage than a zero ever could. Here it is simply the name of a class of birth stars that the tradition describes as forceful, strong-willed and independent. Krittika, Magha, Jyeshtha and Mula are Rakshasa gana nakshatras, and so are the birth stars of a great many gentle, successful and entirely ordinary people. A gana is not a moral grade, and nobody should be called a demon because of where the Moon was on the day they were born.',
+    },
+    {
+      type: "h2",
+      text: "Gan milan ya gun milan? A quick clarification",
+    },
+    {
+      type: "p",
+      text: 'A lot of people search for "gan milan" when they actually mean gun milan — the whole 36-point Ashtakoota check. The two words sound almost identical in everyday speech and get used interchangeably across India. Strictly speaking, gun (guna) are the 36 points in total, and gana is one koota worth 6 of them. If you were looking for the full system, our [kundli milan online free guide](/blog/kundli-milan-online-free) explains all eight kootas and what total is generally considered acceptable. If it is the 6-point temperament koota you want, read on.',
+    },
+    {
+      type: "h2",
+      text: "Dev, Manushya aur Rakshasa gana: the three types",
+    },
+    {
+      type: "p",
+      text: "Each gana holds exactly nine of the 27 nakshatras, so the three groups are the same size. The descriptions below are the traditional ones used in matching books; they describe a classical style of temperament, not a personality test result.",
+    },
+    {
+      type: "table",
+      head: ["Gana", "Traditional nature", "Classical guna commonly linked with it", "The nine nakshatras"],
+      rows: [
+        [
+          "Dev (deva, divine)",
+          "Gentle, giving, drawn to peace, learning and ritual",
+          "Sattva",
+          "Ashwini, Mrigashira, Punarvasu, Pushya, Hasta, Swati, Anuradha, Shravana, Revati",
+        ],
+        [
+          "Manushya (human)",
+          "Practical and sociable, balanced between family life and worldly work",
+          "Rajas",
+          "Bharani, Rohini, Ardra, Purva Phalguni, Uttara Phalguni, Purva Ashadha, Uttara Ashadha, Purva Bhadrapada, Uttara Bhadrapada",
+        ],
+        [
+          "Rakshasa (fierce)",
+          "Strong-willed, intense, independent, comfortable with conflict",
+          "Tamas",
+          "Krittika, Ashlesha, Magha, Chitra, Vishakha, Jyeshtha, Mula, Dhanishta, Shatabhisha",
+        ],
+      ],
+    },
+    {
+      type: "p",
+      text: "The sattva–rajas–tamas mapping in the third column is the association most often repeated in Indian matching books. Treat it as symbolic, in the same way the Vata–Pitta–Kapha mapping used for Nadi is symbolic: it is a way of remembering the grouping, not a claim about anyone's body or mind. B. V. Raman's Muhurtha, one of the most widely used English references on matching, describes the three simply as Deva for piety and charitable nature, Manusha as a mixture of good and bad, and Rakshasa as dominance and self-will — and the nine-nakshatra lists it gives are exactly the ones above.",
+    },
+    {
+      type: "h2",
+      text: "Nakshatra se gana kaise jaane: all 27 nakshatras",
+    },
+    {
+      type: "p",
+      text: "Find the Moon nakshatra (janma nakshatra) of each person in the table below. If you do not know it, make a free [kundli](/kundli) with date, time and place of birth, or use the quicker [Moon sign and Nakshatra finder](/moon-sign) — both show the nakshatra. This mapping is the standard one, and it is exactly what Astrojanta's [kundli matching tool](/matching) uses.",
+    },
+    {
+      type: "table",
+      head: ["#", "Nakshatra", "Gana", "Moon sign (rashi)"],
+      rows: [
+        ["1", "Ashwini", "Dev", "Aries (Mesh)"],
+        ["2", "Bharani", "Manushya", "Aries (Mesh)"],
+        ["3", "Krittika", "Rakshasa", "Aries / Taurus"],
+        ["4", "Rohini", "Manushya", "Taurus (Vrishabh)"],
+        ["5", "Mrigashira", "Dev", "Taurus / Gemini"],
+        ["6", "Ardra", "Manushya", "Gemini (Mithun)"],
+        ["7", "Punarvasu", "Dev", "Gemini / Cancer"],
+        ["8", "Pushya", "Dev", "Cancer (Kark)"],
+        ["9", "Ashlesha", "Rakshasa", "Cancer (Kark)"],
+        ["10", "Magha", "Rakshasa", "Leo (Simha)"],
+        ["11", "Purva Phalguni", "Manushya", "Leo (Simha)"],
+        ["12", "Uttara Phalguni", "Manushya", "Leo / Virgo"],
+        ["13", "Hasta", "Dev", "Virgo (Kanya)"],
+        ["14", "Chitra", "Rakshasa", "Virgo / Libra"],
+        ["15", "Swati", "Dev", "Libra (Tula)"],
+        ["16", "Vishakha", "Rakshasa", "Libra / Scorpio"],
+        ["17", "Anuradha", "Dev", "Scorpio (Vrishchik)"],
+        ["18", "Jyeshtha", "Rakshasa", "Scorpio (Vrishchik)"],
+        ["19", "Mula", "Rakshasa", "Sagittarius (Dhanu)"],
+        ["20", "Purva Ashadha", "Manushya", "Sagittarius (Dhanu)"],
+        ["21", "Uttara Ashadha", "Manushya", "Sagittarius / Capricorn"],
+        ["22", "Shravana", "Dev", "Capricorn (Makar)"],
+        ["23", "Dhanishta", "Rakshasa", "Capricorn / Aquarius"],
+        ["24", "Shatabhisha", "Rakshasa", "Aquarius (Kumbh)"],
+        ["25", "Purva Bhadrapada", "Manushya", "Aquarius / Pisces"],
+        ["26", "Uttara Bhadrapada", "Manushya", "Pisces (Meen)"],
+        ["27", "Revati", "Dev", "Pisces (Meen)"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Two practical notes. First, gana is assigned to the whole nakshatra, so the pada (charana) never changes it — unlike Nadi, where some methods fall back on padas. Second, where a nakshatra spans two rashis, such as Krittika or Punarvasu, the Moon sign in the last column depends on the pada; that does not affect the gana, but it does affect Bhakoot and some of the cancellation rules further down.",
+    },
+    {
+      type: "p",
+      text: "This list is remarkably stable. Across classical texts, modern matching books and the major Indian matching websites, the nine-nine-nine division above is the same. Where sources really do differ is the scoring, which is the next section.",
+    },
+    {
+      type: "h2",
+      text: "Gana Koota ke 6 gun: kaun sa pair kitna score karta hai",
+    },
+    {
+      type: "p",
+      text: "Here is the table Astrojanta's matching tool applies. It is the symmetric version — the one most online calculators use — in which the order of boy and girl never changes the result:",
+    },
+    {
+      type: "table",
+      head: ["Gana pairing", "Gana points (out of 6)", "How it is usually described"],
+      rows: [
+        ["Dev – Dev", "6", "Same gana — full marks"],
+        ["Manushya – Manushya", "6", "Same gana — full marks"],
+        ["Rakshasa – Rakshasa", "6", "Same gana — full marks, and not a dosha at all"],
+        ["Dev – Manushya", "5", "Workable; a single point is deducted"],
+        ["Manushya – Rakshasa", "1", "Weak — a token point survives"],
+        ["Dev – Rakshasa", "0", "The zero that families call Gana Dosha"],
+      ],
+    },
+    {
+      type: "p",
+      text: "The first thing worth noticing is that Rakshasa with Rakshasa gets the full 6, exactly like Dev with Dev. The koota rewards two people having the same temperament; it does not rank the three ganas against each other. Two Rakshasa gana nakshatras are a full-marks pairing in every version of this table.",
+    },
+    {
+      type: "p",
+      text: "Because each gana holds nine of the 27 nakshatras, the three are equally likely, and the spread of outcomes is easy to work out. Of all the ways two random nakshatras can meet, about a third score the full 6, about 22% score 5, about 22% score 1 and about 22% score 0. So a low Gana score is a common result, not a rare warning sign — and the most it can ever cost is 6 points out of 36, less than Nadi and less than Bhakoot.",
+    },
+    {
+      type: "h3",
+      text: "Yahan traditions alag hain: where published tables disagree",
+    },
+    {
+      type: "p",
+      text: "Gana is the one koota where you should expect two reputable websites to give you different numbers for the same couple. Nadi and Bhakoot are all-or-nothing and almost universally agreed; Gana is graded, and the grades vary. These are the three points of difference you will actually run into:",
+    },
+    {
+      type: "table",
+      head: ["Point of difference", "Version Astrojanta uses", "Other published versions"],
+      rows: [
+        ["Dev with Manushya", "5 points, either way round", "6 points in one direction and 5 in the other"],
+        ["Dev with Rakshasa", "0 points", "1 point in some tables"],
+        ["Manushya with Rakshasa", "1 point", "0 in most tables"],
+        [
+          "Does it matter who is the boy and who is the girl?",
+          "No — the table is symmetric",
+          "Yes in the classical reading; swapping the two can change the score",
+        ],
+      ],
+    },
+    {
+      type: "p",
+      text: 'The asymmetry in the last row is real and goes back to the source texts. Raman\'s Muhurtha states it in words rather than numbers: a Manusha or a Deva man should not marry a Rakshasa girl unless there are other neutralising factors, but a marriage between a Rakshasa man and a Deva or Manusha girl is "passable". In other words, the classical worry is specifically about a Rakshasa gana bride with a Dev or Manushya gana groom; the reverse arrangement is treated more leniently. Modern graded tables try to encode that as a 1 in one cell and a 0 in its mirror — and, honestly, they do not all encode it the same way round.',
+    },
+    {
+      type: "p",
+      text: "What this means for you is simple. If two kundli milan reports disagree by a point or two, Gana is the first place to look, and neither site is necessarily wrong. What almost never differs is which nakshatra belongs to which gana, so check the gana labels first — if those agree, the disagreement is only about the scoring table, and it is worth at most a few points out of 36.",
+    },
+    {
+      type: "h2",
+      text: "Gana Dosha kya hota hai?",
+    },
+    {
+      type: "p",
+      text: "Gana Dosha (also written gan dosh) is the name families give to a Gana koota score of 0 — and some write-ups extend it to the 1-point result as well. That is the whole definition. It is a label for one cell in a scoring table, not a condition that either person carries around. The same girl can show Gana Dosha with one boy and full marks with another, because the score describes the pair, not the person.",
+    },
+    {
+      type: "p",
+      text: 'It is also a less standardised term than Nadi Dosha or Bhakoot Dosha. Plenty of matching reports never print the phrase "Gana Dosha" at all, and simply show the row as 0 of 6 or 1 of 6. Astrojanta\'s tool is one of them — more on that below.',
+    },
+    {
+      type: "h2",
+      text: "Rakshasa gana aur Manushya gana marriage: the question families actually ask",
+    },
+    {
+      type: "p",
+      text: "This is the single most searched Gana question in India, so here is the plain answer. Under the table Astrojanta uses, a Manushya–Rakshasa pairing scores 1 of 6, so the couple loses 5 of the 36 gun. Under the tables that give it 0, they lose 6. A Dev–Rakshasa pairing scores 0 here, so it costs the full 6. That is the entire arithmetic effect: at worst, six points out of thirty-six.",
+    },
+    {
+      type: "p",
+      text: "What the tradition is actually describing is a difference in how two people react when something goes wrong at home. The classical picture is that a Dev gana nature smooths things over and withdraws from conflict, while a Rakshasa gana nature meets it head on and would rather have the argument than leave it unsaid. Manushya sits in between, practical and worldly. When those styles differ, the tradition expects more friction in daily family life, especially in a joint family where several temperaments share a house.",
+    },
+    {
+      type: "p",
+      text: "That is a reasonable thing for a tradition to notice, and it is also something a couple can talk about openly in a way they cannot talk about, say, a planetary period. It is not a prediction of quarrels, separation or anything else, and about a fifth of all random pairings land in each of these cells — which should tell you how many ordinary, long, happy marriages sit inside them.",
+    },
+    {
+      type: "h2",
+      text: "Kundli matching mein gana kaise check karein",
+    },
+    {
+      type: "p",
+      text: "You only need the two Moon nakshatras. The steps are short:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Collect both sets of birth details — date, exact time and place of birth for the boy and the girl. Indian birth records are in Indian Standard Time (IST, UTC+5:30), so enter the time exactly as written on the certificate rather than converting it; for a birth abroad, enter the local time and city.",
+        "Open the [free kundli matching tool](/matching) and enter both charts. It works out each person's Moon sign and nakshatra and scores all eight kootas.",
+        "Look up each nakshatra in the 27-nakshatra table above to see the gana, or read the Gana row of the result directly.",
+        "Read the Gana row as a score out of 6. A 6 or 5 needs no further thought. A 1 or 0 is worth understanding — note both nakshatras, both Moon signs and both Moon-sign lords, then read the cancellation rules below.",
+        "Birth time matters, but less here than for Nadi. The Moon crosses about one nakshatra a day, so an hour's error only changes the gana if the Moon was near a nakshatra boundary. Padas never change the gana.",
+      ],
+    },
+    {
+      type: "h2",
+      text: "Astrojanta ka matching tool Gana ke liye kya karta hai (honestly)",
+    },
+    {
+      type: "p",
+      text: "Because families make real decisions with these numbers, here is exactly what our tool does with Gana, in plain words:",
+    },
+    {
+      type: "ul",
+      items: [
+        "It calculates each person's sidereal Moon position using the open-source Astronomy Engine ephemeris with the Lahiri ayanamsa (not Swiss Ephemeris, though it follows the same Lahiri convention), and reads the Moon's nakshatra from it.",
+        "It maps each nakshatra to Dev, Manushya or Rakshasa using the standard nine-nine-nine list in the table above.",
+        "It scores Gana with the symmetric table: 6 for the same gana, 5 for Dev with Manushya, 1 for Manushya with Rakshasa and 0 for Dev with Rakshasa. Swapping the boy and the girl never changes the Gana score in our tool.",
+        'It shows Gana as one row of the Eight kootas card, with the score out of 6 and a one-line note — "Same gana — temperaments align", "Partial gana match" or "Deva–Rakshasa mismatch".',
+        'It does not print the words "Gana Dosha" anywhere. The Traditional cautions box in the result only ever flags Nadi dosha and Bhakoot dosha, so a 0 in Gana will show as a 0 and nothing more.',
+        "It does not apply any Gana parihar. No cancellation rule is checked and no points are added back; the total out of 36 is always the raw total.",
+        "It does not compare Navamsa (D9) charts and does not check Manglik Dosha — that is a separate check on the [Manglik page](/manglik).",
+      ],
+    },
+    {
+      type: "p",
+      text: "This is the same conservative approach described in our [Nadi Dosha guide](/blog/nadi-dosha) and [Bhakoot Dosha guide](/blog/bhakoot-dosha): show the raw traditional score, and leave the exceptions to a human reading of both charts, because schools apply them differently. Our [methodology page](/about-methodology) explains how the underlying calculations are done.",
+    },
+    {
+      type: "p",
+      text: "One useful hint inside the result: the Graha Maitri row compares the same two Moon-sign lords that the main Gana cancellation rule uses. If Graha Maitri shows 5 of 5, those two lords are either the same planet or mutual natural friends in our friendship table — which is precisely the classical condition for setting Gana Dosha aside. It is a hint, not an automatic cancellation.",
+    },
+    {
+      type: "h2",
+      text: "Gana Dosha cancellation: kab maana jata hai ki dosha nahi hai? (parihar)",
+    },
+    {
+      type: "p",
+      text: "Classical matching tradition gives several conditions under which a weak Gana score is not treated as a problem. The ones most commonly cited are:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Friendly or identical Moon-sign lords. This is the main one. Raman's Muhurtha puts it directly: the evil due to the bride being born in a Rakshasa gana star may be ignored when the Moon signs stand 2/12, 5/9 or 6/8 from each other and the lords of those signs are the same planet or mutual friends. Several other sources state the sign-lord friendship condition on its own, without the rashi-distance requirement.",
+        "Good Tara agreement. Some sources pair the sign-lord rule with a clean Tara (birth-star) count, treating Gana Dosha as not applying when the Tara koota is satisfactory.",
+        "Same Moon sign with different nakshatras, or the same nakshatra in different Moon signs. This is the same exception commonly quoted for Nadi Dosha, and a number of texts extend it to Gana.",
+        "Distance between the birth stars. Raman's Muhurtha adds, at the end of the Gana section, that if the bride's nakshatra is beyond the 14th from the bridegroom's, the evil may be ignored.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Two honest caveats. First, not every school accepts that Gana has a parihar at all; some astrologers hold that the Gana score is simply the score, and that the right response to a low one is to weigh it against the rest of the chart rather than to cancel it. Second, a parihar never changes the printed number — Gana still shows 0 or 1 in the 36-gun table. What changes is how much weight that number is given.",
+    },
+    {
+      type: "p",
+      text: "So, as with Nadi and Bhakoot, there is no single rulebook followed by every pandit in India. If you consult one, ask which exception they are applying and why. A calm, specific answer is a good sign; a vague answer followed by an expensive puja is not.",
+    },
+    {
+      type: "h2",
+      text: "Gana Dosha ke effects: calmly explained",
+    },
+    {
+      type: "p",
+      text: 'Relatives can attach very large warnings to this one small koota — "Rakshasa gana hai, swabhav theek nahi hoga", "roz jhagda hoga", "nibhega nahi". It helps to separate what the tradition says from what it cannot tell you.',
+    },
+    {
+      type: "ul",
+      items: [
+        "Tradition reads Gana as temperament — the default style each person brings to disagreement and daily family life. Respecting that as one part of matching is reasonable.",
+        "It is not a character assessment. The names Dev, Manushya and Rakshasa classify birth stars, not people, and no nakshatra makes anyone good or bad, gentle or aggressive.",
+        'It is not a prediction of quarrels or separation. Older books use strong language about "prohibited ganas", but a six-point koota cannot forecast how two adults will treat each other.',
+        "It is one koota out of eight, and the smallest of the three big ones. Losing all of Gana still leaves 30 of 36 available, and the usual rule of thumb treats 18 or more as acceptable.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Our view at Astrojanta is the same as for every other koota: do not reject a rishta on Gana alone, and do not wave a low score away without a look either. Check the exceptions, the overall score and both individual kundlis — then decide as a family, with the couple's own wishes at the centre.",
+    },
+    {
+      type: "h2",
+      text: "Gana kam ho to kya dekhein? What to check before shaadi",
+    },
+    {
+      type: "p",
+      text: "If your match shows 0 or 1 in Gana, here is what an experienced astrologer will usually look at before giving an opinion. Several of these you can see yourself in a free [kundli](/kundli):",
+    },
+    {
+      type: "ul",
+      items: [
+        "The overall gun score. Gana is 6 of 36. A pair at 25 gun after losing Gana is in a very different position from one at 14. See our [gun milan guide](/blog/kundli-milan-online-free) for the usual score ranges.",
+        "The Nadi and Bhakoot rows, which carry 8 and 7 points. A clean Nadi and Bhakoot alongside a weak Gana is a far better picture than the other way round; read [Nadi Dosha](/blog/nadi-dosha) and [Bhakoot Dosha](/blog/bhakoot-dosha) for those.",
+        "The Graha Maitri row and the two Moon-sign lords, since friendly or identical lords are the main classical Gana exception.",
+        "The 7th house and its lord in each chart — the primary indicators of marriage and partnership in the individual kundli.",
+        "Venus (Shukra), and for the bride traditionally also Jupiter (Guru), as the natural significators of marriage and the spouse.",
+        "The Navamsa (D9) chart. Many astrologers consider D9 essential for marriage, and a strong Navamsa can outweigh a weak koota. Astrojanta's matching tool does not compare D9 charts, so this needs a fuller reading.",
+        "The running Vimshottari dasha of both people around and after the wedding; our [Mahadasha guide](/blog/vimshottari-mahadasha) explains how to find it. Timing often explains more about early married life than any matching score.",
+        "Manglik status, which is checked separately from the eight kootas.",
+      ],
+    },
+    {
+      type: "p",
+      text: "If you want a plain-language walk-through of a specific result — why Gana came to 1, what the sign lords are, how the rest of the score looks — you can ask our [AI astrologer](/ai-astrologer). Treat it as an explanation, not a verdict, and involve your family astrologer for the final view if that is your custom.",
+    },
+    {
+      type: "h2",
+      text: "Gana aur baaki koots: Varna, Bhakoot, Nadi aur Manglik",
+    },
+    {
+      type: "p",
+      text: "Gana sits sixth among the eight kootas. Varna (1 point) looks at spiritual temperament from the Moon sign and is explained in our [Varna Koota guide](/blog/varna-koota-meaning). Yoni (4 points) compares the animal symbols of the two nakshatras. Bhakoot (7 points) compares the two Moon signs, and Nadi (8 points) compares the nakshatras' nadi. Gana, Bhakoot and Nadi together carry 21 of the 36 gun, which is why these three come up most often in family conversations.",
+    },
+    {
+      type: "p",
+      text: "Gana, Yoni and Nadi are all read from the same janma nakshatra, so they tend to move together: if the birth time is wrong enough to change the nakshatra, three kootas change at once. Bhakoot and Varna depend on the Moon sign instead, which is why a small time correction can leave them untouched while Gana shifts.",
+    },
+    {
+      type: "p",
+      text: "Manglik Dosha is a separate matter altogether. It is not one of the eight kootas and does not change the 36-gun score; it comes from where Mars sits in each person's own chart. A match can score a full 6 in Gana and still need a Manglik check, or the reverse. You can check it with our free [Manglik tool](/manglik), and read the calm explanation in [Manglik Dosha meaning](/blog/manglik-dosha-meaning).",
+    },
+    {
+      type: "h2",
+      text: "Gana Dosha upay: simple, optional notes",
+    },
+    {
+      type: "p",
+      text: "You do not need to buy anything because of a low Gana score. Check the exceptions first — many cases already meet one of them. If your family still wishes to observe something, these are the low-cost, traditional options people commonly follow:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Follow your own family or community custom. Some families ask the family priest for a simple shanti path or prayer before the wedding; others do nothing at all. Both are legitimate choices.",
+        "Worship of the nakshatra deities or of the two Moon-sign lords, done together at home or at a local temple.",
+        "Daan and seva offered sincerely — food, clothing or help to people who need it. Most traditions agree on this, and it costs only what you choose to give.",
+        'An honest conversation. Since Gana is about temperament, simply talking about how each of you handles an argument, and what each family expects day to day, is a sensible "upay" in any tradition — and the only one that reliably helps.',
+      ],
+    },
+    {
+      type: "p",
+      text: "Be wary of anyone who says a costly puja, a gemstone or a special ritual is compulsory for Gana Dosha, or who uses the word Rakshasa to frighten a family into a purchase. A genuine astrologer explains the scoring, the exceptions and the whole chart first, and accepts that the decision is yours.",
+    },
+    {
+      type: "h2",
+      text: "Bottom line",
+    },
+    {
+      type: "p",
+      text: "Gana koota sorts the 27 nakshatras into Dev, Manushya and Rakshasa — nine each — and compares the boy's gana with the girl's for 6 of the 36 gun. Same gana scores the full 6, including Rakshasa with Rakshasa; Dev with Manushya scores 5; the crossings involving Rakshasa score 1 or 0, and that zero is what families call Gana Dosha. Published tables genuinely differ on those last cells, the classical texts worry mainly about a Rakshasa gana bride with a Dev or Manushya groom, and well-known exceptions set the whole thing aside when the Moon-sign lords are the same or friendly. Six points out of thirty-six is not a reason to end a rishta. Find both nakshatras, read the whole score, look at the charts — start with the [free kundli matching tool](/matching).",
+    },
+  ],
+  faqs: [
+    {
+      q: "Gana kya hota hai?",
+      a: "Gana is a classical grouping of the 27 nakshatras into three classes — Dev, Manushya and Rakshasa — with nine nakshatras in each. Your gana comes from the nakshatra the Moon occupied at your birth, and it is compared in kundli milan as the sixth koota, worth 6 of the 36 gun.",
+    },
+    {
+      q: "Gana Dosha kya hota hai?",
+      a: "Gana Dosha is the name families give to a Gana koota score of 0 — a Dev and Rakshasa pairing in the table Astrojanta uses — and some write-ups extend it to the 1-point result too. It describes the pair, not a person, and the same person can score 6 with a different partner.",
+    },
+    {
+      q: "How many points is Gana in kundli matching?",
+      a: "Gana carries 6 of the 36 gun, making it the third-heaviest koota after Nadi (8) and Bhakoot (7). Same gana scores 6, Dev with Manushya scores 5, and the pairings with Rakshasa score 1 or 0 depending on the table used.",
+    },
+    {
+      q: "Which nakshatras belong to which gana?",
+      a: "Dev: Ashwini, Mrigashira, Punarvasu, Pushya, Hasta, Swati, Anuradha, Shravana, Revati. Manushya: Bharani, Rohini, Ardra, Purva Phalguni, Uttara Phalguni, Purva Ashadha, Uttara Ashadha, Purva Bhadrapada, Uttara Bhadrapada. Rakshasa: Krittika, Ashlesha, Magha, Chitra, Vishakha, Jyeshtha, Mula, Dhanishta, Shatabhisha.",
+    },
+    {
+      q: "Can a Rakshasa gana boy marry a Manushya gana girl?",
+      a: "Yes. That pairing scores 1 of 6 in the table Astrojanta uses and 0 in some others, so at most it costs 6 of the 36 gun. Classical sources treat a Rakshasa gana groom with a Manushya or Dev gana bride more leniently than the reverse arrangement. Look at the full score and both charts rather than this row alone.",
+    },
+    {
+      q: "Is Rakshasa gana bad?",
+      a: "No. Rakshasa is the name of a class of birth stars that the tradition calls forceful and independent; it is not a judgement on anyone's character. Two Rakshasa gana nakshatras together score the full 6 points, exactly like two Dev gana nakshatras.",
+    },
+    {
+      q: "Why do two websites show different Gana scores for the same couple?",
+      a: "Because Gana is the one koota where published tables differ. Sources disagree on whether Dev–Manushya is 5 or 6, on which of the two Rakshasa crossings keeps a single point, and on whether swapping the boy and girl changes the score. The nakshatra-to-gana list itself is almost always the same.",
+    },
+    {
+      q: "Does Astrojanta's matching tool flag Gana Dosha?",
+      a: 'No. It shows Gana as a row scored out of 6 with a short note, but it never prints the words "Gana Dosha". The Traditional cautions box in the result only flags Nadi dosha and Bhakoot dosha.',
+    },
+    {
+      q: "When is Gana Dosha cancelled?",
+      a: "The most commonly cited exception is that the two Moon-sign lords are the same planet or mutual friends; some sources add good Tara agreement, the same Moon sign with different nakshatras, or a large distance between the two birth stars. Schools differ, and some do not accept a Gana parihar at all.",
+    },
+    {
+      q: "Does gana depend on the nakshatra pada?",
+      a: "No. Gana is assigned to the whole nakshatra, so all four padas share the same gana. A birth-time correction only changes your gana if it moves the Moon into a different nakshatra altogether.",
+    },
+    {
+      q: "Is a puja compulsory for Gana Dosha?",
+      a: "No. Gana is worth 6 of 36, many cases already meet a classical exception, and no remedy is required. If your family wishes, simple prayer, a shanti path through your family priest or sincere daan is traditional; no paid ritual or gemstone is needed.",
+    },
+  ],
+};
+
 export const POSTS: Post[] = [
+  ganaDosha,
   bhakootDosha,
   vimshottariMahadasha,
   nadiDosha,
