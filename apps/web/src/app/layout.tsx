@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Fraunces, Geist, Noto_Sans_Devanagari } from "next/font/google";
 import { CosmicBackground } from "@/components/cosmic-background";
 import { JsonLd } from "@/components/json-ld";
-import { MonetagScript } from "@/components/monetag-script";
 import { Providers } from "@/components/providers";
 import {
   absoluteUrl,
@@ -99,7 +98,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <JsonLd data={siteJsonLd} />
         <CosmicBackground />
         <Providers>{children}</Providers>
-        <MonetagScript />
       </body>
     </html>
   );
