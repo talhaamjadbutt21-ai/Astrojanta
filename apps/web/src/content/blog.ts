@@ -4160,7 +4160,269 @@ const ganaDosha: Post = {
   ],
 };
 
+const kitneGunMilneChahiye: Post = {
+  slug: "kitne-gun-milne-chahiye",
+  title: "Kundli Milan: Kitne Gun Milne Chahiye? 18 Se Kam Ho To Kya",
+  h1: "Kitne Gun Milne Chahiye – The 36-Gun Ashtakoot Breakdown, Score Bands, and What to Do When Kundli Milan Comes Below 18",
+  description:
+    "18 of 36 gun is the traditional minimum for shaadi. Score bands, why Nadi aur Bhakoot outweigh the total, kam gun milne par kya karein, plus a free check.",
+  keyword: "kitne gun milne chahiye",
+  author: "founder",
+  published: "2026-11-12",
+  updated: "2026-11-12",
+  intro:
+    "Eighteen. If you want the number and nothing else: 18 out of 36 gun is the minimum that traditional kundli milan treats as acceptable for marriage, and most Indian families are comfortable once the score reaches 25 or more. But the total is a summary of eight separate checks carried out on two charts, and summaries hide things — which is why a 28-gun match can worry a pandit while a 20-gun match is cleared without discussion. This guide explains how the 36 gun are built up koota by koota, what each score band conventionally means, why the total on its own is the least useful part of the report, and — the question most people are really asking — what to actually do when the number comes in below 18. You can run both charts first with the free [kundli matching tool](/matching) and read this with your own score in front of you.",
+  body: [
+    {
+      type: "p",
+      text: "Written in plain English, with the Hinglish words families use during a rishta: gun, koot, milan, dosha, parihar, shaadi.",
+    },
+
+    { type: "h2", text: "Seedha jawab: kitne gun milne chahiye?" },
+    {
+      type: "p",
+      text: "The convention used across North and Central India is that 18 of 36 is the pass mark. Below 18, classical practice advises against the match or asks for a much closer look; from 18 to 24 the match is called average or workable; from 25 to 32 it is considered very good; and anything above 32 is treated as excellent and is genuinely rare. Those four bands are what almost every pandit, matrimonial site and online calculator is working from.",
+    },
+    {
+      type: "p",
+      text: "Two things are worth saying immediately, because they change how much weight the number deserves. First, these bands are a widely shared convention rather than a single classical decree — you will find respected sources that put the comfortable range at 21 and others that start it at 24, and no text fixes the cut-offs the way a syllabus fixes pass marks. Second, the score is a sum, and a sum can conceal the shape of what it is summing. The rest of this guide is mostly about that second point.",
+    },
+
+    { type: "h2", text: "36 gun kaise bante hain: the Ashtakoot breakdown" },
+    {
+      type: "p",
+      text: "Ashtakoot means eight factors. Each koota compares one aspect of the two charts and carries a fixed maximum, and the eight maximums add up to 36. Every one of them is calculated from just two things per person: the Moon sign (rashi) and the Moon's birth star (nakshatra). Nothing else in either chart enters the 36-gun total — not the Lagna, not the Sun, not Mars.",
+    },
+    {
+      type: "table",
+      head: ["Koota", "Max gun", "What it compares"],
+      rows: [
+        ["Varna", "1", "Spiritual temperament, from the varna of each Moon sign"],
+        ["Vashya", "2", "Mutual influence — who naturally gives way to whom"],
+        ["Tara", "3", "Wellbeing, counted both ways between the two nakshatras"],
+        ["Yoni", "4", "Physical and intimate compatibility, via the nakshatra's animal symbol"],
+        ["Graha Maitri", "5", "Mental wavelength, from the friendship between the two Moon-sign lords"],
+        ["Gana", "6", "Temperament class: Dev, Manushya or Rakshasa"],
+        ["Bhakoot", "7", "Family welfare and finances, from the distance between the Moon signs"],
+        ["Nadi", "8", "Constitution and progeny, from the Adi, Madhya or Antya nadi"],
+        ["Total", "36", "The Ashtakoot gun milan score"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Each koota has its own guide here if you want the detail: [Varna](/blog/varna-koota-meaning) for the single point everyone ignores, [Gana](/blog/gana-dosha) for the Dev/Manushya/Rakshasa classes, [Bhakoot](/blog/bhakoot-dosha) for the 2/12, 5/9 and 6/8 rashi positions, and [Nadi](/blog/nadi-dosha) for the heaviest koota of all. Our [kundli milan online free](/blog/kundli-milan-online-free) guide walks through the whole process end to end.",
+    },
+
+    { type: "h3", text: "Why the eight are not equal" },
+    {
+      type: "p",
+      text: "The weighting is the single most important thing to understand about the total, and it is the reason two matches on the same score can be in completely different positions. Nadi alone is 8 points and Bhakoot is 7, so those two carry 15 of the 36 between them. Add Gana at 6 and the top three account for 21 — well over half the available score. Varna, at 1 point, is worth less than a thirtieth of the total.",
+    },
+    {
+      type: "p",
+      text: "There is a neat way to see how uneven the weighting is: the five smallest kootas — Varna, Vashya, Tara, Yoni and Graha Maitri — add up to 15 points, which is exactly what Nadi and Bhakoot are worth between them. Half the system rests on two rows. So two couples can both score 20 and be in entirely different positions. One loses Nadi, Bhakoot and Varna and keeps everything else; the other keeps Nadi and Bhakoot at full marks and loses Gana, Graha Maitri, Yoni and Varna. Both reports print 20 of 36, and no astrologer would read them the same way. Always read the rows, not just the last line.",
+    },
+
+    { type: "h2", text: "Score bands: 18 se kam, 18–24, 25–32, 33–36" },
+    {
+      type: "table",
+      head: ["Score", "Common label", "What it usually means in practice"],
+      rows: [
+        [
+          "Below 18",
+          "Not advised",
+          "Traditionally discouraged. Most families either look closely for cancellations or move on to another rishta",
+        ],
+        [
+          "18 to 24",
+          "Average / acceptable",
+          "Workable, and very common. Usually fine when Nadi and Bhakoot are clear and both charts are sound",
+        ],
+        [
+          "25 to 32",
+          "Very good",
+          "The range most families are happy with; doshas are still checked separately",
+        ],
+        [
+          "33 to 36",
+          "Excellent",
+          "Rare. Looks ideal on paper, and astrologers still check the 7th house, Navamsa and Manglik status",
+        ],
+      ],
+    },
+    {
+      type: "p",
+      text: "A 36 of 36 is a curiosity rather than a goal: it requires all eight kootas to reach their maximum at once, and some pairings cannot get there at all — Varna, for instance, awards its single point only when the boy's varna is not lower than the girl's. A score in the twenties with the heavy kootas clean is a better practical position than a high score with a dosha sitting inside it.",
+    },
+
+    { type: "h3", text: "Astrojanta ke tool ki lines kahan hain (honestly)" },
+    {
+      type: "p",
+      text: "Our own [matching tool](/matching) labels the bands slightly differently from the convention above, and you should know that before comparing its badge with a pandit's wording. It calls 28 and above excellent, 24 to 27 good, 18 to 23 average, and anything below 18 \"Below 18 — traditionally not advised\". So a 26-gun match reads as \"Good match\" in our tool while the common convention would call the same score very good. The underlying koota scores are the same; only the labels on the bands differ.",
+    },
+    {
+      type: "p",
+      text: "Two more limits worth knowing. The tool's \"Traditional cautions\" box flags only two things — Nadi dosha and Bhakoot dosha — so it will not warn you about Gana or anything else. And it does not check Manglik status or compare Navamsa charts at all; Manglik is a separate check on the [Manglik page](/manglik). Our [methodology page](/about-methodology) describes how the underlying calculations are done.",
+    },
+
+    { type: "h2", text: "Total alone kaafi nahi: Nadi, Bhakoot aur Manglik" },
+    {
+      type: "p",
+      text: "When a koota scores zero, two separate things happen: points are lost, and in the case of Nadi and Bhakoot the result also acquires a name. Nadi dosha and Bhakoot dosha are flagged as conditions in their own right, not merely as missing points, and that naming is why families react to them so strongly. A 28-gun match carrying Nadi dosha routinely causes more discussion than a 21-gun match with every heavy koota clear.",
+    },
+    {
+      type: "p",
+      text: "Here is the part that most online reports never tell you, and it matters more than any band: the classical exceptions can set a dosha aside without changing the printed number at all. [Nadi dosha](/blog/nadi-dosha) is commonly considered cancelled when the two share a rashi but not a nakshatra, or a nakshatra but not a rashi, or the same nakshatra in different padas. [Bhakoot dosha](/blog/bhakoot-dosha) is commonly set aside when both Moon-sign lords are the same planet or natural friends. The calculator still shows 0 of 8 or 0 of 7, and the total still looks low, while an astrologer applying the parihar reads the same chart as substantially clear. If your score is low, this is the first place to look.",
+    },
+    {
+      type: "p",
+      text: "[Manglik dosha](/blog/manglik-dosha-meaning) sits outside the system entirely. It comes from where Mars falls in each person's own chart, it is not one of the eight kootas, and it never changes the 36-gun total. A couple can score 30 and still need a Manglik conversation, or score 17 with no Manglik question at all.",
+    },
+
+    { type: "h2", text: "18 se kam gun mile to kya karein" },
+    {
+      type: "p",
+      text: "A score below 18 is a reason to look more carefully, not a reason to panic or to end a rishta by text message. Work through these in order — the early steps resolve a surprising number of low scores on their own.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Check the birth details before anything else. This is the most common cause of a wrong score and the easiest to fix. Four of the eight kootas — Nadi, Gana, Yoni and Tara, worth 21 points together — are read from the nakshatra, and the Moon crosses a nakshatra in roughly a day. An error of a few hours in the birth time, or the wrong city, can move the Moon into the next star and change four rows at once. Use the time on the birth certificate, in IST for Indian births, and the actual city of birth rather than the family's home town.",
+        "Read the rows and find the zeros. A total tells you nothing about its shape. Note exactly which kootas scored zero and how heavy they were, because losing Nadi and Bhakoot is a different situation from losing five small kootas.",
+        "Apply the cancellations (parihar). Check the Nadi and Bhakoot exceptions described above against your own two charts. A great many low scores are low on paper and clear in practice once the exceptions are applied.",
+        "Look at the two individual charts, not just the comparison. The 7th house and its lord are the primary marriage indicators in each kundli, with Venus for both partners and traditionally Jupiter for the bride. A sound 7th house in both charts carries real weight against a modest total. Start with a free [kundli](/kundli) for each person.",
+        "Check Graha Maitri and the Moon signs. Graha Maitri is 5 points of mental compatibility and is also the basis of the main Bhakoot exception, so friendly or identical Moon-sign lords help twice over. The [Moon sign and Nakshatra finder](/moon-sign) gives you both quickly.",
+        "Ask about the Navamsa (D9). Most astrologers consider the Navamsa essential for marriage, and a strong D9 can outweigh a weak Ashtakoot total. Our tool does not compare D9 charts, so this genuinely needs a human reading.",
+        "Look at the timing. The running Vimshottari dasha of both people around the wedding often explains more about early married life than any koota does; our [Mahadasha guide](/blog/vimshottari-mahadasha) explains how to find it.",
+        "Then consult a learned astrologer with both full charts. Not a screenshot of the score — the complete birth details for both people. Ask specifically which kootas failed, whether any parihar applies, and what the D9 and the 7th houses look like.",
+      ],
+    },
+    {
+      type: "p",
+      text: "If you want a particular row explained before you sit down with an astrologer — why Bhakoot came to 0, what your two Moon-sign lords are, how the rest of the score reads — you can ask our [AI astrologer](/ai-astrologer) in Hindi, Hinglish or English. Treat it as an explanation of the calculation, not as a verdict on a marriage.",
+    },
+
+    { type: "h2", text: "Kam gun milne par shaadi: how families actually decide" },
+    {
+      type: "p",
+      text: "Plenty of Indian marriages have taken place below 18 gun, including arranged matches cleared by astrologers who looked past the total and found the cancellations. Plenty of high-scoring matches have struggled. Ashtakoot milan compares two Moon positions; it does not measure values, honesty, temper, how two families behave with each other, or whether either person wants the same life. Those are the things a couple and their families have to assess themselves.",
+    },
+    {
+      type: "p",
+      text: "Where couples have already chosen each other — increasingly common across Indian cities and in NRI families — a low score is best used as a conversation starter rather than an obstacle. Ask what the weak kootas describe, discuss whether that pattern sounds familiar, and let the chart inform the conversation instead of ending it. Astrology is a lens for reflection, not certainty, and it is not a substitute for medical, legal or financial advice.",
+    },
+
+    { type: "h2", text: "Upay: sensible, optional and cheap" },
+    {
+      type: "p",
+      text: "Nothing on this list is compulsory, and a low gun score by itself does not require a remedy. Check the exceptions first, because many matches already meet one. If your family still wishes to observe something, these are the traditional low-cost options:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Follow your own family or community custom — many families simply ask their priest for a short shanti path before the wedding, and many do nothing at all.",
+        "Worship of the two Moon-sign lords, or of the nakshatra deities, done at home or at a local temple.",
+        "Daan and seva given sincerely: food, clothing or help to people who genuinely need it. This costs only what you choose to give.",
+        "An honest conversation between the couple about money, family expectations and how each of them behaves in an argument — the practical version of almost every classical upay.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Be careful of anyone who quotes a large figure to \"fix\" a low score, insists that only their puja can save the match, or describes a partner's wellbeing in frightening terms. A genuine astrologer explains which kootas failed, which exceptions apply and what the full charts show, and accepts that the decision belongs to your family.",
+    },
+
+    { type: "h2", text: "Myths vs facts" },
+    {
+      type: "table",
+      head: ["Myth", "Fact"],
+      rows: [
+        [
+          "Below 18 means the marriage will fail",
+          "It means the traditional filter advises a closer look. Cancellations, the individual charts and the Navamsa all still have to be read",
+        ],
+        [
+          "A higher score always means a happier marriage",
+          "The score compares two Moon positions only. It cannot see values, communication or how either family behaves",
+        ],
+        [
+          "36 of 36 is the goal",
+          "It is extremely rare and still does not remove the need to check the 7th house, Navamsa and Manglik status",
+        ],
+        [
+          "All 36 points matter equally",
+          "Nadi and Bhakoot carry 15 points between them; Varna carries 1. Which points you lost matters more than how many",
+        ],
+        [
+          "An online score is the final word",
+          "Calculators print the raw koota scores. The classical exceptions that set a dosha aside are usually applied by a human, not by the tool",
+        ],
+        [
+          "A low score needs an expensive puja",
+          "No remedy is required. Check the parihar first; the traditional options are prayer, daan and conversation, and they cost nothing",
+        ],
+        [
+          "Name-based matching is good enough",
+          "Matching by name guesses the nakshatra from the first syllable. Date, exact time and place of birth are far more reliable",
+        ],
+      ],
+    },
+
+    { type: "h2", text: "Bottom line" },
+    {
+      type: "p",
+      text: "Eighteen of 36 is the traditional minimum, 25 and above is the range most families are comfortable with, and 33 or more is rare. But the total is built from eight unequal checks on two Moon positions, and Nadi and Bhakoot alone decide 15 of the points — so which rows failed tells you far more than the sum does. If your score came in below 18, verify the birth details, find the zeros, apply the cancellations, read both full charts and then take it to an astrologer who will look at all of it. Run both charts free with [kundli matching](/matching), check [Manglik status](/manglik) separately for each person, and treat the number as the beginning of the conversation rather than the end of it.",
+    },
+  ],
+  faqs: [
+    {
+      q: "Kundli milan me kitne gun milne chahiye?",
+      a: "At least 18 of 36 is the traditional minimum for marriage. 18 to 24 is considered average or workable, 25 to 32 is very good, and above 32 is excellent and rare. Astrologers read the score alongside Nadi, Bhakoot and Manglik checks rather than on its own.",
+    },
+    {
+      q: "36 me se kitne gun milne chahiye for a good match?",
+      a: "25 or more out of 36 is the range most Indian families treat as a good match. Anything from 18 upwards is traditionally acceptable, provided the heavy kootas — Nadi (8 points) and Bhakoot (7 points) — are clear or their classical exceptions apply.",
+    },
+    {
+      q: "18 se kam gun mile to shaadi ho sakti hai?",
+      a: "Traditional practice advises a closer look rather than an automatic no. Check the birth details first, see which kootas scored zero, and check whether the Nadi or Bhakoot exceptions apply — these can set a dosha aside without changing the printed total. Then have both full charts read, including the Navamsa and the 7th house.",
+    },
+    {
+      q: "What are the 8 koots in the 36 gun milan chart?",
+      a: "Varna (1), Vashya (2), Tara (3), Yoni (4), Graha Maitri (5), Gana (6), Bhakoot (7) and Nadi (8), adding up to 36. All eight are calculated from the Moon sign and Moon nakshatra of each partner.",
+    },
+    {
+      q: "Why does my ashtakoot score look low when the astrologer says the match is fine?",
+      a: "Most likely because a classical exception applies. Nadi dosha is commonly considered cancelled when the pair share a rashi but not a nakshatra, or a nakshatra but not a rashi; Bhakoot dosha is commonly set aside when the two Moon-sign lords are the same planet or friends. Calculators print the raw zero, while an astrologer applies the parihar.",
+    },
+    {
+      q: "Is a 36 out of 36 gun milan score possible?",
+      a: "It is possible but extremely rare, and it is not really a target. Even at 36, astrologers still check Manglik status, the 7th house and the Navamsa chart, none of which form part of the Ashtakoot total.",
+    },
+    {
+      q: "Which gun matter most in kundli matching?",
+      a: "Nadi at 8 points and Bhakoot at 7 carry the most weight, with Gana at 6 next. Those three decide 21 of the 36 points, which is why losing them concerns astrologers far more than losing Varna, worth a single point.",
+    },
+    {
+      q: "Does a low guna milan score mean the marriage will have problems?",
+      a: "No. The score is a traditional filter based only on the two Moon positions, so it cannot assess values, communication, finances or how two families get along. Many marriages below 18 gun do well and many high-scoring ones struggle.",
+    },
+    {
+      q: "Can a wrong birth time change my gun milan score?",
+      a: "Yes, noticeably. Nadi, Gana, Yoni and Tara are all read from the nakshatra and are worth 21 points together, and the Moon changes nakshatra roughly every day. A few hours' error, or the wrong birth city, can move the Moon into the next star and change four rows at once.",
+    },
+    {
+      q: "Does Astrojanta's matching tool check Manglik dosha?",
+      a: "No. The matching tool scores the eight kootas and flags Nadi and Bhakoot dosha only. Manglik is checked separately for each person on the free Manglik page, because it comes from Mars's house position rather than from the Moon.",
+    },
+    {
+      q: "Is gun milan needed for a love marriage?",
+      a: "It is entirely a family choice and not a requirement. Many couples who have already chosen each other run kundli milan to reassure their parents; in that situation the most useful part of the report is a clear explanation of any dosha and its exceptions, so the conversation at home rests on facts rather than fear.",
+    },
+  ],
+};
+
 export const POSTS: Post[] = [
+  kitneGunMilneChahiye,
   ganaDosha,
   bhakootDosha,
   vimshottariMahadasha,
