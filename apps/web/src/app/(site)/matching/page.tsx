@@ -5,9 +5,9 @@ import { pageOpenGraph } from "@/lib/site";
 import { MatchingTool } from "./matching-tool";
 
 export const metadata: Metadata = {
-  title: "Kundli Matching — Ashtakoot Guna Milan Online",
+  title: "Free Kundli Matching: 36 Gun Milan Online",
   description:
-    "Free Vedic Kundli matching (Ashtakoot Guna Milan). Compare two Moon charts for 36-guna compatibility, Nadi dosha and Bhakoot — the same system used for Hindu marriage matching.",
+    "Free kundli milan by date of birth: all 36 gun, each of the 8 koot, plus Nadi aur Bhakoot dosha flags. Dekhein kitne gun mile — no sign-up needed.",
   alternates: { canonical: "/matching" },
   openGraph: pageOpenGraph("/matching"),
 };
