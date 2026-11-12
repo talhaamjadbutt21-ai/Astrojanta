@@ -26,10 +26,10 @@ export type Post = {
 
 const mercuryRetrograde2026: Post = {
   slug: "mercury-retrograde-2026",
-  title: "Budh Vakri 2026 Dates in IST: Mercury Retrograde Effects by Rashi",
+  title: "Budh Vakri 2026: IST Dates & Rashi-wise Effects",
   h1: "Budh Vakri 2026 (Mercury Retrograde): Dates in IST, Effects by Rashi and What to Avoid",
   description:
-    "Budh vakri 2026: Mercury is retrograde from 24 Oct (12:41 PM IST) to 13 Nov (9:22 PM IST) in Tula rashi. Rashi-wise effects, kya karein aur kya na karein, and simple Budh upay.",
+    "Budh vakri 2026: Mercury retrograde dates in IST, rashi-wise effects on career aur paisa, kya karein aur kya na karein, plus simple Budh upay.",
   keyword: "budh vakri 2026",
   published: "2026-10-26",
   updated: "2026-11-03",
@@ -714,10 +714,10 @@ const askAstrologerFree: Post = {
 
 const kundliMilanOnlineFree: Post = {
   slug: "kundli-milan-online-free",
-  title: "Kundli Milan Online Free: Gun Milan by Name & Date of Birth (36 Guna Guide)",
+  title: "Kundli Milan Kaise Karein: 36 Gun Milan Guide",
   h1: "Kundli Milan Online Free – Complete Gun Milan Guide for Shaadi",
   description:
-    "Free kundli milan online for marriage. Understand the Ashtakoot 36 guna table, what gun milan score is good, Nadi and Bhakoot dosha, Manglik matching and how Indian families use kundli matching before shaadi.",
+    "Kundli milan by date of birth, step by step: the 8 koot, all 36 gun, Nadi aur Bhakoot dosha, Manglik — aur score ka matlab. Free tool, plain English.",
   keyword: "kundli milan online free",
   published: "2026-11-01",
   updated: "2026-11-01",

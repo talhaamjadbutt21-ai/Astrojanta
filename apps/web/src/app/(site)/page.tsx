@@ -18,9 +18,9 @@ import { Card } from "@/components/ui/card";
 import { ZodiacWheel } from "@/components/zodiac-wheel";
 import { HOME_URL, pageOpenGraph } from "@/lib/site";
 
-const HOME_TITLE = "Astrojanta — Free Kundli & AI Vedic Astrologer in Hindi and English";
+const HOME_TITLE = "Astrojanta — Free Kundli & AI Astrologer in Hindi";
 const HOME_DESCRIPTION =
-  "Astrology for Everyone. Generate your free Janam Kundli with accurate Lahiri calculations, then ask an AI Vedic astrologer about career, marriage and dasha — in Hindi, Hinglish or English.";
+  "Banaiye apni free Janam Kundli in seconds with accurate Lahiri calculations, then ask an AI Vedic astrologer about career, shaadi aur dasha in Hindi.";
 
 export const metadata: Metadata = {
   title: { absolute: HOME_TITLE },
