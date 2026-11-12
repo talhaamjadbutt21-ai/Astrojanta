@@ -896,10 +896,10 @@ const kundliMilanOnlineFree: Post = {
 
 const manglikDoshaMeaning: Post = {
   slug: "manglik-dosha-meaning",
-  title: "Manglik Dosha Meaning, Cancellation & Remedies",
+  title: "Manglik Dosha in Kundli Matching: Kab Shaadi Safe Hai?",
   h1: "Manglik Dosha Meaning – Mangal Dosh, Kuja Dosha, Which Houses Count, Anshik vs High Manglik, Cancellation Rules, the Age 28 Belief and Upay",
   description:
-    "Manglik dosha (mangal dosh) explained calmly: houses 1, 2, 4, 7, 8, 12 from Lagna, Moon and Venus, anshik vs high Manglik, cancellation rules, age 28 and upay.",
+    "Manglik ladka, non-manglik ladki — kab shaadi theek hai? Mangal dosh ke 6 ghar, parihar (cancellation) rules, age 28 myth, upay and a free Manglik check.",
   keyword: "manglik dosha meaning",
   author: "founder",
   published: "2026-11-02",
