@@ -718,7 +718,7 @@ const kundliMilanOnlineFree: Post = {
   h1: "Kundli Milan Online Free – Complete Gun Milan Guide for Shaadi",
   description:
     "Kundli milan by date of birth, step by step: the 8 koot, all 36 gun, Nadi aur Bhakoot dosha, Manglik — aur score ka matlab. Free tool, plain English.",
-  keyword: "kundli milan online free",
+  keyword: "kundli milan kaise karein",
   published: "2026-11-01",
   updated: "2026-11-01",
   intro:
