@@ -1977,10 +1977,10 @@ const shaniSadeSati2026: Post = {
 
 const rashifal2027: Post = {
   slug: "rashifal-2027",
-  title: "Rashifal 2027: Varshik Rashifal for 12 Rashis – Career, Shaadi, Dhan & Upay",
+  title: "Rashifal 2027: 12 Rashi, Career, Shaadi & Upay",
   h1: "Rashifal 2027 – Varshik Rashifal for All 12 Rashis: Career, Love, Shaadi, Dhan, Health and Upay",
   description:
-    "Rashifal 2027 for all 12 rashis: Shani enters Mesh 3 Jun, Guru exalted in Kark 25 Jan–26 Jun, Rahu in Makar all year. Dates in IST, career, shaadi, dhan, Sade Sati 2027 and simple upay.",
+    "Varshik rashifal 2027 for all 12 rashis: Shani enters Mesh 3 Jun, Guru exalted in Kark 25 Jan–26 Jun. Career, shaadi, dhan, Sade Sati aur saral upay.",
   keyword: "rashifal 2027",
   author: "founder",
   published: "2026-11-05",
