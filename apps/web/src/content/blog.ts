@@ -396,7 +396,7 @@ const aiKundliReader: Post = {
   h1: "AI Kundli Reader: How to Read Your Kundali Online Free",
   description:
     "Already have your kundli? Learn to read it step by step: the Lagna, 12 houses, 9 planets and dasha, plus how an AI kundli reader explains it. Also: kundli vs kundalini.",
-  keyword: "kundalini reader ai",
+  keyword: "kundli kaise dekhein",
   published: "2026-10-30",
   updated: "2026-11-09",
   intro:
