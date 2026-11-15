@@ -3040,10 +3040,10 @@ const nadiDosha: Post = {
 
 const vimshottariMahadasha: Post = {
   slug: "vimshottari-mahadasha",
-  title: "Vimshottari Mahadasha: Order, Periods, Antardasha & How to Check",
+  title: "Mahadasha Kya Hai? 120 Saal Ka Dasha Chart",
   h1: "Vimshottari Mahadasha – Mahadasha, Antardasha Kya Hai, 9 Grahon ke Saal, Order and How to Check Your Current Dasha",
   description:
-    "Mahadasha kya hai? A plain-English guide with Hinglish terms: the 120-year Vimshottari order, each graha's years, antardasha, how to find your current dasha in kundli, and calm notes on Shani, Rahu, Guru and Shukra.",
+    "Mahadasha kya hoti hai? 120 saal ka Vimshottari dasha chart, har graha ke saal aur antardasha. Apni janam tarikh se jaanein abhi kaunsi dasha chal rahi hai.",
   keyword: "mahadasha",
   author: "founder",
   published: "2026-11-08",
