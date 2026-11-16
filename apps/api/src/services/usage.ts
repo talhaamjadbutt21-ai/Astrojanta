@@ -6,12 +6,12 @@ import {
   type UsagePlan,
   type UsageSnapshot,
 } from "@astrojanta/shared";
-import { and, count, eq, gte } from "drizzle-orm";
+import { and, count, eq, gte, sql } from "drizzle-orm";
 import type { FastifyReply, FastifyRequest } from "fastify";
 import { z } from "zod";
 import type { Db } from "../db/client";
 import { featureUses } from "../db/schema";
-import type { Env } from "../env";
+import { cookieSecure, type Env } from "../env";
 import { AppError } from "../lib/errors";
 import { questionLimit } from "./entitlements";
 
@@ -45,7 +45,7 @@ function subjectOf(request: FastifyRequest, reply: FastifyReply, env: Env): { ty
   const id = existing && guestIdSchema.safeParse(existing).success ? existing : crypto.randomUUID();
   reply.setCookie(GUEST_COOKIE, id, {
     httpOnly: true,
-    secure: env.NODE_ENV === "production",
+    secure: cookieSecure(env),
     sameSite: "lax",
     path: "/",
     maxAge: 400 * 86_400,
@@ -109,6 +109,60 @@ export async function readUsageSnapshot(
   return { plan, pro, features };
 }
 
+export interface FeatureReservation {
+  id: string;
+  quota: FeatureQuota;
+}
+
+/** Reserve one daily attempt. Uses a transaction advisory lock so concurrent requests cannot exceed the limit. */
+export async function reserveFeature(
+  db: Db,
+  env: Env,
+  request: FastifyRequest,
+  reply: FastifyReply,
+  feature: ProductFeature,
+): Promise<FeatureReservation> {
+  const subject = subjectOf(request, reply, env);
+  const { plan, pro, limit } = await planForFeature(db, env, subject.type === "user" ? subject.id : null, feature);
+  const since = utcDayStart();
+
+  const reserved = await db.transaction(async (tx) => {
+    await tx.execute(sql`select pg_advisory_xact_lock(hashtext(${subject.id}), hashtext(${feature}))`);
+    const [row] = await tx
+      .select({ used: count() })
+      .from(featureUses)
+      .where(
+        and(eq(featureUses.subjectId, subject.id), eq(featureUses.feature, feature), gte(featureUses.createdAt, since)),
+      );
+    const used = Number(row?.used ?? 0);
+    if (used >= limit) return null;
+    const [inserted] = await tx
+      .insert(featureUses)
+      .values({ subjectType: subject.type, subjectId: subject.id, feature })
+      .returning({ id: featureUses.id });
+    return { id: inserted!.id, used: used + 1 };
+  });
+
+  if (!reserved) throw new AppError("QUOTA_EXCEEDED", quotaMessage({ plan, limit }));
+  return {
+    id: reserved.id,
+    quota: {
+      feature,
+      used: reserved.used,
+      limit,
+      remaining: Math.max(0, limit - reserved.used),
+      resetsAt: utcNextDay().toISOString(),
+      plan,
+      pro,
+    },
+  };
+}
+
+/** Drop a reservation that was not fulfilled (model error, timeout, empty answer, or a failure before the stream). */
+export async function releaseFeature(db: Db, reservationId: string): Promise<void> {
+  await db.delete(featureUses).where(eq(featureUses.id, reservationId));
+}
+
 export async function consumeFeature(
   db: Db,
   env: Env,
@@ -116,9 +170,6 @@ export async function consumeFeature(
   reply: FastifyReply,
   feature: ProductFeature,
 ): Promise<FeatureQuota> {
-  const quota = await readFeatureQuota(db, env, request, reply, feature);
-  if (quota.remaining <= 0) throw new AppError("QUOTA_EXCEEDED", quotaMessage(quota));
-  const subject = subjectOf(request, reply, env);
-  await db.insert(featureUses).values({ subjectType: subject.type, subjectId: subject.id, feature });
-  return { ...quota, used: quota.used + 1, remaining: quota.remaining - 1 };
+  const { quota } = await reserveFeature(db, env, request, reply, feature);
+  return quota;
 }

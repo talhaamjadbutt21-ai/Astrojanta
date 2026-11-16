@@ -59,6 +59,7 @@ describe("auth", () => {
     expect(raw).toMatch(/astrojanta_refresh=/);
     expect(raw).toMatch(/HttpOnly/);
     expect(raw).toMatch(/SameSite=Lax/);
+    expect(raw).not.toMatch(/Secure/);
   });
 
   it("rejects duplicate emails with 409", async () => {
@@ -116,6 +117,10 @@ describe("auth", () => {
   it("gives guests 1 kundli, 3 attempts on other chart tools and no chat allowance", async () => {
     const usage = await app.inject({ method: "GET", url: "/api/usage" });
     expect(usage.statusCode).toBe(200);
+    const guest = String(usage.headers["set-cookie"]);
+    expect(guest).toMatch(/astrojanta_guest=/);
+    expect(guest).toMatch(/HttpOnly/);
+    expect(guest).not.toMatch(/Secure/);
     const body = usage.json();
     expect(body.features.kundli.limit).toBe(1);
     expect(body.features.matching.limit).toBe(3);

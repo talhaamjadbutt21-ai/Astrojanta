@@ -9,7 +9,7 @@ import { conversations, messages } from "../db/schema";
 import { notFound } from "../lib/errors";
 import { parse } from "../lib/validate";
 import { requireAuth } from "../plugins/auth";
-import { consumeFeature, readFeatureQuota } from "../services/usage";
+import { readFeatureQuota, releaseFeature, reserveFeature } from "../services/usage";
 
 const HISTORY_LIMIT = 20;
 
@@ -78,42 +78,14 @@ export async function chatRoutes(app: FastifyInstance, { db, env, profiles, astr
     const input = parse(chatRequestSchema, request.body);
     const { profile, birth } = await profiles.get(userId, input.profileId);
 
-    await consumeFeature(db, env, request, reply, "chat");
+    // Reserve first so concurrent chats cannot slip past the daily limit; refunded if the model fails.
+    const reservation = await reserveFeature(db, env, request, reply, "chat");
 
     let conversationId = input.conversationId;
-    if (conversationId) {
-      const [conv] = await db
-        .select({ id: conversations.id })
-        .from(conversations)
-        .where(
-          and(
-            eq(conversations.id, conversationId),
-            eq(conversations.userId, userId),
-            eq(conversations.profileId, profile.id),
-          ),
-        )
-        .limit(1);
-      if (!conv) throw notFound("Conversation");
-      await db.update(conversations).set({ updatedAt: new Date() }).where(eq(conversations.id, conversationId));
-    } else {
-      const [conv] = await db
-        .insert(conversations)
-        .values({ userId, profileId: profile.id, title: input.message.slice(0, 80) })
-        .returning({ id: conversations.id });
-      conversationId = conv!.id;
-    }
-
-    await db.insert(messages).values({ conversationId, userId, role: "user", content: input.message });
-
-    const history = (
-      await db
-        .select({ role: messages.role, content: messages.content })
-        .from(messages)
-        .where(eq(messages.conversationId, conversationId))
-        .orderBy(desc(messages.createdAt))
-        .limit(HISTORY_LIMIT)
-    ).reverse();
-
+    let hijacked = false;
+    let succeeded = false;
+    let answer = "";
+    let timeout: ReturnType<typeof setTimeout> | undefined;
     const abort = new AbortController();
     // Abort only when the *client* drops the response mid-stream.
     // Do not listen to request.raw "close" — that fires after the POST body is read and would
@@ -122,25 +94,59 @@ export async function chatRoutes(app: FastifyInstance, { db, env, profiles, astr
       if (!reply.raw.writableFinished) abort.abort();
     };
 
-    // Hijacking bypasses Fastify's reply pipeline, so carry over headers set by CORS/helmet hooks.
-    const inherited = Object.fromEntries(
-      Object.entries(reply.getHeaders()).filter((e): e is [string, string | number | string[]] => e[1] !== undefined),
-    );
-    reply.hijack();
-    reply.raw.writeHead(200, {
-      ...inherited,
-      "content-type": "text/plain; charset=utf-8",
-      "cache-control": "no-cache, no-transform",
-      "x-accel-buffering": "no",
-      "x-conversation-id": conversationId,
-    });
-    reply.raw.on("close", onClientGone);
-    // Flush a zero-width space immediately so reverse proxies start the stream
-    // before tool calls finish (otherwise a 30s idle timeout returns 500).
-    reply.raw.write("\u200b");
-
-    let answer = "";
     try {
+      if (conversationId) {
+        const [conv] = await db
+          .select({ id: conversations.id })
+          .from(conversations)
+          .where(
+            and(
+              eq(conversations.id, conversationId),
+              eq(conversations.userId, userId),
+              eq(conversations.profileId, profile.id),
+            ),
+          )
+          .limit(1);
+        if (!conv) throw notFound("Conversation");
+        await db.update(conversations).set({ updatedAt: new Date() }).where(eq(conversations.id, conversationId));
+      } else {
+        const [conv] = await db
+          .insert(conversations)
+          .values({ userId, profileId: profile.id, title: input.message.slice(0, 80) })
+          .returning({ id: conversations.id });
+        conversationId = conv!.id;
+      }
+
+      await db.insert(messages).values({ conversationId, userId, role: "user", content: input.message });
+
+      const history = (
+        await db
+          .select({ role: messages.role, content: messages.content })
+          .from(messages)
+          .where(eq(messages.conversationId, conversationId))
+          .orderBy(desc(messages.createdAt))
+          .limit(HISTORY_LIMIT)
+      ).reverse();
+
+      // Hijacking bypasses Fastify's reply pipeline, so carry over headers set by CORS/helmet hooks.
+      const inherited = Object.fromEntries(
+        Object.entries(reply.getHeaders()).filter((e): e is [string, string | number | string[]] => e[1] !== undefined),
+      );
+      reply.hijack();
+      hijacked = true;
+      reply.raw.writeHead(200, {
+        ...inherited,
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "no-cache, no-transform",
+        "x-accel-buffering": "no",
+        "x-conversation-id": conversationId,
+      });
+      reply.raw.on("close", onClientGone);
+      timeout = setTimeout(() => abort.abort(), env.CHAT_MODEL_TIMEOUT_MS);
+      // Flush a zero-width space immediately so reverse proxies start the stream
+      // before tool calls finish (otherwise a 30s idle timeout returns 500).
+      reply.raw.write("\u200b");
+
       const stream = isCrisisMessage(input.message)
         ? (async function* () {
             yield CRISIS_REPLY;
@@ -160,14 +166,19 @@ export async function chatRoutes(app: FastifyInstance, { db, env, profiles, astr
 
       for await (const chunk of stream) {
         answer += chunk;
-        reply.raw.write(chunk);
+        if (!reply.raw.writableEnded) reply.raw.write(chunk);
       }
-      if (!answer.trim() && !abort.signal.aborted) {
+      if (abort.signal.aborted) {
+        // Timed out or the client left mid-stream: keep the partial text for history, but refund.
+      } else if (!answer.trim()) {
         const notice = "_I couldn't generate an answer just now. Please try again._";
         answer = notice;
         if (!reply.raw.writableEnded) reply.raw.write(notice);
+      } else {
+        succeeded = true;
       }
     } catch (err) {
+      if (!hijacked) throw err;
       if (!abort.signal.aborted) {
         request.log.error({ err }, "astrologer stream failed");
         const notice = "\n\n_Sorry, I couldn't finish that answer. Please try again in a moment._";
@@ -175,14 +186,22 @@ export async function chatRoutes(app: FastifyInstance, { db, env, profiles, astr
         if (!reply.raw.writableEnded) reply.raw.write(notice);
       }
     } finally {
+      if (timeout !== undefined) clearTimeout(timeout);
       reply.raw.off("close", onClientGone);
-      if (answer.trim()) {
-        await db
-          .insert(messages)
-          .values({ conversationId, userId, role: "assistant", content: answer })
-          .catch((err: unknown) => request.log.error({ err }, "failed to save assistant message"));
+      if (!succeeded) {
+        await releaseFeature(db, reservation.id).catch((err: unknown) =>
+          request.log.error({ err }, "failed to release chat reservation"),
+        );
       }
-      if (!reply.raw.writableEnded) reply.raw.end();
+      if (hijacked) {
+        if (answer.trim()) {
+          await db
+            .insert(messages)
+            .values({ conversationId: conversationId!, userId, role: "assistant", content: answer })
+            .catch((err: unknown) => request.log.error({ err }, "failed to save assistant message"));
+        }
+        if (!reply.raw.writableEnded) reply.raw.end();
+      }
     }
   });
 }

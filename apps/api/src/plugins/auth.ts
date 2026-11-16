@@ -4,7 +4,7 @@ import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import type { AuthSession, IdentityProvider, IdentityUser } from "../auth";
 import type { Db } from "../db/client";
 import { users } from "../db/schema";
-import type { Env } from "../env";
+import { cookieSecure, type Env } from "../env";
 import { sha256 } from "../lib/crypto";
 import { AppError, forbidden, unauthenticated } from "../lib/errors";
 
@@ -40,7 +40,7 @@ function readToken(request: FastifyRequest): { token: string; via: AuthContext["
 function cookieOptions(env: Env) {
   return {
     httpOnly: true,
-    secure: env.NODE_ENV === "production",
+    secure: cookieSecure(env),
     sameSite: "lax" as const,
     path: "/",
     maxAge: env.SESSION_TTL_DAYS * 86_400,
