@@ -115,6 +115,10 @@ export function SiteFooter() {
           <Link className="text-gold-300/90 hover:text-gold-200" href="/terms">
             Terms
           </Link>
+          {" · "}
+          <Link className="text-gold-300/90 hover:text-gold-200" href="/disclaimer">
+            Disclaimer
+          </Link>
           . © {new Date().getFullYear()} Astrojanta.
         </p>
       </div>
