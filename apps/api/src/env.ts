@@ -65,13 +65,20 @@ const envSchema = z
     SUPABASE_SERVICE_ROLE_KEY: opt(z.string().min(1)),
     /** 32-byte key, base64. Encrypts birth details at rest. */
     DATA_ENCRYPTION_KEY: opt(z.string()),
-    TRUST_PROXY: z.preprocess(blankToUndefined, z.stringbool().default(false)),
+    /** True behind a reverse proxy. Defaults to true on Vercel so X-Forwarded-For is trusted. */
+    TRUST_PROXY: z.preprocess((v) => {
+      const cleared = blankToUndefined(v);
+      if (cleared === undefined) return process.env.VERCEL ? "true" : "false";
+      return cleared;
+    }, z.stringbool()),
     /** Google AI Studio key (Gemini / Gemma). Chat is live if this or OPENAI_API_KEY is set. */
     GEMINI_API_KEY: opt(z.string()),
     /** Alias used by the Vercel AI SDK Google provider. */
     GOOGLE_GENERATIVE_AI_API_KEY: opt(z.string()),
     OPENAI_API_KEY: opt(z.string()),
     AI_MODEL: z.string().default("gemma-4-26b-a4b-it"),
+    /** Abort a hung model call so it cannot pin the serverless function (default 60s). */
+    CHAT_MODEL_TIMEOUT_MS: z.coerce.number().int().min(1).default(60_000),
     /** Daily attempts per tool without an account. */
     GUEST_DAILY_ATTEMPTS: z.coerce.number().int().min(0).default(3),
     /** Daily Kundli attempts without an account (overrides GUEST_DAILY_ATTEMPTS for the kundli tool). */
@@ -120,6 +127,11 @@ const envSchema = z
   });
 
 export type Env = z.infer<typeof envSchema>;
+
+/** Secure flag for cookies: on in production and on Vercel (always HTTPS). Off for local http:// dev and tests. */
+export function cookieSecure(env: Pick<Env, "NODE_ENV">): boolean {
+  return env.NODE_ENV === "production" || Boolean(process.env.VERCEL);
+}
 
 export function loadEnv(source: Record<string, string | undefined> = process.env): Env {
   const parsed = envSchema.safeParse(
