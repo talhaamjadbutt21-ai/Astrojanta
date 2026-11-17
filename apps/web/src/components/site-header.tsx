@@ -15,6 +15,7 @@ const NAV = [
   { href: "/kundli", label: "Free Kundli" },
   { href: "/matching", label: "Matching" },
   { href: "/manglik", label: "Manglik" },
+  { href: "/blog", label: "Blog" },
   { href: "/pricing", label: "Pro" },
 ];
 
@@ -62,7 +63,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex h-[4.25rem] max-w-6xl items-center justify-between px-4 sm:px-6">
         <Logo />
-        <nav className="hidden items-center gap-1 md:flex" aria-label="Main">
+        <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
           {nav.map((item) => (
             <Link
               key={item.href}
@@ -73,10 +74,10 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <div className="hidden items-center gap-2 md:flex">{cta}</div>
+        <div className="hidden items-center gap-2 lg:flex">{cta}</div>
         <button
           type="button"
-          className="grid size-10 place-items-center rounded-full text-ink hover:bg-white/5 md:hidden"
+          className="grid size-10 place-items-center rounded-full text-ink hover:bg-white/5 lg:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((o) => !o)}
@@ -91,7 +92,7 @@ export function SiteHeader() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="overflow-hidden border-b border-white/8 bg-night-950/95 backdrop-blur-xl md:hidden"
+            className="overflow-hidden border-b border-white/8 bg-night-950/95 backdrop-blur-xl lg:hidden"
           >
             <nav className="flex flex-col gap-1 px-4 pb-5 pt-2" aria-label="Mobile">
               {nav.map((item) => (
