@@ -1986,9 +1986,9 @@ const rashifal2027: Post = {
   published: "2026-11-05",
   updated: "2026-11-09",
   intro:
-    "“Saal 2027 kaisa rahega?” — every November, millions of people in India start searching for their varshik rashifal. 2027 is a genuinely eventful year in Vedic astrology: Shani (Saturn) leaves Meena and enters Mesh for the first time in about 30 years, Guru (Jupiter) spends the first half of the year exalted in Kark, and Rahu–Ketu sit on the Makar–Kark axis for the whole year. This rashifal 2027 explains each big gochar (transit) with dates in IST, then gives a practical horoscope 2027 for all 12 rashis — career and naukri, love and shaadi, dhan, health and one simple upay each. Everything is calculated in the sidereal zodiac with the Lahiri ayanamsa, the system used by Indian panchangs, and read from your Moon sign (Chandra rashi).",
+    "Every November, millions of people in India start searching for their varshik rashifal for the coming year. 2027 is a genuinely eventful year in Vedic astrology: Shani (Saturn) leaves Meena and enters Mesh for the first time in about 30 years, Guru (Jupiter) spends the first half of the year exalted in Kark, and Rahu–Ketu sit on the Makar–Kark axis for the whole year. This rashifal 2027 explains each big gochar (transit) with dates in IST, then gives a practical horoscope 2027 for all 12 rashis — career and naukri, love and shaadi, dhan, health and one simple upay each. Everything is calculated in the sidereal zodiac with the Lahiri ayanamsa, the system used by Indian panchangs, and read from your Moon sign (Chandra rashi).",
   body: [
-    { type: "h2", text: "Rashifal 2027 overview: saal 2027 kaisa rahega?" },
+    { type: "h2", text: "Rashifal 2027 overview: varshik rashifal at a glance" },
     {
       type: "p",
       text: "A yearly horoscope is mainly about the slow planets, because they shape the whole year: Saturn (about 2.5 years per sign), Jupiter (about 1 year per sign) and Rahu–Ketu (about 18 months per sign pair). In 2027 all of them are active:",
@@ -2005,7 +2005,7 @@ const rashifal2027: Post = {
     },
     {
       type: "p",
-      text: "In short, 2027 rewards patience and planning. The first half (Jupiter exalted) is better for starting things — shaadi, admission, a new job — and the second half (Saturn in Mesh, then retrograde) is better for finishing, consolidating and paying off debts.",
+      text: "In short, 2027 rewards patience and planning. The first half (Jupiter exalted) is better for starting things — shaadi, admission, a new job — and the second half (Saturn in Mesh, then retrograde) is better for finishing, consolidating and paying off debts. For a Hinglish rashi-by-rashi read with month-wise highlights, see our [saal 2027 ka poora overview](/blog/saal-2027-kaisa-rahega).",
     },
 
     { type: "h2", text: "Gochar 2027 dates in IST (Shani, Guru, Rahu–Ketu, Mangal)" },
@@ -2322,7 +2322,7 @@ const rashifal2027: Post = {
   ],
   faqs: [
     {
-      q: "Rashifal 2027: saal 2027 kaisa rahega?",
+      q: "Rashifal 2027 kya kehta hai?",
       a: "2027 is a year of big transits. Jupiter is exalted in Kark from 25 January to 26 June, which supports marriage, education and new starts, and Saturn enters Mesh on 3 June, which brings discipline and hard work. The first half is better for beginnings, the second half for consolidation.",
     },
     {
