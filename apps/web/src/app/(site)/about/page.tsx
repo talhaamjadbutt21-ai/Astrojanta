@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/json-ld";
 import { LegalArticle } from "@/components/legal-article";
-import { absoluteUrl, CONTACT_EMAIL, FOUNDER, ORGANIZATION_ID, pageOpenGraph } from "@/lib/site";
+import { absoluteUrl, CONTACT_EMAIL, FOUNDER, FOUNDER_ID, ORGANIZATION_ID, pageOpenGraph } from "@/lib/site";
 
 const TITLE = "About Astrojanta — Vedic Astrology Tools and AI Astrologer";
 const DESCRIPTION =
@@ -26,11 +26,25 @@ export default function AboutPage() {
           name: TITLE,
           url: absoluteUrl("/about"),
           about: { "@id": ORGANIZATION_ID },
+          mentions: { "@id": FOUNDER_ID },
         }}
       />
       <p>
         Astrojanta is a web app for Vedic (Jyotish) astrology, founded and owned by {FOUNDER.name}. It combines accurate chart calculation with
         an AI astrologer that explains your chart in plain Hindi, Hinglish or English.
+      </p>
+      <h2>Who runs Astrojanta</h2>
+      <p>
+        Astrojanta is built and run by <strong>Talha Amjad</strong>, as a one-person project. The idea came from a
+        simple gap: there are plenty of kundli calculators, but almost nowhere could you actually chat about your chart
+        and ask follow-up questions in your own words. So Talha combined traditional Vedic calculations with AI. The
+        chart, dasha and guna scores are calculated with standard Vedic methods, and the AI astrologer explains them in
+        plain Hindi, Hinglish or English.
+      </p>
+      <p>
+        For Talha, Astrojanta is a labour of love, built for the self-satisfaction of making something genuinely
+        useful, not to sell pujas, gemstones or fear. It is meant for guidance and self-reflection, not fixed
+        predictions.
       </p>
       <h2>What we offer</h2>
       <ul>
