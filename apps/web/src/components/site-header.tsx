@@ -15,6 +15,7 @@ const NAV = [
   { href: "/kundli", label: "Free Kundli" },
   { href: "/matching", label: "Matching" },
   { href: "/manglik", label: "Manglik" },
+  { href: "/blog", label: "Blog" },
   { href: "/pricing", label: "Pro" },
 ];
 
