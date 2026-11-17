@@ -5,9 +5,9 @@ import { pageOpenGraph } from "@/lib/site";
 import { MoonSignTool } from "./moon-sign-tool";
 
 export const metadata: Metadata = {
-  title: "Moon Sign & Nakshatra Calculator — Free Rashi",
+  title: "Moon Sign Calculator: Free Rashi & Nakshatra",
   description:
-    "Find your Vedic Moon sign (Rashi), birth nakshatra and pada from date, time and place. Sidereal Lahiri calculation, not a tropical sun sign.",
+    "Apni Chandra rashi (Moon sign), nakshatra aur pada free mein jaanein: bas janam tarikh, samay aur jagah daalein. Vedic Lahiri calculation, sun sign nahi.",
   alternates: { canonical: "/moon-sign" },
   openGraph: pageOpenGraph("/moon-sign"),
 };
