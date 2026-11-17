@@ -34,7 +34,8 @@ export default function PricingPage() {
           Pay only if you <span className="text-gradient-gold">keep asking</span>
         </h1>
         <p className="mt-4 text-muted">
-          Signed-out visitors get 1 attempt per tool each day. A free account gets 2. Pro gets 6 on every tool.
+          Signed-out visitors get 1 Kundli and 3 attempts on each other chart tool every day. A free account gets 2 per
+          tool, including AI chat. Pro gets 6 on every tool.
         </p>
       </header>
 
