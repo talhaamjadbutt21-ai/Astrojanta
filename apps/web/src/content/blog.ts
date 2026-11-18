@@ -1888,7 +1888,7 @@ const shaniSadeSati2026: Post = {
         "Meen: the peak ends in February 2028; Meen then enters the last phase while Saturn is in Mesh (until around 2030).",
         "Mesh: the peak begins when Saturn enters Mesh in June 2027, pauses during the October 2027–February 2028 dip, and resumes from February 2028.",
         "Vrishabh: Sade Sati begins with Saturn's entry into Mesh in June 2027, and for good from February 2028.",
-        "Simha and Dhanu: Dhaiya ends in February 2028; Kark (Ashtama) and Makar (Kantaka) begin Dhaiya when Saturn enters Mesh.",
+        "Simha and Dhanu: Dhaiya ends in February 2028; Kanya (Ashtama) and Makar (Kantaka) begin Dhaiya when Saturn enters Mesh.",
       ],
     },
 
