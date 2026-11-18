@@ -5290,7 +5290,205 @@ const saal2027KaisaRahega: Post = {
   ],
 };
 
+const sadeSati2027: Post = {
+  slug: "sade-sati-2027",
+  title: "Sade Sati 2027: Kin Rashiyon Par, Dates & Upay",
+  h1: "Sade Sati 2027 aur Shani Gochar 2027 – Kin Rashiyon Par Sade Sati aur Dhaiya, Dates (IST) aur Saral Upay",
+  description:
+    "2027 mein Sade Sati kis rashi par? Shani 3 June ko Mesh mein, 20 Oct ko wapas Meen mein. Rashi-wise phase, Dhaiya, IST dates aur shaant, saral upay jaanein.",
+  keyword: "sade sati 2027",
+  author: "founder",
+  published: "2026-11-18",
+  updated: "2026-11-18",
+  intro:
+    "2027 mein Shani (Saturn) ek hi saal mein do baar rashi badalta hai — 3 June ko Meen se Mesh mein, aur vakri hokar 20 October ko wapas Meen mein. Isliye 2027 mein Sade Sati aur Shani Dhaiya ki list bhi do baar badalti hai, aur bahut log confuse ho jaate hain ki unki Sade Sati shuru hui, khatam hui ya ruki. Is guide mein seedha jawab hai: kin rashiyon par kab Sade Sati hai, kaunsa charan (phase) chal raha hai, Dhaiya kis par hai, aur is daur ko shaanti se kaise sambhalein. Sab kuch Vedic (sidereal, Lahiri) system mein aur aapki Chandra rashi (Moon sign) se hai. Dar ki koi baat nahi — Sade Sati mehnat aur sabr ka samay hai, sazaa nahi.",
+  body: [
+    { type: "h2", text: "Short answer: 2027 mein Sade Sati kis rashi par hai?" },
+    {
+      type: "ul",
+      items: [
+        "1 January – 2 June 2027: Sade Sati Mesh (pehla charan), Meen (beech ka, peak) aur Kumbh (aakhri charan) par. Dhaiya Simha aur Dhanu par.",
+        "3 June – 19 October 2027: Shani Mesh mein. Sade Sati Vrishabh (shuru), Mesh (peak) aur Meen (aakhri charan) par. Kumbh ko raahat. Dhaiya Kanya aur Makar par.",
+        "20 October – 31 December 2027: Shani wapas Meen mein, to January wali sthiti laut aati hai — Mesh, Meen, Kumbh par Sade Sati aur Simha, Dhanu par Dhaiya.",
+        "Mithun, Kark, Tula aur Vrishchik par 2027 mein na Sade Sati hai, na Dhaiya.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Apni sahi Chandra rashi nahi pata? [Moon sign calculator](/moon-sign) se ek minute mein free dekh lein — naam rashi ya English sun sign se Sade Sati nahi dekhi jaati.",
+    },
+
+    { type: "h2", text: "Shani gochar 2027: saari zaroori dates (IST)" },
+    {
+      type: "p",
+      text: "Shani saal ki shuruaat Meen rashi mein margi (seedhi chaal) mein karta hai. Neeche har date humne Drik Panchang aur ProKerala dono se milaayi hai, aur Sade Sati ke daur AstroSage ki rashi-wise tables se bhi check kiye hain. Ghante-minute har panchang mein thode alag hote hain, isliye yahan sirf tarikh di gayi hai.",
+    },
+    {
+      type: "table",
+      head: ["Tarikh (IST)", "Shani ki chaal", "Sade Sati / Dhaiya par asar"],
+      rows: [
+        [
+          "3 June 2027",
+          "Shani Meen se Mesh mein (neech rashi)",
+          "Vrishabh ki Sade Sati shuru; Kumbh ko raahat; Kanya, Makar par Dhaiya",
+        ],
+        [
+          "9 August 2027",
+          "Shani vakri (Mesh mein)",
+          "List nahi badalti; purane kaam aur zimmedariyan dobara saamne aati hain",
+        ],
+        ["20 October 2027", "Shani vakri hi Meen mein lautta hai", "January wali list laut aati hai"],
+        ["24 December 2027", "Shani margi (Meen mein)", "Saal ke aakhir mein cheezein phir se aage badhti hain"],
+        [
+          "Around 23 February 2028",
+          "Shani pakke taur par Mesh mein",
+          "Kumbh ki Sade Sati aur Simha–Dhanu ki Dhaiya poori tarah khatam",
+        ],
+      ],
+    },
+    {
+      type: "p",
+      text: "Western (tropical) websites Shani ko 2026 mein hi Aries mein dikhate hain, kyunki unka zodiac Vedic se lagbhag 24° aage chalta hai. Indian panchang aur Sade Sati ke liye sidereal (Lahiri) dates hi sahi hain.",
+    },
+
+    { type: "h2", text: "Sade Sati kya hai? (short mein)" },
+    {
+      type: "p",
+      text: "Jab Shani aapki Chandra rashi se 12th, 1st aur 2nd rashi se guzarta hai, to lagbhag saadhe saat saal ka yeh daur Sade Sati kehlata hai — har rashi mein lagbhag dhai saal, yaani teen charan: chadhti (pehla), madhya ya peak (doosra) aur utarti (aakhri). Shani Dhaiya (chhoti panoti) dhai saal ka daur hai jab Shani Chandra se 4th (Kantak Shani) ya 8th (Ashtama Shani) mein hota hai. Teeno charan ka detail, myths aur purane saalon ki dates hamari [Shani Sade Sati 2026 guide](/blog/shani-sade-sati-2026) mein hain.",
+    },
+    {
+      type: "p",
+      text: "Sade Sati ka matlab har cheez kharab hona nahi hai. Shani discipline, imaandaari aur lambi mehnat ka grah hai. Bahut log isi daur mein career ki pakki neev banate hain, karz chukate hain aur zindagi ko simple karte hain. Asli asar aapki kundli mein Shani ki sthiti aur chal rahi dasha se tay hota hai.",
+    },
+
+    { type: "h2", text: "Rashi-wise Sade Sati aur Dhaiya 2027 (table)" },
+    {
+      type: "table",
+      head: ["Rashi", "1 Jan – 2 Jun", "3 Jun – 19 Oct", "20 Oct – 31 Dec"],
+      rows: [
+        ["Mesh", "Sade Sati – pehla charan", "Sade Sati – peak", "Sade Sati – pehla charan"],
+        ["Vrishabh", "Nahi", "Sade Sati – shuru (pehla charan)", "Nahi (Feb 2028 se phir)"],
+        ["Mithun", "Nahi", "Nahi", "Nahi"],
+        ["Kark", "Nahi", "Nahi", "Nahi"],
+        ["Simha", "Ashtama Shani (Dhaiya)", "Nahi", "Ashtama Shani (Dhaiya)"],
+        ["Kanya", "Nahi", "Ashtama Shani (Dhaiya)", "Nahi (Feb 2028 se phir)"],
+        ["Tula", "Nahi", "Nahi", "Nahi"],
+        ["Vrishchik", "Nahi", "Nahi", "Nahi"],
+        ["Dhanu", "Kantak Shani (Dhaiya)", "Nahi", "Kantak Shani (Dhaiya)"],
+        ["Makar", "Nahi", "Kantak Shani (Dhaiya)", "Nahi (Feb 2028 se phir)"],
+        ["Kumbh", "Sade Sati – aakhri charan", "Nahi (raahat)", "Sade Sati – aakhri charan"],
+        ["Meen", "Sade Sati – peak", "Sade Sati – aakhri charan", "Sade Sati – peak"],
+      ],
+    },
+
+    { type: "h2", text: "Prabhavit rashiyon ke liye 2027 ka matlab" },
+    { type: "h3", text: "Mesh rashi: Sade Sati ka peak (June–October)" },
+    {
+      type: "p",
+      text: "Shani aapki rashi par aata hai, to kaam ka bojh, zimmedari aur thakaan badh sakti hai, aur mehnat ka phal dheere milta hai. Bina nayi offer ke naukri na chhodein, bade loan soch-samajhkar lein, aur neend aur routine ko pakka rakhein. October ke baad thodi saans lene ki jagah milti hai, par Sade Sati 2028 se phir peak mein chalegi — isliye 2027 ko planning ka saal banayein.",
+    },
+    { type: "h3", text: "Vrishabh rashi: Sade Sati ki shuruaat" },
+    {
+      type: "p",
+      text: "3 June se aapki Sade Sati shuru hoti hai (pehla charan, Shani 12th mein). Kharche, travel aur neend par asar dikh sakta hai. June se pehle ke mahine achhe hain — savings aur zaroori kaam tab tak nipta lein. 20 October se February 2028 tak yeh daur ruka rehta hai, phir pakke taur par shuru hota hai.",
+    },
+    { type: "h3", text: "Meen rashi: peak se aakhri charan tak" },
+    {
+      type: "p",
+      text: "June tak Shani aapki rashi par hai (peak). June se October aakhri charan mein thodi raahat — par bolchaal aur family kharchon par dhyan rakhein. October se February 2028 tak peak phir laut-ta hai. Sehat, khaan-paan aur ek fixed routine is saal sabse bada sahara hai.",
+    },
+    { type: "h3", text: "Kumbh rashi: lagbhag khatam, beech mein raahat" },
+    {
+      type: "p",
+      text: "Aapki Sade Sati ka aakhri charan chal raha hai. 3 June se 19 October tak Shani aapse 3rd bhaav mein hota hai, jo achha maana jaata hai — ruke kaam chalne lagte hain aur himmat badhti hai. 20 October se thode samay ke liye aakhri charan wapas aata hai, aur Sade Sati poori tarah lagbhag 23 February 2028 ko khatam hoti hai.",
+    },
+    { type: "h3", text: "Simha aur Dhanu: Dhaiya mein beech ki chhutti" },
+    {
+      type: "p",
+      text: "Simha par Ashtama Shani aur Dhanu par Kantak Shani June tak, aur phir 20 October se February 2028 tak rehta hai. June–October mein dono ko raahat milti hai. Simha wale sehat aur safe driving par dhyan dein; Dhanu wale ghar, property aur mata-pita ki sehat ke maamlon mein jaldbazi na karein.",
+    },
+    { type: "h3", text: "Kanya aur Makar: June–October mein Dhaiya" },
+    {
+      type: "p",
+      text: "3 June se 19 October tak Kanya par Ashtama Shani aur Makar par Kantak Shani rehta hai; yeh Dhaiya February 2028 se phir pakke taur par chalegi. Kanya wale achanak badlav mein shaant rehkar faisla karein aur health insurance theek rakhein. Makar wale ghar aur kaam ke beech balance banayein aur bade property faisle kagaz poore dekhkar hi lein.",
+    },
+    { type: "h3", text: "Mithun, Kark, Tula aur Vrishchik" },
+    {
+      type: "p",
+      text: "In rashiyon par 2027 mein na Sade Sati hai na Dhaiya. Mithun aur Vrishchik ke liye Shani June–October mein achhe bhaav (11th aur 6th) se guzarta hai, aur Tula ke liye saal ke zyaadatar hisse mein 6th se. Poore saal ka haal [saal 2027 ka poora overview](/blog/saal-2027-kaisa-rahega) aur [Rashifal 2027](/blog/rashifal-2027) mein padhein.",
+    },
+
+    { type: "h2", text: "Shani vakri 2027 se ghabraayein nahi" },
+    {
+      type: "p",
+      text: "9 August se 24 December tak Shani vakri hai. Vakri ka matlab grah ulta nahi chal raha, sirf dharti se aisa dikhta hai. Jyotish mein ise purane kaam dobara dekhne, adhoore vaade poore karne aur karz nipataane ka samay maana jaata hai. Isi vakri chaal ki wajah se Shani 20 October ko Meen mein lautta hai — isliye June mein shuru hui Sade Sati ya Dhaiya kuch mahine ruk jaati hai, aur khatam hone wali kuch mahine aur chalti hai.",
+    },
+
+    { type: "h2", text: "Sade Sati ya Dhaiya mein practical salah" },
+    {
+      type: "ul",
+      items: [
+        "Routine pakka rakhein: samay par sona, halki exercise aur khaan-paan — Shani discipline pasand karta hai.",
+        "Paisa: 3–6 mahine ka emergency fund, kam EMI, aur bina kagaz ke udhaar ya 'jaldi ameer' schemes se door.",
+        "Career: shortcut nahi, lagataar mehnat; naukri badalni ho to nayi offer haath mein aane ke baad hi.",
+        "Rishte: bado aur kaam karne walon ke saath izzat se pesh aayein; rukhe shabd se bachein.",
+        "Sehat: purani takleef ho to check-up na taalein, aur gaadi dhyan se chalayein.",
+        "Shaadi aur bade faisle Sade Sati mein bhi ho sakte hain — bas kundli milan aur sahi muhurat dekhkar.",
+      ],
+    },
+
+    { type: "h2", text: "Saral paramparik upay (optional)" },
+    {
+      type: "p",
+      text: "Yeh upay paramparik aur bilkul optional hain — inka asli fayda mann ki shaanti aur achhi aadatein hain. Koi ek chunein aur 40 din tak niyam se karein:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Shanivaar ko Hanuman Chalisa ka paath, ya 'Om Sham Shanaischaraya Namah' ka jaap.",
+        "Shanivaar ko sarson ke tel ka diya, aur apni shraddha ke anusaar kaale til, urad ya kambal ka daan.",
+        "Bujurgon, mazdooron aur zaroorat-mand logon ki madad — Shani ke liye sabse bada upay seva maani jaati hai.",
+        "Imaandaari aur samay ki pabandi — Shani in gunon ko hi inaam deta hai.",
+        "Neelam ya koi bhi ratna sirf Sade Sati sunkar na pehnein, aur mehngi puja ka dabav na lein. Pehle poori kundli dikhayein.",
+      ],
+    },
+
+    { type: "h2", text: "Apni Sade Sati kaise check karein" },
+    {
+      type: "p",
+      text: "Sabse pehle [Moon sign calculator](/moon-sign) se apni Chandra rashi aur nakshatra dekhein. Phir apni [free kundli](/kundli) banayein — usmein Sade Sati ka status, Lagna aur chal rahi dasha dikhti hai. Sade Sati ka asar bahut had tak aapki Mahadasha par depend karta hai; isko samajhne ke liye hamari [Vimshottari Mahadasha guide](/blog/vimshottari-mahadasha) padhein. Koi sawaal ho to [AI astrologer](/ai-astrologer) se Hindi ya English mein poochein, jaise 'Meri Sade Sati kab khatam hogi?'.",
+    },
+  ],
+  faqs: [
+    {
+      q: "2027 mein Sade Sati kis rashi par hai?",
+      a: "1 January se 2 June aur 20 October se 31 December tak Mesh, Meen aur Kumbh par. 3 June se 19 October tak, jab Shani Mesh mein hai, Vrishabh, Mesh aur Meen par — us beech Kumbh ko raahat milti hai.",
+    },
+    {
+      q: "2027 mein Shani kab rashi badlega?",
+      a: "Shani 3 June 2027 ko Meen se Mesh mein jaata hai, 9 August ko vakri hota hai, 20 October ko wapas Meen mein aata hai aur 24 December ko margi hota hai. Pakke taur par Mesh mein lagbhag 23 February 2028 ko aata hai (Vedic, Lahiri, IST).",
+    },
+    {
+      q: "2027 mein Shani Dhaiya kis rashi par hai?",
+      a: "Shani Meen mein ho tab (January–2 June aur 20 October se) Simha (Ashtama) aur Dhanu (Kantak) par. Shani Mesh mein ho tab (3 June–19 October) Kanya (Ashtama) aur Makar (Kantak) par.",
+    },
+    {
+      q: "Vrishabh rashi ki Sade Sati kab shuru hogi?",
+      a: "3 June 2027 ko, jab Shani Mesh mein aata hai. 20 October 2027 se February 2028 tak yeh ruk jaati hai aur lagbhag 23 February 2028 se pakke taur par chalti hai.",
+    },
+    {
+      q: "Kumbh rashi ki Sade Sati kab khatam hogi?",
+      a: "3 June 2027 se kuch mahine raahat milti hai, par Shani 20 October ko Meen mein lautta hai to aakhri charan wapas aata hai. Poori tarah Sade Sati lagbhag 23 February 2028 ko khatam hoti hai.",
+    },
+    {
+      q: "Kya Sade Sati mein shaadi ya naya kaam kar sakte hain?",
+      a: "Haan. Sade Sati mein shaadi, job ya naya kaam mana nahi hai. Kundli milan, apni dasha aur sahi muhurat dekhkar faisla karein, aur jaldbazi ki jagah planning se chalein.",
+    },
+  ],
+};
+
 export const POSTS: Post[] = [
+  sadeSati2027,
   saal2027KaisaRahega,
   vivahMuhurat2027,
   kitneGunMilneChahiye,
