@@ -5487,7 +5487,164 @@ const sadeSati2027: Post = {
   ],
 };
 
+const naamSeGunMilan: Post = {
+  slug: "naam-se-gun-milan",
+  title: "Gun Milan by Name: Naam Se Milan Kitna Sahi?",
+  h1: "Gun Milan by Name – Naam Se Kundli Milan Kaise Hota Hai, Kitna Sahi Hai, aur Kab Use Karein",
+  description:
+    "Gun milan by name kaise hota hai? Naam ke pehle akshar se rashi-nakshatra, 36 gun, aur iski asli seemayein. Janam tarikh ho to sahi milan free mein karein.",
+  keyword: "gun milan by name",
+  author: "founder",
+  published: "2026-11-19",
+  updated: "2026-11-19",
+  intro:
+    "Rishta aaya hai, par ladke ya ladki ka janam samay kisi ko yaad nahi — to ghar mein sawaal uthta hai: kya naam se gun milan ho sakta hai? Haan, ho sakta hai, aur yeh sadiyon purana tareeka hai. Lekin iska result utna hi sahi hota hai jitna yeh baat sach ho ki naam janam nakshatra ke akshar se rakha gaya tha. Is guide mein seedhe shabdon mein samjhaya hai ki naam se kundli milan kaise kaam karta hai, naam akshar se rashi ka chart, kaunse gun naam se nikal sakte hain aur kaunse nahi, aur kab aapko janam tarikh wala milan hi karna chahiye.",
+  body: [
+    { type: "h2", text: "Short answer: naam se gun milan kitna sahi hai?" },
+    {
+      type: "ul",
+      items: [
+        "Naam se milan mein har vyakti ke naam ke pehle akshar (syllable) se uska nakshatra aur rashi maan liya jaata hai, phir wahi 36 gun wala Ashtakoot milan kiya jaata hai.",
+        "Yeh tabhi sahi hai jab dono ke naam janam nakshatra ke akshar se rakhe gaye hon (namkaran ki parampara se). Aaj zyaadatar naam pasand se rakhe jaate hain, isliye result aksar galat rashi par chal jaata hai.",
+        "Naam se Manglik dosha, Lagna, 7th bhaav, Navamsa aur dasha bilkul nahi dekhe ja sakte.",
+        "Agar dono ki janam tarikh aur jagah pata hai — samay na bhi pata ho — to woh milan naam se kahin zyaada bharosemand hai. Astrojanta ka [free kundli milan](/matching) isi tarah kaam karta hai.",
+      ],
+    },
+
+    { type: "h2", text: "Naam se kundli milan kaise kaam karta hai" },
+    {
+      type: "p",
+      text: "Vedic jyotish mein zodiac ke 27 nakshatra hain, aur har nakshatra ke 4 charan (pada) — kul 108 pada. Har pada ka ek akshar tay hai, jise avakahada chakra ya namakshar chart kehte hain. Paramparik namkaran mein bachche ka naam usi akshar se shuru kiya jaata tha jis pada mein janam ke samay Chandrama tha. Jaise Ashwini nakshatra ke pehle pada ka akshar 'Chu' hai, to us samay paida hue bachche ka naam 'Chu' se rakha jaata tha.",
+    },
+    {
+      type: "p",
+      text: "Naam se milan isi chain ko ulta chalata hai: naam ka pehla akshar dekho, chart mein uska pada dhoondho, aur us pada ka nakshatra aur rashi ko vyakti ki Chandra rashi maan lo. Phir dono ke liye 8 koot ke ank jod kar 36 mein se score nikalta hai. Is tarah nikli rashi ko naam rashi kehte hain — yeh janma rashi (janam ke samay Chandrama ki asli rashi) se alag ho sakti hai.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Janma naam lein, pet name ya school wala spelling nahi. Ghar ke bado se poochein ki namkaran mein kaunsa naam rakha gaya tha.",
+        "Akshar ki awaaz dekhein, English spelling nahi. 'Ta' Simha mein ट hai aur Tula mein त; 'Da' Kark mein ड aur Kumbh mein द. Devanagari mein likhkar dekhna sabse saaf hai.",
+        "Jahan naam ka akshar do jagah fit ho ya chart mein na mile, wahan result ko anumaan hi samjhein.",
+      ],
+    },
+
+    { type: "h2", text: "Naam akshar se rashi: compact chart" },
+    {
+      type: "p",
+      text: "Har rashi mein 9 pada aate hain, isliye har rashi ke 9 akshar hain. Yeh North Indian (Hindi panchang) parampara ka chart hai, jise humne kai published namakshar tables se milaya hai. Kuch cells mein regional farak hai — neeche note dekhein.",
+    },
+    {
+      type: "table",
+      head: ["Rashi", "Naam ke pehle akshar"],
+      rows: [
+        ["Mesh", "Chu, Che, Cho, La, Li, Lu, Le, Lo, A (चू चे चो ला ली लू ले लो अ)"],
+        ["Vrishabh", "I, U, E, O, Va, Vi, Vu, Ve, Vo (इ उ ए ओ वा वी वू वे वो)"],
+        ["Mithun", "Ka, Ki, Ku, Gha, Ng, Chha, Ke, Ko, Ha (का की कू घ ङ छ के को हा)"],
+        ["Kark", "Hi, Hu, He, Ho, Da, Di, Du, De, Do (ही हू हे हो डा डी डू डे डो)"],
+        ["Simha", "Ma, Mi, Mu, Me, Mo, Ta, Ti, Tu, Te (मा मी मू मे मो टा टी टू टे)"],
+        ["Kanya", "To, Pa, Pi, Pu, Sha, Na, Tha, Pe, Po (टो पा पी पू ष ण ठ पे पो)"],
+        ["Tula", "Ra, Ri, Ru, Re, Ro, Ta, Ti, Tu, Te (रा री रू रे रो ता ती तू ते)"],
+        ["Vrishchik", "To, Na, Ni, Nu, Ne, No, Ya, Yi, Yu (तो ना नी नू ने नो या यी यू)"],
+        ["Dhanu", "Ye, Yo, Bha, Bhi, Bhu, Dha, Pha, Dha, Bhe (ये यो भा भी भू धा फा ढा भे)"],
+        ["Makar", "Bho, Ja, Ji, Khi, Khu, Khe, Kho, Ga, Gi (भो जा जी खी खू खे खो गा गी)"],
+        ["Kumbh", "Gu, Ge, Go, Sa, Si, Su, Se, So, Da (गू गे गो सा सी सू से सो दा)"],
+        ["Meen", "Di, Du, Tha, Jha, Na, De, Do, Cha, Chi (दी दू थ झ ञ दे दो चा ची)"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Regional farak: kuch panchang Shravana nakshatra (Makar) ke akshar Khi, Khu, Khe, Kho ki jagah Ju, Je, Jo, Gha dete hain, aur Uttara Bhadrapada (Meen) ke aakhri pada ko ञ ki jagah 'Da' likhte hain. Tamil aur Telugu parampara ke apne chart hote hain. Apne parivaar ke pandit jo chart use karte hain, wahi follow karein.",
+    },
+
+    { type: "h2", text: "8 koot aur naam se kya-kya nikal sakta hai" },
+    {
+      type: "p",
+      text: "Ashtakoot gun milan mein 8 koot hain jinke kul 36 ank hain. Inme se 4 koot dono ki Chandra rashi se, aur 4 dono ke nakshatra se nikalte hain. Naam se dono ka anumaan lag jaata hai, isliye score to ban jaata hai — par har ank utna hi pakka hai jitna woh anumaan.",
+    },
+    {
+      type: "table",
+      head: ["Koot", "Ank", "Kis par based", "Naam se?"],
+      rows: [
+        ["Varna", "1", "Rashi", "Anumaan"],
+        ["Vashya", "2", "Rashi", "Anumaan"],
+        ["Tara", "3", "Nakshatra", "Anumaan"],
+        ["Yoni", "4", "Nakshatra", "Anumaan"],
+        ["Graha Maitri", "5", "Rashi ke swami", "Anumaan"],
+        ["Gana", "6", "Nakshatra", "Anumaan"],
+        ["Bhakoot", "7", "Rashi", "Anumaan"],
+        ["Nadi", "8", "Nakshatra", "Anumaan"],
+        ["Manglik (Mangal dosha)", "—", "Mangal ka bhaav, Lagna se", "Nahi"],
+        ["Lagna, 7th bhaav, Navamsa, dasha", "—", "Janam samay", "Nahi"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Sabse bhaari koot Nadi (8) aur Bhakoot (7) hain, aur dono naam ke anumaan par hi tike hote hain. Isliye naam se aaya Nadi ya Bhakoot dosha dekhkar rishta todne ka faisla na karein. Inke niyam aur parihar hamari [Nadi dosha](/blog/nadi-dosha), [Bhakoot dosha](/blog/bhakoot-dosha) aur [Gana dosha](/blog/gana-dosha) guides mein detail mein hain. Kitne gun kaafi hain, yeh [kitne gun milne chahiye](/blog/kitne-gun-milne-chahiye) mein samjhaya gaya hai.",
+    },
+
+    { type: "h2", text: "Naam se milan ki asli seemayein (honest baat)" },
+    {
+      type: "ul",
+      items: [
+        "Naam pasand se rakha ho to rashi hi galat: aaj kal zyaadatar naam janam akshar se nahi rakhe jaate. Tab naam rashi aur janma rashi alag hoti hai, aur poora score galat rashi par ban jaata hai.",
+        "Ek akshar, kai sambhavna: English spelling mein 'Ta', 'Da', 'Na' jaise akshar do alag rashiyon mein aate hain.",
+        "Manglik nahi dikhta: Mangal dosha Lagna se Mangal ke bhaav par depend karta hai, jo naam se pata hi nahi chal sakta.",
+        "Baaki kundli gayab: 7th bhaav, Navamsa aur dasha — jo shaadi ke liye bahut maayne rakhte hain — naam se nahi dekhe ja sakte.",
+        "Popular websites bhi yahi maanti hain: janam tarikh, samay aur sthaan se kiya gaya milan hi sabse sahi hai; naam wala milan tab ka vikalp hai jab janam vivaran bilkul na ho.",
+      ],
+    },
+
+    { type: "h2", text: "Kab naam se milan theek hai, kab nahi" },
+    {
+      type: "ul",
+      items: [
+        "Theek hai: jab dono mein se kisi ka janam vivaran bilkul pata na ho, aur naam janam akshar se rakha gaya ho — tab yeh ek shuruaati andaaza deta hai.",
+        "Behtar vikalp: agar sirf janam samay nahi pata, par tarikh aur jagah pata hai, to naam se milan karne ki zaroorat nahi. Chandrama ek nakshatra mein lagbhag ek din aur ek rashi mein lagbhag dhai din rehta hai, isliye tarikh se zyaadatar din rashi aur nakshatra pakke nikal aate hain.",
+        "Na karein: naam wale score ke bharose rishta pakka ya radd karna. Pehle janam vivaran dhoondhne ki koshish karein — hospital record, purani janam patri, ya bado se poochkar.",
+      ],
+    },
+
+    { type: "h2", text: "Astrojanta par milan kaise karein" },
+    {
+      type: "p",
+      text: "Astrojanta ka [kundli milan tool](/matching) naam se nahi, janam vivaran se milan karta hai — kyunki wahi zyaada sahi hai. Dono ke liye naam (sirf pehchaan ke liye), janam tarikh aur janam sthaan daalein; janam samay pata ho to woh bhi. Samay nahi pata to 'time unknown' tick karein — tool us din dopahar 12 baje ke hisaab se Chandrama ki sthiti leta hai. Result mein dono ki Chandra rashi aur nakshatra, 36 mein se score aur aathon koot ke ank alag-alag dikhte hain, saath mein paramparik cautions bhi.",
+    },
+    {
+      type: "p",
+      text: "Sirf apni asli Chandra rashi aur nakshatra dekhna ho to [Moon sign calculator](/moon-sign) use karein — isse aap jaan sakte hain ki aapki naam rashi aur janma rashi same hai ya nahi. Poori kundli, Lagna, Manglik aur dasha ke liye [free kundli](/kundli) banayein. Milan ka poora step-by-step tareeka hamari [kundli milan guide](/blog/kundli-milan-online-free) mein hai.",
+    },
+  ],
+  faqs: [
+    {
+      q: "Kya naam se gun milan ho sakta hai?",
+      a: "Haan. Naam ke pehle akshar se nakshatra aur rashi maan kar 36 gun ka milan kiya jaata hai. Par yeh tabhi sahi hai jab naam janam nakshatra ke akshar se rakha gaya ho; warna yeh sirf anumaan hai.",
+    },
+    {
+      q: "Naam se kundli milan aur janam tarikh se milan mein kya farak hai?",
+      a: "Naam se milan mein rashi aur nakshatra ek chart se maan liye jaate hain. Janam tarikh, jagah aur samay se milan mein Chandrama ki asli sthiti calculate hoti hai, isliye woh kahin zyaada sahi hai aur usmein Manglik bhi dekha ja sakta hai.",
+    },
+    {
+      q: "Naam rashi aur janma rashi alag kyun hoti hai?",
+      a: "Janma rashi janam ke samay Chandrama ki rashi hai. Naam rashi naam ke pehle akshar se nikalti hai. Agar naam janam akshar se nahi rakha gaya, to dono alag ho sakti hain — aur jyotish mein janma rashi hi maani jaati hai.",
+    },
+    {
+      q: "Janam samay nahi pata to kya karein?",
+      a: "Janam tarikh aur jagah se milan karein. Zyaadatar dinon mein isse Chandra rashi aur nakshatra sahi nikal aate hain, jo 36 gun ke liye kaafi hai. Sirf Lagna aur Manglik ke liye samay chahiye hota hai.",
+    },
+    {
+      q: "Kya naam se Manglik dosha pata chal sakta hai?",
+      a: "Nahi. Manglik dosha Lagna se Mangal ke bhaav par depend karta hai, jiske liye janam tarikh, samay aur jagah chahiye. Naam se yeh nahi dekha ja sakta.",
+    },
+    {
+      q: "Kya Astrojanta par naam se milan hota hai?",
+      a: "Nahi. Astrojanta ka kundli milan janam tarikh aur jagah se hota hai (samay optional), kyunki yeh naam wale anumaan se zyaada sahi hai. Apni sahi rashi jaanne ke liye Moon sign calculator bhi free hai.",
+    },
+  ],
+};
+
 export const POSTS: Post[] = [
+  naamSeGunMilan,
   sadeSati2027,
   saal2027KaisaRahega,
   vivahMuhurat2027,
