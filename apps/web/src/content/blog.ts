@@ -5643,7 +5643,174 @@ const naamSeGunMilan: Post = {
   ],
 };
 
+const grahan2027: Post = {
+  slug: "grahan-2027",
+  title: "Grahan 2027: Surya-Chandra Grahan Dates & Sutak",
+  h1: "Grahan 2027 – Surya Grahan aur Chandra Grahan Ki Dates (IST), India Mein Kaun Sa Dikhega, Sutak aur Saral Niyam",
+  description:
+    "2027 mein 5 grahan, par India mein sirf 2 August ka Surya Grahan dikhega. Sabhi dates IST mein, shehar-wise time, sutak aur shaant, saral niyam yahan jaanein.",
+  keyword: "grahan 2027",
+  author: "founder",
+  published: "2026-11-19",
+  updated: "2026-11-19",
+  intro:
+    "2027 mein kitne grahan hain, kaun sa India mein dikhega, aur sutak kab lagega? Yeh sawaal har saal ghar-ghar mein poocha jaata hai. Achhi khabar yeh hai ki 2027 mein jawab simple hai: duniya bhar mein 5 grahan hain (2 Surya, 3 Chandra), lekin India mein sirf ek hi asli roop se dikhega — 2 August 2027 ka aanshik Surya Grahan, shaam ke samay. Neeche har grahan ki date IST mein, India mein visibility, 2 August ke shehar-wise timings, sutak ka niyam, aur paramparik niyam diye gaye hain — shaant tareeke se, bina dar ke. Har date humne kam se kam do bharosemand sources (NASA eclipse catalogue, timeanddate.com aur panchang sources) se milaayi hai.",
+  body: [
+    { type: "h2", text: "Short answer: Grahan 2027 India mein" },
+    {
+      type: "ul",
+      items: [
+        "India mein dikhne wala grahan: sirf ek — Somvaar, 2 August 2027 ka Surya Grahan, jo India se aanshik (partial) dikhega. Delhi mein lagbhag 3:53 PM se 5:02 PM IST.",
+        "Sutak: sirf 2 August ke Surya Grahan ka, kyunki wahi India mein dikhega. Sutak grahan shuru hone se lagbhag 12 ghante pehle lagta hai aur grahan khatam hone par khatam hota hai.",
+        "6 February 2027 ka Surya Grahan (valayakar/annular) India mein nahi dikhega — koi sutak nahi.",
+        "21 February, 18 July aur 17 August 2027 ke Chandra Grahan sirf penumbral (upchhaya) hain. Chandrama dikhne mein kaala nahi hota, isliye paramparik roop se inhe grahan nahi maana jaata aur sutak nahi lagta. 17 August wala India se dikhega bhi nahi.",
+      ],
+    },
+
+    { type: "h2", text: "Grahan 2027 ki saari dates (IST)" },
+    {
+      type: "table",
+      head: ["Tarikh (IST)", "Grahan", "India mein?", "Sutak"],
+      rows: [
+        ["Shanivaar, 6 Feb 2027", "Surya Grahan (valayakar / annular)", "Nahi dikhega", "Nahi"],
+        [
+          "Ravivaar, 21 Feb 2027 (subah lagbhag 2:43–6:42 AM)",
+          "Chandra Grahan (penumbral / upchhaya)",
+          "Chandrama upar hoga, par aankh se farak nahi dikhega",
+          "Nahi",
+        ],
+        [
+          "Ravivaar, 18 Jul 2027 (raat lagbhag 9:30 PM)",
+          "Chandra Grahan (bahut halka penumbral)",
+          "Farak dikhne layak nahi",
+          "Nahi",
+        ],
+        [
+          "Somvaar, 2 Aug 2027 (Delhi lagbhag 3:53–5:02 PM)",
+          "Surya Grahan (purna/total; India se aanshik)",
+          "Haan, aanshik",
+          "Haan",
+        ],
+        ["Mangalvaar, 17 Aug 2027", "Chandra Grahan (penumbral)", "Nahi dikhega", "Nahi"],
+      ],
+    },
+    {
+      type: "p",
+      text: "18 July wala grahan itna halka hai ki sources mein bhi farak hai: NASA ke catalogue mein yeh penumbral Chandra Grahan hai, jabki timeanddate.com ise 'almost' eclipse kehta hai. Dono hi haalat mein yeh aankh se nahi dikhega aur iska koi sutak nahi.",
+    },
+
+    { type: "h2", text: "2 August 2027 Surya Grahan: shehar-wise timings" },
+    {
+      type: "p",
+      text: "Duniya mein yeh purna (total) Surya Grahan hai — poora andhera North Africa aur Middle East ke kuch hisson mein hoga. India mein Chandrama Surya ka sirf ek hissa dhakega, aur grahan suryast se pehle khatam ho jaayega. Uttar India mein Surya ka chhota hissa (Delhi mein lagbhag 8% area) dhakega, jabki Dakshin aur Pashchim India mein zyaada. Grahan ke samay Surya aur Chandrama dono Kark rashi aur Pushya nakshatra mein honge.",
+    },
+    {
+      type: "table",
+      head: ["Shehar", "Shuru (sparsh)", "Khatam (moksh)"],
+      rows: [
+        ["Delhi", "3:53 PM", "5:02 PM"],
+        ["Mumbai", "3:47 PM", "5:31 PM"],
+        ["Ahmedabad", "3:44 PM", "5:21 PM"],
+        ["Jaipur", "3:50 PM", "5:09 PM"],
+        ["Lucknow", "4:01 PM", "5:05 PM"],
+        ["Kolkata", "4:14 PM", "5:12 PM"],
+        ["Hyderabad", "3:58 PM", "5:33 PM"],
+        ["Bengaluru", "3:58 PM", "5:43 PM"],
+        ["Chennai", "4:02 PM", "5:41 PM"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Timings IST mein hain aur alag sources mein ek-do minute ka farak ho sakta hai (jaise timeanddate.com Delhi ke liye 3:52/3:53 PM se 5:02/5:03 PM deta hai). Apne shehar ka exact time apne sthaniya panchang se confirm karein.",
+    },
+
+    { type: "h2", text: "Sutak kab lagega? (2 August 2027)" },
+    {
+      type: "p",
+      text: "Parampara ke anusaar Surya Grahan ka sutak 4 prahar (lagbhag 12 ghante) pehle aur Chandra Grahan ka 3 prahar (lagbhag 9 ghante) pehle lagta hai, aur grahan khatam hote hi khatam hota hai. Sutak sirf wahan maana jaata hai jahan grahan dikhta hai, aur penumbral Chandra Grahan mein nahi.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Delhi mein grahan 3:53 PM par shuru hota hai, isliye sutak 2 August ki subah, lagbhag 3–4 AM ke beech se shuru hoga aur 5:02 PM par khatam.",
+        "Exact shuruaati samay panchang ke method par depend karta hai: kuch panchang seedhe 12 ghante ginte hain (Delhi lagbhag 3:53 AM), aur kuch us din-raat ki asli lambai se prahar ginte hain (Delhi lagbhag 3:05 AM). Isliye hum ek pakka minute nahi de rahe — apne parivaar ka panchang follow karein.",
+        "Bachchon, bujurgon, beemar logon aur garbhvati mahilaon ke liye parampara mein sutak ka niyam kaafi chhota ya dheela rakha gaya hai.",
+      ],
+    },
+
+    { type: "h2", text: "Grahan ke paramparik niyam (sab optional)" },
+    {
+      type: "p",
+      text: "Yeh niyam aastha aur parampara ke hain; inhe maanna ya na maanna aapki apni marzi hai. Bahut se parivaar inhe shaanti aur dhyan ke samay ki tarah lete hain:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Grahan ke dauraan jaap, dhyan ya bhajan — jaise Gayatri mantra ya apne isht ka naam.",
+        "Sutak mein khana banana ya khana taalna; khane-peene ki cheezon mein tulsi patta daalna.",
+        "Grahan ke baad snaan, ghar ki safai aur apni shraddha ke anusaar daan.",
+        "Mandir sutak mein band rehte hain aur grahan ke baad khulte hain.",
+        "Shubh kaam (sagai, griha pravesh) us din na rakhna. Waise bhi 2027 ki shaadi ki tarikhon ke liye hamari [Vivah Muhurat 2027](/blog/vivah-muhurat-2027) list dekhein.",
+      ],
+    },
+
+    { type: "h2", text: "Ek niyam jo zaroor maanein: Surya ko seedha na dekhein" },
+    {
+      type: "p",
+      text: "Aanshik Surya Grahan mein bhi Surya ko nangi aankh, dhoop ke chashme, X-ray film ya phone screen se dekhna aankhon ko nuksaan pahuncha sakta hai. Dekhna ho to sirf certified eclipse glasses (ISO 12312-2) use karein, ya pinhole projector se deewar par parchhayi dekhein. Yeh vigyan ki baat hai, aastha ki nahi — aur sabke liye hai.",
+    },
+
+    { type: "h2", text: "Garbhvati mahilayein aur grahan: myths aur sach" },
+    {
+      type: "p",
+      text: "Bahut gharon mein garbhvati mahilaon ko grahan mein bahar na nikalne, chaaku-kainchi na chalane ya let kar rehne ko kaha jaata hai. Imaandaari se kahein to aisa koi vaigyanik saboot nahi hai ki grahan ki roshni ya chhaaya garbh mein bachche ko nuksaan karti hai, ya kaatne-chhilne se bachche par nishaan aata hai. Grahan sirf Surya, Prithvi aur Chandrama ki ek seedh hai.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Agar parivaar ki parampara maanne se mann ko shaanti milti hai, to aaraam karna bilkul theek hai.",
+        "Lekin dar ke maare khana-paani ya dawai na chhodein — garbhavastha mein samay par khana, paani aur doctor ki batayi dawai zyaada zaroori hai.",
+        "Surya ko seedha na dekhna har kisi ke liye zaroori hai, garbhvati ho ya na ho.",
+        "Koi bhi chinta ho to apne doctor se baat karein; grahan ke naam par mehngi puja ya upay ka dabav na lein.",
+      ],
+    },
+
+    { type: "h2", text: "Kya grahan ka asar rashi par hota hai?" },
+    {
+      type: "p",
+      text: "Jyotish mein maana jaata hai ki grahan jis rashi aur nakshatra mein ho, us rashi walon ke liye woh samay dhyan aur sanyam ka hota hai — 2027 mein India mein dikhne wala grahan Kark rashi, Pushya nakshatra mein hai. Par yeh ek din ki ghatna hai; aapke saal ka asli mood Shani, Guru aur Rahu–Ketu jaise dheemi chaal wale grah banate hain. Uske liye padhein: [saal 2027 ka poora overview](/blog/saal-2027-kaisa-rahega), [Rashifal 2027](/blog/rashifal-2027) aur [Sade Sati 2027](/blog/sade-sati-2027). Apni Chandra rashi nahi pata to [Moon sign calculator](/moon-sign) se dekhein, aur poori jaankari ke liye [free kundli](/kundli) banayein.",
+    },
+  ],
+  faqs: [
+    {
+      q: "2027 mein kitne grahan hain?",
+      a: "Kul 5: do Surya Grahan (6 February aur 2 August) aur teen Chandra Grahan (21 February, 18 July aur 17 August). Teeno Chandra Grahan sirf penumbral hain.",
+    },
+    {
+      q: "2027 mein India mein kaun sa grahan dikhega?",
+      a: "Sirf 2 August 2027 ka Surya Grahan, jo India se aanshik dikhega — Delhi mein lagbhag 3:53 PM se 5:02 PM IST, aur Mumbai, Chennai, Bengaluru jaise shehron mein thoda der tak.",
+    },
+    {
+      q: "2 August 2027 ke Surya Grahan ka sutak kab lagega?",
+      a: "Grahan shuru hone se lagbhag 12 ghante pehle, yaani Delhi mein 2 August ki subah lagbhag 3–4 AM ke beech, aur grahan khatam hone (Delhi lagbhag 5:02 PM) par khatam. Exact minute panchang ke method par depend karta hai.",
+    },
+    {
+      q: "Kya penumbral Chandra Grahan mein sutak lagta hai?",
+      a: "Nahi. Penumbral (upchhaya) Chandra Grahan mein Chandrama dikhne mein kaala nahi hota, isliye paramparik panchang ise grahan nahi maante aur sutak nahi lagta.",
+    },
+    {
+      q: "Kya grahan garbhvati mahilaon ke liye khatarnak hai?",
+      a: "Aisa koi vaigyanik saboot nahi hai ki grahan garbh mein bachche ko nuksaan karta hai. Paramparik niyam maanna aapki marzi hai, par khana, paani aur dawai na chhodein, aur Surya ko seedha bilkul na dekhein.",
+    },
+    {
+      q: "Surya Grahan ko kaise dekhein?",
+      a: "Sirf certified eclipse glasses (ISO 12312-2) ya pinhole projector se. Dhoop ka chashma, X-ray film ya phone screen surakshit nahi hain, chahe Surya ka chhota hissa hi dhaka ho.",
+    },
+  ],
+};
+
 export const POSTS: Post[] = [
+  grahan2027,
   naamSeGunMilan,
   sadeSati2027,
   saal2027KaisaRahega,
