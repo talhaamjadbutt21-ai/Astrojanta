@@ -5809,7 +5809,240 @@ const grahan2027: Post = {
   ],
 };
 
+const grihaPraveshMuhurat2027: Post = {
+  slug: "griha-pravesh-muhurat-2027",
+  title: "Griha Pravesh Muhurat 2027: Month-wise 45 Dates",
+  h1: "Griha Pravesh Muhurat 2027 – Naye Ghar Mein Pravesh Ki 45 Shubh Tarikhein, Month-wise Time ke Saath",
+  description:
+    "Griha Pravesh Muhurat 2027: 45 shubh tarikhein, month-wise time, nakshatra aur tithi ke saath. Kharmas, Shukra-Guru asta aur Jul–Oct ka gap bhi saaf samjhaya.",
+  keyword: "griha pravesh muhurat 2027",
+  author: "founder",
+  published: "2026-11-20",
+  updated: "2026-11-20",
+  intro:
+    "2027 mein griha pravesh ke liye New Delhi ke panchang ke hisaab se kul 45 shubh din hain — sabse zyaada March (10), May (8) aur November (8) mein, aur July se October tak ek bhi nahi. Neeche har mahine ki tarikh, muhurat ka samay (IST), nakshatra aur tithi di gayi hai, taaki aap shifting, packers aur chhutti pehle se plan kar sakein. Saari tarikhein humne Drik Panchang (New Delhi, North Indian panchang) se li hain aur ek doosre independent panchang se ek-ek karke milaayi hain.",
+  body: [
+    { type: "h2", text: "Short answer: Griha Pravesh 2027 kab kar sakte hain?" },
+    {
+      type: "table",
+      head: ["Mahina", "Shubh tarikhein", "Kitne din"],
+      rows: [
+        ["January", "1", "1"],
+        ["February", "10, 11, 15, 22, 24, 25, 27", "7"],
+        ["March", "3, 4, 10, 11, 15, 22, 24, 26, 27, 31", "10"],
+        ["April", "1", "1"],
+        ["May", "7, 8, 15, 17, 20, 21, 24, 31", "8"],
+        ["June", "5, 14, 16, 21, 26", "5"],
+        ["July – October", "Koi muhurat nahi", "0"],
+        ["November", "1, 4, 5, 10, 11, 12, 15, 22", "8"],
+        ["December", "2, 8, 9, 13, 22", "5"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Weekend chahiye? 2027 mein sirf Shanivaar wale din milte hain — 27 February, 27 March, 8 May, 15 May, 5 June aur 26 June — kyunki griha pravesh paramparik roop se Ravivaar aur Mangalvaar ko nahi kiya jaata.",
+    },
+
+    { type: "h2", text: "Griha Pravesh Muhurat 2027: month-wise tarikh aur samay" },
+    {
+      type: "p",
+      text: "Samay New Delhi ke liye IST mein hai. Panchang ka din sunrise se agle sunrise tak chalta hai, isliye kai muhurat raat se agli subah tak jaate hain — jaise '10:43 PM – 16 Feb, 6:59 AM'. Doosre panchang mein ek-do minute ka farak normal hai. * wali tarikhein kharmas mein padti hain (neeche dekhein).",
+    },
+    { type: "h3", text: "Griha Pravesh Muhurat January 2027 (1 din)" },
+    {
+      type: "table",
+      head: ["Tarikh", "Muhurat (IST, New Delhi)", "Nakshatra", "Tithi"],
+      rows: [["1 Jan (Shukravaar) *", "1:09 PM – 5:29 PM", "Chitra", "Dashami"]],
+    },
+    { type: "h3", text: "Griha Pravesh Muhurat February 2027 (7 din)" },
+    {
+      type: "table",
+      head: ["Tarikh", "Muhurat (IST, New Delhi)", "Nakshatra", "Tithi"],
+      rows: [
+        ["10 Feb (Budhvaar)", "11 Feb, 3:04 AM – 7:03 AM", "Uttara Bhadrapada, Revati", "Panchami"],
+        ["11 Feb (Guruvaar)", "7:03 AM – 12 Feb, 3:18 AM", "Revati", "Panchami"],
+        ["15 Feb (Somvaar)", "10:43 PM – 16 Feb, 6:59 AM", "Rohini, Mrigashira", "Dashami"],
+        ["22 Feb (Somvaar)", "11:54 AM – 23 Feb, 6:53 AM", "Uttara Phalguni", "Dwitiya, Tritiya"],
+        ["24 Feb (Budhvaar)", "8:39 PM – 25 Feb, 6:51 AM", "Chitra", "Panchami"],
+        ["25 Feb (Guruvaar)", "6:51 AM – 9:32 AM", "Chitra", "Panchami"],
+        ["27 Feb (Shanivaar)", "11:39 AM – 9:54 PM", "Anuradha", "Saptami"],
+      ],
+    },
+    { type: "h3", text: "Griha Pravesh Muhurat March 2027 (10 din)" },
+    {
+      type: "table",
+      head: ["Tarikh", "Muhurat (IST, New Delhi)", "Nakshatra", "Tithi"],
+      rows: [
+        ["3 Mar (Budhvaar)", "10:34 PM – 4 Mar, 6:44 AM", "Uttara Ashadha", "Ekadashi"],
+        ["4 Mar (Guruvaar)", "6:44 AM – 7:24 AM", "Uttara Ashadha", "Dwadashi, Ekadashi"],
+        ["10 Mar (Budhvaar)", "6:37 AM – 11 Mar, 6:36 AM", "Uttara Bhadrapada, Revati", "Dwitiya, Tritiya"],
+        ["11 Mar (Guruvaar)", "6:36 AM – 11:19 AM", "Revati", "Tritiya"],
+        ["15 Mar (Somvaar) *", "6:31 AM – 10:50 AM", "Rohini, Mrigashira", "Saptami"],
+        ["22 Mar (Somvaar) *", "4:13 PM – 8:45 PM", "Uttara Phalguni", "Pratipada"],
+        ["24 Mar (Budhvaar) *", "6:21 AM – 7:25 PM", "Chitra", "Dwitiya, Tritiya"],
+        ["26 Mar (Shukravaar) *", "8:35 PM – 27 Mar, 6:17 AM", "Anuradha", "Panchami"],
+        ["27 Mar (Shanivaar) *", "6:17 AM – 1:33 PM", "Anuradha", "Panchami"],
+        ["31 Mar (Budhvaar) *", "10:16 PM – 1 Apr, 6:12 AM", "Uttara Ashadha", "Dashami"],
+      ],
+    },
+    { type: "h3", text: "Griha Pravesh Muhurat April 2027 (1 din)" },
+    {
+      type: "table",
+      head: ["Tarikh", "Muhurat (IST, New Delhi)", "Nakshatra", "Tithi"],
+      rows: [["1 Apr (Guruvaar) *", "6:12 AM – 9:25 AM", "Uttara Ashadha", "Dashami"]],
+    },
+    { type: "h3", text: "Griha Pravesh Muhurat May 2027 (8 din)" },
+    {
+      type: "table",
+      head: ["Tarikh", "Muhurat (IST, New Delhi)", "Nakshatra", "Tithi"],
+      rows: [
+        ["7 May (Shukravaar)", "11:42 PM – 8 May, 5:35 AM", "Rohini", "Dwitiya"],
+        ["8 May (Shanivaar)", "Poora din (5:35 AM – agle din 5:35 AM)", "Rohini, Mrigashira", "Dwitiya, Tritiya"],
+        ["15 May (Shanivaar)", "12:00 PM – 16 May, 5:30 AM", "Uttara Phalguni", "Dashami, Ekadashi"],
+        ["17 May (Somvaar)", "4:28 PM – 18 May, 5:29 AM", "Chitra", "Trayodashi"],
+        ["20 May (Guruvaar)", "4:28 PM – 21 May, 5:27 AM", "Anuradha", "Pratipada"],
+        ["21 May (Shukravaar)", "5:27 AM – 2:51 PM", "Anuradha", "Pratipada"],
+        ["24 May (Somvaar)", "10:58 PM – 25 May, 5:26 AM", "Uttara Ashadha", "Panchami"],
+        [
+          "31 May (Somvaar)",
+          "Poora din (5:24 AM – agle din 5:24 AM)",
+          "Uttara Bhadrapada, Revati",
+          "Dashami, Ekadashi",
+        ],
+      ],
+    },
+    { type: "h3", text: "Griha Pravesh Muhurat June 2027 (5 din)" },
+    {
+      type: "table",
+      head: ["Tarikh", "Muhurat (IST, New Delhi)", "Nakshatra", "Tithi"],
+      rows: [
+        ["5 Jun (Shanivaar)", "9:58 PM – 6 Jun, 4:36 AM", "Mrigashira", "Dwitiya"],
+        ["14 Jun (Somvaar)", "5:23 AM – 5:28 PM", "Chitra", "Ekadashi"],
+        ["16 Jun (Budhvaar)", "7:44 PM – 17 Jun, 3:20 AM", "Anuradha", "Trayodashi"],
+        ["21 Jun (Somvaar)", "Poora din (5:24 AM – agle din 5:24 AM)", "Uttara Ashadha", "Dwitiya, Tritiya"],
+        ["26 Jun (Shanivaar)", "7:22 PM – 9:51 PM", "Uttara Bhadrapada", "Saptami"],
+      ],
+    },
+    { type: "h3", text: "Griha Pravesh Muhurat November 2027 (8 din)" },
+    {
+      type: "table",
+      head: ["Tarikh", "Muhurat (IST, New Delhi)", "Nakshatra", "Tithi"],
+      rows: [
+        ["1 Nov (Somvaar)", "6:33 AM – 9:57 AM", "Anuradha", "Tritiya"],
+        ["4 Nov (Guruvaar)", "9:37 PM – 5 Nov, 6:36 AM", "Uttara Ashadha", "Saptami"],
+        ["5 Nov (Shukravaar)", "6:36 AM – 6:19 PM", "Uttara Ashadha", "Saptami"],
+        ["10 Nov (Budhvaar)", "6:39 AM – 9:11 AM", "Uttara Bhadrapada", "Ekadashi"],
+        ["11 Nov (Guruvaar)", "10:07 AM – 12 Nov, 6:41 AM", "Revati", "Trayodashi"],
+        ["12 Nov (Shukravaar)", "6:41 AM – 7:55 AM", "Revati", "Trayodashi"],
+        ["15 Nov (Somvaar)", "7:05 AM – 16 Nov ki subah tak", "Rohini", "Dwitiya"],
+        ["22 Nov (Somvaar)", "8:43 PM – 23 Nov, 6:50 AM", "Uttara Phalguni", "Dashami"],
+      ],
+    },
+    { type: "h3", text: "Griha Pravesh Muhurat December 2027 (5 din)" },
+    {
+      type: "table",
+      head: ["Tarikh", "Muhurat (IST, New Delhi)", "Nakshatra", "Tithi"],
+      rows: [
+        ["2 Dec (Guruvaar)", "1:43 PM – 3 Dec, 2:29 AM", "Uttara Ashadha", "Panchami"],
+        ["8 Dec (Budhvaar)", "7:01 AM – 9 Dec, 7:02 AM", "Uttara Bhadrapada, Revati", "Dashami, Ekadashi"],
+        ["9 Dec (Guruvaar)", "7:02 AM – 5:27 PM", "Revati", "Ekadashi"],
+        ["13 Dec (Somvaar)", "9:38 PM – 14 Dec, 7:05 AM", "Mrigashira", "Pratipada"],
+        ["22 Dec (Budhvaar) *", "7:10 AM – 23 Dec, 12:09 AM", "Chitra", "Dashami"],
+      ],
+    },
+
+    { type: "h2", text: "Kharmas wali tarikhein (*): kya karein?" },
+    {
+      type: "p",
+      text: "Drik Panchang griha pravesh ke liye mukhya roop se chandra maas, nakshatra, tithi aur vaar dekhta hai, isliye kuch tarikhein kharmas mein bhi aa jaati hain. Bahut se North Indian parivaar kharmas (jab Surya Dhanu ya Meen rashi mein ho) mein griha pravesh nahi karte. Aapka parivaar yeh niyam maanta hai to * wali tarikhein chhod dein:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Dhanu kharmas: 16 December 2026 (lagbhag 10:30 AM) se 14 January 2027 (raat lagbhag 9:15 PM) tak — isme 1 January 2027 aata hai.",
+        "Meen kharmas: 15 March 2027 (subah lagbhag 7:05 AM) se 14 April 2027 tak — isme 15, 22, 24, 26, 27, 31 March aur 1 April aate hain. 15 March ko kharmas muhurat ke beech shuru hota hai.",
+        "Agla Dhanu kharmas: 16 December 2027 (shaam) se — isme 22 December 2027 aata hai.",
+        "Kharmas na maanne wale parivaar ke liye yeh tarikhein panchang ke hisaab se shubh hi hain. Yeh family parampara ka faisla hai, sahi-galat ka nahi.",
+      ],
+    },
+
+    { type: "h2", text: "July se October 2027 tak griha pravesh kyun nahi?" },
+    {
+      type: "ul",
+      items: [
+        "Chandra maas: griha pravesh paramparik roop se Magh, Phalgun, Vaishakh, Jyeshtha, Kartik aur Margashirsha mein hota hai. Ashadh, Shravan, Bhadrapad aur Ashwin (lagbhag 4 July – 29 October 2027) griha pravesh ke maheene nahi maane jaate. Isi wajah se 8 January – 6 February (Paush) aur 7 April – 6 May (Chaitra) mein bhi muhurat nahi hai.",
+        "Shukra asta: lagbhag 17 July se 12 September 2027 tak Shukra asta (aur uske aage-peeche ke din) hai.",
+        "Guru asta: August–September 2027 mein Guru bhi asta rahega, lagbhag 15 September tak.",
+        "Isliye June ki aakhri tarikh 26 June (Shanivaar) hai aur uske baad seedha 1 November (Somvaar). Agar aapka possession ya lease isi beech hai, to shifting kar lein aur vidhi-vat griha pravesh November mein rakhein — bahut se parivaar aisa hi karte hain.",
+      ],
+    },
+
+    { type: "h2", text: "Griha pravesh muhurat kaise chuna jaata hai?" },
+    {
+      type: "ul",
+      items: [
+        "Nakshatra: Rohini, Mrigashira, Uttara Phalguni, Chitra, Anuradha, Uttara Ashadha, Uttara Bhadrapada aur Revati sabse zyaada liye jaate hain — upar ki har tarikh inhi mein se kisi mein hai.",
+        "Tithi: Rikta tithi (Chaturthi, Navami, Chaturdashi) aur Amavasya taali jaati hai.",
+        "Vaar: Ravivaar aur Mangalvaar taale jaate hain.",
+        "Maas aur grah: upar bataye chandra maas, aur Shukra-Guru asta ke din chhode jaate hain.",
+        "Nayi building (apoorva griha pravesh) ke liye yeh niyam sabse sakht maane jaate hain. Kiraye ke ghar mein shifting ke liye kai parivaar sirf ek shubh din aur saadi pooja kaafi maante hain.",
+      ],
+    },
+
+    { type: "h2", text: "Apne liye best tarikh kaise chunein (practical tips)" },
+    {
+      type: "ul",
+      items: [
+        "Pehle practical cheezein: possession letter, bijli-paani connection, painting aur packers ki date. Inke baad bachi tarikhon mein se muhurat chunein.",
+        "Lambi window wale din chunein (jaise 22 Feb, 10 Mar, 8 May, 31 May, 21 June, 11 Nov, 8 Dec), taaki traffic ya der hone par bhi samay haath mein rahe.",
+        "Doosre shehar mein hain to tarikh aam taur par wahi rehti hai, par samay kuch minute khisak sakta hai — apne sthaniya panchang ya purohit se time confirm karein.",
+        "Agar aapke liye janm rashi ya Chandra bal bhi dekhna zaroori hai, to apni [Moon sign](/moon-sign) nikaal kar purohit ko batayein, ya [free kundli](/kundli) bana kar rakhein.",
+        "Kisi bhi sawal ke liye hamare [AI astrologer](/ai-astrologer) se Hindi ya Hinglish mein free pooch sakte hain.",
+      ],
+    },
+
+    { type: "h2", text: "Shaadi ke baad naya ghar? Pehle yeh dekh lein" },
+    {
+      type: "p",
+      text: "Bahut se parivaar shaadi aur naye ghar ki planning ek saath karte hain. Shaadi ki tarikhon ke liye [Vivah Muhurat 2027](/blog/vivah-muhurat-2027) dekhein, aur rishta pakka karne se pehle [kundli milan](/matching) free mein karein. 2027 aapke liye kaisa rahega, yeh [saal 2027 overview](/blog/saal-2027-kaisa-rahega) aur [Rashifal 2027](/blog/rashifal-2027) mein padhein. Grahan ke din bhi log shubh kaam taalte hain — 2027 ki dates [Grahan 2027](/blog/grahan-2027) mein hain (2 August ka Surya Grahan waise bhi muhurat-free period mein hai).",
+    },
+
+    { type: "h2", text: "Disclaimer" },
+    {
+      type: "p",
+      text: "Yeh tarikhein New Delhi ke liye Drik Panchang ki general griha pravesh list par aadharit hain aur ek doosre panchang se milaayi gayi hain. Alag sampradaay, South Indian panchang aur doosre shehar mein tarikh ya samay badal sakta hai. Muhurat aastha ka vishay hai — ghar ki khushi aapke parivaar se banti hai, kisi ek tarikh se nahi. Final tarikh tay karne se pehle apne purohit ya sthaniya panchang se confirm karein. Hum koi pooja, ratna ya upay nahi bechte.",
+    },
+  ],
+  faqs: [
+    {
+      q: "2027 mein griha pravesh ke kitne shubh muhurat hain?",
+      a: "New Delhi ke Drik Panchang ke hisaab se 45: January 1, February 7, March 10, April 1, May 8, June 5, November 8 aur December 5. July se October tak koi muhurat nahi hai.",
+    },
+    {
+      q: "January 2027 mein griha pravesh muhurat kab hai?",
+      a: "Sirf 1 January 2027 (Shukravaar), dopahar lagbhag 1:09 PM se 5:29 PM. Yeh Dhanu kharmas mein aata hai, isliye kharmas maanne wale parivaar February ki tarikhon (10, 11, 15, 22, 24, 25, 27) ka intezaar karte hain.",
+    },
+    {
+      q: "February 2027 mein griha pravesh ki sabse achhi date kaun si hai?",
+      a: "February mein 7 din hain: 10, 11, 15, 22, 24, 25 aur 27. Weekend ke liye 27 February (Shanivaar, 11:39 AM – 9:54 PM) hai, aur lambi window ke liye 22 February (11:54 AM se agli subah tak).",
+    },
+    {
+      q: "July, August, September, October 2027 mein griha pravesh kyun nahi hai?",
+      a: "Yeh Ashadh, Shravan, Bhadrapad aur Ashwin ke maheene hain jo griha pravesh ke liye nahi maane jaate, aur isi beech Shukra (lagbhag 17 July – 12 September) aur Guru (August–September) asta bhi hain. Agla muhurat 1 November 2027 ko hai.",
+    },
+    {
+      q: "Kya kiraye ke ghar mein shift hone ke liye bhi muhurat chahiye?",
+      a: "Poori vidhi wala griha pravesh aam taur par apne kharide ya banwaye ghar ke liye hota hai. Kiraye ke ghar ke liye bahut se parivaar upar ki list se koi shubh din aur ek saadi pooja kaafi maante hain — yeh aapki parampara par hai.",
+    },
+    {
+      q: "Kya yeh tarikhein har shehar ke liye same hain?",
+      a: "India ke zyaadatar shehron mein tarikhein wahi rehti hain, bas samay kuch minute aage-peeche ho sakta hai. Videsh mein tarikh bhi ek din badal sakti hai. Isliye final time apne sthaniya panchang se confirm karein.",
+    },
+  ],
+};
+
 export const POSTS: Post[] = [
+  grihaPraveshMuhurat2027,
   grahan2027,
   naamSeGunMilan,
   sadeSati2027,
