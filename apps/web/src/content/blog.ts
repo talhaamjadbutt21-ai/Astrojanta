@@ -6231,7 +6231,162 @@ const mundanMuhurat2027: Post = {
   ],
 };
 
+const rashiKaisePataKare: Post = {
+  slug: "rashi-kaise-pata-kare",
+  title: "Rashi Kaise Pata Kare? Date of Birth Se Guide",
+  h1: "Rashi Kaise Pata Kare – Date of Birth Se Apni Asli (Chandra) Rashi Jaanne Ka Sahi Tareeka",
+  description:
+    "Apni rashi kaise pata kare? Date of birth, time aur jagah se Chandra rashi turant jaanein, bina time ke kya karein, aur naam wali rashi alag kyun aati hai.",
+  keyword: "rashi kaise pata kare",
+  author: "founder",
+  published: "2026-11-22",
+  updated: "2026-11-22",
+  intro:
+    "Aapki asli rashi woh hai jisme aapke janm ke samay Chandrama tha — isse Chandra rashi (Moon sign) kehte hain, aur Bharat mein rashifal, gun milan aur Sade Sati sab isi se dekhe jaate hain. Ise pakka jaanne ke liye teen cheezein chahiye: janm tithi (date of birth), janm ka samay aur janm sthan — ye daal kar hamare free [Moon sign calculator](/moon-sign) mein ek minute mein rashi aur nakshatra mil jaate hain. Neeche samjhaya hai ki sirf date se rashi kab sahi nikalti hai, time na pata ho to kya karein, aur naam ya akhbaar wali rashi aksar alag kyun aati hai.",
+  body: [
+    { type: "h2", text: "Short answer: apni rashi kaise pata karein" },
+    {
+      type: "ul",
+      items: [
+        "Janm tithi, janm ka samay aur janm sthan ek jagah likh lein (birth certificate ya hospital record se samay sabse bharosemand hai).",
+        "Free [Moon sign calculator](/moon-sign) mein ye details daalein — aapko Chandra rashi, nakshatra aur pada milenge.",
+        "Samay nahi pata? Usi tarikh ke saath ek baar 12:01 AM aur ek baar 11:59 PM daal kar dekhein. Dono baar ek hi rashi aaye, to wahi aapki rashi hai.",
+        "Dono baar alag rashi aaye, to us din Chandrama ne rashi badli thi — tab 'subah ya shaam', 'school se pehle' jaisi family yaadon se samay ka andaza lagayein.",
+      ],
+    },
+
+    { type: "h2", text: "Rashi teen tarah ki hoti hai — kaun si 'aapki' hai?" },
+    {
+      type: "table",
+      head: ["Rashi", "Kya hai", "Kahan kaam aati hai"],
+      rows: [
+        [
+          "Chandra rashi (Moon sign)",
+          "Janm ke samay Chandrama jis rashi mein tha",
+          "Rashifal, gun milan, Sade Sati, naamakshar — Bharat mein 'meri rashi' ka matlab yahi",
+        ],
+        [
+          "Surya rashi (Sun sign)",
+          "Janm ke samay Surya jis rashi mein tha",
+          "Akhbaar aur Western horoscope zyaadatar isi ko 'sign' kehte hain",
+        ],
+        [
+          "Lagna (Ascendant)",
+          "Janm ke pal poorab mein udit hoti rashi",
+          "Kundli ke 12 bhav isi se bante hain; iske liye exact samay zaroori",
+        ],
+      ],
+    },
+    {
+      type: "p",
+      text: "Isliye jab koi pandit ji ya matrimonial form 'rashi' poochhe, to Chandra rashi batayein. Lagna aur poori kundli dekhni ho to [free kundli](/kundli) banayein.",
+    },
+
+    { type: "h2", text: "Sirf date of birth se rashi kab sahi nikalti hai?" },
+    {
+      type: "p",
+      text: "Chandrama ek rashi mein lagbhag sava do din rehta hai. Matlab kuch dinon mein Chandrama poore din ek hi rashi mein rehta hai — un dinon mein sirf date aur jagah se rashi pakki nikal aati hai. Lekin jis din Chandrama agli rashi mein jaata hai, us din subah aur shaam janme do logon ki rashi alag ho sakti hai. Aise din par bina samay ke rashi 'do mein se ek' hi bataayi ja sakti hai — isiliye hamara calculator bhi samay maangta hai.",
+    },
+    {
+      type: "p",
+      text: "Nakshatra aur bhi tez badalta hai (lagbhag roz), aur Lagna har kuch ghanton mein — isliye nakshatra aur lagna ke liye samay aur bhi zaroori hai.",
+    },
+
+    { type: "h2", text: "Date of birth se Surya rashi (Vedic) — quick table" },
+    {
+      type: "p",
+      text: "Surya ek rashi mein lagbhag ek mahina rehta hai, isliye Surya rashi date se aasaani se nikal aati hai. Neeche Vedic (sidereal) Surya rashi ki lagbhag tarikhein hain, 2026–27 ke Drik Panchang sankranti dates par aadharit. Sankranti ki tarikh saal-dar-saal ek din aage-peeche ho sakti hai, isliye seema wali tarikh par janm ho to calculator se confirm karein. Dhyan rahe: yeh Surya rashi hai, aapki Chandra rashi nahi.",
+    },
+    {
+      type: "table",
+      head: ["Janm tithi (lagbhag)", "Vedic Surya rashi"],
+      rows: [
+        ["14/15 January – 12 February", "Makar (Capricorn)"],
+        ["13 February – 14 March", "Kumbh (Aquarius)"],
+        ["15 March – 13 April", "Meen (Pisces)"],
+        ["14 April – 14 May", "Mesh (Aries)"],
+        ["15 May – 14 June", "Vrishabh (Taurus)"],
+        ["15 June – 15/16 July", "Mithun (Gemini)"],
+        ["16/17 July – 16 August", "Kark (Cancer)"],
+        ["17 August – 16 September", "Simha (Leo)"],
+        ["17 September – 16/17 October", "Kanya (Virgo)"],
+        ["17/18 October – 15/16 November", "Tula (Libra)"],
+        ["16/17 November – 15 December", "Vrishchik (Scorpio)"],
+        ["16 December – 13/14 January", "Dhanu (Sagittarius)"],
+      ],
+    },
+
+    { type: "h2", text: "Akhbaar wali rashi alag kyun hoti hai?" },
+    {
+      type: "p",
+      text: "Western astrology sayan (tropical) zodiac use karti hai aur Vedic jyotish niryan (sidereal). Dono ke beech abhi lagbhag 24° ka farak (ayanamsha) hai, isliye Western sun sign ki tarikhein Vedic Surya rashi se lagbhag 3–4 hafte pehle shuru hoti hain. Is wajah se aksar log Western hisaab se 'Leo' aur Vedic hisaab se Kark nikalte hain. Dono mein koi galat nahi — bas aadhar alag hai. Indian rashifal aur gun milan ke liye Vedic Chandra rashi hi dekhi jaati hai.",
+    },
+
+    { type: "h2", text: "Naam se rashi kaise pata kare — kab sahi hai?" },
+    {
+      type: "p",
+      text: "Naam ke pehle akshar se rashi (naamakshar) tabhi sahi hai jab naam janm nakshatra ke akshar se rakha gaya ho — jaise purane samay mein namkaran ke waqt hota tha. Aaj kal zyaadatar naam pasand se rakhe jaate hain, isliye naam wali rashi aur asli Chandra rashi aksar alag hoti hai. Rashi ya gun milan ke liye janm details wali rashi ko hi pehle rakhein. Naam se milan kitna sahi hai, yeh [naam se gun milan](/blog/naam-se-gun-milan) mein detail mein hai.",
+    },
+
+    { type: "h2", text: "Time nahi pata? Yeh tareeke kaam aate hain" },
+    {
+      type: "ul",
+      items: [
+        "Kaagaz dhoondhein: birth certificate, hospital discharge slip, vaccination card ya purani janmpatri.",
+        "Family yaadein: 'subah ki aarti ke baad', 'dopahar ke khaane se pehle' jaisi baatein bhi ek-do ghante ka range de deti hain — Chandra rashi ke liye aksar itna kaafi hai.",
+        "Range ke dono sire try karein: range ka pehla aur aakhri samay calculator mein daalein; dono par ek hi rashi aaye to kaam ho gaya.",
+        "Jagah sahi daalein: janm ka shehar daalein, abhi jahan rehte hain woh nahi.",
+        "Aadhi raat ke aaspaas janm ho to date dhyan se check karein — 12:30 AM ka janm calendar mein agli tarikh hai.",
+      ],
+    },
+
+    { type: "h2", text: "Rashi pata chal gayi — ab kya?" },
+    {
+      type: "ul",
+      items: [
+        "Saal kaisa rahega: [Rashifal 2027](/blog/rashifal-2027) aur [saal 2027 overview](/blog/saal-2027-kaisa-rahega).",
+        "Shani ka asar: [Sade Sati 2027](/blog/sade-sati-2027) mein dekhein aapki rashi par Sade Sati hai ya nahi.",
+        "Shaadi ke liye: gun milan mein Bhakoot aur Nadi rashi-nakshatra se hi bante hain — [kundli milan free](/matching) karein, aur [kitne gun milne chahiye](/blog/kitne-gun-milne-chahiye) padhein.",
+        "Apni rashi ya kundli ke baare mein koi bhi sawal Hindi/Hinglish mein hamare [AI astrologer](/ai-astrologer) se free poochein.",
+      ],
+    },
+
+    { type: "h2", text: "Disclaimer" },
+    {
+      type: "p",
+      text: "Rashi ek astronomical position hai, isliye sahi janm details se yeh bilkul pakki nikalti hai; galat samay ya jagah se galat aa sakti hai. Surya rashi table lagbhag tarikhon par hai. Rashi se jude phal aastha aur parampara ka vishay hain — inhe zindagi ke bade faislon ka akela aadhar na banayein.",
+    },
+  ],
+  faqs: [
+    {
+      q: "Date of birth se rashi kaise pata kare?",
+      a: "Date of birth ke saath janm ka samay aur shehar Moon sign calculator mein daalein — Chandra rashi aur nakshatra turant mil jaayenge. Samay na ho to 12:01 AM aur 11:59 PM dono try karein; dono par ek hi rashi aaye to wahi aapki rashi hai.",
+    },
+    {
+      q: "Bina birth time ke rashi kaise jaane?",
+      a: "Agar aapke janm ke din Chandrama poore din ek hi rashi mein tha, to sirf date aur jagah se rashi pakki nikal aati hai. Agar us din Chandrama ne rashi badli, to rashi do mein se ek hogi — tab family yaadon ya documents se samay ka range nikaal kar dono sire check karein.",
+    },
+    {
+      q: "Meri rashi kya hai — Chandra rashi ya Surya rashi?",
+      a: "Bharat mein 'rashi' ka matlab aam taur par Chandra rashi hota hai — rashifal, gun milan aur Sade Sati isi se dekhe jaate hain. Akhbaar aur Western horoscope wala 'sign' zyaadatar Surya rashi (aur woh bhi tropical) hota hai.",
+    },
+    {
+      q: "Naam se rashi aur janm rashi alag kyun hai?",
+      a: "Naam wali rashi tabhi match karti hai jab naam janm nakshatra ke akshar se rakha gaya ho. Pasand se rakhe naam mein akshar ki rashi aur Chandrama ki asli rashi aksar alag hoti hai — janm details wali rashi ko pehle rakhein.",
+    },
+    {
+      q: "Western sign Leo hai par Vedic rashi Kark kyun aati hai?",
+      a: "Western astrology tropical zodiac use karti hai aur Vedic sidereal; dono mein abhi lagbhag 24° ka farak hai. Isliye Vedic Surya rashi aksar Western sign se ek rashi peeche aati hai. Aur Indian 'rashi' Chandrama se dekhi jaati hai, Surya se nahi.",
+    },
+    {
+      q: "Kya rashi jaanne ke liye paise lagte hain?",
+      a: "Nahi. Astrojanta ka Moon sign calculator aur free kundli bina paise ke rashi, nakshatra aur lagna dikhate hain.",
+    },
+  ],
+};
+
 export const POSTS: Post[] = [
+  rashiKaisePataKare,
   mundanMuhurat2027,
   grihaPraveshMuhurat2027,
   grahan2027,
