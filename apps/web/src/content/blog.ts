@@ -6385,7 +6385,169 @@ const rashiKaisePataKare: Post = {
   ],
 };
 
+const janmakshar: Post = {
+  slug: "janmakshar-matching",
+  title: "Janmakshar Matching Kya Hai? Rashi Akshar Chart",
+  h1: "Janmakshar Matching – Gujarati Janmakshar Milan Kya Hai, Rashi Akshar Chart, aur Naam vs Janam Vivaran Se Milan",
+  description:
+    "Janmakshar matching kya hai? Gujarati janmakshar se 36 gun milan, rashi akshar chart (અ, લ, ઈ...), naam ke akshar se milan kitna sahi hai, aur free milan.",
+  keyword: "janmakshar matching",
+  author: "founder",
+  published: "2026-11-23",
+  updated: "2026-11-23",
+  intro:
+    "Gujarati parivaron mein 'janmakshar' (જન્માક્ષર) janm ke samay banne wali kundli ko kehte hain, aur 'janmakshar matching' ka matlab wahi hai jo Hindi mein kundli milan — ladke aur ladki ki Chandra rashi aur nakshatra se 36 gun ka Ashtakoot milan. Agar dono ki janam tarikh, samay aur jagah pata hai, to hamare free [kundli matching tool](/matching) mein ek minute mein poora 36 gun score mil jaata hai. Neeche samjhaya hai ki janmakshar par kya likha hota hai, Gujarati rashi akshar chart kya hai, aur sirf naam ke akshar se milan kitna sahi hai.",
+  body: [
+    { type: "h2", text: "Short answer: janmakshar matching kya hai?" },
+    {
+      type: "ul",
+      items: [
+        "Janmakshar = janm kundli (Gujarati shabd). Janmakshar matching = kundli milan / gun milan.",
+        "Milan Ashtakoot paddhati se hota hai: 8 koot, kul 36 gun, sab dono ki Chandra rashi aur janm nakshatra se.",
+        "Sabse sahi milan janam tarikh + samay + jagah se hota hai — free [kundli matching](/matching) par turant.",
+        "Sirf naam ke pehle akshar se milan ek purani 'fallback' vidhi hai; yeh tabhi sahi hai jab naam sach mein janm nakshatra ke akshar se rakha gaya ho.",
+      ],
+    },
+
+    { type: "h2", text: "Janmakshar par kya likha hota hai, aur milan mein kya kaam aata hai" },
+    {
+      type: "table",
+      head: ["Janmakshar ki entry", "Matlab", "Milan mein use"],
+      rows: [
+        ["Rashi (જન્મ રાશિ)", "Janm ke samay Chandrama ki rashi", "Varna, Vashya, Graha Maitri, Bhakoot — 15 gun"],
+        [
+          "Nakshatra aur charan (pada)",
+          "Chandrama ka nakshatra aur uska chautha hissa",
+          "Tara, Yoni, Gana, Nadi — 21 gun",
+        ],
+        ["Naam akshar", "Us pada ka tay akshar, jisse naam rakha jaata hai", "Sirf tab, jab janm details na hon"],
+        ["Lagna, grah, Mangal", "Poori kundli", "Manglik check aur 7th house — 36 gun ke alawa"],
+        ["Dasha table", "Vimshottari dasha", "Shaadi ke baad ke samay ka vichar — 36 gun ke alawa"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Isliye do janmakshar haath mein hon to rashi aur nakshatra-charan wali line hi 36 gun ke liye kaafi hai. Lagna aur Mangal se [Manglik dosha](/blog/manglik-dosha-meaning) alag se dekha jaata hai, aur dasha ke liye [Vimshottari Mahadasha](/blog/vimshottari-mahadasha) padhein.",
+    },
+
+    { type: "h2", text: "Rashi, nakshatra aur akshar ka sahi connection" },
+    {
+      type: "p",
+      text: "Zodiac mein 27 nakshatra hain aur har nakshatra ke 4 charan (pada) — kul 108 pada. Har rashi 30° ki hai aur har pada 3°20' ka, isliye har rashi mein theek 9 pada aate hain. Paramparik namkaran mein har pada ka ek akshar tay hai (avakahada chakra), aur bachche ka naam Chandrama ke janm pada wale akshar se rakha jaata hai. Neeche har rashi ke 9 pada hain — yahi woh standard bantwara hai jo har panchang aur kundli software use karta hai:",
+    },
+    {
+      type: "table",
+      head: ["Rashi", "Nakshatra pada (9)"],
+      rows: [
+        ["Mesh", "Ashwini (poora), Bharani (poora), Krittika 1"],
+        ["Vrishabh", "Krittika 2–4, Rohini (poora), Mrigashira 1–2"],
+        ["Mithun", "Mrigashira 3–4, Ardra (poora), Punarvasu 1–3"],
+        ["Kark", "Punarvasu 4, Pushya (poora), Ashlesha (poora)"],
+        ["Simha", "Magha (poora), Purva Phalguni (poora), Uttara Phalguni 1"],
+        ["Kanya", "Uttara Phalguni 2–4, Hasta (poora), Chitra 1–2"],
+        ["Tula", "Chitra 3–4, Swati (poora), Vishakha 1–3"],
+        ["Vrishchik", "Vishakha 4, Anuradha (poora), Jyeshtha (poora)"],
+        ["Dhanu", "Mula (poora), Purva Ashadha (poora), Uttara Ashadha 1"],
+        ["Makar", "Uttara Ashadha 2–4, Shravana (poora), Dhanishta 1–2"],
+        ["Kumbh", "Dhanishta 3–4, Shatabhisha (poora), Purva Bhadrapada 1–3"],
+        ["Meen", "Purva Bhadrapada 4, Uttara Bhadrapada (poora), Revati (poora)"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Har pada ka Hindi akshar (jaise Ashwini ke Chu, Che, Cho, La) hamare [naam se gun milan](/blog/naam-se-gun-milan) guide ke chart mein diya gaya hai. Ek baat dhyan rakhein: jo nakshatra do rashiyon mein bante hain (jaise Krittika, Mrigashira, Punarvasu), unme pada badalne se rashi bhi badal jaati hai — isliye janmakshar par charan likha hona zaroori hai.",
+    },
+
+    { type: "h2", text: "Gujarati rashi akshar chart (janmakshar akshar)" },
+    {
+      type: "p",
+      text: "Gujarat mein zyaadatar parivaar ek chhota, alag chart use karte hain jisme har rashi ke 2–4 akshar hote hain, bina pada ke. Yeh chart Gujarati calendars, biodata aur Rajkot Municipal Corporation ki naamavali tak mein ek jaisa milta hai:",
+    },
+    {
+      type: "table",
+      head: ["Rashi", "Gujarati akshar", "English mein"],
+      rows: [
+        ["Mesh (મેષ)", "અ, લ, ઇ/ઈ", "A, L, I/E"],
+        ["Vrishabh (વૃષભ)", "બ, વ, ઉ", "B, V, U"],
+        ["Mithun (મિથુન)", "ક, છ, ઘ", "K, Chh, Gh"],
+        ["Kark (કર્ક)", "ડ, હ", "D (Dimple wala), H"],
+        ["Simha (સિંહ)", "મ, ટ", "M, T (hard)"],
+        ["Kanya (કન્યા)", "પ, ઠ, ણ", "P, Th (hard), N (retroflex)"],
+        ["Tula (તુલા)", "ર, ત", "R, T (soft)"],
+        ["Vrishchik (વૃશ્ચિક)", "ન, ય", "N, Y"],
+        ["Dhanu (ધન)", "ભ, ધ, ફ, ઢ", "Bh, Dh, F/Ph, Dh (hard)"],
+        ["Makar (મકર)", "ખ, જ", "Kh, J"],
+        ["Kumbh (કુંભ)", "ગ, સ, શ, ષ", "G, S, Sh"],
+        ["Meen (મીન)", "દ, ચ, ઝ, થ", "D (Darshan wala), Ch, Z/Jh, Th (soft)"],
+      ],
+    },
+    {
+      type: "ul",
+      items: [
+        "English mein D, T, Th aur N do-do Gujarati aksharon ke liye likhe jaate hain jo alag rashiyon mein hain (ડ Kark, દ Meen; ટ Simha, ત Tula). Isliye Gujarati lipi mein akshar dekhein.",
+        "Yeh Gujarati chart aur Hindi 108-pada chart hamesha match nahi karte — jaise 'Ha' Hindi pada chart mein Mithun (Punarvasu) ka akshar hai, par Gujarati chart mein હ Kark mein hai. Dono ko mix na karein; apne parivaar ki parampara wala chart hi lein.",
+        "Gujarati chart se sirf rashi milti hai, nakshatra nahi — jaise 'K' naam se pata chalta hai ki Chandrama Mithun mein tha, jo Mrigashira 3–4, Ardra aur Punarvasu 1–3 tak faila hai.",
+      ],
+    },
+
+    { type: "h2", text: "Naam ke akshar se janmakshar milan kitna sahi hai?" },
+    {
+      type: "p",
+      text: "36 gun mein se 15 gun (Varna 1, Vashya 2, Graha Maitri 5, Bhakoot 7) sirf dono ki rashi se nikalte hain, aur 21 gun (Tara 3, Yoni 4, Gana 6, Nadi 8) nakshatra se. Gujarati rashi akshar se sirf rashi milti hai, isliye naam se poora 36 gun score imaandaari se nahi ban sakta — Nadi (8) aur Gana (6) jaise bhaari koot andaaze par tik jaate hain. Hindi pada chart se nakshatra ka andaza lagta hai, par woh bhi tabhi sahi hai jab naam sach mein janm pada se rakha gaya ho. Aaj kal bahut se naam pasand, matlab ya dada-dadi ke naam par rakhe jaate hain; tab naam wali rashi aur asli janm rashi alag hoti hai.",
+    },
+    {
+      type: "p",
+      text: "Isliye naam se nikle Nadi ya Bhakoot dosha par rishta tod dene ka faisla na karein. Pehle dono ki asli rashi [Moon sign calculator](/moon-sign) se check karein — tareeka hamare [rashi kaise pata kare](/blog/rashi-kaise-pata-kare) guide mein hai.",
+    },
+
+    { type: "h2", text: "Janmakshar matching online kaise karein (free)" },
+    {
+      type: "ul",
+      items: [
+        "Dono ka janmakshar ho to usme likhi janam tarikh, samay aur sthaan dekh lein — biodata mein bhi aksar yahi hota hai.",
+        "Astrojanta ke [kundli matching tool](/matching) mein dono ki details daalein. Aapko aath koot ka poora table, 36 mein se score, aur Nadi/Bhakoot dosha ki jaankari milti hai.",
+        "Score ka matlab samajhne ke liye [kitne gun milne chahiye](/blog/kitne-gun-milne-chahiye) padhein; Nadi aur Bhakoot ke parihar [Nadi dosha](/blog/nadi-dosha) aur [Bhakoot dosha](/blog/bhakoot-dosha) mein hain.",
+        "Samay na pata ho to bhi tool rashi aur nakshatra ka andaza de deta hai, par jis din Chandrama nakshatra ya rashi badle us din result badal sakta hai — family records se samay dhoondhna best hai.",
+        "Kisi bhi sawal ke liye hamare [AI astrologer](/ai-astrologer) se Hindi, Hinglish ya English mein free poochein.",
+      ],
+    },
+
+    { type: "h2", text: "Disclaimer" },
+    {
+      type: "p",
+      text: "Janmakshar matching ek paramparik paddhati hai; 36 gun score sirf Chandrama par aadharit hai aur kisi rishte ka akela faisla nahi hona chahiye. Alag panchang Yoni ya Gana table mein ek-do gun ka farak de sakte hain. Hum koi pooja, ratna ya upay nahi bechte — faisla dono parivaar milkar, samajh kar karein.",
+    },
+  ],
+  faqs: [
+    {
+      q: "Janmakshar matching ka matlab kya hai?",
+      a: "Gujarati mein janmakshar janm kundli ko kehte hain. Janmakshar matching yaani kundli milan: dono ki Chandra rashi aur nakshatra se 8 koot aur 36 gun ka Ashtakoot milan.",
+    },
+    {
+      q: "Kya janmakshar matching aur gun milan same hain?",
+      a: "Haan. Janmakshar matching, kundli milan, gun milan aur Ashtakoot milan — sab ek hi 36 gun wali paddhati ke alag naam hain. Fark sirf bhasha aur region ka hai.",
+    },
+    {
+      q: "Mesh rashi ke janmakshar (akshar) kaun se hain?",
+      a: "Gujarati rashi akshar chart mein Mesh ke akshar અ, લ, ઇ/ઈ (A, L, I/E) hain. Hindi 108-pada chart mein Mesh ke 9 akshar Chu, Che, Cho, La, Li, Lu, Le, Lo, A hain.",
+    },
+    {
+      q: "Kya sirf naam se janmakshar milan ho sakta hai?",
+      a: "Ho sakta hai, par yeh sirf andaza hai. Gujarati akshar chart se sirf rashi milti hai (15 gun), nakshatra nahi. Naam janm pada ke akshar se na rakha gaya ho to result galat bhi ho sakta hai. Janam tarikh, samay aur jagah se milan zyaada sahi hai.",
+    },
+    {
+      q: "Janmakshar by date of birth kaise nikale?",
+      a: "Janam tarikh, samay aur jagah se Chandra rashi aur nakshatra-charan nikalte hain — yahi janmakshar ki mukhya jaankari hai. Astrojanta ke free Moon sign calculator ya free kundli tool mein details daal kar turant dekh sakte hain.",
+    },
+    {
+      q: "Janmakshar milan mein kitne gun milne chahiye?",
+      a: "Paramparik roop se 36 mein se 18 ya usse zyaada gun theek maane jaate hain. Lekin sirf total na dekhein — Nadi aur Bhakoot dosha aur unke parihar, aur Manglik status bhi dekhe jaate hain.",
+    },
+  ],
+};
+
 export const POSTS: Post[] = [
+  janmakshar,
   rashiKaisePataKare,
   mundanMuhurat2027,
   grihaPraveshMuhurat2027,
