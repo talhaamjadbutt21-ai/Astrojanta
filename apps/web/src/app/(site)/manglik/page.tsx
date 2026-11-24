@@ -5,7 +5,7 @@ import { pageOpenGraph } from "@/lib/site";
 import { ManglikTool } from "./manglik-tool";
 
 export const metadata: Metadata = {
-  title: "Free Manglik Dosha Check: Manglik Hoon Ya Nahi?",
+  title: "Mangal Dosha Calculator: Manglik Hoon Ya Nahi?",
   description:
     "Manglik hoon ya nahi? Free check from your birth chart — Mars from Lagna aur Chandra, plus the classical cancellation (parihar) yogas. No sign-up needed.",
   alternates: { canonical: "/manglik" },
