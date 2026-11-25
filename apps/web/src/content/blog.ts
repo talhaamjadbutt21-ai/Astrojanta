@@ -6546,7 +6546,210 @@ const janmakshar: Post = {
   ],
 };
 
+const yoniKoota: Post = {
+  slug: "yoni-koota",
+  title: "Yoni Koota in Kundli Milan: 14 Yoni Table, 4 Gun aur Score",
+  h1: "Yoni Koota – 14 Yoni Table, 27 Nakshatra, 4 Gun Kaise Milte Hain, aur Yoni 0 Aaye To Kya",
+  description:
+    "Yoni koota kya hai kundli milan mein? 27 nakshatra ki 14 yoni table, 4 gun kaise milte hain, Yoni 0 (enemy yoni) ka matlab, aur free kundli milan tool.",
+  keyword: "yoni koota",
+  author: "founder",
+  published: "2026-11-25",
+  updated: "2026-11-25",
+  intro:
+    "Report mein 'Yoni: 0/4' ya 'enemy yoni' dikhe to ghar mein aksar yahi sawal uthta hai — kya rishta nahi banana chahiye? Yoni koota Ashtakoot gun milan ka chautha koot hai, 36 mein se 4 gun ka, aur yeh dono ki janm nakshatra ke pashu-chinh (animal symbol) se nikalta hai. Yeh kisi ke character ya private life ka certificate nahi hai. Is guide mein saari 27 nakshatra ki 14 yoni table, score kaise banta hai (4, 2 ya 0), saat enemy jodiyaan, aur Yoni 0 aane par asal mein kya dekhna chahiye — seedhe shabdon mein. Apna score dekhne ke liye dono ki details free [kundli matching](/matching) tool mein daal dein.",
+  body: [
+    { type: "h2", text: "Short answer: Yoni koota kya hai?" },
+    {
+      type: "ul",
+      items: [
+        "Yoni koota Ashtakoot milan ka chautha koot hai, maximum 4 gun. Yeh dono ki janm nakshatra ke animal symbol (yoni) ko compare karta hai.",
+        "Kul 14 yoni hain. 13 yoni par do-do nakshatra aate hain; sirf Nakula (mongoose) par ek hi nakshatra hai — Uttara Ashadha.",
+        "Same yoni = 4 gun. Saat traditional enemy jodiyaan = 0 gun (isi ko Yoni dosha kehte hain). Baaki jodiyaan, Astrojanta aur kai common calculators mein, 2 gun.",
+        "Yoni 0 akela rishta todne ka kaaran nahi hai. Pehle total score, [Nadi](/blog/nadi-dosha), [Bhakoot](/blog/bhakoot-dosha) aur [Gana](/blog/gana-dosha) dekhein — yeh teeno milkar 21 gun lete hain, Yoni sirf 4.",
+        "Apna yoni aur score turant [kundli matching](/matching) par dekh sakte hain. Nakshatra na pata ho to pehle [Moon sign calculator](/moon-sign) use karein.",
+      ],
+    },
+
+    { type: "h2", text: "Yoni koota kya hota hai?" },
+    {
+      type: "p",
+      text: "Ashtakoota Guna Milan — North aur Central India mein shaadi ke liye use hone wali 36-gun paddhati — mein aath kootas compare kiye jaate hain, aur har ek sirf dono ki Chandra rashi aur janm nakshatra se nikalta hai. Yoni chautha koot hai aur 4 gun ka hai. Yeh Varna (1), Vashya (2) aur Tara (3) ke baad aata hai, aur [Gana](/blog/gana-dosha) (6), [Bhakoot](/blog/bhakoot-dosha) (7) aur [Nadi](/blog/nadi-dosha) (8) se halka hai.",
+    },
+    {
+      type: "p",
+      text: 'Yahan "yoni" ka matlab nakshatra ka pashu-chinh hai — ghora, gaja, sarpa, vyaghra jaise 14 symbols. Classical texts in symbols se swabhav, comfortable closeness aur physical compatibility ka andaza lagate hain. Yeh na to kisi ke character ka grade hai, na hi kisi ke private life par comment. Do logon ki janm nakshatra ki yoni milti hai, isliye same insaan alag partner ke saath 4 bhi le sakta hai aur 0 bhi.',
+    },
+    {
+      type: "p",
+      text: "Yoni poori nakshatra par lagti hai, isliye us nakshatra ke chaaron pada (charan) ki yoni ek hi hoti hai. Birth time ki chhoti si galti tabhi yoni badlegi jab Chandrama kisi doosri nakshatra mein chala jaaye. Apni nakshatra [Moon sign and Nakshatra finder](/moon-sign) ya free [Janam Kundli](/kundli) se confirm kar lein.",
+    },
+
+    { type: "h2", text: "14 yoni table: 27 nakshatra" },
+    {
+      type: "p",
+      text: "Yeh wahi standard grouping hai jo North Indian panchang aur Astrojanta ka matching tool use karta hai. Anuradha aur Jyeshtha ki yoni kai tables mein Mriga (deer) likhi milti hai, kai mein Shashak (hare / rabbit) — dono naam ek hi yoni ke hain, aur dono ki enemy yoni Shwan (dog) hi hai.",
+    },
+    {
+      type: "table",
+      head: ["Yoni (Hindi / English)", "Nakshatras"],
+      rows: [
+        ["Ashwa / Horse", "Ashwini, Shatabhisha"],
+        ["Gaja / Elephant", "Bharani, Revati"],
+        ["Mesha / Sheep (ram)", "Krittika, Pushya"],
+        ["Sarpa / Serpent", "Rohini, Mrigashira"],
+        ["Shwan / Dog", "Ardra, Mula"],
+        ["Marjar / Cat", "Punarvasu, Ashlesha"],
+        ["Mooshak / Rat", "Magha, Purva Phalguni"],
+        ["Gau / Cow", "Uttara Phalguni, Uttara Bhadrapada"],
+        ["Mahish / Buffalo", "Hasta, Swati"],
+        ["Vyaghra / Tiger", "Chitra, Vishakha"],
+        ["Mriga (Shashak) / Deer (hare)", "Anuradha, Jyeshtha"],
+        ["Vanara / Monkey", "Purva Ashadha, Shravana"],
+        ["Nakula / Mongoose", "Uttara Ashadha only"],
+        ["Simha / Lion", "Dhanishta, Purva Bhadrapada"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Agar har yoni par do nakshatra hote to 28 bante, lekin nakshatra 27 hi hain, kyunki Nakula (mongoose) par sirf Uttara Ashadha aata hai; baaki har yoni par do nakshatra hain. Isliye Uttara Ashadha ka partner same yoni tabhi milega jab dono ki nakshatra Uttara Ashadha ho.",
+    },
+
+    { type: "h2", text: "Yoni ke 4 gun kaise milte hain" },
+    {
+      type: "p",
+      text: "Ashtakoota mein Yoni maximum 4 gun ki hai. Astrojanta ka calculator, aur kai widely used North Indian tables, teen seedhe bands use karte hain:",
+    },
+    {
+      type: "ul",
+      items: [
+        "4 gun: dono ki yoni same ho — jaise dono Ashwa, ya dono Gau. Yeh sabse accha Yoni score hai.",
+        "0 gun: dono ki yoni neeche di gayi saat enemy jodiyon mein se ek ho. Isi 0 ko Yoni dosha kehte hain.",
+        "2 gun: baaki saari jodiyaan — same bhi nahi, traditional enemy bhi nahi.",
+      ],
+    },
+    {
+      type: "table",
+      head: ["Boy's nakshatra (yoni)", "Girl's nakshatra (yoni)", "Yoni score"],
+      rows: [
+        ["Ashwini (Ashwa)", "Shatabhisha (Ashwa)", "4 – same yoni"],
+        ["Rohini (Sarpa)", "Mrigashira (Sarpa)", "4 – same yoni"],
+        ["Hasta (Mahish)", "Swati (Mahish)", "4 – same yoni"],
+        ["Ashwini (Ashwa)", "Hasta (Mahish)", "0 – enemy yoni (horse × buffalo)"],
+        ["Bharani (Gaja)", "Dhanishta (Simha)", "0 – enemy yoni (elephant × lion)"],
+        ["Ashlesha (Marjar)", "Magha (Mooshak)", "0 – enemy yoni (cat × rat)"],
+        ["Ashwini (Ashwa)", "Rohini (Sarpa)", "2 – neither same nor enemy"],
+        ["Pushya (Mesha)", "Revati (Gaja)", "2 – neither same nor enemy"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Kai panchang aur software beech ki do aur categories bhi rakhte hain: friendly yoni ko 3 gun, unfriendly ko 1 gun. Kuch schools same animal ke male/female bhed se bhi score thoda badal dete hain. Astrojanta in beech ke farq ko 2 par hi rakhta hai, kyunki classical lists yahan ek jaisi nahi hain. Isliye do calculators par Yoni kabhi-kabhi 1–2 gun ka farq dikha sakti hai, jabki enemy jodiyaan aur same-yoni wala 4 almost har jagah same hote hain. Poora process [kundli milan online free](/blog/kundli-milan-online-free) guide mein hai.",
+    },
+
+    { type: "h2", text: "Enemy yoni (Yoni dosha): saat jodiyaan" },
+    {
+      type: "p",
+      text: "Yeh saat viruddh (enemy) jodiyaan standard Ashtakoota tables mein almost universal hain. Inme se kisi ek jodi par score 0 / 4 ho jaata hai, aur wahi Yoni dosha hai:",
+    },
+    {
+      type: "table",
+      head: ["Yoni", "Enemy yoni", "Example nakshatra pairing"],
+      rows: [
+        ["Ashwa (Horse)", "Mahish (Buffalo)", "Ashwini or Shatabhisha with Hasta or Swati"],
+        ["Gaja (Elephant)", "Simha (Lion)", "Bharani or Revati with Dhanishta or Purva Bhadrapada"],
+        ["Mesha (Sheep)", "Vanara (Monkey)", "Krittika or Pushya with Purva Ashadha or Shravana"],
+        ["Sarpa (Serpent)", "Nakula (Mongoose)", "Rohini or Mrigashira with Uttara Ashadha"],
+        ["Shwan (Dog)", "Mriga / Shashak (Deer, hare)", "Ardra or Mula with Anuradha or Jyeshtha"],
+        ["Marjar (Cat)", "Mooshak (Rat)", "Punarvasu or Ashlesha with Magha or Purva Phalguni"],
+        ["Gau (Cow)", "Vyaghra (Tiger)", "Uttara Phalguni or Uttara Bhadrapada with Chitra or Vishakha"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Direction se farq nahi padta: horse with buffalo aur buffalo with horse, dono 0 hi dete hain. Yoni dosha pair par lagta hai, vyakti par nahi — isi nakshatra wala vyakti kisi aur partner ke saath 4 gun bhi le sakta hai.",
+    },
+
+    { type: "h2", text: "Yoni 0 aaye to kya? Kitna matter karta hai?" },
+    {
+      type: "p",
+      text: "Yoni Ashtakoot ke halkay kootas mein se ek hai. 0 aane par total sirf 4 gun girta hai. [Nadi dosha](/blog/nadi-dosha) 8 gun kha jaata hai aur [Bhakoot dosha](/blog/bhakoot-dosha) 7 — dono milkar 15 gun, jo Varna, Vashya, Tara, Yoni aur Graha Maitri ke kul barabar hain. Isliye Yoni 0, lekin saaf Nadi, Bhakoot aur accha [Gana](/blog/gana-dosha), aksar us match se behtar padhta hai jisme Yoni 4 ho aur Nadi 0.",
+    },
+    {
+      type: "p",
+      text: "Agar report mein Yoni 0/4 hai, to is ek row ki wajah se rishta mat tod dein. Pehle [kitne gun milne chahiye](/blog/kitne-gun-milne-chahiye) ke hisaab se total aur bhaari koot dekhein — paramparik roop se 18 mein se 36 minimum maana jaata hai, lekin rows ka shape total se zyaada zaroori hai. [Manglik dosha](/blog/manglik-dosha-meaning) 36 gun ke bahar hai; usay alag se [Manglik tool](/manglik) par check karein.",
+    },
+    {
+      type: "p",
+      text: "Yoni dosha ke liye koi mehnga puja, ratna ya paid ritual zaroori nahi. Agar parivaar kuch karna chahe to apne family priest ki simple shanti, ghar ki pooja, ya dil se kiya daan hi traditional options hain. Jo koi Yoni 0 dikha kar mehnga upay bechne lage, usse door rahein aur poora chart padhein.",
+    },
+
+    { type: "h2", text: "Yoni aur baaki saat koot" },
+    {
+      type: "p",
+      text: "Yoni, Tara, Gana aur Nadi charon janm nakshatra se nikalte hain — 21 gun. Varna, Vashya, Graha Maitri aur Bhakoot Chandra rashi se nikalte hain — 15 gun. Isliye birth time itni galat ho ki nakshatra badal jaaye, to Yoni ke saath Gana aur Nadi bhi ek saath badal sakte hain, jabki Bhakoot aur [Varna](/blog/varna-koota-meaning) waise ke waise reh sakte hain.",
+    },
+    {
+      type: "p",
+      text: "South India mein kai parivaar das-porutham (jataka / jathaka porutham) use karte hain; wahan bhi Yoni porutham hota hai, lekin scoring Ashtakoot ke 4 gun jaisi nahi hoti. Dono paddhatiyon ka maqsad ek hai — do log kitna comfortably saath reh sakte hain — aur dono ko poori kundli ke saath padhna behtar hai, ek number ke saath nahi.",
+    },
+
+    { type: "h2", text: "Yoni koota online kaise check karein (free)" },
+    {
+      type: "ul",
+      items: [
+        "Dono ki janam tarikh, samay aur jagah collect karein. India mein birth certificate ka IST time use karein.",
+        "Free [kundli matching](/matching) tool mein details daalein. Report mein Yoni ka score 4 mein se dikhega, saath mein baaki saat koot aur 36 ka total.",
+        "Nakshatra confirm karne ke liye [Moon sign calculator](/moon-sign) ya [Janam Kundli](/kundli) kholen, phir upar wali 14 yoni table se symbol dekh lein.",
+        "Total ka matlab [kitne gun milne chahiye](/blog/kitne-gun-milne-chahiye) mein hai; Nadi aur Bhakoot ke parihar unki alag guides mein hain.",
+        'Koi row samajh na aaye to [AI astrologer](/ai-astrologer) se Hindi, Hinglish ya English mein poochhein, jaise: "Hamara Yoni 0 hai, baaki gun kaise hain?" Ise explanation samjhein, faisla nahi.',
+      ],
+    },
+
+    { type: "h2", text: "Disclaimer" },
+    {
+      type: "p",
+      text: "Yoni koota ek paramparik Ashtakoot check hai; 4 gun ka score sirf janm nakshatra par aadharit hai aur kisi rishte ka akela faisla nahi hona chahiye. Alag panchang friendly/unfriendly bands mein 1–2 gun ka farq de sakte hain, lekin 14 yoni grouping aur saat enemy jodiyaan generally stable hain. Hum koi pooja, ratna ya upay nahi bechte — faisla dono parivaar milkar, poora chart dekhkar karein. Calculation ka tareeka hamari [methodology page](/about-methodology) par hai.",
+    },
+  ],
+  faqs: [
+    {
+      q: "Yoni koota kya hai kundli milan mein?",
+      a: "Yoni koota Ashtakoot gun milan ka chautha koot hai. Yeh ladke aur ladki ki janm nakshatra ke 14 animal symbols (yoni) ko compare karta hai aur maximum 4 gun deta hai.",
+    },
+    {
+      q: "Yoni koota kitne gun ki hoti hai?",
+      a: "Yoni koota 4 gun ki hai, 36 ke total mein. Yeh Varna (1), Vashya (2) aur Tara (3) se bhaari hai, lekin Gana (6), Bhakoot (7) aur Nadi (8) se halki hai.",
+    },
+    {
+      q: "Mere nakshatra ki yoni kaun si hai?",
+      a: "Ashwini aur Shatabhisha Ashwa (horse) hain; Bharani aur Revati Gaja; Krittika aur Pushya Mesha; Rohini aur Mrigashira Sarpa; Ardra aur Mula Shwan; Punarvasu aur Ashlesha Marjar; Magha aur Purva Phalguni Mooshak; Uttara Phalguni aur Uttara Bhadrapada Gau; Hasta aur Swati Mahish; Chitra aur Vishakha Vyaghra; Anuradha aur Jyeshtha Mriga (Shashak); Purva Ashadha aur Shravana Vanara; Uttara Ashadha Nakula; Dhanishta aur Purva Bhadrapada Simha.",
+    },
+    {
+      q: "Yoni 0 aaye to kya rishta nahi banana chahiye?",
+      a: "Nahi, akela Yoni 0 rishta todne ka kaaran nahi hai. Isse total sirf 4 gun girta hai. Pehle Nadi, Bhakoot, Gana, poora 36-gun score, Manglik status aur dono ki alag kundli dekhein.",
+    },
+    {
+      q: "Yoni dosha kya hota hai?",
+      a: "Yoni dosha us jodi ko kehte hain jahan Yoni score 0 / 4 ho — yaani dono ki yoni saat traditional enemy pairs mein se ek ho, jaise Ashwa-Mahish ya Gaja-Simha. Yeh pair ka result hai, vyakti ka daag nahi.",
+    },
+    {
+      q: "Same yoni best hai kya?",
+      a: "Same yoni Yoni koota mein poore 4 gun deti hai, isliye is koot mein woh sabse accha score hai. Lekin shaadi ka faisla is ek row par nahi hona chahiye; baaki saat koot aur poori kundli bhi dekhi jaati hai.",
+    },
+    {
+      q: "Do websites par Yoni score alag kyun aata hai?",
+      a: "Kyunki kuch tables beech ki jodiyon ko 3 (friendly) ya 1 (unfriendly) deti hain, aur kuch same animal ke male/female bhed se score badalti hain. Astrojanta same yoni par 4, enemy par 0, aur baaki par 2 deta hai. 14 yoni list aur saat enemy jodiyaan zyaadatar jagah same rehti hain.",
+    },
+    {
+      q: "Yoni dosha ka parihar kya hai?",
+      a: "Koi paid puja, ratna ya special ritual zaroori nahi. Pehle bhaari koot aur total dekhein. Agar parivaar chahe to simple shanti path, ghar ki pooja ya daan traditional options hain. Faisla dono parivaar ka hai.",
+    },
+  ],
+};
+
 export const POSTS: Post[] = [
+  yoniKoota,
   janmakshar,
   rashiKaisePataKare,
   mundanMuhurat2027,
