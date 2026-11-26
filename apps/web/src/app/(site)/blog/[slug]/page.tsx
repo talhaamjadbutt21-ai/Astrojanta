@@ -5,6 +5,7 @@ import { BlogText } from "@/components/blog-text";
 import { JsonLd } from "@/components/json-ld";
 import { ButtonLink } from "@/components/ui/button";
 import { getPost, POSTS } from "@/content/blog";
+import { relatedPosts } from "@/content/clusters";
 import { absoluteUrl, FOUNDER, FOUNDER_ID, ORGANIZATION_ID, SITE_NAME } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -49,10 +50,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const post = getPost(slug);
   if (!post) notFound();
   const url = absoluteUrl(`/blog/${post.slug}`);
-  // Internal links to other guides (newest first) so every post links to — and is linked from — other posts.
-  const related = POSTS.filter((p) => p.slug !== post.slug)
-    .sort((a, b) => b.published.localeCompare(a.published))
-    .slice(0, 4);
+  // Topic-cluster internal links (see content/clusters.ts): pillars link their whole cluster,
+  // other posts link the pillar plus neighbours, so older posts are not orphaned by newer ones.
+  const related = relatedPosts(post.slug);
   const org = { "@type": "Organization", name: SITE_NAME, url: absoluteUrl("/") };
   const byFounder = post.author === "founder";
   const author = byFounder

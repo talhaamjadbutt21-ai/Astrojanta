@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { postsFor } from "@/content/clusters";
 import type { ToolGuide } from "@/content/tool-guides";
 import { absoluteUrl, SITE_NAME } from "@/lib/site";
 import { JsonLd } from "./json-ld";
@@ -6,7 +7,16 @@ import { JsonLd } from "./json-ld";
 /** Renders the long-form guide, FAQ and matching JSON-LD for a tool page. */
 export function ToolGuideSection({ guide }: { guide: ToolGuide }) {
   const url = absoluteUrl(guide.path);
+  const guidePosts = guide.guides ? postsFor(guide.guides.slugs) : [];
   const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") },
+        { "@type": "ListItem", position: 2, name: guide.appName.replace(/^Astrojanta /, ""), item: url },
+      ],
+    },
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
@@ -46,6 +56,24 @@ export function ToolGuideSection({ guide }: { guide: ToolGuide }) {
           ))}
         </div>
       ))}
+      {guide.guides && guidePosts.length > 0 && (
+        <div className="mt-10">
+          <h3 className="font-display text-xl font-semibold">{guide.guides.heading}</h3>
+          <p className="mt-3 leading-relaxed text-muted">{guide.guides.intro}</p>
+          <ul className="mt-3 list-disc space-y-2 pl-5 text-muted">
+            {guidePosts.map((p) => (
+              <li key={p.slug}>
+                <Link
+                  href={`/blog/${p.slug}`}
+                  className="text-gold-200 underline underline-offset-4 hover:text-gold-400"
+                >
+                  {p.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
       <div className="mt-8">
         <h3 className="font-display text-xl font-semibold">Related free tools</h3>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-muted">
