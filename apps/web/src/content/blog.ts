@@ -6748,7 +6748,242 @@ const yoniKoota: Post = {
   ],
 };
 
+const grahaMaitri: Post = {
+  slug: "graha-maitri",
+  title: "Graha Maitri in Kundli Milan: Rashi Lord Table, 5 Gun aur Score",
+  h1: "Graha Maitri – Rashi Lord Ki Friendship Table, 0 Se 5 Gun Kaise Milte Hain, aur Score Kam Aaye To Kya",
+  description:
+    "Graha Maitri kya hai kundli milan mein? Rashi lord ki friend, neutral, enemy table, 5 gun kaise milte hain, kam score ka matlab, parihar, aur free kundli milan tool.",
+  keyword: "graha maitri",
+  author: "founder",
+  published: "2026-11-26",
+  updated: "2026-11-26",
+  intro:
+    "Report mein 'Graha Maitri: 1/5' ya kam gun dikhe to ghar mein aksar yahi sawal uthta hai — kya soch-samajh mein yeh rishta nahi chalega? Graha Maitri Ashtakoot gun milan ka paanchva koot hai, 36 mein se 5 gun ka, aur yeh dono ki Chandra rashi ke swami (sign lords) ki natural friendship se nikalta hai. Yeh kisi ke character ka grade nahi hai. Is guide mein 12 rashi ke lords, saat grahon ki friend–neutral–enemy table, 0 se 5 gun kaise bante hain, examples, kam score ka matlab, aur jo parihar parampara mein bataye jaate hain — seedhe shabdon mein. Apna score dekhne ke liye dono ki details free [kundli matching](/matching) tool mein daal dein.",
+  body: [
+    { type: "h2", text: "Short answer: Graha Maitri kya hai?" },
+    {
+      type: "ul",
+      items: [
+        "Graha Maitri Ashtakoot milan ka paanchva koot hai, maximum 5 gun. Yeh dono ki Chandra rashi ke swami (rashi lords) ki naisargika (natural) friendship ko compare karta hai.",
+        "Pehle 12 rashi ke lords dekhein, phir saat grahon ki friend, neutral aur enemy table. Isi se 0 se 5 gun bante hain — nakshatra is koot mein use nahi hoti.",
+        "Standard Ashtakoot bands: same lord ya mutual friends = 5; ek mitra aur doosra neutral = 4; dono neutral = 3; mitra–shatru ya sama–shatru = 1; dono shatru = 0.",
+        "Astrojanta ka calculator in bands ko 5, 4 aur 1 mein simplify karta hai. Farq neeche imaandaari se likha hai, taaki do websites ka score alag dikhe to ghabrahat na ho.",
+        "Kam score akela rishta todne ka kaaran nahi hai. Pehle total, [Nadi](/blog/nadi-dosha), [Bhakoot](/blog/bhakoot-dosha) aur [Yoni koota](/blog/yoni-koota) dekhein — Nadi aur Bhakoot akele 15 gun lete hain, Graha Maitri 5.",
+        "Apna score turant [kundli matching](/matching) par dekh sakte hain. Rashi na pata ho to pehle [Moon sign calculator](/moon-sign) use karein.",
+      ],
+    },
+
+    { type: "h2", text: "Graha Maitri kya hota hai?" },
+    {
+      type: "p",
+      text: "Ashtakoota Guna Milan — North aur Central India mein shaadi ke liye use hone wali 36-gun paddhati — mein aath kootas compare kiye jaate hain, aur har ek sirf dono ki Chandra rashi aur janm nakshatra se nikalta hai. Poora process [kundli milan online free](/blog/kundli-milan-online-free) guide mein hai. Graha Maitri paanchva koot hai aur 5 gun ka hai. Yeh [Yoni](/blog/yoni-koota) (4) ke baad aata hai, aur [Gana](/blog/gana-dosha) (6), [Bhakoot](/blog/bhakoot-dosha) (7) aur [Nadi](/blog/nadi-dosha) (8) se halka hai.",
+    },
+    {
+      type: "p",
+      text: 'Yahan "maitri" ka matlab rashi ke swami grahon ki natural friendship hai — mitra, sama (neutral) ya shatru. Classical texts isse mansik taalmel, soch-samajh aur daily decisions mein comfortably saath reh paane ka andaza lagate hain. Yeh na to IQ ka test hai, na hi kisi ke character ka certificate. Do logon ki Chandra rashi ke lords milte hain, isliye same insaan alag partner ke saath 5 bhi le sakta hai aur 0 ya 1 bhi.',
+    },
+    {
+      type: "p",
+      text: "Graha Maitri poori Chandra rashi par lagti hai, nakshatra par nahi. Birth time ki chhoti si galti tabhi score badlegi jab Chandrama kisi doosri rashi mein chala jaaye — yeh rashi sandhi (sign change) ke aas-paas hota hai, kyunki Chandrama lagbhag dhai din mein rashi badalta hai. Apni rashi [Moon sign and Nakshatra finder](/moon-sign) ya free [Janam Kundli](/kundli) se confirm kar lein.",
+    },
+
+    { type: "h2", text: "12 rashi aur unke swami (lords)" },
+    {
+      type: "p",
+      text: "Yeh wahi standard rashi-lord list hai jo Vedic jyotish aur Astrojanta ka matching tool use karta hai. Graha Maitri ke liye sirf Moon sign ka lord chahiye, Lagna ya Surya rashi ka nahi.",
+    },
+    {
+      type: "table",
+      head: ["Rashi", "Lord (swami)"],
+      rows: [
+        ["Mesh (Aries)", "Mangal (Mars)"],
+        ["Vrishabh (Taurus)", "Shukra (Venus)"],
+        ["Mithun (Gemini)", "Budh (Mercury)"],
+        ["Kark (Cancer)", "Chandra (Moon)"],
+        ["Simha (Leo)", "Surya (Sun)"],
+        ["Kanya (Virgo)", "Budh (Mercury)"],
+        ["Tula (Libra)", "Shukra (Venus)"],
+        ["Vrishchik (Scorpio)", "Mangal (Mars)"],
+        ["Dhanu (Sagittarius)", "Guru (Jupiter)"],
+        ["Makar (Capricorn)", "Shani (Saturn)"],
+        ["Kumbh (Aquarius)", "Shani (Saturn)"],
+        ["Meen (Pisces)", "Guru (Jupiter)"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Paanch jodiyaan same lord share karti hain, aur in par Graha Maitri hamesha 5 hoti hai: Mesh–Vrishchik (dono Mangal), Vrishabh–Tula (dono Shukra), Mithun–Kanya (dono Budh), Dhanu–Meen (dono Guru), aur Makar–Kumbh (dono Shani). Kark aur Simha ka lord unique hai, isliye unka same-lord partner nahi hota.",
+    },
+
+    { type: "h2", text: "Friend, neutral, enemy table" },
+    {
+      type: "p",
+      text: "Ashtakoota mein yeh naisargika maitri (permanent / natural friendship) use hoti hai, jo graha ke swabhav se banati hai. Yeh tatkalika maitri nahi hai — woh janm kundli mein graha kahan baithe hain us par depend karti hai, aur standard 36-gun score mein nahi jaati. North Indian matching mein yahi table almost universal hai:",
+    },
+    {
+      type: "table",
+      head: ["Graha", "Friends (mitra)", "Neutrals (sama)", "Enemies (shatru)"],
+      rows: [
+        ["Surya (Sun)", "Chandra, Mangal, Guru", "Budh", "Shukra, Shani"],
+        ["Chandra (Moon)", "Surya, Budh", "Mangal, Guru, Shukra, Shani", "Koi nahi"],
+        ["Mangal (Mars)", "Surya, Chandra, Guru", "Shukra, Shani", "Budh"],
+        ["Budh (Mercury)", "Surya, Shukra", "Mangal, Guru, Shani", "Chandra"],
+        ["Guru (Jupiter)", "Surya, Chandra, Mangal", "Shani", "Budh, Shukra"],
+        ["Shukra (Venus)", "Budh, Shani", "Mangal, Guru", "Surya, Chandra"],
+        ["Shani (Saturn)", "Budh, Shukra", "Guru", "Surya, Chandra, Mangal"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Dhyan rahe: friendship hamesha dono taraf se same nahi hoti. Sabse clear example Chandra aur Budh hain — Chandra Budh ko mitra maanta hai, lekin Budh Chandra ko shatru. Isi one-way relation ki wajah se Kark ka Mithun ya Kanya ke saath classical score aksar 1 hota hai, 5 nahi.",
+    },
+
+    { type: "h2", text: "0 se 5 gun kaise milte hain" },
+    {
+      type: "p",
+      text: "Ashtakoota mein Graha Maitri maximum 5 gun ki hai. Standard North Indian table dono lords ki nazar ek doosre par milakar yeh bands deti hai:",
+    },
+    {
+      type: "ul",
+      items: [
+        "5 gun: dono ka lord same ho, ya dono ek doosre ko mitra maante hon (mutual friends).",
+        "4 gun: ek lord doosre ko mitra maane, aur doosra use neutral maane (friend–neutral).",
+        "3 gun: dono ek doosre ko neutral maante hon (mutual neutrals).",
+        "1 gun: ek mitra aur doosra shatru (friend–enemy), ya ek neutral aur doosra shatru (neutral–enemy).",
+        "0 gun: dono ek doosre ko shatru maante hon (mutual enemies).",
+      ],
+    },
+    {
+      type: "table",
+      head: ["Boy's rashi (lord)", "Girl's rashi (lord)", "Relation", "Classical score"],
+      rows: [
+        ["Vrishabh (Shukra)", "Tula (Shukra)", "Same lord", "5"],
+        ["Simha (Surya)", "Kark (Chandra)", "Mutual friends", "5"],
+        ["Mesh (Mangal)", "Dhanu (Guru)", "Mutual friends", "5"],
+        ["Simha (Surya)", "Mithun (Budh)", "Friend–neutral", "4"],
+        ["Kark (Chandra)", "Mesh (Mangal)", "Friend–neutral", "4"],
+        ["Mesh (Mangal)", "Vrishabh (Shukra)", "Mutual neutrals", "3"],
+        ["Dhanu (Guru)", "Makar (Shani)", "Mutual neutrals", "3"],
+        ["Kark (Chandra)", "Mithun (Budh)", "Friend–enemy (Chandra–Budh)", "1"],
+        ["Kark (Chandra)", "Tula (Shukra)", "Neutral–enemy", "1"],
+        ["Simha (Surya)", "Tula (Shukra)", "Mutual enemies", "0"],
+        ["Simha (Surya)", "Makar (Shani)", "Mutual enemies", "0"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Direction se farq nahi padta: Simha–Tula aur Tula–Simha, dono classical table mein 0 hi dete hain. Mutual enemies ki sirf do graha-jodiyan hain — Surya–Shukra aur Surya–Shani — isliye 0 relatively uncommon hai. Mutual neutrals bhi sirf do jodiyon par aate hain: Mangal–Shukra (jaise Mesh–Vrishabh) aur Guru–Shani (jaise Dhanu–Makar).",
+    },
+
+    { type: "h2", text: "Astrojanta ka tool Graha Maitri ke liye kya karta hai (honestly)" },
+    {
+      type: "p",
+      text: "Families in numbers par faisla karti hain, isliye seedha bataate hain ki hamara [kundli matching](/matching) tool kya karta hai. Yeh upar wali classic 5-band table ko teen bands mein rakhta hai:",
+    },
+    {
+      type: "ul",
+      items: [
+        "5/5: same rashi lord, ya dono lords ek doosre ke natural friends.",
+        "4/5: friendship ek taraf ho — chahe doosri taraf neutral ho ya enemy.",
+        "1/5: baaki saari jodiyaan, jisme mutual neutrals, neutral–enemy aur mutual enemies sab aa jaate hain.",
+        "Tool kabhi 3 ya 0 nahi dikhata, aur score mein points wapas nahi jodta.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Is simplification ka asar teen jagah dikhta hai. Mutual neutrals (Mangal–Shukra, Guru–Shani) classical table mein 3 hote hain, tool mein 1. Mutual enemies (Surya–Shukra, Surya–Shani) classical mein 0, tool mein 1. Aur sirf ek friend–enemy jodi — Chandra–Budh, yaani Kark ka Mithun ya Kanya ke saath — classical mein aksar 1, tool mein 4, kyunki Chandra Budh ko mitra maanta hai. Baaki friend–neutral aur mutual-friend cases dono systems mein same rehte hain. Kai doosre calculators beech ke bands alag rakhte hain, ya friend–enemy ko 0 ya 1 dete hain; isliye do websites par 1–3 gun ka farq ho sakta hai, jabki rashi-lord list aur friend table almost same hoti hai.",
+    },
+
+    { type: "h2", text: "Score kam aaye to kya? Kitna matter karta hai?" },
+    {
+      type: "p",
+      text: "Graha Maitri beech ke kootas mein se ek hai. Poore 5 gun chhutne par total 5 girta hai — [Yoni](/blog/yoni-koota) se ek gun zyaada, lekin [Nadi dosha](/blog/nadi-dosha) (8) aur [Bhakoot dosha](/blog/bhakoot-dosha) (7) se kaafi kam. Dono bhaari koot milkar 15 gun lete hain, jo Varna, Vashya, Tara, Yoni aur Graha Maitri ke kul barabar hain. Isliye Graha Maitri 1, lekin saaf Nadi, Bhakoot aur accha [Gana](/blog/gana-dosha), aksar us match se behtar padhta hai jisme Graha Maitri 5 ho aur Nadi 0.",
+    },
+    {
+      type: "p",
+      text: "Agar report mein Graha Maitri 1/5 hai, to is ek row ki wajah se rishta mat tod dein. Pehle [kitne gun milne chahiye](/blog/kitne-gun-milne-chahiye) ke hisaab se total aur bhaari koot dekhein — paramparik roop se 18 mein se 36 minimum maana jaata hai, lekin rows ka shape total se zyaada zaroori hai. [Manglik dosha](/blog/manglik-dosha-meaning) 36 gun ke bahar hai; usay alag se [Manglik tool](/manglik) par check karein.",
+    },
+    {
+      type: "p",
+      text: "Ek aur practical baat: kam Graha Maitri sirf 5 gun hi nahi kati. [Bhakoot](/blog/bhakoot-dosha) aur [Gana](/blog/gana-dosha) ke mukhya classical parihar isi baat par tikte hain ki dono rashi-lords same hon ya natural friends. Jab Graha Maitri 5/5 ho, woh hint milta hai ki yeh exceptions apply ho sakti hain. Jab score 1 ho, woh exceptions aam taur par available nahi rehti. Isliye is koot ko do baar padhein — khud ke 5 gun ke liye, aur doosre doshon ke parihar ke liye.",
+    },
+
+    { type: "h2", text: "Graha Maitri ka parihar: cancellation conditions" },
+    {
+      type: "p",
+      text: "Graha Maitri ko Nadi, Bhakoot ya Gana ki tarah ek named dosha ki tarah rare formal cancellation list nahi milti. Standard Ashtakoot tables 0 ya 1 ko score mein hi rakhte hain; koi widely accepted rule in points ko wapas 5 nahi kar deta. Jo cheezein parampara mein batayi jaati hain, woh aam taur par compensating factors hain, printed number ka rewrite nahi.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Panchadha / compound friendship. Kuch schools naisargika maitri ke saath tatkalika maitri (dono janm kundliyon mein rashi-lords ki position) bhi jodte hain. Agar compound friendship natural se behtar ho, to kai astrologers is koot ko kam tense padhte hain. Iske liye poori kundli chahiye, sirf Moon sign nahi. Astrojanta yeh apply nahi karta; score hamesha natural friendship par raw rehta hai.",
+        "Lagna (ascendant) lords ki friendship. Agar dono ke Lagna-swami mitra hon ya same hon, to mansik taalmel ka doosra sahara maana jaata hai — yeh 36-gun total nahi badalta.",
+        "Saatve bhaav aur uske lord ki durdasha. Kuch readings 7th house ke bal ko bhi dekh kar kam Graha Maitri ko context deti hain. Yeh bhi alag, poori-kundli wali baat hai.",
+        "Koi mehnga puja, ratna ya paid ritual is koot ko cancel nahi karta. Agar parivaar kuch karna chahe to apne family priest ki simple shanti, un dono grahon se judi pooja, ya dil se kiya daan hi traditional options hain. Jo koi kam score dikha kar mehnga upay bechne lage, usse door rahein aur poora chart padhein.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Ulta parihar zyaada clear hai, aur yahi families ke liye zyaada useful hai: jab Graha Maitri 5/5 ho — same lord ya mutual natural friends — to [Bhakoot dosha](/blog/bhakoot-dosha) aur [Gana dosha](/blog/gana-dosha) ke mukhya classical exceptions often apply hote hain, khaskar jab [Nadi](/blog/nadi-dosha) saaf ho. Tool un exceptions ko automatically apply nahi karta; raw score hi dikhata hai, aur reading astrologer ya parivaar par chhodta hai, kyunki schools inhe alag lagate hain. Detail unki alag guides mein hai.",
+    },
+
+    { type: "h2", text: "Graha Maitri online kaise check karein (free)" },
+    {
+      type: "ul",
+      items: [
+        "Dono ki janam tarikh, samay aur jagah collect karein. India mein birth certificate ka IST time use karein, khaskar agar Chandrama rashi ke ant ya shuruat ke kareeb ho.",
+        "Free [kundli matching](/matching) tool mein details daalein. Report mein Graha Maitri ka score 5 mein se dikhega, saath mein baaki saat koot aur 36 ka total.",
+        "Rashi confirm karne ke liye [Moon sign calculator](/moon-sign) ya [Janam Kundli](/kundli) kholen, phir upar wali rashi-lord aur friendship table se relation dekh lein.",
+        "Total ka matlab [kitne gun milne chahiye](/blog/kitne-gun-milne-chahiye) mein hai; Nadi, Bhakoot aur Yoni ke rules unki alag guides mein hain. Poora gun milan [kundli milan online free](/blog/kundli-milan-online-free) se shuru karein.",
+        'Koi row samajh na aaye to [AI astrologer](/ai-astrologer) se Hindi, Hinglish ya English mein poochhein, jaise: "Hamara Graha Maitri 1 hai, Bhakoot ka parihar lagega kya?" Ise explanation samjhein, faisla nahi.',
+      ],
+    },
+
+    { type: "h2", text: "Disclaimer" },
+    {
+      type: "p",
+      text: "Graha Maitri ek paramparik Ashtakoot check hai; 5 gun ka score sirf dono ki Chandra rashi ke lords ki natural friendship par aadharit hai aur kisi rishte ka akela faisla nahi hona chahiye. Alag panchang beech ke bands mein 1–3 gun ka farq de sakte hain, lekin 12 rashi-lords aur naisargika friend–neutral–enemy table generally stable hain. Hum koi pooja, ratna ya upay nahi bechte — faisla dono parivaar milkar, poora chart dekhkar karein. Calculation ka tareeka hamari [methodology page](/about-methodology) par hai.",
+    },
+  ],
+  faqs: [
+    {
+      q: "Graha Maitri kya hai kundli milan mein?",
+      a: "Graha Maitri Ashtakoot gun milan ka paanchva koot hai. Yeh ladke aur ladki ki Chandra rashi ke swami grahon (rashi lords) ki natural friendship ko compare karta hai aur maximum 5 gun deta hai.",
+    },
+    {
+      q: "Graha Maitri kitne gun ki hoti hai?",
+      a: "Graha Maitri 5 gun ki hai, 36 ke total mein. Yeh Yoni (4) se ek gun bhaari hai, lekin Gana (6), Bhakoot (7) aur Nadi (8) se halki hai.",
+    },
+    {
+      q: "Mere rashi ka lord kaun hai?",
+      a: "Mesh aur Vrishchik ka lord Mangal hai; Vrishabh aur Tula ka Shukra; Mithun aur Kanya ka Budh; Kark ka Chandra; Simha ka Surya; Dhanu aur Meen ka Guru; Makar aur Kumbh ka Shani. Graha Maitri isi lord se nikalti hai, Lagna ya Surya rashi se nahi.",
+    },
+    {
+      q: "Graha Maitri 1 ya 0 aaye to kya rishta nahi banana chahiye?",
+      a: "Nahi, akela kam Graha Maitri rishta todne ka kaaran nahi hai. Isse total zyaada se zyaada 5 gun girta hai. Pehle Nadi, Bhakoot, Gana, poora 36-gun score, Manglik status aur dono ki alag kundli dekhein.",
+    },
+    {
+      q: "Same rashi lord ya mutual friends best hain kya?",
+      a: "Haan, is koot mein dono cases poore 5 gun dete hain, jo sabse accha Graha Maitri score hai. Isi condition par Bhakoot aur Gana ke mukhya classical parihar bhi aksar tikte hain. Phir bhi shaadi ka faisla is ek row par nahi hona chahiye.",
+    },
+    {
+      q: "Do websites par Graha Maitri score alag kyun aata hai?",
+      a: "Kyunki kuch tables poori 5-band scoring use karti hain (5, 4, 3, 1, 0), aur kuch beech ke cases ko alag points deti hain. Astrojanta same lord ya mutual friends par 5, ek-taraf ki friendship par 4, aur baaki par 1 deta hai — isliye mutual neutrals 3 ki jagah 1, mutual enemies 0 ki jagah 1, aur Chandra–Budh (friend–enemy) 1 ki jagah 4 aa sakta hai. Rashi-lord list aur friend table zyaadatar jagah same rehti hain.",
+    },
+    {
+      q: "Graha Maitri ka parihar kya hai?",
+      a: "Koi paid puja, ratna ya special ritual is score ko 5 nahi bana deta. Kuch schools compound (naisargika plus tatkalika) friendship ya Lagna-lord maitri ko compensating factor maante hain, lekin 36-gun total raw hi rehta hai. Pehle bhaari koot aur total dekhein. Agar parivaar chahe to simple shanti path, ghar ki pooja ya daan traditional options hain.",
+    },
+    {
+      q: "Graha Maitri Bhakoot ya Gana dosha cancel karti hai kya?",
+      a: "Jab Graha Maitri 5/5 ho — yaani rashi-lords same hon ya mutual natural friends — to Bhakoot aur Gana ke mukhya classical exceptions often apply ho sakte hain, khaskar saaf Nadi ke saath. Yeh automatic cancellation nahi hai; Astrojanta raw score hi dikhata hai, aur schools in exceptions ko alag lagate hain. Detail Bhakoot aur Gana guides mein hai.",
+    },
+  ],
+};
+
 export const POSTS: Post[] = [
+  grahaMaitri,
   yoniKoota,
   janmakshar,
   rashiKaisePataKare,
