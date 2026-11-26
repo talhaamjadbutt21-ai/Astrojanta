@@ -16,7 +16,11 @@ import { Reveal } from "@/components/reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ZodiacWheel } from "@/components/zodiac-wheel";
+import { clusterById, postsFor } from "@/content/clusters";
 import { HOME_URL, pageOpenGraph } from "@/lib/site";
+
+/** Topic clusters (content/clusters.ts) shown as guide lists on the homepage. */
+const HOME_GUIDE_CLUSTERS = ["gun-milan", "2027", "kundli"];
 
 const HOME_TITLE = "Astrojanta — Free Kundli & AI Astrologer in Hindi";
 const HOME_DESCRIPTION =
@@ -280,6 +284,43 @@ export default function HomePage() {
             </div>
           </Card>
         </Reveal>
+      </section>
+
+      <section className="mx-auto mt-28 max-w-6xl px-4 sm:px-6" aria-labelledby="guides-title">
+        <Reveal className="mx-auto max-w-2xl text-center">
+          <h2 id="guides-title" className="font-display text-3xl font-semibold sm:text-4xl">
+            Popular <span className="text-gradient-gold">guides</span>
+          </h2>
+          <p className="mt-4 text-muted">Kundli milan, 2027 muhurat aur kundli padhna — saral Hinglish mein.</p>
+        </Reveal>
+        <div className="mt-12 grid gap-4 md:grid-cols-3">
+          {HOME_GUIDE_CLUSTERS.map((id) => {
+            const c = clusterById(id);
+            if (!c) return null;
+            return (
+              <Card key={c.id} className="h-full">
+                <h3 className="font-display text-lg">{c.label}</h3>
+                <ul className="mt-3 space-y-2 text-sm leading-relaxed">
+                  {postsFor(c.slugs.slice(0, 6)).map((p) => (
+                    <li key={p.slug}>
+                      <Link
+                        href={`/blog/${p.slug}`}
+                        className="text-gold-200 underline underline-offset-4 hover:text-gold-400"
+                      >
+                        {p.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </Card>
+            );
+          })}
+        </div>
+        <p className="mt-6 text-center text-sm text-muted">
+          <Link href="/blog" className="text-gold-200 underline underline-offset-4 hover:text-gold-400">
+            Saare guides dekhein
+          </Link>
+        </p>
       </section>
 
       <section id="faq" className="mx-auto mt-28 max-w-3xl scroll-mt-24 px-4 sm:px-6">

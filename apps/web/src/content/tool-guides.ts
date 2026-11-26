@@ -5,6 +5,8 @@ export type ToolGuide = {
   heading: string;
   sections: { title: string; paragraphs: string[] }[];
   related: { href: string; label: string; text: string }[];
+  /** Blog guides linked from the tool page (slugs from content/blog.ts). */
+  guides?: { heading: string; intro: string; slugs: string[] };
   faqs: { q: string; a: string }[];
 };
 
@@ -71,6 +73,19 @@ export const kundliGuide: ToolGuide = {
       text: "the 12 houses, step-by-step, and a Hindi section.",
     },
   ],
+  guides: {
+    heading: "Kundli padhne ke liye guides",
+    intro: "Kundli ban gayi? Ab Lagna, dasha aur dosh ko step by step samjhein:",
+    slugs: [
+      "free-ai-kundli-online",
+      "ai-kundli-reader",
+      "vimshottari-mahadasha",
+      "rashi-kaise-pata-kare",
+      "kaal-sarp-dosh",
+      "manglik-dosha-meaning",
+      "shani-sade-sati-2026",
+    ],
+  },
   faqs: [
     {
       q: "Is this Janam Kundli really free?",
@@ -155,6 +170,23 @@ export const matchingGuide: ToolGuide = {
       text: "the rashi-wise varna chart and how its 1 gun is scored.",
     },
   ],
+  guides: {
+    heading: "Gun milan ke har koot ki detailed guide",
+    intro: "Score dekh liya? Har koot ka matlab, dosha aur parihar yahan padhein:",
+    slugs: [
+      "kundli-milan-online-free",
+      "kitne-gun-milne-chahiye",
+      "nadi-dosha",
+      "bhakoot-dosha",
+      "gana-dosha",
+      "graha-maitri",
+      "yoni-koota",
+      "varna-koota-meaning",
+      "manglik-dosha-meaning",
+      "naam-se-gun-milan",
+      "janmakshar-matching",
+    ],
+  },
   faqs: [
     {
       q: "How many gunas are needed for marriage?",
@@ -221,6 +253,18 @@ export const manglikGuide: ToolGuide = {
     { href: "/kundli", label: "Free Janam Kundli", text: "see Mars and every planet in your full chart." },
     { href: "/moon-sign", label: "Moon Sign Calculator", text: "Manglik is also checked from the Moon." },
   ],
+  guides: {
+    heading: "Manglik aur shaadi se jude guides",
+    intro: "Manglik result ke baad yeh guides padhein:",
+    slugs: [
+      "manglik-dosha-meaning",
+      "kundli-milan-online-free",
+      "kitne-gun-milne-chahiye",
+      "nadi-dosha",
+      "bhakoot-dosha",
+      "kaal-sarp-dosh",
+    ],
+  },
   faqs: [
     {
       q: "How do I know if I am Manglik?",
@@ -284,6 +328,19 @@ export const moonSignGuide: ToolGuide = {
     { href: "/matching", label: "Kundli Matching (36 Gun Milan)", text: "uses both partners' Rashi and Nakshatra." },
     { href: "/manglik", label: "Manglik Dosha Calculator", text: "Mars is checked from your Moon sign too." },
   ],
+  guides: {
+    heading: "Rashi aur nakshatra se jude guides",
+    intro: "Apni Chandra rashi jaan li? Ab yeh padhein:",
+    slugs: [
+      "rashi-kaise-pata-kare",
+      "janmakshar-matching",
+      "shani-sade-sati-2026",
+      "sade-sati-2027",
+      "rashifal-2027",
+      "saal-2027-kaisa-rahega",
+      "naam-se-gun-milan",
+    ],
+  },
   faqs: [
     {
       q: "Is my Moon sign the same as my zodiac sign?",
