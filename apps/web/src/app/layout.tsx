@@ -21,6 +21,9 @@ const devanagari = Noto_Sans_Devanagari({
   subsets: ["devanagari"],
   weight: ["400", "500", "600"],
   display: "swap",
+  // Only a few short Hindi phrases use this font, and its unicode-range means the browser fetches it
+  // only when Devanagari text renders. Not preloading it frees bandwidth for the LCP text and image.
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -98,6 +101,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en-IN" className={`${geist.variable} ${fraunces.variable} ${devanagari.variable} antialiased`}>
       <head>
+        {/* async: AdSense never blocks parsing or the LCP paint. Keep it in <head> for site verification. */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5762804424232905"

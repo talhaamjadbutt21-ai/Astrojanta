@@ -5,9 +5,9 @@ import { LegalArticle } from "@/components/legal-article";
 import { absoluteUrl, FOUNDER, FOUNDER_ID, founderJsonLd, ORGANIZATION_ID, pageOpenGraph } from "@/lib/site";
 
 const PATH = "/about-methodology";
-const TITLE = "Methodology — How Astrojanta Calculates Your Kundli (Lahiri Ayanamsa)";
+const TITLE = "Astrojanta Methodology: Kundli Kaise Banti Hai";
 const DESCRIPTION =
-  "Who builds Astrojanta, how Kundli charts are calculated (sidereal zodiac, Lahiri ayanamsa, whole-sign houses, Vimshottari dasha), how the AI astrologer is used, and its limits.";
+  "Kaun banata hai Astrojanta aur kundli kaise calculate hoti hai: sidereal zodiac, Lahiri ayanamsa, whole-sign houses, Vimshottari dasha, aur AI ki seemayein.";
 
 export const metadata: Metadata = {
   // Absolute: the brand is already in the title, so skip the "· Astrojanta" template suffix.
