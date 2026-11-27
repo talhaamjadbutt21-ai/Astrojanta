@@ -6748,6 +6748,215 @@ const yoniKoota: Post = {
   ],
 };
 
+const taraKoota: Post = {
+  slug: "tara-koota",
+  title: "Tara Koota in Kundli Milan: 9 Tara, Counting Method aur 3 Gun Score",
+  h1: "Tara Koota – 9 Tara, Nakshatra Se Counting Method, 3 Gun Kaise Milte Hain, aur Score Kam Aaye To Kya",
+  description:
+    "Tara koota kya hai kundli milan mein? 9 tara, vadhu-var counting method, 3-1.5-0 gun kaise milte hain, kam score ka matlab, aur free kundli milan tool.",
+  keyword: "tara koota",
+  author: "founder",
+  published: "2026-11-27",
+  updated: "2026-11-27",
+  intro:
+    "Report mein 'Tara: 1.5/3' ya kam gun dikhe to ghar mein aksar yahi sawal uthta hai — kya yeh tara ashubh hai, rishta theek nahi rahega? Tara koota Ashtakoot gun milan ka teesra koot hai, 36 mein se 3 gun ka, aur yeh dono ki janm nakshatra ke beech ki ginti (Tara Bala) se nikalta hai. Yeh kisi ke swasthya ya kismat ka medical report nahi hai. Is guide mein 9 tara, vadhu se var aur var se vadhu tak counting method, 3, 1.5 aur 0 gun kaise bante hain, ek worked example, kam score ka matlab, aur jo baat parampara mein kam weight ki maani jaati hai — seedhe shabdon mein. Apna score dekhne ke liye dono ki details free [kundli matching](/matching) tool mein daal dein.",
+  body: [
+    { type: "h2", text: "Short answer: Tara koota kya hai?" },
+    {
+      type: "ul",
+      items: [
+        "Tara koota Ashtakoot milan ka teesra koot hai, maximum 3 gun. Yeh dono ki janm nakshatra ke beech, dono dishaon mein, ginti karke nikalta hai — is ginti ko Tara Bala bhi kehte hain.",
+        "Vadhu ki nakshatra se var tak inclusive count karein (starting nakshatra bhi shamil), us number ko 9 se bhaag dein, jo shesh bache wahi tara hai. Phir yahi ginti var se vadhu tak. Shesh 0 ho to use 9 maana jaata hai — Ati-Mitra.",
+        "9 tara hain: Janma, Sampat, Vipat, Kshema, Pratyari, Sadhaka, Vadha, Mitra aur Ati-Mitra. Vipat (3), Pratyari (5) aur Vadha (7) ashubh maani jaati hain; baaki shubh.",
+        "Dono disha shubh = 3 gun; sirf ek shubh = 1.5; dono ashubh = 0. Standard inclusive count par dono disha ek saath ashubh nahi padti, isliye 0 aam taur par report par nahi aata.",
+        "Kam score akela rishta todne ka kaaran nahi hai. Pehle total, [Nadi](/blog/nadi-dosha), [Bhakoot](/blog/bhakoot-dosha) aur [Graha Maitri](/blog/graha-maitri) dekhein — Nadi aur Bhakoot akele 15 gun lete hain, Tara sirf 3.",
+        "Apna score turant [kundli matching](/matching) par dekh sakte hain. Nakshatra na pata ho to pehle [Moon sign calculator](/moon-sign) ya free [Janam Kundli](/kundli) use karein.",
+      ],
+    },
+
+    { type: "h2", text: "Tara koota kya hota hai?" },
+    {
+      type: "p",
+      text: "Ashtakoota Guna Milan — North aur Central India mein shaadi ke liye use hone wali 36-gun paddhati — mein aath kootas compare kiye jaate hain, aur har ek sirf dono ki Chandra rashi aur janm nakshatra se nikalta hai. Poora process [kundli milan online free](/blog/kundli-milan-online-free) guide mein hai. Tara teesra koot hai aur 3 gun ka hai. Yeh Varna (1) aur Vashya (2) ke baad aata hai, aur [Yoni](/blog/yoni-koota) (4), [Graha Maitri](/blog/graha-maitri) (5), [Gana](/blog/gana-dosha) (6), [Bhakoot](/blog/bhakoot-dosha) (7) aur [Nadi](/blog/nadi-dosha) (8) se halka hai.",
+    },
+    {
+      type: "p",
+      text: 'Yahan "tara" ka matlab janm nakshatra ke cycle ki nau tarah ki star-positions hain. Classical texts — jaise Muhurta Chintamani — is count se jodi ke health, wellbeing aur fortune ka andaza lagate hain. South Indian paddhati mein ise Dina koota ya Dina porutham bhi kehte hain, kyunki wahi 9-tara cycle din ke muhurat mein bhi use hoti hai. Yeh na to kisi ke actual swasthya ka test hai, na hi kismat ka guarantee. Do logon ki janm nakshatra ki relative ginti milti hai, isliye same insaan alag partner ke saath 3 bhi le sakta hai aur 1.5 bhi.',
+    },
+    {
+      type: "p",
+      text: "Tara poori nakshatra par lagti hai, Chandra rashi par nahi. Isliye do couples ki rashi same ho, phir bhi Tara score alag ho sakta hai. Birth time ki chhoti si galti tabhi score badlegi jab Chandrama kisi doosri nakshatra mein chala jaaye. Apni nakshatra [Moon sign and Nakshatra finder](/moon-sign) ya free [Janam Kundli](/kundli) se confirm kar lein.",
+    },
+
+    { type: "h2", text: "27 nakshatra: counting ke liye number" },
+    {
+      type: "p",
+      text: "Haath se ginti karne ke liye nakshatra ko Ashwini se Revati tak 1 se 27 number diye jaate hain. Yeh wahi standard order hai jo Vedic panchang aur Astrojanta ka matching tool use karta hai:",
+    },
+    {
+      type: "table",
+      head: ["#", "Nakshatra", "#", "Nakshatra", "#", "Nakshatra"],
+      rows: [
+        ["1", "Ashwini", "10", "Magha", "19", "Mula"],
+        ["2", "Bharani", "11", "Purva Phalguni", "20", "Purva Ashadha"],
+        ["3", "Krittika", "12", "Uttara Phalguni", "21", "Uttara Ashadha"],
+        ["4", "Rohini", "13", "Hasta", "22", "Shravana"],
+        ["5", "Mrigashira", "14", "Chitra", "23", "Dhanishta"],
+        ["6", "Ardra", "15", "Swati", "24", "Shatabhisha"],
+        ["7", "Punarvasu", "16", "Vishakha", "25", "Purva Bhadrapada"],
+        ["8", "Pushya", "17", "Anuradha", "26", "Uttara Bhadrapada"],
+        ["9", "Ashlesha", "18", "Jyeshtha", "27", "Revati"],
+      ],
+    },
+
+    { type: "h2", text: "Counting method: vadhu se var, aur wapas" },
+    {
+      type: "p",
+      text: "Classical rule inclusive count hai — starting nakshatra ko 1 se shuru karke destination tak, dono ends ko shamil karke, ginti karte hain. Revati ke baad ginti wapas Ashwini se chalti hai. Steps yeh hain:",
+    },
+    {
+      type: "ul",
+      items: [
+        "Vadhu ki janm nakshatra se var ki janm nakshatra tak inclusive count karein. Formula: ((var ka number − vadhu ka number + 27) mod 27) + 1. Same nakshatra ho to count 1 hota hai.",
+        "Is count ko 9 se bhaag dein aur shesh (remainder) rakhein. Shesh 0 ho — yaani 9, 18 ya 27 par poora bhaag — to use 9 maana jaata hai.",
+        "Wahi shesh neeche di gayi 9 tara table mein naam aur shubh/ashubh batata hai.",
+        "Ab ulti disha: var ki nakshatra se vadhu tak wahi inclusive count, 9 se bhaag, shesh, aur uski tara.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Sabse common galti exclusive count hai — starting nakshatra ko 0 maan lena, usko chhod kar aage ginna. Isse har tara ek step khisak jaati hai aur report par galat naam aa sakta hai. Astrojanta inclusive count use karta hai, jo Muhurta Chintamani wali standard Ashtakoot rule hai.",
+    },
+
+    { type: "h2", text: "9 tara table: kaun si shubh, kaun si ashubh" },
+    {
+      type: "p",
+      text: "Shesh 3, 5 ya 7 — Vipat, Pratyari aur Vadha — ashubh maani jaati hain. Baaki shesh, jaise 1, 2, 4, 6, 8 aur 0 (9), shubh hain. Naam alag-alag books mein thode vary karte hain; kaam ek hi tara ka rehta hai.",
+    },
+    {
+      type: "table",
+      head: ["Shesh (remainder)", "Tara", "Traditional reading", "Shubh / Ashubh"],
+      rows: [
+        ["1", "Janma (जन्म)", "Birth star itself", "Shubh"],
+        ["2", "Sampat (संपत्)", "Wealth, gain", "Shubh"],
+        ["3", "Vipat (विपत्)", "Obstacles, difficulty", "Ashubh"],
+        ["4", "Kshema (क्षेम)", "Wellbeing, safety", "Shubh"],
+        ["5", "Pratyari (प्रत्यरि)", "Opposition; also called Pratyak", "Ashubh"],
+        ["6", "Sadhaka (साधक)", "Achievement; also written Sadhana", "Shubh"],
+        ["7", "Vadha (वध)", "Harm; also called Naidhana", "Ashubh"],
+        ["8", "Mitra (मित्र)", "Friend", "Shubh"],
+        ["0 ya 9", "Ati-Mitra (अतिमित्र)", "Great friend; also called Parama Mitra", "Shubh"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Ek dhyaan ki baat: daily muhurat (Tara Bala) mein kuch paddhatiyan Janma tara ko mixed treat karti hain — kuch kaamon ke liye theek, kuch ke liye avoid. Kundli milan ki Tara koota mein remainder 1 (Janma) shubh hai aur gun milte hain. Dono uses same 9 naam share karti hain, lekin scoring alag hai.",
+    },
+
+    { type: "h2", text: "3, 1.5 aur 0 gun kaise milte hain" },
+    {
+      type: "p",
+      text: "Har disha 1.5 gun ki hai. Shubh tara par 1.5 milte hain, ashubh (Vipat, Pratyari, Vadha) par 0. Dono dishaon ka jod Tara koota ka score hai:",
+    },
+    {
+      type: "table",
+      head: ["Dono dishaon ka result", "Tara score"],
+      rows: [
+        ["Dono tara shubh", "3 / 3"],
+        ["Ek shubh, ek ashubh", "1.5 / 3"],
+        ["Dono ashubh", "0 / 3"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Textbooks 0 ko possible score ki tarah list karti hain, lekin standard inclusive count mein ek arithmetical baat hai: dono dishaon ki ginti hamesha 29 hoti hai (27 nakshatra + dono ends do baar gine jaate hain). Isliye jab ek disha Vipat, Pratyari ya Vadha par padti hai, doosri disha hamesha kisi shubh tara par padti hai. Same janm nakshatra par dono dishaon ka count 1 hota hai — Janma, shubh — aur score 3. Astrojanta bhi yahi rule use karta hai, isliye sahi count par report mein Tara 0 almost nahi dikhta; jo kam score dikhta hai woh aam taur par 1.5 hota hai.",
+    },
+
+    { type: "h2", text: "Worked example: Ashwini aur Rohini" },
+    {
+      type: "p",
+      text: "Maan lijiye vadhu ki janm nakshatra Ashwini hai (number 1) aur var ki Rohini (number 4).",
+    },
+    {
+      type: "ul",
+      items: [
+        "Vadhu se var: Ashwini, Bharani, Krittika, Rohini — inclusive count 4. 4 ko 9 se bhaag dein, shesh 4. Yeh chauthi tara hai, Kshema, jo shubh hai — 1.5 gun.",
+        "Var se vadhu: Rohini se ginti karke Revati hote hue wapas Ashwini tak — count 25. 25 ÷ 9 = 2, shesh 7. Yeh saatvi tara hai, Vadha, jo ashubh hai — 0 gun.",
+        "Tara score: 1.5 + 0 = 1.5 / 3. Report par aksar 'One direction is strained' jaisa note dikhega.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Poore 3 gun ka chhota example: vadhu Ashwini, var Bharani. Vadhu se var ka count 2 (Sampat, shubh). Var se vadhu ka count 26; 26 ÷ 9 shesh 8 (Mitra, shubh). Dono disha shubh, isliye 3 / 3. Aur agar dono ki nakshatra ek hi ho, to dono taraf count 1 — Janma — aur score phir 3 / 3.",
+    },
+
+    { type: "h2", text: "Kam score ka matlab, aur kab yeh kam important maana jaata hai" },
+    {
+      type: "p",
+      text: "Tara Ashtakoot ke halkay kootas mein se ek hai. 1.5 aane par total sirf 1.5 gun girta hai; theoretical 0 par bhi sirf 3. [Nadi dosha](/blog/nadi-dosha) 8 gun kha jaata hai aur [Bhakoot dosha](/blog/bhakoot-dosha) 7 — dono milkar 15 gun, jo Varna, Vashya, Tara, [Yoni](/blog/yoni-koota) aur [Graha Maitri](/blog/graha-maitri) ke kul barabar hain. Isliye Tara 1.5, lekin saaf Nadi, Bhakoot aur accha [Gana](/blog/gana-dosha), aksar us match se behtar padhta hai jisme Tara 3 ho aur Nadi 0.",
+    },
+    {
+      type: "p",
+      text: "Vipat, Pratyari ya Vadha ke naam kaafi tez hain, lekin yeh relational categories hain — obstacles, opposition, harm ke traditional labels. Yeh medical prediction nahi hain, aur in naam ko bimari ya durghatna ka vachan maan lena is koot ke scope se bahar hai. 1.5 is koot mein ek normal, acceptable result maana jaata hai: ek disha ashubh hai, doosri shubh hai, aur poore 1.5 gun mil jaate hain.",
+    },
+    {
+      type: "p",
+      text: "Tara ko Nadi ya Bhakoot ki tarah ek lambi classical cancellation list nahi milti. Standard Ashtakoot tables 1.5 ya 0 ko score mein hi rakhte hain; koi widely accepted rule in points ko wapas 3 nahi kar deta. Kuch modern ya popular sources acchi [Graha Maitri](/blog/graha-maitri), saaf Nadi-Bhakoot, ya friendly rashi-lords ko compensating factor kehte hain, lekin yeh printed number ka rewrite nahi hai. Astrojanta raw Tara score hi dikhata hai.",
+    },
+    {
+      type: "p",
+      text: "Koi paid puja, ratna ya special ritual is score ko 3 nahi bana deta. Pehle bhaari koot aur 36-gun total dekhein. Agar parivaar chahe to simple shanti path, ghar ki pooja ya daan traditional options hain. Faisla dono parivaar ka hai.",
+    },
+    {
+      type: "p",
+      text: "Yoni, Tara, Gana aur Nadi charon janm nakshatra se nikalte hain — 21 gun. Varna, Vashya, Graha Maitri aur Bhakoot Chandra rashi se nikalte hain — 15 gun. Isliye birth time itni galat ho ki nakshatra badal jaaye, to Tara ke saath Yoni, Gana aur Nadi bhi ek saath badal sakte hain. Time birth certificate se, Indian births ke liye IST mein, aur actual birth city se daalein — ghar ke shehar se nahi.",
+    },
+  ],
+  faqs: [
+    {
+      q: "Tara koota kya hota hai?",
+      a: "Tara koota Ashtakoot gun milan ka teesra koot hai. Yeh dono ki janm nakshatra ke beech, dono dishaon mein, inclusive count karke 9 tara mein se ek naam nikalta hai, aur usse maximum 3 gun milte hain. Ise Dina koota ya Tara Bala bhi kehte hain.",
+    },
+    {
+      q: "Tara koota mein kitne gun hote hain?",
+      a: "Maximum 3 gun, 36 ke total mein. Yeh Varna (1) aur Vashya (2) se bhaari hai, lekin Yoni (4), Graha Maitri (5), Gana (6), Bhakoot (7) aur Nadi (8) se halki hai.",
+    },
+    {
+      q: "9 tara kaun si hain, aur kaun si ashubh maani jaati hain?",
+      a: "Janma, Sampat, Vipat, Kshema, Pratyari, Sadhaka, Vadha, Mitra aur Ati-Mitra. Shesh 3 (Vipat), 5 (Pratyari) aur 7 (Vadha) ashubh hain; 1, 2, 4, 6, 8 aur 0/9 shubh hain. Kundli milan mein Janma (shesh 1) shubh hai.",
+    },
+    {
+      q: "Tara ki ginti kaise karte hain?",
+      a: "Vadhu ki janm nakshatra se var tak inclusive count karein — starting nakshatra ko 1 se shuru karke, dono ends shamil. Us number ko 9 se bhaag dein; shesh tara batata hai. Shesh 0 ho to 9 (Ati-Mitra) maanein. Phir yahi ginti var se vadhu tak karein. Starting nakshatra ko chhodna (exclusive count) common galti hai.",
+    },
+    {
+      q: "Same nakshatra ho to Tara score kya hota hai?",
+      a: "Dono dishaon ka count 1 hota hai, jo Janma tara hai, aur Janma milan mein shubh maani jaati hai. Score 3 / 3 hota hai.",
+    },
+    {
+      q: "Tara 1.5 ya 0 aaye to kya rishta nahi banana chahiye?",
+      a: "Nahi, akela kam Tara score rishta todne ka kaaran nahi hai. 1.5 is koot mein common aur generally acceptable result hai, aur isse total sirf 1.5 gun girta hai. Pehle Nadi, Bhakoot, Gana, poora 36-gun score, Manglik status aur dono ki alag kundli dekhein.",
+    },
+    {
+      q: "Tara koota mein 0 kab aata hai?",
+      a: "Tables 0 tab list karti hain jab dono dishaon ki tara ashubh ho. Standard inclusive count par dono dishaon ki ginti 29 hoti hai, isliye dono ek saath Vipat, Pratyari ya Vadha par nahi padti. Sahi count par 0 almost nahi aata; kam score aam taur par 1.5 hota hai.",
+    },
+    {
+      q: "Tara koota rashi par depend karti hai kya?",
+      a: "Nahi, sirf dono janm nakshatra par. Chandra rashi is koot mein use nahi hoti. Isliye same rashi wali do jodiyon ka Tara score alag ho sakta hai.",
+    },
+    {
+      q: "Tara Bala aur Tara koota ek hi cheez hain kya?",
+      a: "Wahi 9 tara dono jagah use hoti hain. Kundli milan mein aap partner ki nakshatra tak count karte hain aur 3 gun nikalte hain. Muhurat mein aap apni janm nakshatra se us din ki nakshatra tak count karte hain, jo alag use hai. Milan mein Janma tara shubh hai; din ke muhurat mein kuch paddhatiyan use mixed treat karti hain.",
+    },
+    {
+      q: "Tara koota ka parihar kya hai?",
+      a: "Koi paid puja, ratna ya special ritual is score ko 3 nahi bana deta. Tara ke liye Nadi ya Bhakoot jaisi widely accepted classical cancellation list nahi hai; printed score raw hi rehta hai. Pehle bhaari koot aur total dekhein. Agar parivaar chahe to simple shanti path, ghar ki pooja ya daan traditional options hain.",
+    },
+  ],
+};
+
+
 const grahaMaitri: Post = {
   slug: "graha-maitri",
   title: "Graha Maitri in Kundli Milan: Rashi Lord Table, 5 Gun aur Score",
@@ -6983,6 +7192,7 @@ const grahaMaitri: Post = {
 };
 
 export const POSTS: Post[] = [
+  taraKoota,
   grahaMaitri,
   yoniKoota,
   janmakshar,
