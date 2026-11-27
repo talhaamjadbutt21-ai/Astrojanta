@@ -90,7 +90,7 @@ const mercuryRetrograde2026: Post = {
     { type: "h2", text: "Mercury retrograde effects by Rashi (Moon sign)" },
     {
       type: "p",
-      text: "In Vedic transit reading (gochar), the effect depends on which house from your Moon sign the planet is moving through. Below is the general picture for each Rashi. Treat it as a starting point: your Lagna, your natal Mercury and your current dasha change how strongly you feel any transit. For a reading based on your own chart, ask the [AI astrologer](/ai-astrologer).",
+      text: "In Vedic transit reading (gochar), the effect depends on which house from your Moon sign the planet is moving through. Below is the general picture for each Rashi. Treat it as a starting point: your Lagna, your natal Mercury and your current [dasha](/blog/vimshottari-mahadasha) change how strongly you feel any transit. Apni Vedic rashi nahi pata? See [rashi kaise pata kare](/blog/rashi-kaise-pata-kare). For a reading based on your own chart, ask the [AI astrologer](/ai-astrologer).",
     },
     {
       type: "ul",
@@ -209,10 +209,10 @@ const mercuryRetrograde2026: Post = {
 
 const freeAiKundli: Post = {
   slug: "free-ai-kundli-online",
-  title: "Free AI Kundli: How to Make Your Janam Kundli Online (and Read It with AI)",
+  title: "Kundli Kaise Banaye Online Free + AI Se Padhein",
   h1: "Free AI Kundli: How to Make Your Janam Kundli Online and Read It with AI",
   description:
-    "Make your Janam Kundli online free in a few seconds, understand the 12 houses, and read your chart with an AI astrologer in Hindi or English. Includes a Hindi guide (kundli kaise dekhe).",
+    "Apni Janam Kundli online free kaise banaye, step by step. 12 bhav samjhiye aur AI astrologer se Hindi mein padhvaiye. Sirf date, time aur place chahiye.",
   keyword: "ai kundli free",
   published: "2026-10-29",
   updated: "2026-11-09",
@@ -295,8 +295,8 @@ const freeAiKundli: Post = {
         "Rashi and Nakshatra: the Moon's sign and one of 27 lunar mansions. They are used for rashifal, naming, Sade Sati and [Kundli matching](/matching).",
         "Grahas: the nine Vedic planets — Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu and Ketu. An R next to a planet means it was retrograde at birth, which is common and not a defect.",
         "Navamsa (D9): a divisional chart traditionally read for marriage and to judge how strong the D1 planets really are.",
-        "Vimshottari dasha: a 120-year sequence of planetary periods that starts from your Moon's Nakshatra. The current mahadasha and antardasha show which planets are 'active' now.",
-        "Manglik status: whether Mars falls in certain houses from the Lagna and Moon. Use the [Manglik calculator](/manglik) to see the check and any classical cancellations.",
+        "Vimshottari dasha: a 120-year sequence of planetary periods that starts from your Moon's Nakshatra. The current mahadasha and antardasha show which planets are 'active' now. See [apni mahadasha kaise dekhein](/blog/vimshottari-mahadasha).",
+        "Manglik status: whether Mars falls in certain houses from the Lagna and Moon. Use the [Manglik calculator](/manglik) to see the check and any classical cancellations, and read [Manglik dosha in matching](/blog/manglik-dosha-meaning) before you worry.",
       ],
     },
 
@@ -392,10 +392,10 @@ const freeAiKundli: Post = {
 
 const aiKundliReader: Post = {
   slug: "ai-kundli-reader",
-  title: "AI Kundli Reader: Read Your Kundali Online Free (Houses, Planets & Lagna)",
+  title: "Kundli Kaise Padhein: Lagna, 12 Bhav, AI Reader",
   h1: "AI Kundli Reader: How to Read Your Kundali Online Free",
   description:
-    "Already have your kundli? Learn to read it step by step: the Lagna, 12 houses, 9 planets and dasha, plus how an AI kundli reader explains it. Also: kundli vs kundalini.",
+    "Kundli bani hui hai par samajh nahi aati? Step by step padhna seekhiye: Lagna, 12 bhav, 9 grah aur dasha, plus AI kundli reader se free explanation.",
   keyword: "kundli kaise dekhein",
   published: "2026-10-30",
   updated: "2026-11-09",
@@ -559,10 +559,10 @@ const aiKundliReader: Post = {
 
 const askAstrologerFree: Post = {
   slug: "ask-astrologer-free",
-  title: "Ask an Astrologer Free: How to Phrase One Question for a Chart-Based Answer",
+  title: "Ask Astrologer Free: Sahi Sawaal Kaise Poochein",
   h1: "Ask an Astrologer Free – Get One Question Answered Instantly",
   description:
-    "Have one question about marriage, career or money? How to phrase it, sample questions, how a free chart-based answer works, and the limits to know.",
+    "Ek hi sawaal poochhna hai? Use aise likhiye ki chart-based jawab mile: shaadi, career aur paisa ke sample sawaal, aur free jawab ki seemayein.",
   keyword: "ask astrologer free",
   published: "2026-10-31",
   updated: "2026-11-09",
@@ -762,6 +762,10 @@ const kundliMilanOnlineFree: Post = {
       type: "p",
       text: "Notice that Nadi (8) and Bhakoot (7) together carry 15 of the 36 points. That is why a match can look average overall but still be flagged by a pandit: a zero in Nadi or Bhakoot is treated as a dosha, not just a low score.",
     },
+    {
+      type: "p",
+      text: "Har koot ka apna detailed guide hai, with full tables and scoring: [Varna koota](/blog/varna-koota-meaning), [Tara koota](/blog/tara-koota), [Yoni koota](/blog/yoni-koota), [Graha Maitri](/blog/graha-maitri), [Gana dosha](/blog/gana-dosha), [Bhakoot dosha](/blog/bhakoot-dosha) and [Nadi dosha](/blog/nadi-dosha). If you only want to know whether your total is enough, read [kitne gun milne chahiye](/blog/kitne-gun-milne-chahiye).",
+    },
 
     { type: "h2", text: "What gun milan score is good for marriage?" },
     {
@@ -785,7 +789,7 @@ const kundliMilanOnlineFree: Post = {
     { type: "h2", text: "Nadi dosha: why 0 in Nadi worries families" },
     {
       type: "p",
-      text: "Every nakshatra belongs to one of three nadis: Adi (Vata), Madhya (Pitta) or Antya (Kapha). If the bride and groom share the same nadi, Nadi koota scores 0 out of 8 and this is called Nadi dosha. Traditionally it is linked with health problems and difficulties with children, which is why it is taken very seriously in shaadi ke liye kundli matching.",
+      text: "Every nakshatra belongs to one of three nadis: Adi (Vata), Madhya (Pitta) or Antya (Kapha). If the bride and groom share the same nadi, Nadi koota scores 0 out of 8 and this is called Nadi dosha. Traditionally it is linked with health problems and difficulties with children, which is why it is taken very seriously in shaadi ke liye kundli matching. The full nakshatra-wise table is in our [Nadi dosha guide](/blog/nadi-dosha).",
     },
     {
       type: "p",
@@ -795,7 +799,7 @@ const kundliMilanOnlineFree: Post = {
     { type: "h2", text: "Bhakoot dosha: the 6-8, 9-5 and 2-12 positions" },
     {
       type: "p",
-      text: "Bhakoot koota compares the positions of the two Moon signs. If the signs are 6th and 8th (shadashtak), 9th and 5th (navpancham) or 2nd and 12th (dwirdwadash) from each other, Bhakoot scores 0 out of 7 and Bhakoot dosha is formed. It is traditionally associated with friction, financial strain or distance in the family.",
+      text: "Bhakoot koota compares the positions of the two Moon signs. If the signs are 6th and 8th (shadashtak), 9th and 5th (navpancham) or 2nd and 12th (dwirdwadash) from each other, Bhakoot scores 0 out of 7 and Bhakoot dosha is formed. It is traditionally associated with friction, financial strain or distance in the family. See the [Bhakoot dosha guide](/blog/bhakoot-dosha) for the rashi-pair table.",
     },
     {
       type: "p",
@@ -828,7 +832,7 @@ const kundliMilanOnlineFree: Post = {
         "Open the matching tool: Go to [kundli matching](/matching) and enter both sets of details.",
         "Read the score: You will see each koota, the total out of 36 and any Nadi or Bhakoot dosha.",
         "Check Manglik status: Run the [Manglik check](/manglik) for both, since it is not part of the 36 gun.",
-        'Ask follow-up questions: Use the [AI astrologer](/blog/ask-astrologer-free) to ask in Hindi, Hinglish or English, for example "Kya Nadi dosha cancel ho raha hai?" or "Shaadi ke baad finances kaise rahenge?"',
+        'Ask follow-up questions: Use the [AI astrologer](/ai-astrologer) to ask in Hindi, Hinglish or English, for example "Kya Nadi dosha cancel ho raha hai?" or "Shaadi ke baad finances kaise rahenge?"',
       ],
     },
     {
@@ -896,7 +900,7 @@ const kundliMilanOnlineFree: Post = {
 
 const manglikDoshaMeaning: Post = {
   slug: "manglik-dosha-meaning",
-  title: "Manglik Dosha in Kundli Matching: Kab Shaadi Safe Hai?",
+  title: "Manglik Dosha Matching: Kab Shaadi Safe Hai?",
   h1: "Manglik Dosha Meaning – Mangal Dosh, Kuja Dosha, Which Houses Count, Anshik vs High Manglik, Cancellation Rules, the Age 28 Belief and Upay",
   description:
     "Manglik ladka, non-manglik ladki — kab shaadi theek hai? Mangal dosh ke 6 ghar, parihar (cancellation) rules, age 28 myth, upay and a free Manglik check.",
@@ -919,7 +923,7 @@ const manglikDoshaMeaning: Post = {
     },
     {
       type: "p",
-      text: "One structural point explains a lot of the confusion around this topic, and it is rarely spelled out. Nadi, Bhakoot and Gana doshas describe a pair — the same girl can have Nadi dosha with one boy and a clean score with the next, because those are comparisons. Manglik dosha is different: it describes a single chart. You are Manglik or you are not, independently of whom you marry. Matching then compares the two statuses, which is why the question in a rishta is never just \"is she Manglik\" but \"are both Manglik, and how strongly\".",
+      text: 'One structural point explains a lot of the confusion around this topic, and it is rarely spelled out. Nadi, Bhakoot and Gana doshas describe a pair — the same girl can have Nadi dosha with one boy and a clean score with the next, because those are comparisons. Manglik dosha is different: it describes a single chart. You are Manglik or you are not, independently of whom you marry. Matching then compares the two statuses, which is why the question in a rishta is never just "is she Manglik" but "are both Manglik, and how strongly".',
     },
     {
       type: "p",
@@ -1140,7 +1144,7 @@ const manglikDoshaMeaning: Post = {
         "It calculates your sidereal chart from date, time and place of birth using an astronomical ephemeris with the Lahiri (Chitrapaksha) ayanamsa, then finds Mars's sign and house.",
         "It treats Mars in houses 1, 2, 4, 7, 8 or 12 as Manglik — including the 2nd house — and checks that from two reference points: the Lagna and the Moon.",
         "It does not check from Venus. A chart that is Manglik only from Venus will show as not Manglik in our tool, so if your astrologer uses the Venus reference point, expect a difference.",
-        "It shows the result as three plain rows — from Lagna (yes, no, or \"needs birth time\" when no time is available), from Moon, and Mars's sign and house — plus a single badge reading No, Yes or Cancelled.",
+        'It shows the result as three plain rows — from Lagna (yes, no, or "needs birth time" when no time is available), from Moon, and Mars\'s sign and house — plus a single badge reading No, Yes or Cancelled.',
         'It lists the cancellation factors it can detect: Mars in its own sign, Mars exalted in Capricorn, Mars conjunct Jupiter, or Jupiter aspecting Mars. When the dosha is present and at least one of those applies, the badge reads "Cancelled".',
         "It does not grade high versus anshik Manglik, does not print a percentage, and does not apply the sign-specific, Lagna-specific or age-28 rules. Those need a human reading of the full chart.",
         "It does not compare two charts. Manglik-to-Manglik matching means running the tool once for each person; the 36-gun comparison lives on the separate [kundli matching page](/matching).",
@@ -1284,10 +1288,10 @@ const manglikDoshaMeaning: Post = {
 
 const varnaKootaMeaning: Post = {
   slug: "varna-koota-meaning",
-  title: "Varna Koota Meaning in Gun Milan: 1 Point, Rashi-wise Varna Chart & Scoring",
+  title: "Varna Koota in Gun Milan: 1 Gun, Rashi Chart",
   h1: "Varna Koota Meaning – The 1-Point Koota in Ashtakoot Gun Milan Explained",
   description:
-    "What is Varna koota in kundli milan? Rashi-wise varna chart (Brahmin, Kshatriya, Vaishya, Shudra), how the 1 gun is scored, what a 0 means, plus all 8 kootas and lagna kundli milan vs jataka matching.",
+    "Varna koota kya hai? Rashi-wise varna chart, iska 1 gun kaise milta hai, 0 aaye to shaadi ke liye asli matlab kya hai, aur yeh 8 koot mein sabse chhota kyun.",
   keyword: "varna koota meaning",
   published: "2026-11-03",
   updated: "2026-11-03",
@@ -1469,10 +1473,10 @@ const varnaKootaMeaning: Post = {
 
 const aiAstrologerFreeHindi: Post = {
   slug: "ai-astrologer-free-hindi",
-  title: "AI Astrologer Free in Hindi & Hinglish: How It Works, Accuracy & Privacy",
+  title: "AI Astrologer Free in Hindi: Kitna Sahi Hai?",
   h1: "AI Astrologer Free – Chat with an AI Jyotish in Hindi, Hinglish and English (2026 Guide)",
   description:
-    "How an AI astrologer reads your Vedic kundli, AI vs pandit, Hindi and Hinglish chat examples, honest accuracy limits, privacy, and how to choose a free AI astrologer in India.",
+    "Kya AI astrologer bharosemand hai? Yeh aapki kundli kaise padhta hai, AI vs pandit, Hindi aur Hinglish examples, accuracy ki seemayein aur privacy.",
   keyword: "ai astrologer",
   author: "founder",
   published: "2026-11-04",
@@ -1742,10 +1746,10 @@ const aiAstrologerFreeHindi: Post = {
 
 const shaniSadeSati2026: Post = {
   slug: "shani-sade-sati-2026",
-  title: "Shani Sade Sati 2026: Kin Rashiyon Par Hai, Dates in IST, Dhaiya & Upay",
+  title: "Sade Sati 2026: Kin Rashiyon Par, Dates & Upay",
   h1: "Shani Sade Sati 2026 – Which Rashis Are Affected, Dates in IST, Dhaiya and Remedies (Upay)",
   description:
-    "Shani Sade Sati 2026: Saturn stays in Meena (Pisces) all year, so Kumbh, Meen and Mesh rashi are in Sade Sati and Simha, Dhanu in Dhaiya. Shani vakri 27 Jul–margi 11 Dec IST, phase-wise effects and simple upay.",
+    "Shani 2026 mein Meen rashi mein: Kumbh, Meen aur Mesh par Sade Sati, Simha aur Dhanu par Dhaiya. Phase-wise asar, IST dates aur saral upay jaanein.",
   keyword: "shani sade sati 2026",
   author: "founder",
   published: "2026-11-04",
@@ -2374,10 +2378,10 @@ const rashifal2027: Post = {
 
 const kaalSarpDosh: Post = {
   slug: "kaal-sarp-dosh",
-  title: "Kaal Sarp Dosh: 12 Types, How to Check in Kundli & Calm Upay",
+  title: "Kaal Sarp Dosh: Kundli Mein Check & Saral Upay",
   h1: "Kaal Sarp Dosh – Kya Hota Hai, 12 Types, Effects, How to Check in Your Kundli and Upay",
   description:
-    "Kaal Sarp Dosh kya hai? Simple English with Hinglish terms: how it forms on the Rahu–Ketu axis, how to check your kundli, the 12 types, lakshan, upay and what the Ujjain and Trimbakeshwar pujas involve.",
+    "Kaal Sarp Dosh kya hai aur apni kundli mein kaise check karein? Rahu-Ketu axis, 12 types, lakshan, saral upay, aur Ujjain-Trimbakeshwar puja ka sach.",
   keyword: "kaal sarp dosh",
   author: "founder",
   published: "2026-11-06",
@@ -2620,15 +2624,16 @@ const kaalSarpDosh: Post = {
 
 const nadiDosha: Post = {
   slug: "nadi-dosha",
-  title: "Nadi Dosha in Kundli Milan: Meaning, 27 Nakshatra Table & Parihar",
+  title: "Nadi Dosha Kya Hai? Nakshatra Table & Parihar",
   h1: "Nadi Dosha – Kya Hota Hai, Adi/Madhya/Antya Nadi, Nakshatra Table, Cancellation and What to Check Before Shaadi",
   description:
-    "Nadi Dosha kya hai? A simple English guide with Hinglish terms: same nadi = 0 of 8 gun, the Adi/Madhya/Antya nakshatra table, parihar and what to check before shaadi.",
+    "Nadi dosha kya hai? Same nadi = 0 of 8 gun. Adi, Madhya, Antya nakshatra table, parihar rules jo ise cancel karte hain, aur shaadi se pehle kya dekhein.",
   keyword: "nadi dosha",
   author: "founder",
   published: "2026-11-07",
   updated: "2026-11-09",
-  intro: "\"Gun to 26 mil gaye, par Nadi mein zero hai — ab kya karein?\" In shaadi season, this is one of the most common worries in Indian families. Nadi Dosha is the single biggest deduction in kundli milan, and its traditional link with health and children makes it sound frightening. In this guide we explain what Nadi Dosha actually is, the three nadis — Adi, Madhya and Antya — with a complete, checked table of all 27 nakshatras, how to check it in your own kundli matching, the classical exceptions under which it is considered cancelled, and what a sensible family should really look at before deciding. No fear, no upsell — just the rules, and how to read them.",
+  intro:
+    '"Gun to 26 mil gaye, par Nadi mein zero hai — ab kya karein?" In shaadi season, this is one of the most common worries in Indian families. Nadi Dosha is the single biggest deduction in kundli milan, and its traditional link with health and children makes it sound frightening. In this guide we explain what Nadi Dosha actually is, the three nadis — Adi, Madhya and Antya — with a complete, checked table of all 27 nakshatras, how to check it in your own kundli matching, the classical exceptions under which it is considered cancelled, and what a sensible family should really look at before deciding. No fear, no upsell — just the rules, and how to read them.',
   body: [
     {
       type: "p",
@@ -2652,7 +2657,7 @@ const nadiDosha: Post = {
     },
     {
       type: "p",
-      text: "Also note: there are \"Nadi astrology\" palm-leaf traditions in Tamil Nadu (Nadi jothidam). Those are unrelated to Nadi koota as well. When someone says \"kundli mein Nadi Dosha hai\", they always mean the eighth koota in Ashtakoota matching.",
+      text: 'Also note: there are "Nadi astrology" palm-leaf traditions in Tamil Nadu (Nadi jothidam). Those are unrelated to Nadi koota as well. When someone says "kundli mein Nadi Dosha hai", they always mean the eighth koota in Ashtakoota matching.',
     },
     {
       type: "h2",
@@ -2660,7 +2665,7 @@ const nadiDosha: Post = {
     },
     {
       type: "p",
-      text: "The three nadis are named for beginning, middle and end — Adi (aadi, first), Madhya (middle) and Antya (last). In popular explanations they are linked with the three Ayurvedic doshas: Adi with Vata, Madhya with Pitta and Antya with Kapha. This is the commonly repeated mapping in Indian matching books and websites. It is best understood as a traditional symbolic association, not a medical test: having Adi nadi does not mean a person has a Vata body type, and two people with the same nadi are not \"medically incompatible\".",
+      text: 'The three nadis are named for beginning, middle and end — Adi (aadi, first), Madhya (middle) and Antya (last). In popular explanations they are linked with the three Ayurvedic doshas: Adi with Vata, Madhya with Pitta and Antya with Kapha. This is the commonly repeated mapping in Indian matching books and websites. It is best understood as a traditional symbolic association, not a medical test: having Adi nadi does not mean a person has a Vata body type, and two people with the same nadi are not "medically incompatible".',
     },
     {
       type: "ul",
@@ -2684,175 +2689,35 @@ const nadiDosha: Post = {
     },
     {
       type: "table",
-      head: [
-        "#",
-        "Nakshatra",
-        "Nadi",
-        "Moon sign (rashi)",
-      ],
+      head: ["#", "Nakshatra", "Nadi", "Moon sign (rashi)"],
       rows: [
-        [
-          "1",
-          "Ashwini",
-          "Adi",
-          "Aries (Mesh)",
-        ],
-        [
-          "2",
-          "Bharani",
-          "Madhya",
-          "Aries (Mesh)",
-        ],
-        [
-          "3",
-          "Krittika",
-          "Antya",
-          "Aries / Taurus",
-        ],
-        [
-          "4",
-          "Rohini",
-          "Antya",
-          "Taurus (Vrishabh)",
-        ],
-        [
-          "5",
-          "Mrigashira",
-          "Madhya",
-          "Taurus / Gemini",
-        ],
-        [
-          "6",
-          "Ardra",
-          "Adi",
-          "Gemini (Mithun)",
-        ],
-        [
-          "7",
-          "Punarvasu",
-          "Adi",
-          "Gemini / Cancer",
-        ],
-        [
-          "8",
-          "Pushya",
-          "Madhya",
-          "Cancer (Kark)",
-        ],
-        [
-          "9",
-          "Ashlesha",
-          "Antya",
-          "Cancer (Kark)",
-        ],
-        [
-          "10",
-          "Magha",
-          "Antya",
-          "Leo (Simha)",
-        ],
-        [
-          "11",
-          "Purva Phalguni",
-          "Madhya",
-          "Leo (Simha)",
-        ],
-        [
-          "12",
-          "Uttara Phalguni",
-          "Adi",
-          "Leo / Virgo",
-        ],
-        [
-          "13",
-          "Hasta",
-          "Adi",
-          "Virgo (Kanya)",
-        ],
-        [
-          "14",
-          "Chitra",
-          "Madhya",
-          "Virgo / Libra",
-        ],
-        [
-          "15",
-          "Swati",
-          "Antya",
-          "Libra (Tula)",
-        ],
-        [
-          "16",
-          "Vishakha",
-          "Antya",
-          "Libra / Scorpio",
-        ],
-        [
-          "17",
-          "Anuradha",
-          "Madhya",
-          "Scorpio (Vrishchik)",
-        ],
-        [
-          "18",
-          "Jyeshtha",
-          "Adi",
-          "Scorpio (Vrishchik)",
-        ],
-        [
-          "19",
-          "Mula",
-          "Adi",
-          "Sagittarius (Dhanu)",
-        ],
-        [
-          "20",
-          "Purva Ashadha",
-          "Madhya",
-          "Sagittarius (Dhanu)",
-        ],
-        [
-          "21",
-          "Uttara Ashadha",
-          "Antya",
-          "Sagittarius / Capricorn",
-        ],
-        [
-          "22",
-          "Shravana",
-          "Antya",
-          "Capricorn (Makar)",
-        ],
-        [
-          "23",
-          "Dhanishta",
-          "Madhya",
-          "Capricorn / Aquarius",
-        ],
-        [
-          "24",
-          "Shatabhisha",
-          "Adi",
-          "Aquarius (Kumbh)",
-        ],
-        [
-          "25",
-          "Purva Bhadrapada",
-          "Adi",
-          "Aquarius / Pisces",
-        ],
-        [
-          "26",
-          "Uttara Bhadrapada",
-          "Madhya",
-          "Pisces (Meen)",
-        ],
-        [
-          "27",
-          "Revati",
-          "Antya",
-          "Pisces (Meen)",
-        ],
+        ["1", "Ashwini", "Adi", "Aries (Mesh)"],
+        ["2", "Bharani", "Madhya", "Aries (Mesh)"],
+        ["3", "Krittika", "Antya", "Aries / Taurus"],
+        ["4", "Rohini", "Antya", "Taurus (Vrishabh)"],
+        ["5", "Mrigashira", "Madhya", "Taurus / Gemini"],
+        ["6", "Ardra", "Adi", "Gemini (Mithun)"],
+        ["7", "Punarvasu", "Adi", "Gemini / Cancer"],
+        ["8", "Pushya", "Madhya", "Cancer (Kark)"],
+        ["9", "Ashlesha", "Antya", "Cancer (Kark)"],
+        ["10", "Magha", "Antya", "Leo (Simha)"],
+        ["11", "Purva Phalguni", "Madhya", "Leo (Simha)"],
+        ["12", "Uttara Phalguni", "Adi", "Leo / Virgo"],
+        ["13", "Hasta", "Adi", "Virgo (Kanya)"],
+        ["14", "Chitra", "Madhya", "Virgo / Libra"],
+        ["15", "Swati", "Antya", "Libra (Tula)"],
+        ["16", "Vishakha", "Antya", "Libra / Scorpio"],
+        ["17", "Anuradha", "Madhya", "Scorpio (Vrishchik)"],
+        ["18", "Jyeshtha", "Adi", "Scorpio (Vrishchik)"],
+        ["19", "Mula", "Adi", "Sagittarius (Dhanu)"],
+        ["20", "Purva Ashadha", "Madhya", "Sagittarius (Dhanu)"],
+        ["21", "Uttara Ashadha", "Antya", "Sagittarius / Capricorn"],
+        ["22", "Shravana", "Antya", "Capricorn (Makar)"],
+        ["23", "Dhanishta", "Madhya", "Capricorn / Aquarius"],
+        ["24", "Shatabhisha", "Adi", "Aquarius (Kumbh)"],
+        ["25", "Purva Bhadrapada", "Adi", "Aquarius / Pisces"],
+        ["26", "Uttara Bhadrapada", "Madhya", "Pisces (Meen)"],
+        ["27", "Revati", "Antya", "Pisces (Meen)"],
       ],
     },
     {
@@ -2910,7 +2775,7 @@ const nadiDosha: Post = {
     },
     {
       type: "p",
-      text: "Traditionally, Nadi koota is linked with health, constitution and progeny (santaan). That is why, when Nadi Dosha shows up, relatives often say things like \"bachchon mein dikkat hogi\", \"health issues aayenge\" or \"shaadi nahi karni chahiye\". It helps to separate what the tradition says from what it does not.",
+      text: 'Traditionally, Nadi koota is linked with health, constitution and progeny (santaan). That is why, when Nadi Dosha shows up, relatives often say things like "bachchon mein dikkat hogi", "health issues aayenge" or "shaadi nahi karni chahiye". It helps to separate what the tradition says from what it does not.',
     },
     {
       type: "ul",
@@ -2970,12 +2835,12 @@ const nadiDosha: Post = {
     },
     {
       type: "p",
-      text: "Because Nadi Dosha is so feared, it is also one of the most heavily marketed \"problems\" in online astrology. You do not need to buy anything because of a 0 in Nadi. If your family wants to observe a remedy, these are the traditional and low-cost options people commonly follow:",
+      text: 'Because Nadi Dosha is so feared, it is also one of the most heavily marketed "problems" in online astrology. You do not need to buy anything because of a 0 in Nadi. If your family wants to observe a remedy, these are the traditional and low-cost options people commonly follow:',
     },
     {
       type: "ul",
       items: [
-        "Check the exceptions first. Many \"Nadi Dosha\" cases are already considered cancelled under the rules above, and no remedy is needed at all.",
+        'Check the exceptions first. Many "Nadi Dosha" cases are already considered cancelled under the rules above, and no remedy is needed at all.',
         "Follow your own family or community tradition. Some families ask the family priest to perform a simple Nadi dosha shanti or a Maha Mrityunjaya jaap at home or in a local temple; others do nothing. Both are legitimate choices.",
         "Daan (charity) and seva given with sincerity — food, clothing or help to people who need it — is the remedy most traditions agree on, and it costs only what you choose to give.",
         "Prayer that is meaningful to you, such as the Maha Mrityunjaya mantra or regular worship together as a couple.",
@@ -3048,7 +2913,8 @@ const vimshottariMahadasha: Post = {
   author: "founder",
   published: "2026-11-08",
   updated: "2026-11-09",
-  intro: "\"Meri Shani ki mahadasha chal rahi hai — kya sab kharab hoga?\" \"Rahu ki dasha kab khatam hogi?\" Questions like these come up in almost every Indian family that looks at a kundli. Mahadasha is one of the most used — and most misunderstood — ideas in Vedic astrology. In this guide we explain, in plain language, what mahadasha, antardasha and pratyantardasha mean, how the 120-year Vimshottari system works, the standard order and length of each planet's period, how to find your own current dasha from your Moon nakshatra, and how to think calmly about the periods people worry about most: Shani, Rahu, Guru and Shukra. No fear, no gemstone upsell — just how the system works and how to read it sensibly.",
+  intro:
+    '"Meri Shani ki mahadasha chal rahi hai — kya sab kharab hoga?" "Rahu ki dasha kab khatam hogi?" Questions like these come up in almost every Indian family that looks at a kundli. Mahadasha is one of the most used — and most misunderstood — ideas in Vedic astrology. In this guide we explain, in plain language, what mahadasha, antardasha and pratyantardasha mean, how the 120-year Vimshottari system works, the standard order and length of each planet\'s period, how to find your own current dasha from your Moon nakshatra, and how to think calmly about the periods people worry about most: Shani, Rahu, Guru and Shukra. No fear, no gemstone upsell — just how the system works and how to read it sensibly.',
   body: [
     {
       type: "p",
@@ -3066,7 +2932,7 @@ const vimshottariMahadasha: Post = {
     { type: "h3", text: "Antardasha aur Pratyantardasha" },
     {
       type: "p",
-      text: "Each mahadasha is divided into nine sub-periods called antardasha (also called bhukti). The first antardasha always belongs to the mahadasha lord itself, and the rest follow the same fixed order as the mahadashas. So Saturn mahadasha begins with Saturn–Saturn, then Saturn–Mercury, Saturn–Ketu, and so on. Astrologers usually read the two together: the mahadasha lord sets the broad theme, and the antardasha lord colours the next one to three years. When people say \"Shani mein Budh ki antardasha chal rahi hai\", this is what they mean.",
+      text: 'Each mahadasha is divided into nine sub-periods called antardasha (also called bhukti). The first antardasha always belongs to the mahadasha lord itself, and the rest follow the same fixed order as the mahadashas. So Saturn mahadasha begins with Saturn–Saturn, then Saturn–Mercury, Saturn–Ketu, and so on. Astrologers usually read the two together: the mahadasha lord sets the broad theme, and the antardasha lord colours the next one to three years. When people say "Shani mein Budh ki antardasha chal rahi hai", this is what they mean.',
     },
     {
       type: "p",
@@ -3075,7 +2941,7 @@ const vimshottariMahadasha: Post = {
     { type: "h2", text: "Vimshottari Dasha kya hai? The 120-year system" },
     {
       type: "p",
-      text: "Vimshottari means \"of one hundred and twenty\". In this system, the nine grahas — Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu and Ketu — share a full cycle of 120 years, each getting a fixed number of years. Classical texts such as Brihat Parashara Hora Shastra describe many dasha systems, but Vimshottari is the one given the most importance, and it is by far the most widely used in India today. Almost every kundli you get from a pandit, a panchang software or an app shows Vimshottari dasha by default.",
+      text: 'Vimshottari means "of one hundred and twenty". In this system, the nine grahas — Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu and Ketu — share a full cycle of 120 years, each getting a fixed number of years. Classical texts such as Brihat Parashara Hora Shastra describe many dasha systems, but Vimshottari is the one given the most importance, and it is by far the most widely used in India today. Almost every kundli you get from a pandit, a panchang software or an app shows Vimshottari dasha by default.',
     },
     {
       type: "p",
@@ -3113,7 +2979,7 @@ const vimshottariMahadasha: Post = {
     { type: "h2", text: "Dasha balance: birth ke samay kaunsi dasha chal rahi thi" },
     {
       type: "p",
-      text: "Your first mahadasha is the lord of your Moon nakshatra — but you do not get its full length. Each nakshatra covers 13°20′ of the zodiac. If the Moon had already travelled through part of the nakshatra at birth, that same fraction of the first mahadasha is treated as already used up before you were born. What is left is called the dasha balance (dasha shesh), and it is usually printed on traditional janam patris as something like \"Balance of Venus dasha: 12 years 4 months 9 days\".",
+      text: 'Your first mahadasha is the lord of your Moon nakshatra — but you do not get its full length. Each nakshatra covers 13°20′ of the zodiac. If the Moon had already travelled through part of the nakshatra at birth, that same fraction of the first mahadasha is treated as already used up before you were born. What is left is called the dasha balance (dasha shesh), and it is usually printed on traditional janam patris as something like "Balance of Venus dasha: 12 years 4 months 9 days".',
     },
     {
       type: "p",
@@ -3145,7 +3011,7 @@ const vimshottariMahadasha: Post = {
     },
     {
       type: "p",
-      text: "What it does not show: it does not calculate pratyantardasha or finer sub-periods, and it does not offer other dasha systems such as Yogini or Ashtottari. It also does not print a \"good dasha / bad dasha\" verdict — the timeline is data, not a prediction. The underlying chart uses the sidereal zodiac with the Lahiri (Chitrapaksha) ayanamsa, planetary positions from the open-source Astronomy Engine ephemeris (not Swiss Ephemeris), mean Rahu and Ketu, and whole-sign houses. Because some software uses true nodes, a different ayanamsa or a 360-day dasha year, dates can differ by days to a few months between apps. The full approach is explained on our [methodology page](/about-methodology).",
+      text: 'What it does not show: it does not calculate pratyantardasha or finer sub-periods, and it does not offer other dasha systems such as Yogini or Ashtottari. It also does not print a "good dasha / bad dasha" verdict — the timeline is data, not a prediction. The underlying chart uses the sidereal zodiac with the Lahiri (Chitrapaksha) ayanamsa, planetary positions from the open-source Astronomy Engine ephemeris (not Swiss Ephemeris), mean Rahu and Ketu, and whole-sign houses. Because some software uses true nodes, a different ayanamsa or a 360-day dasha year, dates can differ by days to a few months between apps. The full approach is explained on our [methodology page](/about-methodology).',
     },
     {
       type: "p",
@@ -3154,7 +3020,7 @@ const vimshottariMahadasha: Post = {
     { type: "h2", text: "Dasha ka phal kaise padhein: the planet's condition matters most" },
     {
       type: "p",
-      text: "A common mistake is reading effects from the dasha name alone — \"Rahu means confusion, Jupiter means luck\". Traditional astrologers look at several things together before saying anything about a period:",
+      text: 'A common mistake is reading effects from the dasha name alone — "Rahu means confusion, Jupiter means luck". Traditional astrologers look at several things together before saying anything about a period:',
     },
     {
       type: "ul",
@@ -3282,15 +3148,16 @@ const vimshottariMahadasha: Post = {
 
 const bhakootDosha: Post = {
   slug: "bhakoot-dosha",
-  title: "Bhakoot Dosha in Kundli Milan: 2/12, 5/9, 6/8 Rashi Table & Parihar",
+  title: "Bhakoot Dosha: 6/8, 2/12, 5/9 Table & Parihar",
   h1: "Bhakoot Dosha – Kya Hota Hai, 2/12, 5/9 aur 6/8 Rashi, Moon Sign Table, Cancellation and What to Check Before Shaadi",
   description:
-    "Bhakoot Dosha kya hai? Simple English with Hinglish terms: how Bhakoot (Rashi koot) scores 7 of 36 gun, the 2/12, 5/9 and 6/8 Moon sign table, parihar rules and calm guidance.",
+    "Bhakoot dosha kya hai? Rashi koot ke 7 gun, 2/12, 5/9 aur 6/8 Moon sign table, parihar rules jo ise cancel karte hain, aur shaadi se pehle kya dekhein.",
   keyword: "bhakoot dosha",
   author: "founder",
   published: "2026-11-09",
   updated: "2026-11-09",
-  intro: "\"Baaki sab theek hai, bas Bhakoot mein zero aa raha hai.\" After Nadi, this is the line Indian families hear most often from a pandit or a kundli milan website. Bhakoot carries 7 of the 36 gun, so a zero there pulls the total down sharply, and words like \"shadashtak\" and \"dwirdwadash\" sound far more frightening than they are. In this guide we explain what Bhakoot Dosha actually is, how it is calculated from the two Moon signs, a complete table of which rashi pairs score 0, the classical cancellation rules, what the traditional worries about health, money and children really mean, and exactly what Astrojanta's matching tool does and does not check. No fear, no upsell — just the rule, and how to read it sensibly.",
+  intro:
+    '"Baaki sab theek hai, bas Bhakoot mein zero aa raha hai." After Nadi, this is the line Indian families hear most often from a pandit or a kundli milan website. Bhakoot carries 7 of the 36 gun, so a zero there pulls the total down sharply, and words like "shadashtak" and "dwirdwadash" sound far more frightening than they are. In this guide we explain what Bhakoot Dosha actually is, how it is calculated from the two Moon signs, a complete table of which rashi pairs score 0, the classical cancellation rules, what the traditional worries about health, money and children really mean, and exactly what Astrojanta\'s matching tool does and does not check. No fear, no upsell — just the rule, and how to read it sensibly.',
   body: [
     {
       type: "p",
@@ -3310,7 +3177,7 @@ const bhakootDosha: Post = {
     },
     {
       type: "p",
-      text: "So Bhakoot Dosha is not a curse on a person and not something either partner \"has\" on their own. It describes the relationship between two Moon signs. The same girl can have Bhakoot Dosha with one boy and a full 7/7 with another. If you are new to gun milan, our [kundli milan online free guide](/blog/kundli-milan-online-free) explains all eight kootas and what total is generally considered good.",
+      text: 'So Bhakoot Dosha is not a curse on a person and not something either partner "has" on their own. It describes the relationship between two Moon signs. The same girl can have Bhakoot Dosha with one boy and a full 7/7 with another. If you are new to gun milan, our [kundli milan online free guide](/blog/kundli-milan-online-free) explains all eight kootas and what total is generally considered good.',
     },
     {
       type: "h2",
@@ -3322,60 +3189,20 @@ const bhakootDosha: Post = {
     },
     {
       type: "table",
-      head: [
-        "Distance between Moon signs",
-        "Traditional name",
-        "Bhakoot score",
-        "Result",
-      ],
+      head: ["Distance between Moon signs", "Traditional name", "Bhakoot score", "Result"],
       rows: [
-        [
-          "1/1 — same Moon sign",
-          "Same rashi",
-          "7",
-          "No dosha",
-        ],
-        [
-          "2/12 — next or previous sign",
-          "Dwirdwadash (dvi-dvadash)",
-          "0",
-          "Bhakoot Dosha",
-        ],
-        [
-          "3/11",
-          "Tritiya-ekadash",
-          "7",
-          "No dosha",
-        ],
-        [
-          "4/10",
-          "Chaturth-dasham",
-          "7",
-          "No dosha",
-        ],
-        [
-          "5/9",
-          "Navpancham (nav-pancham)",
-          "0",
-          "Bhakoot Dosha",
-        ],
-        [
-          "6/8",
-          "Shadashtak (shad-ashtak)",
-          "0",
-          "Bhakoot Dosha",
-        ],
-        [
-          "7/7 — opposite signs",
-          "Samsaptak",
-          "7",
-          "No dosha",
-        ],
+        ["1/1 — same Moon sign", "Same rashi", "7", "No dosha"],
+        ["2/12 — next or previous sign", "Dwirdwadash (dvi-dvadash)", "0", "Bhakoot Dosha"],
+        ["3/11", "Tritiya-ekadash", "7", "No dosha"],
+        ["4/10", "Chaturth-dasham", "7", "No dosha"],
+        ["5/9", "Navpancham (nav-pancham)", "0", "Bhakoot Dosha"],
+        ["6/8", "Shadashtak (shad-ashtak)", "0", "Bhakoot Dosha"],
+        ["7/7 — opposite signs", "Samsaptak", "7", "No dosha"],
       ],
     },
     {
       type: "p",
-      text: "This 0-or-7 rule is the standard one found in published Ashtakoota tables and on the major Indian matching websites, and it is exactly what Astrojanta's [kundli matching tool](/matching) uses. Notice two things that often surprise families. First, a 7/7 (opposite signs) pairing gets full marks — some people assume \"opposite\" must be bad, but in Bhakoot it is considered favourable. Second, the same Moon sign also gets full marks in Bhakoot, even though it can affect other kootas.",
+      text: 'This 0-or-7 rule is the standard one found in published Ashtakoota tables and on the major Indian matching websites, and it is exactly what Astrojanta\'s [kundli matching tool](/matching) uses. Notice two things that often surprise families. First, a 7/7 (opposite signs) pairing gets full marks — some people assume "opposite" must be bad, but in Bhakoot it is considered favourable. Second, the same Moon sign also gets full marks in Bhakoot, even though it can affect other kootas.',
     },
     {
       type: "h3",
@@ -3407,85 +3234,20 @@ const bhakootDosha: Post = {
     },
     {
       type: "table",
-      head: [
-        "Your Moon sign",
-        "2/12 (Dwirdwadash)",
-        "5/9 (Navpancham)",
-        "6/8 (Shadashtak)",
-      ],
+      head: ["Your Moon sign", "2/12 (Dwirdwadash)", "5/9 (Navpancham)", "6/8 (Shadashtak)"],
       rows: [
-        [
-          "Aries (Mesh)",
-          "Taurus, Pisces",
-          "Leo, Sagittarius",
-          "Virgo, Scorpio",
-        ],
-        [
-          "Taurus (Vrishabh)",
-          "Gemini, Aries",
-          "Virgo, Capricorn",
-          "Libra, Sagittarius",
-        ],
-        [
-          "Gemini (Mithun)",
-          "Cancer, Taurus",
-          "Libra, Aquarius",
-          "Scorpio, Capricorn",
-        ],
-        [
-          "Cancer (Kark)",
-          "Leo, Gemini",
-          "Scorpio, Pisces",
-          "Sagittarius, Aquarius",
-        ],
-        [
-          "Leo (Simha)",
-          "Virgo, Cancer",
-          "Sagittarius, Aries",
-          "Capricorn, Pisces",
-        ],
-        [
-          "Virgo (Kanya)",
-          "Libra, Leo",
-          "Capricorn, Taurus",
-          "Aquarius, Aries",
-        ],
-        [
-          "Libra (Tula)",
-          "Scorpio, Virgo",
-          "Aquarius, Gemini",
-          "Pisces, Taurus",
-        ],
-        [
-          "Scorpio (Vrishchik)",
-          "Sagittarius, Libra",
-          "Pisces, Cancer",
-          "Aries, Gemini",
-        ],
-        [
-          "Sagittarius (Dhanu)",
-          "Capricorn, Scorpio",
-          "Aries, Leo",
-          "Taurus, Cancer",
-        ],
-        [
-          "Capricorn (Makar)",
-          "Aquarius, Sagittarius",
-          "Taurus, Virgo",
-          "Gemini, Leo",
-        ],
-        [
-          "Aquarius (Kumbh)",
-          "Pisces, Capricorn",
-          "Gemini, Libra",
-          "Cancer, Virgo",
-        ],
-        [
-          "Pisces (Meen)",
-          "Aries, Aquarius",
-          "Cancer, Scorpio",
-          "Leo, Libra",
-        ],
+        ["Aries (Mesh)", "Taurus, Pisces", "Leo, Sagittarius", "Virgo, Scorpio"],
+        ["Taurus (Vrishabh)", "Gemini, Aries", "Virgo, Capricorn", "Libra, Sagittarius"],
+        ["Gemini (Mithun)", "Cancer, Taurus", "Libra, Aquarius", "Scorpio, Capricorn"],
+        ["Cancer (Kark)", "Leo, Gemini", "Scorpio, Pisces", "Sagittarius, Aquarius"],
+        ["Leo (Simha)", "Virgo, Cancer", "Sagittarius, Aries", "Capricorn, Pisces"],
+        ["Virgo (Kanya)", "Libra, Leo", "Capricorn, Taurus", "Aquarius, Aries"],
+        ["Libra (Tula)", "Scorpio, Virgo", "Aquarius, Gemini", "Pisces, Taurus"],
+        ["Scorpio (Vrishchik)", "Sagittarius, Libra", "Pisces, Cancer", "Aries, Gemini"],
+        ["Sagittarius (Dhanu)", "Capricorn, Scorpio", "Aries, Leo", "Taurus, Cancer"],
+        ["Capricorn (Makar)", "Aquarius, Sagittarius", "Taurus, Virgo", "Gemini, Leo"],
+        ["Aquarius (Kumbh)", "Pisces, Capricorn", "Gemini, Libra", "Cancer, Virgo"],
+        ["Pisces (Meen)", "Aries, Aquarius", "Cancer, Scorpio", "Leo, Libra"],
       ],
     },
     {
@@ -3494,7 +3256,7 @@ const bhakootDosha: Post = {
     },
     {
       type: "p",
-      text: "Bhakoot uses the Vedic (sidereal) Moon sign, not the Western \"sun sign\" from newspapers. Many people who say \"I am a Leo\" have a completely different Moon rashi. Always use the Moon sign from a proper kundli.",
+      text: 'Bhakoot uses the Vedic (sidereal) Moon sign, not the Western "sun sign" from newspapers. Many people who say "I am a Leo" have a completely different Moon rashi. Always use the Moon sign from a proper kundli.',
     },
     {
       type: "h2",
@@ -3522,7 +3284,7 @@ const bhakootDosha: Post = {
       items: [
         "It calculates each person's sidereal Moon sign using the open-source Astronomy Engine ephemeris with the Lahiri ayanamsa (not Swiss Ephemeris, though it follows the same Lahiri convention). Rahu and Ketu use the mean node, and charts use whole-sign houses.",
         "It counts the distance between the two Moon signs and gives Bhakoot 0 if they are 2/12, 5/9 or 6/8 apart, and 7 for every other distance. Bhakoot depends only on the two Moon signs — not on nakshatra or pada.",
-        "When Bhakoot is 0, it shows a \"Bhakoot dosha\" note under Traditional cautions.",
+        'When Bhakoot is 0, it shows a "Bhakoot dosha" note under Traditional cautions.',
         "It does not apply any Bhakoot cancellation (parihar) rules. It does not check whether the sign lords are the same or friends to cancel the dosha, does not look at Navamsa (D9) lords, and does not add the 7 points back. The total out of 36 is always the raw total.",
         "It does not check Manglik Dosha — that is a separate check on the [Manglik page](/manglik).",
       ],
@@ -3566,7 +3328,7 @@ const bhakootDosha: Post = {
     },
     {
       type: "p",
-      text: "Relatives often attach big warnings to Bhakoot Dosha: \"shadashtak hai, jhagde honge\", \"dwirdwadash se paisa nahi tikega\", \"navpancham se santaan mein der hogi\". It helps to separate what the tradition says from what it can and cannot tell you.",
+      text: 'Relatives often attach big warnings to Bhakoot Dosha: "shadashtak hai, jhagde honge", "dwirdwadash se paisa nahi tikega", "navpancham se santaan mein der hogi". It helps to separate what the tradition says from what it can and cannot tell you.',
     },
     {
       type: "ul",
@@ -3587,25 +3349,10 @@ const bhakootDosha: Post = {
     },
     {
       type: "table",
-      head: [
-        "",
-        "Bhakoot",
-        "Nadi",
-        "Manglik",
-      ],
+      head: ["", "Bhakoot", "Nadi", "Manglik"],
       rows: [
-        [
-          "Part of the 8 Ashtakoota kootas?",
-          "Yes — 7th koota",
-          "Yes — 8th koota",
-          "No — separate check",
-        ],
-        [
-          "Points",
-          "7 of 36",
-          "8 of 36",
-          "No points",
-        ],
+        ["Part of the 8 Ashtakoota kootas?", "Yes — 7th koota", "Yes — 8th koota", "No — separate check"],
+        ["Points", "7 of 36", "8 of 36", "No points"],
         [
           "Based on",
           "Distance between the two Moon signs",
@@ -3677,7 +3424,7 @@ const bhakootDosha: Post = {
         "Follow your own family or community custom. Some families ask the family priest for a simple shanti path or prayer before the wedding; others do nothing. Both are legitimate.",
         "Worship of the two Moon-sign lords, or prayer to a family deity, done together at home or in a local temple.",
         "Daan and seva given sincerely — food, clothing or help to people who need it. Most traditions agree on this, and it costs only what you choose to give.",
-        "Honest conversation. Since Bhakoot is traditionally about money, children and temperament, simply talking openly about finances, family plans and expectations before marriage is a sensible \"upay\" in any tradition.",
+        'Honest conversation. Since Bhakoot is traditionally about money, children and temperament, simply talking openly about finances, family plans and expectations before marriage is a sensible "upay" in any tradition.',
       ],
     },
     {
@@ -3739,10 +3486,10 @@ const bhakootDosha: Post = {
 
 const ganaDosha: Post = {
   slug: "gana-dosha",
-  title: "Gana Dosha in Kundli Milan: Dev, Manushya, Rakshasa Gana & 6 Gun",
+  title: "Gana Dosha: Dev, Manushya, Rakshasa aur 6 Gun",
   h1: "Gana Dosha – Gan Kya Hota Hai, Dev/Manushya/Rakshasa Gana, 27 Nakshatra Table, Scoring and What to Check Before Shaadi",
   description:
-    "Gana dosha kya hai? Plain English with Hinglish terms: Dev, Manushya and Rakshasa gana, all 27 nakshatras, how Gana koota scores 6 of 36 gun, where tables differ, parihar and calm guidance.",
+    "Gana dosha kya hai? Dev, Manushya aur Rakshasa gana, sabhi 27 nakshatra, 6 of 36 gun kaise milte hain, parihar, aur Rakshasa gana ka asli matlab.",
   keyword: "gana dosha",
   author: "founder",
   published: "2026-11-10",
@@ -4162,7 +3909,7 @@ const ganaDosha: Post = {
 
 const kitneGunMilneChahiye: Post = {
   slug: "kitne-gun-milne-chahiye",
-  title: "Kundli Milan: Kitne Gun Milne Chahiye? 18 Se Kam Ho To Kya",
+  title: "Kitne Gun Milne Chahiye Shaadi Ke Liye?",
   h1: "Kitne Gun Milne Chahiye – The 36-Gun Ashtakoot Breakdown, Score Bands, and What to Do When Kundli Milan Comes Below 18",
   description:
     "18 of 36 gun is the traditional minimum for shaadi. Score bands, why Nadi aur Bhakoot outweigh the total, kam gun milne par kya karein, plus a free check.",
@@ -4238,11 +3985,7 @@ const kitneGunMilneChahiye: Post = {
           "Average / acceptable",
           "Workable, and very common. Usually fine when Nadi and Bhakoot are clear and both charts are sound",
         ],
-        [
-          "25 to 32",
-          "Very good",
-          "The range most families are happy with; doshas are still checked separately",
-        ],
+        ["25 to 32", "Very good", "The range most families are happy with; doshas are still checked separately"],
         [
           "33 to 36",
           "Excellent",
@@ -4258,11 +4001,11 @@ const kitneGunMilneChahiye: Post = {
     { type: "h3", text: "Astrojanta ke tool ki lines kahan hain (honestly)" },
     {
       type: "p",
-      text: "Our own [matching tool](/matching) labels the bands slightly differently from the convention above, and you should know that before comparing its badge with a pandit's wording. It calls 28 and above excellent, 24 to 27 good, 18 to 23 average, and anything below 18 \"Below 18 — traditionally not advised\". So a 26-gun match reads as \"Good match\" in our tool while the common convention would call the same score very good. The underlying koota scores are the same; only the labels on the bands differ.",
+      text: 'Our own [matching tool](/matching) labels the bands slightly differently from the convention above, and you should know that before comparing its badge with a pandit\'s wording. It calls 28 and above excellent, 24 to 27 good, 18 to 23 average, and anything below 18 "Below 18 — traditionally not advised". So a 26-gun match reads as "Good match" in our tool while the common convention would call the same score very good. The underlying koota scores are the same; only the labels on the bands differ.',
     },
     {
       type: "p",
-      text: "Two more limits worth knowing. The tool's \"Traditional cautions\" box flags only two things — Nadi dosha and Bhakoot dosha — so it will not warn you about Gana or anything else. And it does not check Manglik status or compare Navamsa charts at all; Manglik is a separate check on the [Manglik page](/manglik). Our [methodology page](/about-methodology) describes how the underlying calculations are done.",
+      text: 'Two more limits worth knowing. The tool\'s "Traditional cautions" box flags only two things — Nadi dosha and Bhakoot dosha — so it will not warn you about Gana or anything else. And it does not check Manglik status or compare Navamsa charts at all; Manglik is a separate check on the [Manglik page](/manglik). Our [methodology page](/about-methodology) describes how the underlying calculations are done.',
     },
 
     { type: "h2", text: "Total alone kaafi nahi: Nadi, Bhakoot aur Manglik" },
@@ -4328,7 +4071,7 @@ const kitneGunMilneChahiye: Post = {
     },
     {
       type: "p",
-      text: "Be careful of anyone who quotes a large figure to \"fix\" a low score, insists that only their puja can save the match, or describes a partner's wellbeing in frightening terms. A genuine astrologer explains which kootas failed, which exceptions apply and what the full charts show, and accepts that the decision belongs to your family.",
+      text: 'Be careful of anyone who quotes a large figure to "fix" a low score, insists that only their puja can save the match, or describes a partner\'s wellbeing in frightening terms. A genuine astrologer explains which kootas failed, which exceptions apply and what the full charts show, and accepts that the decision belongs to your family.',
     },
 
     { type: "h2", text: "Myths vs facts" },
@@ -6548,7 +6291,7 @@ const janmakshar: Post = {
 
 const yoniKoota: Post = {
   slug: "yoni-koota",
-  title: "Yoni Koota in Kundli Milan: 14 Yoni Table, 4 Gun aur Score",
+  title: "Yoni Koota: 14 Yoni Table aur 4 Gun Score",
   h1: "Yoni Koota – 14 Yoni Table, 27 Nakshatra, 4 Gun Kaise Milte Hain, aur Yoni 0 Aaye To Kya",
   description:
     "Yoni koota kya hai kundli milan mein? 27 nakshatra ki 14 yoni table, 4 gun kaise milte hain, Yoni 0 (enemy yoni) ka matlab, aur free kundli milan tool.",
@@ -6750,7 +6493,7 @@ const yoniKoota: Post = {
 
 const taraKoota: Post = {
   slug: "tara-koota",
-  title: "Tara Koota in Kundli Milan: 9 Tara, Counting Method aur 3 Gun Score",
+  title: "Tara Koota: 9 Tara Table aur 3 Gun Score",
   h1: "Tara Koota – 9 Tara, Nakshatra Se Counting Method, 3 Gun Kaise Milte Hain, aur Score Kam Aaye To Kya",
   description:
     "Tara koota kya hai kundli milan mein? 9 tara, vadhu-var counting method, 3-1.5-0 gun kaise milte hain, kam score ka matlab, aur free kundli milan tool.",
@@ -6956,13 +6699,12 @@ const taraKoota: Post = {
   ],
 };
 
-
 const grahaMaitri: Post = {
   slug: "graha-maitri",
-  title: "Graha Maitri in Kundli Milan: Rashi Lord Table, 5 Gun aur Score",
+  title: "Graha Maitri: Rashi Lord Table aur 5 Gun",
   h1: "Graha Maitri – Rashi Lord Ki Friendship Table, 0 Se 5 Gun Kaise Milte Hain, aur Score Kam Aaye To Kya",
   description:
-    "Graha Maitri kya hai kundli milan mein? Rashi lord ki friend, neutral, enemy table, 5 gun kaise milte hain, kam score ka matlab, parihar, aur free kundli milan tool.",
+    "Graha Maitri kya hai? Rashi lord ki friend, neutral, enemy table, 5 gun kaise milte hain, kam score ka matlab aur parihar, plus free kundli milan tool.",
   keyword: "graha maitri",
   author: "founder",
   published: "2026-11-26",

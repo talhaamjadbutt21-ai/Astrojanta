@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: post.description,
       publishedTime: post.published,
       modifiedTime: post.updated,
-      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: post.title }],
+      images: [{ url: `${path}/og-image`, width: 1200, height: 630, alt: post.title }],
     },
   };
 }
@@ -70,14 +70,15 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     },
     {
       "@context": "https://schema.org",
-      "@type": "Article",
+      "@type": "BlogPosting",
       headline: post.title,
       description: post.description,
       datePublished: post.published,
       dateModified: post.updated,
       mainEntityOfPage: url,
       url,
-      image: absoluteUrl("/opengraph-image"),
+      image: absoluteUrl(`/blog/${post.slug}/og-image`),
+      isPartOf: { "@type": "Blog", name: `${SITE_NAME} Blog`, url: absoluteUrl("/blog") },
       inLanguage: "en-IN",
       keywords: post.keyword,
       author,
@@ -122,7 +123,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <Link href="/about-methodology" className="underline underline-offset-4 hover:text-ink">
             {byFounder ? `${FOUNDER.name}, founder of ${SITE_NAME}` : `${SITE_NAME} team`}
           </Link>{" "}
-          · <time dateTime={post.published}>{fmt(post.published)}</time>
+          · Published <time dateTime={post.published}>{fmt(post.published)}</time>
+          {post.updated > post.published && (
+            <>
+              {" "}
+              · Updated <time dateTime={post.updated}>{fmt(post.updated)}</time>
+            </>
+          )}
         </p>
         <p className="mt-6 text-lg leading-relaxed text-ink/90">
           <BlogText text={post.intro} />

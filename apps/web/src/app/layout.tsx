@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Geist, Noto_Sans_Devanagari } from "next/font/google";
+import { Fraunces, Geist } from "next/font/google";
+import localFont from "next/font/local";
 import { CosmicBackground } from "@/components/cosmic-background";
 import { JsonLd } from "@/components/json-ld";
 import { Providers } from "@/components/providers";
@@ -16,11 +17,25 @@ import "./globals.css";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"], display: "swap" });
 const fraunces = Fraunces({ variable: "--font-fraunces", subsets: ["latin"], display: "swap", axes: ["SOFT", "opsz"] });
-const devanagari = Noto_Sans_Devanagari({
+// Self-hosted (Noto Sans Devanagari, SIL OFL; devanagari subset, variable 400-600). Loading it via
+// next/font/google intermittently broke Vercel builds ("next/font/google queries have exactly one
+// entry" while fetching from fonts.gstatic.com), so the build no longer needs a network fetch for it.
+const devanagari = localFont({
+  src: "./fonts/noto-sans-devanagari-400-600.woff2",
   variable: "--font-noto-deva",
-  subsets: ["devanagari"],
-  weight: ["400", "500", "600"],
+  weight: "400 600",
   display: "swap",
+  declarations: [
+    {
+      prop: "unicode-range",
+      value:
+        "U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A",
+    },
+  ],
+  // Only a few short Hindi phrases use this font, and unicode-range means the browser fetches it
+  // only when Devanagari text renders. Not preloading it frees bandwidth for the LCP text and image.
+  preload: false,
+  fallback: ["ui-sans-serif", "sans-serif"],
 });
 
 export const metadata: Metadata = {
@@ -98,6 +113,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en-IN" className={`${geist.variable} ${fraunces.variable} ${devanagari.variable} antialiased`}>
       <head>
+        {/* async: AdSense never blocks parsing or the LCP paint. Keep it in <head> for site verification. */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5762804424232905"
