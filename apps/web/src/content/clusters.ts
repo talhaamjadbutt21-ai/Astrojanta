@@ -22,6 +22,7 @@ export const CLUSTERS: Cluster[] = [
       "gana-dosha",
       "graha-maitri",
       "yoni-koota",
+      "tara-koota",
       "varna-koota-meaning",
       "manglik-dosha-meaning",
       "naam-se-gun-milan",
