@@ -26,6 +26,9 @@ const devanagari = Noto_Sans_Devanagari({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   verification: { google: "sktipJarFhWoRv02UHvvYSaBWepLh8CCk9_JxMKy7jc" },
+  other: {
+    "google-adsense-account": "ca-pub-5762804424232905",
+  },
   title: {
     default: "Astrojanta — Free Kundli & AI Vedic Astrologer in Hindi and English",
     template: "%s · Astrojanta",
@@ -94,6 +97,13 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en-IN" className={`${geist.variable} ${fraunces.variable} ${devanagari.variable} antialiased`}>
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5762804424232905"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="min-h-dvh overflow-x-clip font-sans">
         <JsonLd data={siteJsonLd} />
         <CosmicBackground />
