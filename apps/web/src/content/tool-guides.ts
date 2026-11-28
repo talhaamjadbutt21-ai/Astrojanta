@@ -80,6 +80,7 @@ export const kundliGuide: ToolGuide = {
       "free-ai-kundli-online",
       "ai-kundli-reader",
       "vimshottari-mahadasha",
+      "kundli-se-shaadi-ki-umar",
       "rashi-kaise-pata-kare",
       "kaal-sarp-dosh",
       "manglik-dosha-meaning",
@@ -185,6 +186,7 @@ export const matchingGuide: ToolGuide = {
       "manglik-dosha-meaning",
       "naam-se-gun-milan",
       "janmakshar-matching",
+      "kundli-se-shaadi-ki-umar",
     ],
   },
   faqs: [
@@ -258,6 +260,7 @@ export const manglikGuide: ToolGuide = {
     intro: "Manglik result ke baad yeh guides padhein:",
     slugs: [
       "manglik-dosha-meaning",
+      "kundli-se-shaadi-ki-umar",
       "kundli-milan-online-free",
       "kitne-gun-milne-chahiye",
       "nadi-dosha",

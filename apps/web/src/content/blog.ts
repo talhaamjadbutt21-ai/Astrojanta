@@ -3064,7 +3064,7 @@ const vimshottariMahadasha: Post = {
     { type: "h2", text: "Shukra ki Mahadasha (Venus Mahadasha, 20 years)" },
     {
       type: "p",
-      text: "Venus has the longest mahadasha — 20 years. It relates to relationships, marriage, comforts, vehicles, art, beauty and enjoyment. A well-placed Venus period often coincides with marriage, a better lifestyle, creative work or business in luxury and design fields. Where Venus is weak or afflicted, the theme may come up as over-spending or relationship lessons. Because it lasts two decades, its antardashas vary a lot, and reading the antardasha lord is especially useful here.",
+      text: "Venus has the longest mahadasha — 20 years. It relates to relationships, marriage, comforts, vehicles, art, beauty and enjoyment. A well-placed Venus period often coincides with marriage, a better lifestyle, creative work or business in luxury and design fields. Where Venus is weak or afflicted, the theme may come up as over-spending or relationship lessons. Because it lasts two decades, its antardashas vary a lot, and reading the antardasha lord is especially useful here. Dasha alone ek exact shaadi-wali umar nahi likhti; 7th house, Navamsa aur gochar ke saath timing kaise padhein, [kundli se shaadi ki umar](/blog/kundli-se-shaadi-ki-umar) mein hai.",
     },
     { type: "h2", text: "Baaki mahadashas: Surya, Chandra, Mangal, Budh, Ketu" },
     {
@@ -4036,7 +4036,7 @@ const kitneGunMilneChahiye: Post = {
         "Look at the two individual charts, not just the comparison. The 7th house and its lord are the primary marriage indicators in each kundli, with Venus for both partners and traditionally Jupiter for the bride. A sound 7th house in both charts carries real weight against a modest total. Start with a free [kundli](/kundli) for each person.",
         "Check Graha Maitri and the Moon signs. Graha Maitri is 5 points of mental compatibility and is also the basis of the main Bhakoot exception, so friendly or identical Moon-sign lords help twice over. The [Moon sign and Nakshatra finder](/moon-sign) gives you both quickly.",
         "Ask about the Navamsa (D9). Most astrologers consider the Navamsa essential for marriage, and a strong D9 can outweigh a weak Ashtakoot total. Our tool does not compare D9 charts, so this genuinely needs a human reading.",
-        "Look at the timing. The running Vimshottari dasha of both people around the wedding often explains more about early married life than any koota does; our [Mahadasha guide](/blog/vimshottari-mahadasha) explains how to find it.",
+        "Look at the timing. The running Vimshottari dasha of both people around the wedding often explains more about early married life than any koota does; our [Mahadasha guide](/blog/vimshottari-mahadasha) explains how to find it, and [kundli se shaadi ki umar](/blog/kundli-se-shaadi-ki-umar) shows how dasha, the 7th house and Navamsa are read together.",
         "Then consult a learned astrologer with both full charts. Not a screenshot of the score — the complete birth details for both people. Ask specifically which kootas failed, whether any parihar applies, and what the D9 and the 7th houses look like.",
       ],
     },
@@ -4575,7 +4575,7 @@ const vivahMuhurat2027: Post = {
         "Run both charts through the free [kundli matching tool](/matching) to see the 36 gun and the koota-by-koota breakdown.",
         "If the score looks low, our guide to [kitne gun milne chahiye](/blog/kitne-gun-milne-chahiye) explains the bands and what a total below 18 actually calls for.",
         "Check Manglik status separately for each person — it is not part of the 36 gun. The [Manglik dosha guide](/blog/manglik-dosha-meaning) covers the houses, the cancellation rules and the age-28 belief.",
-        "A free [kundli](/kundli) for each person shows the Lagna, Moon sign, nakshatra and running dasha, which is what a purohit will ask for when choosing between two dates.",
+        "A free [kundli](/kundli) for each person shows the Lagna, Moon sign, nakshatra and running dasha, which is what a purohit will ask for when choosing between two dates. Individual timing windows — 7th house, Navamsa and dasha — are explained in [kundli se shaadi ki umar](/blog/kundli-se-shaadi-ki-umar).",
       ],
     },
     {
@@ -6933,7 +6933,240 @@ const grahaMaitri: Post = {
   ],
 };
 
+const kundliSeShaadiKiUmar: Post = {
+  slug: "kundli-se-shaadi-ki-umar",
+  title: "Kundli Se Shaadi Ki Umar Kaise Dekhein?",
+  h1: "Kundli Se Shaadi Ki Umar – 7th House, Vivah Yog, Dasha aur Gochar Se Timing Kaise Dekhein",
+  description:
+    "Kundli se shaadi ki umar kaise dekhein? 7th house, Shukra-Guru, Navamsa, mahadasha aur gochar se vivah yog samjhiye — bina guarantee, seedhe steps ke saath.",
+  keyword: "kundli se shaadi ki umar",
+  author: "founder",
+  published: "2026-11-28",
+  updated: "2026-11-28",
+  intro:
+    "Rishta baat chalti hai to ghar mein sabse pehla sawaal aksar yahi hota hai — kundli se batao, shaadi kitni umar mein hogi? Jyotish is sawaal ka ek fixed number nahi deta, jaise \"27 saal 4 mahine\". Jo milta hai, woh vivah yog aur timing windows hain: 7th house, Shukra aur Guru, Navamsa (D9), chal rahi mahadasha-antardasha, aur gochar. Is guide mein yahi cheezein step by step hain — kya check karein, kaunse myths hain, aur birth time galat ho to result kyun shift ho sakta hai. Apni chart dekhne ke liye free [Janam Kundli](/kundli) banayein, phir [AI astrologer](/ai-astrologer) se Hindi ya Hinglish mein poochhein.",
+  body: [
+    { type: "h2", text: "Seedha jawab: kundli se shaadi ki umar kaise dekhein?" },
+    {
+      type: "ul",
+      items: [
+        "Kundli ek exact shaadi-wali umar nahi likhti. Woh vivah yog (chart mein potential) aur vivah kaal (dasha aur gochar ki windows) dikhati hai.",
+        "Pehle Lagna se 7th house (Kalatra bhava) aur 7th lord dekhein — ghar mein kaun se grah hain, 7th lord kahan baitha hai, kitna strong hai. Chandra Lagna se bhi yahi check useful hai.",
+        "Shukra (Venus) shaadi aur relationship ka general karaka hai, khas taur par purush kundli mein. Guru (Jupiter) parampara mein stree kundli ke pati/husband ka karaka maana jaata hai.",
+        "Navamsa (D9) shaadi ke liye zaroori chart hai. D1 ke saath D9 ka 7th house, Shukra aur Guru milakar padhe jaate hain.",
+        "Timing aksar un dasha-antardasha mein sochi jaati hai jahan 7th lord, Shukra, Guru, ya 7th ghar se jude grah active hon — jab gochar, khaas kar Guru, bhi support kare.",
+        "Sahi janm samay zaroori hai. Time galat ho to Lagna, Navamsa aur dasha balance badal sakte hain, isliye \"calculator ne 26 saal bata diya\" wala jawab bharosemand nahi hota.",
+        "Apni chart free [Janam Kundli](/kundli) par banayein: Lagna, 7th house, Navamsa aur Vimshottari dasha wahan milte hain. Phir [AI astrologer](/ai-astrologer) se specific sawaal poochhein.",
+      ],
+    },
+
+    { type: "h2", text: "Kundli se shaadi ki umar ka asal matlab kya hai?" },
+    {
+      type: "p",
+      text: "Indian families often want one number: 24, 27, 30. Classical Jyotish woh ek number nahi bechta. Pehle chart mein dekha jaata hai ki vivah ka yog kitna saaf hai — 7th house, uske lord, karaka grahas, aur Navamsa. Uske baad dasha batati hai ki woh yog kab ripe ho sakta hai, aur gochar ek trigger ki tarah kaam karta hai. Teen layers milkar ek window banate hain, ek birthday nahi.",
+    },
+    {
+      type: "p",
+      text: "Isliye do alag cheezein mix nahi karni chahiye. [Kundli milan](/blog/kundli-milan-online-free) yeh dekhta hai ki do logon ki Chandra rashi-nakshatra kitni compatible hain — 36 gun, Nadi, Bhakoot, Manglik. Yeh article timing ke baare mein hai: ek vyakti ki apni kundli mein shaadi ka yog kab active ho sakta hai. Milan \"kiske saath\", yeh guide \"kis daur mein\" — dono kaam alag hain, aur dono useful hain.",
+    },
+
+    { type: "h2", text: "Kya check karein: ek simple table" },
+    {
+      type: "table",
+      head: ["Check", "Kahan dekhein", "Kya note karein"],
+      rows: [
+        [
+          "7th house aur 7th lord",
+          "D1, Lagna se; Chandra Lagna se bhi",
+          "7th mein kaun se grah, 7th lord ka ghar, sign aur strength",
+        ],
+        [
+          "Shukra aur Guru",
+          "D1 aur D9",
+          "Dignity, 7th par drishti, combustion ya affliction — kamzor hone ka matlab \"shaadi nahi\" nahi hota",
+        ],
+        [
+          "Navamsa (D9)",
+          "Free kundli ki Navamsa chart",
+          "D9 ka 7th house, wahan ke lord, aur Shukra-Guru ki dasha ke liye unki D9 condition",
+        ],
+        [
+          "Vimshottari dasha",
+          "Kundli ki dasha timeline",
+          "7th lord, Shukra, Guru, 7th-sthit grah, ya D9 ke 7th lord ki mahadasha/antardasha",
+        ],
+        [
+          "Gochar (transits)",
+          "Chal rahe Guru, Shani, Rahu-Ketu",
+          "Guru ka 7th, 7th lord ya Shukra par jaana/aspect; Shani delay ya seriousness; Rahu-Ketu 1/7 axis par sudden twists",
+        ],
+      ],
+    },
+    {
+      type: "p",
+      text: "Yeh table ek reading order hai, prediction nahi. Ek strong box baaki ko cancel nahi karta, aur ek tight 7th house shaadi ko \"band\" nahi kar deta. Poori picture milakar padhein.",
+    },
+
+    { type: "h2", text: "Step 1: 7th house aur 7th lord" },
+    {
+      type: "p",
+      text: "Saatvaan bhav Kalatra bhava hai — shaadi, jeevan saathi aur partnership ka mukhya ghar. Lagna se 7th dekhna sabse pehla step hai, kyunki Lagna poori chart ka lens hai. North Indian paddhati mein Chandra Lagna se 7th bhi routinely check hota hai; kabhi-kabhi dono pictures thodi alag dikhti hain, aur dono ko note karna useful hai.",
+    },
+    {
+      type: "p",
+      text: "Yahan teen baatein likh lein: 7th house mein kaun se grah baithe hain, 7th lord kis rashi aur kis bhav mein hai, aur woh lord strong hai ya peedhit (for example, neech, combust, ya 6th/8th/12th jaisi dusthana placement). 7th lord ka 6th, 8th ya 12th mein hona aksar delay, extra mehnat, ya rishton mein lessons se joda jaata hai — iska automatic matlab yeh nahi ki shaadi hogi hi nahi. Waise hi, 7th mein Shani ya Ketu dekh kar ghar mein darr failana classical reading nahi hai; yeh grah style aur timing badal sakte hain, event ko mita nahi dete.",
+    },
+    {
+      type: "p",
+      text: "Mangal 1st, 2nd, 4th, 7th, 8th ya 12th mein ho to log use [Manglik dosha](/blog/manglik-dosha-meaning) kehte hain. Woh check timing se alag hai, 36 gun mein shamil nahi hota, aur uske apne parihar rules hain. \"28 saal ke baad Manglik khatam\" wala belief usi guide mein saaf discuss hai — use yahan umar-prediction ka formula mat banaein.",
+    },
+
+    { type: "h2", text: "Step 2: Shukra aur Guru, the marriage karakas" },
+    {
+      type: "p",
+      text: "Ghar aur lord ke saath karaka grahas padhe jaate hain. Shukra love, comfort, spouse aur marriage ka general significator hai; bahut se Parashari readers use purush kundli ke kalatra karaka ke roop mein lete hain. Guru expansion, blessings aur dharma ka karaka hai, aur parampara mein stree kundli ke pati ka significator maana jaata hai. Dono ke liye dono grahas relevant ho sakte hain — ek ko ignore karke sirf \"Venus weak hai\" se faisla nahi hota.",
+    },
+    {
+      type: "p",
+      text: "Shukra ya Guru 7th ko aspect karein, 7th lord ke saath juden, ya khud acchi dignity mein hon, to vivah yog generally saaf padta hai. Woh same grah neech, combust, ya bahut peedhit hon to timing late ho sakti hai, ya rishta zyada kaam maangta hai. Phir bhi yeh ek factor hai. Karaka ki tightness ko 7th lord, Navamsa aur dasha ke bina \"shaadi nahi hogi\" nahi bolna chahiye.",
+    },
+
+    { type: "h2", text: "Step 3: Navamsa (D9) kyun chhodte nahi" },
+    {
+      type: "p",
+      text: "Navamsa har rashi ko nau hisso mein baantti hai, aur shaadi-spouse ke liye yeh sabse zyada use hone wali divisional chart hai. D1 bataati hai kya yog hai; D9 aksar yeh dikhati hai ki woh yog kitna solid hai. D9 ka 7th house aur uska lord, aur Shukra-Guru ki Navamsa condition, isliye D1 ke 7th ke saath parallel padhi jaati hai.",
+    },
+    {
+      type: "p",
+      text: "Ek practical warning: Navamsa birth time par bahut sensitive hai. Lagna roughly do ghante mein badalta hai, lekin Navamsa lagna usse kaafi jaldi shift ho sakta hai. Agar janm samay hospital record se 20–30 minute off ho, D1 ka 7th same reh sakta hai aur D9 badal sakta hai. Time confirm na ho to D9 par koi sakht conclusion nahi nikaalein. Astrojanta ki free [Janam Kundli](/kundli) D1 ke saath Navamsa bhi dikhati hai, isliye pehle time check karein, phir dono charts saath padhein.",
+    },
+
+    { type: "h2", text: "Step 4: Dasha se timing window kaise nikalte hain" },
+    {
+      type: "p",
+      text: "Vivah yog \"hai\" aur vivah \"ab ho sakta hai\" mein fark [Vimshottari mahadasha](/blog/vimshottari-mahadasha) se padha jaata hai. Yeh 120-saal ka sequence Moon ki janm nakshatra se chalta hai. Har mahadasha ke andar antardashas hote hain, aur shaadi jaise event ke liye log dono ko saath dekhte hain. Sirf yeh dekhna kaafi nahi ki \"Guru ki 16-saal ki mahadasha chal rahi hai, isliye is saal shaadi pakki hai.\"",
+    },
+    {
+      type: "p",
+      text: "Jo periods sabse zyada check kiye jaate hain:",
+    },
+    {
+      type: "ul",
+      items: [
+        "7th lord ki mahadasha ya antardasha",
+        "Shukra ya Guru ki dasha, jab yeh chart mein shaadi se jude hon",
+        "7th house mein baithe, ya 7th par drishti karte grahas ki dasha",
+        "Navamsa ke 7th lord ki dasha, jab D1 se bhi support ho",
+        "Kabhi-kabhi 2nd lord (family, addition to the house) ya 11th lord (gains, fulfilment) ki dasha, as a supporting period, not as the only proof",
+      ],
+    },
+    {
+      type: "p",
+      text: "Shukra ki mahadasha 20 saal ki hoti hai, Guru ki 16 saal ki. Itne lambe daur mein shaadi har mahine nahi hoti; antardasha, 7th house ki condition aur gochar decide karte hain ki kaun sa hissa zyada relevant hai. Apni current mahadasha-antardasha [kundli](/kundli) ki timeline par dekhein, ya [AI astrologer](/ai-astrologer) se poochhein: \"Meri chal rahi dasha shaadi ke yog se kaise judti hai?\" — yeh \"meri shaadi kab pakki hai?\" se zyada useful sawaal hai.",
+    },
+
+    { type: "h2", text: "Step 5: Gochar — Guru, Shani aur Rahu-Ketu" },
+    {
+      type: "p",
+      text: "Gochar transits hain: abhi grah aasman mein kahan chal rahe hain, aapke Lagna ya Chandra se. Natal yog aur dasha ke bina sirf gochar se umar nahi nikalte. Lekin jab dasha already shaadi ke grahas ki taraf ho, transits window ko tight kar sakte hain.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Guru ka 7th house, 7th lord, ya Shukra par transit ya aspect aksar supportive window maana jaata hai, kyunki Guru expansion aur blessings ka karaka hai.",
+        "Shani 7th ya Shukra par delay, seriousness, ya late-but-stable commitment la sakta hai. Yeh automatically \"mana\" nahi hai; kai charts mein Shani ke daur ke baad hi shaadi settle hoti hai.",
+        "Rahu-Ketu jab 1/7 axis par hon, to rishta achanak, unusual, ya foreign/out-of-circle connection ke roop mein aa sakta hai. Iske saath bhi dasha aur 7th lord padhna zaroori hai — nodes akeli guarantee nahi hain.",
+      ],
+    },
+
+    { type: "h2", text: "Delay alag hai, denial alag hai" },
+    {
+      type: "p",
+      text: "Late shaadi ke common indicators — 7th ya Shukra par Shani, 7th mein Ketu, 7th lord ka dusthana mein hona, ya shaadi-karakas ki dasha life mein baad mein aana — aksar timing ko peeche dhakelte hain. Unhe \"is janam shaadi nahi hogi\" nahi padha jaana chahiye, khaskar ek yog dekh kar. Careful astrologers ek alone yoga se aisa claim rarely karte hain, kyunki Navamsa, dasha sequence, aur doosre supporting houses picture badal dete hain.",
+    },
+    {
+      type: "p",
+      text: "Asli zindagi bhi chart ke bahar chalti hai: padhai, career, family circumstances, aur yeh ki rishta kab actually aata hai. Kundli possibility aur daur dikhati hai. Woh kisi ko shaadi karne ya na karne ka order nahi deti. Isliye kisi bhi acchi baat ko sirf is liye na thukrein ke kisi app ne ek saal ka number de diya.",
+    },
+
+    { type: "h2", text: "Birth time, online calculators, aur jo claims avoid karni chahiye" },
+    {
+      type: "p",
+      text: "Date of birth se planets ki rashi aksar theek aa jaati hai, lekin Lagna, houses aur Navamsa janm samay aur jagah par depend karte hain. Dasha balance bhi Moon ke exact degree se chalta hai. Time na pata ho to Chandra-based reading ek starting point ho sakti hai, lekin \"shaadi ki umar\" usse nikalna weak hota hai. Time dhoondhne ke tips ke liye [rashi kaise pata kare](/blog/rashi-kaise-pata-kare) dekh sakte hain, aur chart banana ho to [free AI kundli guide](/blog/free-ai-kundli-online) use karein.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Jo tool sirf date of birth maang kar \"aapki shaadi 26 saal mein hogi\" likh de, usme dasha, 7th lord aur Navamsa ka kaam almost missing hota hai. Use result nahi maanein.",
+        "Jo insaan exact mahina guarantee kare aur uske liye mehngi puja ya ratna beche, usse door rahein. Timing windows suggest kiye jaate hain, lock nahi kiye jaate.",
+        "Dasha ke naam se rishta reject karna, ya medical/career faisla rokna, Jyotish ka sahi use nahi hai. Chart ek reflective lens hai, replacement nahi.",
+      ],
+    },
+
+    { type: "h2", text: "Astrojanta par step-by-step kaise check karein" },
+    {
+      type: "ul",
+      items: [
+        "Sahi date, time aur place ke saath free [Janam Kundli](/kundli) banayein. Lagna, 12 bhav, Shukra-Guru, Navamsa aur current Vimshottari dasha note karein.",
+        "Upar wali table ke order mein 7th house, karakas, D9 aur chal rahi dasha likh lein. Confusion ho to [kundli kaise padhein](/blog/ai-kundli-reader) guide kaam aati hai.",
+        "Free account se [AI astrologer](/ai-astrologer) ko specific sawaal dein, jaise: \"Lagna se 7th lord kahan hai, aur meri chal rahi dasha usse kaise judti hai?\" ya \"Navamsa mein Shukra kaisa hai?\" Pakki tarikh mat maangiye; explanation maangiye.",
+        "Agar koi rishta chal raha hai, timing ke saath [kundli matching](/matching) bhi karein. Gun milan compatibility hai; yeh article aapki khud ki window ki baat karti hai.",
+        "Jab koi daur supportive lage, tab date shortlist ke liye [Vivah Muhurat 2027](/blog/vivah-muhurat-2027) dekh sakte hain — pehle yog aur milan, phir muhurat.",
+      ],
+    },
+
+    { type: "h2", text: "Bottom line" },
+    {
+      type: "p",
+      text: "Kundli se shaadi ki umar nikalna ek formula nahi, ek reading hai: 7th house aur 7th lord, Shukra-Guru, Navamsa, Vimshottari dasha, aur gochar. Yeh layers milkar windows dete hain, ek guaranteed birthday nahi. Sahi janm samay se free [kundli](/kundli) banayein, dasha ko [mahadasha guide](/blog/vimshottari-mahadasha) se samjhein, aur [AI astrologer](/ai-astrologer) se chart-based sawaal poochhein. Rishta ho to milan alag se check karein, aur kisi bhi number ko akele par faisla na karein.",
+    },
+  ],
+  faqs: [
+    {
+      q: "Kundli se shaadi ki umar kaise pata chalti hai?",
+      a: "7th house aur 7th lord, Shukra aur Guru, Navamsa, chal rahi Vimshottari dasha, aur gochar ko saath padhkar. Inse ek ya zyada timing windows nikalte hain, ek fixed umar nahi. Free kundli par yeh sab dikhta hai; AI astrologer se aap unhein plain language mein poochh sakte hain.",
+    },
+    {
+      q: "Kya kundli exact shaadi ki umar bata sakti hai?",
+      a: "Nahi, aur jo tool exact saal-mahina guarantee kare us par bharosa na karein. Jyotish potential aur daur dikhata hai. Antardasha, gochar, birth-time accuracy aur zindagi ke haalaat window ko aage-peeche kar dete hain.",
+    },
+    {
+      q: "Vivah yog kya hota hai?",
+      a: "Vivah yog chart mein shaadi ke potential ko kehte hain — saaf 7th house, supportive 7th lord, aur acchi karaka/Navamsa condition. Yog ke baad bhi event tab socha jaata hai jab uske grahas ki dasha chale aur gochar bhi madad kare.",
+    },
+    {
+      q: "Kaunsi dasha mein shaadi hoti hai?",
+      a: "Koi ek dasha sabke liye fixed nahi hai. Common candidates 7th lord, Shukra, Guru, 7th ke grahas, aur kabhi D9 ke 7th lord ki mahadasha ya antardasha hote hain. Shukra 20 saal aur Guru 16 saal chalte hain, isliye antardasha aur transits ke bina sirf mahadasha ka naam kaafi nahi.",
+    },
+    {
+      q: "7th house mein Shani ho to shaadi late hoti hai kya?",
+      a: "Shani 7th ya Shukra par aksar delay, seriousness ya late-but-stable commitment se juda maana jaata hai, lekin yeh automatic inkaar nahi hai. Baaki chart, Navamsa aur dasha dekhna zaroori hai. Kai logon ki shaadi Shani ke influence ke daur mein ya uske baad settle hoti hai.",
+    },
+    {
+      q: "Birth time na ho to shaadi ki umar nikal sakte hain?",
+      a: "Bahut weakly. Bina time ke Lagna, houses aur Navamsa unreliable ho jaate hain, aur dasha balance bhi Moon ke exact degree par depend karta hai. Chandra rashi se general reading ho sakti hai, lekin usse precise umar nahi nikaaliye. Pehle janm samay confirm karein.",
+    },
+    {
+      q: "Manglik ho to shaadi kab hogi?",
+      a: "Manglik hona ek alag check hai, timing formula nahi. Mars ke 1, 2, 4, 7, 8 ya 12 mein hone se dosha padhta hai, uske parihar rules alag hain, aur \"28 saal ke baad khatam\" wala belief automatic nahi hai. Detail Manglik dosha guide mein hai; umar ke liye phir bhi 7th lord, dasha aur Navamsa dekhein.",
+    },
+    {
+      q: "Navamsa (D9) shaadi ke liye kyun zaroori hai?",
+      a: "Navamsa traditionally marriage aur spouse ki chart hai, aur D1 ke yog ki andaruni strength bhi yahin se judge ki jaati hai. D1 aur D9 ko saath padhein. Yaad rahe, D9 birth time par sensitive hai, isliye galat time par D9 ke conclusions kamzor ho jaate hain.",
+    },
+    {
+      q: "Online marriage age calculator sahi hota hai kya?",
+      a: "Jo calculator sirf date of birth se ek number de, woh usually 7th lord, Navamsa aur dasha ko seriously use nahi karta. Use entertainment maan kar chhod dein. Better tareeka yeh hai ki poori kundli banayein aur upar wale steps se khud padhein, ya AI astrologer se chart-based explanation lein.",
+    },
+    {
+      q: "Pehle kundli milan karein ya shaadi ki umar dekhein?",
+      a: "Dono alag kaam hain. Milan do charts ki compatibility dekhta hai; yeh guide aapki apni kundli ki timing window ki baat karti hai. Rishta ho to pehle milan aur dono ke 7th-house readings, phir muhurat. Sirf umar ka number rishte ka faisla nahi hona chahiye.",
+    },
+  ],
+};
+
 export const POSTS: Post[] = [
+  kundliSeShaadiKiUmar,
   taraKoota,
   grahaMaitri,
   yoniKoota,

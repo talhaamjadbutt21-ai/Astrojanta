@@ -27,6 +27,7 @@ export const CLUSTERS: Cluster[] = [
       "manglik-dosha-meaning",
       "naam-se-gun-milan",
       "janmakshar-matching",
+      "kundli-se-shaadi-ki-umar",
     ],
   },
   {
@@ -61,6 +62,7 @@ export const CLUSTERS: Cluster[] = [
       "free-ai-kundli-online",
       "ai-kundli-reader",
       "vimshottari-mahadasha",
+      "kundli-se-shaadi-ki-umar",
       "kaal-sarp-dosh",
       "manglik-dosha-meaning",
       "ai-astrologer-free-hindi",
